@@ -1,0 +1,24 @@
+#schedule-daily {
+    background-color: #fff;
+    padding: 15px;
+}
+
+#schedule-daily .schedule-daily-subject {
+    font-size: 1.636em;
+}
+
+#schedule-daily .infoblock-schedule-daily-lessons {
+    padding-left: 20px !important;
+}
+
+#schedule-daily #infoblock-schedule-daily-begin {
+    width: 70px;
+}
+.lesson_min #lesson_bg_img img.sup {
+    margin-top: 0;
+}
+.infoblock-scheduleDailyBlock .ui-widget-content{
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 1px 0;
+}

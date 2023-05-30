@@ -1,0 +1,22 @@
+[submodule "library/Symfony/Console"]
+	path = library/Symfony/Console
+	url = https://github.com/symfony/Console.git
+[submodule "library/Symfony/Component/Console"]
+	path = library/Symfony/Component/Console
+	url = https://github.com/symfony/Console.git
+[submodule "tools/front_develop"]
+	path = tools/front_develop
+	url = gittest@projects:4g
+	branch = project/frontend/develop
+[submodule "tools/frontend/doc"]
+	path = tools/frontend/doc
+	url = ../frontend
+	branch = doc/master
+[submodule "tools/frontend/manager"]
+	path = tools/frontend/manager
+	url = ../frontend
+	branch = manager/master
+[submodule "tools/frontend/src/default"]
+	path = tools/frontend/src/default
+	url = ../frontend
+	branch = project/default/master

@@ -1,0 +1,63 @@
+#activity-select-group .subgroup{
+    border-bottom: 1px solid #bbb;
+}
+.activity-control {
+    width: 22%;
+    margin-right: 1%;
+    float: left;
+    padding-bottom: .8em;
+}
+.ie7 .activity-control {
+    display: inline;
+    zoom: 1;
+}
+.activity-control select {
+    width: 100%;
+    white-space: nowrap;
+}
+#activityBlock .export-button {
+    float: right;
+    padding: .4em !important;
+    margin: 0;
+}
+#activityBlock .export-button .button-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}
+#activity-select-type-times {
+    background-color: #BED682;
+}
+#activity-select-type-sessions {
+    background-color: #D7B3C7;
+}
+.infoblock-activityBlock .infoblock-activityBlock-input{
+	overflow: hidden;
+}
+.infoblock-activityBlock .infoblock-activityBlock-input div{
+	white-space: nowrap;
+	margin-right: 2px;
+	overflow: hidden;
+	display:inline-block;
+}
+.activity-control-block{
+	padding-right: 35px;
+}
+.activity-control-block-left{
+	float:left;
+}
+.activity-control-block-right{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.activity-control {
+    float: none;
+    display:inline-block;
+    margin-right: 0;
+    padding-bottom: 0.8em;
+    min-width: 70px;
+    width:24%;
+}

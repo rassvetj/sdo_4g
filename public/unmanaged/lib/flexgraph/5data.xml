@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile mid="7086" color="#004540" value_min="0" value_max="4">
+  <cluster title="Колледж" background-color="#F3F2E6">
+    <competence title="Бендер 1">
+      <profile_required value="4"/>
+      <profile_actual value="41"/>
+    </competence>
+    <competence title="Бендер 2">
+      <profile_required value="3"/>
+      <profile_actual value="36"/>
+    </competence>
+  </cluster>
+  <cluster title="Школа" background-color="#E6F3EB">
+    <competence title="Деканат">
+      <profile_required value="831"/>
+      <profile_actual value="0"/>
+    </competence>
+    <competence title="Зам. зав. кафедрой графики">
+      <profile_required value="194"/>
+      <profile_actual value="41"/>
+    </competence>
+    <competence title="Кафедра графики">
+      <profile_required value="14"/>
+      <profile_actual value="0"/>
+    </competence>
+    <competence title="Секция литографии">
+      <profile_required value="24"/>
+      <profile_actual value="0"/>
+    </competence>
+  </cluster>
+  <cluster title="Университет" background-color="#F3E6F0">
+    <competence title="Зав кафедрой графики">
+      <profile_required value="19"/>
+      <profile_actual value="0"/>
+    </competence>
+    <competence title="куратор курсов">
+      <profile_required value="813"/>
+      <profile_actual value="0"/>
+    </competence>
+  </cluster>
+</profile>

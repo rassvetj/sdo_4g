@@ -1,0 +1,188 @@
+<link href="/css/content-modules/test.css" rel="stylesheet" type="text/css">
+<link href="/css/jquery-ui/jquery.ui.tooltip.css" rel="stylesheet" type="text/css">
+<script type='text/javascript' src='/js/lib/jquery/jquery.checkbox.js'></script>
+<script type='text/javascript' src='/js/lib/jquery/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='/js/lib/jquery/jquery.ui.tooltip.js'></script>
+<script type='text/javascript' src='/js/lib/jquery/excanvas.compiled.js'></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$('.tests_tooltip, .progress').bt();
+			
+				$('input:checkbox:not([safari])').checkbox();
+				$('input[safari]:checkbox').checkbox({cls:'jquery-safari-checkbox'});
+				$('input:radio').checkbox({cls:'jquery-radio-checkbox'});
+			});
+
+			displayForm = function (elementId)
+			{
+				var content = [];
+				$('#' + elementId + ' input').each(function(){
+					var el = $(this);
+					if ( (el.attr('type').toLowerCase() == 'radio'))
+					{
+						if ( this.checked )
+							content.push([
+								'"', el.attr('name'), '": ',
+								'value="', ( this.value ), '"',
+								( this.disabled ? ', disabled' : '' )
+							].join(''));
+					}
+					else
+						content.push([
+							'"', el.attr('name'), '": ',
+							( this.checked ? 'checked' : 'not checked' ), 
+							( this.disabled ? ', disabled' : '' )
+						].join(''));
+				});
+				alert(content.join('\n'));
+			}
+			
+			changeStyle = function(skin)
+			{
+				jQuery('#myform :checkbox').checkbox((skin ? {cls: skin} : {}));
+			}
+			
+		</script>
+<div class="tests_header">
+<table  border="0" cellspacing="0" cellpadding="0" class="tests_main">
+	<tr>
+		<td class="header_first_td" align="left" valign="middle">
+            <?=$s[ttitle]?>
+		</td>
+<td class="header_three_td" align="right">
+<div style="display:none;">
+<?php
+$GLOBALS['controller']->captureFromOb(TRASH);
+?>
+<!-- <FONT SIZE=+1><?=_("Задание")?>: <b><?=$s[ttitle]?></b></FONT><br> -->
+<?php
+$GLOBALS['controller']->captureStop(TRASH);
+?>
+ <?=_("Прошло:")?> <span id='time_spent'><? echo (ceil((time()-$s[start])/60)-1);?></span> <?=_("мин.")?>
+ <?=_("Всего:")?> <span id='time_limit'><? echo ($s[timelimit]);?></span> <?=_("мин.")?>
+</div>
+	
+
+
+
+<div class="progress" title="Сколько пройдено">
+<div class="progress_load" id="progress_percent"></div>
+</div>
+
+
+<?php
+switch ($_SESSION['s']['test_type']) {
+	case 0:
+		$msgPause = _("Вы действительно хотите досрочно завершить тестирование? При этом будет выставлена оценка только за те вопросы, на которые Вы успели ответить. Данный вид завершения задания является нормальным и допустимым.");
+		$msgStop = _("Вы действительно хотите прервать тестирование? При этом будет создана запись в журнале тестирований и попыка тестирования будет засчитана, но оценка за занятие выставлена не будет.");
+		break;
+	case 1:
+		$msgStop = _("Вы действительно желаете прервать заполнение опроса с потерей всех данных ответов? Позже Вы сможете вернуться к опросу и заполнить его вновь.");
+		break;
+	default:
+		$msgStop = _("Вы действительно хотите выйти, не сохранив результаты работы?.");
+		break;
+}
+
+if ($_SESSION['s']['skip']) {
+?>
+<div class="progress_pause"><a href="test_start.php?mode=result<?=$sess?>"
+onclick='return confirm("<?=$msgPause?>")' title="Досрочно завершить">
+<img style=" width: 16px; height: 17px; border: none;" alt="" src="/images/content-modules/tests/result.gif"></a></div>
+<?php } ?>
+
+
+<div class="progress_stop"><a href="test_start.php?mode=break<?=$sess?>" 
+onclick='return confirm("<?=$msgStop?>")'
+title="Прервать">
+<img style=" width: 16px; height: 17px; border: none;" alt="" src="/images/content-modules/tests/break.gif"></a></div>
+
+
+
+	<?
+	if ($s[timelimit]>0)
+				echo "<font color=white style='position:relative; top:2px;'>" . _("Осталось") ." <span id='time_remain'>".
+					(ceil($s[timelimit]-doubleval(time()-$s[start])/60)+1).
+					"</span>" . _(" мин.");
+				echo "</font>";
+			?> 
+	<?
+	if ($s[timelimit] == 0)
+				echo "<div style='position:relative; top:2px; float:left;'><font color=white>" . _("Время не ограничено") ."</font></div>";
+			?> 
+		</td>
+	</tr>
+</table>
+</div>
+<script type="text/javascript">
+function every_minute(first_time)
+{
+        limit = document.getElementById('time_limit').innerHTML;
+        spent = document.getElementById('time_spent').innerHTML;
+		if (spent < 0) spent = 0;
+        document.getElementById('time_spent').innerHTML = parseInt(spent);
+        if (limit > 0) {
+        document.getElementById('progress_percent').style.width = parseInt((spent)*100/(limit)) + 1 + 'px';
+        }
+        try {
+                remain = document.getElementById('time_remain').innerHTML;
+                if (remain > 0) {
+                        document.getElementById('time_remain').innerHTML = parseInt(remain) - 1;
+                        if ((remain == (5+1)) && !first_time) alert("<?=_("Внимание! Осталось 5 минут до завершения тестирования.\\nПо истечении этого времени сеанс тестирования принудительно завершится.")?>");
+                } else {
+                        try {
+                                document.getElementById('m').submit();
+                        } catch (e) {
+                                alert("<?=_("Сеанс тестирования завершен.\\nНажмите кнопку \\\"Следующие вопросы\\\"")?>");
+                        }
+                }
+        } catch (e)        {
+        }
+
+        timer=setTimeout("every_minute(0)",60000);
+}
+
+$(function(){every_minute(1);})
+
+function check_question_timetoanswer(first_time)
+{
+    if(!first_time) {
+        spent = document.getElementById('timetoanswer_spent').innerHTML;
+        document.getElementById('timetoanswer_spent').innerHTML = parseInt(spent) + 1;
+        try {
+                remain = document.getElementById('timetoanswer_remain').innerHTML;
+                if (remain > 1) {
+                        document.getElementById('timetoanswer_remain').innerHTML = parseInt(remain) - 1;
+                        if (remain == 2) alert("<?=_("Внимание! Осталась 1 минута до перехода к следующему вопросу.\\nПо истечении этого времени переход будет осуществлен принудительно.")?>");
+                } else {
+                        try {
+                                document.getElementById('m').submit();
+                        } catch (e) {
+                                alert("<?=_("Время ответа на вопрос вышло.")?>");
+                        }
+                }
+        } catch (e)        {
+        }
+    }
+    else {
+        try {
+                remain = document.getElementById('timetoanswer_remain').innerHTML;
+                if (remain == 1) {
+                    alert("<?=_("Внимание! Осталась 1 минута до перехода к следующему вопросу.\\nПо истечении этого времени переход будет осуществлен принудительно.")?>");
+                }
+        } catch (e)        {
+        }
+    }
+    timer_question=setTimeout("check_question_timetoanswer(0)",60000);
+}
+
+</script>
+
+<form action='test_otvet.php' method="post" name="m" id="m" enctype="multipart/form-data">
+	<?=$GLOBALS[sessf]?>
+	<input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+	<input type=hidden name=checkkod value="<?=$checkkod?>">
+	<br>
+	<table border=0 cellspacing=0 cellpadding=0 class="tests_body">
+		<tr>
+			<td class="questt" align="center" style="padding: 0">

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony-project.org/2.0/container">
+    <services>
+        <service id="EventViewTriggerCallback" class="Es_Service_Callback_EventViewTrigger"></service>
+        <service id="GroupHandlerCallback" class="Es_Service_Callback_GroupHandler"></service>
+        <service id="MailSenderCallback" class="Es_Service_Callback_MailSender"></service>
+        <service id="MailRendererCallback" class="Es_Service_Callback_MailRenderer"></service>
+        <service id="EventTypeNameDefinerCallback" class="Es_Service_Callback_EventTypeNameDefiner"></service>
+        <service id="MailSubjectRendererCallback" class="Es_Service_Callback_MailSubjectRenderer"></service>
+        <service id="MailHtmlWrapperCallback" class="Es_Service_Callback_MailHtmlWrapper"></service>
+        <service id="ReportMailSenderCallback" class="Es_Service_Callback_ReportMailSender"></service>
+        <service id="ReportMailRenderCallback" class="Es_Service_Callback_ReportMailRender"></service>
+        <service id="ESFactory" class="Es_Service_Factory" />
+        <service id="EventActor" class="Es_Service_EventActor" />
+        <service id="EventInstance" class="Es_Entity_Event" shared="false" />
+        <service id="FilterInstance" class="Es_Entity_Filter" shared="false" />
+        <service id="EventServerDispatcher" class="Es_Service_Dispatcher">
+            <call method="defineActor">
+                <argument type="service" id="ESFactory" />
+                <argument type="service" id="EventActor" />
+            </call>
+            <call method="defineTriggers">
+                <argument type="service" id="ESFactory" />
+            </call>
+        </service>
+        <service id="EventCollection" class="Es_Entity_EventCollection" shared="false">
+            <call method="setEsEventDispatcher">
+                <argument type="service" id="EventServerDispatcher" />
+            </call>
+        </service>
+        <service id="EventTypeList" class="Es_Entity_EventTypeList" shared="false" />
+        <service id="EventType" class="Es_Entity_EventType" shared="false" />
+        <service id="EventGroup" class="Es_Entity_EventGroup" shared="false"></service>
+        <service id="EventGroupType" class="Es_Entity_GroupType" shared="false"></service>
+        <service id="EventGroupTypeStat" class="Es_Entity_GroupTypeStat" shared="false"></service>
+        <service id="GroupTypeList" class="Es_Entity_GroupTypeList" shared="false"></service>
+        <service id="NotifyType" class="Es_Entity_NotifyType" shared="false"></service>
+        <service id="NotifiesList" class="Es_Entity_NotifiesList" shared="false"></service>
+        <service id="EventNotify" class="Es_Entity_Notify" shared="false"></service>
+    </services>
+</container>

@@ -1,0 +1,1 @@
+<?php echo $this->FeedbackBlock(null, null, array('begin' => $this->begin, 'end' => $this->end, 'ajax' => true))?>

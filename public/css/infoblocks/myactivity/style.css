@@ -1,0 +1,7 @@
+.MyActivityBlock{
+	text-align: center;
+}
+
+.MyActivityBlock .inner{
+	margin: 5px 10px 10px 10px;
+}

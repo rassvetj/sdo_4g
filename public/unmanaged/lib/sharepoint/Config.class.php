@@ -1,0 +1,16 @@
+<?php
+
+define('SHAREPOINT_ENABLE', false);
+define('SHAREPOINT_HOST', 'http://server:82');
+define('SHAREPOINT_NTLM_USERNAME', 'yury');
+define('SHAREPOINT_NTLM_PASSWORD', '');
+define('SHAREPOINT_SOAP_TRACE', 1);
+define('SHAREPOINT_SOAP_EXCEPTIONS', 0);
+define('SHAREPOINT_SOAP_VERSION', SOAP_1_2);
+define('SHAREPOINT_LISTS_WSDL', '/_vti_bin/Lists.asmx?WSDL');
+define('SHAREPOINT_IN_CHARSET', 'UTF-8');
+define('SHAREPOINT_OUT_CHARSET', 'windows-1251');
+
+define('SHAREPOINT_LIST_CALENDAR_ID', '{0068AD84-CF43-4AAD-81AD-16C89F4D2B31}');
+
+?>

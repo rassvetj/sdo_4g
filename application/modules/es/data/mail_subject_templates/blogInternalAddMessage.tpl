@@ -1,0 +1,1 @@
+<?php echo $this->event->getParam('user_name'); ?> оставил(-а) пост '<?php echo $this->event->getParam('title'); ?>' в блоге курса '<?php echo $this->event->getParam('course_name'); ?>'

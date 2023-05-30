@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<eventType ID='28'>
+<redirectURL>
+<attribute name='url'/>
+</redirectURL>
+<externalURLs>
+<attribute name='urls'/>
+</externalURLs>
+<chatApplet>
+<attribute name='width'/>
+<attribute name='height'/>
+<attribute name='in_login'/>
+<attribute name='in_pass'/>
+<attribute name='in_room'/>
+<attribute name='in_serverPort'/>
+</chatApplet>
+<liveCam1>
+<attribute name='width'/>
+<attribute name='height'/>
+<attribute name='delay'/>
+<attribute name='file'/>
+<attribute name='room'/>
+</liveCam1>
+<liveCamPro>
+<attribute name='width'/>
+<attribute name='height'/>
+<attribute name='delay'/>
+<attribute name='file'/>
+<attribute name='room'/>
+</liveCamPro>
+<tests>
+<attribute name='testID'/>
+</tests>
+<module>
+<attribute name='moduleID'/>
+</module>
+<books>
+<attribute name='is'/>
+</books>
+</eventType>

@@ -1,0 +1,30 @@
+.activitydev-control {
+    width: 46%;
+    float: left;
+    padding-bottom: .8em;
+}
+.activitydev-control select {
+    width: 95%;
+}
+#activitydevBlock .export-button {
+    float: right;
+    padding: .4em !important;
+    margin: 0;
+}
+#activitydevBlock .export-button .button-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}
+#export-button-container {
+    width: 7%;
+    float: right;
+}
+#activitydev-select-type-day {
+    background-color: #8EABC8;
+}
+#activitydev-select-type-week {
+    background-color: #D4B922;
+}

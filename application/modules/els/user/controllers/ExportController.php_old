@@ -1,0 +1,974 @@
+<?php
+class User_ExportController extends HM_Controller_Action
+{
+	public function indexAction() {				
+		$this->isSupervisor = false;
+		if (in_array($this->getService('User')->getCurrentUserRole(), array(HM_Role_RoleModelAbstract::ROLE_SUPERVISOR))) {
+			$this->view->headLink()->appendStylesheet('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css');		
+			$this->view->headScript()->appendFile('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js');
+			$this->view->isSupervisor = true;
+		}
+        $form = new HM_Form_Export();
+        $form->setAction($this->view->url(array(
+            'module' => 'user',
+            'controller' => 'export',
+            'action' => 'get-csv',
+        )));
+
+        $this->view->form = $form;
+    }
+    
+    public function getCsvAction() {
+        try {
+
+		$this->_helper->getHelper('layout')->disableLayout();
+        Zend_Controller_Front::getInstance()->unregisterPlugin('HM_Controller_Plugin_Unmanaged');
+        $this->getHelper('viewRenderer')->setNoRender();
+        
+		
+		if (in_array($this->getService('User')->getCurrentUserRole(), array(HM_Role_RoleModelAbstract::ROLE_SUPERVISOR))) {
+			$groups 	= (array)$this->_getParam('groups', array()); # dafault - все доступные группы.
+			$sessions 	= (array)$this->_getParam('sessions', array()); # dafault - все доступные сессии.			
+			$groups = array_filter($groups);
+			$sessions = array_filter($sessions);
+			
+			if(in_array(-1, $groups)){ #нет доступных групп
+				$supervisorStudentIDs = array(0);
+			} elseif(empty($groups)){ #формируем для всех доступных групп
+				
+			} else{ #выбранные группы в усовии отбора формы
+				$supervisorStudentIDs = $this->getStudentsByGroups($groups);
+			}
+			
+			if(in_array(-1, $sessions)){ #нет доступных сессий
+				$supervisorSessionIDs = array(0);
+			} elseif(empty($sessions)){ #формируем для всех доступных сессий
+				if(!empty($groups)){
+					$supervisorSessionIDs = array_keys($this->getSessionByGroupViaProgramm($groups)); #Теперь нужно сессии группы, назначенные через программу обучения.						
+				}
+			} else{	
+				$supervisorSessionIDs = $sessions;
+			}			
+			
+
+			//echo '<br>Группа:<br>';
+			//pr($groups);
+			//echo '<br>Сессии:<br>';
+			//pr($supervisorSessions);
+			//exit();
+		}
+		
+		
+		
+        
+        $format = 'Y-m-d';
+        $dateFrom = date($format, strtotime($this->_getParam('date_from', date($format, time()-60*60*24*31))));
+        $dateTo = date($format, strtotime($this->_getParam('date_to', date($format))));
+        
+		#1 - base type
+		#2 - tutor type
+		$report_type = $this->_getParam('report_type', HM_User_UserModel::TYPE_EXPORT_BASE);
+		
+		$filename = 'Отчет_за_период_['. $dateFrom.'_'.$dateTo.']_от_'.date('d.m.Y H.i');
+		if($report_type == HM_User_UserModel::TYPE_EXPORT_DEBT_TUTOR){
+			$filename = 'Долг_за_преподавателями_['. $dateFrom.'_'.$dateTo.']_от_'.date('d.m.Y H.i');
+		}
+		$this->getResponse()->setHeader('Content-type', 'application/octetstream; charset=UTF-8');
+        $this->getResponse()->setHeader('Content-Disposition', 'attachment; filename="'.$filename.'.csv');
+		
+		
+        $userService = $this->getService('User');
+       
+		/**
+		 * новый селект. Оптимизированный
+		 */		
+		//--будем брать последнего тьютора или препода. Мо максимальному id
+		################## Начало #################
+				
+		
+		
+		#
+		$sub_user_programm = $userService->getSelect(); # программы студента
+		$sub_user_programm->from(array('programm_users'),
+			array(
+				'user_id',		
+				'programm_id' => new Zend_Db_Expr('GROUP_CONCAT(programm_id)'),			
+			)
+		);
+		$sub_user_programm->group(array('user_id'));
+		
+		#
+		$sub_user_group = $userService->getSelect();  # группы студента
+		$sub_user_group->from(array('study_groups_custom'),
+			array(
+				'user_id',		
+				'group_id' => new Zend_Db_Expr('GROUP_CONCAT(group_id)'),			
+			)
+		);
+		$sub_user_group->group(array('user_id'));
+		
+		#
+		$sub_tutor = $userService->getSelect();  # тьюторы сессии
+		$sub_tutor->from(array('Tutors'),
+			array(
+				'CID',		
+				'MID' => new Zend_Db_Expr('GROUP_CONCAT(MID)'),			
+			)
+		);
+		$sub_tutor->where('CID > ?', 0);
+		$sub_tutor->where('MID > ?', 0);
+		$sub_tutor->group(array('CID'));
+		
+		#
+		$sub_teacher = $userService->getSelect();  # преподы сессии
+		$sub_teacher->from(array('Teachers'),
+			array(
+				'CID',		
+				'MID' => new Zend_Db_Expr('GROUP_CONCAT(MID)'),			
+			)
+		);
+		$sub_teacher->where('CID > ?', 0);
+		$sub_teacher->where('MID > ?', 0);
+		$sub_teacher->group(array('CID'));
+		
+		
+		#
+		$sub_programm = $userService->getSelect();  # программы сессии
+		$sub_programm->from(array('programm_events'),
+			array(
+				'session_id' => 'item_id',		
+				'programmIDs' => new Zend_Db_Expr('GROUP_CONCAT(programm_id)'),			
+			)
+		);		
+		$sub_programm->group(array('item_id'));
+		
+		#
+		$sub_message = $userService->getSelect(); # последнее сообщение выставленной оценки
+		$sub_message->from(array('i' => 'interview'),
+			array(				
+				'student_id' => 'i.to_whom',						
+				'session_id' => 'session.subid',						
+				'last_date' => new Zend_Db_Expr('MAX(date)'),			
+			)
+		);
+		$sub_message->join(array('lesson' => 'schedule'), 'lesson.SHEID = i.lesson_id', array());
+		$sub_message->join(array('session' => 'subjects'), 'session.subid = lesson.CID', array());
+		$sub_message->where('session.base = ?', HM_Subject_SubjectModel::BASETYPE_SESSION);
+		$sub_message->where($userService->quoteInto(array('session.begin >= ?'), array($dateFrom) ));
+        $sub_message->where($userService->quoteInto(array('session.begin <= ?'), array($dateTo) ));
+		$sub_message->where('i.to_whom != ?', 0);
+		$sub_message->where('i.type = ?', HM_Interview_InterviewModel::MESSAGE_TYPE_BALL); 
+		$sub_message->group(array('i.user_id', 'i.to_whom', 'i.interview_hash', 'session.subid'));
+		$res = $sub_message->query()->fetchAll();
+		
+		$iter = new ArrayIterator($res);
+		$lastDate = array(); # последняя дата выставления оценки студенту.
+		foreach($iter as $i){
+			$lastDate[$i['student_id']][$i['session_id']] = $i['last_date'];
+		}
+		unset($sub_message);
+		unset($res);
+		unset($iter);
+		
+		
+		
+		
+		$fields = array(		
+			'student_id'     	   	=> 'p.MID',    
+			'student_LastName'     	=> 'p.LastName',    
+			'student_FirstName'    	=> 'p.FirstName',   
+			'student_Patronymic'  	=> 'p.Patronymic', 
+			'student_mid_external'	=> 'p.mid_external',                
+			'mark' 					=> 'cm.mark',                
+			'session_id' 			=> 'session.subid',                
+			'session_id_external' 	=> 'session.external_id',                
+			'session_name' 			=> 'session.name',                
+			'session_module_code' 	=> 'session.module_code',                
+			'session_zet'			=> 'session.zet',                
+			'session_semester'		=> 'session.semester',                
+			'student_groups'		=> 'sgc.group_id',
+			'student_programm'		=> 'pu.programm_id',
+			'tutors' 				=> 'tutor.MID',
+			'teachers' 				=> 'teacher.MID',				
+			'programmIDs'			=> 'prog.programmIDs',				
+		);
+		
+		$fieldsGroup = array(
+			'p.MID',
+			'p.LastName',
+			'p.FirstName',
+			'p.Patronymic',
+			'p.mid_external',
+			'cm.mark', 
+			'session.external_id',
+			'session.name',
+			'session.module_code',
+			'session.zet',
+			'session.semester',
+			'sgc.group_id',
+			'pu.programm_id',
+			'session.subid',
+			'tutor.MID',
+			'teacher.MID',
+			'prog.programmIDs'		
+		);
+		
+		#
+		$select2 = $userService->getSelect();
+        
+		$select2->join(array('s' => 'Students'), 'p.MID = s.MID', array());
+		$select2->joinLeft(array('session' => 'subjects'), 'session.subid = s.CID', array());
+		
+		# в выгрузку попадают все, включая и те, у кого нет оценки.
+		//if($report_type == 2){
+			$select2->joinLeft(array('cm' => 'courses_marks'), 'cm.mid = p.MID AND cm.cid = session.subid', array());
+		//} else {
+			//$select2->join(array('cm' => 'courses_marks'), 'cm.mid = p.MID AND cm.cid = session.subid', array());
+			//$select2->where('cm.mark > ?', '0'); # только положительные оценки. Балл - это строка в БД, поэтому в кавычках.		
+		//}
+		
+		$select2->joinLeft(array('prog' => $sub_programm), 'prog.session_id = session.subid', array());
+		$select2->joinLeft(array('sgc' => $sub_user_group), 'sgc.user_id = p.MID', array());
+		$select2->joinLeft(array('pu' => $sub_user_programm), 'pu.user_id = p.MID', array());
+		$select2->joinLeft(array('tutor' => $sub_tutor), 'tutor.CID = session.subid', array());
+		$select2->joinLeft(array('teacher' => $sub_teacher), 'teacher.CID = session.subid', array());
+		
+		$select2->where('session.base = ?', HM_Subject_SubjectModel::BASETYPE_SESSION);		
+		$select2->where($userService->quoteInto('session.begin >= ?', $dateFrom));
+        #$select2->where($userService->quoteInto(array('session.begin <= ?'), array($dateTo) ));
+		
+
+
+		if (in_array($this->getService('User')->getCurrentUserRole(), array(HM_Role_RoleModelAbstract::ROLE_SUPERVISOR))) {
+			if(!empty($supervisorSessionIDs)){				
+				$select2->where($userService->quoteInto('session.subid IN (?)', $supervisorSessionIDs));	# выбранные наблюдателем сессии в услови отбора формы 					
+			}
+			
+			if(!empty($supervisorStudentIDs)){				
+				$select2->where($userService->quoteInto('p.MID IN (?)', $supervisorStudentIDs));	# студнты, назначенные на выбранные наблюдателем группы в услови отбора формы 					
+			}
+			
+		}
+		
+		
+		
+		$select2->where('cm.sync_1c IS NULL OR cm.sync_1c = ?', 0); //--исключаем оценки, синхронизированные с 1С. Вообще их быть не должно и без этог оусловия (подобных записей в Students не должно быть). Но на всякий случай.
+				
+		$select2->where('session.isDO = ?', 1);	 # только сессии ДО
+		
+		if($report_type == HM_User_UserModel::TYPE_EXPORT_BASE){
+			$select2->where('s.time_ended_debtor IS NULL');	 						# только не продленные студенты. Даже если сессия продлена, то м.б студент непродленнм.			
+			$select2->where($userService->quoteInto('session.end <= ?', $dateTo));  	# только закрытые сессии.			
+		} elseif($report_type == HM_User_UserModel::TYPE_EXPORT_DEBT){
+			
+			$select2->joinLeft(array('sc' => 'schedule'), 'sc.CID = session.subid', array());
+			$select2->joinLeft(array('sch' => 'scheduleID'),
+			'sch.SHEID = sc.SHEID
+			AND
+			sch.MID = s.MID
+			AND
+			sch.V_STATUS = \'-1\'
+			AND
+			sc.isfree = \''.HM_Lesson_LessonModel::MODE_PLAN.'\'
+			AND
+			sc.typeID NOT IN (\''.implode('\',\'', array_keys(HM_Event_EventModel::getExcludedTypes())).'\')',
+			array()); # находим записи в занятиях, где нет оценки. Потом такие записи будем игнорировать в отчете.
+			
+			
+			$fields['ball_lesson_empty'] = 'MAX(sch.SSID)';
+			
+			$select2->where('s.time_ended_debtor IS NOT NULL');	 	# только продленные студенты. Даже если сессия продлена, то м.б студент непродленнм.
+			$select2->where('session.time_ended_debt IS NOT NULL');	# не может быть такого, что студент продлен, а сессия нет.
+		} else { # нужно ли ограничение по дате окончания?
+			/*
+			$select2->where($userService->quoteInto( //--только закрытые сессии. Или если продлены, то и дата продления прошла.
+				array('session.time_ended_debt < ?', ' OR (session.end < ? AND session.time_ended_debt IS NULL)'),
+				array($dateTo, $dateTo)
+			));	
+			*/			
+		}
+		$select2->from(array('p' => 'People'), $fields );
+		$select2->group($fieldsGroup);
+		
+		#if($this->getService('User')->getCurrentUserId() == 5829){
+			#echo $select2->assemble();
+			#die;
+		#}
+		
+		$base_rows = $select2->query()->fetchAll();	
+
+		unset($select2);
+		
+		
+		
+
+		
+		# из основных данных формируем данных для отбора по другим полям.
+		$studentIDs = array(); # id студентов
+		$sessionIDs = array(); # id сессий для выборки предметов		
+		$userIDs = array(); # id пользователей для выборки фио тьюторов и преопдов
+		$groupIDs = array(); # id групп
+		$programmIDs = array(); # id программ	
+		$base_iter = new ArrayIterator($base_rows);		
+		foreach($base_iter as $i){
+			$sessionIDs[$i['session_id']] = $i['session_id'];
+			$studentIDs[$i['student_id']] = $i['student_id'];
+			foreach(explode(',', $i['tutors']) as $p)			{ $userIDs[$p] 		= $p; } # было реализовано чере  array_merge. Но он ооочень медленно работает.
+			foreach(explode(',', $i['teachers']) as $p)			{ $userIDs[$p] 		= $p; }
+			foreach(explode(',', $i['student_groups']) as $p)	{ $groupIDs[$p] 	= $p; }
+			foreach(explode(',', $i['student_programm']) as $p)	{ $programmIDs[$p] 	= $p; }
+			foreach(explode(',', $i['programmIDs']) as $p)		{ $programmIDs[$p] 	= $p; }						
+		}		
+		$sessionIDs 	= array_filter($sessionIDs);
+		$userIDs 		= array_filter($userIDs);		
+		$groupIDs 		= array_filter($groupIDs);
+		$programmIDs 	= array_filter($programmIDs);
+		
+		
+		$lastMsgStudents = array(); # последние собщения студентов
+		$lastMsgTutors = array(); # последние собщения тьюторов
+		if(count($studentIDs) && count($sessionIDs)){
+			# 1 выбираем последние сообщения от студентов (from)						
+			$sub_mes_from_students = $userService->getSelect(); # последнее сообщение студента			
+			$sub_mes_from_students->from(array('i' => 'interview'),
+				array(				
+					'student_id' 	=> 'i.user_id',						
+					'session_id' 	=> 'session.subid',						
+					'lesson_id' 	=> 'lesson.SHEID',						
+					'last_date' 	=> new Zend_Db_Expr('MAX(date)'),			
+				)
+			);
+			$sub_mes_from_students->join(array('lesson' => 'schedule'), 'lesson.SHEID = i.lesson_id', array());
+			$sub_mes_from_students->join(array('session' => 'subjects'), 'session.subid = lesson.CID', array());		
+			$sub_mes_from_students->where($userService->quoteInto('session.subid IN (?)', $sessionIDs ));
+			$sub_mes_from_students->where($userService->quoteInto('i.user_id IN (?)', $studentIDs ));
+			$sub_mes_from_students->group(array('i.user_id',  'i.interview_hash', 'session.subid', 'lesson.SHEID'));			
+			$sub_mes_from_students->where($userService->quoteInto('i.type IN (?)', array(HM_Interview_InterviewModel::MESSAGE_TYPE_QUESTION, HM_Interview_InterviewModel::MESSAGE_TYPE_TEST) ));
+			$rows = $sub_mes_from_students->query()->fetchAll();
+			if($rows){
+				$sub_iter = new ArrayIterator($rows);
+				foreach($sub_iter as $i){
+					$lastMsgStudents[$i['session_id']][$i['lesson_id']][$i['student_id']] = $i['last_date'];
+				}
+			}
+			unset($sub_iter);
+			unset($rows);			
+			unset($sub_mes_from_students);			
+			
+			
+			
+			
+			# 2 выбираем последнее сообщения, адресованные студенту (to)								
+			$sub_mes_from_tutors = $userService->getSelect(); # последнее сообщение студента			
+			$sub_mes_from_tutors->from(array('i' => 'interview'),
+				array(				
+					'student_id' 	=> 'i.to_whom',						
+					'session_id' 	=> 'session.subid',
+					'lesson_id' 	=> 'lesson.SHEID',					
+					'last_date' 	=> new Zend_Db_Expr('MAX(date)'),			
+				)
+			);
+			$sub_mes_from_tutors->join(array('lesson' => 'schedule'), 'lesson.SHEID = i.lesson_id', array());
+			$sub_mes_from_tutors->join(array('session' => 'subjects'), 'session.subid = lesson.CID', array());		
+			$sub_mes_from_tutors->where($userService->quoteInto('session.subid IN (?)', $sessionIDs ));
+			$sub_mes_from_tutors->where($userService->quoteInto('i.to_whom IN (?)', $studentIDs ));
+			$sub_mes_from_tutors->group(array('i.to_whom',  'i.interview_hash', 'session.subid', 'lesson.SHEID'));			
+			$sub_mes_from_tutors->where($userService->quoteInto('i.type IN (?)', array(HM_Interview_InterviewModel::MESSAGE_TYPE_ANSWER, HM_Interview_InterviewModel::MESSAGE_TYPE_CONDITION, HM_Interview_InterviewModel::MESSAGE_TYPE_BALL, HM_Interview_InterviewModel::MESSAGE_TYPE_TASK) ));
+			$rows = $sub_mes_from_tutors->query()->fetchAll();
+			
+			if($rows){
+				$sub_iter = new ArrayIterator($rows);
+				foreach($sub_iter as $i){
+					$lastMsgTutors[$i['session_id']][$i['lesson_id']][$i['student_id']] = $i['last_date'];
+				}
+			}
+			unset($sub_iter);
+			unset($rows);
+
+
+			# если дата 1 больше даты 2 - то это долг со стороны тьютора.
+			$penaltySession = array(); 		# есть неотвеченные вопросы от студентов			
+			//$notPenaltySession = array(); 	# на все вопросы студентов тьютор дал ответ.			
+			foreach($sessionIDs as $session_id){				
+				//$issetPenalty = false;
+				if(!empty($lastMsgStudents[$session_id])){
+					foreach($lastMsgStudents[$session_id] as $lesson_id => $users){					
+						if(count($users)){
+							foreach($users as $user_id => $date){
+								if(
+									!isset($lastMsgTutors[$session_id][$lesson_id][$user_id])
+									||
+									strtotime($lastMsgTutors[$session_id][$lesson_id][$user_id]) < strtotime($date)
+								){ # последний ответил студент											
+									$penaltySession[$session_id][$user_id] = $user_id;
+								} 							
+							}
+						}
+					}				
+				}
+			}
+		}
+		
+				
+		#
+		$usersFIO = array();
+		if(count($userIDs)){
+			$sub_fio = $userService->getSelect();  # ФИО преподов и тьюторов
+			$sub_fio->from(array('People'),
+				array(
+					'MID',		
+					'mid_external',		
+					'LastName',		
+					'FirstName',		
+					'Patronymic',	
+					'EMail',	
+				)
+			);
+			$sub_fio->where($userService->quoteInto('MID IN (?)', $userIDs));
+			$res_fio = $sub_fio->query()->fetchAll();
+						
+			foreach($res_fio as $f){
+				$usersFIO[$f['MID']] = array(
+					'mid_external' 	=> $f['mid_external'],
+					'LastName' 		=> $f['LastName'],
+					'FirstName' 	=> $f['FirstName'],
+					'Patronymic'	=> $f['Patronymic'],
+					'EMail'			=> $f['EMail'],
+				);
+			}
+		}
+		
+		
+		#
+		$learningSubjects = array();
+		if(count($sessionIDs)){
+			$sub_ls = $userService->getSelect();  # предмет сессии
+			$sub_ls->from(array('session' => 'subjects'),
+				array(
+					'session_id' 	=> 'session.subid',													
+					'ls_name' 		=> 'ls.name',								
+					'ls_sem' 		=> 'ls.semester',								
+				)
+			);
+			$sub_ls->join(array('course' => 'subjects'), 'session.base_id = course.subid', array());
+			$sub_ls->join(array('ls' => 'learning_subjects'), 'ls.subject_id = course.subid', array());
+			$sub_ls->where($userService->quoteInto('session.subid IN (?)', $sessionIDs));
+			$sub_ls->group(array('session.subid', 'ls.name','ls.semester'));
+			$res_ls = $sub_ls->query()->fetchAll();
+			foreach($res_ls as $l){
+				$learningSubjects[$l['session_id']] = array(
+					'ls_name'	=> $l['ls_name'],				
+					'ls_sem'	=> $l['ls_sem'],
+				);
+			}			
+		}
+		
+		$listGroups = array();
+		if(count($groupIDs)){
+			$sub_groupd = $userService->getSelect();  # имена групп
+			$sub_groupd->from(array('study_groups'),
+				array(
+					'group_id',												
+					'name',												
+					'id_external',												
+				)
+			);			
+			$sub_groupd->where($userService->quoteInto('group_id IN (?)', $groupIDs));
+			$res_groups = $sub_groupd->query()->fetchAll();
+			foreach($res_groups as $g){
+				$listGroups[$g['group_id']] = array(
+					'name' 			=> $g['name'],
+					'id_external' 	=> $g['id_external'],
+				);
+			}
+		}
+		
+		
+		$listProgramms = array();
+		if(count($programmIDs)){
+			$sub_prog = $userService->getSelect();  # имена программ
+			$sub_prog->from(array('programm'),
+				array(
+					'programm_id',												
+					'name',												
+					'id_external',												
+				)
+			);			
+			$sub_prog->where($userService->quoteInto('programm_id IN (?)', $programmIDs));
+			$res_prog = $sub_prog->query()->fetchAll();
+			foreach($res_prog as $g){
+				$listProgramms[$g['programm_id']] = array(
+					'name' 			=> $g['name'],
+					'id_external' 	=> $g['id_external'],
+				);
+			}
+		}
+		
+		
+		
+		
+
+				
+		# создание итоговых данных
+		$this->serviceOrg 		= $this->getService('Orgstructure');
+		$this->serviceSubject 	= $this->getService('Subject');
+		$outputData = array();
+		$base_iter = new ArrayIterator($base_rows);
+
+		$this->sessionModuleRows 	   = array(); #модульные записи, которые нужно схлопнуть
+		$this->available_debtor_tutors = array(); # тьюторы, которым достумны сессии по причине продления. key - subject_id, value - array if tutor_id_s
+		foreach($base_iter as $i){			
+			if(				
+				($report_type == HM_User_UserModel::TYPE_EXPORT_DEBT_TUTOR && isset($penaltySession[$i['session_id']][$i['student_id']]))
+				||
+				(($report_type == HM_User_UserModel::TYPE_EXPORT_BASE || $report_type == HM_User_UserModel::TYPE_EXPORT_DEBT) && !isset($penaltySession[$i['session_id']][$i['student_id']]))
+			){				
+				# группы студента
+				$groups = explode(',', $i['student_groups']);
+				$user_groups 		= array();
+				$user_group_codes 	= array();
+				foreach($groups as $group_id){
+					$user_groups[$group_id] 		= $listGroups[$group_id]['name'];
+					if((!empty($listGroups[$group_id]['id_external']))){
+						$user_group_codes[$group_id] 	=	$listGroups[$group_id]['id_external'];
+					}
+				}
+				
+				$tutorIDs = explode(',', $i['tutors']);
+				$tutorIDs = array_filter($tutorIDs);
+				$tutorIDs = array_unique($tutorIDs);
+				
+				
+				
+				# исключаем тьюторов, которым недоступна сессия по причине продления.
+				if(!isset($this->available_debtor_tutors[$i['session_id']])){
+					$this->available_debtor_tutors[$i['session_id']] = $this->serviceSubject->getAvailableDebtorTutors($i['session_id']);
+				}
+				$tutorIDs_old = $tutorIDs;
+				$tutorIDs = array_intersect($tutorIDs, $this->available_debtor_tutors[$i['session_id']]);
+				
+				/*
+				if($this->_getParam('mode') == 'test'){
+					if($tutorIDs_old != $tutorIDs){
+						echo '<hr><hr>'.$i['session_id'].'<hr>Было<br>:';
+						pr($tutorIDs_old);
+						echo '<br>Стало:<br>';
+						pr($tutorIDs);
+					}
+				}
+				*/
+				
+				
+				
+								
+				if($report_type == HM_User_UserModel::TYPE_EXPORT_DEBT_TUTOR && isset($penaltySession[$i['session_id']][$i['student_id']])){										
+					if(count($tutorIDs)){					
+						foreach($tutorIDs as $tutor_id){						
+							$availableStudents = $this->serviceSubject->getAvailableStudents($tutor_id, $subject_id);
+							
+							# назначен тьютор или на группу или на студента
+							if($availableStudents){
+								# нету студента среди назначенных, значит и долг не этого тьютора.
+								if(!isset($availableStudents[$i['student_id']])){ continue; }
+							}
+							$outputData[] = array(
+								'student_LastName' 			=> $i['student_LastName'],
+								'student_FirstName'			=> $i['student_FirstName'],
+								'student_Patronymic' 		=> $i['student_Patronymic'],					
+								'student_groups' 			=> implode(', ', $user_groups),					
+								'session_id_external' 		=> $i['session_id_external'],										
+								'session_name' 				=> $i['session_name'],					
+								'tutor_LastName'			=> $usersFIO[$tutor_id]['LastName'],
+								'tutor_FirstName'			=> $usersFIO[$tutor_id]['FirstName'],
+								'tutor_Patronymic'			=> $usersFIO[$tutor_id]['Patronymic'],						
+								'tutor_chair'				=> implode(',', $this->serviceOrg->getUserChair($tutor_id)),
+								'EMail'						=> $usersFIO[$tutor_id]['EMail'],
+							);
+						}
+					} else { # нет тьюторов Нужно ли выводить такие записи?
+						$outputData[] = array(
+							'student_LastName' 			=> $i['student_LastName'],
+							'student_FirstName'			=> $i['student_FirstName'],
+							'student_Patronymic' 		=> $i['student_Patronymic'],					
+							'student_groups' 			=> implode(', ', $user_groups),					
+							'session_id_external' 		=> $i['session_id_external'],										
+							'session_name' 				=> $i['session_name'],					
+							'tutor_LastName'			=> '',
+							'tutor_FirstName'			=> '',
+							'tutor_Patronymic'			=> '',						
+							'tutor_chair'				=> '',
+							'EMail'						=> '',
+						);
+					}					
+				} elseif(($report_type == HM_User_UserModel::TYPE_EXPORT_BASE || $report_type == HM_User_UserModel::TYPE_EXPORT_DEBT) && !isset($penaltySession[$i['session_id']][$i['student_id']])){					
+					
+					if($report_type == HM_User_UserModel::TYPE_EXPORT_DEBT){
+						if(!empty($i['ball_lesson_empty'])){ continue; } # есть занятия без оценки. Такие не нужны.
+					}
+					
+					
+					#программы сессии
+					$session_programm_id_s = explode(',', $i['programmIDs']);
+					$session_programms	= array();
+					$session_programms_code	= array();
+					foreach($session_programm_id_s as $prog_id){
+						$session_programms[$prog_id]	= $listProgramms[$prog_id]['name'];
+						if(!empty($listProgramms[$prog_id]['id_external'])){
+							$session_programms_code[$prog_id] = $listProgramms[$prog_id]['id_external'];
+						}
+					}
+					
+					# после проходдения всего цикла суммировать из буфера - схлопнуть. Потом добавить в файл в конец данных.
+					if(!empty($i['session_module_code'])){
+						$this->sessionModuleRows[$i['student_id']][$i['session_module_code']][$i['session_id']] = $i;
+						$this->sessionModuleRows[$i['student_id']][$i['session_module_code']][$i['session_id']]['student_groups'] 			= implode(', ', $user_groups);
+						$this->sessionModuleRows[$i['student_id']][$i['session_module_code']][$i['session_id']]['student_group_codes'] 		= implode(', ', $user_group_codes);
+						$this->sessionModuleRows[$i['student_id']][$i['session_module_code']][$i['session_id']]['session_programms'] 		= implode(', ', $session_programms);
+						$this->sessionModuleRows[$i['student_id']][$i['session_module_code']][$i['session_id']]['session_programm_codes'] 	= implode(', ', $session_programms_code);
+						continue;						
+					}
+					
+					$tutor_id 	= end($tutorIDs); # берем последнего назначенного. Это последний элемент в массиве.
+					$teacher_id = end(explode(',', $i['tutors'])); # берем последнего назначенного. Это последний элемент в массиве.
+					#$teacher_id = end(explode(',', $i['teachers'])); # берем последнего назначенного. Это последний элемент в массиве.
+					
+					
+					
+					
+					
+					$ball_exam 		= $this->getExamBall($i['mark']);
+					$ball_current 	= $this->getCurrentBall($i['mark'], $ball_exam);
+					
+					$ball_current 	= round($ball_current); 
+					$ball_exam 		= round($ball_exam);
+					
+					$semester 			= (!empty($i['session_semester'])) ? ($i['session_semester']) : ($learningSubjects[$i['session_id']]['ls_sem']);
+					$isSubjectSemester 	= (!empty($i['session_semester'])) ? (1) : (0);
+					
+					$outputData[] = array(
+						'student_LastName' 			=> $i['student_LastName'],
+						'student_FirstName'			=> $i['student_FirstName'],
+						'student_Patronymic' 		=> $i['student_Patronymic'],
+						'student_mid_external' 		=> $i['student_mid_external'],				
+						'student_groups' 			=> implode(', ', $user_groups),
+						'student_group_codes'		=> implode(', ', $user_group_codes),				
+						'session_programms' 		=> implode(', ', $session_programms),
+						'session_programm_codes'	=> implode(', ', $session_programms_code),
+						'session_name' 				=> $i['session_name'],
+						'session_id_external' 		=> $i['session_id_external'],
+						'mark' 						=> str_replace('.', ',', $i['mark']),
+						'tutor_LastName'			=> $usersFIO[$tutor_id]['LastName'],
+						'tutor_FirstName'			=> $usersFIO[$tutor_id]['FirstName'],
+						'tutor_Patronymic'			=> $usersFIO[$tutor_id]['Patronymic'],
+						'tutor_mid_external'		=> $usersFIO[$tutor_id]['mid_external'],				
+						'teacher_LastName'			=> $usersFIO[$teacher_id]['LastName'],
+						'teacher_FirstName'			=> $usersFIO[$teacher_id]['FirstName'],
+						'teacher_Patronymic'		=> $usersFIO[$teacher_id]['Patronymic'],				
+						'date'						=> (isset($lastDate[$i['student_id']][$i['session_id']])) ? ( date('d.m.Y', strtotime($lastDate[$i['student_id']][$i['session_id']]) )) : (''),
+						'ball_current'				=> $ball_current,
+						'ball_exam'					=> $ball_exam,
+						'ls_name'					=> $learningSubjects[$i['session_id']]['ls_name'],
+						'ls_sem'					=> $semester,
+						'isSubjectSemester'			=> $isSubjectSemester,
+					);
+				
+				}				
+			}		
+		}
+
+		
+		# кодом сессии при выгрузке будет код модуля дисциплин. А название - первая сессия среди модуля дисциплин
+		if(count($this->sessionModuleRows) && $report_type == HM_User_UserModel::TYPE_EXPORT_BASE){
+			foreach($this->sessionModuleRows as $student_id => $session_module_codes){				
+				foreach($session_module_codes as $session_id => $sessions){
+					$summ = 0;
+					$totalZet = 0;
+					$rowContent = false;
+					foreach($sessions as $s){						
+						$summ 		= $summ + ($s['mark'] * $s['session_zet']);
+						$totalZet	= $totalZet + $s['session_zet'];
+						
+						if(!$rowContent){ $rowContent = $s; }
+						else 			{ $rowContent['session_id_external'] = $rowContent['session_id_external'].'~'.$s['session_id_external']; } # в отчет выводим первое название сессии-модуля. А id выводим все
+					}								
+					$totalBall 		= $summ / $totalZet;					
+					$ball_exam 		= $this->getExamBall($totalBall);
+					$ball_current 	= $this->getCurrentBall($totalBall, $ball_exam);						
+					$ball_current 	= round($ball_current); 
+					$ball_exam 		= round($ball_exam);					
+					
+					
+					# тут нет данных по $tutorIDs и не проверяется available_debtor_tutors. А надо?
+					$tutor_id 	= end(explode(',', $rowContent['tutors'])); # берем последнего назначенного. Это последний элемент в массиве.
+					$teacher_id = end(explode(',', $rowContent['tutors'])); # берем последнего назначенного ТЬЮТОРА. Это последний элемент в массиве. Так и дожно быть? Тьютор, не преподаватель??
+					
+					#$tutor_id 		= end($tutorIDs); # берем последнего назначенного. Это последний элемент в массиве.
+					#$teacher_id 	= end(explode(',', $rowContent['tutors'])); # берем последнего назначенного. Это последний элемент в массиве.
+					#######
+					
+					
+					#if($this->getService('User')->getCurrentUserId() == 5829 && $rowContent['session_id'] == 16048){
+					#	var_dump($rowContent['tutors'], $tutorIDs, $tutor_id, $teacher_id);
+						#echo $select2->assemble();
+						#die;
+					#}
+					
+					$semester 			= (!empty($rowContent['session_semester'])) ? ($rowContent['session_semester']) : ($learningSubjects[$rowContent['session_id']]['ls_sem']);
+					$isSubjectSemester 	= (!empty($rowContent['session_semester'])) ? (1) : (0);
+					
+					$outputData[] = array(
+							'student_LastName' 			=> $rowContent['student_LastName'],
+							'student_FirstName'			=> $rowContent['student_FirstName'],
+							'student_Patronymic' 		=> $rowContent['student_Patronymic'],
+							'student_mid_external' 		=> $rowContent['student_mid_external'],				
+							'student_groups' 			=> $rowContent['student_groups'],
+							'student_group_codes'		=> $rowContent['student_group_codes'],				
+							'session_programms' 		=> $rowContent['session_programms'],	
+							'session_programm_codes'	=> $rowContent['session_programm_codes'],
+							'session_name' 				=> $rowContent['session_name'],
+							'session_id_external' 		=> $rowContent['session_id_external'],
+							'mark' 						=> str_replace('.', ',', $totalBall),
+							'tutor_LastName'			=> $usersFIO[$tutor_id]['LastName'],
+							'tutor_FirstName'			=> $usersFIO[$tutor_id]['FirstName'],
+							'tutor_Patronymic'			=> $usersFIO[$tutor_id]['Patronymic'],
+							'tutor_mid_external'		=> $usersFIO[$tutor_id]['mid_external'],				
+							'teacher_LastName'			=> $usersFIO[$teacher_id]['LastName'],
+							'teacher_FirstName'			=> $usersFIO[$teacher_id]['FirstName'],
+							'teacher_Patronymic'		=> $usersFIO[$teacher_id]['Patronymic'],				
+							'date'						=> (isset($lastDate[$rowContent['student_id']][$rowContent['session_id']])) ? ( date('d.m.Y', strtotime($lastDate[$rowContent['student_id']][$rowContent['session_id']]) )) : (''),
+							'ball_current'				=> $ball_current,
+							'ball_exam'					=> $ball_exam,
+							'ls_name'					=> $learningSubjects[$rowContent['session_id']]['ls_name'],
+							'ls_sem'					=> $semester,
+							'isSubjectSemester'			=> $isSubjectSemester,
+					);
+				}
+				
+				
+			}
+		}
+	
+		################## Конец  #################
+		
+		} catch (Exception $e) {
+			echo $e->getMessage(), "\n";
+			//exit();
+		}
+		
+		
+			
+        //добавялем BOM
+        echo "\xEF\xBB\xBF";
+        if($report_type == HM_User_UserModel::TYPE_EXPORT_DEBT_TUTOR){
+			$title = array(
+				_('Фамилия студента'),
+				_('Имя студента'),
+				_('Отчество студента'),
+				_('Имя группы'),
+				_('ID сессии'),
+				_('Имя сессии'),				
+				_('Фамилия тьютора'),
+				_('Имя тьютора'),
+				_('Отчество тьютора'),
+				_('Кафедра тьютора'),								
+				_('Email тьютора'),								
+			);
+		} else {
+			$title = array(
+				_('Фамилия студента'),
+				_('Имя студента'),
+				_('Отчество студента'),
+				_('ID студента'),				
+				_('Имя группы'),
+				_('ID группы'),				
+				_('Имя программы'),
+				_('ID программы'),				
+				_('Имя сессии'),
+				_('ID сессии'),				
+				_('Оценка'),				
+				_('Фамилия тьютора'),
+				_('Имя тьютора'),
+				_('Отчество тьютора'),
+				_('ID тьютора'),                        				
+				_('Фамилия преподавателя'), 
+				_('Имя преподавателя'),            			
+				_('Отчество преподавателя'),            
+				_('Дата'),                                             
+				_('Текущий балл'),
+				_('Балл на экзамене/зачете'),
+				_('Наименование дисциплины'),
+				_('Семестр'),
+				_('Семестр взят из сессии'),
+			);
+		}
+        echo implode(';', $title);
+        echo "\r\n";
+		  foreach($outputData as $row){            
+            echo implode(';', $row);
+            echo "\r\n";
+        }		
+    }
+	/**
+	 * оценка итогового рейтинга (оценка на экзамене)	 
+	*/
+    public function getExamBall($mark){
+		$mark = round($mark);
+		if(empty($mark)){ return 0; }
+		
+		if($mark < 52){
+			$ball_exam = 0;
+			
+		} elseif($mark == 52){
+			$ball_exam = 1;
+			
+		} elseif($mark < 65){
+			$ball_exam	= $mark - 52;
+			
+		} elseif(65 <= $mark && $mark < 75){
+			$ball_exam = 13;
+			
+		} elseif(75 <= $mark && $mark < 85){
+			$ball_exam = 17;
+			
+		} else {
+			$ball_exam = 20;
+		}
+		return $ball_exam;
+	}
+	
+	/**
+	 * оценка текущего рейтинга
+	*/
+	public function getCurrentBall($mark, $ball_exam){
+		$mark = round($mark);
+		if(empty($mark)) { return 0; }
+		
+		if($mark < 52){
+			$ball_current = $mark;
+			
+		} elseif($mark == 52){
+			$ball_current = $mark;
+			
+		} elseif($mark < 65){
+			$ball_current = 52;
+		
+		} else {
+			$ball_current = $mark - $ball_exam;
+		}
+		return $ball_current;
+	}
+
+	public function getSessionListAction(){
+		$this->_helper->getHelper('layout')->disableLayout();
+		$this->getHelper('viewRenderer')->setNoRender();
+		$groups = (array)$this->_getParam('groups', array());
+		
+		$emptyList = array('key' => '-1', 'value' => _('Нет'));
+		
+		if( !is_array($groups) && !count($groups)){ 
+			echo Zend_Json::encode( array($emptyList) );
+			exit;
+		}
+		
+		$list = array();
+		/* # устарело. 
+		$students = $this->getStudentsByGroups($groups);				
+		if(count($students)){
+			$list = $this->getSessionsByUsers($students);			
+		}
+		*/			
+		$list = $this->getSessionByGroupViaProgramm($groups); #Теперь нужно сессии группы, назначенные через программу обучения.
+		if(!count($list)){
+			echo Zend_Json::encode( array($emptyList) );
+			exit;
+		}
+		
+		$res = array();
+		foreach($list as $k => $v){
+			$res[] = array(
+				'key' => $k,
+				'value' => $v,
+			);
+		}
+		
+		echo Zend_Json::encode( $res );
+		exit;		
+	 }
+	 
+	public function getSessionsByUsers($students){
+		$students = (array)$students;
+		if(!count($students)){ return array();}
+		
+		$select = $this->getService('Subject')->getSelect();
+        $select->from(array('session' => 'subjects'),
+            array(
+                'session_id'	=>	'session.subid',                    				
+                'session_name'	=>	'session.name',                    				
+            )
+        );
+		$select->join(array('s' => 'Students'), 's.CID = session.subid', array());
+		$select->where($this->getService('Subject')->quoteInto('s.MID IN (?)', $students));
+		$select->where('session.base = ?', HM_Subject_SubjectModel::BASETYPE_SESSION);
+		$select->where('session.isDO = ?', HM_Subject_SubjectModel::FACULTY_DO);	 # только сессии ДО		
+		$res = $select->query()->fetchAll();
+		if(!$res){ return array(); }
+		$list = array();
+		foreach($res as $i){
+			$list[$i['session_id']] = $i['session_name'];
+		}
+		return $list;
+	}
+	
+	/**
+	 * @param array
+	*/
+	public function getStudentsByGroups($groups){
+		$groups = (array)$groups;
+		if(!count($groups)){ return array(); }
+		
+		if(!$this->serviceGroup){ $this->serviceGroup = $this->getService('StudyGroup'); }
+		$students = array();
+		foreach($groups as $group_id){				
+			$res = $this->serviceGroup->getUsers((int)$group_id);
+			foreach($res as $s){
+				$students[$s] = $s;
+			}
+		}
+		return $students;
+	}
+	
+	/**
+	 * список сессий, назначенных на группу через программу обучения
+	*/
+	public function getSessionByGroupViaProgramm($groups){
+		
+		$list = array();
+		$groups = (array)$groups;
+		if(!count($groups)) { return $list; }
+		
+		$select = $this->getService('Subject')->getSelect();
+        $select->from(array('sgp' => 'study_groups_programms'),
+            array(
+                'session_id'	=>	'session.subid',                    				                                    				
+                'session_name'	=>	'session.name',                    				                                    				
+            )
+        );
+		$select->join(array('pe' => 'programm_events'), 'pe.programm_id = sgp.programm_id', array());
+		$select->join(array('session' => 'subjects'), 'session.subid = pe.item_id', array());
+		
+		$select->where('session.base = ?', HM_Subject_SubjectModel::BASETYPE_SESSION);
+		$select->where('session.isDO = ?', HM_Subject_SubjectModel::FACULTY_DO);	 # только сессии ДО	
+		$select->where('pe.type = ?', HM_Programm_Event_EventModel::EVENT_TYPE_SUBJECT);
+		$select->where($this->getService('Subject')->quoteInto('sgp.group_id IN (?)', $groups));
+		$select->group(array('session.subid', 'session.name'));		
+		$res = $select->query()->fetchAll();
+		if(!$res) { return $list; }
+		
+		foreach($res as $session){
+			$list[$session['session_id']] = $session['session_name'];
+		}
+		return $list;
+	}
+    
+}
+

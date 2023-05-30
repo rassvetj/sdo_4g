@@ -1,0 +1,1 @@
+<div class="blog-middle">    <div class="blog-list">        <?php $blogPost = $this->blogPost;?>        <?php include 'post.tpl';?>    </div>    <?php include 'sidebar.tpl';?>    <div style="clear: both"></div></div>

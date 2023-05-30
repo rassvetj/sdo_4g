@@ -1,0 +1,1 @@
+<p><iframe src="<?=$this->url?>" align="left" width="100%" height="680"></iframe></p>

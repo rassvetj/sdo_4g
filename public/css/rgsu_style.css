@@ -1,0 +1,1039 @@
+table.cardstudent td{
+	padding:5px;
+}
+
+table.cardstudent thead td, table.cardstudent td.f_course {
+	font-weight:bold;	
+	font-size: 14px;				
+}
+
+table.cardstudent td.f_cap {
+	width: 150px;
+	font-style: italic;
+}
+
+table.cardstudent td{
+	.min-width: 35%;
+	width: 180px;
+}
+ 
+table.cardstudent {
+	width: 900px;
+	margin: 0 auto;			
+	border-collapse: collapse;				
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+
+table.cardstudent tbody td {
+	border: 1px solid black;				
+}
+
+table.cardstudent tbody td.f_status {
+	color: rgb(50, 89, 189);
+	font-weight: 600;
+}
+
+table.cardstudent tbody td.f_order {
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: 600;
+	text-align: right;				
+}
+
+table.cardstudent tbody td.f_take{
+	text-align: right;
+	color: rgb(50, 89, 189);
+	font-weight: 600;
+}
+
+.report-area {
+	width: 900px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+
+.cardstudent-widget td, .student-debt-widget td{padding:5px;} 
+.cardstudent-widget thead td, .student-debt-widget thead td {font-weight:bold;}
+.cardstudent-widget, .student-debt-widget {width: 100%;}
+
+table.cardstudent-widget, table.student-debt-widget{
+	width: 100%;
+	font-size: 11px;
+}
+
+table.cardstudent-widget td.f_cap, table.cardstudent-widget td.f_order {
+	width: 110px;
+}
+
+#order, #ticket, #question, #sdoc {
+	font-size: 12px;
+}
+
+#order .element,  #ticket .element, #question .element, #sdoc .element {
+	margin-bottom: 12px;
+}
+
+#order .element input, #ticket .element input, #question .element input, #sdoc .element input {
+	width: 360px;
+	height: 20px;
+	padding: 2px;
+}
+
+#order .element select, #ticket .element select , #sdoc .element select {
+	width: 368px;
+	height: 28px;
+	max-width: 366px;	
+}
+
+#order .element textarea, #question .element textarea, #sdoc .element textarea  {
+	width: 364px;
+	height: 50px;	
+}
+
+#cardStudent .ui-portlet-body, #recordCardBlock .ui-portlet-body  {
+	max-height: 650px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.area-order-info {
+	resize: none;
+	border: none;
+	background-color: white;
+	
+}
+
+#order, #sdoc, #question {
+	width: 380px;
+	float: left;
+	text-align: justify;
+}
+
+
+
+#area-description{
+	margin-right: 10px;	
+}
+
+.area-ch-form-order {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contract-block {
+	float: left;	
+	width: 370px;
+	padding: 0 50px 0 5px;
+	font-size: 12px;	
+	margin-top: 20px;
+}
+
+.contract-block span.contract-value {
+	font-weight: bold;
+}
+
+.contract-block  table.description{
+	line-height: 18px;
+}	
+
+#area-description {
+	background-color: #EDF0F3;
+	border: 1px solid #ACC4B4;
+	color: #64946D;
+	.padding: 3px;
+	padding: 8px 3px;
+	text-indent: 20px;  
+	line-height: 15px;
+	text-align: justify;
+}
+
+
+.el-group-clear, .el-group-clear dl  {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.el-group-clear dl dt  span.tooltip, .el-group-clear dl dt  span.label_position {
+	margin-left: 20px;
+}
+
+#sdoc .els-inputfile-infoblock {
+	margin-left: 0px;
+}
+
+
+.area-description-right {
+	float: left;
+	width: 380px;
+}
+
+#content-area .description-area-tutor {
+	font-size: 20px;
+	margin: 5px;
+	color: black;
+}
+
+.spinner-area-tutor {
+	width: 100%;
+	min-height: 50px;
+}	
+
+
+.student-ticket-area .ticket-page {
+	//float: left;
+	//border: 1px solid black;
+	//padding: 35px 15px 35px 15px;
+}
+
+.recordbook-area {
+	//font-size: 13px;
+	font-size: 15px;
+	font-family: initial;
+}
+
+.recordbook-area .rb-page {
+	float: left;
+	border: 1px solid black;
+	padding: 15px 5px 35px 5px;
+	//height: 336px;	
+	height: 370px;	
+	//width: 505px;
+	width: 600px;
+}
+
+.recordbook-area .rb-page-2 {
+	//width: 517px;
+	width: 612px;
+}
+
+
+.recordbook-area .rb-page-3 {
+	padding: 0px 5px 35px 5px;	
+}
+
+.recordbook-area  table.rb-page-content{
+	width:100%;
+}
+
+.recordbook-area .rb-bold {
+	font-weight: bold;
+}
+
+.recordbook-area .rb-center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.recordbook-area .rb-text-right{
+	text-align: right;
+}
+
+.recordbook-area .rb-photo {
+	width:125px;	
+	//height: 145px;	
+	height: 155px;	
+}
+
+.recordbook-area .rb-footer {
+	text-align: center;	
+}
+
+.recordbook-area .rb-text-under {
+	font-size:11px;
+}
+
+.recordbook-area .rb-w400{
+	width: 400px;
+}
+
+.recordbook-area td {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.rb-caption {
+	font-size: 17px;
+}
+
+.rb-caption-2 {
+	font-size: 14px;
+	padding-bottom: 24px;
+	padding-top: 10px;
+}
+
+.rb-caption  td {
+	font-weight: bold;
+	padding: 20px 0 5px 0;
+}
+
+.rb-pt10 { padding-top: 10px; }
+
+.rb-pt15 { padding-top: 15px; }
+
+.rb-w290 { width: 290px; }
+
+
+.rb-tbl-border td { 
+	border: 1px solid black;		
+}
+.rb-border-b-hide { border-bottom-style: hidden!important; }
+.rb-border-r-hide { border-right-style: hidden!important; }
+
+.rb-tbl-border { border-collapse: collapse; }
+
+.rb-pad-reset { padding: 0px!important;}
+.rb-border-reset { border: none!important;}
+
+.rb-text-left { text-align: left; }
+
+.rb-pad-l-3 { padding-left: 3px; }
+.rb-pad-r-3 { padding-right: 3px; }
+
+
+.rb-tbl-caption td {
+	vertical-align: middle;
+	line-height: 10px;
+}
+
+.rb-tbl-caption-big {
+	height:51px;
+}
+
+.rb-tbl-caption-big td {
+	vertical-align: middle;
+	line-height: 10px;
+}
+
+.rb-valign-b {
+  vertical-align: bottom;
+}
+
+.rb-valign-m {
+  vertical-align: middle;
+}
+
+.rb-c1 { width: 24px; }
+.rb-c2 { width: 200px;}
+.rb-c3 { width: 50px; }
+.rb-c4 { width: 70px; }
+.rb-c5 { width: 53px; }
+.rb-c6 {}
+.rb-c7 {}
+
+.rb-c-mini { width: 75px; }
+.rb-c-small { width: 100px; }
+.rb-c-normal { width: 200px; }
+.rb-c-medium { width: 250px; }
+.rb-c-big { width: 300px; }
+
+.rb-row-def { 
+	height: 25px;
+	line-height: 10px;	
+}
+
+.rb-row-def td {
+	vertical-align: middle;
+}
+
+.rb-row-gos { height: 32px; }
+
+.rb-row-grad {
+	height: 32px;
+}
+
+.rb-row-grad td {
+	vertical-align: bottom;
+}
+
+.rb-row-signature-area {
+	height: 77px;
+}
+
+.rb-row-signature-area-min {
+	height: 50px;
+}
+
+.rb-pad-r-75 {
+  padding-right: 75px;
+}
+
+.rb-border-b {
+	border-bottom: 1px solid black;
+}
+.rb-page .rb-mar-r {
+	margin-right: 20px;
+}	
+
+.rb-float-r {
+	float:right;
+}
+
+.rb-bg-line {	
+	background: url(../images/line.png);
+	//background-size: 100% 19px;
+	//background-position: center 4px; 
+	background-position: center 0px; 
+    //background-repeat: repeat-y;
+    background-repeat: repeat;
+	padding-bottom: 3px;	
+}
+
+.rb-bg-none-line {
+	background-color: white;
+	display: inline-block;
+	padding-bottom: 1px;
+}	
+
+.rb-hide-out {
+	display: inline-block;	
+	overflow: hidden;
+	max-height: 21px;
+	padding-bottom: 1px;
+}
+
+.form-area-def {
+	width: 370px;
+	padding: 0 50px 0 5px;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.form-area-def  .element input {
+	width: 360px;
+	height: 20px;
+	padding: 2px;
+}
+
+.user-right-active {
+	background-color: #009600!important;
+}	
+.user-left-active {
+	background-color: rgb(253, 48, 48)!important;
+}
+.user-button-text {
+	color: white;	
+}
+
+#volunteer_event_request dd, #volunteer_event_request dt {
+	float: left;
+	padding: 5px;
+	font-size: 13px;				
+}
+#volunteer_event_request dd.element, #volunteer_event_request dt {
+	padding-top: 11px;
+}
+#vHelpBtn {
+	background-image: none;	
+	text-indent: 0px;
+	width: 70px;
+}
+.vText{
+	font-size: 13px;	
+}
+
+
+table.workload {
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+table.workload td, table.workload th {
+	padding: 3px;	
+}
+
+table.workload th {
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+table.workload td, table.workload th {
+	border: 1px solid black;
+}
+
+.grid-filter-daterange .wrapFiltersInput{
+	padding-right: 0px;
+}
+
+.main .els-grid tr.filters_tr select {	
+	min-width: 5.5em;
+}
+
+.default-form-style-area {
+    width: 380px;
+    float: left;
+    text-align: justify;
+	margin-top: 15px;
+}
+
+.default-form-style-area form {
+	margin: 10px 0px;
+}
+
+.default-form-style-area select {    
+    padding: 2px;
+	width: 368px;
+    height: 30px;
+}
+
+.default-form-style-area form dd { 	
+	margin-bottom: 12px;
+}
+	
+.hostel-head-text {
+	padding: 15px 0px;
+    font-size: 13px;
+}
+	
+	
+.form_area .select2-container--default .select2-selection--single .select2-selection__rendered {     line-height: 22px; }
+.form_area .select2-container .select2-selection--single, .h25 { height: 25px; }
+.form_area .select2-container--default .select2-selection--single { border-radius: 0px; }	
+	
+.subject-debt, .subject-debt:visited { color: red; }
+.subject-do, .subject-do:visited { color: rgba(27, 154, 38, 0.95); }
+.subject-new-action, .subject-new-action:visited  { color: red; }
+
+
+.lesson-status-tab {
+	float: right;
+	margin: 0 3px 0 3px;	 
+}
+.ui-tabs.hm-subject-list-item-description .ui-tabs-panel { width: 600px; }
+
+.lesson_wrapper_1 #lesson_title .lesson-title-past {
+	font-size: 1.636em;
+	color: #6B6B6B;
+}
+
+.area-grid { 
+	padding-right: 410px;
+}	
+.area-form{
+	position: absolute;
+    top: 0;
+    right: 30px;
+    width: 360px;
+}
+
+.rgsu-hide-block {
+	display: none;
+}
+
+.rgsu-show-block {
+	display: block;
+}
+
+.number_number {
+	margin-right: 10px;
+}
+
+.number_number span{
+	font-size: 80%;	
+}
+
+.score_red {
+	font-size: 30px;
+}
+
+
+
+// reports
+.report .filters_tr{
+	display:none;
+}
+
+.report table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+.report table td, .report table th {
+	padding: 3px;	
+}
+
+.report table th {
+	font-weight: bold;
+}
+
+.report table td, .report table th {
+	border: 1px solid black;
+}
+
+.report  #report span.select2-container, .report  #report select, .report  #report input[type=text], .report  select{
+	width: 300px;
+	height:26px;
+	margin-bottom: 10px;		
+}
+
+.report  #report select, .report select {
+	border-radius: 4px;					
+}
+.report  #report img {
+	vertical-align: baseline;
+}
+
+.report  .description {
+	display: none;
+}
+
+.report .hasDatepicker {
+	border-radius: 3px;
+    height: 23px;
+    text-indent: 7px;
+}
+
+
+/* Анкетирование */
+.survey-tbl-result{
+	border: 1px solid black;
+}
+
+.survey-result{
+	font-size: 14px;
+}
+
+.sr-caption {
+    text-align: center;
+	font-size: 16px;
+	padding-bottom: 20px;
+	text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.sr-sub-caption {
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 20px;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.survey-result p{
+	padding: 3px;    
+}
+
+.sr-short-msg {
+	text-decoration: underline;
+}
+
+.survey-form{
+	font-size: 14px;
+	line-height: 20px;
+}
+  
+.sr-chart-area {
+    max-width: 500px;
+	max-height: 500px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}  
+
+.score-block{
+	width: 50%;
+}
+
+.not-pass div span {
+	text-decoration: line-through;
+}
+
+.not-pass-progress div span {
+	text-decoration: line-through;
+	color: #CD3000;
+}
+
+.header-bc {
+	color: #63738b;
+	font-size: 15px;
+}
+
+body .btn-grad-vedomost-all {
+	color: black!important;
+	background-image: -webkit-linear-gradient(top, #d66161, #d66161)!important;
+	background-image: -ms-linear-gradient(top, #d66161, #d66161)!important;
+}
+
+body .btn-grad-vedomost-all:hover, body .btn-grad-vedomost-all:active, body .btn-grad-vedomost-all:focus, body .btn-grad-vedomost-all:visited {
+	color: white!important;
+	background-image: -webkit-linear-gradient(top, #d66161, #d66161)!important;
+	background-image: -ms-linear-gradient(top, #d66161, #d66161)!important;
+}
+
+.btn-grad-vedomost-all {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.btn-grad-vedomost-all .marksheet-tooltip-text {
+    visibility: hidden;
+    width: 120px;    
+	background-image: -webkit-linear-gradient(top, #484848, #1e1e1e);
+    color: #5ecff5;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.btn-grad-vedomost-all .marksheet-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1e1e1e transparent transparent transparent;	
+}
+
+.btn-grad-vedomost-all:hover .marksheet-tooltip-text {
+    visibility: visible;
+}
+
+.default-form-area {
+	max-width: 368px;
+}
+
+.default-form-area .area-club-info{
+    text-align: justify;
+	.text-indent: 15px;
+}
+
+.default-form-area input[type=text]{
+    width: 360px;
+    height: 20px;
+    padding: 2px;
+	.border-radius: 4px;
+	.-webkit-border-radius: 4px;
+   .-moz-border-radius: 4px;
+   .-khtml-border-radius: 4px; 
+}
+
+.default-form-area select {
+    width: 369px;
+    height: 30px;
+}
+
+.area-club-info{
+	padding: 5px;
+}
+
+.area-club-info td, .area-club-info th {
+	padding-bottom: 5px;
+}
+
+.area-claim {
+	font-size: 12px;
+	max-width: 600px;
+}
+
+.area-claim td, .area-claim th {
+	text-align: left;
+	padding: 3px;	    
+}
+
+.area-claim th {	
+	width: 100px;
+}
+
+.form-report-conditions  .element{
+	padding-bottom: 10px;
+}
+
+.tbl-default-report, .tbl-default-report td, .tbl-default-report th {
+	border: 1px solid #aaaaaa;
+	border-collapse: collapse;
+	padding: 3px;
+}
+
+.default-form-area  input[type=text].hasDatepicker{
+	width: 335px;	
+}
+
+
+.default-form-area .ui-datepicker-trigger{
+    height: 25px;
+    width: 25px;
+}
+
+.row-removed {
+	background-color: #ff00004f;
+}
+
+.dialog-info-debt, .dialog-info-debt-payment {
+	font-size: 13px;
+}
+
+.dialog-info-debt p, .dialog-info-debt-payment p{
+    padding: 2px;
+}
+.dialog-info-debt a, .dialog-info-debt-payment a{
+    outline-style: none;
+}
+
+.btn-debt-confirm, .btn-debt-confirm:hover{
+	color: #5ecff5!important;
+}
+
+.form-ask-area {
+	padding-top: 15px;
+}
+
+.form-ask-area  select {
+	width: 100%;
+	max-width: 100%;
+}
+
+.form-ask-area  dd {
+	padding-right: 22px;
+}
+
+.form-ask-area #files-label {
+	margin-top: 130px;
+}
+
+
+.services-list {
+	text-align: left;
+}
+.services-list ul {
+	list-style: none;
+}
+
+
+.subject-info-caption {
+	color: #888888;
+	font-size:11px;
+}
+
+.subject-info-value {
+	color: #333333;
+	font-size:11px;
+}
+
+.my-payments-area {
+	padding-bottom: 30px;
+	font-size: 13px;
+}
+
+.my-payments-area table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.my-payments-area table tr td {
+	border: 1px solid black;
+}
+
+.my-payments-area table .caption{	
+    padding: 5px;
+    text-align: center;
+	vertical-align: middle;
+}
+
+.my-payments-area table td {
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.my-payments-area table .number {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.accordion-data ol{
+    list-style: none;
+	margin-left: 20px;
+}
+.accordion-data ol > li{
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}
+.accordion-data ol > li:before{
+    content: '✔';
+    position: absolute; top: 0; left: 0;    
+}
+
+.accordion-container{
+	font-size:17px;
+	text-align: justify;
+	border: 1px solid #fdfdfd;
+    margin-bottom: 10px;	
+	padding: 0px;
+    padding-top: 10px;
+}
+
+.accordion-header a{
+	margin: 0 !important;
+    padding: 10px;
+    font-size: 18px;
+    background: #f9f9f9;
+    display: block;
+    padding-right: 30px;
+    position: relative;	
+	border-bottom: none;
+    color: #3d3d3d;
+	text-decoration: none;
+}
+
+.accordion-container.open .accordion-header a{
+	background: #effaff;
+	
+}
+
+.accordion-header a::after{
+	content: '';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 5px solid transparent;
+    border-top: 5px solid #ccc;
+}
+
+.accordion-container.open .accordion-header a::after{
+	content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #3467A0;
+}
+
+.accordion-container.open .accordion-data{
+	display:block;
+}
+
+.accordion-container .accordion-data {
+	display:none;
+	font-size: 15px;
+	padding: 10px;
+}
+
+
+
+.my-payments-area .info-area {
+	vertical-align: top;
+}
+
+.form-area-default select {
+	height: 20px;
+    padding: 2px;
+	width: 200px;
+	border-radius: 3px;
+}
+
+.form-area-default textarea {
+	border-radius: 3px;
+}
+
+.form-area-full-width input:not([type="submit"]), .form-area-full-width select, .form-area-full-width textarea {
+	width: 100%;
+}
+
+.popup-default{
+	max-width: 400px;
+}
+
+#container .btn-my-payments-get-ticket{
+	color: white;
+	background-image: -webkit-linear-gradient(top, #f48723, #f06825);
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+#container .btn-my-payments-pay-online{
+	color: white;
+	background-image: -webkit-linear-gradient(top, green, green);
+	padding-left: 24px;
+    padding-right: 24px;
+	margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.table-default {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.table-default, .table-default td, .table-default th {
+	border: 1px solid #ccc;
+}
+
+.table-default td, .table-default th{
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+}
+
+.table-default .center{
+	text-align:center;
+}
+
+.byp-area {
+	font-size: 13px;
+}
+
+.byp-items {
+	text-align: center;
+}
+
+.byp-errors {
+	color:red;
+	text-align: center;
+	font-size: 16px;
+    padding: 15px;
+}
+
+.byp-tbl-items, .byp-tbl-items td, .byp-tbl-items th  {
+	border: 1px solid #ccc;
+    border-collapse: collapse;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.byp-tbl-items th   {
+    background-color: #0067a4;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.byp-tbl-items tr:hover {
+    background-color: #ecf0f1;
+} 
+
+.byp-items {
+	padding-bottom: 20px;
+}
+
+.byp-item-error {
+	background-color: #f443364d;
+}
+
+.byp-item-error-list {
+    list-style: none;    
+    text-align: left;
+	margin-left: 0px;
+}
+
+.byp-info table, .byp-info table td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+    padding: 5px;	
+}
+
+#grid .massActions {
+	width: 80%;
+}
+
+.hm-subject-list-item-description-lesson-title .isFailLesson, .hm-subject-list-item-description-lesson-title a.isFailLesson:visited {
+	color:#cd3000;
+}

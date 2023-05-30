@@ -1,0 +1,39 @@
+		</div>
+	</div>
+</div>
+<script>
+	// {?t?}отключить проверку пропущенных вопросов{?/t?}
+	//document.m.ischecked_<?=$number?>.value=1;
+	$("form[name='m']").last().find('#ischecked_<?=$number?>').val(1);
+	function eLS_create_question_sortable_<?=$number?>() {
+		$('.eLS-sortable-<?=$number?>').sortable({
+			axis: 'y, x',
+			grid: [1, 1],
+			opacity: false,
+			delay: 5,
+			helper: 'clone',
+			tolerance: 'pointer',
+			placeholder: 'ui-state-highlight',
+			containment: '.els-content',
+			connectWith: ['.eLS-sortable-<?=$number?>'],
+			dropOnEmpty: true,
+			handle: '.eLS-drag-handler',
+			stop: function(event, ui) {
+				ui.item[0].style.opacity = '';
+				ui.item[0].style.filter = '';
+				var serializedSortable = $(this).sortable('toArray');
+				for (var i = 0; i < serializedSortable.length; ++i) {
+					var element = document.getElementById(serializedSortable[i]);
+					if (!element) { continue; }
+					$(element).find('.eLS-drag-order ').text((i + 1).toString())
+					element.firstChild.value = (i + 1).toString();
+				}
+			}
+		});
+		this.parentNode.removeChild(this);
+	}
+	$(window).bind('unload', function() {
+		$('.eLS-sortable-<?=$number?>').sortable('destroy');
+	});
+</script>
+<img src="<?=$GLOBALS['sitepath']?>/images/loaded.gif" onload="eLS_create_question_sortable_<?=$number?>.call(this);" />

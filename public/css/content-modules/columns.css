@@ -1,0 +1,84 @@
+.extended-page .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.extended-page .hgll-colwrap-middle, .extended-page .hgll-colwrap-inner, .extended-page .hgll-col1wrap, .extended-page .hgll-col1, .extended-page .hgll-col2, .extended-page .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.extended-page .hgll-colwrap-inner { float: left; width: 200%; position: relative; }
+.extended-page .hgll-col1wrap { width: 50%; }
+.extended-page .hgll-col1, .extended-page .hgll-col2, .extended-page .hgll-col1wrap { position: relative; }
+.extended-page .hgll-col1 { overflow: hidden; }
+.extended-page .hgll-colwrap-outer { background: transparent; }
+.extended-page .hgll-colwrap-inner { background: transparent; }
+.extended-page .hgll-col1 { margin-top: 0; margin-bottom: 0; margin-left: 245px; margin-right: 5px; }
+.extended-page .hgll-col2 { width: 240px; }
+.extended-page .hgll-colwrap-inner { right: 100%; margin-left: -245px; }
+.extended-page .hgll-col2 { float: right; left: 245px; }
+.extended-page .hgll-col1wrap { float: left; left: 50%; }
+
+.extended-page-narrow .hgll-col2 { display: none; }
+.extended-page-narrow .columns .hgll-col2 { display: block; }
+
+.hgll-pc-3-columns .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.hgll-pc-3-columns .hgll-colwrap-middle, .hgll-pc-3-columns .hgll-colwrap-inner, .hgll-pc-3-columns .hgll-col1wrap, .hgll-pc-3-columns .hgll-col1, .hgll-pc-3-columns .hgll-col2, .hgll-pc-3-columns .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.hgll-pc-3-columns .hgll-colwrap-middle, .hgll-pc-3-columns .hgll-colwrap-inner { float: left; width: 100%; position: relative; }
+.hgll-pc-3-columns .hgll-col1, .hgll-pc-3-columns .hgll-col2, .hgll-pc-3-columns .hgll-col3 { float: left; position: relative; padding: 0; overflow: hidden; }
+.hgll-pc-3-columns .hgll-colwrap-outer { background: transparent; }
+.hgll-pc-3-columns .hgll-colwrap-middle { right: 33.334%; background: transparent; }
+.hgll-pc-3-columns .hgll-colwrap-inner { right: 33.334%; background: transparent; }
+.hgll-pc-3-columns .hgll-col1 { width: 32.833%; left: 66.667%; }
+.hgll-pc-3-columns .hgll-col2 { width: 32.334%; left: 67.667%; }
+.hgll-pc-3-columns .hgll-col3 { width: 32.834%; left: 68.667%; }
+
+.hgll-pc-2-columns .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.hgll-pc-2-columns .hgll-colwrap-middle, .hgll-pc-2-columns .hgll-colwrap-inner, .hgll-pc-2-columns .hgll-col1wrap, .hgll-pc-2-columns .hgll-col1, .hgll-pc-2-columns .hgll-col2, .hgll-pc-2-columns .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.hgll-pc-2-columns .hgll-colwrap-middle, .hgll-pc-2-columns .hgll-colwrap-inner { float: left; width: 100%; position: relative; }
+.hgll-pc-2-columns .hgll-col1, .hgll-pc-2-columns .hgll-col2, .hgll-pc-2-columns .hgll-col3 { float: left; position: relative; padding: 0; overflow: hidden; }
+.hgll-pc-2-columns .hgll-colwrap-outer { background: transparent; }
+.hgll-pc-2-columns .hgll-colwrap-inner { right: 50%; background: transparent; }
+.hgll-pc-2-columns .hgll-col1 { width: 49.5%; left: 50%; }
+.hgll-pc-2-columns .hgll-col2 { width: 49.5%; left: 51%; }
+
+.hgll-pc-1-column .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.hgll-pc-1-column .hgll-colwrap-middle, .hgll-pc-1-column .hgll-colwrap-inner, .hgll-pc-1-column .hgll-col1wrap, .hgll-pc-1-column .hgll-col1, .hgll-pc-1-column .hgll-col2, .hgll-pc-1-column .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.hgll-pc-1-column .hgll-colwrap-middle, .hgll-pc-1-column .hgll-colwrap-inner { float: left; width: 100%; position: relative; }
+.hgll-pc-1-column .hgll-col1, .hgll-pc-1-column .hgll-col2, .hgll-pc-1-column .hgll-col3 { float: left; position: relative; padding: 0; overflow: hidden; }
+.hgll-pc-1-column .hgll-colwrap-outer { background: transparent; }
+.hgll-pc-1-column .hgll-col1 { width: 100%; left: 0%; }
+
+.portlets-editor .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.portlets-editor .hgll-colwrap-middle, .portlets-editor .hgll-colwrap-inner, .portlets-editor .hgll-col1wrap, .portlets-editor .hgll-col1, .portlets-editor .hgll-col2, .portlets-editor .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.portlets-editor .hgll-colwrap-inner { float: left; width: 200%; position: relative; }
+.portlets-editor .hgll-col1wrap { width: 50%; }
+.portlets-editor .hgll-col1, .portlets-editor .hgll-col2, .portlets-editor .hgll-col1wrap { position: relative; }
+.portlets-editor .hgll-col1 { overflow: hidden; }
+.portlets-editor .hgll-colwrap-outer { background: transparent; }
+.portlets-editor .hgll-colwrap-inner { background: transparent; }
+.portlets-editor .hgll-col1 { margin-top: 0; margin-bottom: 0; margin-left: 250px; margin-right: 0; }
+.portlets-editor .hgll-col2 { width: 240px; }
+.portlets-editor .hgll-colwrap-inner { left: 245px; }
+.portlets-editor .hgll-col1 { right: 100%; }
+.portlets-editor .hgll-col2 { float: left; right: 245px; }
+.portlets-editor .hgll-col1wrap { float: right; right: 245px; }
+.portlets-editor .draggable-area-2columns .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.portlets-editor .draggable-area-2columns .hgll-colwrap-middle, .portlets-editor .draggable-area-2columns .hgll-colwrap-inner, .portlets-editor .draggable-area-2columns .hgll-col1wrap, .portlets-editor .draggable-area-2columns .hgll-col1, .portlets-editor .draggable-area-2columns .hgll-col2, .portlets-editor .draggable-area-2columns .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.portlets-editor .draggable-area-2columns .hgll-colwrap-middle, .portlets-editor .draggable-area-2columns .hgll-colwrap-inner { float: left; width: 100%; position: relative; }
+.portlets-editor .draggable-area-2columns .hgll-col1, .portlets-editor .draggable-area-2columns .hgll-col2, .portlets-editor .draggable-area-2columns .hgll-col3 { float: left; position: relative; padding: 0; overflow: hidden; }
+.portlets-editor .draggable-area-2columns .hgll-colwrap-outer { background: transparent; }
+.portlets-editor .draggable-area-2columns .hgll-colwrap-inner { right: 50%; background: transparent; }
+.portlets-editor .draggable-area-2columns .hgll-col1 { width: 49.5%; left: 50%; }
+.portlets-editor .draggable-area-2columns .hgll-col2 { width: 49.5%; left: 51%; }
+
+.subject-catalog .hgll-colmask { margin: 0 !important; border: 0 !important; padding: 0 !important; position: relative; float: none; clear: both; width: 100%; overflow: hidden; }
+.subject-catalog .hgll-colwrap-middle, .subject-catalog .hgll-colwrap-inner, .subject-catalog .hgll-col1wrap, .subject-catalog .hgll-col1, .subject-catalog .hgll-col2, .subject-catalog .hgll-col3 { left: auto; right: auto; float: none; position: static; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; width: auto; overflow: visible; }
+.subject-catalog .hgll-colwrap-inner { float: left; width: 200%; position: relative; }
+.subject-catalog .hgll-col1wrap { width: 50%; }
+.subject-catalog .hgll-col1, .subject-catalog .hgll-col2, .subject-catalog .hgll-col1wrap { position: relative; }
+.subject-catalog .hgll-col1 { overflow: hidden; }
+.subject-catalog .hgll-colwrap-outer { background: transparent; }
+.subject-catalog .hgll-colwrap-inner { background: transparent; }
+.subject-catalog .hgll-col1 { margin-top: 0; margin-bottom: 0; margin-left: 360px; margin-right: 0; }
+.subject-catalog .hgll-col2 { width: 350px; }
+.subject-catalog .hgll-colwrap-inner { left: 355px; }
+.subject-catalog .hgll-col1 { right: 100%; }
+.subject-catalog .hgll-col2 { float: left; right: 355px; }
+.subject-catalog .hgll-col1wrap { float: right; right: 355px; }
+
+.columns { *zoom: 1; }
+.columns:after { content: ""; display: table; clear: both; }

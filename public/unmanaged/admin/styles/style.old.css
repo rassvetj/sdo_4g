@@ -1,0 +1,187 @@
+.title {color:#8D6D4B;
+	
+}
+.shown {
+display: inline;
+}
+.hidden {
+display: none;
+}
+@font-face
+{ font-family: Micra;
+  font-style: normal;
+  font-weight: normal;
+  src: url(MICRA0.eot);
+}
+.webd {
+font-family: 'Webdings'; font-size: 20px; font-weight: normal; line-height: 13px; cursor: none;
+}
+.wing {
+font-family: 'Wingdings'; font-size: 20px; font-weight: normal; line-height: 13px; cursor: none;
+ vertical-align : bottom;
+}
+.webdna { 
+font-family: 'Webdings'; font-size: 20px; font-weight: normal; line-height: 13px; cursor: default; 
+}
+.wingna {
+font-family: 'Wingdings'; font-size: 20px; line-height: 13px; cursor: default; 
+}
+
+
+.brdr { border : 1px solid #D1CBBD;
+	
+}
+.br{  background -color :  #D1CBBD;   	     }
+.brdr2{
+    border-bottom : 1px solid #C9CaB4;
+	border-right : 1px solid #C9CaB4;
+	border-left : 1px solid #C9CaB4;	
+}
+.quest {
+font-family: Verdana; font-size: 13px; padding: 5px; background-color: #FEFDF5;
+}
+.questt{
+ background-color: #FEFDF5;
+}
+.hello {
+font-size: 14px; font-family: 'Ms Sans Serif'; padding-left: 7px; padding-top: 3px;
+}
+.date {
+font-family: Verdana; font-size: 10px; 
+}
+.coursename {
+font-family: 'Ms Sans Serif'; font-size: 11px; padding-left: 20px;
+}
+.cBorder {
+background-color: #C9CaB4;
+}
+
+.cMainBG {
+background-color: #FFFFFF;
+}
+.cPageBG {
+background-color: #FEF8E6;
+}
+
+.cMain {
+color: #000000;
+}
+
+.cHilight{
+color: #79776A;
+
+}
+.cHilight2{
+color: #79776A; background-color: #E6DED1;
+
+}
+.cDisabled {
+color: #4C4C40;
+}
+
+.shedtitle {
+font-family: Verdana, 'Ms Serif';  font-size: 12px;  color: #7F5421;
+ vertical-align : middle;
+   padding-bottom : 1px;
+   padding-top : 1px;
+      font-weight : bolder;
+      }
+.shedadd {
+
+font-family: "MS Sans Serif"; font-size: 9;  border-style: solid; color: #4C4C40; 
+background-color : #C7D2C2; border-width: 1px;  border-color:#D1CBBD;
+ font-weight : bolder;   text-transform: lowercase;
+}
+.shedaddform {
+font-family: "MS Sans Serif"; font-size: 9px; letter-spacing: 1px;  padding-top: 5px; text-transform: lowercase; 
+}
+.schedule {
+font-family: 'Ms Sans Serif'; font-size: 11px; padding: 5px;
+}
+.schedule0 {
+font-family: 'Ms Sans Serif'; font-size: 13px; padding: 5px;
+}
+.schedule00 {
+font-family: 'Ms Sans Serif'; font-size: 15px; padding: 5px;
+}
+.cal {
+font-family: Garamond; font-size: 12px;   text-align: center;
+}
+.cal2 {
+font-family: Garamond; font-size: 11px;   text-align: center;
+ text-transform : uppercase;
+ font-weight : bold;
+}
+.caldata {
+font-weight: normal; height: 20px; width: 20px;
+}
+.curdata {
+background-color:  #E6DED1; color: 79776A; line-height: 16px; height: 20px; width: 20px;
+}
+th{
+font-family: "MS Sans Serif"; font-size: 9px; font-weight: bolder; text-transform: lowercase; 
+color: #555243;  text-align: left;  
+
+background-color : #E6DED1;
+}
+a:active {
+color: #79776A; text-decoration: none;
+}
+a:link {
+color: #79776A; text-decoration: none;
+}
+a:visited {
+color: #79776A; text-decoration: none;
+}
+a:hover {
+color: #79776A; text-decoration: underline;
+}
+.news {
+font-family: 'Ms Sans Serif'; font-size: 14px; text-align: justify;
+}
+.forum {
+font-family: Helvetica; font-size: 12px;
+}
+.skip {
+font-family: 'Ms Sans Serif'; font-size: 10px;
+}
+.cgray {
+color: #4C4C40;
+}
+
+
+.th2 {
+font-family: "MS Sans Serif"; font-size: 9px; 
+font-weight: bolder; text-transform: lowercase; 
+color: #4C4C40;  text-align: left;  
+background-color : #C7D2C2; 
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
+.tabheader {
+border-style: solid; border-color: #79776A; border-width: 1px; width: 100%;  line-height: 13px;
+}
+.kurs {
+font-family: Verdana, 'Ms Sans Serif'; font-size: 14px;
+}
+.tests {
+font-family: Verdana, 'Ms Sans Serif'; font-size: 13px;
+}
+.testsmall {
+font-family: Verdana, 'Ms Sans Serif'; font-size: 10px; padding: 10px;
+}
+.title{
+	
+font-family: Verdana, 'Ms Sans Serif'; font-size: 11px; 
+}
+.lineinput {
+font-family: Verdana; font-size: 11px; height: 20px; background-color: #ffffff; border: 2px inset;
+}
+.field {
+font-family: Verdana; font-size: 10px; border: none; text-align: right;
+}
+.button {
+font-family: micra; font-size: 7px; color: #79776A; width: 200px; height: 16px; border-style: solid; border-color: #79776A; border-width: 1px; text-align: left;
+}
+.message {
+font-family: Verdana, 'Ms Sans Serif'; font-size: 13px; padding-left: 25px;
+}

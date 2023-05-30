@@ -1,0 +1,34 @@
+                  <table border="0" cellspacing="0" cellpadding="0" width="100%" class="tests">
+                     <tr>
+                        <td valign="top" width="100%" align="center">
+                           [TTASKS-HEADER]
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="100%" align="center">
+                              <form method="post" name="m" action='[PAGE]'>
+                              [FSESSID]
+                              <input type=hidden name="c" value='edit_post2'>
+                              <input type=hidden name=tid value="[TT-tid]">
+                              <input type=hidden name=cid value="[TT-tid]">
+                              {?t?}Название теста{?/t?}<br>
+                              <input type=text name=form[title] value="[TT-title]" style='width:100%'>
+
+                              <select name=form[random] size=1>
+                              <option value=1 [TT-random]>{?t?}Выводить вопросы в случайном порядке{?/t?}
+                              <option value=0 [TT-silent]>{?t?}Оставлять вопросы в порядке ввода{?/t?}
+                              </select><br><br>
+                              {?t?}Ограничить количество вопросов в тесте до{?/t?}<br>
+                              <input type=text name=form[lim] value="[TT-lim]" maxsize=6> (0 - {?t?}показывать все){?/t?}
+                              [HELP]
+                              {?t?}Количество вопросов на страницу{?/t?}<br>
+                              <input type=text name=form[qty] value="[TT-qty]"><br><br>
+                              <select name=form[status] size=1>
+                              <option value=0 [TT-open]>{?t?}Тест ЗАКРЫТ: не доступен для прохождения учащимися{?/t?}
+                              <option value=1 [TT-closed]>{?t?}Тест ОТКРЫТ: является доступным для прохождения{?/t?}
+                              </select><br><br>
+                              <input type=submit value='{?t?}Сохранить изменения{?/t?}'></center>
+                              </form>
+                        </td>
+                     </tr>
+                 </table>

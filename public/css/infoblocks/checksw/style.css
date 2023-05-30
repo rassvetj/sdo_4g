@@ -1,0 +1,43 @@
+.EUDetectionCheck {
+}
+.EUDetectionCheck h1 {
+	font-size: 20px;
+	margin: 3px 0px;
+	padding: 0px;
+}
+.EUDetectionCheck table {
+	border-collapse: collapse;
+}
+.EUDetectionCheck table td,
+.EUDetectionCheck table th {
+	border: 1px solid black;
+	font-weight: bold;
+    padding: 5px;
+}
+.EUDetectionCheck .failed h1 {
+	color: red;
+}
+.EUDetectionCheck h1.passed {
+	color: green;
+}
+.EUDetectionCheck tr.failed {
+	background-color: red;
+	color: white;
+}
+
+.EUDetectionCheck tr.failed.hm-infoblock-hwdetect-item-not-required {
+    background-color: yellow;
+    color: black;
+}
+
+.EUDetectionCheck tr.passed {
+	background-color: green;
+	color: white;
+}
+.EUDetectionCheck .app-passed {
+	display: none;
+}
+.EUDetectionCheck .app-require,
+.EUDetectionCheck .app-version {
+	width: 1px;
+}

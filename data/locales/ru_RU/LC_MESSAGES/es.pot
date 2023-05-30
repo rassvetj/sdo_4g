@@ -1,0 +1,2 @@
+msgid "Email notification"
+msgstr "Почтовые уведомления"

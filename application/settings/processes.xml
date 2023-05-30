@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <order>
+        <name>Процесс управления заявкой</name>
+        <process_type>1</process_type>
+        <minState>2</minState>
+        <states>
+            <state>
+                <id>order_1</id>
+                <class>HM_Role_State_Dean</class>
+                <name>Согласование организатором обучения</name>
+            </state>
+            <!--state>
+                <id>order_2</id>
+                <class>HM_Role_State_Chief</class>
+                <name>Согласование руководителем</name>
+            </state-->
+            <state>
+                <id>order_3</id>
+                <class>HM_Role_State_Session</class>
+                <name>Формирование учебной сессии</name>
+            </state>
+            <!--state>
+                <id>order_4</id>
+                <class>HM_Role_State_Student</class>
+                <name>Согласование участником</name>
+                <dependent>
+                    <after>
+                        <depend>
+                            <id>order_1</id>
+                            <link>hard</link>
+                        </depend>
+                        <depend>
+                            <id>order_3</id>
+                            <link>soft</link>
+                        </depend>
+                        <depend>
+                            <id>order_2</id>
+                            <link>soft</link>
+                        </depend>
+                    </after>
+                </dependent>
+            </state-->
+
+            <state>
+                <id>order_4</id>
+                <class>HM_Role_State_Complete</class>
+                <name>Заявка согласована</name>
+                <visible>false</visible>
+            </state>
+            <state>
+                <id>order_4</id>
+                <class>HM_Role_State_Fail</class>
+                <name>Заявка отклонена</name>
+                <visible>false</visible>
+            </state>
+
+        </states>
+    </order>
+</config>

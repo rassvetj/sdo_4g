@@ -1,0 +1,142 @@
+.material-icon-small,
+.material-icon {
+  background-image: url(../../images/material-icons.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.material-icon-small {
+  width: 16px;
+  height: 16px;
+}
+.material-icon-small.course {
+  background-position: 0 -176px;
+}
+.material-icon-small.resource-0 {
+  background-position: 0 -160px;
+}
+.material-icon-small.resource-1 {
+  background-position: 0 -208px;
+}
+.material-icon-small.resource-2 {
+  background-position: 0 -16px;
+}
+.material-icon-small.resource-3 {
+  background-position: 0 -208px;
+}
+.material-icon-small.resource-4 {
+  background-position: 0 -192px;
+}
+.material-icon-small.resource-5 {
+  background-position: 0 0; /* @todo: нарисовать подходящую иконку*/
+}
+.material-icon-small.resource-99 {
+  background-position: 0 0; /* @todo: нарисовать подходящую иконку*/
+}
+.material-icon-small.resource-filetype-0 {
+  background-position: 0 -160px;
+}
+.material-icon-small.resource-filetype-1 {
+  background-position: 0 0;
+}
+.material-icon-small.resource-filetype-2 {
+  background-position: 0 -208px;
+}
+.material-icon-small.resource-filetype-3 {
+  background-position: 0 -32px;
+}
+.material-icon-small.resource-filetype-4 {
+  background-position: 0 -48px;
+}
+.material-icon-small.resource-filetype-5 {
+  background-position: 0 -64px;
+}
+.material-icon-small.resource-filetype-6 {
+  background-position: 0 -144px;
+}
+.material-icon-small.resource-filetype-7 {
+  background-position: 0 -80px;
+}
+.material-icon-small.resource-filetype-8 {
+  background-position: 0 -112px;
+}
+.material-icon-small.resource-filetype-9 {
+  background-position: 0 -128px;
+}
+.material-icon-small.resource-filetype-10 {
+  background-position: 0 -96px;
+}
+.material-icon {
+  width: 35px;
+  height: 35px;
+}
+.material-icon.course {
+  background-position: -17px -175px;
+}
+.material-icon.resource-0  {
+  background-position: -53px -175px;
+}
+.material-icon.resource-1 {
+  background-position: -17px -210px;
+}
+.material-icon.resource-2 {
+  background-position: -17px -35px;
+}
+.material-icon.resource-3 {
+  background-position: -17px -210px;
+}
+.material-icon.resource-4 {
+  background-position: -53px -210px;
+}
+.material-icon.resource-5 {
+  background-position: -17px 0px;
+}
+.material-icon.resource-99 {
+  background-position: -17px 0px;
+}
+.material-icon.resource-filetype-0 {
+  background-position: -53px -175px;
+}
+.material-icon.resource-filetype-1 {
+  background-position: -17px 0px;
+}
+.material-icon.resource-filetype-2 {
+  background-position: -17px -210px;
+}
+.material-icon.resource-filetype-3 {
+  background-position: -17px -70px;
+}
+.material-icon.resource-filetype-4 {
+  background-position: -17px -105px;
+}
+.material-icon.resource-filetype-5 {
+  background-position: -17px -140px;
+}
+.material-icon.resource-filetype-6 {
+  background-position: -53px -140px;
+}
+.material-icon.resource-filetype-7 {
+  background-position: -53px 0;
+}
+.material-icon.resource-filetype-8 {
+  background-position: -53px -70px;
+}
+.material-icon.resource-filetype-9 {
+  background-position: -53px -105px;
+}
+.material-icon.resource-filetype-10 {
+  background-position: -53px -35px;
+}
+.material-icon.resource-activitytype-2 {
+  background: url("/images/events/4g/19x/forum.png") no-repeat 0 2px;
+}
+.material-icon.resource-activitytype-64 {
+  background: url("/images/events/4g/19x/resource.png") no-repeat 0 2px; /*todo: сделать иконку блога*/
+}
+.material-icon.resource-activitytype-128 {
+  background: url("/images/events/4g/19x/wiki.png") no-repeat 0 2px;
+}
+.material-icon.resource-activitytype-512 {
+  background: url("/images/events/4g/19x/chat.png") no-repeat 0 2px;
+}

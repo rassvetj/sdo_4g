@@ -1,0 +1,113 @@
+p {
+	margin: 4px;
+}
+p,
+.header {
+	font-family: Verdana,Arial,sans-serif;
+}
+#toc,
+#content {
+	min-width: 600px;
+	max-width: 800px;
+}
+#toc {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 11pt;
+}
+#toc a {
+	text-decoration: none;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	color: black;
+}
+#toc a:hover {
+	border-bottom-style: solid;
+}
+#content {
+	width: 800px;
+}
+#content,
+table,
+form {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 11pt;
+}
+#content .header {
+	font-style: normal;
+}
+#content .unit .header,
+.header,
+#courseHeader .header,
+#toc .header {
+	font-size: 19pt;
+	font-weight: bold;
+}
+#content .topic,
+#content .theme,
+#content .lesson,
+#content .studiedproblems,
+#content .studiedproblem,
+#content .studiedproblem .paragraph,
+#content .studiedproblem .object,
+#content .subject,
+#content .subject .paragraph,
+#content .task,
+#content .task .paragraph,
+#content .targets,
+#content .targets .target,
+#content .targets .target .paragraph,
+#content .test,
+#content .test .question,
+#content .test .question .answers_multiple,
+#content .test .question .answers_single,
+#content .test .question .answers_fill,
+#content .test .question .answers_compare,
+#content .references,
+#courseHeader .domain .paragraph,
+#courseHeader .abstract .paragraph,
+#courseHeader .category .paragraph,
+#courseHeader .author .paragraph,
+#courseHeader .domain,
+#courseHeader .abstract,
+#courseHeader .category,
+#courseHeader .author {
+	margin-left: 20px;
+}
+#content .topic .header,
+#content .theme .header,
+#content .lesson .header,
+#courseHeader * .header {
+	font-size: 15pt;
+	font-weight: normal;
+	font-style: italic;
+}
+#content .studiedproblems .header,
+#content .references .header,
+#content .test .header,
+#content .subject .header,
+#content .targets .header,
+#content .task .header {
+	font-size: 13pt;
+	font-style: normal;
+	font-weight: normal;
+}
+#content .studiedproblems .studiedproblem .header,
+#content .test .question .header,
+#content .targets .target .header {
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+}
+#content .studiedproblem .paragraph {
+	background-color: #F6F6F6;
+}
+#content .targets .target .header .type {
+	text-decoration: underline;
+}
+#content .test .question .answer * {
+	display: inline;
+}
+ol, ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

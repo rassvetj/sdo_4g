@@ -1,0 +1,174 @@
+<form action="[self]" method="post">
+   <input type="hidden" name="c" value="add2">
+   <input type="hidden" name="tweek" value="[tweek]">
+      <table width="560" border="0" cellspacing="5" cellpadding="0" align="center">
+         <tr>
+            <td>
+               <TABLE width="100%" class="brdr" cellspacing="0" cellpadding="0">
+                    <tr>
+                       <th width="100%">{?t?}добавление занятия на{?/t?} [day]</th>
+                    </tr>
+               </TABLE>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <table border="0" cellpadding="5" cellspacing="0" class="addnew" width="100%">
+                  <tr>
+                     <td width=20%>
+                        {?t?}Название{?/t?}
+                     </td><td>
+                        <input type="text" name="name" value="" size="60">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td valign='top'>
+                      {?t?}Тип занятия{?/t?}</td><td>
+                        <select name="type" size="1"  class='sel100'>
+                        [type]
+                        </select>
+                     </td>
+                     </tr>
+          <!--tr>
+            <td valign='top'>{?t?}Групповое занятие{?/t?}</td>
+            <td><input name="isgroup" type="checkbox" id="isgroup" value="1"></td>
+          </tr-->
+                     <tr>
+                     <td valign='top'>
+                              {?t?}Курс{?/t?}</td><td>
+                        <select name="kurs" size="1"  class='sel100' [DISKURS]>
+                        [kurs]
+                        </select>
+                        <br><br>
+                        [HIDKURS]
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                     {?t?}Дата{?/t?}
+                     </td>
+                     <td>
+                        <input type=radio name=datetype value='absolute' checked
+                          onClick= "putElem('absolute1');putElem('absolute2');putElem('absolute11');putElem('absolute22');
+                          putElem('cycle1');putElem('cycle11');
+                          removeElem('relative1');removeElem('relative2');removeElem('relative11');removeElem('relative22');">
+                          {?t?}абсолютно{?/t?}
+                        </input>
+                        <input type=radio name=datetype value='relative'
+                          onClick= "removeElem('absolute1');removeElem('absolute2');removeElem('absolute11');removeElem('absolute22');
+                          removeElem('cycle1');removeElem('cycle11');
+                          putElem('relative1');putElem('relative2');putElem('relative11');putElem('relative22');">
+                          {?t?}относительно{?/t?}
+                        </input>
+                     </td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <span id=absolute1>
+                         {?t?}Начало{?/t?}
+                        </span>
+                        <span id=relative1 class=hidden2>
+                        {?t?}Начало на{?/t?}
+                        </span>
+                      </td>
+                      <td>
+                     <span id=absolute11>
+                        <select name="DD1" id="DD1" size="1">[DD1]</select>:
+                        <select name="MM1" id="MM1" size="1">[MM1]</select>:
+                        <select name="YY1" id="YY1" size="1">[YY1]</select>&nbsp;&nbsp;&nbsp;
+                        <span id=time1>
+                          <select name="hh1" id="hh1" size="1">[hh1]</select>:
+                          <select name="mm1" id="ii1" size="1">[mm1]</select>
+                        </span>
+                      </span>
+                      <span id=relative11 class=hidden2>
+                        <input type=text size="2" value='1' name='relative_day1'>
+                        -{?t?}ый день занятий{?/t?}
+                      </span>
+                     </td>
+                     </tr>
+                     <tr>
+                     <td>
+                        <span id=absolute2>
+                        {?t?}Окончание{?/t?}
+                        </span>
+                        <span id=relative2 class=hidden2>
+                        {?t?}Продолжит.{?/t?}
+                        </span>
+                        </td>
+                        <td>
+                        <span id=absolute22>
+                        <select name="DD2" size="1">[DD2]</select>:
+                        <select name="MM2" size="1">[MM2]</select>:
+                        <select name="YY2" size="1">[YY2]</select>&nbsp;&nbsp;&nbsp;
+                        <span id=time2>
+                          <select name="hh2" id="hh2" size="1">[hh2]</select>:
+                          <select name="mm2" id="ii2" size="1">[mm2]</select>
+                        </span>
+                        </span>
+                        <span id=relative22 class=hidden2>
+                        <input type=text size="2" value='1' name='relative_day2'>  ({?t?}дн.{?/t?})
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                      <td>
+                        {?t?}Время{?/t?}
+                      </td>
+                      <td>[PERIODS]
+                      </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        {?t?}Заметки{?/t?}
+                     </td>
+                     <td>
+                        <textarea name="desc" cols=40></textarea>
+                     </td>
+                     </tr><tr>
+                     <td>
+                        <span id=cycle1>
+                        {?t?}Периодичность{?/t?}
+                        </span>
+                     </td>
+                        <td>
+                        <span id=cycle11>
+                        <select name="rebild">
+                           <option value='0'>{?t?}Один раз{?/t?}</option>
+                           <option value='1'>{?t?}Каждый день{?/t?}</option>
+                           <option value='2'>{?t?}Еженедельно{?/t?}</option>
+                           <option value='4'>{?t?}Через неделю{?/t?}</option>
+                           <option value='3'>{?t?}Ежемесячно{?/t?}</option>
+                           <!-- option value='5'>{?t?}Без даты{?/t?}</option -->
+                        </select>
+                        </span>
+                     </td>
+                     </tr>
+                     <tr>
+                     <td>
+                     {?t?}Место{?/t?}
+                     </td>
+                     <td>
+                        [ROOMS]
+                     </td>
+                  </tr>
+                  <tr>
+                     <td valign='top' class=[HIDCLASS]>
+                      {?t?}назначить при условии, что зачтено{?/t?}<BR>
+                        <select name="condition" size="1"  class='sel100' onChange= "putElem('mmm');">
+                        <option value=-1 selected>{?t?}неважно{?/t?}</option>
+                        [condition]
+                        </select>
+                        <td><a width=27 class=hidden2 id=mmm>{?t?}на оценку{?/t?}
+                        <input type="text" name="mark" value="1" size="2"></a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td align="right" class="shedaddform"><input type="image" name="submit" onMouseOver="this.src='[PATH]images/send_.gif';" onMouseOut="this.src='[PATH]images/send.gif';" src="[PATH]images/send.gif" align="right" alt="ok" border=0>
+            </td>
+          </tr>
+      </table>
+</form>

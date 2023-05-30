@@ -1,0 +1,146 @@
+/* Date picker specific styles follow */
+
+
+.popup-calendar-wrapper
+{
+	position: relative;
+}
+
+* html .popup-calendar-wrapper
+{
+	zoom: 1;
+}
+
+a.date-picker {
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    color: #fff;
+    padding: 0;
+    margin: 2px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    background: url("../images/icons/edit.gif") no-repeat; 
+}
+a.date-picker span {
+    font-size: 10px;
+    margin: 0 0 0 -2000px;
+}
+a.date-picker
+{
+	margin: 0 10px;
+}
+div.date-picker-holder, div.date-picker-holder * {
+    font-size: 10px;
+}
+div.date-picker-holder {
+    font-size: 10px;
+}
+div.date-picker-holder input {
+    font-size: 10px;
+    float: left;
+}
+div.popup-calendar {
+	position: absolute;
+	font-size: 10px;
+    display: none;
+    top: 0;
+	z-index: 100;
+    left: 35px; /* value for IE */
+    padding: 4px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    overflow:hidden;
+}
+html>body div.popup-calendar {
+    font-size: 10px;
+    left: 140px; /* value for decent browsers */
+}
+div.popup-calendar div.link-close {
+    font-size: 10px;
+    float: right;
+}
+div.popup-calendar div.link-close a {
+    font-size: 10px;
+}
+div.popup-calendar div.link-prev {
+    font-size: 10px;
+    float: left;
+}
+div.popup-calendar div.link-prev a  {
+    font-size: 10px;
+}
+div.popup-calendar h3 {
+    font-size: 10px;
+    margin: 2px 0 5px 3px;
+}
+div.popup-calendar div.link-next {
+    font-size: 10px;
+    float: right;
+}
+div.popup-calendar div.link-next a {
+    font-size: 10px;
+}
+div.popup-calendar div a {
+    font-size: 10px;
+    padding: 1px 2px;
+    color: #000;
+}
+div.popup-calendar div a:hover {
+    font-size: 10px;
+    background-color: #000;
+    color: #fff;
+}
+div.popup-calendar table {
+    font-size: 10px;
+    margin: 0;
+}
+
+div.popup-calendar table th {
+    border-width: 0px !important;
+    
+}
+
+* html div.popup-calendar table {
+    font-size: 10px;
+    display: inline;
+}
+div.popup-calendar table th, div.popup-calendar table td {
+    font-size: 10px;
+    height: 17px;
+    text-align: center;
+}
+div.popup-calendar table td.inactive {
+    font-size: 10px;
+    color: #aaa;
+    padding: 1px 0 0;
+}
+div.popup-calendar table th.weekend, div.popup-calendar table td.weekend {
+    font-size: 10px;
+}
+div.popup-calendar table td a {
+    font-size: 10px;
+    display: block;
+    border: 1px solid #cccccc;
+    width: 19px;
+    height: 15px;
+    text-decoration: none;
+    color: #333;
+}
+div.popup-calendar table td.today a {
+    font-size: 10px;
+    background-color: #cccccc;
+}
+div.popup-calendar table td a.selected, div.popup-calendar table td a:hover {
+    font-size: 10px;
+    background: #333; 
+    color: #fff;
+}
+div.popup-calendar, div.popup-calendar table td, div.popup-calendar table td a {
+    font-size: 10px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}

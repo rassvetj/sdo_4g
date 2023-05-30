@@ -1,0 +1,13 @@
+<tr class="tests">
+   <td style="width:32px;">
+   <script type="text/javascript">
+   <!--
+   <?php if ($checked) echo "document.getElementById('ischecked_{$number}').value=1";?>
+   //-->
+   </script>
+      <input type=radio name="form[<?=$number?>][otvet]" id="<?=md5("$number $v_i")?>" 
+      value="<?=$v_ans?>" onClick="ischecked_<?=$number?>.value=1" <?php if ($checked) echo "checked"; ?>></td>
+   <td align="left">
+      <label for="<?=md5("$number $v_i")?>"><?=$v_text?></label>
+   </td>
+</tr>

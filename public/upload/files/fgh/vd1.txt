@@ -1,0 +1,246 @@
+login as: root
+root@65.21.202.210's password:
+Last login: Sat Jan  7 15:40:32 2023 from demux0-1074003250.smfl-04-bras2.miranda-media.net
+[root@vd1 ~]# df -h
+Filesystem            Size  Used Avail Use% Mounted on
+devtmpfs               32G     0   32G   0% /dev
+tmpfs                  32G     0   32G   0% /dev/shm
+tmpfs                  32G  572K   32G   1% /run
+tmpfs                  32G     0   32G   0% /sys/fs/cgroup
+/dev/mapper/vg0-home   58T   32T   24T  58% /
+/dev/md0              487M  401M   61M  87% /boot
+tmpfs                 6.3G     0  6.3G   0% /run/user/0
+[root@vd1 ~]# ршыещкн
+-bash: ршыещкн: command not found
+[root@vd1 ~]# history
+    1  iptables -L
+    2  nano /etc/selinux/config
+    3  passwd
+    4  systemctl restart sshd
+    5  yum install vsftpd
+    6  cd /etc/vsftpd
+    7  nano chroot_list
+    8  cd ~
+    9  sudo openssl req -x509 -nodes -days 10000 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
+   10  service vsftpd start
+   11  systemctl enable vsftpd
+   12  useradd zakat
+   13  passwd zakat
+   14  groupadd zakats
+   15  usermod -G zakats zakat
+   16  rpm -ihv http://installrepo.kaltura.org/releases/kaltura-release.noarch.rpm
+   17  yum install kaltura-nginx
+   18  chown -R zakat /home/video
+   19  groupadd www-data
+   20  useradd www-data -g www-data
+   21  service kaltura-nginx start
+   22  service kaltura-nginx restart
+   23  /var/certbot-auto certonly --webroot -w /var/www -d vd8.all-episodes.com
+   24  sudo snap install core; sudo snap refresh core
+   25  yum install --classic certbot
+   26  yum install certbot
+   27  certbot --nginx
+   28  sudo certbot certonly --nginx
+   29  yum install python-certbot-nginx
+   30  yum install certbot
+   31  sudo certbot certonly --nginx
+   32  sudo certbot renew --dry-run
+   33  sudo certbot renew
+   34  service nginx restart
+   35  service kaltura-nginx restart
+   36  df -h
+   37  yum install atop
+   38  yum upgrade
+   39  atop 5
+   40  cat /proc/mdstat
+   41  фещз 5
+   42  atop 5
+   43  systemctl enable kaltura-nginx
+   44  tc
+   45  ipconfig
+   46  ifconfig /all
+   47  ifconfig
+   48  tc qdisc del dev enp7s0 root &> /dev/null
+   49  tc qdisc add dev enp7s0 root handle 1: prio
+   50  tc filter add dev enp7s0 parent 1: protocol ip prio 1 u32 match ip sport 10240 0xf800 flowid 1:1
+   51  tc filter add dev enp7s0 parent 1: protocol ip prio 1 u32 match ip sport 21 0xffff flowid 1:1
+   52  tc filter add dev enp7s0 parent 1: protocol ip prio 1 u32 match ip sport 52562 0xffff flowid 1:1
+   53  tc filter add dev enp7s0 parent 1: protocol ip prio 1 u32 match ip sport 1002 0xffff flowid 1:1
+   54  tc filter add dev enp7s0 parent 1: protocol ip prio 1 u32 match ip dport 1002 0xffff flowid 1:1
+   55  tc -s -d filter show dev enp7s0
+   56  reboot
+   57  atop 5
+   58  tc -s -d filter show dev enp7s0
+   59  reboot
+   60  iptables -L
+   61  service iptables save
+   62  yum install iptables-services
+   63  service iptables save
+   64  iptables -L
+   65  certbot renew
+   66  history
+   67  nohup sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd8.all-episodes.com:/home/video/ /home/video/ &
+   68  yum install sshpass
+   69  yum install rsync
+   70  nohup sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd8.all-episodes.com:/home/video/ /home/video/ &
+   71  atop 5
+   72  sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd8.all-episodes.com:/home/video/ /home/video/ &
+   73  ssh-keygen -R vd5.all-episodes.com
+   74  sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd8.all-episodes.com:/home/video/ /home/video/ &
+   75  ssh root@vd5.all-episodes.com -p 52562
+   76  sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd8.all-episodes.com:/home/video/ /home/video/ &
+   77  ssh root@vd8.all-episodes.com -p 52562
+   78  sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd8.all-episodes.com:/home/video/ /home/video/ &
+   79  ps -aux | grep rsync
+   80  atop 5
+   81  ps -aux | grep nohup
+   82  kill 2261
+   83  ps -aux | grep nohup
+   84  nohup sshpass -p 'zakat32788727' rsync -avz -e "ssh -p 52562" zakat@vd5.all-episodes.com:/home/video/ /home/video/ &
+   85  atop 5
+   86  chown -R zakat /home/video
+   87  atop 5
+   88  фещз 5
+   89  atop 5
+   90  df -h
+   91  atop 5
+   92  df -h
+   93  atop 5
+   94  df -h
+   95  atop 5
+   96  history
+   97  certbot renew -q
+   98  df -h
+   99  atop 5
+  100  chown -R zakat /home/video
+  101  atop 5
+  102  ping all-episodes.org
+  103  tracer 185.163.158.121
+  104  traceroute 185.163.158.121
+  105  tracert 185.163.158.121
+  106  yum upgrade
+  107  yum install openvpn
+  108  systemctl status openvpn@server.service
+  109  systemctl restart openvpn@server.service
+  110  systemctl status openvpn@server.service
+  111  iptables -A INPUT -p tcp -m tcp --dport 1002 -j ACCEPT
+  112  iptables -A INPUT -i tun0 -j ACCEPT
+  113  iptables -A FORWARD -i tun0 -j ACCEPT
+  114  iptables -t nat -L
+  115  service iptables save
+  116  sysctl -a
+  117  systemctl enable openvpn@server.service
+  118  systemctl restart openvpn@server.service
+  119  systemctl status openvpn@server.service
+  120  ifconfig
+  121  systemctl restart openvpn@server.service
+  122  systemctl status openvpn@server.service
+  123  systemctl stop openvpn@server.service
+  124  systemctl status openvpn@server.service
+  125  systemctl stop openvpn@server.service
+  126  systemctl status openvpn@server.service
+  127  service status openvpn@server.service
+  128  service openvpn@server.service status
+  129  service openvpn@server.service stop
+  130  service openvpn@server.service status
+  131  service openvpn@server.service start
+  132  service openvpn@server.service status
+  133  systemctl restart openvpn@server.service
+  134  ps -A|grep openvpn
+  135  kill -9 2028
+  136  ps -A|grep openvpn
+  137  service openvpn@server.service status
+  138  service openvpn@server.service start
+  139  service openvpn@server.service status
+  140  ps -A|grep openvpn
+  141  kill -9 14116
+  142  service openvpn@server.service status
+  143  service openvpn@server.service stop
+  144  ps -A|grep openvpn
+  145  killall openvpn
+  146  yum install killall
+  147  ps -A | grep openvpn
+  148  kill -9 14207
+  149  iptables-save > asdasdasd
+  150  ps -A | grep openvpn
+  151  kill -9 14292
+  152  ps -A | grep openvpn
+  153  yum install psmisc
+  154  killall openvpn
+  155  ps -A | grep openvpn
+  156  service openvpn@server.service status
+  157  ps -A | grep openvpn
+  158  service openvpn@server.service start
+  159  ps -A | grep openvpn
+  160  service openvpn@server.service status
+  161  iptables -D INPUT -i tun0 -j ACCEPT
+  162  iptables -A INPUT -i tun0 -j ACCEPT
+  163  iptables -D FORWARD -i tun0 -j ACCEPT
+  164  iptables -A FORWARD -i tun0 -j ACCEPT
+  165  service iptables save
+  166  ifconfig
+  167  ping rassvet85.de
+  168  iptables -L
+  169  iptables -t nat -L
+  170  systemctl restart openvpn@server.service
+  171  yum upgrade
+  172  reboot
+  173  tc -s -d filter show dev enp7s0
+  174  yum install openvpn
+  175  ifconfig
+  176  service openvpn start
+  177  systemctl restart openvpn-server@server.service
+  178  systemctl status openvpn-server@server.service"
+  179  systemctl status openvpn-server@server.service
+  180  openvpn /etc/openvpn/server.conf
+  181  openvpn /etc/openvpn/server/server.conf
+  182  systemctl restart openvpn-server@server.service
+  183  systemctl status openvpn-server@server.service
+  184  systemctl restart openvpn-server@server.service
+  185  systemctl status openvpn-server@server.service
+  186  nano /var/log/openvpn/openvpn.log
+  187  systemctl restart openvpn-server@server.service
+  188  systemctl status openvpn-server@server.service
+  189  systemctl -f enable openvpn@server.service
+  190  ifconfig
+  191  iptables-restore < iptables-vd
+  192  atop 5
+  193  iptables-save > sadfsdfsdf
+  194  iptables -L
+  195  service iptables save
+  196  iptables-restore < iptables-vd
+  197  history
+  198  service iptables save
+  199  iptables -L
+  200  sysctl -a
+  201  tc -s -d filter show dev enp7s0
+  202  iptables -t nat -L
+  203  ping 8.8.8.8
+  204  service kaltura-nginx restart
+  205  service kaltura-nginx statu
+  206  service kaltura-nginx restart
+  207  atop 5
+  208  service nginx restart
+  209  service kaltura-nginx restart
+  210  df -h
+  211  atop 5
+  212  yum install kaltura-nginx
+  213  rpm -ihv http://installrepo.kaltura.org/releases/kaltura-release.noarch.rpm
+  214  yum install kaltura-nginx
+  215  yum update
+  216  yum install kaltura-nginx*
+  217  yum update
+  218  atop 5
+  219  df -h
+  220  yum upgrade
+  221  df -h
+  222  atop 5
+  223  yum upgrade
+  224  df -h
+  225  atop 5
+  226  df -h
+  227  atop 5
+  228  df -h
+  229  ршыещкн
+  230  history
+[root@vd1 ~]#

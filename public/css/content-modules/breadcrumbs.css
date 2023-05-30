@@ -1,0 +1,283 @@
+.document-blank #main {
+padding-left: 0.818em;
+padding-right: 0.818em;
+}
+
+.document-blank-nobg {
+	background: white;
+}
+
+.document-blank-nobg  #main {
+	margin: 0;
+}
+/*----------------------- common styles for all headswitchers -------------------*/
+
+
+.head_switcher_default {
+height: 30px;
+width: 80px;
+float: right;
+}
+
+.head_switcher_default b div {
+display: block;
+width: 23px;
+height: 23px;
+text-indent: -9999em;
+overflow: hidden;
+float: right;
+}
+
+.head_switcher_default a div {
+display: block;
+width: 23px;
+height: 23px;
+text-indent: -9999em;
+overflow: hidden;
+float: right;
+}
+.head_switcher_default .float_right {
+float: right;
+}
+/*----------------------- list -------------------*/
+
+.head_switcher_default b .list_skillsoft {
+background: transparent url('../../images/icons/skillsoft_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_skillsoft {
+background: transparent url('../../images/icons/skillsoft.png') center center no-repeat;
+}
+
+.head_switcher_default b .list_text {
+background: transparent url('../../images/icons/list_text_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_text {
+background: transparent url('../../images/icons/list_text.png') center center no-repeat;
+}
+
+.head_switcher_default b .list_program {
+    background: url("../../images/icons/mode-icons.png") no-repeat scroll -178px -54px transparent;
+    height: 23px;
+    width: 23px;
+}
+
+.head_switcher_default a .list_program {
+    background: url("../../images/icons/mode-icons.png") no-repeat scroll -178px -15px transparent;
+    height: 23px;
+    width: 23px;
+}
+.head_switcher_default b .list_course {
+    background: url("../../images/icons/mode-icons.png") no-repeat scroll -97px -54px transparent;
+    height: 23px;
+    width: 23px;
+}
+
+.head_switcher_default a .list_course {
+    background: url("../../images/icons/mode-icons.png") no-repeat scroll -97px -15px transparent;
+    height: 23px;
+    width: 23px;
+}
+
+
+.head_switcher_default b .list_date {
+background: transparent url('../../images/icons/list_date_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_date {
+background: transparent url('../../images/icons/list_date.png') center center no-repeat;
+}
+
+.head_switcher_default b .list_cal {
+background: transparent url('../../images/icons/list_cal_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_cal {
+background: transparent url('../../images/icons/list_cal.png') center center no-repeat;
+}
+
+.head_switcher_default b .list_tree {
+    background: transparent url('../../images/icons/list_tree_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_tree {
+    background: transparent url('../../images/icons/list_tree.png') center center no-repeat;
+}
+
+/*--------------------- Edit ---------------------*/
+
+.head_switcher_default b .list_view {
+background: transparent url('../../images/icons/blog_text_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_view {
+background: transparent url('../../images/icons/blog_text.png') center center no-repeat;
+}
+
+.head_switcher_default b .list_edit {
+background: transparent url('../../images/icons/blog_cal_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .list_edit {
+background: transparent url('../../images/icons/blog_cal.png') center center no-repeat;
+}
+
+/* end of #3742 point 3*/
+
+/*--------------------- Wiki, blogs ---------------------*/
+
+.head_switcher_default b .wiki_view {
+background: transparent url('../../images/icons/list_text_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .wiki_view {
+background: transparent url('../../images/icons/list_text.png') center center no-repeat;
+}
+
+.head_switcher_default b .wiki_table {
+background: transparent url('../../images/icons/list_cal_active.png') center center no-repeat;
+}
+
+.head_switcher_default a .wiki_table {
+background: transparent url('../../images/icons/list_cal.png') center center no-repeat;
+}
+
+/* ------------------------ Edit card -------------------------------- */
+
+table.card > tbody > tr > td {
+padding: 5px 5px 5px 5px;
+}
+
+div.card {
+width: 100%;
+}
+
+div.card .card_photo {
+width: 120px;
+float: left;
+margin-right: 0px;
+}
+div.card .card_content {
+overflow: hidden;
+}
+
+.card_description {
+clear: both;
+max-height: 120px;
+overflow-y: auto;
+}
+/* --------------------------------------- DROP-DOWN MENU - ACTIONS - */
+.dropdown-actions {
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: bold;
+	padding-bottom: 1em;
+	line-height: 15px;
+	vertical-align: middle;
+}
+.bredcrumbs-dropdown-actions-menu,
+.dropdown-actions-menu {
+	position: absolute;
+	display: none;
+	background-color: #fff9cb;
+	border: 1px solid #d6d1aa;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 5px 10px 5px 19px;
+	list-style-type: none;
+	margin: 0;
+	white-space: nowrap;
+	line-height: 1.8em;
+}
+.dropdown-actions a,
+.dropdown-actions-menu a {
+	text-decoration: underline;
+}
+.dropdown-actions-menu,
+.dropdown-actions-menu a,
+.dropdown-actions-menu a:link {
+	color: #9d9976;
+}
+.dropdown-actions-menu a:hover,
+.dropdown-actions-menu a:visited {
+	color: #6f6d5c;
+}
+.breadcrumbs ul.dropdown-actions-menu a{
+	font-weight:normal;
+}
+.dropdown-actions-menu a span.name {
+	width: 340px; /*todo*/
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid #9d9976;
+}
+.dropdown-actions .clicker {
+	height: 15px;
+	width: 17px;
+	background: transparent url(../../images/content-modules/breadcrumbs-separator.png) top left no-repeat;
+	cursor: pointer;
+	float: left;
+	display: block;
+}
+.dropdown-actions-empty .clicker {
+	cursor: default;
+	background-position: 0 -30px;
+}
+.dropdown-actions-active .clicker {
+	background-position: 0 -15px;
+}
+.dropdown-actions a {
+	padding-left: 2px;
+}
+/*-------------------------- SEARCH PAGE ----------------------------*/
+/*-------------------------- MOVED TO KBASE.CSS ----------------------------*/
+/*-------------------------- END SEARCH PAGE ----------------------------*/
+
+.breadcrumbs a.bselect{
+	background-color:#7598c7;
+}
+.breadcrumbs a.bselect-inactive{
+	background-color:#d66161;
+}
+.breadcrumbs a.bselect,
+.breadcrumbs a.bselect-inactive{
+	color:#fff;
+	padding:1px 5px 3px 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.bredcrumbs_2 a,
+.bredcrumbs_2 span{
+	color:#3f556e;
+	font-size: 1em;
+	text-decoration:none;
+}
+.bredcrumbs_2 a.filled{
+	background-color:#3f556e;
+}
+.bredcrumbs_2 a.filled-inactive{
+	background-color:#d66161;
+}
+.bredcrumbs_2 a.filled,
+.bredcrumbs_2 a.filled-inactive{
+	color:#fff;
+	padding:0px 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.bredcrumbs-dropdown-actions-menu {
+	max-height: 150px;
+	overflow:auto;
+	overflow-x:hidden;
+	white-space: normal;
+	word-wrap: break-word;
+}
+.bredcrumbs-dropdown-actions-menu li:before {
+	content: "\0203A\020";
+}

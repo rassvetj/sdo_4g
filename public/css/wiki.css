@@ -1,0 +1,386 @@
+.wiki {
+    width: 100%;
+}
+.hm-wiki-editor .spacer, .wiki .spacer { 
+    clear: both; 
+    height: 0px; 
+    overflow: hidden;
+}
+.wiki .wiki-article {
+    width: 75%;
+    float: left;
+}
+.wiki .wiki-article.full {
+    width: 100% !important;
+}
+.wiki .article-header {
+    height: 30px;
+    width: 100%;
+}
+.wiki .article-title {
+    float: left;
+    font-family: Verdana;
+    font-size: 1.182em;
+    line-height: 28px;
+    padding: 0 2px;
+}
+.wiki .article-controls {
+    float: right;
+    padding-right: 20px;
+}
+.wiki .article-controls .edit, .wiki .article-controls .delete {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+.wiki .article-controls .edit {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 0 transparent;
+    margin-right: 5px;
+}
+.wiki .article-controls .delete {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 -20px transparent
+}
+
+.wiki .article-body {
+    color: #4B4B4B;
+    font-size: 1.091em;
+    padding: 0 40px 20px 0;
+    min-width: 700px;
+}
+.wiki .article-body ins{
+    text-decoration: underline;
+    background-color: #FFFFFF;
+}
+.wiki .article-body em{
+    font-style: italic;
+}
+.wiki .article-body img{
+    float:left;
+    margin: 10px;
+}
+.wiki .article-body strong{
+    margin:5px 0;
+}
+.wiki .article-body ul{
+    margin:0 40px 10px 40px; 
+}
+.wiki .article-body ul li{
+    margin: 5px 0;
+}
+.table_name{
+    margin:0 0 6px 5px;
+    font-style:italic;
+    font-family: "PT Sans",verdana,sans-serif;
+}
+.wiki .article-body table{
+    margin:0 0 20px 0;
+    font-family: "PT Sans",verdana,sans-serif;
+    font-size:11px;
+    border-collapse: collapse;
+}
+.wiki .article-body table tr:first-child td{
+    font-weight:normal;
+    color:#1E1E1E;
+    min-width:30px;
+    border:1px solid #fff !important;
+    background-color:#DFDFDF;
+}
+.wiki .article-body table td{
+    background-color:#EAEAEA;
+    border:1px solid #fff !important;
+    padding: 5px;    
+}
+.wiki .article-body h1 {
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 1.636em;
+    line-height: 20px;
+    color:#000;
+    display:inline-block;
+}
+.wiki .article-body h2 {
+    font-size: 1.364em;
+    line-height: 20px;
+    color:#342828;
+    margin:5px 0;
+}
+
+.wiki .article-body h3 {
+    padding-bottom: 5px;
+    font-size: 0.733em;
+    line-height: 20px;
+    color:#342828;
+}
+
+.wiki .article-body h4 {
+    padding-bottom: 5px;
+    font-size: 1em;
+    line-height: 20px;
+    color:#342828;
+}
+
+.wiki .article-body p {
+    padding: 0px 0px 5px 0px;
+}
+
+.wiki .article-body blockquote {
+    border-left: 3px solid #E0E0E0;
+    font-style: italic;
+    margin-left: 2.4em;
+    padding-left: 0.6em;
+}
+
+.wiki .article-body a.notfound{
+    color: red;
+}
+
+.wiki .wiki-side-bar {
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+}
+.wiki-side-bar .label {
+    background-color: #606060;
+    color: white;
+    float: left;
+    font-size: 1.273em;
+	font-weight: bold;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+}
+.wiki-side-bar .lwiki{
+    font-size: 1.273em;
+    font-weight: bold;
+    padding: 3px;
+}
+.wiki-side-bar .hr {
+    height: 2px;
+    background: url("/images/blog/side-bar-hr.png") repeat-x scroll 0 0 transparent;
+}
+.wiki .menu-bar {
+    padding: 10px 0;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.wiki .menu-bar a:link, .wiki .menu-bar a:visited {
+    color: #50788F;
+    font-size: 1.273em;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#actions {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+#apply {
+    margin-bottom: 10px;
+}
+.wiki .history-bar {
+    margin-left: 20px;
+}
+.wiki .history-bar .history li {
+    line-height: 25px;
+    list-style: none outside none;
+}
+.wiki .version {
+    font-size: 1.091em;
+}
+.wiki .version-ctrl {
+    margin-bottom: 5px;
+    margin-right: 7px;
+}
+
+
+.wiki .articles-list {
+    margin: 0;
+}
+.wiki .articles-list li {
+    list-style: none outside none;
+}
+.wiki .articles-list li a{
+    font-size: 1em;
+    line-height: 25px;
+}
+.wiki .not-found {
+    font-size: 0.686em;
+}
+
+.wiki .history {
+    max-height: 500px;
+    margin: 10px 0;
+    overflow: auto;
+}
+.wiki .history .change {
+    list-style: none outside none;
+    font-size: 1.273em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.wiki .history .articles {
+    padding-top: 10px;
+}
+.wiki .history .articles li a{
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.wiki .article-compare {
+    float: left;
+    padding: 0 10px;
+    width: 47%;
+	overflow: scroll;
+}
+.wiki .article-compare .article-author {
+    overflow: hidden;
+    margin: 0 0 10px;
+}
+.wiki .article-compare .article-author li{
+    line-height: 18px;
+    list-style: none outside none;
+}
+.wiki .article-compare .article-author .avatar {
+    vertical-align: baseline;
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin-right: 10px;
+    position: relative;
+    width: 24px;
+}
+.wiki .article-compare .article-author .avatar img {
+    display: block;
+    width: 24px;
+}
+
+.wiki .article-compare .article-author .name, 
+.wiki .article-compare .article-author.date {
+    color: #4B4B4B;
+    float: left;
+    font-size: 1.182em;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.wiki .article-compare .article-author .name {
+    font-size: 0.909em;
+    line-height: 14px;
+} 
+.wiki .article-compare .article-author  .date {
+    font-size: 0.909em;
+    line-height: 24px;
+}
+.wiki .wikiH1Wrap{
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+}
+.wiki .wikiH1Wrap h1{
+	float:left;
+	display:inline-block;
+	padding-right: 10px;
+}
+.wiki .wikiH1Wrap .article-controls{
+	margin-top: 23px;
+	float:none;
+}
+/*edit form*/
+.hm-wiki-editor {
+    padding: 3px;
+    height: 26px;
+    margin-bottom: 3px;
+}
+.hm-wiki-editor .button {
+    background-color: #F7F7F7;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #DDDDDD;
+    height: 24px;
+    margin-right: 6px;
+    width: 24px;
+    float: left;
+    cursor: pointer;
+}
+.wiki .hm-wiki-editor .button:hover {
+    border-color: #000000;
+}
+.hm-wiki-editor .but_strong {
+    background-image: url("../images/wiki/bt_strong.png");
+}
+.hm-wiki-editor .but_em {
+    background-image: url("../images/wiki/bt_em.png");
+}
+.hm-wiki-editor .but_ins {
+    background-image: url("../images/wiki/bt_ins.png");
+}
+.hm-wiki-editor .but_del {
+    background-image: url("../images/wiki/bt_del.png");
+}
+.hm-wiki-editor .but_code {
+    background-image: url("../images/wiki/bt_code.png");
+}
+.hm-wiki-editor .but_h1 {
+    background-image: url("../images/wiki/bt_h1.png");
+}
+.hm-wiki-editor .but_h2 {
+    background-image: url("../images/wiki/bt_h2.png");
+}
+.hm-wiki-editor .but_h3 {
+    background-image: url("../images/wiki/bt_h3.png");
+}
+.hm-wiki-editor .but_ul {
+    background-image: url("../images/wiki/bt_ul.png");
+}
+.hm-wiki-editor .but_ol {
+    background-image: url("../images/wiki/bt_ol.png");
+}
+.hm-wiki-editor .but_bq {
+    background-image: url("../images/wiki/bt_bq.png");
+}
+.hm-wiki-editor .but_unbq {
+    background-image: url("../images/wiki/bt_bq_remove.png");
+}
+.hm-wiki-editor .but_pre {
+    background-image: url("../images/wiki/bt_pre.png");
+}
+.hm-wiki-editor .but_link {
+    background-image: url("../images/wiki/bt_link.png");
+}
+.hm-wiki-editor .but_img {
+    background-image: url("../images/wiki/bt_img.png");
+}
+.hm-wiki-editor .but_swf {
+    background-image: url("../images/wiki/bt_swf.png");
+}
+.hm-wiki-editor .but_video {
+    background-image: url("../images/wiki/bt_video.png");
+}
+.hm-wiki-editor .but_math {
+    background-image: url("../images/wiki/bt_math.png");
+}
+.hm-wiki-editor .but_math_element {
+    background-image: url("../images/wiki/bt_math_element.png");
+}
+
+.hm-wiki-editor .ediorSpacer {
+    float: left;
+    font-size: 0.09em;
+    margin-right: 10px;
+    width: 0;
+}
+#body {
+    height: 500px;
+    width: 99%;
+}
+/*edit form*/
+
+.wiki ol{
+    list-style-position: inside;
+}
+
+.wiki .AM > img {
+    float:none;
+}

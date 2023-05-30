@@ -1,0 +1,154 @@
+   <input type=hidden name="Action" value="change">
+   <input type=hidden name="chCID" value="[CID]">
+
+        <table id=newmessage  width=100%  cellspacing=0  cellpadding=0 class="shown">
+        <tr class=questt>
+        <td  class=tabheader >
+        <table width=100%  cellspacing=0 cellpadding=0   class="shedaddform" >
+          <tr id=qq>
+            <td class=cHilight height="17">{?t?}Название{?/t?}<font color="red">*</font></td>
+            <td colspan="2">
+              <!-- input type="text" class=lineinput size="25" name="Title" style="width:92%" value="[TITLE]" -->
+            <textarea class=s9 cols=80 rows=2 name="Title">[TITLE]</textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>{?t?}доступ{?/t?} <font color="red">*</font></td>
+            <td>
+              <select  class=lineinput style="border-style:0;" name="TypeDes">
+              [TYPE_DESCR]
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>{?t?}состояние{?/t?}<font color="red">*</font></td>
+            <td valign=middle>
+              <select  class=lineinput style="border-style:0;" name="Status">
+      [STATUS]
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=cHilight height="17">{?t?}описание{?/t?}</td>
+            <td>
+              [DESCRIPTION]
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>eМail {?t?}ведущего преподавателя{?/t?}<font color="red">V</font></td>
+            <td>
+              <input type="text" class=lineinput size="25" name="createby" value="[CREATEBY]">
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>{?t?}цена и валюта{?/t?}</td>
+            <td>
+              <input type="text"  class=lineinput size="10" name="Fee" value="[FEE]">
+              <select class=lineinput size="1" name="val">
+              [VALUTA]
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>{?t?}дата начала{?/t?}</td>
+            <td valign=middle>
+              <select  class=lineinput style="border-style:0;" name="day">
+      [DAY]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="month">
+        [MONTH]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="year">
+      [YEAR]
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>{?t?}окончание{?/t?}</td>
+            <td valign=middle>
+              <select  class=lineinput style="border-style:0;" name="day2">
+      [END_DAY]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="month2">
+      [END_MONTH]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="year2">
+      [END_YEAR]
+              </select>
+              </td>
+          <tr><td>
+            {?t?}длительность{?/t?}
+            </td>
+            <td>
+           <input type=text size=3 value='[LONGTIME]' name=longtime> {?t?}дней{?/t?}
+            </td>
+          </tr>
+          <tr>
+            <td class=cHilight>{?t?}дата регистрации{?/t?}</td>
+            <td valign=middle>
+         <input type="text"  class=lineinput size="25" name="creatydate" value="[CREATEDATE]" readonly>
+
+            </td>
+          </tr>
+          <tr>
+            <td valign=middle>
+              {?t?}Шаблон публикации{?/t?}
+            </td>
+            <td valign=middle>
+             [TEMPLATE_PUBL]
+            </td>
+          </tr>          
+          <tr>
+            <td valign=middle>
+              {?t?}Стиль публикации{?/t?}
+            </td>
+            <td valign=middle>
+             [STYLE_PUBL]
+            </td>
+          </tr>                    
+          <!--tr>
+            <td valign=middle>
+              {?t?}Подразделение{?/t?}
+            </td>
+            <td valign=middle>
+             [DEPARTMENTS]
+            </td>
+          </tr-->
+          <tr>
+            <td valign=middle>
+              {?t?}Преподаватели{?/t?}
+            </td>
+            <td valign=middle>
+             [TEACHERS]
+            </td>
+          </tr>
+          <tr>
+            <td valign=middle>
+              [STUDENT_ALIAS-VIN-MORE]
+            </td>
+            <td valign=middle>
+             [STUDENTS]
+            </td>
+          </tr>
+          <tr>
+            <td valign=top >
+                                <span class=shown id=rooms1><a title="{?t?}показать список аудиторий{?/t?}"  onClick="putElem('rooms_list'); putElem('rooms2');removeElem('rooms1'); " >+ {?t?}аудитории{?/t?}</a></span>
+                                  <span class=hidden2 id=rooms2 ><a title="{?t?}скрыть список аудиторий{?/t?}" onClick="removeElem('rooms_list');  removeElem('rooms2');  putElem('rooms1');" >- {?t?}аудитории{?/t?}</a></span>
+                        </td>
+            <td class=hidden2 id=rooms_list> [ROOMS] </td>
+          </tr>
+        </table>
+    </td>
+   </tr>
+        <tr>
+    <td align="right" class="shedaddform">
+      <input type="image" id="add_schedule_scEnd" onMouseOver="this.src='images/send_.gif';" onMouseOut="this.src='images/send.gif';" src="images/send.gif" align="right" alt="{?t?}применить{?/t?}" border=0>
+    </td>
+   </tr>
+        <tr>
+    <td height=5>
+      <img src="images/spacer.gif" width="1" height="1">
+   </td>
+   </tr>
+        </table>

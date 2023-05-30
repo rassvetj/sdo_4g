@@ -1,0 +1,133 @@
+.hm-page-support {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4E4E4E;
+    z-index: 1000;
+}
+
+.hm-page-support label{
+    color: #fff;
+}
+
+.hm-page-support-opened {
+    -moz-box-shadow: 0 0 20px silver;
+    -webkit-box-shadow: 0 0 20px silver;
+    box-shadow: 0 0 20px silver;
+}
+
+.hm-page-support-header {
+    height: 33px;
+    line-height: 25px;
+    padding: 0;
+    font-size: 11px;
+    color: #fff;
+    background-color: #363636;
+}
+
+.hm-page-support-header-support {
+    padding: 4px;
+}
+
+.hm-page-support-header-support .hm-page-support-header-img {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    background: transparent url(../../images/content-modules/page-support/support-icon.png) 0 0 no-repeat;
+}
+
+.hm-page-support-header-support-unrated {
+    background-color: #d45000;
+}
+
+.hm-page-support-header-title {
+    min-width: 200px;
+    display: inline-block;
+}
+
+.hm-page-support-header-title > a {
+    border-bottom: 1px dotted #fff;
+    margin: 0px 11px;
+    text-decoration: none;
+}
+
+.hm-page-support-header-title > a,
+.hm-page-support-header-title > a:hover,
+.hm-page-support-header-title > a:active,
+.hm-page-support-header-title > a:visited {
+    color: #fff;
+}
+
+
+.hm-page-support-header-delimeter {
+    width: 0;
+    border: 1px solid #424242;
+    border-right-color: #5d5d5d;
+    border-bottom: none;
+    border-top: none;
+    display: inline-block;
+    height: 25px;
+    cursor: default;
+    vertical-align: middle;
+}
+
+.hm-page-support-content {
+    padding: 25px;
+    display: none;
+    width: 600px;
+    color: #000;
+}
+
+.request-form {
+    position: relative;
+}
+
+.request-form div {
+    margin: 5px;
+}
+
+.request-form input[type=text] {
+    width: 100%;
+}
+
+.request-form textarea {
+    resize: none;
+    width: 100%;
+}
+
+.request-form label span {
+    color: #828282;
+}
+
+.request-form label .request-form-required {
+    color: red;
+}
+
+.request-form a:link {
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+
+.request-form a:active {
+    color: #fff;
+}
+
+.request-form a:visited {
+    color: #fff;
+}
+
+#request-result {
+    color: #fff;
+}
+
+.request-view div {
+    margin: 10px;
+}
+
+.request-view label {
+    font-weight: bold;
+}

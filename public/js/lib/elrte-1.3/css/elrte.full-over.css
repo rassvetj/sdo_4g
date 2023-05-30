@@ -1,0 +1,78 @@
+/* Reset parasite font size settings */
+.ui-widget,
+.ui-dialog .ui-dialog-buttonpane button,
+.ui-dialog .ui-dialog-title, .ui-dialog .ui-dialog-content {
+	font-size: inherit;
+}
+.ui-dialog .ui-dialog-titlebar { padding: 0.8em 0.818em;  } /*HACK*/
+
+/* overwrite UI theme styles */
+#el-df-tab-events {
+	display: none;
+}
+.el-dialogform fieldset {
+	margin-bottom: 0;
+}
+.el-finder-dialog.ui-dialog,
+.el-dialogform-container.ui-dialog {
+	background-color: #fff;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-content,
+.el-dialogform-container.ui-dialog .ui-dialog-content {
+	padding: 0.5em 0 0;
+}
+.el-finder-dialog.ui-dialog .ui-widget-header, 
+.el-finder-dialog.ui-dialog .ui-widget-header a, 
+.el-finder-dialog.ui-dialog .ui-widget-content, 
+.el-finder-dialog.ui-dialog .ui-widget-content a,
+.el-dialogform-container.ui-dialog .ui-widget-header, 
+.el-dialogform-container.ui-dialog .ui-widget-header a, 
+.el-dialogform-container.ui-dialog .ui-widget-content, 
+.el-dialogform-container.ui-dialog .ui-widget-content a {
+	color: #000;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-titlebar,
+.el-dialogform-container.ui-dialog .ui-dialog-titlebar {
+	border-top: none;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient, 
+.el-dialogform-container.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient {
+	background-color: #aaa;
+	background-image: none;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient div,
+.el-dialogform-container.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient div {
+	background-image: none;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-content,
+.el-dialogform-container.ui-dialog .ui-dialog-content {
+	border-bottom: none;
+	border-top: none;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-content-wrapper,
+.el-dialogform-container.ui-dialog .ui-dialog-content-wrapper {
+	border-top: none !important;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-buttonpane,
+.el-dialogform-container.ui-dialog .ui-dialog-buttonpane {
+	border-top: 1px solid #aaa !important;
+}
+.el-finder-dialog .ui-state-default,
+.el-finder-dialog .ui-widget-content .ui-state-default,
+.el-finder-dialog .ui-widget-header .ui-state-default,
+.el-dialogform-container .ui-state-default,
+.el-dialogform-container .ui-widget-content .ui-state-default,
+.el-dialogform-container .ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3 !important;
+	color: #555 !important;
+}
+.el-dialogform-container .ui-state-default .ui-icon,
+.el-finder-dialog .ui-state-default .ui-icon {
+	background-image: url("../../../../css/jquery-ui/images/ui-icons_888888_256x240.png") !important;
+}
+.el-rte .toolbar {  background-color:#DBDBDB; }
+.el-rte .toolbar ul li {background:#FFFFFF url('../images/elrte-toolbar.png') no-repeat; }
+.el-rte .statusbar {background-color:#DBDBDB;}
+.el-rte .tabsbar .tab {border:1px solid #DBDBDB;}
+.el-rte .tabsbar div.active { background: #DBDBDB;}
+.el-rte .workzone{border:1px solid #DBDBDB;}

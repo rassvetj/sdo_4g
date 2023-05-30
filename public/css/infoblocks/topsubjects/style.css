@@ -1,0 +1,23 @@
+#topsubjectsBlock .ui-portlet-content #topsubjects-text {
+	float: right;
+	width: 30%;
+}
+#topsubjectsBlock .ui-portlet-content #topsubjects-text p,
+#topsubjectsBlock .ui-portlet-content #topsubjects-text ol {
+	padding: 0 8px;
+}
+#topsubjectsBlock .ui-portlet-content .topsubjects-number {
+	font-weight: bold;
+}
+#topsubjectsBlock .export-button {
+    float: right;
+    padding: .4em !important;
+    margin: 8px 0 0;
+}
+#topsubjectsBlock .export-button .button-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}

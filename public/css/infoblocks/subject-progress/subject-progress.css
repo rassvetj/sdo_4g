@@ -1,0 +1,136 @@
+.subject-progress ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.subject-progress li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+  border-top: 1px solid #fff;
+  max-width: 100%;
+  overflow: auto;
+}
+.subject-progress li.first {
+  border-top-width: 0;
+}
+.subject-progress li.first > h4 {
+  margin: 0;
+}
+.subject-progress li.last {
+  border-bottom-width: 0;
+}
+.subject-progress li > h4 {
+  margin-bottom: 0.3em;
+  margin-top: 1em;
+  white-space: nowrap;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.subject-progress li > h4 span,
+.subject-progress li > h4 a {
+  white-space: normal;
+}
+.subject-progress li > h4 img,
+.subject-progress li > h4 span,
+.subject-progress li > h4 a {
+  vertical-align: middle;
+}
+.subject-progress li > h4 img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 4px;
+}
+.subject-progress li .ui-button {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0 0.5em 0 0;
+}
+.subject-progress li .ui-progressbar {
+  margin-right: 0.5em;
+}
+.subject-progress li .progress,
+.subject-progress li .status {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.subject-progress li .progress {
+  width: 60%;
+}
+.subject-progress li .status .label,
+.subject-progress li.not-attempted .status .label {
+  color: #696969;
+}
+.subject-progress li .ui-progressbar-value,
+.subject-progress li.not-attempted .ui-progressbar-value {
+  background-color: #d5d5d5;
+}
+.subject-progress li.incomplete .status .label {
+  color: #555;
+}
+.subject-progress li.not-attempted .ui-progressbar-value {
+  background-color: #d5d5d5;
+}
+.subject-progress li.incomplete .ui-progressbar-value {
+  background-color: #E6D058;
+}
+.subject-progress li.passed .status .label,
+.subject-progress li.completed .status .label {
+  color: #60923c;
+}
+.subject-progress li.passed .ui-progressbar-value,
+.subject-progress li.completed .ui-progressbar-value {
+  background-color: #b4d4a4;
+}
+.subject-progress li.failed .status .label {
+  color: #a22a2a;
+}
+.subject-progress li.failed .ui-progressbar-value {
+  background-color: #d4a4a4;
+}
+.subject-progress li .status {
+  zoom: 1;
+  position: relative;
+  width: 35%;
+  white-space: nowrap;
+}
+.subject-progress li .status:before,
+.subject-progress li .status:after {
+  content: "";
+  display: table;
+}
+.subject-progress li .status:after {
+  clear: both;
+}
+.ie7 .subject-progress li .status {
+  width: 34.99%;
+}
+.subject-progress li .status .ui-button,
+.subject-progress li .status .label {
+  vertical-align: middle;
+}
+.subject-progress li .status .ui-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  left: 0;
+}
+.subject-progress li .status .label {
+  white-space: normal;
+  display: block;
+  /*text-align: right;*/
+  margin-left: 30px;
+}
+.subject-progress li .status > .label:first-child {
+  margin-left: 0;
+}
+.subject-progress li.last .last-used:empty {
+  display: none;
+}
+.subject-progress li .last-used {
+  color: #737373;
+  min-height: 1em;
+  margin: 0;
+}

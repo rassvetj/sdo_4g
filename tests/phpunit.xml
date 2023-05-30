@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit bootstrap="application/bootstrap.php"
+    colors="true"
+    stopOnFailure="true">
+ 
+    <!-- запускаем все тесты из корневой директории -->
+    <testsuite name="Main Test Suite">
+        <directory>../tests/</directory>
+    </testsuite>
+ 
+    <filter>
+        <!-- не смотрим на следующие директории -->
+        <blacklist>
+            <directory suffix=".php">../tests</directory>
+        </blacklist>
+        <!-- смотрим лишь на следующие директории -->
+        <whitelist>
+            <directory suffix=".php">application</directory>
+            <directory suffix=".php">library</directory>
+            <exclude>
+                <directory suffix=".phtml">application</directory>                
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

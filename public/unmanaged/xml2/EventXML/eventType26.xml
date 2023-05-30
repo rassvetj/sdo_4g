@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<eventType ID='26'>
+<externalURLs>
+<attribute name='urls'/>
+</externalURLs>
+<tests>
+<attribute name='testID'/>
+</tests>
+<module>
+<attribute name='moduleID'/>
+</module>
+</eventType>

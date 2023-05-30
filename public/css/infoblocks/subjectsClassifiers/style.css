@@ -1,0 +1,100 @@
+.subject-classifiers-hr {
+	noshade;
+	width: 100%;
+	color: "#FFF";
+	size: "1";
+}
+.subject-classifiers-rowdata{
+	font-weight: bold;
+}
+.subject-classifiers-rowdata a{
+	font-weight: bold;
+	text-decoration: none;
+}
+.subject-classifiers-content .course{
+    margin-bottom: 20px;
+}
+    .subject-classifiers-content .t_title{
+        float:none;
+        display:inline-block;  
+        color:#444954;  
+        font-size: 2em;
+    }
+        .subject-classifiers-content .t_h1{
+            width:100%;
+            float: left;
+            font-family:"PT Sans",verdana,sans-serif;
+            font-size: 0.9em; 
+				display: inline-block;
+				margin-bottom:5px;     
+        }
+            .ui-widget-content  .t_h1 a{
+                text-decoration:none;
+                color:#444954;
+            }
+        .subject-classifiers-content .t_right{
+            float:right;
+            width:15%;
+            font-family: Georgia,serif;
+            font-weight:bold;
+            font-style:italic;
+        }
+    .course .subject-classifiers-rowdata{
+        float:none;
+        display:inline-block;        
+        border-bottom:dotted 1px #908E8E;
+        width:100%;
+        min-width:100%;
+        position:relative;
+        padding-top:6px;
+        min-width:160px;
+    }
+    .course .subject-classifiers-rowdata:hover{
+        background-color:#DAE1ED;
+    }
+        .subject-classifiers-content .bullet{
+            height:14px;
+            width:14px;
+            float:left;
+            margin:0px 5px 0;
+        }
+        .subject-classifiers-content .courseWName{
+            float:left;
+            margin-top: -2px;
+            font-family:"PT Sans",verdana,sans-serif;
+            position:relative;
+            min-width:160px;
+            width:100%;
+        }
+        .ie7 .subject-classifiers-content .courseWName{
+            width: auto;
+        }        
+        .subject-classifiers-content .courseWName a{
+				display:block;
+				padding:0 85px 0 30px;
+				margin-bottom:3px;
+        }
+        .subject-classifiers-content .right,
+		  .subject-classifiers-content .right_not_classific{
+        		position:absolute;
+        		right:0;
+        		top:-5px;
+            margin: -2px 5px 0 0;
+            font-weight:bold;
+            padding: 3px 0px 0 0;
+            font-family: Georgia,serif;
+            font-style:italic;   
+            font-size: 1em; 
+            white-space:nowrap;
+            display: inline-block;
+        }
+        .subject-classifiers-content .ui-widget-content .not_classific a,
+		  .right_not_classific {
+            font-style:italic;
+            color:#9CA3B0;
+        }
+.infoblock-subjectsClassifiers .ui-widget-content{
+	max-height: 600px;
+	overflow-y: auto;
+	padding: 1px 0;
+}  

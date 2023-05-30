@@ -1,0 +1,16 @@
+div.card .ui-dialog-content-wrapper
+{
+    color: #546E7E;
+    background-color: #D9E1E8;
+    margin: 0 !important;
+}
+
+#lightdialog-container
+{
+    color: #546E7E;
+}
+
+#lightdialog-container td 
+{
+    padding: 5px;
+}

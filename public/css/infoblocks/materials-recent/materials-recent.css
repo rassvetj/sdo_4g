@@ -1,0 +1,64 @@
+.materials-recent {
+  padding: 1.182em;
+}
+.materials-recent > h4 {
+  font-weight: normal;
+  margin-bottom: 0.7em;
+  font-size: 1.2em;
+}
+.materials-recent ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.page-context-accordion .ui-accordion-content .materials-recent ul li.material {
+  font-weight: normal;
+  border: 0;
+}
+.materials-recent li {
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  line-height: 1.1;
+  position: relative;
+  min-height: 16px;
+}
+.materials-recent .material-icon-small {
+  vertical-align: middle;
+  position: absolute;
+  left: -21px;
+}
+.materials-recent .materials-all {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+.materials-recent .materials-all > a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 4px;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.materials-recent .materials-all > a:hover,
+.materials-recent .materials-all > a:active {
+  background-color: transparent;
+}
+.page-context-accordion .materials-recent .materials-all > a,
+.page-context-accordion .materials-recent .materials-all > a:visited,
+.page-context-accordion .materials-recent .materials-all > a:link {
+  color: #fff;
+}
+.page-context-accordion .materials-recent .materials-all > a:hover,
+.page-context-accordion .materials-recent .materials-all > a:active {
+  color: inherit;
+}
+.materials-recent .unpublished {
+  font-style: italic;
+}

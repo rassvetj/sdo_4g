@@ -1,0 +1,1 @@
+<?php echo $this->event->getParam('author'); ?> создал(-а) страницу wiki в '<?php echo $this->event->getParam('course_name'); ?>'

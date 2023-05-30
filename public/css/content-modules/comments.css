@@ -1,0 +1,161 @@
+/*wiki - comments*/
+.wiki a.comments {
+    color: #50788F;
+    font-size: 1em;
+}
+.wiki ul.comments {
+    clear: both;
+    width: auto;
+    list-style: none outside none;
+    padding: 20px 0 20px 10px;
+    margin: 0;
+}
+.wiki .comment {
+    float: left;
+    width: 100%;
+}
+.wiki .comment-info {}
+.wiki .comment-author {
+    overflow: hidden;
+    margin: 0;
+}
+.wiki .comment-author li{
+    line-height: 18px;
+    list-style: none outside none;
+}
+.wiki .comment-author .avatar {
+    vertical-align: baseline;
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin-right: 10px;
+    position: relative;
+    width: 24px;
+}
+.wiki .comment-author .avatar img {
+    display: block;
+    width: 24px;
+}
+
+.wiki .comment-author .name, .wiki .comment-author  .date, .wiki .comment-author  .bookmark {
+    color: #4B4B4B;
+    float: left;
+    font-size: 1.182em;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.wiki .comment-author .name {
+    font-size: 0.909em;
+}
+.wiki .comment-author  .date {
+    font-size: 0.909em;
+}
+.wiki .comment-author  .bookmark {}
+.wiki .comment-author  .bookmark a {}
+.wiki .comment-message {
+    clear: both;
+    color: #4B4B4B;
+    font-size: 1.091em;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+.wiki .post-comments {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.wiki .post-comments  b {
+    font-weight: bold;
+    color:#50788F;
+}
+
+/*form*/
+#message {
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+form#comment {
+    width: 500px;
+}
+
+/*blog - comments*/
+.blog-middle .post-comments {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.blog-middle .post-comments  b {
+    font-weight: bold;
+    color:#50788F;
+}
+.blog-middle a.comments {
+    color: #50788F;
+    font-size: 1em;
+}
+.blog-middle ul.comments {
+    clear: both;
+    width: auto;
+    list-style: none outside none;
+    padding: 20px 0 20px 10px;
+    margin: 0;
+}
+.blog-middle .comment {
+    float: left;
+    width: 100%;
+}
+.blog-middle .comment-info {}
+.blog-middle .comment-author {
+    overflow: hidden;
+    margin: 0;
+}
+.blog-middle .comment-author li{
+    line-height: 18px;
+    list-style: none outside none;
+}
+.blog-middle .comment-author .avatar {
+    vertical-align: baseline;
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin-right: 10px;
+    position: relative;
+    width: 24px;
+}
+.blog-middle .comment-author .avatar img {
+    display: block;
+    width: 24px;
+}
+
+.blog-middle .comment-author .name, .blog-middle .comment-author  .date, .blog-middle .comment-author  .bookmark {
+    color: #4B4B4B;
+    float: left;
+    font-size: 1.182em;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.blog-middle .comment-author .name {
+    font-size: 0.909em;
+}
+.blog-middle .comment-author  .date {
+    font-size: 0.909em;
+}
+.blog-middle .comment-author  .bookmark {}
+.blog-middle .comment-author  .bookmark a {}
+.blog-middle .comment-message {
+    clear: both;
+    color: #4B4B4B;
+    font-size: 1.091em;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+/*form*/
+#message {
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+form#comment {
+    width: 500px;
+}

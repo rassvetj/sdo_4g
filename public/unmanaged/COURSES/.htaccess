@@ -1,0 +1,5 @@
+AddDefaultCharset Off
+
+<IfModule mod_headers.c>
+    Header unset X-UA-Compatible
+</IfModule>

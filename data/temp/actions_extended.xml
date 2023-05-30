@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by lex (hypermethod) -->
+<!DOCTYPE actions [
+<!ELEMENT actions (preference* , crontask* , group*)>
+<!ATTLIST actions branch CDATA #REQUIRED>
+<!ELEMENT group (page* , custom* , subgroup*)>
+<!ATTLIST group id ID #REQUIRED>
+<!ATTLIST group name CDATA #REQUIRED>
+<!ATTLIST group icon CDATA #IMPLIED>
+<!ATTLIST group order CDATA #IMPLIED>
+<!ATTLIST group profiles CDATA #IMPLIED>
+<!ATTLIST group hide (false | true) #IMPLIED>
+<!ELEMENT subgroup (page)*>
+<!ELEMENT custom (tab* , link* , option*)>
+<!ATTLIST custom id ID #REQUIRED>
+<!ATTLIST custom profiles CDATA #IMPLIED>
+<!ATTLIST custom name CDATA #IMPLIED>
+<!ATTLIST custom name_full CDATA #IMPLIED>
+<!ELEMENT page (tab* , link* , option*)>
+<!ATTLIST page id ID #REQUIRED>
+<!ATTLIST page name CDATA #REQUIRED>
+<!ATTLIST page name_full CDATA #IMPLIED>
+<!ATTLIST page url CDATA #IMPLIED>
+<!ATTLIST page order CDATA #IMPLIED>
+<!ATTLIST page profiles CDATA #IMPLIED>
+<!ELEMENT tab EMPTY>
+<!ATTLIST tab id ID #REQUIRED>
+<!ATTLIST tab name CDATA #REQUIRED>
+<!ATTLIST tab name_full CDATA #IMPLIED>
+<!ATTLIST tab order CDATA #IMPLIED>
+<!ATTLIST tab profiles CDATA #IMPLIED>
+<!ELEMENT link EMPTY>
+<!ATTLIST link id ID #REQUIRED>
+<!ATTLIST link name CDATA #REQUIRED>
+<!ATTLIST link url CDATA #REQUIRED>
+<!ATTLIST link alt CDATA #IMPLIED>
+<!ATTLIST link target CDATA #IMPLIED>
+<!ATTLIST link params CDATA #IMPLIED>
+<!ATTLIST link order CDATA #IMPLIED>
+<!ATTLIST link profiles CDATA #IMPLIED>
+<!ATTLIST link hide (false | true) #IMPLIED>
+<!ATTLIST link confirm CDATA #IMPLIED>
+<!ATTLIST link anchor CDATA #IMPLIED>
+<!ELEMENT option EMPTY>
+<!ATTLIST option id ID #REQUIRED>
+<!ATTLIST option name CDATA #REQUIRED>
+<!ATTLIST option profiles CDATA #IMPLIED>
+<!ELEMENT preference EMPTY>
+<!ATTLIST preference id ID #REQUIRED>
+<!ATTLIST preference name CDATA #REQUIRED>
+<!ATTLIST preference value CDATA #IMPLIED>
+<!ELEMENT crontask EMPTY>
+<!ATTLIST crontask id ID #REQUIRED>
+<!ATTLIST crontask name CDATA #IMPLIED>
+<!ATTLIST crontask launch (false | true) #IMPLIED>
+<!ATTLIST crontask runperiod CDATA #IMPLIED>
+]>
+<actions branch="corporate">
+	<preference id="use_bologna_system" name="болонская система" value="0"/>
+	<preference id="use_webinar" name="вебинар" value="1"/>
+	<preference id="use_connect_pro" name="connect pro" value="0"/>
+	<preference id="use_at_integration" name="интеграция с at" value="0"/>
+	<preference id="use_cms_integration" name="интеграция с cms" value="0"/>
+	<preference id="use_sis_integration" name="интеграция с sis" value="0"/>
+	<crontask id="synchronize_positions" name="Синхронизация структуры организации" launch="false"/>
+	<crontask id="email_absences" name="Уведомление по Email об отсутствиях на занятиях" launch="false"/>
+	<group id="m88" name="Домой" profiles="guest,enduser,teacher,tutor,dean,admin,developer,manager,supervisor" order="1">
+		<subgroup>
+			<page id="m0101" name="Домой" url=""/>
+		</subgroup>
+	</group>
+	<group id="m02" name="Администрирование" profiles="admin">
+		<subgroup>
+			<page id="m0201" name="Все учетные записи" url="user/list">
+				<link name="Создать учетную запись" url="user/list/new" id="m0201013"/>
+				<link name="Сгенерировать учетные записи " url="user/list/generate" id="m020102"/>
+				<link name="Импортировать слушателей из CSV" url="user/import/index/source/csv/role1c/1" id="m020103"/>
+				<link name="Импортировать тьютеров из CSV" url="user/import/index/source/csv/role1c/2" id="m020104"/>
+				<!--link name="Импортировать учетные записи из Active Directory" url="user/import/index/source/ad" id="m020104"/-->
+				<!--link name="Импортировать учетные записи из SAP" url="user/import/sap" id="m020104" /-->
+			</page>
+		</subgroup>
+		<subgroup>
+			<!--<page id="m0205" name="Методисты" url="assign/metodist"/>-->
+            <!--<page id="m0206" name="Диспетчеры расписания" url="assign/dispatcher"/>-->
+            <page id="m0202" name="Наблюдатели" url="assign/supervisor"/>
+            <page id="m0203" name="Организаторы обучения" url="assign/dean"/>
+            <page id="m0204" name="Администраторы" url="assign/admin"/>
+        </subgroup>
+        <subgroup>
+            <page id="m0205" name="Настройка ролей" url="admin/roles.php"/>
+        </subgroup>
+		<subgroup>
+			<page id="m0206" name="Техподдержка" url="techsupport/list/index"/>
+		</subgroup>
+    </group>
+    <group id="m03" name="Портал" profiles="admin">
+        <subgroup>
+            <!--page id="m0301" name="Информационные блоки" url="about.php"/-->
+			<page id="m0301" name="Информационные блоки" url="info/list"/>
+			<page id="m0302" name="Информационные страницы" url="htmlpage/list">
+				<link id="m030201" name="Создать страницу" url="htmlpage/list/new"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m0303" name="Главная страница Портала" url="interface/edit"/>
+			<page id="m0304" name="Сервисы информационного взаимодействия Портала" url="activity/edit"/>
+		</subgroup>
+	</group>
+	<group id="m06" name="Обучение" profiles="enduser,supervisor,teacher,dean,tutor">
+        <subgroup>
+			<page id="m0601" name="Учебные курсы" url="subject/list" profiles="~student,~teacher,~supervisor,~employee,~enduser,~tutor">
+				<link name="Создать учебный курс" url="subject/list/new" id="m060101"/>
+			</page>
+                        <page id="m0608" name="Учебные предметы" url="learningsubjects/list/index" profiles="~teacher,~student,~supervisor,~enduser,~tutor">
+                            <link name="Импортировать из csv" url="learningsubjects/import/index/source/csv" id="m060801"/>
+                        </page>
+                        <page id="m0607" name="Учебные сессии" url="subject/list/index/base/2/" profiles="~teacher,~student,~supervisor,~enduser,~tutor">
+                            <link name="Импортировать из csv" url="subject/import/index/source/csv" id="m060701"/>
+                        </page>
+			<page id="m0602" name="Мои курсы" url="subject/list" profiles="~dean,~supervisor"/>
+            <page id="m0623" name="Учебные программы" url="programm/list" profiles="~enduser,~supervisor,~teacher,~tutor">
+         		<link name="Создать программу" url="programm/list/new" id="m062301"/>
+         		<link name="Импортировать из csv" url="programm/import/index/source/csv" id="m062302"/>
+            </page>
+			<page id="m0613" name="Ведомости" url="marksheet/manager/" profiles="~teacher,~student,~supervisor,~enduser,~tutor"/>
+		</subgroup>
+        <!--ВНИМАНИЕ! Заявки-слушатели-преподы вынесены в отдельное меню! -->
+		<subgroup>
+			<!-- page id="m0607" name="Общее расписание" url="schedule/general" profiles="~enduser,~teacher"/-->
+			<page id="m0611" name="Места проведения обучения" url="rooms.php" profiles="~enduser,~supervisor,~teacher,~enduser,~tutor"/>
+			<page id="m0612" name="Провайдеры обучения" url="supplier/list" profiles="~enduser,~supervisor,~teacher,~enduser,~tutor">
+				<link id="m061201" name="Добавить провайдера" url="supplier/list/new"/>
+			</page>
+		</subgroup>
+		<subgroup>
+            <page id="m0609" name="Сбор обратной связи" url="poll/feedback" profiles="~enduser,~supervisor,~enduser,~teacher,~tutor"/>
+		</subgroup>
+        <subgroup>
+            <page id="m0622" name="Обучение моих студентов" url="assign/staff" profiles="~teacher,~dean,~enduser,~tutor"/>
+        </subgroup>
+		<subgroup>
+			<page id="m0610" name="Расписание ликвидации задолженностей" url="student-debt/timetable/manager/" profiles="~enduser,~supervisor,~enduser,~teacher,~tutor"/>
+		</subgroup>
+		<!--subgroup>
+			<page id="m0610" name="Мероприятия" url="#" />
+		</subgroup -->
+	</group>
+	<group id="m13" name="Пользователи" profiles="dean">
+		<subgroup>
+			<page id="m1302" name="Слушатели" url="assign/student"/>
+			<page id="m1305" name="Заявки на обучение" url="order/list"/>
+			<page id="m1303" name="Прошедшие обучения" url="assign/graduated"/>
+		</subgroup>
+		<subgroup>
+			<page id="m1304" name="Преподаватели" url="assign/teacher"/>
+		</subgroup>
+		<subgroup>
+			<page id="m1308" name="Тьюторы" url="assign/tutor"/>
+		</subgroup>
+		<subgroup>
+            <page id="m1306" name="Учебные группы" url="study-groups/list" profiles="~enduser,~supervisor,~teacher,~enduser,~expert,~head1,~head2,~head3,~head4">
+                <link name="Создать учебную группу" url="study-groups/list/new" id="m130601"/>
+                <link name="Импортировать из csv" url="study-groups/import/index/source/csv" id="m130602"/>
+            </page>
+		</subgroup>
+            <subgroup>
+                <page id="m1307" name="Экспорт результатов обучения" url="user/export"/>
+            </subgroup>
+	</group>
+	<group id="m14" name="Экспорт результатов обучения" profiles="supervisor">
+		<subgroup>
+			<page id="m1407" name="Экспорт результатов обучения" url="user/export"/>
+		</subgroup>
+	</group>
+	<group id="m11" name="Заявки на обучение" profiles="enduser">
+		<subgroup>
+            <page id="m1108" name="Мои заявки" url="order/list"/>
+		</subgroup>
+<!--		<subgroup>
+			<page id="m1121" name="Каталог учебных курсов" url="subject/catalog"/>
+            <page id="m1122" name="Календарь учебных сессий" url="subject/list/calendar/base/2/switcher/calendar"/>
+		</subgroup>-->
+	</group>
+	<!--group id="m07" name="Документы" profiles="dean">
+		<subgroup>
+			<page id="m0701" name="Сводные отчеты" url="documents/reports"/>
+			<page id="m0702" name="Банк отчетов" url="#"/>
+		</subgroup>
+		<subgroup>
+			<page id="m0703" name="Приказы" url="documents/orders"/>
+			<page id="m0704" name="Сертификаты" url="documents/certificates"/>
+		</subgroup>
+	</group-->
+
+	<!--m7999-->
+	<group id="m18" name="Деканат" profiles="enduser">
+		<subgroup>
+			<!--<page id="m8901" name="Карточка студента" url="cardstudent/"/>-->
+			<!--<page id="m1801" name="Карточка студента" url="study-card/"/>-->
+			<page id="m1802" name="Заявки" url="student-certificate/"/>
+		</subgroup>
+		<subgroup>
+			<!--<page id="m8902" name="Заявки" url="student-certificate/list/"/>-->
+			<!--<page id="m1803" name="Квитанции" alt="hideFilial" url="ticket/"/>-->
+			<page id="m1803" name="Оплаты за обучение" url="payment/"/>
+			<!--<page id="m8904" name="Учетная карточка" url="recordcard/"/>-->
+			<page id="m1804" name="Учетная карточка" url="record-card/"/>
+			<page id="m1805" name="Расписание занятий" alt="" url="timetable/students/"/>
+			<page id="m1806" name="Расписание преподавателей" alt="" url="timetable/teachers/"/>
+			<!--<page id="m1807" name="Расписание ликвидации задолженностей" alt="hideFilial" url="timetable/debtors/"/>-->
+			<page id="m1807" name="Расписание ликвидации задолженностей" alt="" url="student-debt/timetable/"/>
+			<!--
+			<page id="m8905" name="Расписание занятий" alt="hideFilial" url="/htmlpage/index/view/htmlpage_id/12/"/>
+			<page id="m8906" name="Расписание преподавателей" alt="hideFilial" url="/htmlpage/index/view/htmlpage_id/23/"/>
+			<page id="m8907" name="Расписание ликвидации задолженностей" alt="hideFilial" url="/htmlpage/index/view/htmlpage_id/13/"/>
+			-->
+			<page id="m1808" name="Мои задолженности" url="student-debt/"/>
+			<!--<page id="m1809" name="Зачетная книжка" url="student-recordbook/"/>-->
+			<!--<page id="m1810" name="Общежития" alt="hideFilial" url="hostel/"/>-->
+			<page id="m1811" name="Волонтерская деятельность" alt="hideFilial" url="volunteer/cabinet/"/>
+			<!--<page id="m1812" name="StudentTravelClub" url="bookinna/promo/"/>-->
+			<page id="m1813" name="Портфолио" url="portfolio/"/>
+			<page id="m1814" name="Кабинет ОВЗ" url="disabled-people/"/>
+		</subgroup>
+	</group>
+
+	<group id="m1000" name="Деканат" profiles="admin">
+		<subgroup>
+			<page id="m100001" name="Заявки студентов" url="student-certificate/manager/"/>
+		</subgroup>
+	</group>
+
+	<group id="m08" name="Оргструктура" profiles="dean,admin">
+		<page id="m0801" name="Оргструктура" url="orgstructure/list">
+			<link id="m080102" name="Создать подразделение" url="orgstructure/list/new/item/department/parent/%parent%" profiles="~dean,admin"/>
+			<link id="m080103" name="Создать штатную единицу" url="orgstructure/list/new/item/position/parent/%parent%" profiles="~dean,admin"/>
+			<link id="m080101" name="Импортировать структуру организации" url="orgstructure/import/index/source/csv"/>
+			<link id="m080104" name="Восстановить структуру" url="orgstructure/index/repair" profiles="admin"/>
+		</page>
+	</group>
+
+	<group id="m10" name="База знаний" profiles="developer,manager">
+	<!--<group id="m10" name="База знаний" profiles="enduser,supervisor,teacher,tutor,dean,developer,manager">-->
+		<subgroup>
+			<page id="m1008" name="База знаний" url="kbase"/>
+		</subgroup>
+		<subgroup>
+			<page id="m1002" name="Информационные ресурсы" url="resource/list" profiles="~enduser,~teacher,~supervisor,~tutor">
+				<link id="m100201" url="resource/list/new" name="Создать информационный ресурс"/>
+				<link id="m100202" name="Импортировать информационные ресурсы" url="resource/import/index/source/csv"/>
+			</page>
+			<page id="m1001" name="Учебные модули" url="course/list/" profiles="~enduser,~teacher,~supervisor,~tutor">
+				<link id="m100101" name="Создать учебный модуль" url="course/list/new"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m1004" name="Электронные издания и ресурсы" url="kbase/source/" profiles="~supervisor,~developer,~manager">
+				<link id="m100401" url="kbase/source/import/source/csv/" name="Импортировать из csv" profiles="dean"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m1003" name="Тесты" url="test/abstract" profiles="~enduser,~teacher,~supervisor,~tutor">
+				<link id="m100301" url="test/abstract/new" name="Создать тест"/>
+			</page>
+			<page id="m1005" name="Опросы" url="poll/list" profiles="~enduser,~teacher,~supervisor,~tutor">
+				<link id="m100501" url="poll/list/new" name="Создать опрос"/>
+			</page>
+			<page id="m1007" name="Задания" url="task/list" profiles="~enduser,~teacher,~supervisor,~tutor">
+				<link id="m100701" url="task/list/new" name="Создать задание"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m1009" name="Ресурсы на основе сервисов взаимодействия" url="activity/list" profiles="~enduser,~teacher,~dean,~supervisor,~tutor"/>
+		</subgroup>
+	</group>
+
+	<group id="m09" name="Разработка учебных модулей" profiles="developer,manager">
+		<subgroup>
+			<page id="m0901" name="Учебные модули в разработке" url="course/list/developed">
+				<link id="m090102" name="Создать учебный модуль" url="course/list/new"/>
+			</page>
+			<page id="m0902" name="Архив учебных модулей" url="course/list/archived" profiles="~enduser,~teacher,~dean">
+				<!--link id="m090201" name="Создать электронный курс" url="course/list/new"/-->
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m0903" name="Поставщики" url="provider/list" profiles="~developer">
+				<link id="m090301" name="Добавить поставщика" url="provider/list/new"/>
+			</page>
+		</subgroup>
+	</group>
+	<group id="m05" name="Отчёты" profiles="admin,dean,manager,developer,supervisor,teacher,enduser,tutor">
+		<subgroup>
+			<page id="m0501" name="Отчёты" url="report/list/tree" profiles="admin,dean,manager,developer,supervisor,teacher,enduser,tutor"/>
+			<page id="m0502" name="Список отчётов" url="report/external/list/" profiles="~admin,dean,~manager,~developer,~supervisor,~teacher,~enduser,~tutor"/>
+			<!--<page id="m0502" name="Архив отчетов" url="" profiles="admin,dean,manager,supervisor,enduser"/>-->
+		</subgroup>
+		<subgroup>
+			<page id="m0503" name="Конструктор отчетных форм" url="report/list" profiles="~supervisor,~teacher,~enduser,~developer,~tutor">
+				<link id="m050301" url="report/list/edit" name="Создать отчетную форму"/>
+			</page>
+			<page id="m0504" name="Шаблон отчетов" url="template/report" profiles="~dean,~manager,~supervisor,~teacher,~enduser,~developer,~tutor"/>
+			<page id="m0511" name="Отчет по оценкам тьюторов" url="report/ball-tutors/" profiles="~admin,~manager,~developer,~teacher,~enduser,~tutor"/>
+			<!--<page id="m0512" name="Кол-во непроверенных работ (ДО)" url="report/unchecked-works/" profiles="~admin,~manager,~developer,~teacher,~enduser,~tutor"/>-->
+			<page id="m0512" name="Кол-во непроверенных работ" url="report/unchecked-works-new/" profiles="~admin,~manager,~developer,~teacher,~enduser,~tutor"/>
+			<page id="m0505" name="Отчет по тьюторам" url="report/tutors/" profiles="~admin,~manager,~developer,~teacher,~enduser,~tutor"/>
+			<page id="m0506" name="Отчет по студентам" url="report/students/" profiles="~admin,~manager,~developer,~teacher,~enduser,~tutor"/>
+			<page id="m0513" name="Отчет по новостям" url="report/news/" profiles="dean,supervisor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0515" name="Сессии студентов" url="report/student-subjects/" profiles="dean,~supervisor,~tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+		</subgroup>
+		<subgroup>
+			<page id="m0507" name="Сессии тьюторов" url="workload/sheet" profiles="dean,~supervisor,~tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0508" name="Нарушение сроков реагирования" url="workload/report/violations" profiles="dean,supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0509" name="Выполнение педагогической нагрузки" url="workload/report/workload" profiles="dean,~supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<!--<page id="m0510" name="Выполнение педагогической нагрузки. Окончательный отчет" url="workload/report/workload-end/end/1" profiles="dean,~supervisor,~tutor,~admin,~manager,~teacher,~enduser,~developer"/>-->
+			<page id="m0514" name="Назначения без программы" url="report/unlinked-program" profiles="dean,~supervisor,~tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<!--
+			<page id="m0507" name="Сессии тьюторов" url="workload/sheet" profiles="dean,supervisor,~tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0508" name="О приветственном сообщении" url="workload/report/welcome" profiles="dean,supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0509" name="О просрочках проверки заданий" url="workload/report/subject-assessment" profiles="dean,supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0510" name="О просрочках ответа на форуме" url="workload/report/forum" profiles="dean,supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0511" name="Промежуточный отчет" url="workload/report/current-workload" profiles="dean,supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0512" name="Итоговый отчет" url="workload/report/end-workload" profiles="dean,supervisor,~admin,~tutor,~manager,~teacher,~enduser,~developer"/>
+			<page id="m0513" name="Качество работы" url="workload/report/quality-work" profiles="dean,supervisor,tutor,~admin,~manager,~teacher,~enduser,~developer"/>
+			-->
+		</subgroup>
+	</group>
+	<group id="m04" name="Настройки" profiles="teacher,dean,manager,dispatcher,admin,~tutor">
+		<subgroup>
+			<page id="m0401" name="Параметры системы" url="preferences.php" profiles="~teacher,~dean,~manager,~dispatcher,~tutor"/>
+			<page id="m0404" name="Регистрационные требования" url="contract/" profiles="~teacher,~dean,~manager,~dispatcher,~tutor"/>
+			<page id="m0403" name="Парольная политика" url="password/setup" profiles="~teacher,~dean,~manager,~dispatcher,~tutor"/>
+		</subgroup>
+		<subgroup>
+			<page id="m0414" name="Шаблоны cистемных сообщений" url="notice" profiles="~teacher,~dean,~manager,~dispatcher,~tutor"/>
+		</subgroup>
+		<subgroup>
+			<page id="m0420" name="Выходные и праздничные дни" url="holiday" profiles="~teacher,~dean,~manager,~dispatcher,~tutor">
+				<link name="Создать выходной день" url="holiday/index/edit" id="m042001"/>
+				<link name="Создать периодические выходные дни недели" url="holiday/index/edit-periodic" id="m042002"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m0422" name="Типы занятий" url="event/list" profiles="~admin,~manager">
+				<link name="Создать тип занятия" url="event/list/new" id="m042201"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m0402" name="Формулы" url="formula/list" profiles="~admin,~manager,~dispatcher,~tutor"/>
+            <page id="m0424" name="Шкалы оценивания" url="scale/list" profiles="~manager,~admin,~dispatcher">
+                <link name="Создать шкалу оценивания" url="scale/list/new" id="m042401"/>
+            </page>
+<!--            <page id="m0425" name="Критерии оценивания" url="criterion/list" profiles="~manager,~admin,~dispatcher,~dean,~teacher">
+                <link name="Создать критерий" url="criterion/list/new" id="m042501"/>
+            </page>-->
+        </subgroup>
+		<subgroup>
+			<page id="m0413" name="Шаблон приказов" url="template/order" profiles="~teacher,~admin,~manager,~dispatcher,~tutor"/>
+			<page id="m0415" name="Шаблон сертификатов" url="template/certificate" profiles="~teacher,~admin,~manager,~dispatcher,~tutor"/>
+		</subgroup>
+		<subgroup>
+			<page id="m0406" name="Классификаторы" url="classifier/list-types" profiles="~teacher,~dispatcher,~tutor">
+				<link id="m040601" name="Создать классификатор" url="classifier/list-types/new"/>
+			</page>
+		</subgroup>
+		<subgroup>
+			<page id="m0407" name="Кэш" url="cache/manager" profiles="~teacher,~dispatcher,~tutor,~manager"/>
+		</subgroup>
+		<subgroup>
+			<page id="m0416" name="Установка обновлений" url="update/list" profiles="~teacher,~dean,~manager,~tutor">
+				<link id="m041601" name="Установить обновление" url="update/list/install"/>
+			</page>
+		</subgroup>
+	</group>
+	<group id="m099" name="Сервисы" profiles="enduser,supervisor,teacher,dean,admin,developer,manager,tutor" order="10000">
+		<custom id="m990" name="Сервисы"/>
+	</group>
+
+	<group id="m199" name="Услуги" profiles="enduser" order="9999">
+		<page id="m19901" name="Все услуги" url="services/" profiles="enduser"/>
+		<page id="m19902" name="Студенческий билет" url="student-id/"/>
+		<page id="m19903" name="Зачетная книжка" url="student-recordbook/"/>
+		<page id="m19904" name="Мои оплаты" url="my-payments/"/>
+	</group>
+
+	<group id="m101" name="Мои студенты" profiles="tutor" order="10001">
+		<page id="m10101" name="Мои студенты" url="user/my-student/" profiles="tutor"/>
+	</group>
+	<group id="m102" name="Расписание занятий" profiles="tutor" order="10002">
+		<page id="m10201" name="Расписание занятий" url="timetable/teacher/" profiles="tutor"/>
+	</group>
+	<group id="m103" name="Прием академических задолженностей (комиссия)" profiles="tutor" order="10003">
+		<page id="m10301" name="Прием академических задолженностей (комиссия)" url="marksheet/external/list/" profiles="tutor"/>
+	</group>
+
+</actions>

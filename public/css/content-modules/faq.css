@@ -1,0 +1,122 @@
+.spacer { 
+    clear: both; 
+    height: 10px; 
+    overflow: hidden;
+}
+
+.faq-post {
+    padding: 0 20px 40px 0;
+}
+.faq-post hr {
+    border-color: #D4D4D4;
+    border-style: solid none none;
+}
+
+.faq-side-bar {
+    background-color: #E7E7E7;
+    padding: 5px;
+    width: 330px;
+    font-weight: bold;
+}
+.faq-side-bar a:link, .links-bar a:visited {
+    color: #50788F;
+}
+
+.faq-middle {
+    width: 100%;
+    padding-top: 24px;
+}
+.faq-list {
+    width: 100%;
+    float: left;
+}
+
+.faq-header {
+
+}
+.faq-controls {
+    float: right;
+    padding: 4px;
+}
+.faq-controls .edit, .news-post-controls .delete {
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0 7px 5px 0;
+}
+.faq-controls .edit {
+    background: url("/images/news/controls-edit.png") repeat-x scroll 0 0 transparent;
+    margin-right: 5px;
+}
+.faq-controls .delete {
+    background: url("/images/news/controls-delete.png") repeat-x scroll 0 0 transparent;
+}
+
+.faq-title {
+    background-color: #FFFFB2;
+    font-family: Verdana;
+    font-size: 2em;
+    line-height: 28px;
+    padding: 0 46px 0 2px;
+}
+.faq-title a{
+    text-decoration: none;
+}
+
+.faq-body{
+	
+}
+
+.faq-info {
+    height: 34px;
+}
+.faq-info img {
+    display: block;
+    float: left;
+    padding-left: 1px;
+    padding-right: 10px;
+}
+
+.faq-author {
+    font-weight: bold;
+}
+
+
+
+.faq-date{
+    float: left;
+    padding-top: 4px;
+}
+
+/*paginator*/
+.faq-pagination {
+    background-color: #E7E7E7;
+    float: left;
+    font-size: 1em;
+    line-height: 28px;
+    min-height: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 100%;
+}
+.faq-pagination .container {
+    padding: 7px 10px;
+    float: left;
+}
+.faq-pagination .container.left {
+    float: left;
+}
+.faq-pagination .container.right {
+    float: right;
+}
+.faq-pagination .container.center {
+    max-width: 240px;
+}
+.faq-pagination a {}
+.faq-pagination .arrows {
+    text-decoration: none;
+    font-size: 1em;
+}
+.faq-pagination .disabled {}

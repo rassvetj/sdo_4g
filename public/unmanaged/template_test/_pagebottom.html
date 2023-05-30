@@ -1,0 +1,326 @@
+		</td>
+	</tr>
+	<?
+	// JS-{?t?}проверка того, что учащийся ответил на все вопросы{?/t?}
+	?>
+	<script type="text/javascript">
+		var kodlist=new Array();
+		kodlist='<?=implode("|",$kodlist)?>'.split('|');
+		function checkform(){
+            return false;
+			<?if (!in_array($arr_vopros['type'], array(9,10))) {?>
+			ok=true;
+			d=document;
+			for (var i=0; i<kodlist.length; i++) {				
+				var textarea = $(d.m).find("textarea[name^='form["+kodlist[i]+"]']").filter("[class='lineinput']")
+				if(textarea.length>0) {
+					var j=0;
+					var errStr = ""
+					$.map(textarea,function(t){
+						if(t.value.length==0){
+							errStr = 'Вы не ответили на вопрос N '+(parseInt(kodlist[i])+1);
+						} 					
+					})
+					if(errStr.length>0){
+						alert(errStr)
+						ok=false;
+					}					
+				}else{
+					eval("if (d.m.ischecked_"+kodlist[i]+".value==0) { alert('Вы не ответили на вопрос N '+("+kodlist[i]+"+1)); ok=false; } ");
+				}	
+				if (!ok)	return false;
+			}
+			this.disabled=true;
+			document.getElementById('m').submit();
+			return false;
+			<?
+			} else {
+			?>
+			return true;
+			<?
+			}
+			?>
+		}
+
+        //Тут подключение feedback'ов
+
+        <?php if(HM_Test_Feedback_FeedbackService::isFeedbackable()): ?>
+        $(function(){
+            var TEST =<?php
+                    $var = HM_Question_QuestionService::generateArrayForQuestion();
+                    echo json_encode($var);?>,
+                $table,
+                $place,
+                $td,
+                $arInput;
+            function feedView(obj,Q_TYPE){
+                var tooltip_wrapper='';
+                if(obj.QUESTION_ID){
+                    $place = $('[name="'+obj.AR_ANSWERS[0].ANSWER_NAME+'"]')
+                                .closest('span[id^=q]')
+                                .find('.body_main_question')
+                                .closest('tr')
+                                .next('tr')
+                                .find('td')
+                                .attr("colspan","2");
+                                
+                    if($place.find('.answ_feed').length==0){
+                        $place.append('<div class="answ_feed_wrap"><div class="answ_feed"></div></div>')
+                    }
+                    $place.find('.answ_feed').html(obj.QUESTION_FEED).show();
+                }
+                if(obj.ANSWER_NAME){
+                    switch(Q_TYPE){
+                        case 'CHECKBOX':
+                            $td = $("input[value='"+obj.ANSWER_VAL+"']").closest('td').next("td");
+                            $td.append('<div class="test_tooltip_wrapper"><span class="tooltip"></span></div>');
+                            $place = $td.find(".test_tooltip_wrapper");
+                            tooltip_wrapper = 'tooltip_wrapper';
+                            break;
+                        case 'RADIO':
+                            $arInput = $('[name="'+obj.ANSWER_NAME+'"]');
+                            $.each($arInput,function(inp){
+                                if($($arInput[inp]).val()==obj.ANSWER_VAL){
+                                    $td = $($arInput[inp]).closest('td').next("td");
+                                }                                    
+                            })                      
+                            $td.append('<div class="test_tooltip_wrapper"><span class="tooltip"></span></div>');
+                            $place = $td.find(".test_tooltip_wrapper");
+                            tooltip_wrapper = 'tooltip_wrapper';
+                            break;
+                        case 'COMPARE':
+                            $place = $('<div class="test_tooltip_wrapper"><span class="tooltip"></span></div>').insertAfter("select[name='"+obj.ANSWER_NAME+"']");
+                            tooltip_wrapper = 'tooltip_wrapper';
+                            break;
+                        case 'CLASS':
+                            $place = $("input[name='"+obj.ANSWER_NAME+"']").next(".eLS-sortable-item-container").find(".eLS-answer-variant");
+                            $place.append('<div class="test_tooltip_wrapper"><span class="tooltip"></span></div>');
+                            $place = $place.find(".test_tooltip_wrapper");
+                            tooltip_wrapper = 'tooltip_wrapper';
+                            break;
+                        case 'FILL':
+                            $place = $('<div class="test_tooltip_wrapper"><span class="tooltip"></span></div>').insertAfter("[name='"+obj.ANSWER_NAME+"']");
+                            tooltip_wrapper = 'tooltip_wrapper';
+                            break;
+                        default:
+                            $place = $("input[value='"+obj.ANSWER_VAL+"']")
+                                    .closest('td')
+                                    .next('td');
+                            break;
+                    }
+                    if(tooltip_wrapper!=''){
+                        yepnope({
+                            test: Modernizr.canvas,
+                            nope: ['/js/lib/jquery/excanvas.compiled.js'],
+                            complete: function () {
+                                yepnope({
+                                    test: $.fn.bt,
+                                    nope: [
+                                        '/css/jquery-ui/jquery.ui.tooltip.css',
+                                        '/js/lib/jquery/jquery.hoverIntent.minified.js',
+                                        '/js/lib/jquery/jquery.ui.tooltip.js'
+                                    ],
+                                    complete: function () {
+                                        _.delay(function () {
+                                            jQuery(function ($) {
+                                                $('.tooltip').bt({killTitle: false,contentSelector:"$(this).next().find('.tooltip-description')"});
+                                            });
+                                        }, 100);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                    if($place.find('.answ_feed').length==0){
+                        $place.append('<div class="answ_feed_wrap '+tooltip_wrapper+'"><div class="answ_feed tooltip-description"></div></div>')
+                    }
+                    $place.find('.answ_feed').html(obj.ANSWER_FEED);
+                }
+            }
+            var $form = $('#m'),
+                    ENABLE_SUBMIT = true,
+                    C_SUBMIT=true;
+            function processForm(ajax){
+
+                //$(".bt-wrapper").remove()
+                $('.test_tooltip_wrapper').remove();
+                $('.answ_feed_wrap').remove();
+                for(var iQ=0;iQ<TEST.AR_QUESTION.length;iQ++){
+                    var curQuestion = TEST.AR_QUESTION[iQ];
+                    ENABLE_SUBMIT = curQuestion.QUESTION_SUBMIT=='false'||curQuestion.QUESTION_SUBMIT==false?false:true;
+                    /* check submit */
+                    if((curQuestion.QUESTION_SUBMIT==false||curQuestion.QUESTION_SUBMIT=="false")&&C_SUBMIT==true){
+                        ENABLE_SUBMIT = false;
+                        C_SUBMIT=false;
+                    }
+                    /* check QUESTION_FEED */
+                    if(curQuestion.QUESTION_FEED!=''){
+                        feedView(curQuestion);
+                        ENABLE_SUBMIT = false;
+                        curQuestion.QUESTION_FEED=''
+                    }
+                    for(var iQA=0;iQA<curQuestion.AR_ANSWERS.length;iQA++){
+                        var curAnswer = curQuestion.AR_ANSWERS[iQA],
+                                Q_TYPE = curQuestion.QUESTION_TYPE,
+                                cQVAL;
+                        /* check answers */
+                        switch(Q_TYPE){
+                            case 'RADIO':
+                                cQVAL = $("input[value='"+curAnswer.ANSWER_VAL+"']").filter(':visible').is(":checked");
+                                TEST.AR_QUESTION[iQ].AR_ANSWERS[iQA].ANSWER_CHECKED = cQVAL;
+                                break;
+                            case 'CHECKBOX':
+                                cQVAL = $("input[name='"+curAnswer.ANSWER_NAME+"']").is(':checked');
+                                TEST.AR_QUESTION[iQ].AR_ANSWERS[iQA].ANSWER_CHECKED = cQVAL;
+                                break;
+                            case 'COMPARE':
+                                cQVAL = encodeURIComponent($("select[name='"+curAnswer.ANSWER_NAME+"'] option:selected").val());
+                                TEST.AR_QUESTION[iQ].AR_ANSWERS[iQA].ANSWER_VAL = cQVAL;
+                                break;
+                            case 'CLASS':
+                                cQVAL = $("input[name='"+curAnswer.ANSWER_NAME+"']").closest(".eLS-sortable-container").prev("h2").text();
+                                TEST.AR_QUESTION[iQ].AR_ANSWERS[iQA].ANSWER_VAL = encodeURIComponent(cQVAL);
+                                break;
+                            case 'FILL':
+								var $input = $("[name='"+curAnswer.ANSWER_NAME+"']");
+								if(typeof $input!='undefined'&&$input.length>0) {
+                                    if($input[0].nodeName=="SELECT"){
+
+                                        if($input[0].multiple == true){
+                                            var foo = [];
+
+                                            $input.find('option:selected').each(function(i, selected){
+                                                foo[i] = $(selected).text();
+                                            });
+                                            cQVAL = foo.join(',|');
+                                        }else{
+                                            cQVAL = $input.find('option:selected').text();
+                                        }
+                                    }else{
+                                        cQVAL = $input.val();
+                                    }
+                                    TEST.AR_QUESTION[iQ].AR_ANSWERS[iQA].ANSWER_VAL = cQVAL;
+                                }
+                                break;
+                            default:
+
+                                break;
+                        }
+
+                        /* end check answers */
+                        //console.log('111 '+ENABLE_SUBMIT)
+                        /*check ANSWER_FEED */
+                        if(curAnswer.ANSWER_FEED.length>0){
+                            feedView(curAnswer,Q_TYPE);
+                            ENABLE_SUBMIT = false;
+                            curAnswer.ANSWER_FEED='';
+                        }
+                    }
+                }
+
+                if(ajax==true){
+
+
+                    $.ajax({
+                        url: "/test/feedback/",
+                        type: "POST",
+                        data: TEST,
+                        dataType: "json",
+                        error: function(){
+                            $("#m").submit();
+//                            console.log('error submit');
+                        },
+                        success: function(answ){
+                            TEST = answ;
+                            processForm(false);
+                        }
+                    });
+
+                }
+                //console.log('finish '+ENABLE_SUBMIT)
+                if(ENABLE_SUBMIT == false){
+                    return false;
+                } else if(ajax==false){
+                    var t = 0
+                    $('#m').submit();
+//                    console.log('submit');
+                }
+            }
+            $form.delegate('button','click',function(e){
+            	hm.test.closeOpenedWindow(); // закрываем открытое всплывающее окно
+                processForm(true);
+            })
+
+        })
+        <?php else: ?>
+        $(function(){
+            var $form=$('#m');
+            $form.delegate('button','click',function(e){
+                hm.test.closeOpenedWindow(); // закрываем открытое всплывающее окно
+                $form.submit();
+            })
+        })
+        <?php endif; ?>
+
+
+        // Окончание
+	</script>
+
+	<?
+	$ok = false;
+	if (is_array($_SESSION['s']['aneed']) && is_array($_SESSION['s']['ckod'])) {
+		if (count($_SESSION['s']['aneed']) == count($_SESSION['s']['ckod'])) {
+			$ok = true;
+			foreach ($_SESSION['s']['aneed'] as $value) {
+				if (!in_array($value, $_SESSION['s']['ckod'])) {
+					$ok = false;
+					break;
+				}
+			}
+		}
+	}
+	$strValue = ($ok) ? _("Сохранить и закончить") : _("Следующие вопросы >>");
+	?>
+</table>
+<table class="tests_bottom" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td align="left" class="tests_bottom_td">
+<table>
+<tr>
+<?php
+if (($_SESSION['s']['mode']==1) && is_array($_SESSION['s']['adone']) && count($_SESSION['s']['adone']) && !in_array($_SESSION['s']['adone'][0],$_SESSION['s']['ckod'])) {
+    $onclick = 'var form = document.getElementById("m");if (form) {form.action="test_previous.php";form.submit();};return false;';
+?>
+					<td><input type="hidden" name="test_position" value="<?=$s['test_position']?>"/><?=button(_('Назад'), '', 'previous', $onclick)?></td>
+<?php
+}
+    $str = ($ok) ? _("Сохранить и закончить") : _("Сохранить");
+    $onclick = 'checkform();return false;';
+
+?>
+					<td><?=button($str, '', 'ok', $onclick)?></div></td>
+<?php
+if (($_SESSION['s']['mode']==2) && !$ok) {
+    $onclick = 'var form = document.getElementById("m"); if (form) { form.action="test_skip.php"; form.submit(); }; return false;'
+?>
+					<td><?=button(_('Пропустить'), '', 'next', $onclick)?></td>
+<?php
+}
+?>
+</tr>
+</table>
+</td>
+<td class="bottom_second_td"><div class="bottom_second">
+<? if (TEST_TYPE != _('Задание')) : ?>
+<?=_("Вопросов:")?>
+<?=_("всего")?> - <?=count($s[akod]);?>,
+<?=_("осталось")?> - <?=(count($s[aneed])-1);?>.
+<? endif; ?>
+</div>
+</td> 
+</tr>
+</table>
+
+</form>
+
+

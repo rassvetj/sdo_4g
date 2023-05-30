@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<rubricator name="Все рубрикаторы сайта" date="2006-04-25" xmlns="http://portal2.informika.ru/xmlns/edu-portal/rubricators/site/">
+	<rubric name="Финансы" ext_index="1"/>
+	<rubric name="Сбыт и маркетинг" ext_index="2"/>
+	<rubric name="Управление персоналом" ext_index="3"/>
+	<rubric name="Внутренние БП" ext_index="4"/>
+	<rubric name="Справочная информация" ext_index="5"/>
+</rubricator>

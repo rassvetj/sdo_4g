@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root color1="FF9900" color2="3490C5">
+<item begin="10:00" end="11:30" lesson="first_lesson_name" url="to_lesson_page"/>
+<item begin="12:00" end="12:30" lesson="second_lesson_name" url="to_lesson_page"/>
+<item begin="13:00" end="13:30" lesson="second_lesson_name" url="to_lesson_page"/>
+<item begin="16:00" end="16:30" lesson="second_lesson_name" url="to_lesson_page"/>
+<item begin="18:00" end="18:30" lesson="second_lesson_name" url="to_lesson_page"/>
+<item begin="19:00" end="19:30" lesson="second_lesson_name" url="to_lesson_page"/>
+<item begin="22:00" end="22:30" lesson="second_lesson_name" url="to_lesson_page"/>
+</root>

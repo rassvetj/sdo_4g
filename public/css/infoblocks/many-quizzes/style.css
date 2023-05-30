@@ -1,0 +1,120 @@
+#manyQuizzesBlock #many-quizzes-moder {
+	float: right;
+}
+#many-quizzes-moder-edit img {
+	float: left;
+}
+#many-quizzes-moder-edit span {
+	line-height: 2.6em;
+}
+#manyQuizzesBlock #many-quizzes-question {
+	padding: 0 10px 10px 0;
+    color: #596871;
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.2em;
+	clear: both;
+}
+#manyQuizzesBlock .many-quizzes-answers {
+	background-color: #fff;
+	padding: 15px;
+	visibility: hidden;
+}
+#manyQuizzesBlock .many-quizzes-answer {
+	min-height: 35px;
+	font-size: 1.2em;
+}
+#manyQuizzesBlock .many-quizzes-results-allow {
+	float: left;
+	padding-top: 18px;
+}
+#manyQuizzesBlock #many-quizzes-answers-submit {
+	margin-top: 15px;
+	float: left;
+}
+#manyQuizzesBlock hr {
+	noshade;
+	width: 100%;
+	color: #FFF;
+	size: 1;
+}
+
+
+.many-quizzes-answers-form ul{
+	margin:0;
+	padding:0;
+}
+
+
+
+/*.many-quizzes-answers-form{
+	background-color: white;
+}*/
+
+.many-quizzes-answers-form .overflow{
+	/* The main container div */
+	overflow: hidden;
+}
+
+
+#holder{
+	/* The unordered list that is to be split into pages */
+
+	overflow:hidden;
+	position:relative;
+	background:url('img/dark_bg.jpg') repeat #4e5355;
+	padding-bottom:10px;
+	list-style: none;
+
+	/*	CSS3 inner shadow (the webkit one is commeted, because Google Chrome
+		does not like rounded corners combined with inset shadows): */
+
+	-moz-box-shadow:0 0 10px #222 inset;
+	/*-webkit-box-shadow:0 0 10px #222 inset;*/
+	box-shadow:0 0 10px #222 inset;
+}
+/* почему-то #holder не используется*/
+.holder {
+	margin-left: 0.5em;
+}
+
+.swControls{
+	/*position:absolute;*/
+	margin-top:10px;
+}
+
+button.swShowPage, span.swShowPage{
+	//height: 2em;
+	float:left;
+	font-size: 2.2em;
+	margin:3px 3px;
+	font-weight: bolder;
+}
+button.swShowPage span {
+	font-size: 1.5em;
+	
+}
+
+
+/*
+a.swShowPage:hover,
+a.swShowPage.active{
+	background-color:#2993dd;
+	-moz-box-shadow:0 0 7px #1e435d inset;
+	box-shadow:0 0 7px #1e435d inset;
+}
+*/
+.holder li{
+	list-style:none;
+	margin: 15px;
+	padding:0px;
+	float:left;
+	width: 90%;
+}
+
+.clear{
+	/* This class clears the floated elements */
+	clear:both;
+}
+
+

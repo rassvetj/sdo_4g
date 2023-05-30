@@ -1,0 +1,56 @@
+
+                <form name="editnews" target="_self" method="POST">
+                <input type="hidden" name="nID"  value="[N-ID]">
+                <input type="hidden" name="show"  value="[N-show]">
+                <input type="hidden" name="formsubmit" value="submit" />
+                <table width=100% class=main cellspacing=0>
+                                <tr valign="top">
+                                        <td>{?t?}Заголовок{?/t?}</td>
+                                        <td align="left" class="shedtitle" >
+                    <input type="text" name="Title" style="width:100%"  value="[N-title]"></td>
+                                </tr>
+                                <!-- tr>
+                                        <td>{?t?}Дата{?/t?}</td>
+                                        <td align="left" class="cHilight">
+                                                <select  class=lineinput style="border-style:0;" name="day">
+                                                [N-day]
+                                                </select>
+                                                <select  class=lineinput style="border-style:0;" name="month">
+                                                [N-month]
+                                                </select>
+                                                <select  class=lineinput style="border-style:0;" name="year">
+                                                [N-year]
+                                                </select>
+                                                <input type="text" name="hours" style="width:25px" value="[N-hours]">:
+                                                <input type="text" name="min" style="width:25px" value="[N-min]">
+                                        </td>
+                                </tr -->
+                                <tr>
+                                        <td>{?t?}Содержание{?/t?}</td>
+                                        <td>
+                                                [N-text]<!--textarea name="text" style="width:100%" rows="15"></textarea-->
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td align="left"></td>
+                                        <td align="left">
+                        <input name="block_type" type="hidden" value="-~home~-">
+                        <input type="checkbox" name="standalone" value="1" [N-checked_standalone]>&nbsp;{?t?}Раскрывать на отдельной странице{?/t?}
+                                        &nbsp;
+                                        <tooltip>standalone_page</tooltip>
+                                        </td>
+                                </tr>
+                                <!--<tr>
+                                        <td></td>
+                                        <td align="center" class="cHilight">
+                                                <input type="submit" name="submit" style="width:40%" value="[W-save]">
+                                                <input type="reset" name="cancel" style="width:40%" value="[W-cancel]">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td></td>
+                                        <td align="center" class="cHilight">
+                                                <input type="reset" name="cancel" style="width:40%" onclick="window.close();" value="[W-close]">
+                                        </td>
+                                </tr>-->
+                </table>

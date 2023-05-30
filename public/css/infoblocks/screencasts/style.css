@@ -1,0 +1,37 @@
+#screencastBlock div.container {
+    width: 100%;
+	height: 450px;
+	background: url(../../../images/infoblocks/screencast/video_logo.png) no-repeat scroll center center;
+}
+#screencastBlock .export-button {
+    float: right;
+    padding: .4em !important;
+    margin: 0;
+}
+#screencastBlock .export-button .button-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}
+
+.flv-container{
+	position:absolute;
+	background: #FFFFFF;
+}
+.flv_view_switch{
+	position:absolute;
+	cursor:pointer;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    width: 33px;
+    z-index: 101;	
+}
+.expand .flv_view_switch{
+	background: url("../../../images/infoblocks/screencast/maximin.gif") top right no-repeat #fff;
+}
+.unexpand .flv_view_switch{
+	background: url("../../../images/infoblocks/screencast/maximin.gif") top left no-repeat #EDF1F9;
+}

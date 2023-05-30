@@ -1,0 +1,1860 @@
+domains:
+    StudyGeneral:
+        paths:
+            Person:
+                Subject: Person,SubjectUsers,Subject
+            Subject:
+                Person: Subject,SubjectUsers,Person
+                Position: Subject,SubjectUsers,Position
+            StudyGroup:
+                Person: StudyGroup,StudyGroupProgramms,StudyGroup,StudyGroupUsers,Person,SubjectUsers,Subject
+            Programm:
+                Person: Programm,StudyGroupProgramms,StudyGroup,StudyGroupUsers,Person
+        title: Общая статистика обучения
+        tables:
+            ClassifierSubject:
+                table: classifiers
+                primary: classifier_id
+                relations:
+                    ClassifierSubjectLink:
+                        local: classifier_id
+                        foreign: classifier_id
+                        joinType: left
+            ClassifierSubjectLink:
+                table: classifiers_links
+                relations:
+                    ClassifierSubject:
+                        local: classifier_id
+                        foreign: classifier_id
+                        joinType: left
+                    Subject:
+                        joinOn: ClassifierSubjectLink.type = 0 AND ClassifierSubjectLink.item_id = Subject.subid
+                        joinType: left
+            ClassifierPerson:
+                table: classifiers
+                primary: classifier_id
+                relations:
+                    ClassifierPersonLink:
+                        local: classifier_id
+                        foreign: classifier_id
+            ClassifierPersonLink:
+                table: classifiers_links
+                relations:
+                    ClassifierPerson:
+                        local: classifier_id
+                        foreign: classifier_id
+                    Person:
+                        joinOn: ClassifierPersonLink.type = 3 AND ClassifierPersonLink.item_id = Person.MID
+            StudyGroup:
+                table: study_groups
+                relations:
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+                    StudyGroupProgramms:
+                        joinOn: StudyGroupProgramms.group_id = StudyGroup.group_id
+                        joinType: left
+#                    StudyGroupCourse:
+#                        joinOn: StudyGroupCourse.group_id = StudyGroup.group_id
+#                        joinType: left
+#            StudyGroupCourse:
+#                table: study_groups_courses
+#                relations:
+#                    StudyGroup:
+#                        joinOn: StudyGroupCourse.group_id = StudyGroup.group_id
+#                        joinType: left
+#                    Subject:
+#                        joinOn: StudyGroupCourse.course_id = Subject.subid
+#                        joinType: left
+            StudyGroupUsers:
+                table: study_groups_users
+                relations:
+                    StudyGroup:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+                    Person:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            Programm:
+                table: programm
+                relations:
+                    StudyGroupProgramms:
+                        joinOn: StudyGroupProgramms.programm_id = Programm.programm_id
+                        joinType: left
+                    ProgrammSubjects:
+                        joinOn: ProgrammSubjects.programm_id = Programm.programm_id
+            ProgrammSubjects:
+                table: programm_events
+                relations:
+                    Programm:
+                        joinOn: ProgrammSubjects.programm_id = Programm.programm_id
+                    Subject:
+                        joinOn: ProgrammSubjects.item_id = Subject.subid AND ProgrammSubjects.type = 1
+                        joinType: left
+                    StudyGroupProgramms:
+                        joinOn: StudyGroupProgramms.programm_id = ProgrammSubjects.programm_id
+                        joinType: left
+            StudyGroupProgramms:
+                table: study_groups_programms
+                relations:
+                    StudyGroup:
+                        joinOn: StudyGroupProgramms.group_id = StudyGroup.group_id
+                        joinType: left
+                    Programm:
+                        joinOn: StudyGroupProgramms.programm_id = Programm.programm_id
+                        joinType: left
+                    Person:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+                    ProgrammSubjects:
+                        joinOn: StudyGroupProgramms.programm_id = ProgrammSubjects.programm_id
+                        joinType: left
+            Position:
+                table: structure_of_organ
+                primary: soid
+                relations:
+                    Person:
+                        local: mid
+                        foreign: MID
+                        joinType: left
+                    Department:
+                        local: owner_soid
+                        foreign: soid
+                        joinType: left
+            Department:
+                table: structure_of_organ
+                primary: soid
+                relations:
+                    Position:
+                        local: soid
+                        foreign: owner_soid
+                        joinType: left
+            Teacher:
+                table: Teachers
+                primary: PID
+                relations:
+                    TPerson:
+                        local: MID
+                        foreign: MID
+                        joinType: left
+                    Subject:
+                        local: CID
+                        foreign: subid
+                        joinType: left
+            TPerson:
+                table: People
+                primary: MID
+                relations:
+                    Teacher:
+                        local: MID
+                        foreign: MID
+                        joinType: left
+            Tutor:
+                table: Tutors
+                primary: TID
+                relations:
+                    TuPerson:
+                        local: MID
+                        foreign: MID
+                        joinType: left
+                    Subject:
+                        local: CID
+                        foreign: subid
+                        joinType: left
+            TuPerson:
+                table: People
+                primary: MID
+                relations:
+                    Tutor:
+                        local: MID
+                        foreign: MID
+                        joinType: left
+            Person:
+                table: People
+                primary: MID
+                relations:
+                    Position:
+                        local: MID
+                        foreign: mid
+                        joinType: left
+                    ClassifierPersonLink:
+                        joinOn: Person.MID = ClassifierPersonLink.item_id AND ClassifierPersonLink.type = 3
+                    SubjectUsers:
+                        local: MID
+                        foreign: user_id
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            SubjectUsers:
+                table: subjects_users
+                relations:
+                    Subject:
+                        local: subject_id
+                        foreign: subid
+                        joinOn: SubjectUsers.subject_id = Subject.subid AND Subject.base_id <> 2
+                        joinType: left
+                    Person:
+                        local: user_id
+                        foreign: MID
+                    Claimant:
+                        joinOn: Claimant.CID = SubjectUsers.subject_id AND Claimant.MID = SubjectUsers.user_id AND SubjectUsers.status = 0
+                        joinType: left
+                    Student:
+                        joinOn: Student.CID = SubjectUsers.subject_id AND Student.MID = SubjectUsers.user_id AND SubjectUsers.status = 1
+                        joinType: left
+                    Graduated:
+                        joinOn: Graduated.CID = SubjectUsers.subject_id AND Graduated.MID = SubjectUsers.user_id AND SubjectUsers.status = 2
+                        joinType: left
+            Subject:
+                table: subjects
+                primary: subid
+                relations:
+                    ClassifierSubjectLink:
+                        joinOn: Subject.subid = ClassifierSubjectLink.item_id AND ClassifierSubjectLink.type = 0
+                        joinType: left
+                    SubjectB:
+                        joinOn: SubjectB.subid=Subject.base_id AND Subject.base=2
+                        joinType: left
+                    SubjectUsers:
+                        joinOn: Subject.subid = SubjectUsers.subject_id
+                        joinType: left
+                    Teacher:
+                        local: subid
+                        foreign: CID
+                        joinType: left
+                    Tutor:
+                        local: subid
+                        foreign: CID
+                        joinType: left
+#                    StudyGroupCourse:
+#                        joinOn: Subject.subid = StudyGroupCourse.course_id
+#                        joinType: left
+                    ProgrammSubjects:
+                        joinOn: ProgrammSubjects.item_id = Subject.subid AND ProgrammSubjects.type = 1
+                        joinType: left
+                    Mark:
+                        joinOn: Subject.subid = Mark.cid AND Person.MID = Mark.mid
+                        joinType: left
+            SubjectB:
+                table: subjects
+                primary: subid
+                relations:
+                    Subject:
+                        joinOn: SubjectB.subid=Subject.base_id AND SubjectB.base = 1
+                        joinType: left
+            Claimant:
+                table: claimants
+                relations:
+                    SubjectUsers:
+                        joinOn: Claimant.CID = SubjectUsers.subject_id AND Claimant.MID = SubjectUsers.user_id AND SubjectUsers.status = 0
+                        joinType: left
+            Student:
+                table: Students
+                relations:
+                    SubjectUsers:
+                        joinOn: Student.CID = SubjectUsers.subject_id AND Student.MID = SubjectUsers.user_id AND SubjectUsers.status = 1
+                        joinType: left
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.user_id = Student.MID
+                        joinType: left
+            Graduated:
+                table: graduated
+                relations:
+#                    Mark:
+#                        joinOn: Graduated.CID = Mark.cid AND Graduated.MID = Mark.mid
+#                        joinType: left
+                    SubjectUsers:
+                        joinOn: Graduated.CID = SubjectUsers.subject_id AND Graduated.MID = SubjectUsers.user_id AND SubjectUsers.status = 2
+                        joinType: left
+            Mark:
+                table: courses_marks
+                relations:
+                    Subject:
+                        joinOn: Subject.subid = Mark.cid AND Person.MID = Mark.mid
+                        joinType: left
+                        
+        categories:
+            Orgstructure:
+                title: Организационная структура
+                fields:
+                    departmentId:
+                        table: Department
+                        title: ID подразделения
+                        type: string
+                        field: soid
+                        aggregation:
+                            - count
+                    department:
+                        table: Department
+                        title: Название подразделения
+                        type: string
+                        field: name
+                    position:
+                        table: Position
+                        title: Должность
+                        type: string
+                        field: name
+            StudyGroup:
+                 title: Учебная группа
+                 fields:
+                    studygroupname:
+                        table: StudyGroup
+                        title: Название учебной группы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (StudyGroup.name IS NULL) THEN 'Нет' ELSE StudyGroup.name END
+            Person:
+                title: Пользователь
+                fields:
+                    personId:
+                        table: Person
+                        title: ID пользователя
+                        type: string
+                        field: MID
+                        aggregation:
+                            - count
+                    fio:
+                        table: Person
+                        title: ФИО
+                        type: string
+                        field: fio
+                        expression: CASE WHEN CONCAT(CONCAT(CONCAT(CONCAT(Person.LastName, ' '), Person.FirstName), ' '), Person.Patronymic) IS NULL THEN 'Нет' ELSE CONCAT(CONCAT(CONCAT(CONCAT(Person.LastName, ' '), Person.FirstName), ' '), Person.Patronymic) END
+                        expressionFields: LastName, FirstName, Patronymic
+                        aggregation:
+                            - group_concat
+                    login:
+                        table: Person
+                        title: Логин
+                        type: string
+                        field: Login
+                    gender:
+                        table: Person
+                        title: Пол
+                        type: string
+                        expression: CASE WHEN (Gender = 2) THEN 'Женский' ELSE 'Мужской' END
+                    age:
+                        table: Person
+                        title: Возраст
+                        type: string
+                        expression: CASE WHEN ((YEAR(NOW()) - YEAR(BirthDate)) < 100) THEN YEAR(NOW()) - YEAR(BirthDate) ELSE 0 END
+                    status:
+                        table: SubjectUsers
+                        title: Статус обучения
+                        type: string
+                        expression: CASE WHEN (SubjectUsers.status = 0) THEN 'Планируется' ELSE CASE WHEN (SubjectUsers.status = 1) THEN 'Идёт' ELSE 'Завершено' END END
+                    personClassifier:
+                        table: ClassifierPerson
+                        title: Классификация пользователя
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+            Subject:
+                title: Учебный курс/сессия
+                fields:
+                    subjectId:
+                        table: Subject
+                        title: ID курса
+                        type: string
+                        field: subid
+                        function:
+                            isSession:
+                                title: Является сессией
+                                expression: CASE WHEN (Subject.base = 2) THEN 'Да' ELSE 'Нет' END
+                        aggregation:
+                            - count
+                    subjectTitle:
+                        table: Subject
+                        title: Название курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+                    subjectType:
+                        table: Subject
+                        title: Тип обучения
+                        type: string
+                        field: type
+                        expression: CASE WHEN (Subject.type = 1) THEN 'Дистанционное' ELSE 'Очное' END
+                    subjectBegin:
+                        table: Subject
+                        title: Дата начала
+                        type: date
+                        field: begin
+                        isAggregation: true
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    subjectEnd:
+                        table: Subject
+                        title: Дата окончания
+                        type: date
+                        field: end
+                        isAggregation: true
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    subjectClassifier:
+                        table: ClassifierSubject
+                        title: Классификация курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+                    teacherFio:
+                        table: TPerson
+                        title: ФИО Преподавателя
+                        type: string
+                        field: fio
+                        expression: CONCAT(CONCAT(CONCAT(CONCAT(TPerson.LastName, ' '), TPerson.FirstName), ' '), TPerson.Patronymic)
+                        expressionFields: LastName, FirstName, Patronymic
+                        aggregation:
+                            - group_concat
+                    tutorFio:
+                        table: TuPerson
+                        title: ФИО Тьютора
+                        type: string
+                        field: fio
+                        expression: CONCAT(CONCAT(CONCAT(CONCAT(TuPerson.LastName, ' '), TuPerson.FirstName), ' '), TuPerson.Patronymic)
+                        expressionFields: LastName, FirstName, Patronymic
+                        aggregation:
+                            - group_concat
+            StudyGroup:
+                 title: Учебная группа
+                 fields:
+                    studygroupname:
+                        table: StudyGroup
+                        title: Название учебной группы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (StudyGroup.name IS NULL) THEN 'Нет' ELSE StudyGroup.name END
+            Programm:
+                title: Учебная программа
+                fields:
+                    programm:
+                        table: Programm
+                        title: Название учебной программы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (Programm.name IS NULL) THEN 'Нет' ELSE Programm.name END
+            SubjectBase:
+                title: Базовый курс
+                fields:
+                    sessionId:
+                        table: SubjectB
+                        title: ID базового курса
+                        type: string
+                        field: subid
+                        aggregation:
+                            - count
+                    sessionName:
+                        table: SubjectB
+                        title: Название базового курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+            Claimant:
+                title: Обучение планируется
+                fields:
+                    claimantId:
+                        table: Claimant
+                        title: ID заявки
+                        type: string
+                        field: SID
+                        aggregation:
+                            - count
+            Student:
+                title: Обучение идёт
+                fields:
+                    studentId:
+                        table: Student
+                        title: ID слушателя
+                        type: string
+                        field: SID
+                        aggregation:
+                            - count
+                    studentSubjectBegin:
+                        table: Student
+                        title: Дата начала обучения
+                        type: date
+                        field: time_registered
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    studentSubjectEnd:
+                        table: Student
+                        title: Плановая дата окончания обучения
+                        type: date
+                        field: time_ended_planned
+                        function:
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                            expiriedEnded:
+                                title: Срок истек
+                                expression: CASE WHEN (NOW() > Student.time_ended_planned) THEN 'Да' ELSE NULL END
+                                type: string
+                        aggregation:
+                            - count
+            Graduated:
+                title: Обучение завершено
+                fields:
+                    graduatedId:
+                        table: Graduated
+                        title: ID прошедшего обучение
+                        type: string
+                        field: SID
+                        aggregation:
+                            - count
+                    graduatedSubjectBegin:
+                        table: Graduated
+                        title: Дата начала обучения
+                        type: date
+                        field: begin
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    graduatedSubjectEnd:
+                        table: Graduated
+                        title: Дата окончания обучения
+                        type: date
+                        field: end
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    SubjectMark:
+                        table: Mark
+                        title: Итоговая оценка
+                        type: float
+                        field: mark
+                        expression: CASE WHEN (CAST(Mark.mark AS FLOAT) > 0) THEN CAST(Mark.mark AS FLOAT) ELSE 0 END
+                        aggregation:
+                            - count
+                            - sum
+                    certificateNumber:
+                        table: Graduated
+                        title: Номер сертификата
+                        type: string
+                        field: certificate_number
+                        expression: LPAD(Graduated.certificate_id, 10, '0')
+                        expressionFields: certificate_id
+    StudyDetailed:
+        title: Текущие результаты обучения
+        paths:
+            Person:
+                Schedule: Person,ScheduleId,Schedule
+            Schedule:
+                Person: Schedule,ScheduleId,Person
+        tables:
+            Position:
+                table: structure_of_organ
+                primary: soid
+                relations:
+                    Person:
+                        local: mid
+                        foreign: MID
+                        joinType: left
+                    Department:
+                        local: owner_soid
+                        foreign: soid
+                        joinType: left
+            Department:
+                table: structure_of_organ
+                primary: soid
+                relations:
+                    Position:
+                        local: soid
+                        foreign: owner_soid
+                        joinType: left
+            Person:
+                table: People
+                primary: MID
+                relations:
+                    Position:
+                        local: MID
+                        foreign: mid
+                        joinType: left
+                    ScheduleId:
+                        local: MID
+                        foreign: MID
+                    Student:
+                        local: MID
+                        foreign: MID
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            StudyGroupUsers:
+                table: study_groups_users
+                relations:
+                    StudyGroup:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+                    Person:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            StudyGroup:
+                table: study_groups
+                relations:
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+            Schedule:
+                table: schedule
+                primary: SHEID
+                relations:
+                    ScheduleId:
+                        local: SHEID
+                        foreign: SHEID
+                    Subject:
+                        joinOn: Schedule.CID = Subject.subid AND Schedule.isfree = 0
+                    Test:
+                        joinOn: Schedule.SHEID = Test.lesson_id AND Test.type = 0	
+            Test:
+                table: test
+                primary: tid
+                relations:                    
+                    Subject:
+                        joinOn: Subject.subid = Test.cid AND Test.type = 0
+                    Test:
+                        joinOn: Schedule.SHEID = Test.lesson_id AND Test.type = 0
+            ScheduleId:
+                table: scheduleID
+                primary: SSID
+                relations:
+                    Schedule:
+                        local: SHEID
+                        foreign: SHEID
+                    Person:
+                        local: MID
+                        foreign: MID
+            Subject:
+                table: subjects
+                primary: subid
+                relations:
+                    Schedule:
+                        joinOn: Schedule.CID = Subject.subid AND Schedule.isfree = 0
+                    ProgrammEvent:
+                        joinOn: Subject.subid = programm_events.item_id AND programm_events.type = 1
+                        joinType: left
+                    Student:
+                        local: subid
+                        foreign: CID
+                    ClassifierSubjectLink:
+                        joinOn: Subject.subid = ClassifierSubjectLink.item_id AND ClassifierSubjectLink.type = 0
+                        joinType: left
+                    Test:
+                        joinOn: Subject.subid = Test.cid AND Test.type = 0						
+            ProgrammEvent:
+                table: programm_events
+                primary: programm_event_id
+                relations:
+                    Subject:
+                        joinOn: ProgrammEvent.item_id = Subject.subid AND ProgrammEvent.type = 1
+                        joinType: left
+                    Programm:
+                        joinOn: ProgrammEvent.programm_id = Programm.programm_id
+                        joinType: left
+            Programm:
+                table: programm
+                primary: programm_id
+                relations:
+                    ProgrammEvent:
+                        joinOn: Programm.programm_id = ProgrammEvent.programm_id
+                        joinType: left
+            Student:
+                table: Students
+                relations:
+                    Person:
+                        local: MID
+                        foreign: MID
+                    Subject:
+                        local: CID
+                        foreign: subid
+            ClassifierSubject:
+                table: classifiers
+                primary: classifier_id
+                relations:
+                    ClassifierSubjectLink:
+                        local: classifier_id
+                        foreign: classifier_id
+                        joinType: left
+            ClassifierSubjectLink:
+                table: classifiers_links
+                relations:
+                    ClassifierSubject:
+                        local: classifier_id
+                        foreign: classifier_id
+                        joinType: left
+                    Subject:
+                        joinOn: ClassifierSubjectLink.type = 0 AND ClassifierSubjectLink.item_id = Subject.subid
+                        joinType: left                      
+        categories:
+            Orgstructure:
+                title: Организационная структура
+                fields:
+                    departmentId:
+                        table: Department
+                        title: ID подразделения
+                        type: string
+                        field: soid
+                        aggregation:
+                            - count
+                    department:
+                        table: Department
+                        title: Подразделение
+                        type: string
+                        field: name
+                    position:
+                        table: Position
+                        title: Должность
+                        type: string
+                        field: name
+            Person:
+                title: Пользователь
+                fields:
+                    personId:
+                        table: Person
+                        title: ID пользователя
+                        type: string
+                        field: MID
+                        aggregation:
+                            - count
+                    fio:
+                        table: Person
+                        title: ФИО
+                        type: string
+                        field: fio
+                        expression: CONCAT(CONCAT(CONCAT(CONCAT(Person.LastName, ' '), Person.FirstName), ' '), Person.Patronymic)
+                        expressionFields: LastName, FirstName, Patronymic
+                    lastname:
+                        table: Person
+                        title: Фамилия
+                        type: string
+                        field: LastName
+                    firstname:
+                        table: Person
+                        title: Имя
+                        type: string
+                        field: FirstName
+                    patronymic:
+                        table: Person
+                        title: Отчество
+                        type: string
+                        field: Patronymic
+                    login:
+                        table: Person
+                        title: Логин
+                        type: string
+                        field: Login
+                    gender:
+                        table: Person
+                        title: Пол
+                        type: string
+                        expression: CASE WHEN (Gender = 2) THEN 'Женский' ELSE 'Мужской' END
+                    age:
+                        table: Person
+                        title: Возраст
+                        type: string
+                        expression: CASE WHEN ((YEAR(NOW()) - YEAR(BirthDate)) < 100) THEN YEAR(NOW()) - YEAR(BirthDate) ELSE 0 END
+            Subject:
+                title: Учебный курс/сессия
+                fields:
+                    subjectId:
+                        table: Subject
+                        title: ID курса
+                        type: string
+                        field: subid
+                        function:
+                            isSession:
+                                title: Является сессией
+                                expression: CASE WHEN (Subject.base = 2) THEN 'Да' ELSE 'Нет' END
+                        aggregation:
+                            - count
+                    subjectTitle:
+                        table: Subject
+                        title: Название курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+                    subjectExternalId:
+                        table: Subject
+                        title: ID курса из 1С
+                        type: string
+                        field: external_id
+                        aggregation:
+                            - group_concat
+                    subjectBegin:
+                        table: Subject
+                        title: Дата начала курса
+                        type: date
+                        field: begin
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    subjectEnd:
+                        table: Subject
+                        title: Дата окончания курса
+                        type: date
+                        field: end
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    subjectTimeEndedDebt:
+                        table: Subject
+                        title: Дата продления курса
+                        type: date
+                        field: time_ended_debt
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    subjectClassifier:
+                        table: ClassifierSubject
+                        title: Классификация курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat                                      
+            StudyGroup:
+                 title: Учебная группа
+                 fields:
+                    studygroupname:
+                        table: StudyGroup
+                        title: Название учебной группы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (StudyGroup.name IS NULL) THEN 'Нет' ELSE StudyGroup.name END
+            Programm:
+                title: Учебная программа
+                fields:
+                    programm:
+                        table: Programm
+                        title: Название учебной программы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (Programm.name IS NULL) THEN 'Нет' ELSE Programm.name END
+            Student:
+                title: Обучение по курсу
+                fields:
+                    studentId:
+                        table: Student
+                        title: ID слушателя
+                        type: string
+                        field: SID
+                        aggregation:
+                            - count
+                    studentSubjectBegin:
+                        table: Student
+                        title: Дата начала обучения
+                        type: date
+                        field: time_registered
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    studentSubjectEnd:
+                        table: Student
+                        title: Плановая дата окончания обучения
+                        type: date
+                        field: time_ended_planned
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    studentTimeEndedDebtor:
+                        table: Student
+                        title: Дата продления курса студента
+                        type: date
+                        field: time_ended_debtor
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    studentProgress:
+                        table: Student
+                        title: Процент прохождения плана занятий
+                        type: integer
+                        field: SID
+                        callback: getStudentProgress
+                        sortable: false
+            Schedule:
+                title: Занятие
+                fields:
+                    scheduleId:
+                        table: Schedule
+                        title: ID занятия
+                        type: string
+                        field: SHEID
+                        aggregation:
+                            - count
+                    scheduleTitle:
+                        table: Schedule
+                        title: Название занятия
+                        type: string
+                        field: title
+                        aggregation:
+                            - group_concat
+                    scheduleMaxMark:
+                        table: Schedule
+                        title: Максимальная оценка
+                        type: integer
+                        field: max_mark
+                        aggregation:
+                            - count
+                            - sum			
+                    scheduleMaxBall:
+                        table: Schedule
+                        title: Максимальный балл за занятие
+                        type: integer
+                        field: max_ball
+                        aggregation:
+                            - count
+                            - sum				
+                    scheduleEnd:
+                        table: Schedule
+                        title: Дата окончания
+                        type: data
+                        field: end
+                        function:
+                            expiriedEnded:
+                                title: Прошлое
+                                expression: CASE WHEN (NOW() > Schedule.end AND Schedule.timetype != 2 ) THEN 'Да' ELSE NULL END
+                                type: string
+                            expiriedFuture:
+                                title: Будущее
+                                expression: CASE WHEN (NOW() < Schedule.end) THEN 'Да' ELSE NULL END
+                                type: string
+                        aggregation:
+                            - count
+            Test:
+                title: Тест
+                fields:
+                    testId:
+                        table: Test
+                        title: ID теста
+                        type: string
+                        field: tid 
+                        aggregation:
+                            - group_concat						
+                    testTitle:
+                        table: Test
+                        title: Название теста
+                        type: string
+                        field: title
+                        aggregation:
+                            - group_concat
+                    testStartlimit:
+                        table: Test
+                        title: Кол-во попыток
+                        type: string
+                        field: startlimit
+                        aggregation:
+                            - group_concat 
+            ScheduleId:
+                title: Выполнение занятия
+                fields:
+                    scheduleMark:
+                        table: ScheduleId
+                        title: Оценка за занятие
+                        type: integer
+                        field: V_STATUS
+                        callback: getScheduleMark
+                        expression: CASE WHEN (ScheduleId.V_STATUS = '-1') THEN 0 ELSE ScheduleId.V_STATUS END
+                        function:
+                            notempty:
+                                title: Выставлена
+                                expression: CASE WHEN (ScheduleId.V_STATUS IS NULL OR ScheduleId.V_STATUS = '-1') THEN NULL ELSE 'Да' END
+                        aggregation:
+                            - count
+                            - sum
+    StudyTests:
+        title: Результаты тестирования
+        paths:
+            #Person:
+            #   Subject: Person,Student,Subject
+            #    Schedule: Person,ScheduleId,Schedule
+            #    ScheduleTest: Person,ScheduleId,Schedule,ScheduleTest
+            #Subject:
+            #    Person: Subject,Student,Person
+            #Schedule:
+            #    Person: Schedule,ScheduleId,Person
+            #ScheduleTest:
+            #    Person: ScheduleTest,Schedule,ScheduleId,Person
+        tables:
+            Person:
+                table: People
+                primary: MID
+                relations:
+                    Student:
+                        local: MID
+                        foreign: MID
+                    TestAttempt:
+                        local: MID
+                        foreign: mid
+                        #joinType: left
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            StudyGroupUsers:
+                table: study_groups_users
+                relations:
+                    StudyGroup:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+                    Person:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            StudyGroup:
+                table: study_groups
+                relations:
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+            Student:
+                table: Students
+                relations:
+                    Person:
+                        local: MID
+                        foreign: MID
+            Subject:
+                table: subjects
+                primary: subid
+                relations:
+                    TestAttempt:
+                        local: subid
+                        foreign: cid
+                        #joinType: left
+                    ProgrammEvent:
+                        joinOn: Subject.subid = programm_events.item_id AND programm_events.type = 1
+                        joinType: left
+            Schedule:
+                table: schedule
+                primary: SHEID
+                relations:
+                    ScheduleId:
+                        local: SHEID
+                        foreign: SHEID
+                    ScheduleTest:
+                        local: SHEID
+                        foreign: lesson_id
+            ScheduleId:
+                table: scheduleID
+                primary: SSID
+                relations:
+                    Schedule:
+                        local: SHEID
+                        foreign: SHEID
+            ScheduleTest:
+                table: test
+                primary: tid
+                relations:
+                    Schedule:
+                        local: lesson_id
+                        foreign: SHEID
+                    TestAttempt:
+                        local: tid
+                        foreign: tid
+                        #joinType: left
+            TestAttempt:
+                table: loguser
+                primary: stid
+                relations:
+                    Person:
+                        local: mid
+                        foreign: MID
+                        #joinType: left
+                    ScheduleTest:
+                        local: tid
+                        foreign: tid
+                        #joinType: left
+                    Subject:
+                        local: cid
+                        foreign: subid
+                        #joinType: left
+            ProgrammEvent:
+                table: programm_events
+                primary: programm_event_id
+                relations:
+                    Subject:
+                        joinOn: ProgrammEvent.item_id = Subject.subid AND ProgrammEvent.type = 1
+                        joinType: left
+                    Programm:
+                        joinOn: ProgrammEvent.programm_id = Programm.programm_id
+                        joinType: left
+            Programm:
+                table: programm
+                primary: programm_id
+                relations:
+                    ProgrammEvent:
+                        joinOn: Programm.programm_id = ProgrammEvent.programm_id
+                        joinType: left
+        categories:
+            StudyGroup:
+                title: Учебная группа
+                fields:
+                    studygroupname:
+                        table: StudyGroup
+                        title: Название учебной группы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (StudyGroup.name IS NULL) THEN 'Нет' ELSE StudyGroup.name END
+            Person:
+                title: Пользователь
+                fields:
+                    personId:
+                        table: Person
+                        title: ID пользователя
+                        type: string
+                        field: MID
+                        aggregation:
+                            - count
+                    fio:
+                        table: Person
+                        title: ФИО
+                        type: string
+                        field: fio
+                        expression: CONCAT(CONCAT(CONCAT(CONCAT(Person.LastName, ' '), Person.FirstName), ' '), Person.Patronymic)
+                        expressionFields: LastName, FirstName, Patronymic
+                    lastname:
+                        table: Person
+                        title: Фамилия
+                        type: string
+                        field: LastName
+                    firstname:
+                        table: Person
+                        title: Имя
+                        type: string
+                        field: FirstName
+                    patronymic:
+                        table: Person
+                        title: Отчество
+                        type: string
+                        field: Patronymic
+                    login:
+                        table: Person
+                        title: Логин
+                        type: string
+                        field: Login
+                    gender:
+                        table: Person
+                        title: Пол
+                        type: string
+                        field: Information
+                        expression: CAST(Person.Information AS VARCHAR(4000))
+                        callback: getUserGender
+            Programm:
+                title: Учебная программа
+                fields:
+                    programm:
+                        table: Programm
+                        title: Название учебной программы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (Programm.name IS NULL) THEN 'Нет' ELSE Programm.name END
+            Subject:
+                title: Учебный курс
+                fields:
+                    subjectId:
+                        table: Subject
+                        title: ID курса
+                        type: string
+                        field: subid
+                        aggregation:
+                            - count
+                    subjectTitle:
+                        table: Subject
+                        title: Название курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+            Test:
+                title: Тест
+                fields:
+                    testId:
+                        table: ScheduleTest
+                        title: ID теста
+                        type: string
+                        field: tid
+                        aggregation:
+                            - count
+                    testTitle:
+                        table: ScheduleTest
+                        title: Название теста
+                        type: string
+                        field: title
+                        aggregation:
+                            - group_concat
+            TestAttempt:
+                title: Попытка прохождения теста
+                fields:
+                    testAttemptId:
+                        table: TestAttempt
+                        title: ID попытки
+                        type: integer
+                        field: stid
+                        aggregation:
+                            - count
+                    testAttemptStop:
+                        table: TestAttempt
+                        title: Дата и время попытки
+                        type: datetimestamp
+                        field: stop
+                    testAttemptBal:
+                        table: TestAttempt
+                        title: Результат (в баллах)
+                        type: double
+                        field: bal
+                        aggregation:
+                            - max
+                    testAttemptMark:
+                        table: TestAttempt
+                        title: Результат (оценка)
+                        type: double
+                        field: mark
+                        expression: CASE WHEN (TestAttempt.mark > 0) THEN TestAttempt.mark ELSE 0 END
+                        aggregation:
+                            - sum
+                        function:
+                            minute:
+                                title: Выставлена
+                                expression: CASE WHEN (TestAttempt.status = 1) THEN 'Выставлена' ELSE 'Не выставлена' END
+                    testAttemptPercent:
+                        table: TestAttempt
+                        title: Результат (в процентах)
+                        type: integer
+                        field: testresultpcnt
+                        expression: CASE WHEN (TestAttempt.bal IS NOT NULL) THEN ROUND(100 * (TestAttempt.bal - TestAttempt.balmin2) / (TestAttempt.balmax2 - TestAttempt.balmin2), 1) ELSE 0 END
+                        expressionFields: bal, balmin2, balmax2
+                        aggregation:
+                            - max
+                    testAttemptQuestDone:
+                        table: TestAttempt
+                        title: Кол-во пройденных вопросов
+                        type: integer
+                        field: questdone
+                    testAttemptTime:
+                        table: TestAttempt
+                        title: Время прохождения
+                        type: string
+                        field: fulltime
+                        aggregation:
+                            - sum
+                            - max
+                            - avg
+                        function:
+                            minute:
+                                title: В минутах
+                                expression: ROUND(TestAttempt.fulltime / 60, 0)
+                            hour:
+                                title: В часах
+                                expression: ROUND(TestAttempt.fulltime / 60 / 60, 0)
+                    testStatus:
+                        table: TestAttempt
+                        title: Статус тестирования
+                        type: string
+                        field: status
+                        expression: CASE WHEN (TestAttempt.status = 0) THEN 'идет тестирование' ELSE CASE WHEN (TestAttempt.status = 1) THEN 'закончен' ELSE CASE WHEN (TestAttempt.status = 2) THEN 'брошен' ELSE CASE WHEN (TestAttempt.status = 3) THEN 'прерван по команде' ELSE CASE WHEN (TestAttempt.status = 4) THEN 'досрочно завершен' ELSE 'прерван лимитом времени' END END END END END
+    AdminSessions:
+        title: Пользовательские сессии
+        tables:
+            Person:
+                table: People
+                primary: MID
+                relations:
+                    UserSession:
+                        local: MID
+                        foreign: mid
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            StudyGroupUsers:
+                table: study_groups_users
+                relations:
+                    StudyGroup:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+                    Person:
+                        joinOn: StudyGroupUsers.user_id = Person.MID
+                        joinType: left
+            StudyGroup:
+                table: study_groups
+                relations:
+                    StudyGroupUsers:
+                        joinOn: StudyGroupUsers.group_id = StudyGroup.group_id
+                        joinType: left
+            UserSession:
+                table: sessions
+               # primary: sessid
+                relations:
+                    Person:
+                        local: mid
+                        foreign: MID
+                    Subject:
+                        local: course_id
+                        foreign: subid
+                        joinType: inner
+                    Schedule:
+                        local: lesson_id
+                        foreign: SHEID
+                        joinType: inner
+                    UserSystemSession:
+                        joinOn: UserSession.sessid = UserSystemSession.sessid AND UserSession.course_id = 0 AND UserSession.lesson_id = 0
+                        joinType: inner
+                    UserCourseSession:
+                        local: sessid
+                        foreign: sessid
+                    UserLessonSession:
+                        local: sessid
+                        foreign: sessid
+            UserSystemSession:
+                table: sessions
+              #  primary: sessid
+                relations:
+                    UserSession:
+                        joinOn: UserSystemSession.sessid = UserSession.sessid AND UserSession.course_id = 0 AND UserSession.lesson_id = 0
+                        joinType: inner
+            UserCourseSession:
+                table: sessions
+              #  primary: sessid
+                relations:
+                    UserSession:
+                        local: sessid
+                        foreign: sessid
+                    Subject:
+                        joinOn: UserCourseSession.course_id = Subject.subid AND UserCourseSession.lesson_id = 0
+            UserLessonSession:
+                table: sessions
+              #  primary: sessid
+                relations:
+                    UserSession:
+                        local: sessid
+                        foreign: sessid
+                    Schedule:
+                        local: lesson_id
+                        foreign: SHEID
+                        joinType: inner
+            Subject:
+                table: subjects
+#                primary: subid
+                relations:
+                    UserSession:
+                        local: subid
+                        foreign: course_id
+                        joinType: inner
+                    UserCourseSession:
+                        joinOn: Subject.subid = UserCourseSession.course_id AND UserCourseSession.lesson_id = 0
+            Schedule:
+                table: schedule
+                primary: SHEID
+                relations:
+                    UserSession:
+                        local: SHEID
+                        foreign: lesson_id
+                        joinType: inner
+                    UserLessonSession:
+                        local: SHEID
+                        foreign: lesson_id
+                        joinType: inner
+        categories:
+            StudyGroup:
+                title: Учебная группа
+                fields:
+                    studygroupname:
+                        table: StudyGroup
+                        title: Название учебной группы
+                        type: string
+                        field: name
+                        expression: CASE WHEN (StudyGroup.name IS NULL) THEN 'Нет' ELSE StudyGroup.name END
+            Person:
+                title: Пользователь
+                fields:
+                    personId:
+                        table: Person
+                        title: ID пользователя
+                        type: string
+                        field: MID
+                        aggregation:
+                            - group_concat
+                            - count
+                    fio:
+                        table: Person
+                        title: ФИО
+                        type: string
+                        field: fio
+                        expression: CONCAT(CONCAT(CONCAT(CONCAT(Person.LastName, ' '), Person.FirstName), ' '), Person.Patronymic)
+                        expressionFields: LastName, FirstName, Patronymic
+                    login:
+                        table: Person
+                        title: Логин
+                        type: string
+                        field: Login
+                    gender:
+                        table: Person
+                        title: Пол
+                        type: string
+                        field: Information
+                        expression: CAST(Person.Information AS VARCHAR(4000))
+                        callback: getUserGender
+                    age:
+                        table: Person
+                        title: Возраст
+                        type: string
+                        field: BirthDate
+                        callback: getUserAge
+            UserSystemSession:
+                title: Сеанс работы с системой
+                fields:
+                    sessionStart1:
+                        table: UserSystemSession
+                        title: Время входа в систему
+                        type: string
+                        field: start
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                expression: CONCAT(CONCAT(CONCAT(CONCAT(LPAD(DAY(UserSystemSession.start), 2, '0'), '.'), LPAD(MONTH(UserSystemSession.start), 2, '0')), '.'), YEAR(UserSystemSession.start))
+                                type: string
+                            monthYear:
+                                title: Месяц-Год
+                                expression: CONCAT(CONCAT(LPAD(MONTH(UserSystemSession.start), 2, '0'), '.'), YEAR(UserSystemSession.start))
+                                type: string
+                            year:
+                                title: Год
+                                expression: YEAR(UserSystemSession.start)
+                                type: string
+                        aggregation:
+                            - group_concat
+                            - group_concat_distinct
+                            - count
+                            - count_distinct
+            UserCourseSession:
+                title: Сеанс работы с курсом
+                fields:
+                    sessionStart2:
+                        table: UserCourseSession
+                        title: Время входа в курс
+                        type: string
+                        field: start
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                expression: CONCAT(CONCAT(CONCAT(CONCAT(LPAD(DAY(UserCourseSession.start), 2, '0'), '.'), LPAD(MONTH(UserCourseSession.start), 2, '0')), '.'), YEAR(UserCourseSession.start))
+                                type: string
+                            monthYear:
+                                title: Месяц-Год
+                                expression: CONCAT(CONCAT(LPAD(MONTH(UserCourseSession.start), 2, '0'), '.'), YEAR(UserCourseSession.start))
+                                type: string
+                            year:
+                                title: Год
+                                expression: YEAR(UserCourseSession.start)
+                                type: string
+                        aggregation:
+                            - group_concat
+                            - group_concat_distinct
+                            - count
+                            - count_distinct
+            UserLessonSession:
+                title: Сеанс работы с занятием
+                fields:
+                    sessionStart3:
+                        table: UserLessonSession
+                        title: Время входа в занятие
+                        type: string
+                        field: start
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                expression: CONCAT(CONCAT(CONCAT(CONCAT(LPAD(DAY(UserLessonSession.start), 2, '0'), '.'), LPAD(MONTH(UserLessonSession.start), 2, '0')), '.'), YEAR(UserLessonSession.start))
+                                type: string
+                            monthYear:
+                                title: Месяц-Год
+                                expression: CONCAT(CONCAT(LPAD(MONTH(UserLessonSession.start), 2, '0'), '.'), YEAR(UserLessonSession.start))
+                                type: string
+                            year:
+                                title: Год
+                                expression: YEAR(UserLessonSession.start)
+                                type: string
+                        aggregation:
+                            - group_concat
+                            - group_concat_distinct
+                            - count
+                            - count_distinct
+            UserSession:
+                title: Сессия
+                fields:
+                    sessionStart:
+                        table: UserSession
+                        title: Время начала
+                        type: datetime
+                        field: start
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    sessionEnd:
+                        table: UserSession
+                        title: Время окончания
+                        type: datetime
+                        field: stop
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                        aggregation:
+                            - group_concat
+                    sessionIp:
+                        table: UserSession
+                        title: ip-адрес
+                        type: string
+                        field: ip
+            Subject:
+                title: Учебный курс
+                fields:
+                    subjectId:
+                        table: Subject
+                        title: ID курса
+                        type: string
+                        field: subid
+                        aggregation:
+                            - count
+                    subjectTitle:
+                        table: Subject
+                        title: Название курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat
+                            - count
+            Schedule:
+                title: Занятие
+                fields:
+                    scheduleId:
+                        table: Schedule
+                        title: ID занятия
+                        type: string
+                        field: SHEID
+                        aggregation:
+                            - group_concat
+                            - count
+                    scheduleName:
+                        table: Schedule
+                        title: Название занятия
+                        type: string
+                        field: title
+                        aggregation:
+                            - group_concat
+                            - count
+                    scheduleType:
+                        table: Schedule
+                        title: Тип занятия
+                        type: string
+                        field: typeID
+                        expression: CASE WHEN (Schedule.typeID = 1000) THEN 'Без типа' CASE WHEN (Schedule.typeID = 1024) THEN 'Раздел учебного модуля' CASE WHEN (Schedule.typeID = 2048) THEN 'Тест' CASE WHEN (Schedule.typeID = 2049) THEN 'Упражнение' CASE WHEN (Schedule.typeID = 2050) THEN 'Учебный модуль' CASE WHEN (Schedule.typeID = 2051) THEN 'Вебинар' CASE WHEN (Schedule.typeID = 2052) THEN 'Информационный ресурс' CASE WHEN (Schedule.typeID = 2053) THEN 'Опрос' CASE WHEN (Schedule.typeID = 2054) THEN 'Задание' CASE WHEN (Schedule.typeID = 2) THEN 'Форум' END
+    Materials:
+        title: Учебные материалы
+        tables:
+            Resource_:
+                table: resources
+                primary: resource_id
+                condition: Resource_.parent_id = 0
+                relations:
+                    DependentResource:
+                        joinOn: Resource_.resource_id = DependentResource.parent_id AND DependentResource.parent_revision_id = 0
+                        joinType: left
+                    SubjectResource:
+                        local: resource_id
+                        foreign: resource_id
+                        joinType: left
+                    SubjectCourse:
+                        local: resource_id
+                        foreign: resource_id
+                        joinType: left
+                    Course:
+                        joinOn: 0 = 1
+            DependentResource:
+                table: resources
+                primary: resource_id
+                relations:
+                    Resource_:
+                        joinOn: Resource_.resource_id = DependentResource.parent_id AND DependentResource.parent_revision_id = 0
+                        joinType: left
+                    SubjectResource:
+                        local: resource_id
+                        foreign: resource_id
+                        joinType: left
+                    Course:
+                        joinOn: 0 = 1
+            SubjectResource:
+                table: subjects_resources
+                relations:
+                    Resource_:
+                        local: resource_id
+                        foreign: resource_id
+                        joinType: left
+                    Subject:
+                        local: subject_id
+                        foreign: subid
+                        joinType: left
+            Subject:
+                table: subjects
+                primary: subid
+                relations:
+                    SubjectResource:
+                        local: subid
+                        foreign: subject_id
+                        joinType: left
+                    SubjectCourse:
+                        local: subid
+                        foreign: subject_id
+                        joinType: left
+            Course:
+                table: Courses
+                primary: CID
+                relations:
+                    Resource_:
+                        joinOn: 0 = 1
+                    SubjectCourse:
+                        local: CID
+                        foreign: course_id
+                        joinType: left
+            SubjectCourse:
+                table: subjects_courses
+                relations:
+                    Course:
+                        local: course_id
+                        foreign: CID
+                        joinType: left
+                    Subject:
+                        local: subject_id
+                        foreign: subid
+                        joinType: left
+        categories:
+            Resource_:
+                title: Информационный ресурс
+                fields:
+                    resourceId:
+                        table: Resource_
+                        title: ID ресурса
+                        type: string
+                        field: resource_id
+                        aggregation:
+                            - count
+                    resourceTitle:
+                        table: Resource_
+                        title: Название ресурса
+                        type: string
+                        field: title
+                    created:
+                        table: Resource_
+                        title: Дата создания
+                        type: date
+                        field: created
+                        isAggregation: true
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    updated:
+                        table: Resource_
+                        title: Дата обновления
+                        type: date
+                        field: updated
+                        isAggregation: true
+                        function:
+                            dayMonthYear:
+                                title: День-Месяц-Год
+                                callback: dayMonthYear
+                            monthYear:
+                                title: Месяц-Год
+                                callback: monthYear
+                            year:
+                                title: Год
+                                callback: year
+                    resourceLocation:
+                        table: Resource_
+                        title: Место хранения
+                        type: string
+                        expression: CASE WHEN (Resource_.location = 1) THEN 'База знаний' ELSE 'Учебный курс' END
+                    resourceStatus:
+                        table: Resource_
+                        title: Статус
+                        type: string
+                        expression: CASE WHEN (Resource_.status = 1) THEN 'Опубликован' ELSE CASE WHEN (Resource_.status = 7) THEN 'Ограниченное использование' ELSE 'Не опубликован' END END
+                    type:
+                        table: Resource_
+                        title: Тип ресурса
+                        type: string
+                        expression: CASE WHEN (Resource_.type = 0) THEN 'Файл' ELSE CASE WHEN (Resource_.type = 1) THEN 'HTML-страница' ELSE CASE WHEN (Resource_.type = 2) THEN 'Ссылка на внешний ресурс' ELSE CASE WHEN (Resource_.type = 3) THEN 'HTML-сайт' ELSE CASE WHEN (Resource_.type = 4) THEN 'Запись вебинара' ELSE 'Сервис взаимодействия' END END END END END
+                    volume:
+                        table: Resource_
+                        title: Размер
+                        type: string
+                        field: volume
+                    filename:
+                        table: Resource_
+                        title: Имя файла
+                        type: string
+                        field: filename
+                    filetype:
+                        table: Resource_
+                        title: Тип файла
+                        type: string
+                        expression: CASE WHEN (Resource_.filetype = 1) THEN 'Текстовый файл' ELSE CASE WHEN (Resource_.filetype = 2) THEN 'HTML-страница' ELSE CASE WHEN (Resource_.filetype = 3) THEN 'Изображение' ELSE CASE WHEN (Resource_.filetype = 4) THEN 'Аудио-файл' ELSE CASE WHEN (Resource_.filetype = 5) THEN 'Видео-файл' ELSE CASE WHEN (Resource_.filetype = 6) THEN 'Flash' ELSE CASE WHEN (Resource_.filetype = 7) THEN 'Документ MS Word' ELSE CASE WHEN (Resource_.filetype = 8) THEN 'Таблица MS Excel' ELSE CASE WHEN (Resource_.filetype = 9) THEN 'Презентация MS PowePoint' ELSE CASE WHEN (Resource_.filetype = 10) THEN 'Документ PDF' ELSE '' END END END END END END END END END END
+                    activitytype:
+                        table: Resource_
+                        title: Тип сервиса взаимодействия
+                        type: string
+                        expression: CASE WHEN (Resource_.activity_type = 2) THEN 'Форум' ELSE CASE WHEN (Resource_.filetype = 64) THEN 'Блог' ELSE CASE WHEN (Resource_.filetype = 128) THEN 'Wiki' ELSE CASE WHEN (Resource_.filetype = 512) THEN 'Протокол чата' ELSE '' END END END END
+            DependentResource:
+                title: Несколько файлов в одном ресурсе
+                fields:
+                    dependentFilename:
+                        table: DependentResource
+                        title: Имя файла
+                        type: string
+                        field: filename
+                        aggregation:
+                            - group_concat
+            Course:
+                title: Учебный модуль
+                fields:
+                    courseId:
+                        table: Course
+                        title: ID учебного модуля
+                        type: string
+                        field: CID
+                        aggregation:
+                            - count
+                    courseTitle:
+                        table: Course
+                        title: Название учебного модуля
+                        type: string
+                        field: Title
+                    courseLocation:
+                        table: Course
+                        title: Место хранения
+                        type: string
+                        expression: CASE WHEN (Course.chain = 0) THEN 'База знаний' ELSE 'Учебный курс' END
+                    courseStatus:
+                        table: Course
+                        title: Статус
+                        type: string
+                        expression: CASE WHEN (Course.status = 1) THEN 'Опубликован' ELSE CASE WHEN (Course.status = 7) THEN 'Ограниченное использование' ELSE CASE WHEN (Course.status = 2) THEN 'Архивный' ELSE 'Не опубликован (в разработке)' END END END
+            Subject:
+                title: Используется в учебном курсе
+                fields:
+                    subjectId:
+                        table: Subject
+                        title: ID учебного курса
+                        type: string
+                        field: subid
+                        aggregation:
+                            - count
+                    subjectTitle:
+                        table: Subject
+                        title: Название учебного курса
+                        type: string
+                        field: name
+                        aggregation:
+                            - group_concat

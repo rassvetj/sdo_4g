@@ -1,0 +1,13 @@
+.is-authorized #header, .has-user-block #header { padding-top: 66px; }
+
+#user-block-wrapper { position: absolute; top: 0; width: 100%; height: 34px; left: 0; display: block; }
+
+.user-block-wrapper-default { background: black url("../../images/user-block-background.png") top left repeat-x; }
+
+.user-block-wrapper-restoreable { background-color: #d66161; }
+
+#header #user-block { margin: 0 1.909em; height: 100%; display: block; padding: 0; white-space: nowrap; line-height: 34px; }
+#header #user-block h3.name, #header #user-block .action-link { display: inline; vertical-align: text-top; padding: 0; margin: 0; }
+#header #user-block .edit-profile, #header #user-block .ui-selectmenu { margin: 0 1em 0 0; }
+#header #user-block .edit-profile { display: inline-block; *display: inline; *zoom: 1; }
+#header #user-block .logout, #header #user-block .login { position: absolute; right: 0; top: 0; }

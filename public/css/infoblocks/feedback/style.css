@@ -1,0 +1,35 @@
+#feedbackBlock .infoblock-feedback-table :hover {
+
+}
+
+#feedbackBlock .infoblock-feedback-table td {
+    padding: 5px;
+}
+
+#feedbackBlock .infoblock-feedback-subject {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#feedbackBlock .infoblock-feedback-dates {
+
+}
+
+#feedbackBlock .infoblock-feedback-lesson {
+    
+}
+
+#feedbackBlock .infoblock-feedback-lesson .overdue {
+    color: red !important;
+}
+
+#feedbackBlock #infoblock-feedback-begin {
+    width: 70px;
+}
+
+#feedbackBlock #infoblock-feedback-end {
+    width: 70px;
+}
+.infoblock-feedbackBlock .feedback-input-block{
+	display:inline-block;
+}

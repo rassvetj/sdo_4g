@@ -1,0 +1,5032 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-06 17:52+0300\n"
+"PO-Revision-Date: 2011-06-08 08:51+0300\n"
+"Last-Translator: Lex Avramenko <lex@hypermethod.ru>\n"
+"Language-Team: Lex <lex@hypermethod.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1251\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "воскресенье"
+msgstr "Sunday"
+
+msgid "понедельник"
+msgstr "Monday"
+
+msgid "вторник"
+msgstr "Tuesday"
+
+msgid "среда"
+msgstr "Wednesday"
+
+msgid "четверг"
+msgstr "Thursday"
+
+msgid "пятница"
+msgstr "Friday"
+
+msgid "суббота"
+msgstr "Saturday"
+
+msgid "Не задано"
+msgstr "Not selected"
+
+msgid "руб"
+msgstr "Ruble"
+
+msgid "Рубли/RUS"
+msgstr "Rubles/RUS"
+
+msgid "Доллары/USA"
+msgstr "Dollars/USA"
+
+msgid "Евро/EUR"
+msgstr "Euro/EUR"
+
+msgid "Опубликован"
+msgstr "Published"
+
+msgid "Цепочка согласований:"
+msgstr "Approval chain:"
+
+msgid "Прошедшие обучение"
+msgstr "Traineds"
+
+msgid "все"
+msgstr "all"
+
+msgid "---без темы---"
+msgstr "---no topic---"
+
+msgid "Курс"
+msgstr "Course"
+
+msgid "Распределение учащихся"
+msgstr "Distribution of trainees"
+
+msgid "Комментарий:"
+msgstr "Comments:"
+
+msgid "Статус инфоблока изменен"
+msgstr "Status of information block changed"
+
+msgid "Сообщение удалено"
+msgstr "Message deleted"
+
+msgid "слушатель"
+msgstr "trainee"
+
+msgid "обучаемого"
+msgstr "of trainee"
+
+msgid "обучаемых"
+msgstr "of trainees"
+
+msgid "Удалить группу?"
+msgstr "Delete this group?"
+
+msgid "Всего"
+msgstr "Total"
+
+msgid "введите название"
+msgstr "input  name"
+
+msgid "Редактирование группы"
+msgstr "Editing of group"
+
+msgid "ФИО"
+msgstr "Full name"
+
+msgid "Логин"
+msgstr "Login"
+
+msgid "всего"
+msgstr "total"
+
+msgid "Имя"
+msgstr "Name"
+
+msgid "Фамилия"
+msgstr "Surname"
+
+msgid "Удалить"
+msgstr "Delete"
+
+msgid "Отчество"
+msgstr "Patronymic"
+
+msgid "Дополнительная информация"
+msgstr "Additional info"
+
+msgid "Последнее посещение"
+msgstr "Last login"
+
+msgid "Всего посещений"
+msgstr "Total logins"
+
+msgid "Пароль"
+msgstr "Password"
+
+msgid "Табельный номер"
+msgstr "Personnel  number"
+
+msgid "Редактировать"
+msgstr "Edit"
+
+msgid "Тип"
+msgstr "Type"
+
+msgid "Добавить"
+msgstr "Add"
+
+msgid "Сохранить"
+msgstr "Save"
+
+msgid "Вы действительно желаете удалить учетные записи пользователей из системы? Восстановление будет невозможно!"
+msgstr "Do you really want to delete user accounts from the system? Deleted accounts cannot be restored!"
+
+msgid "Вы действительно желаете удалить учетную запись пользователя из системы? Восстановление будет невозможно!"
+msgstr "Do you really want to delete the user account from the system? Deleted account cannot be restored!"
+
+msgid "удалить"
+msgstr "delete"
+
+msgid "править"
+msgstr "edit"
+
+msgid "Выполнить:"
+msgstr "Run:"
+
+msgid "Изменить пароль"
+msgstr "Change password"
+
+msgid "на соответствие"
+msgstr "matching"
+
+msgid "Пожалуйста, выберите преподавателя в списке слева"
+msgstr "Select teacher name from left list"
+
+msgid "На главную"
+msgstr "To home page"
+
+msgid "свернуть"
+msgstr "close"
+
+msgid "сейчас в чате:"
+msgstr "users online:"
+
+msgid "Внимание!"
+msgstr "Attention!"
+
+msgid "Каталог"
+msgstr "Directory"
+
+msgid "Каталоги курса"
+msgstr "Course directories"
+
+msgid "проверены"
+msgstr "examined"
+
+msgid "статус"
+msgstr "status"
+
+msgid "Название"
+msgstr "Name"
+
+msgid "Описание"
+msgstr "Comments"
+
+msgid "Удалить?"
+msgstr "Delete?"
+
+msgid "Единожды"
+msgstr "Once"
+
+msgid "Без даты"
+msgstr "Without date"
+
+msgid "Все"
+msgstr "All"
+
+msgid "Редактировать курс"
+msgstr "Edit course"
+
+msgid "Удалить курс"
+msgstr "Delete course"
+
+msgid "Копировать курс"
+msgstr "Copy course"
+
+msgid "Импортировать курс"
+msgstr "Import course"
+
+msgid "Разблокировать"
+msgstr "Unlock"
+
+msgid "Разблокировать курс"
+msgstr "Unlock course"
+
+msgid "Заблокировать"
+msgstr "Lock"
+
+msgid "Заблокировать курс"
+msgstr "Lock course"
+
+msgid "Курс успешно скопирован"
+msgstr "Course copied successfully"
+
+msgid "нет"
+msgstr "no"
+
+msgid "Курс удален"
+msgstr "Course deleted"
+
+msgid "добавлен успешно."
+msgstr "added successfully."
+
+msgid "Данные курса были изменены."
+msgstr "Course properties changed."
+
+msgid "Импорт курсов из .CSV файла"
+msgstr "Course import from CSV file"
+
+msgid "запятая"
+msgstr "comma"
+
+msgid "точка с запятой"
+msgstr "semicolon"
+
+msgid "Все выбранные курсы"
+msgstr "All selected courses"
+
+msgid "были загружены!"
+msgstr "were uploaded!"
+
+msgid "Пользователь"
+msgstr "User"
+
+msgid "Импорт курса"
+msgstr "Course import"
+
+msgid "необходимо выбрать элемент"
+msgstr "select element"
+
+msgid "Гость"
+msgstr "Guest"
+
+msgid "Слушатель"
+msgstr "Trainee"
+
+msgid "Преподаватель"
+msgstr "Teacher"
+
+msgid "Учебная администрация"
+msgstr "Educational administration"
+
+msgid "Администратор"
+msgstr "Administrator"
+
+msgid "укажите"
+msgstr "select"
+
+msgid "В должности"
+msgstr "In capacity of"
+
+msgid "Действия"
+msgstr "Actions"
+
+msgid "редактирование свойств"
+msgstr "properties editing "
+
+msgid "Учебная структура: редактирование свойств"
+msgstr "Educacional structure: properties editing "
+
+msgid "Входит в"
+msgstr "Included in"
+
+msgid "добавить"
+msgstr "add"
+
+msgid "Изучить материал"
+msgstr "Materials"
+
+msgid "Обзор"
+msgstr "Browse"
+
+msgid "Иконка"
+msgstr "Icon"
+
+msgid "Задание"
+msgstr "Test"
+
+msgid "видео-трансляция"
+msgstr "video-broadcasting"
+
+msgid "чат"
+msgstr "chat"
+
+msgid "Типы занятий"
+msgstr "Lessons type"
+
+msgid "Вы действительно желаете удалить данный тип занятия и все занятия данного типа?"
+msgstr "Do you really want to delete this lessons type and all lessons of this type?"
+
+msgid "Редактирование типа занятия"
+msgstr "Editing of type of lessons"
+
+msgid "Необходимо выбрать иконку"
+msgstr "Select icon"
+
+msgid "или загрузить (не более 10Кб)"
+msgstr "or to upload (file size less than 10Kb)"
+
+msgid "Необходимо выбрать иконку из списка или указать путь на локальном компьютере!"
+msgstr "Select icon from the list or select the path to icon on the local disc!"
+
+msgid "Формулы"
+msgstr "Formulas"
+
+msgid "Добавить новую формулу"
+msgstr "Create new formula"
+
+msgid "Формула"
+msgstr "Formula"
+
+msgid "Область"
+msgstr "Formula type"
+
+msgid "Редактирование формулы"
+msgstr "Formula editing "
+
+msgid "Удалить формулу"
+msgstr "Delete formula"
+
+msgid "Плохо"
+msgstr "Low"
+
+msgid "Хорошо"
+msgstr "Good mark"
+
+msgid "ЗАЧЕТ"
+msgstr "TEST"
+
+msgid "плохие"
+msgstr "bad"
+
+msgid "хорошие"
+msgstr "good"
+
+msgid "Удовлетворительно"
+msgstr "Satisfactory"
+
+msgid "Отлично"
+msgstr "Full marks"
+
+msgid "Блестяще"
+msgstr "Excellent mark"
+
+msgid "Редактирование"
+msgstr "Editing"
+
+msgid "вставить пример"
+msgstr "insert example"
+
+msgid "баллов"
+msgstr "points"
+
+msgid "Удалить сообщение"
+msgstr "Delete message"
+
+msgid "ответы"
+msgstr "answers"
+
+msgid "по курсу"
+msgstr "in course"
+
+msgid "вопрос"
+msgstr "question"
+
+msgid "имя"
+msgstr "name"
+
+msgid "какой-то страницы"
+msgstr "some page"
+
+msgid "стартовой страницы"
+msgstr "of the home page"
+
+msgid "страницы регистрации"
+msgstr "registration pages"
+
+msgid "страницы курсов"
+msgstr "course pages"
+
+msgid "страницы библиотеки"
+msgstr "library pages"
+
+msgid "страницы о сервере"
+msgstr "pages about server"
+
+msgid "страницы помощи"
+msgstr "help pages"
+
+msgid "выберите группу"
+msgstr "select group"
+
+msgid "фото"
+msgstr "photo"
+
+msgid "Январь"
+msgstr "January"
+
+msgid "Февраль"
+msgstr "February"
+
+msgid "Март"
+msgstr "March"
+
+msgid "Апрель"
+msgstr "April"
+
+msgid "Май"
+msgstr "May"
+
+msgid "Июнь"
+msgstr "June"
+
+msgid "Июль"
+msgstr "July"
+
+msgid "Август"
+msgstr "August"
+
+msgid "Сентябрь"
+msgstr "September"
+
+msgid "Октябрь"
+msgstr "October"
+
+msgid "Ноябрь"
+msgstr "November"
+
+msgid "Декабрь"
+msgstr "December"
+
+msgid "Добавить новую группу"
+msgstr "Create new group"
+
+msgid "курс:"
+msgstr "course:"
+
+msgid "персонально"
+msgstr "personally"
+
+msgid "Обновить"
+msgstr "Refresh"
+
+msgid "Отправить"
+msgstr "Send"
+
+msgid "модуль"
+msgstr "module"
+
+msgid "страница"
+msgstr "page"
+
+msgid "действие"
+msgstr "action"
+
+msgid "закладка"
+msgstr "tab"
+
+msgid "настройка"
+msgstr "setting"
+
+msgid "Не опубликован"
+msgstr "Not published"
+
+msgid "Тема"
+msgstr "Topic"
+
+msgid "Условие"
+msgstr "Condition"
+
+msgid "Автор"
+msgstr "Author"
+
+msgid "Файл не найден"
+msgstr "File not found"
+
+msgid "Название курса"
+msgstr "Course name"
+
+msgid "курс"
+msgstr "course"
+
+msgid "редактировать"
+msgstr "edit"
+
+msgid "Библиотека"
+msgstr "Library"
+
+msgid "Уведомление о завершении обучения по курсу."
+msgstr "Message of completing course."
+
+msgid "Уведомление о подтверждении принятии заявки на регистрацию в качестве преподавателя."
+msgstr "Message of accepting application for registration as teacher."
+
+msgid "Уведомление о регистрации преподавателя на курс."
+msgstr "Message of teacher registration for the course."
+
+msgid "Уведомление об отчислении преподавателя с курса."
+msgstr "Message of dismissing teacher from the course."
+
+msgid "Уведомление об удалении преподавателя с курса."
+msgstr "Message of removing teacher from the course."
+
+msgid "Уведомление для учебной администрации о заявке на регистрацию преподавателем на курс."
+msgstr "Message for the educational administration about application for teacher to the course."
+
+msgid "Уведомление для учебной администрации о заявке на регистрацию курса."
+msgstr "Message for the educational administration about application for course registration."
+
+msgid "Уведомление о подтверждении принятии заявки на регистрацию курса."
+msgstr "Message of accepting the application for course registration."
+
+msgid "Уведомление о регистрации курса."
+msgstr "Message of course registration."
+
+msgid "Уведомление об изменении статуса курса на 'Непубликовано'."
+msgstr "Message of changing the course status to 'Not published'."
+
+msgid "Сообщение от учебной администрации сервера."
+msgstr "Message from the server educational administration."
+
+msgid "Уведомление о добавлении объявления."
+msgstr "Message of adding announcement."
+
+msgid "Уведомление о добавлении ответа в форуме."
+msgstr "Message of posting reply on the forum."
+
+msgid "Напоминание пароля."
+msgstr "Message of password."
+
+msgid "Учетная запись разблокирована."
+msgstr "Account unlocked."
+
+msgid "Уведомление о назначении на курс в качестве преподавателя."
+msgstr "Message of being appointed the teacher."
+
+msgid "Уведомление о генерации учетных записей."
+msgstr "Message of generating accounts."
+
+msgid "Уведомление для учебной администрации о регистрации обучаемого на курс."
+msgstr "Message for the educational administration about the trainee's registration for the course."
+
+msgid "Уведомление для учебной администрации о регистрации преподавателя на курс."
+msgstr "Message for the educational administration about the teacher's registration for the course."
+
+msgid "Уведомление обучаемого на курс."
+msgstr "Message of trainee for course."
+
+msgid "Уведомление о проверки задания, требующего проверки преподавателя"
+msgstr "Message of the test to be checked by the teacher"
+
+msgid "Тело письма:"
+msgstr "Message body:"
+
+msgid "Заголовок письма:"
+msgstr "Message heading:"
+
+msgid "переписать заголовок курса"
+msgstr "rewrite course name"
+
+msgid "обновить"
+msgstr "refresh"
+
+msgid "Кол-во"
+msgstr "Quantity"
+
+msgid "да"
+msgstr "yes"
+
+msgid "Применить"
+msgstr "Apply"
+
+msgid "Все курсы"
+msgstr "All courses"
+
+msgid "Группа"
+msgstr "Group"
+
+msgid "прошедшие обучение"
+msgstr "traineds"
+
+msgid "Примечания"
+msgstr "Notes"
+
+msgid "Учебная группа"
+msgstr "Study group"
+
+msgid "Аннотация"
+msgstr "Abstract"
+
+msgid "Итоговый контроль"
+msgstr "Resulting control"
+
+msgid "сохранить"
+msgstr "save"
+
+msgid "Статус"
+msgstr "Status"
+
+msgid "Вы уже зарегистрированы на этом курсе!"
+msgstr "You have been registered for this course!"
+
+msgid "Статус новости изменен"
+msgstr "News status was changed"
+
+msgid "стоимость"
+msgstr "cost"
+
+msgid "применить"
+msgstr "apply"
+
+msgid "на уровень ниже"
+msgstr "one level down"
+
+msgid "переместить вверх"
+msgstr "move up"
+
+msgid "переместить вниз"
+msgstr "move down"
+
+msgid "Данные курса успешно загружены."
+msgstr "Course content uploaded successfully."
+
+msgid "Все учетные записи"
+msgstr "All accounts"
+
+msgid "Преподаватели"
+msgstr "Teachers"
+
+msgid "Добавлено записей:"
+msgstr "Accounts added:"
+
+msgid "Распечатать список"
+msgstr "Print list"
+
+msgid "Удалено записей:"
+msgstr "Accounts deleted:"
+
+msgid "Количество"
+msgstr "Number"
+
+msgid "Логин (префикс)"
+msgstr "Login (prefix)"
+
+msgid "Длина пароля"
+msgstr "Password length"
+
+msgid "Включить в группу"
+msgstr "Include in the group"
+
+msgid "удалить учетные записи"
+msgstr "delete accounts"
+
+msgid "преподаватели"
+msgstr "teachers"
+
+msgid "Импорт учащихся из CSV файла"
+msgstr "Importing trainees' accounts from CSV file"
+
+msgid "Сгенерированные учетные записи"
+msgstr "Generated accounts"
+
+msgid "Занятие"
+msgstr "Lesson"
+
+msgid "Начало"
+msgstr "Starting"
+
+msgid "Окончание"
+msgstr "Expiration"
+
+msgid "Количество академических часов"
+msgstr "Number of academic hours"
+
+msgid "часов"
+msgstr "hours"
+
+msgid "мин."
+msgstr "min."
+
+msgid "Учебный план"
+msgstr "Curriculum"
+
+msgid "Оценка"
+msgstr "Mark"
+
+msgid "Обучаемый"
+msgstr "Trainee"
+
+msgid "Курсы"
+msgstr "Courses"
+
+msgid "Действие"
+msgstr "Action"
+
+msgid "удалить с курсов"
+msgstr "dismiss from course"
+
+msgid "Код"
+msgstr "Code"
+
+msgid "Выполнить"
+msgstr "Run"
+
+msgid "Преподает"
+msgstr "Teaches"
+
+msgid "Обучается"
+msgstr "Studying"
+
+msgid "Заявлен"
+msgstr "Declared by"
+
+msgid "преподавателем"
+msgstr "teacher"
+
+msgid "учеником"
+msgstr "trainee"
+
+msgid "Настройки успешно сохранены"
+msgstr "Settings saved"
+
+msgid "Текстовое поле"
+msgstr "Text field"
+
+msgid "Контакты"
+msgstr "Contacts"
+
+msgid "Почтовый адрес"
+msgstr "Postal address"
+
+msgid "Паспортные данные"
+msgstr "Passport data"
+
+msgid "Дата рождения"
+msgstr "Date of birth"
+
+msgid "выполнен"
+msgstr "completed"
+
+msgid "брошен"
+msgstr "abandoned "
+
+msgid "прерван по команде"
+msgstr "interrupted by command"
+
+msgid "досрочно завершен"
+msgstr "finished before time"
+
+msgid "прерван лимитом времени"
+msgstr "interrupted because of time limit"
+
+msgid "Курс:"
+msgstr "Course:"
+
+msgid "Печатать ведомость"
+msgstr "Print report"
+
+msgid "Занятие:"
+msgstr "Lesson:"
+
+msgid "Задание:"
+msgstr "Test:"
+
+msgid "балл"
+msgstr "point"
+
+msgid "или"
+msgstr "or"
+
+msgid "пройти"
+msgstr "pass"
+
+msgid "коммент."
+msgstr "comment."
+
+msgid "Выставить:"
+msgstr "Set mark:"
+
+msgid "Выставить всем"
+msgstr "Set marks to all"
+
+msgid "Добавить всем комментарий"
+msgstr "Add comments to all"
+
+msgid "оценка:"
+msgstr "mark:"
+
+msgid "Вернуться к ведомости"
+msgstr "Return to report"
+
+msgid "Загрузка вашей фотографии на сервер"
+msgstr "Your photo uploading to server"
+
+msgid "Фото должно быть не больше 100Кб"
+msgstr "File size should not exceed 100Kb"
+
+msgid "Рекомендуются фотографии размера"
+msgstr "Recommended image size"
+
+msgid "пикселей"
+msgstr "pixels"
+
+msgid "Фотографии большего размера будут сжиматься."
+msgstr "Photos in larger size will be crunched."
+
+msgid "Текущая фотография:"
+msgstr "Current photo:"
+
+msgid "Фотография"
+msgstr "Photo"
+
+msgid "Ваши регистрационные данные были сохранены"
+msgstr "Your account data was saved"
+
+msgid "Учетное имя (логин)"
+msgstr "Account name (login)"
+
+msgid "Группы"
+msgstr "Groups"
+
+msgid "Личное дело"
+msgstr "Personal file"
+
+msgid "справка об истории"
+msgstr "Note on history"
+
+msgid "начало"
+msgstr "starting"
+
+msgid "окончание"
+msgstr "expiration"
+
+msgid "Материал"
+msgstr "Material"
+
+msgid "Дата сдачи"
+msgstr "Test date"
+
+msgid "Максимум:"
+msgstr "Maximum:"
+
+msgid "Минимум:"
+msgstr "Minimum:"
+
+msgid "Среднее:"
+msgstr "Average:"
+
+msgid "Сумма:"
+msgstr "Sum:"
+
+msgid "Автор отчета:"
+msgstr "Author of report:"
+
+msgid "Сводные"
+msgstr "Consolidated"
+
+msgid "Слушателя"
+msgstr "Trainee"
+
+msgid "Учётное имя (логин)"
+msgstr "Account name (login)"
+
+msgid "Название группы"
+msgstr "Group name"
+
+msgid "Оценки за занятия"
+msgstr "Lessons marks"
+
+msgid "Статистика обучения"
+msgstr "Study statistic"
+
+msgid "Выполнено занятий"
+msgstr "Lessons completed"
+
+msgid "Не выполнено занятий"
+msgstr "Lessons not completed"
+
+msgid "Отсутствовал"
+msgstr "Absent"
+
+msgid "% выполнения учебного плана"
+msgstr "% completing curriculum"
+
+msgid "Регистрационная информация"
+msgstr "Registration info"
+
+msgid "Ведущий преподаватель"
+msgstr "Current teacher"
+
+msgid "Дата начала обучения"
+msgstr "Starting study date "
+
+msgid "Дата окончания обучения"
+msgstr "Expired study date"
+
+msgid "Результаты тестирования"
+msgstr "Test results"
+
+msgid "Дата попытки"
+msgstr "Date of test trial"
+
+msgid "Набранный балл"
+msgstr "Received points"
+
+msgid "Название занятия"
+msgstr "Lesson name"
+
+msgid "Статистика ответов"
+msgstr "Answer statistic"
+
+msgid "Вопрос"
+msgstr "Question"
+
+msgid "Тип вопроса"
+msgstr "Question type"
+
+msgid "Диапазон баллов"
+msgstr "Points range"
+
+msgid "Ответы обучаемого"
+msgstr "Trainee's answers"
+
+msgid "Балл"
+msgstr "Point"
+
+msgid "Попытка"
+msgstr "Test trial"
+
+msgid "Статистика изучения материалов"
+msgstr "Statistic of learning materials"
+
+msgid "Название уч. модуля"
+msgstr "Module name"
+
+msgid "Кол-во запусков"
+msgstr "Number of starts"
+
+msgid "Тип регистрации"
+msgstr "Registration type"
+
+msgid "Дата начала"
+msgstr "Starting date"
+
+msgid "Дата окончания"
+msgstr "Expiration date"
+
+msgid "Кол-во обучаемых"
+msgstr "Number of trainees"
+
+msgid "Кол-во курсов"
+msgstr "Number of courses"
+
+msgid "Подробные"
+msgstr "Detailed"
+
+msgid "Количество обучаемых"
+msgstr "Number of trainees"
+
+msgid "Учебная нагрузка преподавателей (в часах)"
+msgstr "Teachers' workload (in hours)"
+
+msgid "С"
+msgstr "From"
+
+msgid "По"
+msgstr "By"
+
+msgid "Расписание по курсу"
+msgstr "Shedule for course"
+
+msgid "Дата"
+msgstr "Date"
+
+msgid "Периодичность"
+msgstr "Periodicity"
+
+msgid "Отчеты по контенту"
+msgstr "Content reports"
+
+msgid "Статистика обращений к блокам материалов"
+msgstr "Statistic of usage of materials"
+
+msgid "Количество обращений"
+msgstr "Number of usages"
+
+msgid "ДД.ММ.ГГГГ"
+msgstr "DD.MM.YYYY"
+
+msgid "Среднее время изучения"
+msgstr "Average time of studying"
+
+msgid "Статистика тестирования"
+msgstr "Test statistic"
+
+msgid "Название теста"
+msgstr "Test name"
+
+msgid "Кол-во вопросов"
+msgstr "Number of questions"
+
+msgid "Среднее время прохождения"
+msgstr "Average time of passing"
+
+msgid "Средней процент выполнения"
+msgstr "Average percentage of completion"
+
+msgid "Средняя оценка"
+msgstr "Average mark"
+
+msgid "Статистика ответов на вопросы"
+msgstr "Answers to questions statistic"
+
+msgid "Текст вопроса"
+msgstr "Question text"
+
+msgid "Всего задано"
+msgstr "Asked in total"
+
+msgid "Верно ответили"
+msgstr "Gave correct answers"
+
+msgid "Неверно ответили"
+msgstr "Gave incorrect answers"
+
+msgid "Средний процент"
+msgstr "Average percentage"
+
+msgid "Ответы на вопрос теста"
+msgstr "Test question answers"
+
+msgid "Текст ответа"
+msgstr "Answer text"
+
+msgid "Верно"
+msgstr "Correct"
+
+msgid "Кол-во таких ответов"
+msgstr "Number of such answers"
+
+msgid "Административные отчеты"
+msgstr "Administrative reports"
+
+msgid "Учетные записи"
+msgstr "Accounts"
+
+msgid "Кол-во входов"
+msgstr "Number of entries"
+
+msgid "Последний вход"
+msgstr "Last entry"
+
+msgid "Пользовательские сессии"
+msgstr "User sessions"
+
+msgid "IP-адрес"
+msgstr "IP-address"
+
+msgid "Установленные модули в системе"
+msgstr "Modules installed in system"
+
+msgid "Отчеты"
+msgstr "Reports"
+
+msgid "ежедневно"
+msgstr "daily"
+
+msgid "еженедельно"
+msgstr "weekly"
+
+msgid "ежемесячно"
+msgstr "monthly"
+
+msgid "чел."
+msgstr "persons"
+
+msgid "Расписание"
+msgstr "Schedule"
+
+msgid "Статус занятия"
+msgstr "Lesson status"
+
+msgid "оценка не выставлена"
+msgstr "mark not given"
+
+msgid "оценка выставлена"
+msgstr "mark given"
+
+msgid "Готово"
+msgstr "Finish"
+
+msgid "Параметры успешно сохранены"
+msgstr "Settings were saved"
+
+msgid "Абсолютные даты"
+msgstr "Absolute dates"
+
+msgid "неважно"
+msgstr "irrelevant"
+
+msgid "Добавление занятия"
+msgstr "Lesson adding"
+
+msgid "количество занятий"
+msgstr "number of lessons"
+
+msgid "Новое занятие успешно добавлено"
+msgstr "A new lesson added"
+
+msgid "не найдено"
+msgstr "not found"
+
+msgid "Редактирование занятия"
+msgstr "Lesson editing "
+
+msgid "Занятие успешно отредактировано"
+msgstr "Lesson edited"
+
+msgid "Начал:"
+msgstr "Started:"
+
+msgid "Закончил:"
+msgstr "Expired:"
+
+msgid "Длительность:"
+msgstr "Duration:"
+
+msgid "Время"
+msgstr "Time"
+
+msgid "ФИО преподавателя"
+msgstr "Teacher's full name"
+
+msgid "Не имеет значения"
+msgstr "Dosn't matter"
+
+msgid "Править"
+msgstr "Edit"
+
+msgid "Удалить группу"
+msgstr "Delete group"
+
+msgid "Обработано обучаемых:"
+msgstr "Trainees processed:"
+
+msgid "Суммарная нагрузка"
+msgstr "Total workload"
+
+msgid "Тема:"
+msgstr "Topic:"
+
+msgid "Диапазон баллов: от"
+msgstr "Point range: from"
+
+msgid "до"
+msgstr "to"
+
+msgid "Присоединить файл к ответу (не обязательно)"
+msgstr "Attach file to answer (not necessary)"
+
+msgid "Название задания:"
+msgstr "Test name:"
+
+msgid "мин"
+msgstr "min"
+
+msgid "Я подтверждаю, что ознакомился с результатами"
+msgstr "I confirm having reviewed results"
+
+msgid "Закончить просмотр"
+msgstr "Finish"
+
+msgid "Вопросов:"
+msgstr "Questions:"
+
+msgid "осталось"
+msgstr "left"
+
+msgid "Прошло:"
+msgstr "Passed:"
+
+msgid "ВНИМАНИЕ!"
+msgstr "ATTENTION!"
+
+msgid "При этом попыка тестирования будет засчитана и учтен только выполненный результат."
+msgstr "Test attempt credited and only the completed result be taken into account."
+
+msgid "Если этот тест не предполагает возможность повтора, то у Вас больше не будет попыток."
+msgstr "If this test has no repeat option you will have no more attempts."
+
+msgid "прервать тестирование"
+msgstr "interrupt testing"
+
+msgid "на которые успели ответить."
+msgstr "which you managed to answer."
+
+msgid "Данный вид завершения задания является нормальным и допустимым."
+msgstr "This mode of test finishing is normal and permitted."
+
+msgid "Закончить"
+msgstr "Finish"
+
+msgid "обучение"
+msgstr "studing"
+
+msgid "Отметить"
+msgstr "Cancel"
+
+msgid "Снять все"
+msgstr "Remove all"
+
+msgid "Выполнить действие:"
+msgstr "Run:"
+
+msgid "Зачислить"
+msgstr "Enroll"
+
+msgid "какой"
+msgstr "any"
+
+msgid "то страницы"
+msgstr "page"
+
+msgid "Показать"
+msgstr "Show"
+
+msgid "отменить"
+msgstr "cancel"
+
+msgid "закрыть окно редактирования"
+msgstr "close window"
+
+msgid "настройки"
+msgstr "settings"
+
+msgid "учетные записи"
+msgstr "accounts"
+
+msgid "типы занятий"
+msgstr "lessons types"
+
+msgid "заголовок"
+msgstr "heading"
+
+msgid "Используйте"
+msgstr "Use"
+
+msgid "версии"
+msgstr "versions"
+
+msgid "по"
+msgstr "by"
+
+msgid "Главная"
+msgstr "Home"
+
+msgid "Помощь"
+msgstr "Help"
+
+msgid "Вопросы"
+msgstr "Questions"
+
+msgid "Доступ"
+msgstr "Access"
+
+msgid "Состояние"
+msgstr "Status"
+
+msgid "Цена и валюта"
+msgstr "Price and currency"
+
+msgid "Длительность"
+msgstr "Duration"
+
+msgid "дней"
+msgstr "days"
+
+msgid "Дата регистрации"
+msgstr "Registration date"
+
+msgid "Подразделение"
+msgstr "Division"
+
+msgid "показать список аудиторий"
+msgstr "show classroom list"
+
+msgid "аудитории"
+msgstr "classrooms"
+
+msgid "скрыть список аудиторий"
+msgstr "hide classroom list"
+
+msgid "Цена (у.е."
+msgstr "Price"
+
+msgid "Свободный"
+msgstr "Free access"
+
+msgid "Новости"
+msgstr "News"
+
+msgid "время"
+msgstr "Time"
+
+msgid "новости"
+msgstr "news"
+
+msgid "пароль"
+msgstr "password"
+
+msgid "расписание на"
+msgstr "schedule for"
+
+msgid "Редактирование новости"
+msgstr "News editing"
+
+msgid "Введите ваш старый пароль"
+msgstr "Type old password"
+
+msgid "Введите ваш новый пароль"
+msgstr "Type new password"
+
+msgid "Введите ваш новый пароль повторно"
+msgstr "Type new password once more"
+
+msgid "Загружаю данные."
+msgstr "Loading data."
+
+msgid "Тип занятия"
+msgstr "Lessons type"
+
+msgid "Групповое занятие"
+msgstr "Group lesson"
+
+msgid "абсолютно"
+msgstr "absolutely"
+
+msgid "относительно"
+msgstr "relatively"
+
+msgid "Начало на"
+msgstr "Beginning on"
+
+msgid "дн."
+msgstr "days."
+
+msgid "Назначить при условии, что выполнено"
+msgstr "Appoint provided if completed"
+
+msgid "занятие"
+msgstr "lesson"
+
+msgid "на оценку"
+msgstr "for mark"
+
+msgid "Превышена вместимость места проведения занятия (вместимость не более"
+msgstr "Classroom capacity exceeded (capacity not over"
+
+msgid "Добавить:"
+msgstr "Add:"
+
+msgid "всем новым"
+msgstr "for all new"
+
+msgid "Учебный курс"
+msgstr "Course"
+
+msgid "Успеваемость"
+msgstr "Performance"
+
+msgid "Распечатать план занятий"
+msgstr "Print schedule"
+
+msgid "Оценить по формуле:"
+msgstr "Put mark by formula:"
+
+msgid "Распределить по группам:"
+msgstr "Distribute to groups:"
+
+msgid "Штраф:"
+msgstr "Penalty:"
+
+msgid "на весь период"
+msgstr "for the whole period"
+
+msgid "Предыдущая неделя"
+msgstr "Previous week"
+
+msgid "Следующая неделя"
+msgstr "Next week"
+
+msgid "добавить занятие"
+msgstr "add lesson"
+
+msgid "Удалить это занятие"
+msgstr "Delete lesson"
+
+msgid "Состав"
+msgstr "Membership"
+
+msgid "Невозможно создать пустую цепочку!"
+msgstr "Impossible to create empty chain!"
+
+msgid "Темы"
+msgstr "Topics"
+
+msgid "Вопросов"
+msgstr "Questions"
+
+msgid "Обновление"
+msgstr "Refreshing"
+
+msgid "Добавить вопрос"
+msgstr "Create question"
+
+msgid "Переместить"
+msgstr "Move"
+
+msgid "Печать"
+msgstr "Print"
+
+msgid "Наименование"
+msgstr "Name"
+
+msgid "Краткое описание (аннотация)"
+msgstr "Brief description (abstract)"
+
+msgid "Текстовой вариант"
+msgstr "Text version"
+
+msgid "Категории"
+msgstr "Categories"
+
+msgid "Отмена"
+msgstr "Cancel"
+
+msgid "Импортировать"
+msgstr "Import"
+
+msgid "Версии:"
+msgstr "Versions:"
+
+msgid "Удалить версию"
+msgstr "Delete version"
+
+msgid "Импортировать материал"
+msgstr "Import material"
+
+msgid "Файл учебных материалов"
+msgstr "File with material"
+
+msgid "Нет"
+msgstr "No"
+
+msgid "Да"
+msgstr "yes"
+
+msgid "Редактировать материал"
+msgstr "Edit material"
+
+msgid "Поиск"
+msgstr "Search"
+
+msgid "Описание:"
+msgstr "Description:"
+
+msgid "Очистить"
+msgstr "Clear"
+
+msgid "Комментарий"
+msgstr "Comment"
+
+msgid "Форма регистрации"
+msgstr "Registration form"
+
+msgid "Технические настройки"
+msgstr "Technical settings"
+
+msgid "Конфигурационный файл видеотрансляции"
+msgstr "Configuration file of video-broadcasting"
+
+msgid "Период"
+msgstr "Period"
+
+msgid "Дата создания отчета:"
+msgstr "Date of creating report:"
+
+msgid "Далее"
+msgstr "Next"
+
+msgid "Необходимые вычисления"
+msgstr "Required computations"
+
+msgid "максимум"
+msgstr "maximum"
+
+msgid "минимум"
+msgstr "minimum"
+
+msgid "среднее"
+msgstr "average"
+
+msgid "сумма"
+msgstr "Sum"
+
+msgid "Назад"
+msgstr "Back"
+
+msgid "фильтр"
+msgstr "filter"
+
+msgid "Создать"
+msgstr "Create"
+
+msgid "Роль"
+msgstr "Role"
+
+msgid "Назначение роли пользователям"
+msgstr "Assigning role to the user"
+
+msgid "Информация"
+msgstr "Info"
+
+msgid "Удалить роль"
+msgstr "Delete role"
+
+msgid "Справочное руководство"
+msgstr "User manual"
+
+msgid "Подготовлено:"
+msgstr "Prepared:"
+
+msgid "Подготовил:"
+msgstr "Prepared by:"
+
+msgid "Содержание"
+msgstr "Content"
+
+msgid "Настоящее руководство предназначено для обеспечения работы пользователей, имеющих статус"
+msgstr "This manual is for the users who have status of"
+
+msgid "В настоящем руководстве приведены сведения о назначении различных разделов, доступных пользвателю, условиях функционирования, указаны основные действия пользователя."
+msgstr "This manual contains information on the purpose of different sections available to the user, terms of operation, and the main actions of the user."
+
+msgid "Введение"
+msgstr "Introduction"
+
+msgid "Основные термины и определения"
+msgstr "Key terms and definitions"
+
+msgid "совокупность разрешенных действий пользователя в системе."
+msgstr "all actions permitted to user in system."
+
+msgid "статус пользвователя в систем определяемый профилем"
+msgstr "user status in system set by the profile"
+
+msgid "Профиль"
+msgstr "Profile"
+
+msgid "перечень доступных данных и функций пользователя"
+msgstr "list of accessible data and user functions"
+
+msgid "Результаты обучения"
+msgstr "Performance results"
+
+msgid "Общение"
+msgstr "Communication"
+
+msgid "Действия:"
+msgstr "Actions:"
+
+msgid "Создание новой роли"
+msgstr "Role creating"
+
+msgid "Редактирование роли"
+msgstr "Role editing "
+
+msgid "Процент выполненного"
+msgstr "Completed percentage"
+
+msgid "Дни недели"
+msgstr "Days of the week"
+
+msgid "Часы занятий"
+msgstr "Lesson time"
+
+msgid "Код занятия"
+msgstr "Lesson code"
+
+msgid "Руководитель занятия"
+msgstr "Lesson teacher"
+
+msgid "Место проведения"
+msgstr "Venue"
+
+msgid "Вес типа занятия"
+msgstr "Weight of lessons type"
+
+msgid "Вес типа занятия на курсе"
+msgstr "Weight of lessons type in the course"
+
+msgid "Вы действительно желаете удалить вес по курсу"
+msgstr "You really want to delete weight of lessons type for this course"
+
+msgid "будет использовано базовое значение)"
+msgstr "the base weight shall be used)"
+
+msgid "Удалить вес по курсу"
+msgstr "Delete weight of lessons type for course"
+
+msgid "Тип занятия:"
+msgstr "Lessons type:"
+
+msgid "тип занятия не используется на данном курсе"
+msgstr "this lessons type is not used in this course"
+
+msgid "Вес типа занятия на курсе:"
+msgstr "Weight of lessons type:"
+
+msgid "Закрыть"
+msgstr "Close"
+
+msgid "Страница для печати"
+msgstr "Page to be printed"
+
+msgid "Список действий"
+msgstr "Actions"
+
+msgid "Доступны роли:"
+msgstr "Available roles:"
+
+msgid "Персональные данные"
+msgstr "Personal data"
+
+msgid "Авторизация"
+msgstr "Authorization"
+
+msgid "Подать заявку"
+msgstr "Request sending"
+
+msgid "назначить на курсы"
+msgstr "assign to courses"
+
+msgid "Количество вопросов:"
+msgstr "Number of questions:"
+
+msgid "Количество попыток:"
+msgstr "Number of attempts:"
+
+msgid "Ограничение по времени, мин:"
+msgstr "Time limit, minutes:"
+
+msgid "Количество вопросов на страницу"
+msgstr "Number of questions per page"
+
+msgid "Задания"
+msgstr "Tests"
+
+msgid "Создать новое задание"
+msgstr "Create new test"
+
+msgid "Название задания"
+msgstr "Test name"
+
+msgid "опубликовано"
+msgstr "published"
+
+msgid "не опубликовано"
+msgstr "not published"
+
+msgid "ФИО:"
+msgstr "Full name:"
+
+msgid "В данный момент тестирование еще не закончено"
+msgstr "The test is not over yet"
+
+msgid "закончен"
+msgstr "finished"
+
+msgid "Тестирование успешно и полностью выполнено"
+msgstr "The whole test was completed"
+
+msgid "Тестирование было брошено, учащийся покинул сервер и закрыл браузер"
+msgstr "Test was abandoned, trainee left the server and closed the browser"
+
+msgid "прерван"
+msgstr "interrupted"
+
+msgid "Тестирование было превано по команде пользователя"
+msgstr "The test was terminated by the user"
+
+msgid "Тестирование было досрочно завершено, не на все вопросы отвечено"
+msgstr "The test was finished before time, not all the questions were answered"
+
+msgid "лимит времени"
+msgstr "time limit"
+
+msgid "Выбран вариант"
+msgstr "Variant selected"
+
+msgid "всего ответов"
+msgstr "total answers"
+
+msgid "верных"
+msgstr "correct"
+
+msgid "неверных"
+msgstr "incorrect"
+
+msgid "код"
+msgstr "code"
+
+msgid "тип"
+msgstr "type"
+
+msgid "Максимально возможный бал"
+msgstr "Maximal possible point"
+
+msgid "Спасибо! Прохождение заданий завершено."
+msgstr "Thank you! You have completed test."
+
+msgid "Выполнение задания завершено!"
+msgstr "The test is completed!"
+
+msgid "Выделить/убрать все"
+msgstr "Select/unselect all"
+
+msgid "сортировка по кодам вопросов"
+msgstr "question code sorting"
+
+msgid "сортировка по типам вопросов"
+msgstr "question type sorting"
+
+msgid "сортировка по теме"
+msgstr "topic sorting"
+
+msgid "сортировка по минимальному балу за вопрос"
+msgstr "question minimal point sorting"
+
+msgid "сортировка по максимальному балу за вопрос"
+msgstr "question maximal point sorting"
+
+msgid "Не найдено ни одного вопроса"
+msgstr "No questions found"
+
+msgid "Страницы:"
+msgstr "Pages:"
+
+msgid "Вопросов на страницу:"
+msgstr "Questions per page:"
+
+msgid "с"
+msgstr "from"
+
+msgid "Вы действительно желаете удалить"
+msgstr "You really want to delete"
+
+msgid "вопросов?"
+msgstr "questions?"
+
+msgid "Чтобы отказаться нажмите"
+msgstr "To cancel click"
+
+msgid "здесь"
+msgstr "here"
+
+msgid "Вопросы добавлены успешно"
+msgstr "Questions added"
+
+msgid "Редактирование вопроса(ов)"
+msgstr "Question editing"
+
+msgid "Вопрос сохранен в общей базе вопросов по курсу и добавлен в задание"
+msgstr "Question saved in database of questions and added to test"
+
+msgid "Вопрос успешно сохранен"
+msgstr "Question saved"
+
+msgid "от"
+msgstr "from"
+
+msgid "Редактировать вопрос"
+msgstr "Edit question"
+
+msgid "Формулировка вопроса:"
+msgstr "Question text:"
+
+msgid "Ссылка"
+msgstr "Link"
+
+msgid "Диапазон баллов:"
+msgstr "Point range:"
+
+msgid "Варианты ответов на вопрос"
+msgstr "Question answer variants"
+
+msgid "Вес ответа"
+msgstr "Variant weight"
+
+msgid "Вкл./выкл."
+msgstr "On/off"
+
+msgid "вариант"
+msgstr "variant"
+
+msgid "Присоединенные файлы"
+msgstr "Attached files"
+
+msgid "Имя файла"
+msgstr "File name"
+
+msgid "Минимальный и максимальный возможный балл, без учета модерируемых вопросов. На второй стоке: минимальный и максимальный возможный балл, c учетом модерируемых преподавателями вопросов. Из-за того, что модерируемые вопросы проверяются не сразу, максимальный бал после проверки может быть больше."
+msgstr "Minimal and maximal possible point not counting moderated questions. In the second line: minimal and maximal possible point counting questions moderated by the teacher. As the moderated questions are not checked at once after the check the maximal point might be higher."
+
+msgid "Вопросов Ответил"
+msgstr "Questions were answered"
+
+msgid "затрачено"
+msgstr "spent"
+
+msgid "Проверка препода-<br>вателем"
+msgstr "Teacher checking"
+
+msgid "Отчет о сеансе тестирования"
+msgstr "Test report"
+
+msgid "задание:"
+msgstr "test:"
+
+msgid "адрес:"
+msgstr "address:"
+
+msgid "начало сеанса:"
+msgstr "start of session:"
+
+msgid "набрано баллов:"
+msgstr "received points:"
+
+msgid "минимально возможное:"
+msgstr "minimal possible:"
+
+msgid "максимально возможное:"
+msgstr "maximal possible:"
+
+msgid "ответил на вопросы:"
+msgstr "answered the questions:"
+
+msgid "всего вопросов:"
+msgstr "total number of questions:"
+
+msgid "завершение сеанса:"
+msgstr "end of session:"
+
+msgid "длительность:"
+msgstr "duration:"
+
+msgid "Правильность ответа:"
+msgstr "Answer correctness:"
+
+msgid "Набрано баллов:"
+msgstr "Received points:"
+
+msgid "диапазон: от"
+msgstr "range: from"
+
+msgid "Ответ был получен:"
+msgstr "Answer was received:"
+
+msgid "Анализ ответов"
+msgstr "Answer analysis"
+
+msgid "Что выбрал тестируемый при ответе"
+msgstr "User answers"
+
+msgid "Правильно ли это"
+msgstr "Is this correct"
+
+msgid "Протокол выполнения:"
+msgstr "Completion protocol:"
+
+msgid "Задано"
+msgstr "Given"
+
+msgid "вопросов, отвечено на"
+msgstr "questions, answered"
+
+msgid "Вопрос:"
+msgstr "Question:"
+
+msgid "балл."
+msgstr "point."
+
+msgid "Ответ:"
+msgstr "Answer:"
+
+msgid "Присоединенный файл"
+msgstr "Attached file"
+
+msgid "и вы ими уже воспользовались"
+msgstr "and you have already used it"
+
+msgid "Ваше тестирование прервано."
+msgstr "Your test has been interrupted."
+
+msgid "Попытки тестирований"
+msgstr "Test attempts"
+
+msgid "Обязат. вопрос"
+msgstr "Obligatory question"
+
+msgid "Вернуться к предыдущему сеансу тестирования"
+msgstr "Return to previous test session"
+
+msgid "Редактирование задания"
+msgstr "Test editing"
+
+msgid "Задание опубликовано"
+msgstr "Test published"
+
+msgid "Вопросы задания"
+msgstr "Questions of test"
+
+msgid "Ограничить количество вопросов в задании до"
+msgstr "Limit the number of questions in the test to"
+
+msgid "показывать все"
+msgstr "show all"
+
+msgid "Ограничить количество вопросов из темы"
+msgstr "Limit the number of questions in topic"
+
+msgid "Перемешивать вопросы при прохождении задания"
+msgstr "Mix questions during testing"
+
+msgid "Выполнение задания"
+msgstr "Test processing"
+
+msgid "Сколько раз учащийся может выполнять это задание"
+msgstr "How many times trainee may pass this test"
+
+msgid "кол-во не ограничено"
+msgstr "number is unlimited"
+
+msgid "Через сколько дней сбрасывать данный счетчик прохождений"
+msgstr "How many days before to reset this attempt counter"
+
+msgid "никогда не сбрасывать"
+msgstr "never to reset"
+
+msgid "Ограничение времени в минутах для прохождения задания"
+msgstr "Time limit for this test (minutes)"
+
+msgid "без ограничений"
+msgstr "no limits"
+
+msgid "Дополнительно"
+msgstr "Additionally"
+
+msgid "Показывать результаты тестирования в конце задания (общие результаты)"
+msgstr "show final results after test"
+
+msgid "Позволять досрочно завершать тестирование с получением оценки"
+msgstr "allow to finish the test before time and get mark"
+
+msgid "Оценка:"
+msgstr "Mark:"
+
+msgid "попыток"
+msgstr "left"
+
+msgid "Осталось"
+msgstr "Attempts"
+
+msgid "Последнее"
+msgstr "Last"
+
+msgid "тестирование"
+msgstr "testing"
+
+msgid "снять"
+msgstr "decrease"
+
+msgid "Промежуточные результаты"
+msgstr "Intermediate results"
+
+msgid "Данные по вопросу(ам), которые были вам заданы только на предыдущей странице:"
+msgstr "Data for the question(s) that were asked on the previous page:"
+
+msgid "Минимальный балл:"
+msgstr "Minimal point:"
+
+msgid "Максимальный балл:"
+msgstr "Maximal point:"
+
+msgid "Кол-во вопросов:"
+msgstr "Number of questions:"
+
+msgid "Данные по всем вопросам, на которые вы отвечали в этом задании:"
+msgstr "Data for all the questions that you answered in this test:"
+
+msgid "Набранно баллов всего:"
+msgstr "Total points received:"
+
+msgid "Кол-во пройденных вопросов:"
+msgstr "Number of questions taken:"
+
+msgid "Ссылки к заданным вопросам:"
+msgstr "Links to questions:"
+
+msgid "Перейти к следующим вопросам"
+msgstr "Next questions"
+
+msgid "Не показывать промежуточные результаты (только для текущего задания)"
+msgstr "Do not display intermediate results (only for this test)"
+
+msgid "Комментарии к ответу:"
+msgstr "Comments to answer:"
+
+msgid "Правильный ответ(ы):"
+msgstr "Correct answer(s):"
+
+msgid "Открыть программу курса"
+msgstr "Open syllabus"
+
+msgid "Загружаю данные..."
+msgstr "Data loading..."
+
+msgid "Зарегистрирован с"
+msgstr "Registered from"
+
+msgid "В обратном порядке"
+msgstr "In reverse order"
+
+msgid "итоговая оценка"
+msgstr "final mark"
+
+msgid "на&nbsp;оценку:всего"
+msgstr "for&nbsp; mark:total"
+
+msgid "Удалить это занятие?"
+msgstr "Do you want to delete lesson?"
+
+msgid "Комментарий преподавателя"
+msgstr "Teacher's comment"
+
+msgid "Итоговая оценка"
+msgstr "Final mark"
+
+msgid "Вопросы импортированы успешно"
+msgstr "Questions imported successifully"
+
+msgid "Введите файлы для загрузки на курс"
+msgstr "Select file to be imported"
+
+msgid "Найдено вопросов"
+msgstr "Questions found:"
+
+msgid "Ответов в вопросах"
+msgstr "Questions with answers:"
+
+msgid "ВОПРОС:"
+msgstr "QUESTION:"
+
+msgid "СТАРТОВАЯ"
+msgstr "STARTING"
+
+msgid "секунд"
+msgstr "seconds"
+
+msgid "Закрыть окно"
+msgstr "Close window"
+
+msgid "Забыли пароль?"
+msgstr "Forgot your password?"
+
+msgid "Формулировка вопроса"
+msgstr "Question text"
+
+msgid "Неправильно"
+msgstr "Incorrectly"
+
+msgid "Правильно"
+msgstr "Correctly"
+
+msgid "отмечен"
+msgstr "marked"
+
+msgid "не отмечен"
+msgstr "not marked"
+
+msgid "Фраза"
+msgstr "Phrase"
+
+msgid "Выражение"
+msgstr "Phrase"
+
+msgid "Класс"
+msgstr "Classification group"
+
+msgid "Соответствие"
+msgstr "Matching phrase"
+
+msgid "Заполнение пропусков в фразе"
+msgstr "Question answer variants"
+
+msgid "Классификация списка выражений"
+msgstr "Question answer variants"
+
+msgid "Упорядочивание списка выражений"
+msgstr "Question answer variants"
+
+msgid "Пред"
+msgstr "Previous"
+
+msgid "След"
+msgstr "Next"
+
+msgid "Выберите дату"
+msgstr "Select date"
+
+msgid "Вперёд"
+msgstr "Forward"
+
+msgid "Тем"
+msgstr "Topics"
+
+msgid "Заголовок"
+msgstr "Heading"
+
+msgid "Комментарий к заданию"
+msgstr "Comment to test"
+
+msgid "с возможностью возврата к предыдущим вопросам"
+msgstr "an opportunity to return to previous questions"
+
+msgid "с возможностью пропускать вопросы"
+msgstr "an opportunity to postpone questions"
+
+msgid "Новые занятия успешно добавлены"
+msgstr "Lessons were added"
+
+msgid "куратор"
+msgstr "curator"
+
+msgid "преподаватель"
+msgstr "teacher"
+
+msgid "Запустить данное занятие"
+msgstr "Start this lesson"
+
+msgid "Редактировать вопросы"
+msgstr "Edit questions"
+
+msgid "Просмотреть вопрос"
+msgstr "View question"
+
+msgid "табличный ввод"
+msgstr "table entry"
+
+msgid "Добавить курс"
+msgstr "Create course"
+
+msgid "Глоссарий"
+msgstr "Glossary"
+
+msgid "Ответить на сообщение"
+msgstr "Reply to message"
+
+msgid "Учётные записи успешно импортированы."
+msgstr "Accounts have been imported successfully."
+
+msgid "Распределить %s по группам?"
+msgstr "Distribute %s in groups?"
+
+msgid "Слушатели"
+msgstr "Trainees"
+
+msgid "Итоги обучения по курсу"
+msgstr "Сourse performance"
+
+msgid "вкладка"
+msgstr "tab"
+
+msgid "E-mail учебной администрации"
+msgstr "Educational administration e-mail"
+
+msgid "Запретить одновременное нахождение на сервере нескольких пользователей с одним логином"
+msgstr "Prohibit several users with the same login on the server simultaneously"
+
+msgid "Кол-во дополнительных полей при редактировании вопросов"
+msgstr "Numbers of additional fields in question-editors"
+
+msgid "Использовать собственную навигацию курса eAuthor"
+msgstr "Use the native navigation eAuthor course"
+
+msgid "Разрешить Rich Text в форуме"
+msgstr "Allow the Rich Text on forum"
+
+msgid "Генерация занятий"
+msgstr "Lesson generation"
+
+msgid "Вне сетки занятий"
+msgstr "Out of time grid"
+
+msgid "Без аудитории"
+msgstr "No classroom"
+
+msgid "Общее время обучения"
+msgstr "Total time of studing"
+
+msgid "слушатели на курс"
+msgstr "trainees for course"
+
+msgid "Назначение слушателей на курс"
+msgstr "Assignment of the trainees for course"
+
+msgid "Разрешить просмотр подробного отчета слушателем"
+msgstr "allow trainee to view detailed report"
+
+msgid "Режим прохождения"
+msgstr "Test mode"
+
+msgid "нельзя пропускать вопросы, нельзя возвращаться назад"
+msgstr "impossible to postpone the questions and go back"
+
+msgid "Показывать страницу промежуточных результатов учащегося, по итогам последних вопросов"
+msgstr "show page of intermediate results"
+
+msgid "Правильный вариант"
+msgstr "Correct variant"
+
+msgid "Вариант ответа"
+msgstr "Answer variant"
+
+msgid "с весами ответа"
+msgstr "variant weights"
+
+msgid "с правильным ответом"
+msgstr "correct variant"
+
+msgid "Приступить к выполнению данного задания?"
+msgstr "Start test?"
+
+msgid "Сообщений"
+msgstr "Messages"
+
+msgid "высылать сообщения по email"
+msgstr "e-mail message"
+
+msgid "Добавить сообщение"
+msgstr "Create message"
+
+msgid "сохранить результаты"
+msgstr "save results"
+
+msgid "удалить обработанные вопросы"
+msgstr "delete processed questions"
+
+msgid "удалить выделенные вопросы"
+msgstr "delete selected questions"
+
+msgid "сеанс"
+msgstr "session"
+
+msgid "Новость добавлена. Используйте показать/скрыть."
+msgstr "News added. Use show/hide icon."
+
+msgid "Показать новость?"
+msgstr "Do you want to show news?"
+
+msgid "Вперед"
+msgstr "Forward"
+
+msgid "нет существующих ролей"
+msgstr "no derived roles"
+
+msgid "eLearning Server"
+msgstr "eLearning Server"
+
+msgid "Добро пожаловать в систему управления обучением"
+msgstr "Welcome to the Learning Management System"
+
+msgid "показывать вкладку"
+msgstr "show"
+
+msgid "по умолчанию развернутой"
+msgstr "expanded by default"
+
+msgid "Войти"
+msgstr "Log in"
+
+msgid "Для работы с ресурсом необходимо включить поддержку выполнения сценариев JavaScript"
+msgstr "It is necessary to turn on execution of JavaScript"
+
+msgid "ок"
+msgstr "ok"
+
+msgid "стартовая страница"
+msgstr "home page"
+
+msgid "Развернуть список действий"
+msgstr "Registration block view toggle"
+
+msgid "Активная роль"
+msgstr "Current role"
+
+msgid "Сменить роль на"
+msgstr "Change role on"
+
+msgid "изменить пароль"
+msgstr "change password"
+
+msgid "изменить персональные данные"
+msgstr "change the personal data"
+
+msgid "выйти из системы"
+msgstr "log out"
+
+msgid "слушатели"
+msgstr "trainees"
+
+msgid "учебная администрация"
+msgstr "educational administration"
+
+msgid "администратор"
+msgstr "administrator"
+
+msgid "Назначить на курс"
+msgstr "Assign on the course"
+
+msgid "или создать новую группу:"
+msgstr "or create new group"
+
+msgid "Вы действительно желаете удалить учетные записи? Восстановление будет невозможно!"
+msgstr "Do you really want to delete accounts? The recovery will be impossiblle!"
+
+msgid "CSV-файл с учетными записями"
+msgstr "CSV-file with the personal data"
+
+msgid "Разделитель"
+msgstr "delimiter"
+
+msgid "Назначаемая роль"
+msgstr "Appointed role"
+
+msgid "закрыть"
+msgstr "close"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "претендент"
+msgstr "expectant"
+
+msgid "прошедший обучение"
+msgstr "trained"
+
+msgid "---без роли---"
+msgstr "---no role---"
+
+msgid "Логин/Фамилия"
+msgstr "Login/Surname"
+
+msgid "активен"
+msgstr "active"
+
+msgid "заблокирован"
+msgstr "locked"
+
+msgid "Редактировать учетную запись"
+msgstr "Edit account"
+
+msgid "Удалить учетную запись"
+msgstr "Delete account"
+
+msgid "Выполнить действие"
+msgstr "Run action with selected"
+
+msgid "заблокировать"
+msgstr "lock"
+
+msgid "разблокировать"
+msgstr "unlock"
+
+msgid "Причина блокировки"
+msgstr "the reason for lock"
+
+msgid "Фильтр"
+msgstr "Filter"
+
+msgid "Применить фильтр"
+msgstr "Apply"
+
+msgid "Запомнить выбор"
+msgstr "fix choice"
+
+msgid "Основная информация"
+msgstr "General information"
+
+msgid "Изменить фото"
+msgstr "Change photo"
+
+msgid "Все пользователи"
+msgstr "All users"
+
+msgid "Пользователи, которым назначена данная роль"
+msgstr "Users with this role"
+
+msgid "Учебная администрация назначена"
+msgstr "Educational administration is appointed"
+
+msgid "Базовая роль"
+msgstr "Basic role"
+
+msgid "Доступные функции"
+msgstr "Accessiable functions"
+
+msgid "Название роли"
+msgstr "Role name"
+
+msgid "Функции, доступные базовой роли"
+msgstr "Functions of basic role"
+
+msgid "Функции, доступные производной роли"
+msgstr "Functions of derived role"
+
+msgid "Открыть список функций"
+msgstr "Show list of functions"
+
+msgid "Закрыть список функций"
+msgstr "Hide list of functions"
+
+msgid "Редактировать роль"
+msgstr "Edit role"
+
+msgid "Назначить роль пользователям"
+msgstr "Appoint role for users"
+
+msgid "Создать руководство пользователя"
+msgstr "Create user manual"
+
+msgid "Вы действительно желаете удалить роль? Восстановить будет невозможно!"
+msgstr "Do you want to delete role? The recovery will be impossiblle!"
+
+msgid "Общие настройки"
+msgstr "General settings"
+
+msgid "Возможные поля"
+msgstr "Available fields"
+
+msgid "Выбранные поля"
+msgstr "Choosen fields"
+
+msgid "Поле E-mail"
+msgstr "E-mail field"
+
+msgid "Название окна браузера"
+msgstr "Browser window name"
+
+msgid "Текст приветствия на главной странице"
+msgstr "Greeting on the home page"
+
+msgid "Название учебной администрации"
+msgstr "Educational administration name"
+
+msgid "видеотрансляции"
+msgstr "videobroadcasting"
+
+msgid "Дизайн портала"
+msgstr "Portal interface"
+
+msgid "Цвета"
+msgstr "Colors"
+
+msgid "Выбрать"
+msgstr "Choose"
+
+msgid "Логотип"
+msgstr "Logo"
+
+msgid "Безопасность"
+msgstr "Safety"
+
+msgid "Запретить слушателю выделять и копировать содержимое страниц"
+msgstr "Prohibit to select and copy the contents of pages"
+
+msgid "Инструмент обучения"
+msgstr "Learning tool"
+
+msgid "модуль курса с типом &laquo;задание&raquo; (тест)"
+msgstr "course module with test"
+
+msgid "любой элемент из структуры курса"
+msgstr "any element of the course structure"
+
+msgid "элемент из структуры курса"
+msgstr "element of the course structure"
+
+msgid "Редактировать тип"
+msgstr "Edit type"
+
+msgid "Удалить тип"
+msgstr "Delete type"
+
+msgid "модуль курса с типом &laquo;внешняя программа&raquo;"
+msgstr "course module with external executable program"
+
+msgid "Локальный путь к файлу"
+msgstr "Local path to executable file"
+
+msgid "комбинированный"
+msgstr "combined"
+
+msgid "нет инструмента обучения"
+msgstr "no learning tool"
+
+msgid "Создание типа занятия"
+msgstr "Creating lessons type"
+
+msgid "вебинар"
+msgstr "webinar"
+
+msgid "необходимо выбрать иконку"
+msgstr "select an icon"
+
+msgid "Уведомление об окончании специальности"
+msgstr "Message of completion of the speciality"
+
+msgid "проверен"
+msgstr "checked"
+
+msgid "Файл"
+msgstr "File"
+
+msgid "Файл структуры"
+msgstr "Structure file"
+
+msgid "СУБД работает на Windows-платформе&nbsp;&nbsp;"
+msgstr "DBMS runs on Windows-platforme"
+
+msgid "Версия"
+msgstr "Version"
+
+msgid "Сборка"
+msgstr "Build"
+
+msgid "Рубрикатор курсов"
+msgstr "Course rubricator"
+
+msgid "создать рубрику"
+msgstr "create rubric"
+
+msgid "Редактирование свойств рубрики"
+msgstr "Rubric properties editing"
+
+msgid "Загрузка изображения"
+msgstr "Upload image"
+
+msgid "отмена"
+msgstr "cancel"
+
+msgid "Редактировать рубрику"
+msgstr "Edit rubric"
+
+msgid "Удалить рубрику"
+msgstr "Delete rubric"
+
+msgid "свободный"
+msgstr "free registration"
+
+msgid "назначаемый"
+msgstr "appointed"
+
+msgid "без согласования"
+msgstr "no chain of approvals"
+
+msgid "Опубликован для преподавателей"
+msgstr "Published for teachers"
+
+msgid "Рубрики"
+msgstr "Rubrics"
+
+msgid "Открыть курс"
+msgstr "View course"
+
+msgid "Провайдер"
+msgstr "Learning provider"
+
+msgid "Редактировать программу курса"
+msgstr "Edit syllabus"
+
+msgid "Просмотреть курс"
+msgstr "View course"
+
+msgid "Вы действительно желаете скопировать курс? При этом будут скопированы все модули, входящие в состав данного курса."
+msgstr "Do you want to copy course? All course modules will be copied."
+
+msgid "Вы действительно желаете заблокировать курс? При этом любые операции со структурой курса и с модулями курса будут невозможны."
+msgstr "Do you want to lock course? Any course modifications is impossible."
+
+msgid "Вы действительно желаете удалить курс? При этом все материалы курса и вся статистика обучения по курсу будут удалены."
+msgstr "Do you want to delete course? All course materials and statistics will be deleted."
+
+msgid "Обучаемых"
+msgstr "Trainees"
+
+msgid "Режим работы со структурой курса"
+msgstr "Learning mode"
+
+msgid "произвольный"
+msgstr "arbitrary"
+
+msgid "последовательный"
+msgstr "sequent"
+
+msgid "режим &laquo;контрольных точек&raquo;"
+msgstr "schedule mode"
+
+msgid "Период работы курса"
+msgstr "Course registration period"
+
+msgid "Длительность работы с курсом"
+msgstr "Course learning duration"
+
+msgid "Аудитории, закрепленные за курсом"
+msgstr "Classrooms for the course"
+
+msgid "Принадлежность к рубрикам"
+msgstr "Rubrics"
+
+msgid "Модули данного курса могут быть запущены из программы курса с момента начала занятий, созданных на их основе"
+msgstr "Modules of this course can be run from the syllabus since the beginning of the course, created on their basis"
+
+msgid "Включить последовательное прохождение курса"
+msgstr "Enable consistent flow rate"
+
+msgid "Импорт курсов из CSV-файла"
+msgstr "Import course list from CSV-file"
+
+msgid "CSV-файл с курсами"
+msgstr "Сourse list CSV-file"
+
+msgid "Вы действительно желаете разблокировать курс?"
+msgstr "Do you really want to unlock the course?"
+
+msgid "Формат пакета"
+msgstr "Packet standard"
+
+msgid "зарегистрировать каждый файл как отдельный материал"
+msgstr "register each file as separate material"
+
+msgid "Файл пакета"
+msgstr "Package file"
+
+msgid "Переписать заголовок курса"
+msgstr "Rewrite the course name"
+
+msgid "Скрыть/Показать программу курса"
+msgstr "Hide/Show syllabus"
+
+msgid "Сузить"
+msgstr "Constrict"
+
+msgid "Расширить"
+msgstr "Expand"
+
+msgid "список действий"
+msgstr "action list"
+
+msgid "Назначение преподавателей на курс"
+msgstr "Appointment of teachers on the course"
+
+msgid "Все учетные записи:"
+msgstr "All accounts:"
+
+msgid "Преподаватели данного курса"
+msgstr "Current course teachers"
+
+msgid "создать учебную группу"
+msgstr "create study group"
+
+msgid "Количество слушателей"
+msgstr "Number of trainees"
+
+msgid "Редактировать группу"
+msgstr "Edit group"
+
+msgid "Слушатели данного курса"
+msgstr "Trainees of this course"
+
+msgid "Все слушатели и курсы"
+msgstr "All trainees and courses"
+
+msgid "Назначение курсов слушателю"
+msgstr "Assigment of courses for trainee"
+
+msgid "Курсы, назначенные данному слушателю"
+msgstr "Courses assigned"
+
+msgid "создать элемент учебной структуры"
+msgstr "create an element of educational structure"
+
+msgid "Курирует группы"
+msgstr "Group responsibility"
+
+msgid "всех пользователей вне групп"
+msgstr "all users out of groups"
+
+msgid "Курирует курсы"
+msgstr "Course responsibility"
+
+msgid "Редактировать элемент стструктуры"
+msgstr "Edit structure element"
+
+msgid "Вы действительно желаете удалить элемент структуры?"
+msgstr "Do you want to delete the structure element?"
+
+msgid "Удалить элемент стструктуры"
+msgstr "Delete structure element"
+
+msgid "создать цепочку согласования"
+msgstr "create approval chain"
+
+msgid "Нет данных для отображения"
+msgstr "no data to display"
+
+msgid "Редактирование цепочки согласования"
+msgstr "Editing of approval chain"
+
+msgid "Должность в учебной структуре"
+msgstr "Appointment in educational structure"
+
+msgid "Относительная должность"
+msgstr "Course relative appointment"
+
+msgid "Важна последовательность"
+msgstr "fixed sequence"
+
+msgid "Редактировать цепочку согласования"
+msgstr "Edit chain"
+
+msgid "Вы действительно желаете удалить цепочку согласования?"
+msgstr "Do you want to delete approval chain?"
+
+msgid "Удалить цепочку согласования"
+msgstr "Delete chain"
+
+msgid "создать аудиторию"
+msgstr "create classroom description"
+
+msgid "Количество мест"
+msgstr "Seats"
+
+msgid "нет данных для отображения"
+msgstr "no data to display"
+
+msgid "Редактирование аудитории"
+msgstr "Editing of classroom description"
+
+msgid "лекционная аудитория"
+msgstr "lecture hall"
+
+msgid "семинарская аудитория"
+msgstr "seminar hall"
+
+msgid "учебный класс"
+msgstr "classroom"
+
+msgid "лаборатория"
+msgstr "laboratory"
+
+msgid "рабочее помещение"
+msgstr "workroom"
+
+msgid "недоступна"
+msgstr "unavailable"
+
+msgid "доступна"
+msgstr "available"
+
+msgid "Редактировать аудиторию"
+msgstr "Edit classroom descripion"
+
+msgid "Вы действительно желаете удалить аудиторию?"
+msgstr "Do you want to delete classroom description?"
+
+msgid "Удалить аудиторию"
+msgstr "Delete classroom description"
+
+msgid "создать элемент сетки занятий"
+msgstr "create element of time grid"
+
+msgid "Редактирование элемента сетки занятий"
+msgstr "Editing of time grid element"
+
+msgid "Редактировать элемент сетки занятий"
+msgstr "Edit time grid element"
+
+msgid "Вы действительно желаете удалить элемент сетки занятий?"
+msgstr "Do you want to delete time grid element?"
+
+msgid "Удалить элемент сетки занятий"
+msgstr "Delete time grid element"
+
+msgid "Вы действительно желаете удалить новость"
+msgstr "Do you want to delete news"
+
+msgid "Вы действительно желаете скрыть новость"
+msgstr "Do you want to hide news"
+
+msgid "Редактировать новость"
+msgstr "Edit news"
+
+msgid "Удалить новость"
+msgstr "Delete news"
+
+msgid "создать новость"
+msgstr "create news"
+
+msgid "Подписать новость"
+msgstr "sign news"
+
+msgid "Вы действительно желаете показать новость"
+msgstr "Do you want to show the news"
+
+msgid "Страница"
+msgstr "Display on"
+
+msgid "создать инфоблок"
+msgstr "create information block"
+
+msgid "Редактировать инфоблок"
+msgstr "Edit information block"
+
+msgid "страница регистрации"
+msgstr "registration page"
+
+msgid "Раскрывать на отдельной странице"
+msgstr "open pop-up window"
+
+msgid "Добавить информационный блок"
+msgstr "Create information block"
+
+msgid "Инфоблок успешно добавлен"
+msgstr "Information block created successfully"
+
+msgid "Вы действительно желаете удалить инфоблок"
+msgstr "Do you want to delete information block"
+
+msgid "Вы действительно желаете скрыть инфоблок"
+msgstr "Do you want to hide information block"
+
+msgid "Удалить инфоблок"
+msgstr "Delete information block"
+
+msgid "Редактирование информационного блока"
+msgstr "Editing of information block"
+
+msgid "Инфоблок успешно отредактирован"
+msgstr "Information block edited successfully"
+
+msgid "создать категорию"
+msgstr "create category"
+
+msgid "редактирование категории"
+msgstr "Category editing"
+
+msgid "Вы действительно желаете удалить категорию?"
+msgstr "Do you want to delete category?"
+
+msgid "Удалить категорию"
+msgstr "Delete category"
+
+msgid "создать тему"
+msgstr "create topic"
+
+msgid "Редактирование темы"
+msgstr "Topic editing"
+
+msgid "все пользователи"
+msgstr "all users"
+
+msgid "учебная администрации"
+msgstr "educational administration"
+
+msgid "конкретый представитель учебной администрации"
+msgstr "certain element of educational structure"
+
+msgid "Сообщение"
+msgstr "Message"
+
+msgid "Видимость"
+msgstr "Destination"
+
+msgid "Переместить тему?"
+msgstr "Move topic"
+
+msgid "В"
+msgstr "To"
+
+msgid "Переместить тему"
+msgstr "Move topic"
+
+msgid "переместить"
+msgstr "move"
+
+msgid "создать объявление"
+msgstr "create announcement"
+
+msgid "Текст объявления"
+msgstr "Announcement text "
+
+msgid "всем слушателям"
+msgstr "all trainees"
+
+msgid "Разослать по e-mail"
+msgstr "e-mail message"
+
+msgid "Вы действительно желаете удалить объявление?"
+msgstr "Do you want to delete announcement?"
+
+msgid "Удалить объявление"
+msgstr "Delete announcement"
+
+msgid "На проверку"
+msgstr "To check"
+
+msgid "Учащихся (претендентов)"
+msgstr "Trainees (expectants)"
+
+msgid "на этот день не назначено ни одного занятия"
+msgstr "no lessons today"
+
+msgid "создать материал"
+msgstr "create material"
+
+msgid "Отметить все"
+msgstr "select all"
+
+msgid "Удалить материал?"
+msgstr "Do you want to delete material?"
+
+msgid "копировать"
+msgstr "copy"
+
+msgid "в"
+msgstr "to"
+
+msgid "заблокирован, модификация его структуры и модулей запрещена"
+msgstr "locked, structure changes is prohibited"
+
+msgid "Создание материала"
+msgstr "Material addition"
+
+msgid "Ключевые слова"
+msgstr "Keywords"
+
+msgid "Электронная версия материала"
+msgstr "Electronic version of material"
+
+msgid "Или электронная версия материала из уже загруженных"
+msgstr "Or electronic version of material from uploaded"
+
+msgid "Текстовый вариант"
+msgstr "Text version"
+
+msgid "Вы действительно желаете удалить задание?"
+msgstr "Are you sure you want to delete test?"
+
+msgid "Количество вопросов"
+msgstr "Number of questions"
+
+msgid "Способ выбора вопросов"
+msgstr "Random selection of questions"
+
+msgid "Открыть задание"
+msgstr "Pass test"
+
+msgid "Удалить задание"
+msgstr "Delete test"
+
+msgid "Копировать задание"
+msgstr "Dublicate test"
+
+msgid "Скопировать тест?"
+msgstr "Do you want to dublicate test?"
+
+msgid "Редактировать задание"
+msgstr "Edit test"
+
+msgid "Добавление задания"
+msgstr "Test addition"
+
+msgid "доступно слушателю для выполнения"
+msgstr "available to trainees"
+
+msgid "Одинаковое из каждой темы"
+msgstr "equal number of questions for each topic"
+
+msgid "Задать из каждой темы"
+msgstr "custom number of questions for each topic"
+
+msgid "Нет тем вопросов в задании"
+msgstr "no topics in test"
+
+msgid "Там же показывать ссылку"
+msgstr "show link on the same page"
+
+msgid "Задание добавлено"
+msgstr "Test added successfully"
+
+msgid "в это задание еще не включено ни одного вопроса"
+msgstr "no question in this test"
+
+msgid "Файл тестов"
+msgstr "Questions file"
+
+msgid "Только проверить"
+msgstr "only preview"
+
+msgid "Импорт вопросов"
+msgstr "Questions import"
+
+msgid "один верный вариант"
+msgstr "one true variant"
+
+msgid "несколько верных вариантов"
+msgstr "several true variants"
+
+msgid "Вы действительно желаете удалить вопрос из задания?"
+msgstr "Do you want to delete question from test?"
+
+msgid "Прикрепить файл"
+msgstr "Attach file"
+
+msgid "На соответствие"
+msgstr "Matching"
+
+msgid "на упорядочивание"
+msgstr "arrangement"
+
+msgid "на классификацию"
+msgstr "classification"
+
+msgid "с прикрепленным файлом"
+msgstr "attached file"
+
+msgid "заполнение формы"
+msgstr "form filling"
+
+msgid "свободный ответ"
+msgstr "free response"
+
+msgid "выбор по карте на картинке"
+msgstr "picture field selecting"
+
+msgid "выбор из набора картинок"
+msgstr "one true picture"
+
+msgid "внешний объект"
+msgstr "interactive object"
+
+msgid "тренажер"
+msgstr "simulator program"
+
+msgid "Время прохождения вопроса (минуты)"
+msgstr "Passing time of question (minutes)"
+
+msgid "без ограничения времени"
+msgstr "no time limit"
+
+msgid "Перемешивать ответы на вопрос"
+msgstr "mix answers"
+
+msgid "Загрузка"
+msgstr "Download"
+
+msgid "Все вопросы курса"
+msgstr "Course questions"
+
+msgid "Мин"
+msgstr "Min"
+
+msgid "Макс"
+msgstr "Max"
+
+msgid "Открыть вопрос"
+msgstr "View question"
+
+msgid "экспортировать"
+msgstr "export"
+
+msgid "добавить в задание"
+msgstr "add to test"
+
+msgid "Добавить в курс"
+msgstr "copy to course"
+
+msgid "Создание программы"
+msgstr "Creating program"
+
+msgid "Программа должна быть установлена на каждом клиентском компьютере."
+msgstr "The program must be installed on each client computer."
+
+msgid "Выберите программу"
+msgstr "Select program"
+
+msgid "Расписание по неделям"
+msgstr "Schedule for weeks"
+
+msgid "создать занятие"
+msgstr "create lesson"
+
+msgid "Указанное Вами место проведения занятия занято! Продолжить?"
+msgstr "Place specified by you of the activity engaged! Continue?"
+
+msgid "Выбранный преподаватель в указанное время уже назначен на другое занятие! Продолжить?"
+msgstr "Selected lecturer at the specified time has already been assigned to another occupation! Continue?"
+
+msgid "Указать даты занятия"
+msgstr "Specify the date sessions"
+
+msgid "время начала"
+msgstr "start time"
+
+msgid "6й день занятий"
+msgstr "6th day of classes"
+
+msgid "Продолжительность"
+msgstr "Duration"
+
+msgid "время окончания"
+msgstr "end time"
+
+msgid "или с использованием сетки занятий"
+msgstr "or using grid lesson"
+
+msgid "один раз"
+msgstr "one time"
+
+msgid "каждый день"
+msgstr "every day"
+
+msgid "раз в две недели"
+msgstr "fortnightly"
+
+msgid "Аудитория"
+msgstr "Classroom"
+
+msgid "---необходимо выбрать элемент---"
+msgstr "---it is neccessary yo choose an element---"
+
+msgid "Шаг 1. Настройка общих свойств занятия"
+msgstr "Step 1. Configuring general properties of lesson"
+
+msgid "Учебный модуль"
+msgstr "Course module"
+
+msgid "Продолжить?"
+msgstr "Continue?"
+
+msgid "Назначение слушателям"
+msgstr "Trainees selection"
+
+msgid "Это занятие на оценку"
+msgstr "lesson to get mark"
+
+msgid "Автоматически назначать это занятие всем новым слушателям курса"
+msgstr "assign lesson to new trainees of course"
+
+msgid "Редактировать занятие"
+msgstr "Edit lesson"
+
+msgid "Удалить занятие"
+msgstr "Remove occupation"
+
+msgid "не создано ни одной формулы"
+msgstr "not created single formula"
+
+msgid " оценка за задание"
+msgstr "score for the test"
+
+msgid " автоматическое формирование групп"
+msgstr "automatic formation of groups"
+
+msgid " итоговая оценка за курс"
+msgstr "final course mark"
+
+msgid " штраф за несвоевременное выполнение занятия"
+msgstr "penalty for late delivery lessons"
+
+msgid "Редактировать формулу"
+msgstr "Edit formula"
+
+msgid "Вы действительно желаете удалить формулу?"
+msgstr "Are you sure you want to delete the formula?"
+
+msgid "Редактировать свойства типа"
+msgstr "Edit the properties of type"
+
+msgid "Веса типов занятий"
+msgstr "Weights types of occupations"
+
+msgid "Вы действительно хотите ПРЕРВАТЬ тестирование?"
+msgstr "You really want to cancel the test?"
+
+msgid "Время ответа на вопрос вышло."
+msgstr "Time to answer the question is up."
+
+msgid "Вы не ответили на вопрос N"
+msgstr "You have not answered the question N"
+
+msgid "всего вопросов в задании"
+msgstr "all issues in the test"
+
+msgid "Получено ответов"
+msgstr "Answers recieved"
+
+msgid "Начало тестирования"
+msgstr "Test started"
+
+msgid "сегодня"
+msgstr "today"
+
+msgid "Окончание тестирования"
+msgstr "Test finished"
+
+msgid "Потрачено времени"
+msgstr "Time spent"
+
+msgid "сек."
+msgstr "sec"
+
+msgid "Просмотр заявок"
+msgstr "Request viewing"
+
+msgid "Согласующее лицо"
+msgstr "Approving persons"
+
+msgid "период"
+msgstr "period"
+
+msgid "Зарегистрироваться"
+msgstr "Registrate"
+
+msgid "описание курса"
+msgstr "Course description"
+
+msgid "Оценить по формуле"
+msgstr "Rate by formula"
+
+msgid "Распределить по группам"
+msgstr "Divided into groups"
+
+msgid "Штраф"
+msgstr "Penalty"
+
+msgid "Указанное Вами место проведения занятия занято или превышена вместимость! Продолжить?"
+msgstr "Place specified by you of the activity engaged in or exceeded capacity! Continue?"
+
+msgid "Свойства занятия"
+msgstr "Properties of lesson"
+
+msgid "Итоговая оценка по курсу"
+msgstr "The final grade for the course"
+
+msgid "Вы действительно желаете удалить это занятие?"
+msgstr "Are you sure you want to remove this occupation?"
+
+msgid "Средний балл по курсу"
+msgstr "Average on-course"
+
+msgid "Суммарный балл по курсу"
+msgstr "The total score on the course"
+
+msgid "Свойства занятий"
+msgstr "Properties Occupation"
+
+msgid "Создать занятия на основе элементов программы курса"
+msgstr "Create lesson based on the elements of the syllabus"
+
+msgid "Создать занятия на основе заданий"
+msgstr "Create lesson based on test"
+
+msgid "Создать занятия других типов"
+msgstr "Create lesson of other types"
+
+msgid "Взвешенная оценка"
+msgstr "Weighted score"
+
+msgid "Выполнено"
+msgstr "Yes"
+
+msgid "кол-во входов"
+msgstr "count inputs"
+
+msgid "сохранить итоговые оценки"
+msgstr "retain the final grades"
+
+msgid "Макс."
+msgstr "Maks."
+
+msgid "Оценки успешно сохранены"
+msgstr "Ratings successfully saved"
+
+msgid "по всем заданиям"
+msgstr "all assignments"
+
+msgid "по всем пользователям"
+msgstr "by all users"
+
+msgid "по всем датам прохождения заданий"
+msgstr "by all dates passing assignments"
+
+msgid "Статистика тестирований"
+msgstr "Testing Statistics"
+
+msgid "Дата прохождения с"
+msgstr "Date of passing sinse"
+
+msgid "Дата прохождения по"
+msgstr "Date of passing by"
+
+msgid "Проверка вопросов со свободным ответом"
+msgstr "Check with the free response questions"
+
+msgid "перевести в слушатели"
+msgstr "appoint to trainee"
+
+msgid "перевести в прошедшие обучение"
+msgstr "appoint to trained"
+
+msgid "удалить из прошедших обучение"
+msgstr "delete from trained"
+
+msgid "День занятий"
+msgstr "Day lessons"
+
+msgid "Осталось дней"
+msgstr "Days left"
+
+msgid "Группы на курсах"
+msgstr "Group on the courses"
+
+msgid "Редактировать состав группы"
+msgstr "Edit the structure of group"
+
+msgid "Вы действительно желаете удалить группу?"
+msgstr "Do you want to delete group?"
+
+msgid "нет заявок, требующих согласования"
+msgstr "no requests"
+
+msgid "Вы действительно желаете удалить тему?"
+msgstr "Do you want to delete topic?"
+
+msgid "Удалить тему"
+msgstr "Delete topic"
+
+msgid "Удалить сообщение?"
+msgstr "Do you want to delete message?"
+
+msgid "Дисциплина"
+msgstr "Discipline"
+
+msgid "Открыть глоссарий"
+msgstr "open the glossary"
+
+msgid "Конструктор курса"
+msgstr "Course constructor"
+
+msgid "Модули курса"
+msgstr "Course modules"
+
+msgid "Развернуть до уровня"
+msgstr "Display level"
+
+msgid "Все модули данного курса"
+msgstr "All modules"
+
+msgid "Выполнить задания"
+msgstr "Tests"
+
+msgid "Вы действительно желаете очистить программу курса?"
+msgstr "You really want to clear the syllabus?"
+
+msgid "Программа курса"
+msgstr "Course syllabus"
+
+msgid "подключить текущий элемент из дерева ресурсов"
+msgstr "link this element to selected module"
+
+msgid "добавить новый элемент"
+msgstr "add new element"
+
+msgid "на уровень выше"
+msgstr "level up"
+
+msgid "Вы действительно желаете удалить этот и все вложенные элементы курса?"
+msgstr "Are you sure you want to delete this and all nested elements of the course?"
+
+msgid "Отчеты по слушателям"
+msgstr "Reports trainees"
+
+msgid "Сводные отчеты"
+msgstr "Summary Reports"
+
+msgid "Персональные отчеты"
+msgstr "Personal Records"
+
+msgid "Результаты тестирования по курсу"
+msgstr "The results of testing at the rate"
+
+msgid "Шаг 1. Выбор типа отчёта"
+msgstr "Step 1. Select the type of report"
+
+msgid "Шаг 2. Ввод входных данных"
+msgstr "Step 2. Enter input"
+
+msgid "Шаг 3. Предварительный просмотр отчёта"
+msgstr "Step 3. Preview Report"
+
+msgid "Экспорт в Excel"
+msgstr "Export to Excel"
+
+msgid "Убрать фильтр?"
+msgstr "Remove into the filter?"
+
+msgid "Входные данные для отчета"
+msgstr "The input data for the report"
+
+msgid "Количество материалов"
+msgstr "Number of materials"
+
+msgid "Количество внешних програм"
+msgstr "Number of external programs"
+
+msgid "Количество заданий"
+msgstr "Number of tests"
+
+msgid "весь день"
+msgstr "all day long"
+
+msgid "Двойной клик по ячейке добавит занятие"
+msgstr "Double click on the box adds occupation"
+
+msgid "Удалить занятие?"
+msgstr "Remove the occupation?"
+
+msgid "Вы не можете начать тестирование, т.к. израсходованы попытки прохожения этого задания.<br>Для тестирования было отпущено попыток:"
+msgstr "You cannot start testing since attempts of passing of this test are spent.<br>For testing it has been released attempts:"
+
+msgid ""
+"Внимание! Осталось 5 минут до завершения тестирования.\n"
+"По истечении этого времени сеанс тестирования принудительно завершится."
+msgstr ""
+"Warning Remaining 5 minutes before testing is complete.\n"
+"After this time the testing session to force an end."
+
+msgid ""
+"Внимание! Осталась 1 минута до перехода к следующему вопросу.\n"
+" По истечении этого времени переход будет осуществлен принудительно."
+msgstr ""
+"Warning The remaining 1 minute before proceeding to the next question.\n"
+"After this time the transition is forced."
+
+msgid ""
+"Вы действительно желаете удалить вопрос?\n"
+"После удаления вопрос нельзя будет восстановить"
+msgstr ""
+"Are you sure you want to delete question?\n"
+"After removing the issue can not be recovered."
+
+msgid "Сетка занятий"
+msgstr "Time grid"
+
+msgid "Вне групп"
+msgstr "Outside of groups"
+
+msgid "ожидание"
+msgstr "expectation"
+
+msgid "перевести в претенденты"
+msgstr "appoint to expectant"
+
+msgid "Выполнить действие с отмеченными"
+msgstr "Run action with selected"
+
+msgid "принять заявку"
+msgstr "adopt request"
+
+msgid "отклонить заявку"
+msgstr "refuse request"
+
+msgid "Скрыть новость"
+msgstr "Hide news"
+
+msgid "Открыть новость"
+msgstr "Show news"
+
+msgid "Скрыть инфоблок"
+msgstr "Hide information block"
+
+msgid "Открыть инфоблок"
+msgstr "Show information block"
+
+msgid "заблокирован, его модули можно только копировать"
+msgstr "locked, modules can only be copy"
+
+msgid "Удалить материал"
+msgstr "Delete material"
+
+msgid "Редактирование материала"
+msgstr "Material editing "
+
+msgid "Доп. информация"
+msgstr "Additional information"
+
+msgid "Добавить новую электронную версию материала"
+msgstr "Add new electronic version of material"
+
+msgid "Новый файл"
+msgstr "New file"
+
+msgid "Из уже загруженных"
+msgstr "from already loaded"
+
+msgid "Просмотреть файл"
+msgstr "View file"
+
+msgid "Удалить версию?"
+msgstr "Do you want to delete version?"
+
+msgid "Опубликовал"
+msgstr "Published by"
+
+msgid "Дата публикации"
+msgstr "Publication date"
+
+msgid "Тест успешно скопирован"
+msgstr "The test was successfully copied"
+
+msgid "Задание удалено"
+msgstr "Test is deleted"
+
+msgid "создать задание"
+msgstr "create test"
+
+msgid "создать программу"
+msgstr "create link to program"
+
+msgid "Масштаб:"
+msgstr "Scope:"
+
+msgid "превышен лимит времени"
+msgstr "exceeded the time limit"
+
+msgid "Открыть краткий отчет"
+msgstr "View summary"
+
+msgid "Открыть полный отчет"
+msgstr "View full report"
+
+msgid "Сделать равными"
+msgstr "Make equal"
+
+msgid "Вы не зарегистрированы ни на одном из активных курсов и не можете просматривать данную страницу"
+msgstr "you are not registed at any of the active courses and can not view this page"
+
+msgid "Распределить по группам?"
+msgstr "Divided into groups?"
+
+msgid "создать роль"
+msgstr "create derived role"
+
+msgid "Признаки группировки"
+msgstr "Signs grouping"
+
+msgid "Все слушатели были зачислены на курс и распределены по группам"
+msgstr "All trainees were enrolled in the course and divided into groups"
+
+msgid "Набор полей секции \"дополнительная информация\""
+msgstr "Collection of fields section \"More \""
+
+msgid "создать тип занятия"
+msgstr "create type of lesson"
+
+msgid "Все модули"
+msgstr "All modules"
+
+msgid "публикация eAuthor 2"
+msgstr "Publication eAuthor 2"
+
+msgid "публикация eAuthor 3"
+msgstr "Publication eAuthor 3"
+
+msgid "пакет SCORM"
+msgstr "SCORM package"
+
+msgid "пакет AICC"
+msgstr "AICC package"
+
+msgid "Описание курса"
+msgstr "Course description"
+
+msgid "не задано"
+msgstr "not specified"
+
+msgid "Масштаб"
+msgstr "Scope"
+
+msgid "Вы действительно желаете показать инфоблок"
+msgstr "Are you sure you want to show Infos"
+
+msgid "Проверка установленного ПО"
+msgstr "Check installed software"
+
+msgid "Ваша система содержит все необходимые компоненты"
+msgstr "Your system contains all the necessary components"
+
+msgid "Название продукта"
+msgstr "Product Name"
+
+msgid "Установленная версия"
+msgstr "Installed version"
+
+msgid "Небходимая версия"
+msgstr "Ingredients of version"
+
+msgid "не установлен"
+msgstr "not installed"
+
+msgid "Примечание 1"
+msgstr "Note 1"
+
+msgid "Adobe Flash Player не обязателен для корректной работы сервера, но может понадобиться при отображении курсов."
+msgstr "Adobe Flash Player is not required for correct operation of the server, but may be needed for mapping courses"
+
+msgid "Примечание 2"
+msgstr "Note 2"
+
+msgid "Курсы, сделанные в eAuthor 3.1, работают только в Microsoft Internet Explorer версии 5.5 или старше."
+msgstr "Courses made in eAuthor 3.1, works only in Microsoft Internet Explorer version 5.5 or later."
+
+msgid "Примечание 3"
+msgstr "Note 3"
+
+msgid "Установить RunEXE Вы можете "
+msgstr "Set RunEXE you can "
+
+msgid "отсюда"
+msgstr "hence"
+
+msgid "Нет заголовка"
+msgstr "No Title"
+
+msgid "пустой элемент"
+msgstr "empty element"
+
+msgid "Материалы успешно скопированы"
+msgstr "Materials successfully copied"
+
+msgid "Копия: "
+msgstr "Copy: "
+
+msgid "Статистика ответов на вопрос"
+msgstr "Statistics responses to the question"
+
+msgid "Будут заданы вопросы на следующие темы"
+msgstr "Will be asked questions on the following topics"
+
+msgid "досрочно завершить тестирование"
+msgstr "ahead of time to complete testing"
+
+msgid "Вы не можете начать это задание, т.к. еще не закончили выполнять предыдущее. Вы можете либо пройти до конца предыдущий сеанс тестирования, либо прервать его."
+msgstr "You can not start this test, because not yet completed to fulfill the previous one. You can either go to the end of the previous session of testing, or to interrupt him. "
+
+msgid "Вы действительно хотите досрочно завершить тестирование?"
+msgstr "Do you really want ahead of time to complete testing?"
+
+msgid "Данное задание, по указанию (установкам) преподавателя, вы имеете право решать не до конца, а остановиться после любого кол-ва решенных вопросов. Если вы решите досрочно завершить задание, то сразу получите общую оценку, но только за те вопросы,"
+msgstr "This test, as directed by the (setting) tutor, you have the right to decide not to the end and stop after any count of outstanding issues. If you decide to ahead to complete the test, then immediately "
+
+msgid "На данном курсе нет ни одной внешней программы"
+msgstr "In this courses, there is no external programs"
+
+msgid "Редактирование учетной записи пользователя"
+msgstr "Editing user account"
+
+msgid "Шаг 1. Выбор базовой роли"
+msgstr "Step 1. Select basic role"
+
+msgid "Шаг 2. Выбор функций"
+msgstr "Step 2. Select features"
+
+msgid "Шаг 3. Детализация функций"
+msgstr "Step 3. Select options"
+
+msgid "Отчет"
+msgstr "Report"
+
+msgid "создать учетную запись"
+msgstr "create account"
+
+msgid "Свободный ответ"
+msgstr "Free answer"
+
+msgid "Пропущено вопросов"
+msgstr "Skipped question"
+
+msgid "из всех возможных"
+msgstr "of all possible"
+
+msgid "на курсе"
+msgstr "on course"
+
+msgid "Давность"
+msgstr "Prescription"
+
+msgid "Ваш пароль успешно изменён"
+msgstr "Your password was successfully changed"
+
+msgid "идет тестированиe"
+msgstr "the test is going o"
+
+msgid "Сеанс еще не проверен преподавателем"
+msgstr "The session is not yet verified tutor"
+
+msgid "Открыть подробный отчет"
+msgstr "View detailed report"
+
+msgid "Тестирование было прервано из-за лимита времени, учащийся не успел ответить на все вопросы"
+msgstr "Testing was interrupted because of the time limit, the trainee did not have time to answer all questions"
+
+msgid "Часы"
+msgstr "hours"
+
+msgid "Пн"
+msgstr "mo"
+
+msgid "Вт"
+msgstr "tu"
+
+msgid "Ср"
+msgstr "we"
+
+msgid "Чт"
+msgstr "th"
+
+msgid "Пт"
+msgstr "fr"
+
+msgid "Сб"
+msgstr "se"
+
+msgid "Вс"
+msgstr "sa"
+
+msgid "Данная тема уже существует в категории"
+msgstr "This topic already exists in the category"
+
+msgid "Ваша заявка на курс принята к рассмотрению. О результате Вам сообщат по e-mail"
+msgstr "Your application for course taken into consideration. On a result you will be notified by e-mail"
+
+msgid "согласовано"
+msgstr "аgreed"
+
+msgid "Результат:"
+msgstr "Results:"
+
+msgid "из %d возможных"
+msgstr "of %d possible"
+
+msgid "Всего вопросов в задании"
+msgstr "Number of questions in test"
+
+msgid "Отчет о прохождении"
+msgstr "Report on the passage"
+
+msgid "Вы зачислены на курс"
+msgstr "You are enrolled in the course"
+
+msgid "РАСПИСАНИЕ ЗАНЯТИЙ ГРУПП"
+msgstr "SCHEDULE GROUP"
+
+msgid "День недели"
+msgstr "day of the week"
+
+msgid "Вы неверно ввели имя пользователя или пароль"
+msgstr "You have entered wrong user name or password"
+
+msgid "Администраторы назначены"
+msgstr "Administrators appointed"
+
+msgid "Претендент"
+msgstr "Expectant"
+
+msgid "Прошедший обучение"
+msgstr "Trained"
+
+msgid "Без роли"
+msgstr "No role"
+
+msgid "запомнить выбор"
+msgstr "Remember choice"
+
+msgid "Студент"
+msgstr "Trainee"
+
+msgid "Роли"
+msgstr "Roles"
+
+msgid "Термин"
+msgstr "Term"
+
+msgid "показать"
+msgstr "show"
+
+msgid "Назначаемый"
+msgstr " Appointed"
+
+msgid "Без согласования"
+msgstr "Without permission"
+
+msgid "Электронная почта"
+msgstr "Mail"
+
+msgid "Онлайн-группы"
+msgstr "Groups"
+
+msgid "Совместная работа над документами"
+msgstr "Workspace"
+
+msgid "Все сервисы"
+msgstr "Services"
+
+msgid "Здесь Вы сможете авторизоваться в системе Live@edu"
+msgstr "Login to your Live@Edu"
+
+msgid "Новость удалена"
+msgstr "News deleted"
+
+msgid "Редактирование категории"
+msgstr "Editing categories"
+
+msgid "Материалы успешно удалены"
+msgstr "Materials successfully deleted"
+
+msgid "Удалить вопрос"
+msgstr "Delete question"
+
+msgid "НАЙДЕНО %d ВОПРОСОВ В ФАЙЛЕ"
+msgstr "FOUND %d ISSUES IN FILE"
+
+msgid "не удалось создать (проверьте права на каталог)"
+msgstr "unable to create (check the directory path)"
+
+msgid "Каталог "
+msgstr "Directory "
+
+msgid " проверен"
+msgstr " tested"
+
+msgid "Файл "
+msgstr "File "
+
+msgid "Структура БД"
+msgstr "DB structure"
+
+msgid "Редактирование свойств курса"
+msgstr " Editing the properties of the course"
+
+msgid "цепочка согласований"
+msgstr "approval chain"
+
+msgid "Сводная таблица курирования курсов"
+msgstr "Summary of mentoring courses"
+
+msgid "Сводная таблица курирования групп"
+msgstr "Summary mentoring groups"
+
+msgid "Открыть материал"
+msgstr "View material"
+
+msgid "Перевести в слушатели"
+msgstr "Appoint to trainee"
+
+msgid "Элемент программы курса"
+msgstr "Syllabus element"
+
+msgid "--- отметить всех ---"
+msgstr "---select all---"
+
+msgid "--- снять всех ---"
+msgstr "---unselect all---"
+
+msgid "Процент выполнения:"
+msgstr "The percentage of completion:"
+
+msgid "Средний процент выполнения:"
+msgstr "The average percentage of completion:"
+
+msgid "отмечен вариант"
+msgstr "marked option"
+
+msgid "не отмечен вариант"
+msgstr "option is not marked"
+
+msgid "Вариант пропущен"
+msgstr "Option missing"
+
+msgid "Дата ответа"
+msgstr "Date of answer"
+
+msgid "Полученный ответ:"
+msgstr "Answer questions:"
+
+msgid "Балл и комментарий успешно сохранены. Для перерасчета балла за задание выберите соответствующую опцию в списке \"Выполнить действие\" в нижней части страницы."
+msgstr "Score and commentary saved successfully. For the recalculation of scores for the test, select the appropriate option in the list \"Perform the action \" in the bottom of the page."
+
+msgid "Вы действительно желаете сохранить результаты? При этом произойдет перерасчет общего балла за задание и оценки за занятие (в случае, если занятие оценивается по формуле). Если занятие предусматривает штраф за несвоевремменную сдачу, величина штрафа будет также расчитана заново. Будут обработаны только полностью проверенные сеансы выполнения данного задания. Продолжить?"
+msgstr "You really want to save the results? This will recalculate the total score for the assignment and evaluation of the lesson (if the exercise is evaluated according to the formula). If the lesson involves penalty for late delivery, the value of the fine will also be calculated anew. Will be processed only fully authenticated sessions the assignment. Continue?"
+
+msgid "Вы действительно удалить обработанные вопросы? После этой операции тексты ответов и прикрепленные к ним файлы будут удалены. Продолжить?"
+msgstr "Are you sure you remove the processed questions? After this operation, the replies and its attached files will be deleted. Continue?"
+
+msgid "Сохранены результаты по следующим сеансам выполнения задания:"
+msgstr "Retained the results for the following sessions of the assignment:"
+
+msgid "Удалены вопросы по следующим сеансам:"
+msgstr "Remove the question on the following sessions:"
+
+msgid "Вы неверно ввели старый пароль."
+msgstr "You incorrectly entered your old password."
+
+msgid "Нет файла структуры курса"
+msgstr "No file structure of the course"
+
+msgid "Загрузка и обработка файлов курса"
+msgstr "Downloading and file processing course"
+
+msgid "После загрузки файлов требуется время на распаковку и обработку файлов курса"
+msgstr "After downloading the files you need time to decompress and manipulate files course"
+
+msgid "ГиперМетод"
+msgstr "HyperMethod"
+
+msgid "Элемент не доступен для изучения"
+msgstr "Element is not available for study"
+
+msgid "рубрики отсутствуют"
+msgstr "no rubrics"
+
+msgid "на&nbsp;уровень&nbsp;выше"
+msgstr "level up"
+
+msgid "Изображение"
+msgstr "Picture"
+
+msgid "Цепочка согласования не может быть применена, так как одна или несколько должностей вакантны"
+msgstr "Chain of approvals can not be applied because one or more positions vacant"
+
+msgid "Некорректный ввод длительности курса."
+msgstr "Invalid input length of the course."
+
+msgid "Некорректный ввод диапазона курса."
+msgstr "Invalid input range of courses."
+
+msgid "Уведомление о регистрации [sTUDENT_ALIAS-ROD-ONE] на курс."
+msgstr "Notice of registration [sTUDENT_ALIAS-ROD-ONE] on the course."
+
+msgid "Уведомление об отчислении [sTUDENT_ALIAS-ROD-ONE] с курса."
+msgstr "Notice of dismissal [sTUDENT_ALIAS-ROD-ONE] from the course."
+
+msgid "Уведомление об удалении [sTUDENT_ALIAS-ROD-ONE] с курса."
+msgstr "Notice of removal [sTUDENT_ALIAS-ROD-ONE] from the course."
+
+msgid "Уведомление о подтверждении принятии заявки на регистрацию в качестве [sTUDENT_ALIAS-ROD-ONE]."
+msgstr "Notice of confirmation of acceptance of application for registration as a [sTUDENT_ALIAS-ROD-ONE]."
+
+msgid "Уведомление для преподавателя о заявке на регистрацию [sTUDENT_ALIAS-ROD-ONE] на курс."
+msgstr "Notice to tutors on the application for registration [sTUDENT_ALIAS-ROD-ONE] on the course."
+
+msgid "Уведомление для учебной администрации о заявке на регистрацию [sTUDENT_ALIAS-ROD-ONE] на курс."
+msgstr "Notice to study administration of the application for registration [sTUDENT_ALIAS-ROD-ONE] on the course."
+
+msgid "Уведомление о регистрации [sTUDENT_ALIAS-ROD-ONE] на специальность."
+msgstr "Notice of registration [sTUDENT_ALIAS-ROD-ONE] in the speciality."
+
+msgid "Создание занятия на основе данного курса невозможно, необходимо изменить режим прохождения в свойствах курса"
+msgstr "Creating lessons on the basis of this course is impossible, change the mode of transmission in the properties of the course"
+
+msgid "Начало занятия позже конца"
+msgstr "Lessons start later than the end"
+
+msgid "Вы не выбрали тип создаваемого занятия"
+msgstr "You have not chosen type of generated lessons"
+
+msgid "й день занятий"
+msgstr " day of lessons"
+
+msgid "Вы не выбрали модуль"
+msgstr "You have not selected module"
+
+msgid "Недопустимая длина пароля"
+msgstr "Invalid password length"
+
+msgid "почт. индекс"
+msgstr "postal code"
+
+msgid "страна"
+msgstr "country"
+
+msgid "область, регион"
+msgstr "region"
+
+msgid "город"
+msgstr "city"
+
+msgid "улица"
+msgstr "street"
+
+msgid "дом"
+msgstr "house"
+
+msgid "корпус/строение"
+msgstr "building"
+
+msgid "квартира"
+msgstr "apartment"
+
+msgid "телефон"
+msgstr "phone"
+
+msgid "моб. телефон"
+msgstr "mob. phone"
+
+msgid "факс"
+msgstr "fax"
+
+msgid "серия"
+msgstr "series"
+
+msgid "номер"
+msgstr "number"
+
+msgid "дата выдачи"
+msgstr "issue date"
+
+msgid "Контактная информация"
+msgstr "Contact"
+
+msgid "День рождения"
+msgstr "Birthday"
+
+msgid "Января"
+msgstr "January"
+
+msgid "Февраля"
+msgstr "February"
+
+msgid "Марта"
+msgstr "March"
+
+msgid "Апреля"
+msgstr "April"
+
+msgid "Мая"
+msgstr "May"
+
+msgid "Июня"
+msgstr "June"
+
+msgid "Июля"
+msgstr "July"
+
+msgid "Августа"
+msgstr "August"
+
+msgid "Сентября"
+msgstr "September"
+
+msgid "Октября"
+msgstr "October"
+
+msgid "Ноября"
+msgstr "November"
+
+msgid "Декабря"
+msgstr "December"
+
+msgid "Импорт преподавателей из CSV файла"
+msgstr "Importing tutors from CSV file"
+
+msgid "Все преподаватели были зачислены на курс и распределены по группам"
+msgstr "All tutors were enrolled in the course and divided into groups"
+
+msgid "Извините, это задание не содержит ни одного вопроса"
+msgstr "Sorry, this test does not contain a single question"
+
+msgid "на главную"
+msgstr "home"
+
+msgid "вперёд"
+msgstr "forward"
+
+msgid "назад"
+msgstr "back"
+
+msgid "закрыть окно"
+msgstr "close window"
+
+msgid "Информационный блок не найден"
+msgstr "Information block is not found"
+
+msgid "Копия"
+msgstr "Copy"
+
+msgid "К сожалению, закончилось время, отпущеное на решение данного вопроса. Ответ не засчитан."
+msgstr "Unfortunately, whose time was allotted to address this issue. The answer is not counted."
+
+msgid "Закончилось время"
+msgstr "Time runs"
+
+msgid "Закончилось время, отпущеное на решение данного вопроса."
+msgstr "Whose time was allotted to address this issue."
+
+msgid "К сожалению, закончилось время, отпущенное на решение задания. Сейчас вы перейдете на страницу результатов. В ведомость записывается результат тестирования 'прервано по лимиту времени' и оценка только тех вопросов, которые вы уже успели решить."
+msgstr "Unfortunately, whose time was allotted to the decision test. Now you'll see a page of results. In the written statement of the result of testing 'interrupted for time limit' and score only those questions that you have already solved."
+
+msgid "Осталось:"
+msgstr "Remained:"
+
+msgid "Восстановление пароля"
+msgstr "Password recovery"
+
+msgid "Выберите цвета"
+msgstr "Select color"
+
+msgid "Тело"
+msgstr "Body"
+
+msgid "Таблица"
+msgstr "Table"
+
+msgid "ошибка"
+msgstr "mistake"
+
+msgid "Необходимая версия"
+msgstr "Required version"
+
+msgid "Введите термин и его описание"
+msgstr "Enter the term and its description"
+
+msgid "НАЙДЕНО %s ВОПРОСОВ В ФАЙЛЕ %s<br><br>"
+msgstr "FOUND %s QUESTIONS IN FILE %s<br><br>"
+
+msgid "Просмотр вопроса"
+msgstr "View question"
+
+msgid "по данному вопросу нет статистики (еще никто не отвечал)"
+msgstr "on the subject of statistics is not (yet no one answered)"
+
+msgid "Картинка"
+msgstr "Image"
+
+msgid "Программа успешно создана"
+msgstr "Program created successfully"
+
+msgid "Программа успешно удалена"
+msgstr "Program removed successfully"
+
+msgid "Удалить программу"
+msgstr "Remove program"
+
+msgid "Редактировать свойства программы"
+msgstr "Edit program properties"
+
+msgid "Редактирование программы"
+msgstr "Editing program"
+
+msgid "Программа успешно обновлена"
+msgstr "Program successfully updated"
+
+msgid "Программы успешно скопированы"
+msgstr "Programs successfully copied"
+
+msgid "Запустить программу"
+msgstr "Run program"
+
+msgid "Даты занятия выходят за рамки начала и окончания курса"
+msgstr "Dates of courses beyond the beginning and end of the course"
+
+msgid "Выберите внешнюю программу"
+msgstr "Select external program"
+
+msgid "создать группу"
+msgstr "create group"
+
+msgid "создать формулу"
+msgstr "create formula"
+
+msgid "Создание формулы"
+msgstr "Сreating formulas"
+
+msgid "не используется"
+msgstr "not used"
+
+msgid "Вы зачисленны на курс. Пароль будет выслан на e-mail"
+msgstr "You are enrolled in the course. Password will be sent to the e-mail"
+
+msgid "Запускается внешняя программа..."
+msgstr "Run an external program ..."
+
+msgid "Необходимо ввести название темы и текст сообщения"
+msgstr "You must enter the name of the theme and message"
+
+msgid "Вы не ввели одно из полей либо не правильно ввели пароль повторно."
+msgstr "You have not entered one of the fields or did not correctly enter the password again."
+
+msgid "в данный момент уже в системе"
+msgstr "at this moment already in the system"
+
+msgid "Невозможно сменить пароль администратора"
+msgstr "Unable to change the administrator password"
+
+msgid "Ваш пароль выслан на"
+msgstr "Your password was sent by"
+
+msgid "все новости"
+msgstr "all news"
+
+msgid "Спасибо! Прохождение заданий завершено!"
+msgstr "Thank you! You completed all tests!"
+
+msgid "Сеанс тестирования еще не завершен или не начинался."
+msgstr "Seans testing has not been completed or not started."
+
+msgid "отключен преподавателем"
+msgstr "disconnected by tutor"
+
+msgid "Попытки выполнения задания"
+msgstr "Attempts to perform the test"
+
+msgid "Осталось попыток:"
+msgstr "Remains attempts:"
+
+msgid "уже зарегистрирован. Выберите другой логин"
+msgstr "already registered. Choose a different login"
+
+msgid "Логин %s уже существует в системе"
+msgstr "Login %s already exists in the system"
+
+msgid "Пустой шаблон"
+msgstr "Blank template"
+
+msgid "Вы не загрузили файл! Нажмите кнопку \"Обзор\" и выберите *.CSV файл для импорта"
+msgstr "You can not upload file! Click \"Browse \" and select the *. CSV file for importing"
+
+msgid "Ничего не было отмечено для импорта. Выберите хотя бы одного слушателя."
+msgstr "Nothing was noted for imports. Please select at least one listener."
+
+msgid "Необходимо заполнить поле Содержание"
+msgstr "You must fill Content field"
+
+msgid "Необходимо заполнить поле Заголовок"
+msgstr "You must fill Heading field"
+
+msgid "По данному курсу не создано ни одного занятия"
+msgstr "In this course not created any lesson"
+
+msgid "Не задано количество учетных записей или превышен лимит в 999 записей"
+msgstr "Do not set the number of accounts or exceeded the limit of 999 entries"
+
+msgid "Вы не ввели название курса."
+msgstr "You have not entered the name of the course."
+
+msgid "По данному курсу не создано ни одного занятия<br>Создать занятия можно на странице расписания."
+msgstr "In this course not created any lessons<br>Create lessons, please visit the calendar."
+
+msgid "На данном курсе нет ни одного задания"
+msgstr "At this course there is no test"
+
+msgid "Вы не указали название аудитории"
+msgstr "You have not specified the name of the audience"
+
+msgid "Введена некорректная вместимость аудитории"
+msgstr "Is incorrect capacity audience"
+
+msgid "Вы не указали название сетки занятий"
+msgstr "You have not specified the name of the grid lessons"
+
+msgid "Необходимо ввести название категории"
+msgstr "You must enter a category name"
+
+msgid "Необходимо ввести текст сообщения"
+msgstr "You must enter text messages"
+
+msgid "Тема &quot;"
+msgstr "Topic &quot;"
+
+msgid "&quot; была перемещёна.<br>Новый адрес темы: <a href=\""
+msgstr "&quot; has been moved.<br>New address topics: <a href=\""
+
+msgid "ссылка"
+msgstr "reference"
+
+msgid "глоссарий по курсу не создан"
+msgstr "glossary of the course is not created"
+
+msgid "Не выбрано задание для добавления помеченных галочками вопросов."
+msgstr "Unspecified test to add a checkmark issues."
+
+msgid "ошибочный номер курса"
+msgstr "wrong course number"
+
+msgid "Не отмечен ни один из вопросов для редактирования. Отметьте галочками один или несколько вопросов, нажмите кнопку РЕДАКТИРОВАТЬ, и откроется страница для редактирования всех помеченных вопросов."
+msgstr "There were not a one of the questions for editing. Please tick one or more questions, click the Edit button, and open the page for editing all starred questions."
+
+msgid "Ничего не было отмечено для удаления"
+msgstr "It has been marked nothing for removal"
+
+msgid "Только проверка формата входных данных!"
+msgstr "Just check the format of the input data!"
+
+msgid "скачать"
+msgstr "download"
+
+msgid "Действительно удалить файл из вопроса?"
+msgstr "Really delete the file from the question?"
+
+msgid "Начало фразы"
+msgstr "Start of phrase"
+
+msgid "Вариант заполнения пропуска (через \";\")"
+msgstr "Fill variant (delimiter \";\")"
+
+msgid "Последующий текст"
+msgstr "Next part of phrase"
+
+msgid "автоподсчет"
+msgstr "autocount"
+
+msgid "Приложение"
+msgstr "Annex"
+
+msgid "открыть"
+msgstr "open"
+
+msgid "Показывать варианты ответа (иначе только картинку)"
+msgstr "display answer variants (otherwise only picture)"
+
+msgid "изменить"
+msgstr "change"
+
+msgid "области"
+msgstr "fields"
+
+msgid ""
+"Вы действительно желаете удалить вопрос?\\n"
+"После удаления вопрос нельзя будет восстановить."
+msgstr ""
+"Are you sure you want to delete question?\\n"
+"After removing the issue can not be recovered."
+
+msgid "загрузка..."
+msgstr "loading..."
+
+msgid "Укажите области для вариантов:"
+msgstr "Specify fields:"
+
+msgid "Подпись"
+msgstr "Label"
+
+msgid "Имя параметра"
+msgstr "Parameter name"
+
+msgid "Строка параметров вызова программы-тренажера"
+msgstr "Parameter string call of simulator program"
+
+msgid "Используйте синтаксис"
+msgstr "Use syntax"
+
+msgid "для задания идентификатора пользователя"
+msgstr "to specify user ID"
+
+msgid "Параметры вызова"
+msgstr "Call parametres"
+
+msgid "Программа-тренажер"
+msgstr "Simulator program"
+
+msgid "Программа-тренажер должна быть установлена в эту директорию на каждом клиентском компьютере."
+msgstr "Simulator program should be installed in the same directory on each client computer."
+
+msgid "Извините, это задание не опубликовано (заблокировано)"
+msgstr "Sorry, this test has not been published (locked)"
+
+msgid "Введите название программы"
+msgstr "Enter program name"
+
+msgid "Условия для занятия"
+msgstr "Conditions for lesson"
+
+msgid "и"
+msgstr "and"
+
+msgid "И"
+msgstr "AND"
+
+msgid "ИЛИ"
+msgstr "OR"
+
+msgid "Выбрать дату"
+msgstr "Select date"
+
+msgid "Верно %s из %s"
+msgstr "True %s from %s"
+
+msgid "по курсу "
+msgstr "at course"
+
+msgid "по всем курсам"
+msgstr "all courses"
+
+msgid "по заданию "
+msgstr "on test"
+
+msgid "по пользователю "
+msgstr "by user"
+
+msgid "по дате прохождения заданий в период"
+msgstr "by date of passage of tests between"
+
+msgid "Очистить статистику тестирования %s %s %s %s?"
+msgstr "Clear the statistics test %s %s %s %s?"
+
+msgid "по данному курсу нет ни одного занятия на оценку"
+msgstr "for this course are no lesson to assess"
+
+msgid "Извините, это задание не содержит ни одного вопроса."
+msgstr "Sorry, this test does not contain a single question."
+
+msgid "Спасибо! Прохождение задания завершено!"
+msgstr "Thank you! Passage of the test is complete!"
+
+msgid "Данные курса успешно загружены"
+msgstr "Course data uploaded"
+
+msgid "Невозможно заблокировать свою учётную запись"
+msgstr "It is impossible to block the account"
+
+msgid "Пользователь не может удалить самого себя!"
+msgstr "Users can not remove yourself!"
+
+msgid "Ничего не было отмечено для импорта. Выберите хотя бы один курс."
+msgstr "Nothing was noted for imports. Select at least one course."
+
+msgid "Ошибка при создании вопроса \"%s\"<br>(не поддерживается тип вопроса)"
+msgstr "Error creating the question \"%s\" <br>(not supported by the type of question)"
+
+msgid "не выбрано"
+msgstr "not selected"
+
+msgid "Нельзя использовать эту функцию, проходя тестирование. Сейчас вы перейдете на страницу тестирования."
+msgstr "You can not use this function, passing tests. Now you'll arrive at the test."
+
+msgid "Выберите один из модулей в программе курса"
+msgstr "Choose one of the modules in the course program"
+
+msgid "Новость обновлена. Используйте показать/скрыть."
+msgstr "News updated. Use the show / hide."
+
+msgid "Подробнее"
+msgstr "Detailed"
+
+msgid "РЕГИСТРАЦИЯ"
+msgstr "REGISTRATION"
+
+msgid "без имени"
+msgstr "untitled"
+
+msgid "Неправильно заполнены регистрационные данные серии и номера паспорта"
+msgstr "The registration given series and passport numbers are incorrectly filled"
+
+msgid "Не все необходимые поля заполнены"
+msgstr "Not all necessary fields are filled"
+
+msgid "Спасибо за регистрацию"
+msgstr "Thanks for registration"
+
+msgid "посмотреть"
+msgstr "view"
+
+msgid "Сохранить это приложение на ваш компьютер"
+msgstr "Save this application on your computer"
+
+msgid "Открыть это приложение в новом окне"
+msgstr "View this application in a new window"
+
+msgid "Комментарии:"
+msgstr "Comments:"
+
+msgid "Вес:"
+msgstr "Weight:"
+
+msgid "Обнаружена ошибка в этом вопросе, возникшая в следствии неправильного ввода вопроса преподавателем:"
+msgstr "An error was detected on this question, which arose in consequence of an incorrect input question the teacher:"
+
+msgid "Устранить ошибку этого вопроса можно на странице его редактирования так:"
+msgstr "Eliminate the error of this question, please visit its editing so:"
+
+msgid "НЕОБХОДИМО"
+msgstr "NECESSARY"
+
+msgid "Отсутствуют варианты ответа на вопрос."
+msgstr "No answer on the question."
+
+msgid "устранить ошибку в этом вопросе"
+msgstr "fix the error in this matter"
+
+msgid "Введите один или более вариантов ответа."
+msgstr "Enter one or more possible responses."
+
+msgid "Ни один вариант ответа не является правильным."
+msgstr "Neither answer is not correct."
+
+msgid "Отметьте один/несколько вариантов как правильные."
+msgstr "Check one/several options as correct."
+
+msgid "устранить ошибку в этом вопросе, т.к. если вы включите этот вопрос в какое-либо задание, то ответить на вопрос будет нельзя, в следствии чего прохождение ВСЕГО ЗАДАНИЯ, включающего этот вопрос, для учащихся будет невозможно!"
+msgstr "fix the error in this matter, because if you turn on this question in any job, the answer to the question would be, in consequence of that passage of the entire job, including this issue, it will be impossible for the students!"
+
+msgid "Ни один ответ не помечен как правильный (это нормальная ситуация). Чтобы ответить на этот вопрос правильно (и заработать максимальный балл), учащийся во время тестировании должен снять все галочки (вернее, ни одну не ставить)."
+msgstr "Neither answer is not marked as correct (it is a normal situation). To answer this question correctly (and earn the maximum score), a student at the time of testing should withdraw all the checkboxes (or rather, no one not to)."
+
+msgid "Время прохождения вопроса:"
+msgstr "Running time of the question:"
+
+msgid "Осталось для прохождения вопроса:"
+msgstr "It remains to pass the question:"
+
+msgid "ИМЯ:"
+msgstr "NAME:"
+
+msgid "РАЗМЕР:"
+msgstr "SIZE:"
+
+msgid "байт"
+msgstr "byte"
+
+msgid "Начало&nbsp;фразы"
+msgstr "The phrase beginning"
+
+msgid "слово"
+msgstr "word"
+
+msgid "К варианту N%s [%s] выбрано [%s]"
+msgstr "By variant N%s [%s] selected [%s]"
+
+msgid "Введено:"
+msgstr "Entered:"
+
+msgid "ВОПРОСОВ С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ:"
+msgstr "QUESTIONS WITH CHECK BY THE TEACHER:"
+
+msgid "Приложен файл %s байт, имя: %s; "
+msgstr "Attach a file% s bytes, name:% s; "
+
+msgid "приложен текст %s байт"
+msgstr "attached text% s bytes"
+
+msgid "Ни текста, ни аттач-файла не было передано, начисляю %s баллов."
+msgstr "Neither the text, nor an attach-file it has not been transferred, I calculate %s points."
+
+msgid "параметр"
+msgstr "parameter"
+
+msgid "Запустить тренажер"
+msgstr "Runt simulator"
+
+msgid "Сумма весов, действующих на курсе типов занятий, должна быть равна 100"
+msgstr "The sum of weights acting on the course the type of lesson must be equal to 100"
+
+msgid "Относительные даты"
+msgstr "Relative date"
+
+msgid "еще не сдан"
+msgstr "not yet delivered"
+
+msgid "Начало на:"
+msgstr "Start at:"
+
+msgid "Продолжит.:"
+msgstr "Continue.:"
+
+msgid "-ый день занятий"
+msgstr "-th day of lessons"
+
+msgid "(дн.)"
+msgstr "(days)"
+
+msgid "Связать с"
+msgstr "Link with"
+
+msgid "условием"
+msgstr "condition"
+
+msgid "Ничего не выбрано на вариант"
+msgstr "It is selected nothing on a variant"
+
+msgid "Сеанс еще не проверен преподавателем."
+msgstr "The session is not yet verified the tutor."
+
+msgid "ВОПРОС С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ"
+msgstr "QUESTION WITH CHECK BY THE TUTOR"
+
+msgid "Текст ответа:"
+msgstr "The answer text:"
+
+msgid "секунды"
+msgstr "seconds"
+
+msgid "Это задание, требующее проверки преподавателем."
+msgstr "This test, which requires verification tutor."
+
+msgid "Вход невозможен. Вам не назначена ни одна роль в системе."
+msgstr "Login impossible. You do not have assigned no role in the system."
+
+msgid "Занятие назначено на другое время"
+msgstr "Lesson is scheduled for another time"
+
+msgid "Размещенные материалы"
+msgstr "Provided materials"
+
+msgid "Это задание не связано с ни с каким тестом"
+msgstr "This test is not linked with to any test"
+
+msgid "Комментарий к "
+msgstr "Comment on "
+
+msgid " для "
+msgstr " for "
+
+msgid "Комментарий изменен"
+msgstr "Comments changed"
+
+msgid "Распределить:"
+msgstr "Distribute:"
+
+msgid "Выбрать задание"
+msgstr "Select test"
+
+msgid "Нет целиком обработанных сеансов."
+msgstr "Not entirely processed sessions."
+
+msgid "Результаты по всем сеансам были расчитаны ранее. Нет новых результатов."
+msgstr "Results of all sessions have been calculated previously. No new results."
+
+msgid "Проверить вопрос"
+msgstr "Check question"
+
+msgid "открыть прикрепленный файл"
+msgstr "open the attached file"
+
+msgid "Выделенные ответы успешно удалены"
+msgstr "Selected answers removed successfully"
+
+msgid "%d-й"
+msgstr "%d-th"
+
+msgid "Суммарное время изучения"
+msgstr "The total time of study"
+
+msgid "Б"
+msgstr "B"
+
+msgid "Н"
+msgstr "N"
+
+msgid "без роли"
+msgstr "no role"
+
+msgid "уч. администратор"
+msgstr "educational administrator"
+
+msgid "Ваш аккаунт заблокирован"
+msgstr "Your account has been locked"
+
+msgid "Администратор указал следующую причину:"
+msgstr "The Administrator cited the following reason:"
+
+msgid "поле"
+msgstr "field"
+
+msgid "не ограничено"
+msgstr "unlimited"
+
+msgid "Настройки"
+msgstr "Settings"
+
+msgid "Название окна браузера:"
+msgstr "Browser window name:"
+
+msgid "Текст приветствия:"
+msgstr "Greeting text:"
+
+msgid "Цвета:"
+msgstr "Colors:"
+
+msgid "Уровень доступа к материалам библиотеки"
+msgstr "Access level to library"
+
+msgid "Ваш аккаунт не активен"
+msgstr "Your account is not active"
+
+msgid "zip-архив"
+msgstr "zip-archieve"
+
+msgid "Хранилище файлов"
+msgstr "SkyDrive"
+
+msgid "удалить все вопросы и задания, существовавшие в курсе"
+msgstr "delete all questions and tests in the course"
+
+msgid "введите часть имени или логина"
+msgstr "type any part of name or login"
+
+msgid "название"
+msgstr "Name"
+
+msgid "заметки"
+msgstr "Comments"
+
+msgid "к текущей неделе"
+msgstr "to current week"
+
+msgid "к предыдущей неделе"
+msgstr "to previous week"
+
+msgid "к следующей неделе"
+msgstr "to next week"
+
+msgid "Редактировать глоссарий"
+msgstr "Edit glossary"
+
+msgid "Язык интерфейса по умолчанию"
+msgstr "Interface language default"
+
+msgid "Импортировать результаты"
+msgstr "Results import"
+
+msgid "Файл результатов"
+msgstr "Results file"
+
+msgid "Результаты успешно импортированы"
+msgstr "Results file imported successfully"
+
+msgid "не найдено новых результатов"
+msgstr "no new results"
+
+msgid "Результаты импортирования"
+msgstr "Results"
+
+msgid "Способ доступа к материалам курсов:"
+msgstr "Access to course materials"
+
+msgid "через программу курсов"
+msgstr "by syllabus"
+
+msgid "через расписание"
+msgstr "by shedule"
+
+msgid "архивировать (zip)"
+msgstr "to archive (.zip)"
+
+msgid "Дистрибутивы курсов успешно созданы в каталоге <b>temp</b> сервера:"
+msgstr "Course distributives created successfully in server directory <b>temp</b>:"
+
+msgid "Не создано ни одного дистрибутива курсов"
+msgstr "No course distributives created"
+
+msgid "Не создано ни одного дистрибутива специальности"
+msgstr "No speciality distributives created"
+
+msgid "Создание оффлайн версии"
+msgstr "Offline version creation"
+
+msgid "Обработка данных"
+msgstr "Data processing"
+
+msgid "Невозможно выполнить операцию.<br>Не отмечен ни один курс."
+msgstr "Processing is impossible.<br>No course selected."
+
+msgid "Невозможно выполнить операцию.<br>Не создано ни одной оффлайн-версии курсов."
+msgstr "Processing is impossible.<br>No offline course created."
+
+msgid "Создание расписания"
+msgstr "Shedule creation"
+
+msgid "Создание модулей и тестов курса"
+msgstr "Course materials and tests creation"
+
+msgid "Невозможно выполнить операцию.<br>Не создано ни одного курса."
+msgstr "Processing is impossible.<br>No course created."
+
+msgid "Инициализация структуры"
+msgstr "Structure initialization"
+
+msgid "Список курсов"
+msgstr "Course list"
+
+msgid "Специальность"
+msgstr "Speciality"
+
+msgid "открыть список слушателей"
+msgstr "open trainee list"
+
+msgid "Cоздание структуры"
+msgstr "Structure creation"
+
+msgid "скачать архив оффлайн версий"
+msgstr "download offline version archive"
+
+msgid "Архивирование оффлайн-версий"
+msgstr "Offline version archiving"
+
+msgid "Экспорт вопросов"
+msgstr "Question export"
+
+msgid "шт."
+msgstr "pcs"
+
+msgid "удалить все материалы, существовавшие в курсе"
+msgstr "delete all materials in the course  "
+
+msgid "создать курс"
+msgstr "create course"
+
+msgid "Адрес точки публикации вебинаров"
+msgstr "iWebbinar publishing point address"
+
+msgid "Хост"
+msgstr "Host address"
+
+msgid "Логин администратора"
+msgstr "Administrator login"
+
+msgid "Пароль администратора"
+msgstr "Administrator password"
+
+msgid "Пароль по умолчанию для новых пользователей"
+msgstr "New users password default"
+
+msgid "Настройки Connect Pro"
+msgstr "Connect Pro settings"
+
+msgid "Шаблон"
+msgstr "Template"
+
+msgid "Все рубрики"
+msgstr "All rubrics"
+
+msgid "Рейтинг"
+msgstr "Rating"
+
+msgid "назад к категориям"
+msgstr "back to rubric page"
+
+msgid "Преподователи"
+msgstr "Teachers"
+
+msgid "Курс вне категорий"
+msgstr "out of rubric course"
+
+msgid "В данный период нет заявок, требующих согласования"
+msgstr "no request"
+
+msgid "нет объявлений"
+msgstr "no announcements"
+
+msgid "Длительность (академ. час)"
+msgstr "Duration (academic hours)"
+
+msgid "Лекция"
+msgstr "Educational material"
+
+msgid "Тест"
+msgstr "Test"
+
+msgid "Оценка курса"
+msgstr "Course evaluation"
+
+msgid "Оценка преподавателя"
+msgstr "Teacher evaluation"
+
+msgid "Определение"
+msgstr "Definition"
+
+msgid "Удалить термин"
+msgstr "Delete term"
+
+msgid "Удалить термин?"
+msgstr "Do you want to delete term?"
+
+msgid "Курс заблокирован. Данная операция невозможна"
+msgstr "Course is locked. Action is impossible."
+
+msgid "Издательство"
+msgstr "Publishing house"
+
+msgid "Рубрикатор"
+msgstr "Rubricator"
+
+msgid "Искать"
+msgstr "Search"
+
+msgid "Сбросить"
+msgstr "Discard"
+
+msgid "Тип издания"
+msgstr "Edition type"
+
+msgid "Зарезервировать издание"
+msgstr "Reserve edition"
+
+msgid "Отменить резервирование"
+msgstr "Cancel reservation"
+
+msgid "Вы действительно хотите отменить резервирование?"
+msgstr "Do you want to cancel reservation?"
+
+msgid "Издание успешно зарезервировано."
+msgstr "Edition reserved successfully."
+
+msgid "Дата резервирования"
+msgstr "Reservation date"
+
+msgid "Зарезервировать до"
+msgstr "Reserved till"
+
+msgid "Год [издания]"
+msgstr "Publication date"
+
+msgid "Уровень доступа"
+msgstr "Access level"
+
+msgid "резерв"
+msgstr "reserved"
+
+msgid "Кол-во экземпляров"
+msgstr "Number of copies"
+
+msgid "Дата выдачи"
+msgstr "Borrow date"
+
+msgid "Дата возврата"
+msgstr "Return date"
+
+msgid "Формуляр издания"
+msgstr "Edition card"
+
+msgid "Открыть издание"
+msgstr "View edition"
+
+msgid "Электронное издание"
+msgstr "Electronic edition"
+
+msgid "Печатное издание"
+msgstr "Printed edition"
+
+msgid "Нет в наличии"
+msgstr "No copies are available"
+
+msgid "Супервайзер"
+msgstr "Supervisor"
+
+msgid "Куратор"
+msgstr "Curator"
+
+msgid "Разработчик ИР"
+msgstr "Resources developer"
+
+msgid "Менеджер БЗ"
+msgstr "Knowledge base manager"
+

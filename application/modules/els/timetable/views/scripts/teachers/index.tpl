@@ -1,0 +1,1 @@
+<p><iframe src="https://rgsu.net/for-students/timetable/?nc_ctpl=935&amp;template=131" align="left" width="100%" height="680"></iframe></p>

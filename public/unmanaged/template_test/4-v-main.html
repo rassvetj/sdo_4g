@@ -1,0 +1,32 @@
+<!-- {?t?}вопрос{?/t?} -->
+<table border=0 cellspacing=0 cellpadding=0 class="tests_body_main">
+<tr>
+<th colspan="2" class="test">
+<?=_("Вопрос")?> № <?=$v_number?>
+<?
+   if (tdebug)
+      echo " <font color=white>&nbsp; <tt>$vopros[kod], type=$vopros[qtype]</tt> </font>";
+?>
+
+<!--h3>{?t?}Вопрос{?/t?} N <?=$v_number?>
+<?
+   if (tdebug)
+      echo " <font color=white>&nbsp; <tt>$vopros[kod], type=$vopros[qtype]</tt> </font>";
+?>
+</h3>
+
+<table width=100% border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td>
+
+<?=$v_text?>
+-->
+</th>
+</tr>
+
+</table>
+<script>
+// {?t?}отключить проверку пропущенных вопросов{?/t?}
+//document.m.ischecked_<?=$number?>.value=1;
+$("form[name='m']").last().find('#ischecked_<?=$number?>').val(1);
+</script>

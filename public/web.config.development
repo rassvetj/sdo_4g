@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <!-- <validation validateIntegratedModeConfiguration="false" /> -->
+        <!-- <urlCompression doStaticCompression="true" /> -->
+        <staticContent>
+            <!-- Set expire headers to 7 days for static content in production and 0 in development -->
+            <!-- Делать это только для тех файлов, которые мы точно знаем, что меняться не будут -->
+            <clientCache cacheControlMode="UseMaxAge" cacheControlMaxAge="0.00:00:00"/>
+            
+            <!-- Audio -->
+            <remove fileExtension=".ogg" />
+            <mimeMap fileExtension=".ogg" mimeType="audio/ogg" />
+            <remove fileExtension=".oga" />
+            <mimeMap fileExtension=".oga" mimeType="audio/ogg" />
+            <remove fileExtension=".m4a" />
+            <mimeMap fileExtension=".m4a" mimeType="audio/mp4" />
+            <remove fileExtension=".mp3" />
+            <mimeMap fileExtension=".mp3" mimeType="audio/mpeg" />
+            
+            <!-- Video -->
+            <remove fileExtension=".ogv" />
+            <mimeMap fileExtension=".ogv" mimeType="video/ogg" />
+            <remove fileExtension=".mp4" />
+            <mimeMap fileExtension=".mp4" mimeType="video/mp4" />
+            <remove fileExtension=".m4v" />
+            <mimeMap fileExtension=".m4v" mimeType="video/mp4" />
+            <remove fileExtension=".webm" />
+            <mimeMap fileExtension=".webm" mimeType="video/webm" />
+            <!-- Flash Video mime types-->
+            <remove fileExtension=".flv" />
+            <mimeMap fileExtension=".flv" mimeType="video/x-flv" />
+            <remove fileExtension=".f4v" />
+            <mimeMap fileExtension=".f4v" mimeType="video/mp4" />
+            
+            <!-- Proper svg serving. Required for svg webfonts on iPad -->
+            <remove fileExtension=".svg" />
+            <mimeMap fileExtension=".svg" mimeType="image/svg+xml" />
+            <remove fileExtension=".svgz" />
+            <mimeMap fileExtension=".svgz" mimeType="image/svg+xml" />
+            
+            <!-- HTML4 Web font mime types -->
+            <!-- Remove default IIS mime type for .eot which is application/octet-stream -->
+            <remove fileExtension=".eot" />
+            <mimeMap fileExtension=".eot" mimeType="application/vnd.ms-fontobject" />
+            <remove fileExtension=".ttf" />
+            <mimeMap fileExtension=".ttf" mimeType="font/truetype" />
+            <remove fileExtension=".otf" />
+            <mimeMap fileExtension=".otf" mimeType="font/opentype" />
+            <remove fileExtension=".woff" />
+            <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
+            
+            <!-- Assorted types -->
+            <remove fileExtension=".ico" />
+            <mimeMap fileExtension=".ico" mimeType="image/x-icon" />
+            <remove fileExtension=".webp" />
+            <mimeMap fileExtension=".webp" mimeType="image/webp" />
+            <remove fileExtension=".appcache" />
+            <mimeMap fileExtension=".appcache" mimeType="text/cache-manifest" />
+            <remove fileExtension=".manifest" />
+            <mimeMap fileExtension=".manifest" mimeType="text/cache-manifest" />
+            <remove fileExtension=".htc" />
+            <mimeMap fileExtension=".htc" mimeType="text/x-component" />
+            <remove fileExtension=".crx" />
+            <mimeMap fileExtension=".crx" mimeType="application/x-chrome-extension" />
+            <remove fileExtension=".xpi" />
+            <mimeMap fileExtension=".xpi" mimeType="application/x-xpinstall" />
+            <remove fileExtension=".safariextz" />
+            <mimeMap fileExtension=".safariextz" mimeType="application/octet-stream" />
+            <remove fileExtension=".vcf" />
+            <mimeMap fileExtension=".vcf" mimeType="text/x-vcard" />
+            
+            <!-- JS, CSS, XML, RSS, JSON -->
+            <remove fileExtension=".css" />
+            <mimeMap fileExtension=".css" mimeType="text/css" />
+            <remove fileExtension=".js" />
+            <mimeMap fileExtension=".js" mimeType="text/javascript" />
+            <remove fileExtension=".json" />
+            <mimeMap fileExtension=".json" mimeType="application/json" />
+            <remove fileExtension=".rss" />
+            <mimeMap fileExtension=".rss" mimeType="application/rss+xml" />
+            <remove fileExtension=".xml" />
+            <mimeMap fileExtension=".xml" mimeType="application/xml" />
+            <remove fileExtension=".xsl" />
+            <mimeMap fileExtension=".xsl" mimeType="application/xslt+xml" />
+        </staticContent>
+    </system.webServer>
+    <system.web>
+        <httpRuntime requestPathInvalidCharacters="" requestValidationMode="2.0" />
+        <pages validateRequest="false" />
+    </system.web>        
+</configuration>

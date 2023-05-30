@@ -1,0 +1,168 @@
+.subject-page {
+  position: relative;
+}
+.subject-page .items {
+  position: relative;
+  margin: 0 auto;
+  min-height: 10px;
+}
+.subject-page .container-wrapper {
+  padding: 1px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: url(../../images/content-modules/course-index/container-bg.gif);
+  margin-top: 1em;
+}
+.subject-page .container {
+  zoom: 1;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+.subject-page .container:before,
+.subject-page .container:after {
+  content: "";
+  display: table;
+}
+.subject-page .container:after {
+  clear: both;
+}
+.subject-page .container > h3 {
+  color: #7b7b7b;
+  font-size: 1.3em;
+  margin: 10px 11px 0;
+}
+.subject-page .container > h3.no-title {
+  font-style: italic;
+  font-weight: normal;
+}
+.subject-page .container > h3 > a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.subject-page .container > h3 > a * {
+  display: block;
+}
+.subject-page .container > h3 > * {
+  vertical-align: middle;
+}
+.material-preview {
+  width: 266px;
+  margin: 10px;
+  padding: 1px;
+  float: left;
+  border: 1px solid #c0c0c0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+.material-preview.col2 {
+  width: 556px;
+}
+
+.material-preview .grip {
+  background-image: url(../../images/content-modules/course-index/grip.gif);
+  border-top-radius: 3px;
+  height: 19px;
+  text-align: right;
+}
+.material-preview .grip .handle {
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0)), color-stop(1, #fff));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, #fff 100%);
+}
+.material-preview .grip .handle > * {
+  vertical-align: middle;
+}
+.material-preview .content {
+  padding: 10px 9px 9px;
+  line-height: 1.3;
+}
+.material-preview .content > img,
+.material-preview .content .material-icon {
+  float: left;
+  background-color: #808080;
+  line-height: 1.5em;
+  margin: 0 15px 15px 0;
+  width: 35px;
+  height: 35px;
+  border: 0 solid;
+  -webkit-box-shadow: 0 0 6px 0 rgba(121,156,170,0.75);
+  box-shadow: 0 0 6px 0 rgba(121,156,170,0.75);
+}
+.no-boxshadow .material-preview .content > img,
+.no-boxshadow .material-preview .content .material-icon {
+  border: 1px solid #d5e0e5;
+}
+.material-preview .content > h4 {
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+}
+.material-preview .content > h4 span,
+.material-preview .content > h4 a {
+  font-weight: bold;
+  white-space: normal;
+}
+.material-preview .content > h4 img,
+.material-preview .content > h4 span,
+.material-preview .content > h4 a {
+  vertical-align: middle;
+}
+.material-preview .content > h4 img {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 4px;
+}
+.material-preview .content p {
+  margin: 0.5em 0 0;
+}
+.material-preview input[type="hidden"] {
+  display: none;
+}
+.subject-page.edit-mode .material-preview.col2 {
+  width: 266px;
+}
+.subject-page.edit-mode .material-preview .grip {
+  cursor: move;
+}
+.subject-page.edit-mode .content > h4 {
+  position: relative;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+.subject-page.edit-mode .content > h4 span,
+.subject-page.edit-mode .content > h4 a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+.subject-page.edit-mode .content > h4 a.stats-icon img,
+.subject-page.edit-mode .content > h4 a.edit-action img {
+  margin-left: 0;
+}
+.subject-page.edit-mode .content > p {
+  height: 8em;
+  overflow: auto;
+}
+.subject-page.edit-mode .items {
+  min-height: 177px;
+}
+.subject-page.edit-mode .items .placeholder {
+  width: 266px;
+  margin: 10px;
+  padding: 1px;
+  float: left;
+  border: 1px solid #c0c0c0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}

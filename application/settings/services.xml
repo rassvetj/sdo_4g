@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony-project.org/2.0/container">
+    <services>
+        <service id="Acl" class="HM_Acl" />
+        <service id="Activity" class="HM_Activity_ActivityService"/>
+        <service id="ActivityResource" class="HM_Activity_Resource_ResourceService"/>
+        <service id="Admin" class="HM_Role_AdminService"/>
+        <service id="Blog" class="HM_Blog_BlogService" />
+        <service id="Bookshelf" class="HM_Bookshelf_BookshelfService" />
+        <service id="Cache" class="HM_Cache_CacheService"/>
+        <service id="Captcha" class="HM_Captcha_CaptchaService"/>
+        <service id="Claimant" class="HM_Role_ClaimantService"/>
+        <service id="Classifier" class="HM_Classifier_ClassifierService"/>
+		<service id="ClassifierImage" class="HM_Classifier_Image_ImageService"/>
+        <service id="ClassifierLink" class="HM_Classifier_Link_LinkService"/>
+        <service id="ClassifierType" class="HM_Classifier_Type_TypeService"/>
+        <service id="ClassifierCsv" class="HM_Classifier_Csv_CsvService">
+            <argument>HM_Classifier_Csv_CsvMapper</argument>
+            <argument>HM_Classifier_ClassifierModel</argument>
+            <argument>HM_Classifier_Csv_CsvAdapter</argument>
+        </service>
+        <service id="Chain" class="HM_Chain_ChainService"/>
+        <service id="ChainItem" class="HM_Chain_Item_ItemService"/>
+        <service id="ChatChannels" class="HM_Chat_ChatChannelsService"/>
+        <service id="ChatHistory" class="HM_Chat_ChatHistoryService"/>
+        <service id="ChatRefUsers" class="HM_Chat_ChatRefUsersService"/>
+		<service id="Certificates" class="HM_Certificates_CertificatesService"/>
+		<service id="CertificatesStudent" class="HM_CertificatesStudent_CertificatesStudentService"/>
+        <service id="Comment" class="HM_Comment_CommentService"/>
+        <service id="Contact" class="HM_Contact_ContactService"/>
+        <service id="Course" class="HM_Course_CourseService"/>
+        <service id="CourseComp2Course" class="HM_Course_Comp2Course_Comp2CourseService"/>
+        <service id="CourseCompetence" class="HM_Course_Competence_CompetenceService"/>
+        <service id="CourseRubric" class="HM_Course_Rubric_RubricService"/>
+        <service id="CourseItem" class="HM_Course_Item_ItemService"/>
+        <service id="CourseItemHistory" class="HM_Course_Item_History_HistoryService"/>
+        <service id="CourseItemCurrent" class="HM_Course_Item_Current_CurrentService"/>
+        <service id="Curator" class="HM_Role_CuratorService"/>
+        <service id="CronTask" class="HM_Crontask_CrontaskService"/>
+        <service id="Criterion" class="HM_Criterion_CriterionService"/>
+		<service id="Club" class="HM_Club_ClubService"/>
+		<service id="ClubClaim" class="HM_Club_Claim_ClaimService"/>
+        <service id="Dean" class="HM_Role_DeanService"/>
+        <service id="DeanOptions" class="HM_Role_Dean_Options_OptionsService"/>
+        <service id="DeanResponsibility" class="HM_Role_Dean_Responsibility_ResponsibilityService"/>
+        <service id="Developer" class="HM_Role_DeveloperService"/>
+		<service id="Debtors" class="HM_Debtors_DebtorsService"/>
+        <service id="DebtorsCsv" class="HM_Debtors_Csv_CsvService">
+            <argument>HM_Debtors_Csv_CsvMapper</argument>
+            <argument>HM_Debtors_DebtorsModel</argument>
+            <argument>HM_Debtors_Csv_CsvAdapter</argument>
+        </service>
+		<service id="DisabledPeople" class="HM_DisabledPeople_DisabledPeopleService"/>		
+		<service id="DisabledPeopleResume" class="HM_DisabledPeople_Resume_ResumeService"/>
+		<service id="DiplomOption" class="HM_Diplom_Option_OptionService"/>
+		<service id="DormitoryRefund" class="HM_Dormitory_Refund_RefundService" />
+		<service id="Employee" class="HM_Role_EmployeeService"/>		
+		<service id="EntryEvent" class="HM_EntryEvent_EntryEventService"/>			
+        <service id="Event" class="HM_Event_EventService"/>
+        <service id="EventDispatcher" class="sfEventDispatcher"/>
+        <service id="Exercises" class="HM_Exercises_ExercisesService" />
+        <service id="Extension" class="HM_Extension_ExtensionService" />
+        <service id="EventWeight" class="HM_Event_Weight_WeightService"/>
+        <service id="Faq" class="HM_Faq_FaqService"/>
+        <service id="Files" class="HM_Files_FilesService"/>
+        <service id="FilesVideoblock" class="HM_Files_Videoblock_VideoblockService"/>
+        <service id="FilesFtp" class="HM_Files_Ftp_FtpService"/>
+        <service id="FilesMarksheet" class="HM_Files_Marksheet_MarksheetService"/>
+        <service id="FilesZip" class="HM_Files_Zip_ZipService"/>
+        <service id="FireBug" class="Zend_Log">
+            <call method="__construct">
+                <argument type="service">
+                    <service class="Zend_Log_Writer_Firebug"></service>                        
+                </argument>
+            </call>
+        </service>
+        <service id="Formula" class="HM_Formula_FormulaService"/>
+       
+        <service id="Forum" class="HM_Forum_ForumService">
+        </service>
+        <service id="ForumForum" class="HM_Forum_Forum_ForumService"/>
+        <service id="ForumSection" class="HM_Forum_Section_SectionService"/>
+        <service id="ForumMessage" class="HM_Forum_Message_MessageService"/>
+        <service id="ForumShowed" class="HM_Forum_Showed_ShowedService"/>
+        
+        <service id="ForumCategory" class="HM_Forum_Category_CategoryService"/>
+       
+        <service id="Graduated" class="HM_Role_GraduatedService"/>
+        <service id="Group" class="HM_Group_GroupService"/>
+        <service id="GroupAssign" class="HM_Group_Assign_AssignService"/>
+        <service id="Guest" class="HM_Role_GuestService"/>
+        <service id="Help" class="HM_Help_HelpService"/>
+		<service id="Holiday" class="HM_Holiday_HolidayService"/>
+        <service id="Htmlpage" class="HM_Htmlpage_HtmlpageService"/>
+        <service id="HtmlpageGroup" class="HM_Htmlpage_Group_GroupService"/>
+		
+		<service id="Hostel" class="HM_Hostel_HostelService"/>
+		<service id="HostelClaims" class="HM_Hostel_Claims_ClaimsService"/>		
+		
+        <service id="Info" class="HM_Info_InfoService"/>
+		<service id="Infoblock" class="HM_Infoblock_InfoblockService"/>
+        <service id="InfoblockFact" class="HM_Infoblock_Fact_FactService"/>
+        <service id="Interview" class="HM_Interview_InterviewService"/>
+		<service id="InterviewFile" class="HM_Interview_File_FileTable"/>
+		<service id="Internships" class="HM_Internships_InternshipsService"/>
+		<service id="Kbase" class="HM_Kbase_KbaseService"/>
+        <service id="KbaseSource" class="HM_Kbase_Source_SourceService"/>		
+		<service id="KbaseSourceCsv" class="HM_Kbase_Source_Csv_CsvService">
+            <argument>HM_Kbase_Source_Csv_CsvMapper</argument>
+            <argument>HM_Kbase_Source_SourceModel</argument>
+            <argument>HM_Kbase_Source_Csv_CsvAdapter</argument>
+        </service>				
+		<service id="Languages" class="HM_Languages_LanguagesService"/>
+		<service id="LanguagesSurvey" class="HM_Languages_Survey_SurveyService"/>
+		<service id="LanguagesResult" class="HM_Languages_Result_ResultService"/>
+		<service id="Lang" class="HM_Lang_LangService"/>
+		<service id="LanguagesAssign" class="HM_Languages_Assign_AssignService"/>
+		<service id="LanguagesAssignBase" class="HM_Languages_Assign_Base_BaseService"/>
+        <service id="Ldap" class="HM_Ldap"/>
+        <service id="Lesson" class="HM_Lesson_LessonService"/>
+        <service id="LessonAssign" class="HM_Lesson_Assign_AssignService"/>
+        <service id="LessonJournal" class="HM_Lesson_Journal_JournalService"/>
+        <service id="LessonJournalResult" class="HM_Lesson_Journal_Result_ResultService"/>
+        <service id="LessonEvaluationSettings" class="HM_Lesson_Evaluation_EvaluationSettingsService"/>
+        <service id="LessonEvaluators" class="HM_Lesson_Evaluation_EvaluatorsService"/>
+        <service id="LessonAssignMarkHistory" class="HM_Lesson_Assign_MarkHistory_MarkHistoryService"/>
+        <service id="LessonAssignTutor" class="HM_Lesson_Assign_Tutor_TutorService"/>
+        <service id="LessonDeanPoll" class="HM_Lesson_Poll_Dean_DeanService"/>
+        <service id="LessonAssignESTrigger" class="HM_Lesson_Assign_LessonAssignESTrigger"></service>
+        <service id="LessonDeanPollLeader" class="HM_Lesson_Poll_Dean_Leader_LeaderService">
+            <argument>HM_Lesson_Poll_Dean_DeanMapper</argument>
+            <argument>HM_Lesson_Poll_Dean_Leader_LeaderModel</argument>
+            <argument>HM_Lesson_Poll_Dean_DeanTable</argument>
+        </service>
+        <service id="LessonDeanPollTeacher" class="HM_Lesson_Poll_Dean_Teacher_TeacherService">
+            <argument>HM_Lesson_Poll_Dean_DeanMapper</argument>
+            <argument>HM_Lesson_Poll_Dean_Teacher_TeacherModel</argument>
+            <argument>HM_Lesson_Poll_Dean_DeanTable</argument>
+        </service>
+        <service id="LessonDeanPollStudent" class="HM_Lesson_Poll_Dean_Student_StudentService">
+            <argument>HM_Lesson_Poll_Dean_DeanMapper</argument>
+            <argument>HM_Lesson_Poll_Dean_Student_StudentModel</argument>
+            <argument>HM_Lesson_Poll_Dean_DeanTable</argument>
+        </service>        
+        <service id="LessonDeanPollAssign" class="HM_Lesson_Poll_Dean_Assign_AssignService"/>
+        <service id="Learningsubjects" class="HM_Learningsubjects_LearningsubjectsService"/>        
+        <service id="LearningsubjectsCsv" class="HM_Learningsubjects_Csv_CsvService">
+            <argument>HM_Learningsubjects_Csv_CsvMapper</argument>
+            <argument>HM_Learningsubjects_LearningsubjectsModel</argument>
+            <argument>HM_Learningsubjects_Csv_CsvAdapter</argument>
+        </service>
+        <service id="Library" class="HM_Library_Item_ItemService"/>
+        <service id="Like" class="HM_Like_LikeService"/>
+        <service id="LikeUser" class="HM_Like_User_UserLikeService"/>
+        <service id="Log" class="HM_Log_LogService"/>
+        <service id="Mailer" class="Zend_Mail"/>
+        <service id="Material" class="HM_Module_Material_MaterialService"/>
+        <service id="Message" class="HM_Message_MessageService"/>
+        <service id="Messenger" class="HM_Messenger">
+            <call method="attach">
+                <argument type="service">
+                    <service class="HM_Messenger_Service_Log"></service>
+                </argument>
+            </call>
+            <call method="attach">
+                <argument type="service">
+                    <service id="PersonalMessageESTrigger" class="HM_Message_MessageESTrigger"></service>
+                </argument>
+            </call>
+            <call method="attach">
+                <argument type="service">
+                    <service class="HM_Messenger_Service_Mail"></service>
+                </argument>
+            </call>
+        </service>
+        <service id="Manager" class="HM_Role_ManagerService"/>
+        <service id="MarkStrategyFactory" class="HM_Mark_StrategyFactory"/>
+        <service id="MarkWeightStrategy" class="HM_Mark_MarkWeightStrategy"/>
+        <service id="MarkBrsStrategy" class="HM_Mark_MarkBrsStrategy"/>
+		<service id="Marksheet" class="HM_Marksheet_MarksheetService"/>
+        <service id="MetadataGroup" class="HM_Metadata_Group_GroupService"/>
+        <service id="MetadataItem" class="HM_Metadata_Item_ItemService"/>		
+		<service id="MyPayments" 		class="HM_MyPayments_MyPaymentsService" />
+		<service id="MyPaymentsPlan" 	class="HM_MyPayments_Plan_PlanService" />
+		<service id="MyPaymentsInfo" 	class="HM_MyPayments_Info_InfoService" />
+		<service id="MyPaymentsDetails" class="HM_MyPayments_Details_DetailsService" />
+		<service id="MilitaryInfo" class="HM_Military_Info_InfoService"/>		
+        <service id="News" class="HM_News_NewsService"/>
+        <service id="Notice" class="HM_Notice_NoticeService" />
+        <service id="OauthApp" class="HM_Oauth_App_AppService"/>
+        <service id="OauthToken" class="HM_Oauth_Token_TokenService"/>
+        <service id="OauthNonce" class="HM_Oauth_Nonce_NonceService"/>
+        <service id="Option" class="HM_Option_OptionService"/>
+        <service id="Orgstructure" class="HM_Orgstructure_OrgstructureService"/>
+        <service id="OrgstructureOd" class="HM_Orgstructure_Od_OdService">
+            <argument>HM_Orgstructure_Od_OdMapper</argument>
+            <argument>HM_Orgstructure_OrgstructureModel</argument>
+            <argument>HM_Orgstructure_Od_OdAdapter</argument>
+        </service>
+        <service id="OrgstructureCsv" class="HM_Orgstructure_Csv_CsvService">
+            <argument>HM_Orgstructure_Csv_CsvMapper</argument>
+            <argument>HM_Orgstructure_OrgstructureModel</argument>
+            <argument>HM_Orgstructure_Csv_CsvAdapter</argument>
+        </service>
+        <service id="OrgstructureUnit" class="HM_Orgstructure_Unit_UnitService"/>		
+		<service id="Payment" class="HM_Payment_PaymentService"/>
+		<service id="PaymentCode" class="HM_Payment_Code_CodeService"/>		
+        <service id="Period" class="HM_Period_PeriodService"/>
+        <service id="Permission" class="HM_Permission_PermissionService"/>
+        <service id="Poll" class="HM_Poll_PollService"/>
+        <service id="PollAnswer" class="HM_Poll_Answer_AnswerService" />
+        <service id="PollFeedback" class="HM_Poll_Feedback_FeedbackService"/>
+        <service id="PollResult" class="HM_Poll_Result_ResultService" />
+        <service id="Ppt2Swf" class="HM_Ppt2swf_Ppt2swfService"/>
+        <service id="Provider" class="HM_Provider_ProviderService"/>
+        <service id="Process" class="HM_Process_ProcessService"/>
+        <service id="Programm" class="HM_Programm_ProgrammService"/>
+        <service id="ProgrammCsv" class="HM_Programm_Csv_CsvService">
+            <argument>HM_Programm_Csv_CsvMapper</argument>
+            <argument>HM_Programm_ProgrammModel</argument>
+            <argument>HM_Programm_Csv_CsvAdapter</argument>
+        </service>
+        <service id="ProgrammUser" class="HM_Programm_User_UserService"/>
+        <service id="ProgrammEvent" class="HM_Programm_Event_EventService"/>
+        <service id="ProgrammEventUser" class="HM_Programm_Event_User_UserService"/>
+        <service id="Question" class="HM_Question_QuestionService" />
+        <service id="QualificationWork" class="HM_QualificationWork_QualificationWorkService" />
+        <service id="QualificationWorkAgreement" class="HM_QualificationWork_Agreement_AgreementService" />
+        <!--service id="Question_old" class="HM_Module_Test_Question_QuestionService"/-->
+        <service id="QuestionFile" class="HM_Module_Test_Question_File_FileService"/>
+        <service id="QuestionFiles" class="HM_Question_Files_FilesService"/>
+        <service id="QuestionResult" class="HM_Question_Result_ResultService"/>
+        <service id="QuestionTxt" class="HM_Question_Txt_TxtService">
+            <argument>HM_Question_Txt_TxtMapper</argument>
+            <argument>HM_Question_QuestionModel</argument>
+            <argument>HM_Question_Txt_TxtAdapter</argument>
+        </service>
+        <service id="Recruits" class="HM_Recruits_RecruitsService"/>        
+		<service id="Report" class="HM_Report_ReportService"/>
+        <service id="ReportRole" class="HM_Report_Role_RoleService"/>
+        <service id="Resource" class="HM_Resource_ResourceService"/>
+        <service id="ResourceCsv" class="HM_Resource_Csv_CsvService">
+            <argument>HM_Resource_Csv_CsvMapper</argument>
+            <argument>HM_Resource_ResourceModel</argument>
+            <argument>HM_Resource_Csv_CsvAdapter</argument>
+        </service>		
+        <service id="ResourceRevision" class="HM_Resource_Revision_RevisionService"/>
+        <service id="RoleCustom" class="HM_Role_Custom_CustomService"/>
+        <service id="RoleCustomAssign" class="HM_Role_Custom_Assign_AssignService"/>
+        <service id="RoleCustomAction" class="HM_Role_Custom_Action_ActionService"/>
+        <service id="Room" class="HM_Room_RoomService"/>
+		<service id="RecordCard" class="HM_RecordCard_RecordCardService"/>		        
+        <service id="Scale" class="HM_Scale_ScaleService"/>
+        <service id="ScaleValue" class="HM_Scale_Value_ValueService"/>				
+        <service id="ScormTrack" class="HM_Scorm_Track_TrackService"/>
+        <service id="ScormReport" class="HM_Scorm_Report_ReportService"/>
+        <service id="Section" class="HM_Section_SectionService"/>
+        <service id="Session" class="HM_Session_SessionService"/>
+        <service id="Speciality" class="HM_Speciality_SpecialityService"/>
+        <service id="SpecialityAssign" class="HM_Speciality_Assign_AssignService"/>
+        <service id="SpecialityCourse" class="HM_Speciality_Course_CourseService"/>
+        <service id="SpecialityGroup" class="HM_Speciality_Group_GroupService"/>
+        <service id="State" class="HM_State_StateService"/>
+        <service id="StatisticTestQuestion" class="HM_Module_Test_Question_Statistic_StatisticService"/>
+        <service id="StatisticTest" class="HM_Module_Test_Statistic_StatisticService"/>
+        <service id="Student" class="HM_Role_StudentService"/>
+        <service id="Subject" class="HM_Subject_SubjectService"/>
+        <service id="SubjectCsv" class="HM_Subject_Csv_CsvService">
+            <argument>HM_Subject_Csv_CsvMapper</argument>
+            <argument>HM_Subject_SubjectModel</argument>
+            <argument>HM_Subject_Csv_CsvAdapter</argument>
+        </service>
+		<service id="StudentNotificationAgreement" class="HM_StudentNotification_Agreement_AgreementService"/>
+		<service id="StudentPayment" class="HM_StudentPayment_StudentPaymentService"/>
+        <service id="SubjectClassifier" class="HM_Subject_Classifier_ClassifierService"/>
+        <service id="SubjectCourse" class="HM_Subject_Course_CourseService"/>
+        <service id="SubjectMark" class="HM_Subject_Mark_MarkService"/>
+		<service id="SubjectMarkConfirm" class="HM_Subject_Mark_Confirm_ConfirmService"/>
+		<service id="SubjectGroup" class="HM_Subject_Group_GroupService"/>
+		<service id="SubjectUser" class="HM_Subject_User_UserService"/>
+        <service id="SubjectPoll" class="HM_Subject_Poll_PollService"/>
+        <service id="SubjectRoom" class="HM_Subject_Room_RoomService"/>
+        <service id="SubjectTest" class="HM_Subject_Test_TestService"/>
+        <service id="SubjectTask" class="HM_Subject_Task_TaskService"/>
+		<service id="SubjectExercise" class="HM_Subject_Exercise_ExerciseService"/>
+        <service id="SubjectResource" class="HM_Subject_Resource_ResourceService"/>
+		<service id="SubjectDialog" class="HM_Subject_Dialog_DialogService"/>
+		<service id="SubjectDialogFile" class="HM_Subject_Dialog_File_FileService"/>
+        <service id="Subscription" class="HM_Subscription_SubscriptionService"/>
+        <service id="SubscriptionChannel" class="HM_Subscription_Channel_ChannelService"/>
+        <service id="SubscriptionEntry" class="HM_Subscription_Entry_EntryService"/>
+        <service id="Supervisor" class="HM_Role_SupervisorService"/>
+        <service id="SupervisorResponsibility" class="HM_Role_Supervisor_Responsibility_ResponsibilityService"/>
+        <service id="Supplier" class="HM_Supplier_SupplierService"/>
+        <service id="Survey" class="HM_Survey_SurveyService"/>
+        <service id="SurveyQuestions" class="HM_Survey_Questions_QuestionsService"/>
+        <service id="SurveyAnswers" class="HM_Survey_Answers_AnswersService"/>
+        <service id="Tag" class="HM_Tag_TagService" />
+        <service id="Task" class="HM_Task_TaskService" />
+        <service id="TagRef" class="HM_Tag_Ref_RefService" />
+        <service id="TagRefBlog" class="HM_Tag_Ref_Blog_BlogService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Blog_BlogModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefResource" class="HM_Tag_Ref_Resource_ResourceService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Resource_ResourceModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefCourse" class="HM_Tag_Ref_Course_CourseService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Course_CourseModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefTest" class="HM_Tag_Ref_Test_TestService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Test_TestModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefExercises" class="HM_Tag_Ref_Exercises_ExercisesService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Exercises_ExercisesModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefPoll" class="HM_Tag_Ref_Poll_PollService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Poll_PollModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefTask" class="HM_Tag_Ref_Task_TaskService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_Task_TaskModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="TagRefUser" class="HM_Tag_Ref_User_UserService">
+            <argument>HM_Tag_Ref_RefMapper</argument>
+            <argument>HM_Tag_Ref_User_UserModel</argument>
+            <argument>HM_Tag_Ref_RefTable</argument>
+        </service>
+        <service id="Timetable" class="HM_Timetable_TimetableService"/>
+        <service id="TimetableAdditional" class="HM_Timetable_Additional_AdditionalService"/>
+        <service id="Teacher" class="HM_Role_TeacherService"/>
+        <service id="Techsupport" class="HM_Techsupport_TechsupportService"/>
+        <service id="Test" class="HM_Test_TestService" />
+        <service id="TestAbstract" class="HM_Test_Abstract_AbstractService" />
+		<service id="TestFeedback" class="HM_Test_Feedback_FeedbackService" />
+        <service id="TestFeedbackAnswer" class="HM_Test_Feedback_Answer_AnswerService" />
+        <service id="TestFeedbackQuestion" class="HM_Test_Feedback_Question_QuestionService" />
+        <service id="TestFeedbackTest" class="HM_Test_Feedback_Test_TestService" />
+        <service id="TestAttempt" class="HM_Test_Attempt_AttemptService" />
+        <service id="TestNeed" class="HM_Question_Need_NeedService" />
+        <service id="TestTheme" class="HM_Question_Theme_ThemeService" />
+        <service id="TestQuestion" class="HM_Test_Question_QuestionService" />
+        <service id="TestResult" class="HM_Test_Result_ResultService" />
+        <service id="Tutor" class="HM_Role_TutorService"/>
+		<service id="Ticket" class="HM_Ticket_TicketService"/>        
+		<service id="TicketRequisite" class="HM_Ticket_Requisite_RequisiteService"/>        
+		<service id="TicketCost" class="HM_Ticket_Cost_CostService"/>        
+		<service id="TicketPayment" class="HM_Ticket_Payment_PaymentService"/>        
+        <service id="Update" class="HM_Update_UpdateService" />
+        <!--service id="Test" class="HM_Module_Test_TestService"/-->
+        <!--service id="TestQuestionRequired" class="HM_Module_Test_Question_Required_RequiredService"/-->
+        <service id="User" class="HM_User_UserService"/>
+        <service id="UserAd" class="HM_User_Ad_AdService">
+            <argument>HM_User_Ad_AdMapper</argument>
+            <argument>HM_User_UserModel</argument>
+            <argument>HM_User_Ad_AdAdapter</argument>
+        </service>
+		<service id="UserInfoConfirm" class="HM_User_Info_Confirm_ConfirmService"/>
+        <service id="UserStudentCsv" class="HM_User_Csv_Student_CsvService">
+            <argument>HM_User_Csv_Student_CsvMapper</argument>
+            <argument>HM_User_UserModel</argument>
+            <argument>HM_User_Csv_Student_CsvAdapter</argument>
+        </service>
+        <service id="UserTutorCsv" class="HM_User_Csv_Tutor_CsvService">
+            <argument>HM_User_Csv_Tutor_CsvMapper</argument>
+            <argument>HM_User_UserModel</argument>
+            <argument>HM_User_Csv_Tutor_CsvAdapter</argument>
+        </service>
+        <service id="UserPassword" class="HM_User_Password_PasswordService"/>
+        <service id="UserLoginLog" class="HM_User_Loginlog_LoginlogService"/>
+		<service id="UserInfo" class="HM_User_Info_InfoService"/>
+        <service id="Unmanaged" class="HM_Unmanaged_UnmanagedService" />
+        <service id="VideochatUser" class="HM_Videochat_User_UserService" />
+		<service id="Volunteer" class="HM_Volunteer_VolunteerService"/>
+        <service id="Webinar" class="HM_Webinar_WebinarService" />
+        <service id="WebinarRecords" class="HM_Webinar_Records_RecordsService" />
+        <service id="WebinarFiles" class="HM_Webinar_Files_FilesService" />
+        <service id="WebinarUser" class="HM_Webinar_User_UserService" />
+        <service id="WebinarChat" class="HM_Webinar_Chat_ChatService" />
+        <service id="WebinarHistory" class="HM_Webinar_History_HistoryService" />
+        <service id="WebinarHistoryCurrent" class="HM_Webinar_History_Current_CurrentService" />
+        <service id="WikiArticles" class="HM_Wiki_WikiArticlesService"/>
+        <service id="WikiArchive" class="HM_Wiki_WikiArchiveService"/>
+        <service id="Blog" class="HM_Blog_BlogService" />
+        <!-- <service id="Tag" class="HM_Tag_TagService" />-->
+        <!-- <service id="TagRefBlog" class="HM_Tag_TagRefBlogService" />-->
+        <service id="WikiArticles" class="HM_Wiki_WikiArticlesService"/>
+        <service id="WikiArchive" class="HM_Wiki_WikiArchiveService"/>
+        <service id="StorageFileSystem" class="HM_Storage_StorageFileSystemService"/>
+        <service id="StudyGroup" class="HM_StudyGroup_StudyGroupService"/>
+        <service id="StudyGroupCsv" class="HM_StudyGroup_Csv_CsvService">
+            <argument>HM_StudyGroup_Csv_CsvMapper</argument>
+            <argument>HM_StudyGroup_StudyGroupModel</argument>
+            <argument>HM_StudyGroup_Csv_CsvAdapter</argument>
+        </service>
+        <service id="StudyGroupUsers" class="HM_StudyGroup_Users_UsersService"/>
+        <service id="StudyGroupAuto" class="HM_StudyGroup_Auto_AutoService"/>
+        <service id="StudyGroupCustom" class="HM_StudyGroup_Custom_CustomService"/>
+        <service id="StudyGroupCourse" class="HM_StudyGroup_Course_CourseService"/>
+        <service id="StudyGroupProgramm" class="HM_StudyGroup_Programm_ProgrammService"/>
+		<service id="StudentCertificate" class="HM_StudentCertificate_StudentCertificateService" />
+		<service id="StudentCertificateStatement" class="HM_StudentCertificate_Statement_StatementService" />
+		<service id="StudentDebt" class="HM_StudentDebt_StudentDebtService" />
+		<service id="StudentDebtSchedule" class="HM_StudentDebt_Schedule_ScheduleService" />
+		<service id="StudyCard" class="HM_StudyCard_StudyCardService"/>			
+        <service id="OrgstructureList" class="HM_Orgstructure_List_ListService"/>
+        <service id="Mailer" class="HM_Mailer">
+            <call method="init"></call>
+        </service>
+		<service id="Workload" class="HM_Workload_WorkloadService"/>
+		<service id="WorkloadForum" class="HM_Workload_Forum_ForumService"/>
+		<service id="WorkloadSheet" class="HM_Workload_Sheet_SheetService"/>		
+    </services>
+</container>

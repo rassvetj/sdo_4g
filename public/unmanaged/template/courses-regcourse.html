@@ -1,0 +1,126 @@
+    <input type=hidden name='Action' value='reg'>
+        <table id=newmessage  width=100%  cellspacing=0  cellpadding=0 class=hidden2>
+        <tr class=questt>
+        <td  class=tabheader >
+        <table width=100%  cellspacing=0 cellpadding=0   class="shedaddform" >
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+          </tr>
+          <tr id=qq>
+            <td width=15 height="17"></td>
+            <td class=cHilight height="17">{?t?}Название курса{?/t?} <font color=red>V</font></td>
+            <td  class=cHilight height="17"></td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td colspan=3>
+              <input type="text" class=lineinput size="25" name="Title" style="width:92%">
+            </td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td class=cHilight>{?t?}доступ{?/t?} <font color=red>V</font></td>
+            <td  class=cHilight height="17">{?t?}описание{?/t?}</td>
+          </tr>
+
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td>
+              <select  class=lineinput style="border-style:0;" name="TypeDes">
+                <option value="0">{?t?}Свободный{?/t?}</option>
+                <option value="1">{?t?}Регистрация преподавателем{?/t?}</option>
+                <option value="2">{?t?}Регистрация учебной администрацией{?/t?}</option>
+              </select>
+            </td>
+            <td valign="top" rowspan="6">
+             [DESCRIPTION]
+              <!--textarea class=lineinput style="height:135px; width: 250px; " name="Description"></textarea-->
+            </td>
+          </tr>
+          <tr>
+            <td height=15>&nbsp;</td>
+            <td class=cHilight>              
+            <input type="checkbox" name="ch_add_teacher" value="1" onClick="javascript:document.getElementById('createby').disabled=!this.checked;str=(!this.checked)?'hidden':'';document.getElementById('span_createby').style.visibility=str;" checked>
+              {?t?}зарегистрировать ведущего преподавателя{?/t?}             </td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td class=cHilight>eМail {?t?}ведущего преподавателя{?/t?}<span id="span_createby" style="visibility:''"><font color=red>V</font></span></td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td>
+              <input type="text" class=lineinput size="25" name="createby" id="createby">
+            </td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td class=cHilight>{?t?}цена (у.е.{?/t?})</td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td>
+              <input type="text"  class=lineinput size="25" name="Fee">
+            </td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+          </tr>
+           <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+          </tr>
+          <tr>
+            <td width=15></td>
+            <td class=cHilight>{?t?}дата начала{?/t?}</td>
+            <td class=cHilight>{?t?}дата окончания{?/t?}</td>
+          </tr>
+          <tr>
+            <td width=15></td>
+            <td valign=middle>
+              <select  class=lineinput style="border-style:0;" name="day">
+        [DAY]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="month">
+                [MONTH]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="year">
+        [YEAR]
+              </select>
+            </td>
+            <td valign=middle>
+              <select  class=lineinput style="border-style:0;" name="day2">
+        [DAY2]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="month2">
+        [MONTH2]
+              </select>
+              <select  class=lineinput style="border-style:0;" name="year2">
+        [YEAR2]
+              </select>
+      {?t?}длительность{?/t?} <input type=text size=3 value='[LONGTIME]' name=longtime> {?t?}дней{?/t?}
+            </td>
+          </tr>
+          <tr>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+            <td height=15><img src="images/spacer.gif" width=1 height=1></td>
+          </tr>
+
+        </table>
+     </td>
+    </tr>
+        <tr>
+     <td align="right" class="shedaddform">
+        <input type="image" id="add_schedule_scEnd" onMouseOver="this.src='images/send_.gif';" onMouseOut="this.src='images/send.gif';" src="images/send.gif" align="right" alt="{?t?}применить{?/t?}" border=0>
+     </td>
+    </tr>
+        <tr>
+     <td height=5>
+        <img src="images/spacer.gif" width="1" height="1">
+    </td>
+    </tr>
+        </table>

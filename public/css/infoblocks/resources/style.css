@@ -1,0 +1,80 @@
+#resources-select-group .subclassifier{
+    border-bottom: 1px solid #bbb;
+}
+.resources-control {
+    width: 22%;
+    margin-right: 1%;
+    float: left;
+    padding-bottom: .8em;
+}
+.ie7 .resources-control {
+    display: inline;
+    zoom: 1;
+}
+.resources-control select {
+    width: 100%;
+    white-space: nowrap;
+}
+#resourcesBlock .export-button {
+    float: right;
+    padding: .4em !important;
+    margin: 0;
+}
+#resourcesBlock .export-button .button-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}
+#resources-select-type-times {
+    background-color: #BED682;
+}
+#resources-select-type-sessions {
+    background-color: #D7B3C7;
+}
+.infoblock-resourcesBlock .infoblock-resourcesBlock-input{
+	overflow: hidden;
+}
+.infoblock-resourcesBlock .infoblock-resourcesBlock-input div{
+	white-space: nowrap;
+	margin-right: 2px;
+	overflow: hidden;
+	display:inline-block;
+}
+.infoblock-resourcesBlock .infoblock-resourcesBlock-dates {
+	width: 300px;
+}
+.infoblock-resourcesBlock .infoblock-resourcesBlock-input select {
+	margin: 4px 0;
+}
+.infoblock-resourcesBlock .infoblock-resourcesBlock-dates p {
+	margin: 0;
+}
+.infoblock-resourcesBlock .infoblock-resourcesBlock-dates input {
+	width: 75px;
+}
+.resources-control-block{
+	padding-right: 35px;
+}
+.resources-control-block-left{
+	float:left;
+}
+.resources-control-block-right{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.resources-control {
+    display:inline-block;
+    margin-right: 20px;
+    padding-bottom: 0.8em;
+    min-width: 70px;
+    width:35%;
+}
+.resources-empty-message {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 10px;
+	text-align: center;
+}

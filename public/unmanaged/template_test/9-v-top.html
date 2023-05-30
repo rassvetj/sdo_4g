@@ -1,0 +1,21 @@
+<script type="text/javascript" src="<?= $GLOBALS['sitepath']?>/js/lib/swfobject/latest/swfobject.js"></script>
+<div class="shedtitle">
+	<FONT SIZE=+1><?=_("Вопрос")?> № <?=$v_number?>: <?=nl2br($v_text)?></FONT>
+	<br />
+	<? if(strlen($vopros['qtema'])) { ?>
+		<FONT SIZE=1>&nbsp;&nbsp;<?=_("Тема")?>: <?=$vopros['qtema']?></FONT>
+		<br />
+	<? } ?>
+	<FONT SIZE=1>&nbsp;&nbsp;<?=_("Диапазон баллов: от")?> <?=$vopros['balmin']?> <?=_("до")?> <?=$vopros['balmax']?></FONT>
+</div>
+<?
+    if($vopros['timetoanswer']) {
+        echo "<br/>&nbsp;&nbsp;<font size=1>"._("Время прохождения вопроса:")." <span id='timetoanswer_spent'>0</span>&nbsp;"._("мин.")."</font>";
+        echo "<br/>&nbsp;&nbsp;<font size=1 color=red>"._("Осталось для прохождения вопроса:")." <span id='timetoanswer_remain'>".$vopros['timetoanswer']."</span>&nbsp;"._("мин.")."</font>";
+        echo "<script>check_question_timetoanswer(1);</script>";
+    }
+?>
+<?
+   if (tdebug)
+      echo " <font color=white>&nbsp; <tt>$vopros[kod], type=$vopros[qtype]</tt> </font>";
+?>

@@ -1,0 +1,1 @@
+<?php if (is_array($this->data)):?><ul class="report-list report-list-<?php echo $this->class?>"><?php foreach ($this->data as $key => $value):?><li><span class="report-list-key"><?php echo $key?></span><?php if (strlen($value)):?>: <span class="report-list-value"><?php echo $value?></span><?php endif;?></li><?php endforeach;?></ul><?php endif;?>

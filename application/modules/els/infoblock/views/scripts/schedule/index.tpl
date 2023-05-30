@@ -1,0 +1,1 @@
+<?php echo $this->ScheduleBlock(null, null, array('begin' => $this->begin, 'end' => $this->end, 'ajax' => true))?>

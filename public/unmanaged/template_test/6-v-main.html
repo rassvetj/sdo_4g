@@ -1,0 +1,78 @@
+<!-- {?t?}вопрос{?/t?} -->
+<table border=0 cellspacing=0 cellpadding=0 class="tests_body_main">
+<tr>
+<th colspan="2" class="test">
+<?=(TEST_TYPE == _('Задание')) ? _("Вариант задания") :_("Вопрос");?> № <?=$v_number?>
+</th>
+</tr>
+<tr>
+<td colspan="3" class="body_main_question">
+<? if(strlen($vopros['qtema'])) { ?><?=_("Тема")?>: <?=$vopros['qtema']?><br /><? } ?><?=_("Диапазон баллов: от")?> <?=$vopros['balmin']?> <?=_("до")?> <?=$vopros['balmax']?><br>
+<span class="h1"><? echo $v_vopros;?></span>
+<?
+   if (tdebug)
+      echo " <font color=white>&nbsp; <tt>$vopros[kod], type=$vopros[qtype]</tt> </font>";
+?>
+</td>
+</tr>
+<tr style="height:24px;">
+<td></td>
+</tr>
+</table>
+<?php if (empty($_REQUEST['all']))
+{
+?>
+    <table width=100% border=0 cellspacing=1 cellpadding=0 class="brdr">
+    <tr class="tests">
+    <td>
+    <textarea type=text name="form[<?=$number?>][otvet]" rows=7 cols=60 style='width: 100%; height: 150px' class="lineinput"><?=$answer?></textarea>
+    <div class="attach_file"><?=_("Присоединить файл (не обязательно)")?>: </div>
+    <div class="attach_file_select">
+    <input name="userfile_<?=$number?>" type="file" class="lineinput">
+<?php
+}
+?>
+<?php if (!empty($_REQUEST['all']))
+{
+?>
+<hr>
+<table width=100% border=0 cellspacing=1 cellpadding=0 class="brdr" >
+    <tr class="tests">
+        <td>
+            <ol>
+                <div style='height:80px; padding-bottom:10px;'>
+                <?php
+                foreach($answer_data as $answer_data)
+                {
+                    echo"<li>".$answer_data."</li><hr>";
+                }
+                echo '
+                </div>
+            </ol>
+        </td>
+    </tr>
+</table>';
+                exit;
+                ?>
+<?php
+}
+?>
+<?php
+if (isset($vopros['otvets']) && $filename) {
+?> </div>
+<div class="file_select_attach"><?=_("Присоединенный файл")?>: <b><?=$filename?></b></div>
+<input name="dont_delete_attach" value="1" type="hidden">
+<input name="dont_delete_attach" value="0" type="checkbox"> <small><?=_("удалить")?></small>
+<?php
+}
+?>
+
+</td>
+</tr>
+</table>
+
+<script>
+// {?t?}отключить проверку пропущенных вопросов{?/t?}
+//document.m.ischecked_<?=$number?>.value=1;
+$("form[name='m']").last().find('#ischecked_<?=$number?>').val(1);
+</script>

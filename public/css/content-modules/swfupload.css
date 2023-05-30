@@ -1,0 +1,20 @@
+.swfupload-control p{ margin:10px 0px; font-size:11px; color: #1171B4; }  
+.swfupload-control #log{ margin:0; padding:0; width:360px; list-style-type: none;}  
+.swfupload-control #log li{ /*list-style-position:inside; margin:2px; border:1px solid #ccc;*/ padding-bottom:10px; font-size:12px;  
+  font-family:Arial, Helvetica, sans-serif; color:#3F5C6E; background:#fff; /*position:relative;*/} 
+/*.swfupload-control #log li.success{ border:1px solid #339933; background:#ccf9b9; } */
+  
+   
+.swfupload-control #log li .progressbar{width: 250px; border-top:1px solid #FFFFFF; height:17px; background:#E0E1E2; float:left;}  
+.swfupload-control #log li .progress{ background:#ADC4D2; width:0%; height:17px; }  
+.swfupload-control #log li .progress span{ padding-left: 3px; text-align: middle; white-space: nowrap !important;} 
+.swfupload-control #log li .progress span.progressvalue {position: relative; float:right; padding-top: 1px; padding-right: 3px; text-align: middle;}
+/*.swfupload-control #log li .progress span.progressvalue img {cursor:pointer; position: relative; float:left; padding-right: 0px;}*/
+
+.swfupload-control #log li p{ margin:0; line-height:18px; float: right; text-align: left;} 
+.swfupload-control #log li p.status span{position:relative; right:35px; bottom:2px;}
+.swfupload-control #log li p.status span.wait{position:relative; right:28px; bottom:0px;}
+.swfupload-control #log li p.status span img{position:relative; top:4px;}
+.swfupload-control #log li p.status span.done {position:relative; right: 92px;}   
+.swfupload-control #log li div.progressbar img{float:right; position:relative; top:1px; right:1px;  /*line-height: 17px;*/
+  /*background:url('../../js/swfupload/cancel.png') no-repeat;*/ cursor:pointer; }

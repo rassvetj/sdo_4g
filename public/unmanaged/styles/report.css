@@ -1,0 +1,36 @@
+.print_report_table {
+
+font-family: Arial;
+font-size: 11px;
+color: black;
+border-left: 1px solid black;
+border-top: 1px solid black;
+
+}
+
+.print_report_table td {
+
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+
+}
+
+.print_report_table th {
+
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+
+}
+
+.rep-print * {
+
+font-family: Arial;
+font-size: 11px;
+
+}
+
+/* для широких отчетов */
+.unmanaged-report-step3 {
+	width: 100%; 
+	overflow-x: auto;
+}

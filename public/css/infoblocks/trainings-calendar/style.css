@@ -1,0 +1,227 @@
+.infoblock-trainingsCalendarBlock .ui-datepicker-header {
+	display: none;
+}
+.infoblock-trainingsCalendarBlock .calendar-container {
+	float: left;
+	display: block;
+	border-right: 1px dotted #cfcfcf;
+	padding-right: 1em;
+	text-align: center;
+	width: 19em;
+}
+.infoblock-trainingsCalendarBlock .calendar-container .ui-datepicker {
+	width: 100%;
+}
+.infoblock-trainingsCalendarBlock .calendar-header {
+	-moz-border-radius: 2px;
+	     border-radius: 2px;
+	height: auto;
+	display: block;
+	margin-left: 1em;
+	margin-right: 1em;
+	position: relative;
+	line-height: 21px;
+	cursor: default;
+}
+.infoblock-trainingsCalendarBlock .calendar-header-next {
+	/*background: red;*/
+}
+.infoblock-trainingsCalendarBlock .calendar-header-prev {
+	/*background: green;*/
+}
+.infoblock-trainingsCalendarBlock .calendar-header > * {
+	vertical-align: middle;
+}
+.infoblock-trainingsCalendarBlock .calendar-header .els-calendar-button {
+	background: url(../../../images/infoblocks/trainings-calendar/arrow.gif) 7px 5px no-repeat;
+	width: 21px;
+	height: 21px;
+	display: block;
+	cursor: pointer;
+	
+	position: absolute;
+	top: 50%;
+	margin-top: -11px;
+}
+.infoblock-trainingsCalendarBlock .calendar-header .els-calendar-next {
+	background-position: -26px 5px;
+	right: 0;
+}
+.infoblock-trainingsCalendarBlock .calendar-header .els-calendar-prev {
+	left: 0;
+}
+.infoblock-trainingsCalendarBlock .calendar-header .els-calendar-button span {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-indent: -999em;
+	text-align: left;
+	display: block;
+}
+.infoblock-trainingsCalendarBlock .calendar-header .els-calendar-month-label {
+	display: inline;
+	line-height: 0;
+}
+.infoblock-trainingsCalendarBlock .calendar {
+	font-size: 1em;
+	height: 15em;
+	/*font-family: "Lucida Sans Typewriter", */
+}
+.infoblock-trainingsCalendarBlock .calendar .pseudo {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker {
+	border: 0 solid;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	display: inline-block !important;
+	*display: inline !important;
+	*zoom: 1;
+	vertical-align: middle;
+}
+.infoblock-trainingsCalendarBlock .calendar table {
+	width: 100%;
+}
+.infoblock-trainingsCalendarBlock .calendar td {
+	position: relative;
+}
+.infoblock-trainingsCalendarBlock .calendar td.els-trainings-has-training {
+	background-color: #e1eff9;
+}
+.infoblock-trainingsCalendarBlock .calendar td a,
+.infoblock-trainingsCalendarBlock .calendar td span {
+	text-align: center;
+	padding: 6px 4px;
+	line-height: 1em;
+	background-color: transparent;
+	color: inherit;
+}
+.infoblock-trainingsCalendarBlock .calendar th {
+	text-transform: lowercase;
+	padding-left: 0;
+	padding-right: 0;
+}
+/*.infoblock-trainingsCalendarBlock .calendar tr > th:first-of-type {
+	padding-left: 0.5em;
+}
+.infoblock-trainingsCalendarBlock .calendar tr >th:last-of-type {
+	padding-right: 0.5em;
+}*/
+.infoblock-trainingsCalendarBlock .calendar th a,
+.infoblock-trainingsCalendarBlock .calendar th span {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	color: #b0b0b0;
+	border-bottom: 1px dotted #cfcfcf;
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-current-day {
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-current-day a,
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-current-day span {
+	border: 2px solid #3c8bc3;
+	-moz-border-radius: 5px;
+	     border-radius: 5px;
+	padding: 4px 2px;
+	background-color: #3c8bc3;
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-today {
+	z-index: 1;
+}
+@-moz-document url-prefix() {
+	.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-today {
+		display: block;
+		height: -moz-calc(1em + 8px + 4px);
+	}
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-today a,
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-today span {
+	font-weight: bold;
+	border: 2px solid #d30c0c;
+	-moz-border-radius: 5px;
+	     border-radius: 5px;
+	padding: 4px 2px;
+	color: black;
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	top: -2px;
+	left: -2px;
+	line-height: 2.3em;
+	z-index: 1;
+	-webkit-box-shadow: inset 0 0 1px 1px #fff;
+	   -moz-box-shadow: inset 0 0 1px 1px #fff;
+	    -ms-box-shadow: inset 0 0 1px 1px #fff;
+	     -o-box-shadow: inset 0 0 1px 1px #fff;
+	        box-shadow: inset 0 0 1px 1px #fff;
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-current-day a,
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-current-day span {
+	color: white;
+}
+.infoblock-trainingsCalendarBlock .calendar .ui-datepicker-buttonpane {
+	display: none;
+}
+.infoblock-trainingsCalendarBlock .calendar-container .month-summary {
+	border-top: 1px dotted #cfcfcf;
+	padding-top: 0.8em;
+	/*margin-top:  0.8em;*/
+}
+
+.infoblock-trainingsCalendarBlock .trainings-list {
+	/*display: inline-block;
+	*display: inline;
+	*zoom: 1;*/
+	margin-left: 20em;
+	vertical-align: top;
+	padding-left: 1em;
+	word-wrap: break-word;
+}
+.infoblock-trainingsCalendarBlock .trainings-list h2 {
+	font-size: 1.7em;
+	letter-spacing: 0.5em;
+	margin-bottom: 0.5em;
+}
+.infoblock-trainingsCalendarBlock .trainings-list h2 a,
+.infoblock-trainingsCalendarBlock .trainings-list h2 span {
+	letter-spacing: 0;
+}
+.infoblock-trainingsCalendarBlock .trainings-list h2 span {
+	color: #8494a0;
+}
+.infoblock-trainingsCalendarBlock .trainings-list h2 span.els-calendar-date-selected {
+	color: inherit;
+}
+.infoblock-trainingsCalendarBlock .trainings-list-list {
+	overflow: auto;
+	width: 100%
+}
+.infoblock-trainingsCalendarBlock .trainings-list-list .scroll-document {
+	margin-top: -0.9em;
+	margin-bottom: -0.9em;
+	padding: 0 1em 0 0;	
+}
+.infoblock-trainingsCalendarBlock .trainings-list-list ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.infoblock-trainingsCalendarBlock .trainings-list-list li {
+	margin: 1em 0;
+}
+.infoblock-trainingsCalendarBlock .trainings-list-list li > * {
+	font-size: 1em;
+}
+.infoblock-trainingsCalendarBlock .trainings-list-list li > p {
+	margin: 0;
+}

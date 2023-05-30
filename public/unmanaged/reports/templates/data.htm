@@ -1,0 +1,23 @@
+<!-- BEGIN Body -->
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type='text/xsl' href='view.xsl'?>
+<control commandor_rank="{commandor_rank}" commandor_name="{commandor_name}">
+        {GROUPS}
+</control>
+<!-- END Body -->
+
+<!-- BEGIN Group -->
+<group group_id="{group_id}" group_name="{group_name}" aver_percent="{aver_percent}" aver_bal="{aver_bal}">
+        {STUDENTS}
+</group>
+<!-- END Group -->
+
+<!-- BEGIN Student -->
+<student stud_id="{stud_id}" stud_name="{stud_name}" stud_login="{stud_login}">
+        {MARKS}
+</student>
+<!-- END Student -->
+
+<!-- BEGIN Mark -->
+<mark ball="{ball}" type="{type}" relative="{relative}" absolute="{absolute}" count_ball="{count_ball}" percent="{percent}" date="{date}"></mark>
+<!-- END Mark -->

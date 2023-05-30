@@ -1,0 +1,2 @@
+<?php echo $this->description['user_name'] ?> выполнил(-а) новое действие в задании '<?php echo $this->description['lesson_name']; ?>' в курсе '<?php echo $this->description['course_name']; ?>'
+<?php echo $this->description['date']; ?>

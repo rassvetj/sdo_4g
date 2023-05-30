@@ -1,0 +1,157 @@
+<form method=post name="reg" action="[ACTION]">
+   <input type=hidden name="Action" value="[ACTION_NAME]">
+   <input type=hidden name="chCID" value="[CID]">
+
+        <table width=100% class=main cellspacing=0>
+          <tr id=qq>
+            <td height="17">{?t?}Название{?/t?} <font color="red">*</font></td>
+            <td colspan="2">
+              <!-- input type="text" class=lineinput size="25" name="Title" style="width:92%" value="[TITLE]" -->
+            <textarea class=s9 cols=80 rows=2 name="Title">[TITLE]</textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Доступ{?/t?}</td>
+            <td>
+              <!--select style="border-style:0;" name="TypeDes"-->
+              [TYPE_DESCR]
+              <!--/select-->
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Состояние{?/t?}</td>
+            <td valign=middle>
+              <select style="border-style:0;" name="Status">
+      [STATUS]
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Режим работы со структурой курса{?/t?}</td>
+            <td>
+                <input type="radio" id='radio1' [RADIO1] name="statusOptions" value='1' />&nbsp;<label for="radio1">{?t?}произвольный{?/t?}</label>&nbsp;&nbsp;[TT4RADIO1]<br />
+                <input type="radio" id='radio3' [RADIO3] name="statusOptions" value='3' />&nbsp;<label for="radio3">{?t?}последовательный{?/t?}</label>&nbsp;&nbsp;[TT4RADIO3]<br />
+                <input type="radio" id='radio2' [RADIO2] name="statusOptions" value='2' />&nbsp;<label for="radio2">{?t?}режим &laquo;контрольных точек&raquo;{?/t?}</label>&nbsp;&nbsp;[TT4RADIO2]
+            </td>
+          </tr>
+
+          <tr>
+            <td height="17">{?t?}Описание{?/t?}</td>
+            <td>
+              [DESCRIPTION]
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Провайдер{?/t?}</td>
+            <td valign=middle>
+              <select size="1" name="provider">
+              [PROVIDERS]
+              </select>
+            </td>
+          </tr>
+          <!--tr>
+            <td>{?t?}Цена и валюта{?/t?}</td>
+            <td>
+              <input type="text" size="10" name="Fee" value="[FEE]">
+              <select size="1" name="val">
+              [VALUTA]
+              </select>
+            </td>
+          </tr-->
+          <tr>
+            <td>{?t?}Период работы курса{?/t?}</td>
+            <td>{?t?}с{?/t?}&nbsp;
+              <select style="border-style:0;" name="day">
+      [DAY]
+              </select>
+              <select style="border-style:0;" name="month">
+        [MONTH]
+              </select>
+              <select style="border-style:0;" name="year">
+      [YEAR]
+              </select>&nbsp;{?t?}по{?/t?}&nbsp;
+              <select style="border-style:0;" name="day2">
+      [END_DAY]
+              </select>
+              <select style="border-style:0;" name="month2">
+      [END_MONTH]
+              </select>
+              <select style="border-style:0;" name="year2">
+      [END_YEAR]
+              </select>&nbsp;&nbsp;[TT4DATE1]
+              </td>
+          <tr><td>
+            {?t?}Длительность работы с курсом{?/t?}
+            </td>
+            <td>
+           <input type=text size=3 value='[LONGTIME]' name=longtime> {?t?}дней{?/t?}&nbsp;&nbsp;[TT4DATE2]
+            </td>
+          </tr>
+          <!--tr>
+            <td>{?t?}Дата регистрации{?/t?}</td>
+            <td valign=middle>
+         <input type="text" size="25" name="creatydate" value="[CREATEDATE]" readonly>
+
+            </td>
+          </tr>
+          [TEMPLATE_PUBL]
+          <tr>
+            <td valign=middle>
+              {?t?}Подразделение{?/t?}
+            </td>
+            <td valign=middle>
+             [DEPARTMENTS]
+            </td>
+          </tr>
+          <tr>
+            <td valign=middle>
+              {?t?}Преподаватели{?/t?}
+            </td>
+            <td valign=middle>
+             [TEACHERS]
+            </td>
+          </tr>
+          <tr>
+            <td valign=middle>
+              [STUDENT_ALIAS-VIN-MORE]
+            </td>
+            <td valign=middle>
+             [STUDENTS]
+            </td>
+          </tr-->
+          <tr>
+            <td valign=top >
+            {?t?}Аудитории, закрепленные за курсом{?/t?}
+<!--                                <span class=shown id=rooms1><a title="{?t?}показать список аудиторий{?/t?}"  onClick="putElem('rooms_list'); putElem('rooms2');removeElem('rooms1'); " >+ {?t?}аудитории{?/t?}</a></span>
+                                  <span class=hidden2 id=rooms2 ><a title="{?t?}скрыть список аудиторий{?/t?}" onClick="removeElem('rooms_list');  removeElem('rooms2');  putElem('rooms1');" >- {?t?}аудитории{?/t?}</a></span>
+                                  -->
+            </td>
+            <td><!-- <span class=hidden2 id=rooms_list> -->[ROOMS]<!-- </span> --></td>
+          </tr>
+          <tr>
+            <td valign=top >
+            {?t?}Принадлежность к рубрикам{?/t?}
+            </td>
+            <td><table border="0"><tr><td>[GROUPS]</td><td>[TT4GROUPS]</td></tr></table>&nbsp;&nbsp;</td>
+          </tr>
+          <!-- tr>
+            <td valign=middle colspan="2">
+              {?t?}Модули данного курса могут быть запущены из программы курса с момента начала занятий, созданных на их основе{?/t?}
+              <div style="padding-left: 10px; display: inline;">[IS_MODULE_NEED_CHECK]</div>
+            </td>
+          </tr>
+          [BOLOGNA_SYSTEM]
+          <tr>
+            <td colspan=2>{?t?}Включить последовательное прохождение курса{?/t?}
+            <div style="padding-left: 10px; display: inline;">
+            <input type="checkbox" [COURSE_SEQUENCE] name="sequence" value="1"></td>
+            </div>
+          </tr -->
+        </table>
+<table align="right">
+    <tr>
+        <td>[OKBUTTON]</td>
+        <td>[CANCELBUTTON]</td>
+    </tr>
+</table>
+</form>

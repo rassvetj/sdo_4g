@@ -1,0 +1,4096 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eLearning Server 4g\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-18 13:28+0400\n"
+"PO-Revision-Date: 2012-03-15 20:34+0400\n"
+"Last-Translator: betalb <vitaliy.ischenko@hypermethod.ru>\n"
+"Language-Team: Hypermethod IBS <office@learnware.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: ;_n_fake:1,2\n"
+"X-Poedit-Basepath: ../../poEdit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: French\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../../../temp/formula.php:30
+#: ../../../../temp/preferences.php:5
+#: ../../../../temp/roles.php:7
+#: ../../../../temp/test_attach.php:27
+#: ../../../../temp/test_end.php:18
+#: ../../../../temp/test_log.php:10
+#: ../../../../temp/test_mapedit.php:8
+#: ../../../../temp/test_otvet.php:14
+msgid "Файл '%value%' имеет недопустимое расширение"
+msgstr ""
+
+msgid "нельзя пропускать вопросы, нельзя возвращаться назад"
+msgstr ""
+
+msgid "Значение обязательно для заполнения и не может быть пустым"
+msgstr ""
+
+msgid "Пожалуйста, авторизуйтесь"
+msgstr ""
+
+msgid "Новая папка"
+msgstr ""
+
+msgid " Тема"
+msgstr ""
+
+msgid "всего "
+msgstr ""
+
+msgid "Bремя не ограничено"
+msgstr ""
+
+msgid "Вы не ответили на вопрос"
+msgstr ""
+
+msgid "из %d возможных"
+msgstr ""
+
+msgid "час."
+msgstr ""
+
+msgid " в"
+msgstr ""
+
+msgid "секунд"
+msgstr ""
+
+#: ../../../../temp/formula.php:32
+msgid "У вас нет соответствующего уровня доступа"
+msgstr ""
+
+#: ../../../../temp/formula.php:45
+msgid " оценка за задание"
+msgstr ""
+
+#: ../../../../temp/formula.php:47
+msgid " автоматическое формирование групп"
+msgstr ""
+
+#: ../../../../temp/formula.php:49
+msgid " штраф за несвоевременное выполнение занятия"
+msgstr ""
+
+#: ../../../../temp/formula.php:87
+msgid "создать формулу"
+msgstr "Créer une formule"
+
+#: ../../../../temp/formula.php:95
+#: ../../../../temp/formula.php:133
+#: ../../../../temp/formula.php:237
+msgid "Формула"
+msgstr "Formules"
+
+#: ../../../../temp/formula.php:96
+#: ../../../../temp/formula.php:134
+#: ../../../../temp/formula.php:248
+msgid "Область"
+msgstr "Domaine d'application"
+
+#: ../../../../temp/formula.php:117
+msgid "Редактировать формулу"
+msgstr "Éditer la formule"
+
+#: ../../../../temp/formula.php:118
+msgid "Вы действительно желаете удалить формулу?"
+msgstr "Êtes-vous sûr de vouloir supprimer la formule ?"
+
+#: ../../../../temp/formula.php:118
+#: ../../../../temp/formula.php:192
+msgid "Удалить формулу"
+msgstr "Supprimer la formule"
+
+#: ../../../../temp/formula.php:122
+msgid "не создано ни одной формулы"
+msgstr "Aucune formule n'a été créé"
+
+#: ../../../../temp/formula.php:156
+msgid "не создано ни одной глобальной формулы"
+msgstr "Aucune formule générale n'a été créé"
+
+#: ../../../../temp/formula.php:171
+msgid "Создание формулы"
+msgstr "Créer une formule"
+
+#: ../../../../temp/formula.php:180
+msgid "Нет такой формулы"
+msgstr ""
+
+#: ../../../../temp/formula.php:183
+#: ../../../../temp/formula.php:186
+msgid "Редактирование формулы"
+msgstr "Éditer la formule"
+
+#: ../../../../temp/formula.php:204
+msgid "Плохо"
+msgstr "Mauvais"
+
+#: ../../../../temp/formula.php:207
+msgid "ЗАЧЕТ"
+msgstr "Examen réussi"
+
+#: ../../../../temp/formula.php:210
+msgid "плохие"
+msgstr "Mauvais"
+
+#: ../../../../temp/formula.php:210
+msgid "хорошие"
+msgstr "Bons"
+
+#: ../../../../temp/formula.php:213
+msgid "Удовлетворительно"
+msgstr ""
+
+#: ../../../../temp/formula.php:213
+msgid "Отлично"
+msgstr ""
+
+#: ../../../../temp/formula.php:213
+msgid "Блестяще"
+msgstr ""
+
+#: ../../../../temp/formula.php:234
+#: ../../../../temp/formula.php:245
+msgid "вставить пример"
+msgstr "Insérer un exemple"
+
+#: ../../../../temp/formula.php:338
+#: ../../../../temp/formula.php:340
+msgid "Выбор курса для редактирования формул"
+msgstr ""
+
+#: ../../../../temp/formula.php:344
+msgid "Выберите курс:"
+msgstr "Sélectionnez un cours :"
+
+#: ../../../../temp/formula.php:366
+#: ../../../../temp/test_list.php:1659
+msgid "Ничего не выбрано"
+msgstr ""
+
+#: ../../../../temp/formula.php:367
+#: ../../../../temp/test_list.php:1662
+msgid "нет прав перейти на чужой курс"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:24
+msgid "дней до окончания"
+msgstr ""
+
+#msgid "баллов"
+#msgstr "Template"
+#: ../../../../temp/formula_calc.php:26
+#: ../../../../temp/formula_calc.php:111
+#: ../../../../temp/formula_calc.php:133
+#: ../../../../temp/formula_calc.php:205
+msgid "И"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:205
+msgid "ЕСЛИ"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:211
+msgid "выполненого"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:216
+msgid "суммарно набрано"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:221
+msgid "ср. оценка"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:233
+msgid "менее"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:241
+msgid "более"
+msgstr ""
+
+#: ../../../../temp/formula_calc.php:248
+msgid "ТО"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:57
+#: ../../../../temp/organization_exp.php:209
+#: ../../../../temp/organization_exp.php:259
+#: ../../../../temp/organization_exp.php:533
+msgid "Инициализация"
+msgstr "Initialisation"
+
+#: ../../../../temp/organization_exp.php:71
+#: ../../../../temp/organization_exp.php:274
+msgid "Нет файла данных"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:78
+#: ../../../../temp/organization_exp.php:265
+#: ../../../../temp/organization_exp.php:535
+msgid "Распаковка архива курса"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:88
+#: ../../../../temp/organization_exp.php:284
+#: ../../../../temp/organization_exp.php:547
+msgid "Обработка файлов курса"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:99
+#: ../../../../temp/organization_exp.php:288
+msgid "Нет файла структуры"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:130
+msgid "Ошибка копирования"
+msgstr "Erreur de copiage"
+
+#: ../../../../temp/organization_exp.php:146
+#: ../../../../temp/organization_exp.php:320
+msgid "Ошибки в вопросах"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:146
+msgid "Лог-файл"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:178
+#: ../../../../temp/organization_exp.php:218
+#: ../../../../temp/organization_exp.php:347
+#: ../../../../temp/organization_exp.php:421
+msgid "Данные успешно загружены"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:323
+msgid "Ошибка копирования данных"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:390
+#: ../../../../temp/organization_exp.php:437
+msgid "Невозможно разархивировать файлы"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:562
+#: ../../../../temp/organization_exp.php:564
+msgid "Данные успешно загружены."
+msgstr "Les données ont été enregistrées"
+
+#: ../../../../temp/organization_exp.php:1143
+#: ../../../../temp/test.inc.php:582
+msgid "Без названия"
+msgstr "Sans titre"
+
+#: ../../../../temp/organization_exp.php:1175
+msgid "Нет заголовка"
+msgstr ""
+
+#: ../../../../temp/organization_exp.php:1328
+msgid "Нет текста вопроса"
+msgstr ""
+
+#: ../../../../temp/preferences.php:15
+msgid "Настройки успешно сохранены"
+msgstr ""
+
+#: ../../../../temp/preferences.php:56
+msgid "Текстовое поле"
+msgstr "Champ texte"
+
+#: ../../../../temp/preferences.php:56
+msgid "Почтовый адрес"
+msgstr "Adresse postale"
+
+#: ../../../../temp/preferences.php:56
+msgid "Паспортные данные"
+msgstr "Données personnelles"
+
+#: ../../../../temp/preferences.php:56
+msgid "Дата рождения"
+msgstr "Date de naissance"
+
+#: ../../../../temp/roles.php:27
+msgid "Не указано название новой роли"
+msgstr ""
+
+#: ../../../../temp/roles.php:36
+msgid "Не выбраны базовые действия для роли"
+msgstr ""
+
+#: ../../../../temp/roles.php:51
+msgid "Не выбраны разрешенные действия для роли"
+msgstr ""
+
+#msgid "Шаг 1. Выбор базовой роли"
+#msgstr "Selection of a base role "
+#msgid "Шаг 2. Выбор функций"
+#msgstr "Change function"
+#: ../../../../temp/roles.php:93
+#: ../../../../temp/roles.php:108
+#: ../../../../temp/roles.php:126
+msgid "Шаг 3. Детализация функций"
+msgstr "Étape 3. Fonctions détaillées"
+
+#: ../../../../temp/roles.php:152
+msgid "На главную"
+msgstr "Menu principal"
+
+#: ../../../../temp/roles.php:222
+msgid "введите часть имени или логина"
+msgstr "Introduisez une partie du nom ou du login"
+
+#: ../../../../temp/rooms.php:21
+msgid "Ресурсы"
+msgstr "Ressources"
+
+#: ../../../../temp/rooms.php:45
+msgid "Редактировать аудиторию"
+msgstr "Éditer une salle de cours"
+
+#: ../../../../temp/rooms.php:47
+msgid "Вы действительно желаете удалить аудиторию?"
+msgstr "Êtes-vous sûr de vouloir supprimer la salle de cours ?"
+
+#: ../../../../temp/rooms.php:47
+msgid "Удалить аудиторию"
+msgstr "Supprimer la salle de cours"
+
+#: ../../../../temp/rooms.php:51
+#: ../../../../temp/test_log.php:691
+msgid "нет данных для отображения"
+msgstr "Pas d'informations"
+
+#: ../../../../temp/rooms.php:71
+msgid "Редактирование ресурса"
+msgstr "Éditer une source"
+
+#: ../../../../temp/rooms.php:74
+msgid "Редактирование аудитории"
+msgstr "Éditer une salle de cours"
+
+#: ../../../../temp/rooms.php:154
+msgid "Вы не указали название аудитории"
+msgstr ""
+
+#: ../../../../temp/rooms.php:161
+msgid "Введена некорректная вместимость аудитории"
+msgstr ""
+
+#: ../../../../temp/rooms.php:188
+msgid "Введённая вместимость аудитории слишком мала (В аудиторию назеначено обучение большего числа слушателей: "
+msgstr ""
+
+#: ../../../../temp/rooms.php:201
+msgid "лекционная аудитория"
+msgstr "Salle de conférence"
+
+#: ../../../../temp/rooms.php:202
+msgid "семинарская аудитория"
+msgstr "Salle de séminaire"
+
+#: ../../../../temp/rooms.php:203
+msgid "учебный класс"
+msgstr "Salle de cours"
+
+#: ../../../../temp/rooms.php:204
+msgid "лаборатория"
+msgstr "Laboratoire"
+
+#: ../../../../temp/rooms.php:205
+msgid "рабочее помещение"
+msgstr "Salle de travail"
+
+#: ../../../../temp/rooms.php:214
+msgid "недоступна"
+msgstr "Non accessible"
+
+#: ../../../../temp/rooms.php:215
+msgid "доступна"
+msgstr "Accessible"
+
+#: ../../../../temp/test.inc.php:105
+msgid "только текст"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:109
+msgid "HTML-файл"
+msgstr "fichier HTML"
+
+#: ../../../../temp/test.inc.php:111
+msgid "документ Word"
+msgstr "document Word"
+
+#: ../../../../temp/test.inc.php:112
+msgid "документ Excel"
+msgstr "document Excel"
+
+#: ../../../../temp/test.inc.php:113
+msgid "GIF картинка"
+msgstr "image GIF"
+
+#: ../../../../temp/test.inc.php:114
+msgid "JPG картинка"
+msgstr "image JPG"
+
+#: ../../../../temp/test.inc.php:115
+msgid "PNG картинка"
+msgstr "image PNG"
+
+#: ../../../../temp/test.inc.php:116
+msgid "BMP картинка"
+msgstr "image BMP"
+
+#: ../../../../temp/test.inc.php:117
+msgid "Flash-ролик"
+msgstr "Film flash"
+
+#: ../../../../temp/test.inc.php:118
+msgid "другие данные"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:153
+msgid "сейчас идет"
+msgstr "en cours"
+
+#: ../../../../temp/test.inc.php:153
+msgid "В данный момент тестирование еще не закончено"
+msgstr "Le test n'est pas encore achevé"
+
+#: ../../../../temp/test.inc.php:154
+msgid "Тестирование успешно и полностью выполнено"
+msgstr "Le test est complètement achevé"
+
+#: ../../../../temp/test.inc.php:155
+msgid "Тестирование было брошено, учащийся покинул сервер и закрыл браузер"
+msgstr "Le test a été abandonné, la personne a quitté le serveur et fermé son explorateur"
+
+#: ../../../../temp/test.inc.php:156
+msgid "Тестирование было превано по команде пользователя"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:157
+#: ../../../../temp/test_log.php:214
+msgid "досрочно завершен"
+msgstr "achevé prématurément"
+
+#: ../../../../temp/test.inc.php:157
+msgid "Тестирование было досрочно завершено, не на все вопросы отвечено"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:158
+msgid "Тестирование было прервано из-за лимита времени, учащийся не успел ответить на все вопросы"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:231
+msgid "неправильный вызов"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:234
+msgid "неправильный вызов, массив"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:234
+msgid "не пуст"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:299
+msgid "ИМЯ:"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:299
+msgid "РАЗМЕР:"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:299
+#: ../../../../temp/test_moder.php:615
+#: ../../../../temp/test_moder.php:624
+#: ../../../../temp/test_moder.php:886
+#: ../../../../temp/test_moder.php:887
+msgid "байт"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:302
+msgid "Приложение"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:310
+#: ../../../../temp/test_list.php:2631
+msgid "открыть"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:445
+msgid "Картинка"
+msgstr "image"
+
+#: ../../../../temp/test.inc.php:455
+msgid "Открыть это приложение в новом окне"
+msgstr "ouvrir cette application dans une autre fenêtre"
+
+#: ../../../../temp/test.inc.php:456
+msgid "Сохранить это приложение на ваш компьютер"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:906
+#: ../../../../temp/test.inc.php:1040
+msgid "Такого теста нет"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:928
+#: ../../../../temp/test_log.php:53
+#: ../../../../temp/test_log.php:259
+#: ../../../../temp/test_log.php:421
+#: ../../../../temp/test_log.php:948
+#: ../../../../temp/test_moder.php:374
+msgid "Курс:"
+msgstr "Cours :"
+
+#: ../../../../temp/test.inc.php:929
+msgid "Занятие:"
+msgstr "Cours"
+
+#: ../../../../temp/test.inc.php:930
+#: ../../../../temp/test_moder.php:375
+msgid "Задание:"
+msgstr "Devoir"
+
+msgid "Выбран вариант"
+msgstr "Version sélectionnée"
+
+#: ../../../../temp/test.inc.php:989
+msgid "ВОПРОСОВ С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ:"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:993
+msgid "Статистика ответов на вопрос"
+msgstr "Statistiques des réponses aux questions"
+
+#: ../../../../temp/test.inc.php:995
+#: ../../../../temp/test.inc.php:1075
+msgid "вопрос"
+msgstr "Question"
+
+#: ../../../../temp/test.inc.php:995
+msgid "всего ответов"
+msgstr "Nombre total de réponses"
+
+#: ../../../../temp/test.inc.php:997
+msgid "верных"
+msgstr "Bonnes"
+
+#: ../../../../temp/test.inc.php:997
+msgid "неверных"
+msgstr "Fausses"
+
+#: ../../../../temp/test.inc.php:999
+msgid "ответы"
+msgstr "Réponses"
+
+#: ../../../../temp/test.inc.php:1018
+msgid "по данному вопросу нет статистики (еще никто не отвечал)"
+msgstr "Pas de statistiques pour cette question (personne n'a répondu pour l'instant)"
+
+#: ../../../../temp/test.inc.php:1069
+msgid "список вопросов"
+msgstr "Liste des questions"
+
+#: ../../../../temp/test.inc.php:1073
+#: ../../../../temp/test_list.php:79
+msgid "код"
+msgstr "code"
+
+#: ../../../../temp/test.inc.php:1076
+#: ../../../../temp/test_list.php:80
+msgid "тип"
+msgstr "type"
+
+#: ../../../../temp/test.inc.php:1077
+#: ../../../../temp/test_list.php:83
+msgid "изменен"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1078
+msgid "Команды"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1090
+msgid "в это задание еще не включено ни одного вопроса!"
+msgstr "Aucune question incluse dans cette tâche pour l'instant"
+
+#: ../../../../temp/test.inc.php:1107
+msgid "Вопрос не найден в базе данных"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1127
+msgid "выборка вопросов по коду вопроса"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1162
+#: ../../../../temp/test.inc.php:1335
+#: ../../../../temp/test_list.php:189
+#: ../../../../temp/test_list.php:336
+#: ../../../../temp/test_list.php:2205
+msgid "Тема"
+msgstr "Thème"
+
+#: ../../../../temp/test.inc.php:1187
+msgid "Выполнить задание"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1287
+msgid "Извините, невозможно автоматически сгенерировать ни одного нового номера, т.к. все они оказываются занятыми!"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1327
+#: ../../../../temp/test_list.php:265
+#: ../../../../temp/test_list.php:1726
+#: ../../../../temp/test_list.php:1729
+msgid "Добавить вопрос"
+msgstr "Ajouter une question"
+
+#: ../../../../temp/test.inc.php:1342
+msgid "Прикрепить файл"
+msgstr "Joindre un fichier"
+
+#: ../../../../temp/test.inc.php:1345
+#: ../../../../temp/test_list.php:204
+msgid "Тип вопроса"
+msgstr "Type de question"
+
+#: ../../../../temp/test.inc.php:1679
+#: ../../../../temp/test_list.php:571
+msgid "Экспорт вопросов"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:1709
+msgid "Вопросы для контроля"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:2333
+msgid "---без темы---"
+msgstr ""
+
+#: ../../../../temp/test.inc.php:2408
+#: ../../../../temp/test.inc.php:2464
+msgid "--- все ---"
+msgstr "--- tous ---"
+
+#: ../../../../temp/test_attach.php:53
+msgid "ошибочная ссылка"
+msgstr ""
+
+#: ../../../../temp/test_attach.php:76
+msgid "В данный момент вы не проходите тестирование и не можете использовать файлы тестов."
+msgstr ""
+
+#: ../../../../temp/test_attach.php:78
+msgid "Этот вопрос не находится в списке вопросов, которые вы должны пройти за сеанс работы"
+msgstr ""
+
+#: ../../../../temp/test_attach.php:82
+msgid "Этот файл не найден"
+msgstr ""
+
+#: ../../../../temp/test_cron.php:13
+msgid "Запуск"
+msgstr ""
+
+#: ../../../../temp/test_cron.php:23
+msgid "завершение"
+msgstr ""
+
+#: ../../../../temp/test_end.php:28
+msgid "Сеанс не завершен."
+msgstr ""
+
+#: ../../../../temp/test_end.php:34
+#: ../../../../temp/test_end.php:38
+msgid "Пожалуйста, поставьте галочку в checkbox для подтверждения ознакомления с результатми и еще раз нажмите на кнопку"
+msgstr ""
+
+#: ../../../../temp/test_end.php:84
+#: ../../../../temp/test_end.php:124
+#: ../../../../temp/test_end.php:136
+#: ../../../../temp/test_end.php:147
+#: ../../../../temp/test_end.php:157
+#: ../../../../temp/test_end.php:169
+#: ../../../../temp/test_end.php:180
+#: ../../../../temp/test_end.php:192
+#: ../../../../temp/test_end.php:194
+#: ../../../../temp/test_end.php:203
+#: ../../../../temp/test_end.php:259
+#: ../../../../temp/test_end.php:275
+#: ../../../../temp/test_end.php:285
+#: ../../../../temp/test_end.php:319
+msgid "Сеанс завершен. Спасибо за уделенное время!"
+msgstr "La séance est terminée. Merci d'avoir consacré un peu de votre temps !"
+
+#: ../../../../temp/test_end.php:322
+msgid "Выполнение задания завершено!"
+msgstr ""
+
+#: ../../../../temp/test_list.php:81
+msgid "макс.балл"
+msgstr ""
+
+#: ../../../../temp/test_list.php:82
+msgid "мин.балл"
+msgstr ""
+
+#: ../../../../temp/test_list.php:181
+msgid "Все вопросы курса"
+msgstr ""
+
+#: ../../../../temp/test_list.php:201
+msgid "внешняя программа"
+msgstr ""
+
+#: ../../../../temp/test_list.php:202
+msgid "табличный ввод"
+msgstr ""
+
+#: ../../../../temp/test_list.php:256
+msgid "Все вопросы по курсу"
+msgstr "Toutes les questions sur le cours"
+
+#: ../../../../temp/test_list.php:260
+msgid "Текущий курс"
+msgstr ""
+
+#: ../../../../temp/test_list.php:266
+msgid "Импорт вопросов из текстового файла"
+msgstr "Importer des questions depuis un fichier texte"
+
+#: ../../../../temp/test_list.php:269
+msgid "Текущее задание"
+msgstr ""
+
+#: ../../../../temp/test_list.php:332
+msgid "Выделить/убрать все"
+msgstr ""
+
+#: ../../../../temp/test_list.php:333
+msgid "сортировка по кодам вопросов"
+msgstr ""
+
+#: ../../../../temp/test_list.php:334
+msgid "сортировка по типам вопросов"
+msgstr ""
+
+#: ../../../../temp/test_list.php:336
+msgid "сортировка по теме"
+msgstr ""
+
+#: ../../../../temp/test_list.php:338
+msgid "Мин"
+msgstr ""
+
+#: ../../../../temp/test_list.php:338
+msgid "сортировка по минимальному балу за вопрос"
+msgstr ""
+
+#: ../../../../temp/test_list.php:339
+msgid "Макс"
+msgstr ""
+
+#: ../../../../temp/test_list.php:339
+msgid "сортировка по максимальному балу за вопрос"
+msgstr ""
+
+#: ../../../../temp/test_list.php:345
+msgid "Не найдено ни одного вопроса"
+msgstr ""
+
+#: ../../../../temp/test_list.php:380
+#: ../../../../temp/test_list.php:393
+msgid "Открыть вопрос"
+msgstr ""
+
+#: ../../../../temp/test_list.php:399
+msgid "Редактировать вопрос"
+msgstr ""
+
+#: ../../../../temp/test_list.php:401
+msgid ""
+"Вы действительно желаете удалить вопрос?\\n"
+"После удаления вопрос нельзя будет восстановить."
+msgstr ""
+
+#: ../../../../temp/test_list.php:424
+msgid "Экспортировать"
+msgstr ""
+
+#: ../../../../temp/test_list.php:425
+msgid "Добавить в задание"
+msgstr ""
+
+#: ../../../../temp/test_list.php:426
+msgid "Добавить в курс"
+msgstr ""
+
+#: ../../../../temp/test_list.php:465
+msgid "Страницы:"
+msgstr "Pages :"
+
+#: ../../../../temp/test_list.php:474
+msgid "Вопросов на страницу:"
+msgstr "Questions par page :"
+
+#: ../../../../temp/test_list.php:486
+msgid "Фильтр времени:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:490
+#: ../../../../temp/test_list.php:496
+#: ../../../../temp/test_list.php:2634
+#: ../../../../temp/test_list.php:2654
+msgid "изменить"
+msgstr ""
+
+#: ../../../../temp/test_list.php:491
+#: ../../../../temp/test_list.php:497
+msgid "сбросить"
+msgstr ""
+
+#: ../../../../temp/test_list.php:494
+msgid "Фильтр кода"
+msgstr ""
+
+#: ../../../../temp/test_list.php:494
+msgid "не задан."
+msgstr ""
+
+#: ../../../../temp/test_list.php:494
+msgid "ЗАДАН:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:494
+msgid "шт"
+msgstr ""
+
+#: ../../../../temp/test_list.php:502
+msgid "Режим редактирования:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:503
+msgid "базовый"
+msgstr ""
+
+#: ../../../../temp/test_list.php:504
+msgid "расширенный"
+msgstr ""
+
+#: ../../../../temp/test_list.php:505
+msgid "только для опытных пользователей!"
+msgstr ""
+
+#: ../../../../temp/test_list.php:550
+msgid "Вы не передали вопросы, которые хотите экспортировать. Вернитесь назад и отметьте необходимые для экспорта вопросы."
+msgstr ""
+
+#: ../../../../temp/test_list.php:559
+msgid "Экспортирование выбранных вопросов"
+msgstr ""
+
+#: ../../../../temp/test_list.php:614
+msgid "Ничего не было отмечено для удаления"
+msgstr "Vous n'avez rien sélectionné à supprimer"
+
+#: ../../../../temp/test_list.php:622
+msgid "Действительно удалить вопросы?"
+msgstr "Êtes-vous sûr de vouloir supprimer les questions ?"
+
+#: ../../../../temp/test_list.php:623
+msgid "Удалить вопросы"
+msgstr "Supprimer les questions"
+
+#: ../../../../temp/test_list.php:623
+msgid "шт."
+msgstr ""
+
+#: ../../../../temp/test_list.php:624
+msgid "Не удалять"
+msgstr "Ne pas supprimer"
+
+#: ../../../../temp/test_list.php:631
+msgid "Вы действительно желаете удалить"
+msgstr "Êtes-vous sûr de vouloir supprimer ?"
+
+#: ../../../../temp/test_list.php:631
+msgid "вопросов?"
+msgstr "questions ?"
+
+#: ../../../../temp/test_list.php:631
+msgid "Чтобы отказаться нажмите"
+msgstr ""
+
+#: ../../../../temp/test_list.php:631
+msgid "здесь"
+msgstr ""
+
+#: ../../../../temp/test_list.php:659
+msgid "Не выбрано задание для добавления помеченных галочками вопросов."
+msgstr ""
+
+#: ../../../../temp/test_list.php:661
+#: ../../../../temp/test_list.php:816
+msgid "Ничего не было отмечено для добавления к заданию. Отметьте любое кол-во вопросов, еще раз нажмите кнопку ДОБАВИТЬ, и все помеченные галочками вопросы будут добавлены в выбранное задание."
+msgstr ""
+
+#: ../../../../temp/test_list.php:679
+msgid "Такого теста не существует, либо вы не владеете его курсом"
+msgstr ""
+
+#: ../../../../temp/test_list.php:709
+#: ../../../../temp/test_list.php:844
+msgid "не был добавлен"
+msgstr ""
+
+#: ../../../../temp/test_list.php:794
+msgid "Вопросы добавлены успешно"
+msgstr ""
+
+#: ../../../../temp/test_list.php:811
+msgid "Не выбран курс для добавления помеченных галочками вопросов."
+msgstr ""
+
+#: ../../../../temp/test_list.php:822
+msgid "Отсутствуют права доступа к курсу"
+msgstr ""
+
+#: ../../../../temp/test_list.php:829
+msgid "Такого курса не существует"
+msgstr ""
+
+#: ../../../../temp/test_list.php:836
+msgid "Такого теста не существует"
+msgstr ""
+
+#: ../../../../temp/test_list.php:941
+#: ../../../../temp/test_list.php:945
+msgid "Редактирование вопроса(ов)"
+msgstr ""
+
+#: ../../../../temp/test_list.php:964
+msgid "Не отмечен ни один из вопросов для редактирования. Отметьте галочками один или несколько вопросов, нажмите кнопку РЕДАКТИРОВАТЬ, и откроется страница для редактирования всех помеченных вопросов."
+msgstr ""
+
+#: ../../../../temp/test_list.php:968
+msgid "пропущен, код ошибочен."
+msgstr ""
+
+#: ../../../../temp/test_list.php:979
+msgid "пропущен, его не существует в базе данных."
+msgstr ""
+
+#: ../../../../temp/test_list.php:1043
+msgid "не найден в базе данных"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1262
+#: ../../../../temp/test_list.php:1863
+msgid "Не удалось скопировать файл, нет прав записи в"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1411
+#: ../../../../temp/test_list.php:1424
+#: ../../../../temp/test_list.php:1434
+msgid "Вопрос добавлен успешно"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1421
+msgid "Вопрос сохранен в общей базе вопросов по курсу и добавлен в задание"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1434
+msgid "Хотите добавить ещё вопрос?"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1445
+msgid "Вопрос успешно сохранен"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1452
+msgid "Вопрос сохранен в общей базе вопросов по курсу"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1469
+msgid "Выбран некорректный номер курса"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1524
+#: ../../../../temp/test_list.php:1528
+msgid "Ограничение времени при просмотре вопросов"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1526
+#: ../../../../temp/test_list.php:1589
+msgid "назад"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1530
+msgid "Быстрый выбор:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1531
+msgid "Снять ограничение по дате"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1532
+msgid "За последний час"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1533
+msgid "За последний день"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1534
+msgid "За последнюю неделю"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1535
+msgid "За последний месяц"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1538
+msgid "Произвольный выбор времени"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1542
+msgid "Установить"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1588
+#: ../../../../temp/test_list.php:1591
+msgid "Фильтр кодов при просмотре вопросов"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1594
+msgid ""
+"Впишите список масок кодов или конкретные коды вопросы, на которые\n"
+"   вы хотите поставить фильтр. Тогда в окне просмотра вопросов будут\n"
+"   только эти описанные вопросы. Для составления масок используйте"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1598
+msgid "Маски отделяйте друг от друга пробелами или новыми строчками."
+msgstr ""
+
+#: ../../../../temp/test_list.php:1603
+msgid "Установить новый фильтр"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1634
+msgid "Выбор другого курса для редактирования вопросов"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1638
+msgid "Выберите другой курс:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1683
+msgid "не удален, вы не владеете этим курсом"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1687
+#, php-format
+msgid "Вопрос %s не удалён. У вас не хватает привилегий"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1727
+msgid "Вернуться ко всем вопросам"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1788
+msgid ""
+"Выбран недопустимый код вопроса. Вопрос должен начатся с номера курса и\n"
+"         символа тире (минус). После номера и тире допишите необходимые символы в код\n"
+"         вороса. Например, можно придумать такой код:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1795
+msgid ""
+"Код вопроса должен состоять только из анлийских букв (большие\n"
+"         и маленькие буквы различаются), цифр, символов 'тире' (минус) и 'подчеркивание'."
+msgstr ""
+
+#: ../../../../temp/test_list.php:1802
+msgid "К сожалению, вопрос с кодом"
+msgstr ""
+
+#: ../../../../temp/test_list.php:1802
+msgid ""
+"уже существует в база данных.\n"
+"         Если вы хотите изменить этот вопрос - воспользуйтесь редактированием вопросов.\n"
+"         Чтобы создать вопрос, придумайте любой другой код."
+msgstr ""
+
+#: ../../../../temp/test_list.php:1809
+msgid "Вы ввели слишком длинную тему. Максимальная длина 255 символов. Тема укорочена до этой границы."
+msgstr ""
+
+#: ../../../../temp/test_list.php:1982
+#: ../../../../temp/test_list.php:2027
+msgid "Выбор модуля"
+msgstr "Sélection du module"
+
+#: ../../../../temp/test_list.php:2029
+msgid "Найдите нужный файл и ссылка на него будет вставлена автоматически"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2149
+msgid "Ошибка в программе: нет данных о струкруре типа вопроса"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2149
+msgid "Показать форму редактирования для вопроса"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2149
+msgid "невозможно."
+msgstr ""
+
+#: ../../../../temp/test_list.php:2183
+msgid "Редактирование вопроса"
+msgstr "Éditer les questions"
+
+#: ../../../../temp/test_list.php:2183
+msgid "Редактирование варианта задания"
+msgstr "Éditer les variantes de la tâche"
+
+#: ../../../../temp/test_list.php:2190
+msgid "Формулировка вопроса:"
+msgstr "Formulation de la question :"
+
+#: ../../../../temp/test_list.php:2190
+msgid "Формулировка варианта задания:"
+msgstr "Formulation de la variante de la tâche :"
+
+#: ../../../../temp/test_list.php:2215
+msgid "Время на ответ (в мин.):"
+msgstr "Temps imparti (en min.) :"
+
+#: ../../../../temp/test_list.php:2215
+msgid "Время на решение (в мин.):"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2217
+msgid "без ограничения"
+msgstr "illimité"
+
+#: ../../../../temp/test_list.php:2229
+msgid "Ссылка"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2232
+msgid "Обзор"
+msgstr "Parcourir"
+
+#: ../../../../temp/test_list.php:2315
+msgid "с весами ответа"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2318
+msgid "с правильным ответом"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2333
+msgid "Диапазон баллов:"
+msgstr "Fourchette de points :"
+
+#: ../../../../temp/test_list.php:2336
+msgid "автоподсчет"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2357
+msgid "Перемешивать ответы на вопрос"
+msgstr "Mélanger les réponses aux questions"
+
+#: ../../../../temp/test_list.php:2419
+#: ../../../../temp/test_list.php:2422
+msgid "предварительный просмотр"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2445
+msgid "Варианты ответов на вопрос"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2446
+msgid "Строка параметров вызова программы-тренажера"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2455
+msgid "Используйте синтаксис"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2455
+msgid "для задания идентификатора пользователя"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2460
+#: ../../../../temp/test_list.php:2595
+msgid "Номер"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2460
+msgid "варианта"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2462
+msgid "Вес ответа"
+msgstr "Valeur de la réponse"
+
+#: ../../../../temp/test_list.php:2473
+msgid "Вкл./выкл."
+msgstr "branché / débranché"
+
+#: ../../../../temp/test_list.php:2473
+msgid "вариант"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2587
+msgid "Присоединенные файлы"
+msgstr "Joindre des fichiers"
+
+#: ../../../../temp/test_list.php:2597
+msgid "Имя файла"
+msgstr "Nom du fichier"
+
+#: ../../../../temp/test_list.php:2598
+msgid "Размер"
+msgstr "Taille"
+
+#: ../../../../temp/test_list.php:2599
+msgid "Изменен"
+msgstr "Modifié"
+
+#: ../../../../temp/test_list.php:2634
+msgid "карту"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2654
+msgid "области"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2659
+msgid "Действительно удалить файл из вопроса?"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2696
+msgid "Программа-тренажер"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2698
+msgid "Выбрано:"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2705
+#: ../../../../temp/test_moder.php:456
+msgid "Внимание!"
+msgstr ""
+
+#: ../../../../temp/test_list.php:2705
+msgid "Программа-тренажер должна быть установлена в эту директорию на каждом клиентском компьютере."
+msgstr ""
+
+#: ../../../../temp/test_log.php:29
+#: ../../../../temp/test_log.php:31
+msgid "Статистика и отчеты"
+msgstr ""
+
+#: ../../../../temp/test_log.php:35
+msgid "Информация по логину учащегося:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:48
+msgid "Результаты всех тестов"
+msgstr ""
+
+#: ../../../../temp/test_log.php:66
+msgid "Детальный отчет о сеансах тестирования:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:70
+msgid "сеанса"
+msgstr ""
+
+#: ../../../../temp/test_log.php:71
+msgid "Отчет доступен только преподавателю."
+msgstr ""
+
+#: ../../../../temp/test_log.php:72
+msgid "Найти номер сеанса проще в первых 2-х отчетах выше."
+msgstr ""
+
+#: ../../../../temp/test_log.php:129
+msgid "Статистика тестирования и ответов на вопросы очищена"
+msgstr ""
+
+#: ../../../../temp/test_log.php:138
+msgid "Извините, такого пользователя не зарегистрировано. Введите логин существующего пользователя."
+msgstr ""
+
+#: ../../../../temp/test_log.php:141
+#: ../../../../temp/test_log.php:144
+msgid "Информация о пользователе:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:142
+#: ../../../../temp/test_log.php:730
+msgid "к началу статистики"
+msgstr ""
+
+#: ../../../../temp/test_log.php:169
+msgid "Номер сеанса"
+msgstr ""
+
+#: ../../../../temp/test_log.php:172
+msgid "Баллов"
+msgstr ""
+
+#: ../../../../temp/test_log.php:173
+msgid "Мин/Макс балл"
+msgstr ""
+
+#: ../../../../temp/test_log.php:174
+msgid "Мин/Макс балл с учетом проверяемых вопросов"
+msgstr ""
+
+#: ../../../../temp/test_log.php:177
+msgid "Продолж."
+msgstr ""
+
+#: ../../../../temp/test_log.php:178
+msgid "Проверка"
+msgstr ""
+
+#: ../../../../temp/test_log.php:186
+msgid "Смотреть отчет:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:202
+msgid "Проверен:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:210
+msgid "идет тестирование"
+msgstr ""
+
+#: ../../../../temp/test_log.php:213
+msgid "прерван по команде"
+msgstr ""
+
+#: ../../../../temp/test_log.php:215
+msgid "прерван лимитом времени"
+msgstr ""
+
+#: ../../../../temp/test_log.php:240
+msgid "Ошибочный номер курса"
+msgstr ""
+
+#: ../../../../temp/test_log.php:248
+msgid "Выставление оценок за задания"
+msgstr ""
+
+#: ../../../../temp/test_log.php:250
+msgid "Выставление оценок за задание"
+msgstr ""
+
+#: ../../../../temp/test_log.php:252
+msgid "К началу статистики и отчетов"
+msgstr ""
+
+#: ../../../../temp/test_log.php:289
+msgid "ФИО, отчет"
+msgstr ""
+
+#: ../../../../temp/test_log.php:293
+#: ../../../../temp/test_log.php:622
+#: ../../../../temp/test_log.php:683
+msgid "Вопросов Ответил"
+msgstr ""
+
+#: ../../../../temp/test_log.php:294
+#: ../../../../temp/test_log.php:623
+#: ../../../../temp/test_log.php:684
+msgid "затрачено"
+msgstr ""
+
+#: ../../../../temp/test_log.php:295
+msgid "Проверка препода"
+msgstr ""
+
+#: ../../../../temp/test_log.php:295
+msgid "вателем"
+msgstr ""
+
+#: ../../../../temp/test_log.php:402
+#, php-format
+msgid "Очистить статистику тестирования %s %s %s %s?"
+msgstr ""
+
+#: ../../../../temp/test_log.php:403
+msgid "по курсу "
+msgstr ""
+
+#: ../../../../temp/test_log.php:403
+msgid "по всем курсам"
+msgstr ""
+
+#: ../../../../temp/test_log.php:404
+msgid "по заданию "
+msgstr ""
+
+#: ../../../../temp/test_log.php:404
+msgid "по всем заданиям"
+msgstr ""
+
+#: ../../../../temp/test_log.php:405
+msgid "по пользователю "
+msgstr ""
+
+#: ../../../../temp/test_log.php:405
+msgid "по всем пользователям"
+msgstr ""
+
+#: ../../../../temp/test_log.php:407
+msgid "по дате прохождения заданий в период"
+msgstr ""
+
+#: ../../../../temp/test_log.php:407
+msgid " с "
+msgstr ""
+
+#: ../../../../temp/test_log.php:407
+msgid " по "
+msgstr ""
+
+#: ../../../../temp/test_log.php:407
+msgid "по всем датам прохождения заданий"
+msgstr ""
+
+#: ../../../../temp/test_log.php:412
+msgid "Статистика о пройденных заданиях"
+msgstr ""
+
+#: ../../../../temp/test_log.php:414
+msgid "Статистика тестирований"
+msgstr ""
+
+#: ../../../../temp/test_log.php:423
+msgid "Любой курс"
+msgstr ""
+
+#: ../../../../temp/test_log.php:476
+msgid "Обучаемый:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:500
+msgid "Фильтр пользователей"
+msgstr ""
+
+#: ../../../../temp/test_log.php:538
+msgid "Дата прохождения с"
+msgstr ""
+
+#: ../../../../temp/test_log.php:539
+msgid "Дата прохождения по"
+msgstr ""
+
+#: ../../../../temp/test_log.php:624
+#: ../../../../temp/test_log.php:685
+msgid "Проверка препода-<br>вателем"
+msgstr ""
+
+#: ../../../../temp/test_log.php:662
+msgid "Открыть краткий отчет"
+msgstr "Ouvrir un rapport bref"
+
+#: ../../../../temp/test_log.php:662
+msgid "Открыть подробный отчет"
+msgstr "Ouvrir un rapport détaillé"
+
+#: ../../../../temp/test_log.php:682
+msgid "Минимальный и максимальный возможный балл, без учета модерируемых вопросов. На второй стоке: минимальный и максимальный возможный балл, c учетом модерируемых преподавателями вопросов. Из-за того, что модерируемые вопросы проверяются не сразу, максимальный бал после проверки может быть больше."
+msgstr ""
+
+#: ../../../../temp/test_log.php:711
+#: ../../../../temp/test_log.php:721
+msgid "Отчет о сеансе тестирования"
+msgstr ""
+
+#: ../../../../temp/test_log.php:749
+#: ../../../../temp/test_log.php:914
+msgid "Доступ к этой странице имеют только:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:750
+#: ../../../../temp/test_log.php:915
+msgid "Преподаватели (в пределах своего курса)"
+msgstr ""
+
+#: ../../../../temp/test_log.php:751
+#: ../../../../temp/test_log.php:916
+msgid "Деканы"
+msgstr ""
+
+#: ../../../../temp/test_log.php:753
+#: ../../../../temp/test_log.php:918
+msgid ""
+"Здесь размещается закрытая информация - правильные ответы и\n"
+"      отчеты по каждому вопросу."
+msgstr ""
+
+#: ../../../../temp/test_log.php:761
+#: ../../../../temp/test_log.php:929
+msgid "Такого сеанса не существует:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:768
+msgid "курс:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:771
+msgid "ФИО:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:773
+msgid "адрес:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:784
+#: ../../../../temp/test_log.php:798
+#: ../../../../temp/test_log.php:974
+msgid "начало сеанса:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:793
+msgid "набрано баллов:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:794
+msgid "минимально возможное:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:795
+msgid "максимально возможное:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:796
+msgid "ответил на вопросы:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:797
+msgid "всего вопросов:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:799
+msgid "завершение сеанса:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:800
+msgid "длительность:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:803
+msgid "Это задание, требующее проверки преподавателем."
+msgstr ""
+
+#: ../../../../temp/test_log.php:804
+msgid "Сеанс еще не проверен преподавателем."
+msgstr ""
+
+#: ../../../../temp/test_log.php:805
+msgid "Проверен преподавателем:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:813
+msgid "Неизвестный статус завершенности тестирования! Необходимо добавить описание."
+msgstr ""
+
+#: ../../../../temp/test_log.php:849
+msgid "Правильность ответа:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:850
+#: ../../../../temp/test_log.php:954
+msgid "Набрано баллов:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:850
+msgid "диапазон: от"
+msgstr ""
+
+#: ../../../../temp/test_log.php:851
+msgid "Ответ был получен:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:853
+msgid "ВОПРОС С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ"
+msgstr ""
+
+#: ../../../../temp/test_log.php:855
+msgid "Ошибка в ответе:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:859
+msgid "Анализ ответов"
+msgstr ""
+
+#: ../../../../temp/test_log.php:861
+msgid "Что выбрал тестируемый при ответе"
+msgstr ""
+
+#: ../../../../temp/test_log.php:862
+msgid "Правильно ли это"
+msgstr ""
+
+#: ../../../../temp/test_log.php:946
+msgid "Протокол выполнения:"
+msgstr "Protocole d'exécution :"
+
+#: ../../../../temp/test_log.php:949
+msgid "Начал:"
+msgstr "Début :"
+
+#: ../../../../temp/test_log.php:952
+msgid "Закончил:"
+msgstr "Fin :"
+
+#: ../../../../temp/test_log.php:955
+msgid "Длительность:"
+msgstr "Durée :"
+
+#: ../../../../temp/test_log.php:957
+msgid "Задано"
+msgstr "Nombre de questions"
+
+#: ../../../../temp/test_log.php:957
+msgid "вопросов, отвечено на"
+msgstr "Nombre de réponses données"
+
+#: ../../../../temp/test_log.php:1010
+#: ../../../../temp/test_mapedit.php:47
+#: ../../../../temp/test_moder.php:609
+#: ../../../../temp/test_moder.php:1017
+msgid "Вопрос:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:1013
+msgid "не оценивается"
+msgstr ""
+
+#: ../../../../temp/test_log.php:1015
+msgid "балл."
+msgstr ""
+
+#: ../../../../temp/test_log.php:1026
+msgid "Ответ:"
+msgstr "Réponse :"
+
+#: ../../../../temp/test_log.php:1033
+msgid "Ошибка:"
+msgstr ""
+
+#: ../../../../temp/test_log.php:1040
+msgid "Верно"
+msgstr "Correct"
+
+#: ../../../../temp/test_log.php:1056
+msgid "Неверно"
+msgstr "Faux"
+
+#: ../../../../temp/test_log.php:1077
+msgid "Текст ответа:"
+msgstr "Texte de la réponse :"
+
+#: ../../../../temp/test_log.php:1082
+#: ../../../../temp/test_log.php:1092
+msgid "скачать файл"
+msgstr "télécharger un fichier"
+
+#: ../../../../temp/test_log.php:1087
+msgid "Комментарий преподавателя:"
+msgstr "Commentaire de l'enseignant :"
+
+#: ../../../../temp/test_log.php:1091
+msgid "Скачать рецензию преподавателя:"
+msgstr "Télécharger le commentaire de l'enseignant :"
+
+#: ../../../../temp/test_mapedit.php:9
+msgid "К этой странице могут обратится только: преподаватель,  представитель учебной администрации, администратор"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:10
+msgid "Хоть вы и преподаватель, но в данное время не владеете ни одним курсом."
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:16
+msgid "нет прав редактировать данный вопрос"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:27
+msgid "загрузка..."
+msgstr "chargement..."
+
+#: ../../../../temp/test_mapedit.php:34
+msgid "Редактирование карты на картинке"
+msgstr "Éditer les cartes"
+
+#: ../../../../temp/test_mapedit.php:37
+#: ../../../../temp/test_mapedit.php:196
+msgid "такого вопроса нет"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:44
+msgid ""
+"к этому вопросу должна прилагаться картинка.\n"
+"      Сейчас ее нет - редактировать карту картинки невозможно"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:72
+msgid "Укажите области для вариантов:"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:73
+msgid "Вставить прямоугольник (требует 4 координаты: x1:y1 и x2:y2)"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:74
+msgid "Вставить полигон (требует набор пар координат: x1:y1, x2:y2, x3:y3, ...)"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:75
+msgid "Вставить круг (требует координаты ценрта и радиус: x:y и radius)"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:100
+msgid "Щелчок (click) на изображении - выбор области, соотвествующей варианту"
+msgstr ""
+
+#: ../../../../temp/test_mapedit.php:101
+msgid "Двойной щелчок (double click) на изображении - вставка координат в строку ввода"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:125
+msgid "Проверка Заданий"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:192
+msgid "нет ни одного вопроса на проверку"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:212
+msgid "Выполнить действие:"
+msgstr "Accomplir une action"
+
+#: ../../../../temp/test_moder.php:215
+msgid "---"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:216
+msgid "сохранить результаты"
+msgstr "Sauvegarder les résultats"
+
+#: ../../../../temp/test_moder.php:217
+msgid "удалить обработанные вопросы"
+msgstr "Supprimer les questions traitées"
+
+#: ../../../../temp/test_moder.php:218
+msgid "удалить выделенные вопросы"
+msgstr "Supprimer les questions sélectionnées"
+
+#: ../../../../temp/test_moder.php:225
+msgid "Вы действительно желаете сохранить результаты? При этом произойдет перерасчет общего балла за задание и оценки за занятие (в случае, если занятие оценивается по формуле). Если занятие предусматривает штраф за несвоевремменную сдачу, величина штрафа будет также расчитана заново. Будут обработаны только полностью проверенные сеансы выполнения данного задания. Продолжить?"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:226
+msgid "Вы действительно удалить обработанные вопросы? После этой операции тексты ответов и прикрепленные к ним файлы будут удалены. Продолжить?"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:229
+msgid "сеанс"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:244
+#: ../../../../temp/test_moder.php:316
+#: ../../../../temp/test_moder.php:583
+msgid "Проверка вопросов со свободным ответом"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:268
+#: ../../../../temp/test_moder.php:327
+#: ../../../../temp/test_moder.php:343
+#: ../../../../temp/test_moder.php:561
+msgid "Больше вопросов для проверки нет."
+msgstr ""
+
+#: ../../../../temp/test_moder.php:337
+#: ../../../../temp/test_moder.php:507
+#: ../../../../temp/test_moder.php:553
+msgid "Вы не можете обращаться к временным вопросам чужих курсов"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:368
+msgid "Оценка отложенных на проверку ответов"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:373
+msgid "к началу проверки"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:376
+msgid "Код вопроса:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:377
+msgid " Дан ответ:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:378
+msgid "Студент:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:379
+msgid "сеанса:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:403
+msgid "Полученный ответ"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:408
+msgid "Текстовый ответ:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:410
+msgid "Скачать ответ целиком"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:411
+msgid "Открыть ответ в новом окне"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:415
+msgid "Присоединенный файл"
+msgstr "Joindre un fichier"
+
+#: ../../../../temp/test_moder.php:415
+msgid "байт), показано первые 8Кбайт:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:417
+msgid "Скачать прикрепленный файл целиком"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:418
+msgid "Открыть прикрепленный файл в новом окне"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:424
+#: ../../../../temp/test_moder.php:425
+msgid "Ваша оценка ответа учащегося"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:436
+msgid "Возможный диапазон баллов:от"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:440
+msgid "Произвольный балл (в пределах диапазона):"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:457
+msgid "Вопрос уже имеет оценку в баллах:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:459
+msgid "Далее перейти:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:463
+msgid "к проверке очередного вопроса"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:465
+msgid "к списку вопросов для проверки"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:469
+msgid "Записать вашу оценку в базу данных"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:470
+msgid "Снять эту галочку можно только при выборе &lt;Далее перейти к списку вопросов"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:471
+msgid "ДАЛЕЕ"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:517
+#: ../../../../temp/test_moder.php:721
+msgid "Данный вопрос был стерт из базы данных. Получить данные о нем невозможно. Зачисляю 0 баллов."
+msgstr ""
+
+#: ../../../../temp/test_moder.php:523
+#: ../../../../temp/test_moder.php:727
+msgid "Вы не можете начислить за этот вопрос более, чем"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:523
+#: ../../../../temp/test_moder.php:527
+#: ../../../../temp/test_moder.php:727
+#: ../../../../temp/test_moder.php:731
+msgid "баллов. Зачисляю баллов:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:527
+#: ../../../../temp/test_moder.php:731
+msgid "Вы не можете начислить за этот вопрос менее, чем"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:533
+#: ../../../../temp/test_moder.php:737
+msgid "Данный вопрос, нуждающийся в проверке, более не найден."
+msgstr ""
+
+#: ../../../../temp/test_moder.php:590
+msgid "Студент"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:597
+msgid "Дата ответа"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:611
+msgid "Полученный ответ:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:615
+msgid "открыть прикрепленный файл"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:619
+#: ../../../../temp/test_moder.php:1017
+msgid "Комментарий:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:621
+msgid "Рецензия:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:624
+msgid "открыть файл с рецензией"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:800
+msgid "Обновление базы данных"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:886
+msgid "приложен"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:886
+msgid "длиной"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:887
+msgid "приложен текст"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:891
+msgid "См. общую оценку"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:1052
+msgid "Удалены вопросы по следующим сеансам:"
+msgstr ""
+
+#: ../../../../temp/test_moder.php:1052
+msgid "Нет целиком обработанных сеансов."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:15
+msgid "Сеанс тестирования закончен. Не нажимайте кнопку BACK (Назад) в вашем браузере!"
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:16
+msgid "Сеанс тестирования закончен или не начинался."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:19
+msgid "Неправильный вызов страницы."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:21
+msgid "Не нажимайте кнопки REFRESH (Обновить) или BACK (Назад), иначе вы можете случайно отключиться от сеанса тестирования. Если вы намеренно хотите прервать тест, воспользуйтесь кнопкой 'ПРЕРВАТЬ ТЕСТИРОВАНИЕ' внизу страницы."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:81
+msgid "Не найдена функция для ответа типа"
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:131
+msgid "К сожалению, закончилось время, отпущеное на решение данного вопроса. Ответ не засчитан."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:134
+msgid "Закончилось время"
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:135
+msgid "Закончилось время, отпущеное на решение данного вопроса."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:162
+msgid "К сожалению, закончилось время, отпущенное на решение задания. Сейчас вы перейдете на страницу результатов. В ведомость записывается результат тестирования 'прервано по лимиту времени' и оценка только тех вопросов, которые вы уже успели решить."
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:231
+msgid "Переменная"
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:231
+msgid "не массив! Срочно открыть"
+msgstr ""
+
+#: ../../../../temp/test_otvet.php:231
+msgid "и исправить баг!"
+msgstr ""
+
+#: ../../../../temp/test_start.php:88
+msgid "не ограничено"
+msgstr ""
+
+#: ../../../../temp/test_start.php:112
+msgid " не найден"
+msgstr ""
+
+#: ../../../../temp/test_start.php:117
+msgid " не прикреплен к занятию"
+msgstr ""
+
+#: ../../../../temp/test_start.php:153
+msgid "Извините, задание"
+msgstr ""
+
+#: ../../../../temp/test_start.php:153
+msgid "не существует."
+msgstr ""
+
+#: ../../../../temp/test_start.php:158
+msgid "Извините, это задание не опубликовано (заблокировано)"
+msgstr ""
+
+#: ../../../../temp/test_start.php:251
+msgid "Вы не являтесь преподавателем на этом курсе."
+msgstr ""
+
+#: ../../../../temp/test_start.php:269
+msgid "Обнуление счетчика SCHEDULECOUNT:qty у юзера"
+msgstr ""
+
+#: ../../../../temp/test_start.php:269
+#: ../../../../temp/test_start.php:307
+msgid "по давности."
+msgstr ""
+
+#: ../../../../temp/test_start.php:281
+msgid "Вы израсходовали все попытки прохожения этого занятия.<br>Для занятия было отпущено попыток:"
+msgstr ""
+
+#: ../../../../temp/test_start.php:307
+msgid "Обнуление счетчика TESTCOUNT:qty у юзера"
+msgstr ""
+
+#: ../../../../temp/test_start.php:314
+msgid "Вы израсходовали все попытки прохожения этого занятия.<br>Было отпущено попыток:"
+msgstr ""
+
+#: ../../../../temp/test_start.php:341
+#, php-format
+msgid "Извините, %s не содержит ни одного вопроса."
+msgstr ""
+
+#: ../../../../temp/test_start.php:476
+msgid "Произошла ошибка базы данных. Обратитесь в службу технической поддержки."
+msgstr ""
+
+#: ../../../../temp/test_start.php:490
+msgid "начать тест:"
+msgstr ""
+
+#: ../../../../temp/test_start.php:503
+#: ../../../../temp/test_start.php:590
+msgid "Невозможно прервать сеанс."
+msgstr ""
+
+#: ../../../../temp/test_start.php:504
+msgid "Нажмите кнопку, чтобы закончить сеанс."
+msgstr ""
+
+#: ../../../../temp/test_start.php:591
+msgid "Нажмите кнопку, чтобы прервать сеанс."
+msgstr ""
+
+#: ../../../../temp/test_start.php:594
+msgid "Задание, которое вы проходите, не найдено в базе данных (только что стерто кем-то?)."
+msgstr ""
+
+#: ../../../../temp/test_start.php:595
+msgid "Этот сеанс нельзя досрочно завершить!"
+msgstr ""
+
+#: ../../../../temp/test_stat.php:10
+#: ../../../../temp/test_util.php:12
+msgid "Вы зарегистрированы в статусе преподавателя, но на данный момент вы не преподаете ни на одном из курсов."
+msgstr ""
+
+#: ../../../../temp/test_stat.php:19
+#: ../../../../temp/test_util.php:28
+#: ../../../../temp/test_util.php:131
+msgid "Вы не преподаватель данного курса."
+msgstr ""
+
+#: ../../../../temp/test_stat.php:22
+#: ../../../../temp/test_stat.php:24
+msgid "Статистика заданий"
+msgstr ""
+
+#: ../../../../temp/test_test.php:162
+msgid "Копия: "
+msgstr ""
+
+#: ../../../../temp/test_test.php:211
+msgid "Тест успешно скопирован"
+msgstr ""
+
+#: ../../../../temp/test_test.php:356
+#: ../../../../temp/test_util.php:86
+msgid "Редактировать вопросы"
+msgstr ""
+
+#: ../../../../temp/test_test.php:364
+msgid "Открыть задание"
+msgstr ""
+
+#: ../../../../temp/test_test.php:379
+msgid "Удалить задание"
+msgstr ""
+
+#: ../../../../temp/test_test.php:380
+#: ../../../../temp/test_test.php:381
+#: ../../../../temp/test_test.php:389
+#: ../../../../temp/test_test.php:390
+msgid "Копировать задание"
+msgstr ""
+
+#: ../../../../temp/test_test.php:381
+msgid "Скопировать тест?"
+msgstr ""
+
+#: ../../../../temp/test_test.php:382
+msgid "Редактировать задание"
+msgstr ""
+
+#: ../../../../temp/test_test.php:390
+msgid "Скопировать задание?"
+msgstr ""
+
+#: ../../../../temp/test_test.php:417
+msgid "Все курсы"
+msgstr ""
+
+#: ../../../../temp/test_test.php:461
+msgid "Отчеты о тестированиях"
+msgstr ""
+
+#: ../../../../temp/test_test.php:462
+msgid "Попытки тестирований"
+msgstr ""
+
+#: ../../../../temp/test_test.php:463
+msgid "Статистика вопросов"
+msgstr ""
+
+#: ../../../../temp/test_test.php:479
+msgid "СТАТИСТИКА по"
+msgstr ""
+
+#: ../../../../temp/test_test.php:507
+#: ../../../../temp/test_test.php:1560
+#: ../../../../temp/test_test.php:1746
+msgid "У вас не хватает привилегий"
+msgstr ""
+
+#: ../../../../temp/test_test.php:522
+#: ../../../../temp/test_test.php:529
+msgid "Перейти к другому заданию"
+msgstr ""
+
+#: ../../../../temp/test_test.php:524
+msgid "Редактировать параметры задания"
+msgstr ""
+
+#: ../../../../temp/test_test.php:525
+#: ../../../../temp/test_test.php:531
+msgid "опубликовано"
+msgstr "publié"
+
+#: ../../../../temp/test_test.php:525
+#: ../../../../temp/test_test.php:531
+msgid "не опубликовано"
+msgstr "non publié"
+
+#: ../../../../temp/test_test.php:578
+msgid "Обязат. вопрос"
+msgstr "Question obligatoire"
+
+#: ../../../../temp/test_test.php:593
+msgid "в это задание еще не включено ни одного вопроса"
+msgstr ""
+
+#: ../../../../temp/test_test.php:630
+msgid "маски не отображаются"
+msgstr ""
+
+#: ../../../../temp/test_test.php:671
+#: ../../../../temp/test_test.php:700
+msgid "Просмотреть вопрос"
+msgstr "Voir la question"
+
+#: ../../../../temp/test_test.php:704
+msgid "Править"
+msgstr ""
+
+#: ../../../../temp/test_test.php:709
+msgid "Вы действительно желаете удалить вопрос из задания?"
+msgstr ""
+
+#: ../../../../temp/test_test.php:721
+msgid "маска:"
+msgstr ""
+
+#: ../../../../temp/test_test.php:729
+msgid "Выполнить это задание"
+msgstr ""
+
+#: ../../../../temp/test_test.php:730
+msgid "Добавить из всех вопросов"
+msgstr ""
+
+#: ../../../../temp/test_test.php:741
+msgid ""
+"Из этого списка были\n"
+"      автоматически удалены следующие ошибочные маски:"
+msgstr ""
+
+#: ../../../../temp/test_test.php:744
+msgid ""
+"Данные маски начинаются не на номер вашего курса и символ тире.\n"
+"      Если вы опять введете какую-либо маску, не начинающуюся на"
+msgstr ""
+
+#: ../../../../temp/test_test.php:746
+msgid "то она будет повторно удаляться."
+msgstr ""
+
+#: ../../../../temp/test_test.php:782
+msgid "Расширенное редактирование задания запрещено."
+msgstr ""
+
+#: ../../../../temp/test_test.php:783
+msgid ""
+"Вы не можете редактировать вопросы, т.к. этот тест создан\n"
+"         на другом курсе"
+msgstr ""
+
+#: ../../../../temp/test_test.php:785
+msgid ""
+"Вы можете лишь удалить целиком тест, изменить другие его параметры\n"
+"         или перенести еще раз на другой курс. Если вернуть тест на прежний курс\n"
+"         то редактирование будет доступно. Вы можете лишь удалять с этой страницы\n"
+"         любые вопросы."
+msgstr ""
+
+#: ../../../../temp/test_test.php:788
+msgid "Справка"
+msgstr ""
+
+#: ../../../../temp/test_test.php:806
+msgid "Управление кол-вом попыток тестирований"
+msgstr ""
+
+#: ../../../../temp/test_test.php:810
+msgid "Отчеты о тестированиях на этом задании"
+msgstr ""
+
+#: ../../../../temp/test_test.php:815
+msgid "расширенный]"
+msgstr ""
+
+#: ../../../../temp/test_test.php:826
+msgid ""
+"Вы не можете начать это задание, т.к. еще не закончили\n"
+"   выполнять предыдущее. Вы можете либо пройти до конца предыдущий\n"
+"   сеанс тестирования, либо прервать его."
+msgstr ""
+
+#: ../../../../temp/test_test.php:829
+msgid "Вернуться к предыдущему сеансу тестирования"
+msgstr ""
+
+#: ../../../../temp/test_test.php:841
+#: ../../../../temp/test_test.php:944
+msgid "Редактирование задания"
+msgstr "Éditer la tâche"
+
+#: ../../../../temp/test_test.php:846
+msgid "Добавление задания"
+msgstr "Ajouter une tâche"
+
+#: ../../../../temp/test_test.php:946
+msgid "Название задания"
+msgstr "Nom de la tâche"
+
+#: ../../../../temp/test_test.php:966
+msgid "Задание опубликовано"
+msgstr ""
+
+#: ../../../../temp/test_test.php:966
+msgid "доступно слушателю для выполнения"
+msgstr ""
+
+#: ../../../../temp/test_test.php:989
+msgid "Вопросы задания"
+msgstr ""
+
+#: ../../../../temp/test_test.php:991
+msgid "Способ выбора вопросов"
+msgstr "Mode de sélection des questions"
+
+#: ../../../../temp/test_test.php:1004
+msgid "Одинаковое из каждой темы"
+msgstr "Nombre égal de questions de chaque thème"
+
+#: ../../../../temp/test_test.php:1011
+msgid "Задать из каждой темы"
+msgstr "Sélectionner des questions de chaque thème"
+
+#: ../../../../temp/test_test.php:1017
+msgid "Ограничить количество вопросов в задании до"
+msgstr "Limiter le nombre de questions dans la tâche à"
+
+#: ../../../../temp/test_test.php:1020
+msgid "показывать все"
+msgstr "afficher toutes les questions"
+
+#: ../../../../temp/test_test.php:1035
+msgid "Ограничить количество вопросов из темы"
+msgstr "Limiter le nombre de questions du thème"
+
+#: ../../../../temp/test_test.php:1043
+msgid "Нет тем вопросов в задании"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1051
+msgid "Количество вопросов на страницу"
+msgstr "Nombre de questions par page"
+
+#: ../../../../temp/test_test.php:1058
+msgid "Перемешивать вопросы при прохождении задания"
+msgstr "Mélanger les questions lors de l'accomplissement de la tâche"
+
+#: ../../../../temp/test_test.php:1063
+msgid "Выполнение задания"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1066
+msgid "Сколько раз учащийся может выполнять это задание"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1069
+msgid "кол-во не ограничено"
+msgstr "illimité"
+
+#: ../../../../temp/test_test.php:1074
+msgid "Через сколько дней сбрасывать данный счетчик прохождений"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1077
+msgid "никогда не сбрасывать"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1081
+msgid "Ограничение времени в минутах для прохождения задания"
+msgstr "Temps imparti (en min.) à l'accomplissement de la tâche :"
+
+#: ../../../../temp/test_test.php:1082
+msgid "мин"
+msgstr "minutes"
+
+#: ../../../../temp/test_test.php:1084
+msgid "без ограничений"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1087
+msgid "Дополнительно"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1090
+msgid "Показывать страницу промежуточных результатов учащегося, по итогам последних вопросов"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1096
+msgid "Там же показывать ссылку"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1109
+msgid "Показывать результаты тестирования в конце задания (общие результаты)"
+msgstr "Montrer les résultats du test à la fin de l'accomplissement de la tâche (résultats globaux)"
+
+#: ../../../../temp/test_test.php:1133
+msgid "Комментарий к заданию"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1163
+#: ../../../../temp/test_test.php:1634
+msgid "нет прав редактировать данный тест"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1246
+#: ../../../../temp/test_test.php:1512
+#: ../../../../temp/test_test.php:1564
+#: ../../../../temp/test_test.php:1751
+#: ../../../../temp/teachers/edit_navigation.php:58
+msgid "Курс заблокирован. Данная операция невозможна"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1262
+msgid "Ограничение времени выполнения задания меньше чем суммарное ограничение времени ответа на вопросы."
+msgstr ""
+
+#: ../../../../temp/test_test.php:1376
+msgid "Неправильная формула"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1527
+msgid "Задание удалено"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1557
+msgid "Укажите учебный курс"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1600
+msgid "Перенос теста"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1607
+msgid "На какой из ваших курсов перенести этот тест:"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1613
+msgid "Перенести!"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1615
+msgid ""
+"После переноса теста на другой курс нельзя будет\n"
+"   редактировать список вопросов теста. Однако, тест сохранит свои\n"
+"   свойства и можно будет изменять все свойства теста, кроме\n"
+"   добавления/удаления вопросов. Тест можно будет так же удалить\n"
+"   или перенести назад на этот курс. Если в дальнейшем вы вернете тест\n"
+"   на этот курс, в нем опять все будет доступно для редактирования.\n"
+"   После переноса на другой курс, любой преподаватель того курса сможет\n"
+"   удалить тест или изменить его свойства (но не сможет редактировать список\n"
+"   вопросов)."
+msgstr ""
+
+#: ../../../../temp/test_test.php:1640
+msgid "нет прав перенести этот тест на чужой курс"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1656
+#: ../../../../temp/test_test.php:1696
+#: ../../../../temp/test_test.php:1741
+msgid "нет прав просматривать данный тест"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1667
+msgid "копия от"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1686
+msgid "Новый тест с"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1686
+msgid "скопирован! В имя нового теста автоматически дописано слово 'Копия', но вы можете изменить это имя."
+msgstr ""
+
+#: ../../../../temp/test_test.php:1702
+msgid "Список вопросов, выбранные маской теста"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1757
+msgid "Такого задания нет"
+msgstr ""
+
+#: ../../../../temp/test_test.php:1763
+msgid "Не переданы коды для удаления"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:12
+msgid "Попытки выполнения задания"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:18
+msgid "Вы не зарегистрированы ни на одном из курсов"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:21
+msgid "Вы не зарегистрированы ни на одном из курсов."
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:89
+msgid "Нет заданий"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:177
+msgid "Дата попытки"
+msgstr "Date d'essai"
+
+#: ../../../../temp/test_test_stud.php:179
+msgid "Набранный балл"
+msgstr "Nombre de points obtenus"
+
+#: ../../../../temp/test_test_stud.php:180
+msgid "Отчет о прохождении"
+msgstr "Rapport d'exécution"
+
+#: ../../../../temp/test_test_stud.php:195
+msgid "Действительно хотите пройти это задание?"
+msgstr "Êtes-vous sûr de vouloir accomplir cette tâche ?"
+
+#: ../../../../temp/test_test_stud.php:197
+msgid "К сожалению, у вас уже не осталось попыток на прохождение этого задания. Все равно открыть?"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:198
+msgid "Внимание! У вас осталось попыток для прохождения:"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:205
+msgid "Оценка:"
+msgstr "Note :"
+
+#: ../../../../temp/test_test_stud.php:225
+msgid "Попытки прохождения исчерпаны."
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:226
+msgid "Осталось попыток:"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:227
+msgid "Попытки не лимитированы"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:232
+msgid "еще не сдан"
+msgstr ""
+
+#: ../../../../temp/test_test_stud.php:259
+msgid "Показать отчёт"
+msgstr "Afficher le rapport"
+
+#: ../../../../temp/test_test_stud.php:261
+msgid "отключен преподавателем"
+msgstr ""
+
+#: ../../../../temp/test_util.php:10
+msgid ""
+"К этой странице могут обратится только:\n"
+"      преподаватель,  представитель учебной администрации, администратор"
+msgstr ""
+
+#: ../../../../temp/test_util.php:32
+msgid "Очистка/управление кол-вом попыток тестирований"
+msgstr ""
+
+#: ../../../../temp/test_util.php:38
+msgid "Кол-во"
+msgstr ""
+
+#: ../../../../temp/test_util.php:38
+#: ../../../../temp/test_util.php:39
+msgid "попыток"
+msgstr ""
+
+#: ../../../../temp/test_util.php:39
+msgid "Осталось"
+msgstr ""
+
+#: ../../../../temp/test_util.php:41
+msgid "Последнее"
+msgstr ""
+
+#: ../../../../temp/test_util.php:41
+msgid "тестирование"
+msgstr ""
+
+#: ../../../../temp/test_util.php:81
+msgid "это задание было удалено"
+msgstr ""
+
+#: ../../../../temp/test_util.php:91
+msgid "снять"
+msgstr ""
+
+#: ../../../../temp/test_util.php:92
+#: ../../../../temp/teachers/organization.lib.php:847
+#: ../../../../temp/teachers/organization.lib.php:852
+msgid "добавить"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:35
+msgid "Просмотр вопроса"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:61
+msgid "К сожалениею, закончилось время, отпущенное на решение задания. Сейчас вы перейдете на страницу результатов. В ведомость записывается результат тестирования 'прервано по лимиту времени' и оценка только тех вопросов, которые вы уже успели решить."
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:94
+msgid ""
+"Доступ к данному виду показа вопросов имеют только преподаватели\n"
+"                            курса, на который записан вопрос. Либо вы не преподаватель, либо\n"
+"                            вы пытаетесь смотерть вопросы другого курса."
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:117
+#: ../../../../temp/test_vopros.php:121
+msgid "Промежуточные результаты"
+msgstr "Résultats intermédiaires"
+
+#: ../../../../temp/test_vopros.php:123
+msgid "ваш тест не позволяет смотреть промежуточные результаты"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:124
+msgid "Данные по вопросу(ам), которые были вам заданы только на предыдущей странице:"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:127
+#: ../../../../temp/test_vopros.php:134
+msgid "Минимальный балл:"
+msgstr "Note minimale :"
+
+#: ../../../../temp/test_vopros.php:128
+#: ../../../../temp/test_vopros.php:135
+msgid "Максимальный балл:"
+msgstr "Note maximale :"
+
+#: ../../../../temp/test_vopros.php:129
+msgid "Кол-во вопросов:"
+msgstr "Nombre de questions :"
+
+#: ../../../../temp/test_vopros.php:131
+msgid "Данные по всем вопросам, на которые вы отвечали в этом задании:"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:133
+msgid "Набранно баллов всего:"
+msgstr "Nombre de points obtenus :"
+
+#: ../../../../temp/test_vopros.php:136
+msgid "Кол-во пройденных вопросов:"
+msgstr "Nombre de questions traitées :"
+
+#: ../../../../temp/test_vopros.php:139
+msgid "Ссылки к заданным вопросам:"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:151
+msgid "Перейти к следующим вопросам"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:153
+msgid "Не показывать промежуточные результаты (только для текущего задания)"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:160
+msgid "ошибочный метод вызова данного файла"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:372
+msgid "Не найдена функция для вопроса типа"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:401
+#: ../../../../temp/test_vopros.php:406
+msgid "Комментарии:"
+msgstr "Commentaires :"
+
+#: ../../../../temp/test_vopros.php:405
+msgid "см. в учебных материалах"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:410
+msgid "Комментарии к ответу:"
+msgstr "Commentaires sur cette question :"
+
+#: ../../../../temp/test_vopros.php:426
+msgid "Вес:"
+msgstr "Valeur :"
+
+#: ../../../../temp/test_vopros.php:435
+#: ../../../../temp/test_vopros.php:442
+msgid "Правильный ответ(ы):"
+msgstr "Réponse(s) correcte(s) :"
+
+#: ../../../../temp/test_vopros.php:457
+msgid "Отсутствуют варианты ответа на вопрос."
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:458
+msgid "Введите один или более вариантов ответа."
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:462
+msgid "Ни один вариант ответа не является правильным."
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:463
+msgid "Отметьте один/несколько вариантов как правильные."
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:466
+msgid "Обнаружена ошибка в этом вопросе, возникшая в следствии неправильного ввода вопроса преподавателем:"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:469
+msgid "Устранить ошибку этого вопроса можно на странице его редактирования так:"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:474
+msgid "НЕОБХОДИМО"
+msgstr ""
+
+#: ../../../../temp/test_vopros.php:474
+msgid ""
+"устранить ошибку в этом вопросе,\n"
+"                                т.к. если вы включите этот вопрос в какое-либо задание, то\n"
+"                                ответить на вопрос будет нельзя, в следствии чего\n"
+"                                прохождение ВСЕГО ЗАДАНИЯ, включающего этот вопрос, для учащихся будет невозможно!"
+msgstr ""
+
+#: ../../../../temp/teachers/course_import.php:15
+msgid "Электронный курс заблокирован. Данная операция невозможна"
+msgstr ""
+
+#: ../../../../temp/teachers/course_import.php:25
+msgid "Импортирование курса"
+msgstr ""
+
+#: ../../../../temp/teachers/course_import.php:32
+#: ../../../../temp/teachers/course_import.php:41
+msgid "Импорт курса"
+msgstr "Importer un cours"
+
+#: ../../../../temp/teachers/course_import.php:33
+msgid "Загрузка и обработка файлов курса"
+msgstr ""
+
+#: ../../../../temp/teachers/course_import.php:34
+msgid "После загрузки файлов требуется время на распаковку и обработку файлов курса"
+msgstr ""
+
+#: ../../../../temp/teachers/course_import.php:36
+msgid "Выберите тип загружаемого курса"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_course_prop.php:29
+#: ../../../../temp/teachers/edit_navigation.php:51
+msgid "НЕ ОПРЕДЕЛЕН ИДЕНТИФИКАТОР КУРСА !!!"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_course_prop.php:34
+msgid "Описание сохранено"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_course_prop.php:41
+msgid "Редактировать описание курса:"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_navigation.php:99
+#: ../../../../temp/teachers/organization.lib.php:600
+msgid "пустой элемент"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_navigation.php:177
+msgid "<пустой элемент>"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_offline_courses.php:18
+#: ../../../../temp/teachers/edit_offline_courses.php:20
+msgid "Локальные копии курсов"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_offline_courses.php:55
+msgid "Пути к локальным версиям курсов сохранены"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_offline_courses.php:62
+msgid "Пути к локальным версиям курсов не сохранились. Проверьте правильность указания папки курса и наличия в пути папки media."
+msgstr ""
+
+#: ../../../../temp/teachers/edit_offline_courses.php:74
+msgid "использовать локальные копии курсов"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_offline_courses.php:74
+msgid "(укажите на любой файл из локально установленной копии курса)"
+msgstr ""
+
+#: ../../../../temp/teachers/edit_offline_courses.php:79
+msgid "Выбран каталог:"
+msgstr ""
+
+#: ../../../../temp/teachers/item_properties.php:60
+msgid "Править свойства модуля"
+msgstr "Éditer les propriétés du module"
+
+#: ../../../../temp/teachers/item_properties.php:71
+msgid "Название модуля"
+msgstr "Nom du module"
+
+#: ../../../../temp/teachers/item_properties.php:73
+msgid "Статус модуля"
+msgstr "Statut du module"
+
+#: ../../../../temp/teachers/item_properties.php:89
+msgid "Описание модуля"
+msgstr "Descriptif du module"
+
+#: ../../../../temp/teachers/item_properties.php:119
+msgid "Ошибка при изменении данных!"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:34
+msgid "Тип занятия"
+msgstr "Type de tâche"
+
+#: ../../../../temp/teachers/organization.lib.php:37
+msgid "Длительность (академ. час)"
+msgstr "Durée (heure académique)"
+
+#: ../../../../temp/teachers/organization.lib.php:39
+msgid "применить"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:40
+msgid "свернуть"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:227
+msgid "Перемещать сразу на несколько позиций"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:227
+msgid "позиций"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:228
+msgid "Перемещать все подэлементы"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:229
+msgid "Очистить программу курса"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:246
+msgid "Редактирование содержания курса:"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:249
+msgid "содержание"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:260
+#: ../../../../temp/teachers/organization.lib.php:858
+msgid "править"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:363
+msgid "на уровнь выше"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:364
+msgid "на уровень ниже"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:365
+msgid "переместить вверх"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:366
+msgid "переместить вниз"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:367
+msgid "удалить пункт"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:579
+msgid "создать блок материалов"
+msgstr "Créer un bloc de documents"
+
+#: ../../../../temp/teachers/organization.lib.php:663
+msgid "&lt;пустой элемент&gt;"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:790
+msgid "ак.час."
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:847
+msgid "заменить"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:926
+msgid "Несколько элементов структуры курса были повреждены и не пожлежат восстановлению"
+msgstr ""
+
+#: ../../../../temp/teachers/organization.lib.php:931
+msgid "Отсутствует корневой элемент структуры курсов! Восстановление невозможно, очистить структуру курса?"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:73
+#: ../../../../temp/teachers/show_modules.lib.php:95
+#: ../../../../temp/teachers/show_modules.lib.php:425
+#: ../../../../temp/teachers/show_modules.php:63
+#: ../../../../temp/teachers/show_modules.php:78
+msgid "Вы уверены, что хотите удалить?"
+msgstr "Êtes-vous sûr de vouloir supprimer ?"
+
+#: ../../../../temp/teachers/show_modules.lib.php:140
+msgid "развернуть"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:209
+msgid "Изучить"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:274
+msgid "Запустить программу"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:289
+msgid "Задать вопросы"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:316
+msgid "синхронизировать с преподавателем"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:330
+#: ../../../../temp/teachers/show_modules.lib.php:331
+msgid "Глоссарий"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:426
+msgid "удалить задание из модуля"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.lib.php:526
+msgid "Данный форум был удалён либо дана ошибочная сслыка, измените ссылку на форум"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.php:26
+msgid "тема:"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.php:27
+msgid "статус:"
+msgstr ""
+
+#: ../../../../temp/teachers/show_modules.php:29
+msgid "описание:"
+msgstr ""
+
+#: ../../../../temp/teachers/show_org_metadata.php:37
+#, php-format
+msgid "Выберите один из модулей в программе курса"
+msgstr ""
+
+#: ../../../../temp/teachers/top.inc.php:17
+msgid "ОБУЧЕНИЕ"
+msgstr ""
+
+#: ../../../../temp/teachers/top.inc.php:20
+msgid "О СЕРВЕРЕ"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:34
+#, php-format
+msgid "сохранен в файлах:"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:36
+#, php-format
+msgid "структура"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:36
+#: ../../../../temp/teachers/xml_exp_imp.php:38
+#, php-format
+msgid "загрузить"
+msgstr "joindre"
+
+#: ../../../../temp/teachers/xml_exp_imp.php:55
+msgid "Только проверка формата входных данных!"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:62
+msgid "Нет файла тестов"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:68
+msgid "Ошибка записи вопросов"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:70
+msgid "Вопросы импортированы успешно"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:80
+msgid "Введите файлы для загрузки на курс"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:81
+msgid "Файл тестов"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:85
+msgid "Только проверить"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:102
+msgid "Подготовить дистрибутив курсов специальности"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:287
+msgid "Найдено вопросов"
+msgstr "Nombre de questions trouvées"
+
+#: ../../../../temp/teachers/xml_exp_imp.php:289
+msgid "Ответов в вопросах"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:312
+msgid "Ошибка импорта тестов"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:385
+#, php-format
+msgid "НАЙДЕНО %s ВОПРОСОВ В ФАЙЛЕ %s<br><br>"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:443
+msgid "НАЙДЕНО"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:443
+msgid "ВОПРОСОВ В ФАЙЛЕ"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:485
+msgid "Тема:"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:489
+msgid "ВОПРОС:"
+msgstr ""
+
+#: ../../../../temp/teachers/xml_exp_imp.php:578
+msgid "Ошибка в вопросе или ответе под номером"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:27
+msgid ""
+"Вопрос может содержать несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой."
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:34
+#: ../../../../temp/template_test/10-v.php:40
+#: ../../../../temp/template_test/11-v.php:9
+#: ../../../../temp/template_test/12-v.php:37
+#: ../../../../temp/template_test/13-v.php:37
+#: ../../../../temp/template_test/2-v.php:46
+msgid "Формулировка вопроса"
+msgstr "Formulation de la question"
+
+#: ../../../../temp/template_test/1-v.php:35
+msgid "Верный вариант"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:38
+#: ../../../../temp/template_test/2-v.php:49
+msgid "Правильный вариант"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:184
+msgid "Ответ на вопрос не получен"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:185
+#, php-format
+msgid "Ответ на вопрос N %s не получен. За этот вопрос зачисляю баллов: %s."
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:193
+#: ../../../../temp/template_test/1-v.php:194
+msgid "попытка передать неверный код ответа"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:195
+msgid "За этот вопрос зачисляю баллов"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:207
+#: ../../../../temp/template_test/12-v.php:182
+#: ../../../../temp/template_test/13-v.php:220
+#: ../../../../temp/template_test/14-v.php:108
+#: ../../../../temp/template_test/14-v.php:126
+#: ../../../../temp/template_test/14-v.php:148
+msgid "Правильно"
+msgstr ""
+
+#: ../../../../temp/template_test/1-v.php:213
+#: ../../../../temp/template_test/12-v.php:187
+#: ../../../../temp/template_test/13-v.php:225
+#: ../../../../temp/template_test/14-v.php:114
+#: ../../../../temp/template_test/14-v.php:132
+#: ../../../../temp/template_test/14-v.php:154
+msgid "Неправильно"
+msgstr ""
+
+#: ../../../../temp/template_test/10-v.php:36
+msgid "Этот тип вопроса предназначен для создания СПЕЦИАЛИЗИРОВАННЫХ тестов, связанных с запуском внешней программы-тренажера."
+msgstr ""
+
+#: ../../../../temp/template_test/10-v.php:43
+msgid "Параметры вызова"
+msgstr ""
+
+#: ../../../../temp/template_test/10-v.php:58
+#: ../../../../temp/template_test/11-v.php:33
+#: ../../../../temp/template_test/12-v.php:63
+#: ../../../../temp/template_test/13-v.php:64
+#: ../../../../temp/template_test/2-v.php:79
+msgid "Ошибка структуры данных в вопросе:"
+msgstr ""
+
+#: ../../../../temp/template_test/10-v.php:65
+msgid "параметр"
+msgstr ""
+
+#: ../../../../temp/template_test/10-v.php:243
+#: ../../../../temp/template_test/10-v.php:244
+msgid "Задание выполнено"
+msgstr ""
+
+#: ../../../../temp/template_test/11-v.php:5
+msgid "Вопрос на поиск соответствий столбцов таблицы ее строкам. Каждой строке может соответствовать только один столбец, при этом один столбец может быть поставлен в соответствие произвольному числу строк."
+msgstr ""
+
+#: ../../../../temp/template_test/11-v.php:12
+msgid "Строки"
+msgstr ""
+
+#: ../../../../temp/template_test/11-v.php:13
+msgid "Столбцы"
+msgstr ""
+
+#: ../../../../temp/template_test/11-v.php:139
+#: ../../../../temp/template_test/12-v.php:165
+#: ../../../../temp/template_test/13-v.php:193
+msgid "Не передан ответ на вариант"
+msgstr ""
+
+#: ../../../../temp/template_test/11-v.php:147
+msgid "Недопустимый ответ на вариант"
+msgstr ""
+
+#: ../../../../temp/template_test/11-v.php:155
+#: ../../../../temp/template_test/13-v.php:218
+#, php-format
+msgid "К варианту N%s [%s] выбрано [%s]"
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:33
+msgid "Вопрос для упорядочивания списка выражений в определённом порядке."
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:40
+#: ../../../../temp/template_test/13-v.php:40
+msgid "Выражение"
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:48
+msgid "Упорядочивание списка выражений"
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:166
+#: ../../../../temp/template_test/13-v.php:194
+msgid "Не передан один из вариантов ответа на вопрос"
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:166
+#: ../../../../temp/template_test/13-v.php:194
+#, php-format
+msgid "Зачисляю за весь вопрос %s баллов."
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:172
+#: ../../../../temp/template_test/13-v.php:200
+msgid "Ничего не выбрано на вариант"
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:173
+#: ../../../../temp/template_test/13-v.php:201
+msgid "Вариант пропущен"
+msgstr ""
+
+#: ../../../../temp/template_test/12-v.php:180
+#, php-format
+msgid "Варианту N%s [%s] выбран порядок [%s]"
+msgstr ""
+
+#: ../../../../temp/template_test/13-v.php:33
+msgid "Вопрос для классификации списка выражений."
+msgstr ""
+
+#: ../../../../temp/template_test/13-v.php:41
+msgid "Класс"
+msgstr ""
+
+#: ../../../../temp/template_test/13-v.php:49
+msgid "Классификация списка выражений"
+msgstr ""
+
+#: ../../../../temp/template_test/13-v.php:209
+msgid "Ошибочный вариант"
+msgstr ""
+
+#: ../../../../temp/template_test/13-v.php:210
+msgid "Ошибочный вариант ответа на вопрос"
+msgstr ""
+
+#: ../../../../temp/template_test/13-v.php:210
+#, php-format
+msgid "Зачисляю %s баллов"
+msgstr ""
+
+#: ../../../../temp/template_test/14-v.php:107
+#: ../../../../temp/template_test/14-v.php:113
+#: ../../../../temp/template_test/14-v.php:125
+#: ../../../../temp/template_test/14-v.php:131
+#: ../../../../temp/template_test/14-v.php:147
+#: ../../../../temp/template_test/14-v.php:153
+msgid "Введено:"
+msgstr ""
+
+#: ../../../../temp/template_test/2-v.php:37
+msgid ""
+"Вопрос может содержать несколько верных вариантов ответа.\n"
+"Ответ считается правильным только в том случае, если учащийся отметил галочками все\n"
+"верные варианты. Если учащийся не отметит хотя бы один из указанных преподавателем\n"
+"вариантов  или отметит не все  верные варианты, то вопрос в целом не заcчитывается, т.е.\n"
+"зачисляется минимальное количество баллов. Если учащийся отмечает галочками только\n"
+"варианты с правильными ответами, то он получает максимальное  количество баллов."
+msgstr ""
+
+#: ../../../../temp/template_test/2-v.php:89
+msgid "Ни один ответ не помечен как правильный (это нормальная ситуация). Чтобы ответить на этот вопрос правильно (и заработать максимальный балл), учащийся во время тестировании должен снять все галочки (вернее, ни одну не ставить)."
+msgstr ""
+
+#: ../../../../temp/template_test/2-v.php:200
+msgid "отмечен"
+msgstr ""
+
+#: ../../../../temp/template_test/2-v.php:200
+msgid "не отмечен"
+msgstr ""
+
+#: ../../../../temp/template_test/2-v.php:202
+#, php-format
+msgid "Верно %s из %s"
+msgstr ""
+
+#: ../../../../temp/template_test/2-v.php:206
+#, php-format
+msgid "Неверно %s из %s"
+msgstr ""
+
+#: ../../../../temp/template_test/2-v_.php:36
+#: ../../../../temp/template_test/2-v_old.php:36
+msgid "несколько верных вариантов"
+msgstr ""
+
+#: ../../../../temp/template_test/2-v_old.php:218
+msgid "БАЛЛ"
+msgstr ""
+
+#: ../../../../temp/template_test/3-v.php:33
+msgid ""
+"Вопрос для поиска соответствий между 2-мя списками выражений.\n"
+"Например, можно осуществить поиск соответствий между названиями 5-ти стран \n"
+"и 5-ти столиц. Каждому варианту из одного списка должен соответствовать \n"
+"один и только один вариант из другого списка. Если хоть одно соответствие \n"
+"найдено неправильно или сопоставлены не все выражения, начисляется \n"
+"минимальное количество баллов. Если все соответствия найдены верно, учащийся \n"
+"получает максимальное количество баллов."
+msgstr ""
+
+#: ../../../../temp/template_test/3-v.php:46
+msgid "Фраза"
+msgstr ""
+
+#: ../../../../temp/template_test/3-v.php:47
+msgid "Соответствие"
+msgstr ""
+
+#: ../../../../temp/template_test/3-v.php:56
+msgid "Заполнение пропусков в фразе"
+msgstr ""
+
+#: ../../../../temp/template_test/4-v.php:21
+msgid ""
+"Вопрос служит только для возможности скачать учащимся присоединенного\n"
+"файла или ознакомиться с текстом вопроса. Данный вопрос никак не \n"
+"оценивается, зачисляется 0 баллов и 100% правильности. Вопрос полезен,\n"
+"если нужно создать ознакомительный вопрос, на который не требуется\n"
+"отвечать учащемуся."
+msgstr ""
+
+#: ../../../../temp/template_test/4-v.php:44
+msgid "Правильных ответов в таком типе вопросов не бывает, т.к. вопрос не содержит возможность ввода ответа, а служит только для показа текста вопроса или прикрепленного файла(ов)."
+msgstr ""
+
+#: ../../../../temp/template_test/5-v.php:38
+msgid ""
+"Составьте какой-либо текст с одним или несколькими  пропущенными словами,\n"
+"значениями или диапазонами значений.\n"
+"Эти пропущенные слова и должны будут ввести учащиеся. Сначала введите\n"
+"параметры 'основной вопрос' и 'начальный текст', затем -  любое количество\n"
+"параметров 'пропущенное слово' и 'последующий текст'. Чтобы закодировать\n"
+"фразу 'Каждый _____ желает знать, где ______ фазан', нужно вписать слова\n"
+"до первого пропуска ('Каждый') в поле 'начальный текст', далее слово 'охотник'\n"
+"в первую строку колонки 'пропущенное слово' и затем последующий текст\n"
+"('желает знать, где') в поле 'последующий текст' первой строки вариантов. Слова\n"
+"('сидит' и 'фазан.')нужно ввести аналогичным образом во вторую строку. Если\n"
+"учащийся введет все пропущенные слова верно, то начисляется максимальное\n"
+"количество баллов, иначе минимальное баллов. Если ответ частично верен, то\n"
+"начисляется часть от максимального балла.\n"
+"Слова можно вводить в любом регистре, пробелы по краям слов не обрабатываются.\n"
+"Для савнения значений как чисел, заключите значения в квадратные скобки - [5.0].\n"
+"Для указания диапазона укажите границы через двоеточие [1.1:7.77]"
+msgstr ""
+
+#: ../../../../temp/template_test/5-v.php:58
+msgid "Начало&nbsp;фразы"
+msgstr ""
+
+#: ../../../../temp/template_test/5-v.php:61
+#: ../../../../temp/template_test/9-v.php:52
+msgid "Вариант заполнения пропуска (через \";\")"
+msgstr ""
+
+#: ../../../../temp/template_test/5-v.php:62
+msgid "Последующий текст"
+msgstr ""
+
+#: ../../../../temp/template_test/5-v.php:89
+msgid "слово"
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:20
+msgid ""
+"Данный тип вопроса требует проверки ответов непосредственно преподавателем.\n"
+"В поле 'вопрос' введите формулировку вопроса. Учащийся сможет разместить свой ответ  в \n"
+"большом текстовом поле, либо в прикрепленном файле, либо использовать оба этих варианта.\n"
+"Далее  ответ в виде текста и файла попадает в список вопросов, отложеннных для проверки.\n"
+"Рассматривая ответы, преподаватель сам оценивает правильность каждого из них."
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:42
+msgid "Правильных ответов в таком вопросе не бывает, т.к. этот вопрос с ручной обработкой ответов. Правильность ответов и прикрепленных файлов проверяют преподаватели курса."
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:126
+msgid "Нельзя загружать файлы более 2Мб."
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:132
+msgid "не могу удалить"
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:199
+#, php-format
+msgid "Приложен файл %s байт, имя: %s; "
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:205
+#, php-format
+msgid "приложен текст %s байт"
+msgstr ""
+
+#: ../../../../temp/template_test/6-v.php:210
+#, php-format
+msgid "Ни текста, ни аттач-файла не было передано, начисляю %s баллов."
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:30
+msgid ""
+"Вопрос содержит несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. К вопросу обязательно должна прилагаться картинка\n"
+"для выбора нужного варианта ответа на ней. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой, загрузите картинку для вопросу и задайте\n"
+"карту - координатные области на картинке, относящиеся к каждому из вариантов ответа."
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:41
+msgid "Карта: список координат для областей ответа"
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:41
+msgid "редактировать"
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:42
+msgid "Показывать варианты ответа (иначе только картинку)"
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:249
+#: ../../../../temp/template_test/8-v.php:156
+msgid "попытка передать неверный код ответа."
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:250
+#: ../../../../temp/template_test/8-v.php:157
+msgid "попытка передать неверный код ответа:"
+msgstr ""
+
+#: ../../../../temp/template_test/7-v.php:251
+#: ../../../../temp/template_test/8-v.php:158
+msgid "За этот вопрос зачисляю баллов:"
+msgstr ""
+
+#: ../../../../temp/template_test/8-v.php:8
+msgid ""
+"Вопрос может содержать несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой. Обязательно "
+msgstr ""
+
+#: ../../../../temp/template_test/9-v.php:38
+msgid ""
+"Этот тип вопроса предназначен для создания СПЕЦИАЛИЗИРОВАННЫХ тестов. Для этого сам тест\n"
+"   можно оформить, к примеру, как FLASH объект, который работает как черный ящик для eLearning Server.\n"
+"   В этом случае FLASH объект передает набор параметров - результатов тестирования, а eLearning Server\n"
+"   их принимает, обрабатывает и записывает в БД. Для корректной работы имена параметров, передаваемых\n"
+"   из ОБЪЕКТА должны соответсвовать полям в правой колонке ввода (при формировании вопроса).\n"
+"   Значения переданных параметров будут проверяться по шаблонам в левой колонке ввода.\n"
+msgstr ""
+
+#: ../../../../temp/template_test/9-v.php:49
+msgid "Подпись"
+msgstr "Entrée"
+
+#: ../../../../temp/template_test/9-v.php:53
+msgid "Имя параметра"
+msgstr "Nom du paramètre"
+
+#: ../../../../temp/template_test/leader1-v.php:174
+#: ../../../../temp/template_test/leader2-v.php:179
+#: ../../../../temp/template_test/leader6-v.php:167
+#, php-format
+msgid "По слушателю %s выбран вариант %s"
+msgstr ""
+
+msgid "Выйти из системы"
+msgstr "Quitter le système"
+
+msgid "Поиск по Базе знаний"
+msgstr "Chercher dans les connaissances de base"
+
+msgid "поиск"
+msgstr "recherche"
+
+msgid "Просмотр Базы знаний"
+msgstr "Affichage des connaissances de base"
+
+msgid "Общие настройки"
+msgstr "Préférences"
+
+msgid "Название Системы"
+msgstr "Nom du système"
+
+msgid "E-mail администрации Портала"
+msgstr "e-mail de l'administrateur du portail"
+
+msgid "Количество строк в таблице"
+msgstr "Nombre de lignes dans le tableau"
+
+msgid "Количество сообщений, отображаемых в рабочей области канала чата"
+msgstr "Nombre de messages affichés dans le champ du canal du forum"
+
+msgid "Интеграция с iWebinar"
+msgstr "Interaction avec iWebinar"
+
+msgid "Адрес точки публикации вебинаров"
+msgstr "Adresse du point de publication des webinars"
+
+msgid "Безопасность"
+msgstr ""
+
+msgid "Запретить слушателю выделять и копировать содержимое страниц"
+msgstr ""
+
+msgid "Запретить одновременное нахождение на сервере нескольких пользователей с одним логином"
+msgstr ""
+
+msgid "eLearning Server"
+msgstr ""
+
+msgid "Количество вопросов:"
+msgstr "Nombre de questions :"
+
+msgid "Количество попыток:"
+msgstr "Nombre de tentatives :"
+
+msgid "Ограничение по времени, мин:"
+msgstr "Limite de temps, en minutes :"
+
+msgid "Приступить к выполнению?"
+msgstr "Commencer l'exécution ?"
+
+msgid "создать тему"
+msgstr "Créer un thème"
+
+msgid "Темы"
+msgstr "Thèmes"
+
+msgid "Автор "
+msgstr ""
+
+msgid "Сообщений"
+msgstr "Messages"
+
+msgid "Обновление"
+msgstr ""
+
+msgid "Все темы"
+msgstr "Tous les thèmes"
+
+msgid "Ответить на сообщение"
+msgstr "Répondre au message"
+
+msgid "учетные записи"
+msgstr ""
+
+msgid "создать роль"
+msgstr "Créer un rôle"
+
+msgid "Базовая роль"
+msgstr "Rôle de base"
+
+msgid "Доступные функции"
+msgstr "Fonctions accessibles"
+
+msgid "нет существующих ролей"
+msgstr "pas de rôle correspondant"
+
+msgid "Создание новой роли"
+msgstr "Créer un nouveau rôle"
+
+msgid "Название роли"
+msgstr "Nom du rôle"
+
+msgid "Шаг 1. Выбор базовой роли"
+msgstr "Étape 1. Choix du rôle de base"
+
+msgid "всем новым"
+msgstr "À tous les nouveaux utilisateurs"
+
+msgid "Шаг 2. Выбор функций"
+msgstr "Étape 2. Choix de la fonction"
+
+msgid "Функции, доступные базовой роли"
+msgstr "Fonctions accessibles au rôle de base"
+
+msgid "Функции, доступные производной роли"
+msgstr "Fonctions accessibles au rôle dérivé"
+
+msgid "Вперед"
+msgstr "Suivant"
+
+msgid "Редактировать роль"
+msgstr "Éditer le rôle"
+
+msgid "Назначить роль пользователям"
+msgstr "Assigner un rôle aux utilisateurs"
+
+msgid "Создать руководство пользователя"
+msgstr "Créer une gestion des utilisateurs"
+
+msgid "Вы действительно желаете удалить роль? Восстановить будет невозможно!"
+msgstr "Êtes-vous sûr de vouloir supprimer ce rôle ? Il sera impossible de le restaurer."
+
+msgid "Назначение роли пользователям"
+msgstr "Assigner des rôles aux utilisateurs"
+
+msgid "Все пользователи"
+msgstr ""
+
+msgid "Пользователи, которым назначена данная роль"
+msgstr ""
+
+msgid "Внимание! Сеанс запущен в режиме просмотра. Используются настройки по умолчанию, оценка не выставляется. "
+msgstr ""
+
+msgid "Прошло:"
+msgstr ""
+
+msgid "мин."
+msgstr ""
+
+msgid "Всего:"
+msgstr ""
+
+msgid ""
+"Внимание! Осталось 5 минут до завершения тестирования.\n"
+"По истечении этого времени сеанс тестирования принудительно завершится."
+msgstr ""
+
+msgid ""
+"Внимание! Осталась 1 минута до перехода к следующему вопросу.\n"
+"По истечении этого времени переход будет осуществлен принудительно."
+msgstr ""
+
+msgid "Время ответа на вопрос вышло."
+msgstr ""
+
+msgid "Диапазон баллов: от"
+msgstr "Fourchette de points : à partir de"
+
+msgid "Сохранить и закончить"
+msgstr "Sauvegarder et terminer"
+
+msgid "Вопросов:"
+msgstr ""
+
+msgid "всего"
+msgstr ""
+
+msgid "осталось"
+msgstr ""
+
+msgid "Результат:"
+msgstr "Résultats :"
+
+msgid "баллов"
+msgstr "points"
+
+msgid "Название занятия"
+msgstr "Nom du cours"
+
+msgid "Всего вопросов"
+msgstr "Nombre de questions"
+
+msgid "Получено ответов"
+msgstr "Nombre de réponses reçues"
+
+msgid "Начало тестирования"
+msgstr "Début du test"
+
+msgid "сегодня в "
+msgstr ""
+
+msgid "Окончание тестирования"
+msgstr "Fin du test"
+
+msgid "Потрачено времени"
+msgstr "Temps écoulé"
+
+msgid "сек."
+msgstr ""
+
+msgid "Я подтверждаю, что ознакомился с результатами"
+msgstr ""
+
+msgid "Закончить просмотр"
+msgstr ""
+
+msgid "Тест не найден"
+msgstr ""
+
+msgid "Удалить сообщение"
+msgstr "Supprimer le message"
+
+msgid "Создание темы"
+msgstr "Créer un thème"
+
+msgid "Иконка"
+msgstr "Icône"
+
+msgid "Редактирование темы"
+msgstr "Éditer les thèmes"
+
+msgid "человек"
+msgstr ""
+
+msgid "человека"
+msgstr ""
+
+msgid "час"
+msgstr "heure(s)"
+
+msgid "часа"
+msgstr ""
+
+msgid "часов"
+msgstr ""
+
+msgid "посетил"
+msgstr ""
+
+msgid "посетило"
+msgstr ""
+
+msgid "посетили"
+msgstr ""
+
+msgid "Редактирование роли"
+msgstr "Éditer les rôles"
+
+msgid "Закрыть список функций"
+msgstr "Fermer la liste des fonctions"
+
+msgid "Открыть список функций"
+msgstr "Ouvrir la liste des fonctions"
+
+msgid "все новости"
+msgstr "toutes les nouvelles"
+
+msgid "Просмотр новости запрещён"
+msgstr ""
+
+msgid "Название администрации Портала (поле 'От' в письмах, рассылаемых Системой)"
+msgstr "Nom de l'administrateur du portail (champ 'De' dans les messages envoyés par le système)"
+
+msgid "Домен Active Directory для автоматической авторизации пользователей"
+msgstr ""
+
+msgid "Домен"
+msgstr ""
+
+msgid "Хост"
+msgstr ""
+
+msgid "Адрес контроллера домена"
+msgstr ""
+
+msgid "для импорта и синхронизации списка учетных записей"
+msgstr ""
+
+msgid "Имя пользователя"
+msgstr "Nom de l'utilisateur"
+
+msgid "Интеграция с Connect Pro"
+msgstr ""
+
+msgid "Логин администратора"
+msgstr "Login de l'administrateur"
+
+msgid "Пароль администратора"
+msgstr "Mot de passe de l'administrateur"
+
+msgid "Пароль по умолчанию для новых пользователей"
+msgstr "Mot de passe par défaut pour les nouveaux utilisateurs"
+
+msgid "высылать сообщения по email"
+msgstr "envoyer les messages par e-mail"
+
+msgid "Произвольный"
+msgstr "Aléatoire"
+
+msgid "Статистика"
+msgstr "Statistiques"
+
+msgid "Счетчик посетителей системы"
+msgstr "Compteur de visites du système"
+
+msgid "Заявки"
+msgstr "Demandes"
+
+msgid "Популярные курсы"
+msgstr "Cours souvent consultés"
+
+msgid "Активность"
+msgstr "Activité"
+
+msgid "Распределение активности"
+msgstr "Répartition de l'activité"
+
+msgid "Успеваемость"
+msgstr "Réussite"
+
+msgid "Разное"
+msgstr "Divers"
+
+msgid "Интересные факты"
+msgstr "Faits intéressants"
+
+msgid "Часто задаваемые вопросы"
+msgstr "Questions fréquentes"
+
+msgid "Видеоролики по работе с eLearning Server 4G"
+msgstr "Vidéos sur l'utilisation de eLearning Server 4G"
+
+msgid "Обучение"
+msgstr "Formation"
+
+msgid "Расписание на сегодня"
+msgstr "Emploi du temps d'aujourd'hui"
+
+msgid "Каталог учебных курсов"
+msgstr "Catalogue des cours"
+
+msgid "Рекомендуемые курсы"
+msgstr "Cours recommandés"
+
+msgid "Сбор обратной связи"
+msgstr "Effacer le contact retour"
+
+msgid "болонская система"
+msgstr "Le système de Bologne"
+
+msgid "вебинар"
+msgstr ""
+
+msgid "connect pro"
+msgstr ""
+
+msgid "интеграция с at"
+msgstr ""
+
+msgid "интеграция с cms"
+msgstr ""
+
+msgid "интеграция с sis"
+msgstr ""
+
+msgid "Синхронизация структуры организации"
+msgstr ""
+
+msgid "Уведомление по Email об отсутствиях на занятиях"
+msgstr "Message e-mail d'absence au cours"
+
+msgid "Администрирование"
+msgstr "Administration"
+
+msgid "Все учетные записи"
+msgstr "Tous les comptes utilisateurs"
+
+msgid "Создать учетную запись"
+msgstr "Créer un compte utilisateur"
+
+msgid "Сгенерировать учетные записи "
+msgstr ""
+
+msgid "Импортировать учетные записи из CSV"
+msgstr "Importer des comptes utilisateurs depuis CSV"
+
+msgid "Организаторы обучения"
+msgstr "Organisateurs de la formation"
+
+msgid "Настройка ролей"
+msgstr "Préférences des rôles"
+
+msgid "Портал"
+msgstr "Portail"
+
+msgid "Сервисы информационного взаимодействия Портала"
+msgstr "Service d'information du portail"
+
+msgid "Создать учебный курс"
+msgstr "Créer un cours"
+
+msgid "Импортировать классификацию из csv"
+msgstr "Importer une classification depuis CSV"
+
+msgid "Мои курсы"
+msgstr "Mes cours"
+
+msgid "Заявки на обучение"
+msgstr "Demandes de formation"
+
+msgid "Прошедшие обучения"
+msgstr "Formations suivies"
+
+msgid "Провайдеры обучения"
+msgstr "Fournisseurs de formation"
+
+msgid "Добавить провайдера"
+msgstr "Ajouter un fournisseur"
+
+msgid "Создать подразделение"
+msgstr "Créer une sous-division"
+
+msgid "Создать штатную единицу"
+msgstr "Créer un poste"
+
+msgid "Разработка учебных модулей"
+msgstr "Élaboration de modules de cours"
+
+msgid "Учебные модули в разработке"
+msgstr "Modules de cours actuellement en élaboration"
+
+msgid "Архив учебных модулей"
+msgstr "Archives des modules de cours"
+
+msgid "Поставщики"
+msgstr "Fournisseurs externes"
+
+msgid "Добавить поставщика"
+msgstr "Ajouter un fournisseur"
+
+msgid "Отчёты"
+msgstr "Rapports"
+
+msgid "Генерация отчета"
+msgstr "Générer un rapport"
+
+msgid "Архив отчетов"
+msgstr "Archives des rapports"
+
+msgid "Конструктор отчетных форм"
+msgstr "Concepteur de modèle de rapports"
+
+msgid "Создать отчетную форму"
+msgstr "Créer un modèle de rapport"
+
+msgid "Бланк отчетов"
+msgstr "Modèle de rapport"
+
+msgid "Настройки"
+msgstr "Préférences"
+
+msgid "Параметры системы"
+msgstr "Paramètres du système"
+
+msgid "Парольная политика"
+msgstr "Règles des mots de passe"
+
+msgid "Шаблоны cистемных сообщений"
+msgstr "Modèles des messages système"
+
+msgid "Шаблоны приказов"
+msgstr "Modèles d'ordres"
+
+msgid "Шаблон сертификатов"
+msgstr "Modèles de certificats"
+
+msgid "Создать классификатор"
+msgstr "Créer une classification"
+
+msgid "Просмотр"
+msgstr ""
+
+msgid "Импорт"
+msgstr "Importer"
+
+msgid "Конструктор уч. модуля"
+msgstr "Concepteur de module de cours"
+
+msgid "Создание учебного модуля"
+msgstr "Créer un module de cours"
+
+msgid "Редактирование учебного модуля"
+msgstr "Éditer un module de cours"
+
+msgid "Редактирование содержания учебного модуля"
+msgstr "Éditer le contenu d'un module de cours"
+
+msgid "Редактировать раздел"
+msgstr "Éditer une section"
+
+msgid "Просмотр ресурса"
+msgstr "Aperçu de la ressource"
+
+msgid "Редактирование свойств"
+msgstr "Éditer les propriétés"
+
+msgid "Календарный план"
+msgstr "Calendrier"
+
+msgid "Учебные материалы"
+msgstr "Documents d'étude"
+
+msgid "Разработчики"
+msgstr "Concepteurs"
+
+msgid "Внешний поставщик"
+msgstr "Fournisseur externe"
+
+msgid "Ведомость успеваемости"
+msgstr "Note de résultats"
+
+msgid "Редактирование"
+msgstr ""
+
+msgid "Вебинары"
+msgstr "Webinars"
+
+msgid "Подгруппы"
+msgstr "Sous-groupes"
+
+msgid "Редактирование содержимого"
+msgstr "Éditer le contenu"
+
+msgid "Редактирование учетной записи"
+msgstr "Éditer le compte utilisateur"
+
+msgid "История обучения"
+msgstr "Historique de la formation"
+
+msgid "История опросов"
+msgstr "Historique du questionnaire"
+
+msgid "Область ответственности организатора обучения"
+msgstr "Domaine de responsabilité de l'organisateur de la formation"
+
+msgid "Курсы преподавателю"
+msgstr "Cours pour l'enseignant"
+
+msgid "Курсы слушателю"
+msgstr "Cours pour l'auditeur"
+
+msgid "Результаты опросов"
+msgstr "Résultats des questionnaires"
+

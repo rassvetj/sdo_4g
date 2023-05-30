@@ -1,0 +1,76 @@
+<script>
+ function validateForm() {
+          if(document.add2.group.value == "0") {
+             alert("{?t?}Выберите группу{?/t?}");
+             return false;
+          }
+          else {
+             return true;
+          }
+ }
+</script>
+
+<form action="[self]" method=post name="add2" name="main" id="main" onsubmit="return validateForm();">
+<input type="hidden" name="c" value="add_submit" id="c">
+<input type="hidden" name="period" value="[period]">
+<input type="hidden" name="room" value="[room]">
+<input type="hidden" name="tweek" value="[tweek]">
+<input type="hidden" name="name" value="[name]">
+<input type="hidden" name="type" value="[type]">
+<input type="hidden" name="isgroup" value="[isgroup]">
+<input type="hidden" name="kurs" value="[kurs]">
+<input type="hidden" name="mm1" value="[mm1]">
+<input type="hidden" name="hh1" value="[hh1]">
+<input type="hidden" name="MM1" value="[MM1]">
+<input type="hidden" name="DD1" value="[DD1]">
+<input type="hidden" name="YY1" value="[YY1]">
+<input type="hidden" name="mm2" value="[mm2]">
+<input type="hidden" name="hh2" value="[hh2]">
+<input type="hidden" name="MM2" value="[MM2]">
+<input type="hidden" name="DD2" value="[DD2]">
+<input type="hidden" name="YY2" value="[YY2]">
+<input type="hidden" name="rebild" value="[REBILD]">
+<input type="hidden" name="condition" value="[CONDITION]">
+<input type="hidden" name="mark" value="[MARK]">
+<input type="hidden" name="desc" value="[desc]">
+<input type="hidden" name="datetype" value="[datetype]">
+<input type="hidden" name="relative_day1" value="[relative_day1]">
+<input type="hidden" name="relative_day2" value="[relative_day2]">
+  <table width="560" border="0" cellspacing="5" cellpadding="0" align="center">
+    <tr>
+      <td> <TABLE width="100%" class="brdr" cellspacing="0" cellpadding="0">
+          <tr>
+            <th width="100%">{?t?}добавление группового занятия на{?/t?} [day]</th>
+          </tr>
+        </TABLE></td>
+    </tr>
+    <tr>
+      <td align='right' valign='middle' class='shedaddform'> <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align='left' valign='middle' class='shedaddform'> {?t?}Группа:{?/t?}
+              <input type="hidden" name="toall" value="1">
+                          <select name="group" onChange="javascript:document.getElementById('c').value='add2';document.getElementById('main').submit()">
+                  [GROUP_SEL]
+              </select>
+          </td>
+            <td align="right"  valign='middle' class="shedaddform"> {?t?}в ведомость{?/t?}
+              <input type="checkbox" name="vedomost" value="1" [ADDPARAMVED]>
+            </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td> <table border="0" cellpadding="5" cellspacing="0" class="brdr" width="100%">
+          <tr class='th2'>
+            <td>{?t?}Фамилия, Имя{?/t?}</td>
+            <td width="50%">{?t?}Задание{?/t?}</td>
+          </tr>
+          [tr-people] </table></td>
+    </tr>
+    <tr>
+      <td align="right" class="shedaddform">
+          <input type="image" name="submit"  onMouseOver="this.src='[PATH]images/send_.gif';" onMouseOut="this.src='[PATH]images/send.gif';" src="[PATH]images/send.gif" align="right" alt="ok" border=0>
+      </td>
+    </tr>
+  </table>
+</form>

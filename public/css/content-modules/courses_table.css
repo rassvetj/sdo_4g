@@ -1,0 +1,18 @@
+#lesson_title a {
+    font-weight: bold;
+    font-size:1.636em !important;
+    text-decoration: underline;
+}
+#lesson_title a:hover {
+    font-weight: bold;
+    font-size:1.636em !important;
+    text-decoration: underline;
+}
+#lesson_title p {
+    font-weight: bold;
+    font-size:1.636em !important;
+}
+#lesson_go p {
+    line-height: 1.1em;
+    padding: 4px 0;
+}

@@ -1,0 +1,41 @@
+.evaluation_of_exercise{
+	display:inline-block;
+	float:right;
+}
+.evaluation_of_exercise b{
+	font-size: 1.636em;
+	color: #B55B5B;
+}
+.lesson_forum_wrap .marked_message{
+	background-color: #F0F0F0;
+}
+.lesson_forum_wrap .lf_item:first-child{
+	border-top:none;
+}
+.lf_item{
+	padding:10px 20px;
+	border-top:1px solid #C5D0D7;
+}
+.lf_autor{
+	padding-bottom:10px;
+}
+.lf_editor{
+	margin-top:50px;
+}
+.lf_editor .lf_msg{
+	padding:10px 0;
+	border-top: 1px solid #C5D0D7;
+}
+.lf_delete {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 -20px transparent;
+	display: inline-block;
+	width:14px;
+	height:14px;
+}
+.lf_msg{
+    padding-bottom: 15px;
+    padding-top: 30px;	
+}
+.forum_main{
+	border-top:1px solid #C5D0D7;
+}

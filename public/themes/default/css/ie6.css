@@ -1,0 +1,42 @@
+.ie6 #header { zoom: 1; position: relative; }
+.ie6 .els-content { zoom: 1; }
+.ie6 #main { zoom: 1; }
+.ie6 #main .tab-bar ul { width: 100%; margin-right: -4px; position: relative; }
+.ie6 #main .tab-bar ul li { width: 0%; }
+.ie6 #main .tab-bar ul li, .ie6 #main .tab-bar ul li a, .ie6 #main .tab-bar ul li span { position: relative; }
+.ie6 .ui-tabs .ui-tabs-nav li { width: 0%; }
+.ie6 input.radio, .ie6 input.checkbox { vertical-align: text-bottom; }
+.ie6 table.main-grid tfoot table td.last-cell-rowspan-2 { padding-top: 0; }
+.ie6 table.main-grid tfoot table td.score-cell input.text { border: 0 solid; background: transparent; display: block; width: 100%; color: #b55b5b; font-size: 1.636em; text-align: center; }
+.ie6 input.checkbox, .ie6 input.radio { width: 13px; height: 13px; }
+.ie6 .breadcrumbs { zoom: 1; }
+.ie6 .breadcrumbs .separator { text-indent: 0; text-align: center; vertical-align: middle; background: none; font-weight: bold; font-size: 1.2em; }
+.ie6 .content-container-expandable .content-here { height: 60em; }
+.ie6 button, .ie6 input.submit, .ie6 input.button, .ie6 .ui-button, .ie6 .ui-button-text-only { margin: 0.5em 0.727em 0.5em 0; font-size: 1em; color: #5d6970; padding: 0 0.727em !important; line-height: 1.25em; overflow: visible; position: relative; text-decoration: none; zoom: 1; }
+.ie6 button img, .ie6 input.submit img, .ie6 input.button img, .ie6 .ui-button img, .ie6 .ui-button-text-only img { vertical-align: middle; margin: 0; }
+.ie6 button .ui-button-text, .ie6 input.submit .ui-button-text, .ie6 input.button .ui-button-text, .ie6 .ui-button .ui-button-text, .ie6 .ui-button-text-only .ui-button-text { padding: 0; line-height: 1.25em; display: inline; }
+.ie6 .ui-button, .ie6 .ui-button-text-only, .ie6 button, .ie6 button.ui-state-default, .ie6 input.submit, .ie6 input.ie6-submit-ui-state-default, .ie6 input.button, .ie6 input.ie6-button-ui-state-default { background: #c9d3d9 url('../images/ui-button-bg.gif') left center repeat-x; border: 1px solid #b1c0ca; }
+.ie6 button.ui-state-active, .ie6 input.ie6-submit-ui-state-active, .ie6 input.ie6-button-ui-state-active { background-image: url('../images/ui-button-active-bg.gif'); }
+.ie6 button.ui-state-disabled, .ie6 input.ie6-submit-ui-state-disabled, .ie6 input.ie6-button-ui-state-disabled { background-image: url('../images/ui-button-bg.gif') !important; color: #acb5ba; border-color: #acb5ba; filter: none; cursor: default; }
+.ie6 .ui-portlet-titlebar { zoom: 1; }
+.ie6 .ui-portlet-titlebar .bg { zoom: 1; height: 8em; }
+.ie6 .ui-portlets-edit-mode .ui-portlets-sortable { height: 8.182em; overflow: visible; }
+.ie6 .ui-portlet-content button, .ie6 .ui-portlet-content input.submit, .ie6 .ui-portlet-content input.button, .ie6 .ui-portlet-content .ui-button, .ie6 .ui-portlet-content .ui-button-text-only { color: white; }
+.ie6 .ui-portlet-content .ui-button, .ie6 .ui-portlet-content .ui-button-text-only, .ie6 .ui-portlet-content button, .ie6 .ui-portlet-content button.ui-state-default, .ie6 .ui-portlet-content input.submit, .ie6 .ui-portlet-content input.ie6-submit-ui-state-default, .ie6 .ui-portlet-content input.button, .ie6 .ui-portlet-content input.ie6-button-ui-state-default { border-color: #2e719e; background-image: url('../images/ui-portlet-button-bg.gif'); }
+.ie6 .ui-portlet-content button.ui-state-active, .ie6 .ui-portlet-content input.ie6-submit-ui-state-active, .ie6 .ui-portlet-content input.ie6-button-ui-state-active { background-image: url('../images/ui-portlet-button-active-bg.gif'); }
+.ie6 label, .ie6 input.button, .ie6 input.submit, .ie6 input.image, .ie6 button { cursor: pointer; }
+.ie6 input.checkbox, .ie6 input.radio { padding: 0; }
+.ie6 #container { position: static; }
+.ie6 #logo { width: 0%; }
+.ie6 #main { margin-top: 0.727em; }
+.ie6 #main .els-body { zoom: 1; }
+.ie6 .ui-state-default .ui-selectmenu-icon { right: 0; }
+.ie6 .ui-selectmenu-menu { overflow-x: hidden; }
+.ie6 .ui-progressbar .gradient-me { left: 1px; }
+.ie6 .ui-progressbar .ui-progressbar-value .gradient-me { left: 0; }
+.ie6 .page-context-accordion h3.ui-accordion-header .gradient-me { height: 3.4em; }
+.ie6 .page-context-accordion h3.ui-accordion-header .gradient-me-again { height: 1.7em; }
+.ie6 .ui-dialog .ui-dialog-gradient { display: none; }
+.ie6 .submenu { width: 0%; }
+.ie6 ul.dynatree-container a { border-color: white; }
+.ie6 ul.dynatree-container a:hover { border-color: white; }

@@ -1,0 +1,84 @@
+<html> 
+<head><title>Select color</title>
+
+<script language=JavaScript>                                                                                                             
+function MyChangeElHtml(name, val) {
+  var d = document;
+  if (d.all[name]) {
+    if (d.all[name].length) {
+      for (var i = 0; i < d.all[name].length; i++) {
+        d.all[name][i].innerHTML = val;
+        }
+    } else {
+//  d.all[name].tagName == "A"
+    d.all[name].innerHTML = val;
+    }
+  }
+}
+function MyChangeElBackground(name, val) {
+  var d = document;
+  if (d.all[name]) {
+    if (d.all[name].length) {
+      for (var i = 0; i < d.all[name].length; i++) {
+        d.all[name][i].bgColor = val;
+        }
+    } else { d.all[name].bgColor = val;}
+  }
+}
+
+HexArray = new Array('0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f')
+function MyRGB(r,g,b) {
+  return "#"+MyHex(r)+MyHex(g)+MyHex(b);
+  }                                                                             
+function MyHex (i) {
+  if (i<0) {return "00"}
+  else 
+  if (i>255) {return "ff"}
+  else {
+    return ""+HexArray[Math.floor(i/16)]+HexArray[i%16];
+    }  
+  }
+function MySetColor(col) {
+  document.forms['f1'].elements['col'].value=col;
+  MyChangeElBackground('ex',col);
+  }
+function MyChangeCol() {
+  var col=document.forms['f1'].elements['col'].value;
+  MyChangeElBackground('ex',col);
+  }             
+
+function MyInit() {
+  MySetColor(window.dialogArguments);
+  }    
+</script>
+</head>
+<body bgcolor=white onLoad='MyInit()'>
+<center>
+<h2><center><?=_("Выбор цвета")?></center></h2><br>
+<table cellpadding=0 cellspacing=0>
+
+<script language=JavaScript>
+  for (var r=0;r<16;r++) {                        
+    document.write('<tr>');
+    for (var g=0;g<5;g++) {
+          for (var b=0;b<8;b++) {
+            var k=36.42;
+            var col=MyRGB(Math.round(r*17),Math.round(g*63.75),Math.round(b*k));
+            document.write('<td style="margin:0px;padding:0px" bgColor='+col+' title="'+col+'" onClick="MySetColor(this.bgColor)"><img src="" height=15 width=14 alt="'+col+'"></td>');  
+            }
+          }  
+    }   
+</script>
+</table>
+
+<form name=f1 onSubmit='return false'>
+<b><?=_("Цвет:")?></b> <input name=col size=9 onKeyPress='MyChangeCol()'> 
+&nbsp;  <input type=button value='<?=_("Выбрать")?>' onclick='window.returnValue=f1.col.value;window.close()'>
+&nbsp; <input type=button value='<?=_("Отмена")?>' onclick='window.returnValue="";window.close();'>
+<br><br>
+<table width=550 height=50 id=ex style='border:1px outset black'><tr><td>
+</table><br>            
+<div id=tab></div><br><br><br>
+</form>
+</body>
+</html>

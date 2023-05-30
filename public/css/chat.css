@@ -1,0 +1,164 @@
+.chat {
+    width: 100%;
+/*    padding-top: 24px;*/
+}
+.chat .spacer { 
+    clear: both; 
+    height: 0px; 
+    overflow: hidden;
+}
+.chat .chat-channel {
+    width: 75%;
+    float: left;
+}
+.chat .channel-header {
+    height: 30px;
+    width: 100%;
+}
+.chat .channel-title {
+    float: left;
+    font-family: Verdana;
+    font-size: 2.182em;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 2px;
+}
+.chat .channel-controls {
+    float: right;
+    padding-right: 20px;
+}
+.chat .channel-controls .edit, .chat .channel-controls .delete {
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+}
+.chat .channel-controls .edit {
+    background: url("/images/blog/controls-edit.png") repeat-x scroll 0 0 transparent;
+    margin-right: 5px;
+}
+.chat .channel-controls .delete {
+    background: url("/images/blog/controls-delete.png") repeat-x scroll 0 0 transparent;
+}
+#msg-field {
+    background-color: #ECECEC;
+    border: 1px solid #E3E3E3;
+    height: 20px;
+    width: 400px;
+}
+#send {}
+#chat-list {
+    border: 1px solid #e0e1cc;
+    margin: 0 0 5px;
+}
+#chat-list .message{
+    line-height: 16px;
+    list-style: none outside none;
+    padding: 5px 0 5px 10px;
+    text-align: left;
+    overflow: hidden;
+}
+#chat-list .message.even{
+    background-color: #f7f6ec;
+}
+#chat-list .message.odd{
+    background-color: #f0efe6;
+}
+#chat-list .message .date {
+    color: #929292;
+}
+#chat-list .message .login {
+    color: #101d82;
+    font-size: 1.091em;
+    font-weight: bold;
+    outline: medium none;
+    text-decoration: none;
+}
+#chat-list .message a.login.current {
+    color: #AA0808;
+}
+#chat-list .message .pointer {
+    color: #929292;
+    margin: 0 5px;
+}
+.chat .chat-body {
+    font-size: 1.091em;
+    padding: 5px 20px 20px 0;
+}
+
+.chat .chat-side-bar {
+    ebackground: url("/images/blog/side-bar-bg.png") repeat-y scroll 0 0 #E7E7E7;
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+}
+.chat .chat-side-bar .label {
+    background-color: #606060;
+    color: white;
+    float: left;
+    font-size: 1.273em;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 2px;
+}
+.chat .chat-side-bar .hr {
+    height: 2px;
+    background: url("/images/blog/side-bar-hr.png") repeat-x scroll 0 0 transparent;
+}
+.chat .channels-list, .chat .channels-archive, .chat .users-list {
+    padding: 0 20px;
+}
+.chat .menu-bar {
+    padding-bottom: 10px;
+}
+.chat .menu-bar a:link, .chat .menu-bar a:visited {
+    color: #50788F;
+    font-size: 1.273em;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.chat .channels-list  {
+    margin-bottom: 15px;
+}
+.chat .channels-list .channel {
+    font-size: 1.273em;
+    line-height: 22px;
+}
+.chat .channels-list .channel.current {
+    color: #b2392f;
+}
+
+.chat .channels-archive {
+    margin-bottom: 10px;
+}
+.chat .channels-archive .channel-date {
+    font-size: 1.091em;
+}
+.chat .channels-archive .channel {
+    font-size: 1.091em;
+}
+
+.chat .users-list .users{
+    max-height: 500px;
+    margin: 0;
+    overflow: auto;
+}
+.chat .users-list .user{
+    padding: 3px 0;
+    list-style: none outside none;
+    text-align: left;
+}
+.chat .users-list .user .login{
+    line-height: 14px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.chat .users-list .user .name{
+    line-height: 14px;
+    padding-left: 5px;
+}
+.chat .users-list .user.offline .login, 
+.chat .users-list .user.offline .name {
+    color: #acacac;
+}

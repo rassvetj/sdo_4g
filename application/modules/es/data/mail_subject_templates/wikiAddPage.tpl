@@ -1,0 +1,1 @@
+<?php echo $this->event->getParam('author'); ?> создал(-а) новую страницу wiki в основном канале

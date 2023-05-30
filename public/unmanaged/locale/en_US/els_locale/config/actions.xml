@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by lex (hypermethod) -->
+<!DOCTYPE actions [
+	<!ELEMENT actions (preference*, crontask*, group*)>
+	<!ATTLIST actions
+	branch CDATA #REQUIRED
+>
+	<!ELEMENT group (page*, custom*, subgroup*)>
+	<!ATTLIST group
+	id ID #REQUIRED
+		name CDATA #REQUIRED
+		icon CDATA #IMPLIED
+		order CDATA #IMPLIED
+		profiles CDATA #IMPLIED
+		hide (false | true) #IMPLIED
+>
+	<!ELEMENT subgroup (page*)>
+	<!ELEMENT custom (tab*, link*, option*)>
+	<!ATTLIST custom
+	id ID #REQUIRED
+		profiles CDATA #IMPLIED
+		name CDATA #IMPLIED
+		name_full CDATA #IMPLIED
+>
+	<!ELEMENT page (tab*, link*, option*)>
+	<!ATTLIST page
+	id ID #REQUIRED
+		name CDATA #REQUIRED
+		name_full CDATA #IMPLIED
+		url CDATA #IMPLIED
+		order CDATA #IMPLIED
+		profiles CDATA #IMPLIED
+>
+	<!ELEMENT tab EMPTY>
+	<!ATTLIST tab
+	id ID #REQUIRED
+		name CDATA #REQUIRED
+		name_full CDATA #IMPLIED
+		order CDATA #IMPLIED
+		profiles CDATA #IMPLIED
+>
+	<!ELEMENT link EMPTY>
+	<!ATTLIST link
+	id ID #REQUIRED
+		name CDATA #REQUIRED
+		url CDATA #REQUIRED
+		alt CDATA #IMPLIED
+		target CDATA #IMPLIED
+		params CDATA #IMPLIED
+		order CDATA #IMPLIED
+		profiles CDATA #IMPLIED
+		hide (false | true) #IMPLIED
+		confirm CDATA #IMPLIED
+		anchor CDATA #IMPLIED
+>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option
+	id ID #REQUIRED
+		name CDATA #REQUIRED
+		profiles CDATA #IMPLIED
+>
+	<!ELEMENT preference EMPTY>
+	<!ATTLIST preference
+	id ID #REQUIRED
+		name CDATA #REQUIRED
+		value CDATA #IMPLIED
+>
+	<!ELEMENT crontask EMPTY>
+	<!ATTLIST crontask
+	id ID #REQUIRED
+		name CDATA #IMPLIED
+		launch (false | true) #IMPLIED
+		runperiod CDATA #IMPLIED
+>
+]>
+<actions branch="corporate">
+	<preference id="use_bologna_system" name="bologna system" value="0"/>
+	<preference id="use_webinar" name="webinar" value="1"/>
+	<preference id="use_connect_pro" name="connect pro" value="0"/>
+	<preference id="use_at_integration" name="integration with at" value="0"/>
+	<preference id="use_cms_integration" name="integration with cms" value="0"/>
+	<preference id="use_sis_integration" name="integration with sis" value="0"/>
+	<crontask id="synchronize_positions" name="Synchronize organization structure" launch="false"/>
+	<crontask id="email_absences" name="Lessons absence Email notification" launch="false"/>
+
+	<group id="m02" name="Administration" profiles="admin">
+		<subgroup>
+			<page id="m0201" name="All accounts" url="user/list">
+				<link name="Create account" url="user/list/new" id="m020101"/>
+				<link name="Generate accounts " url="user/list/generate" id="m020102"/>
+				<link name="Import accounts from CSV" url="people_import.php" id="m020103"/>
+                <link name="Import accounts from Active Directory" url="user/import/index/source/ad" id="m020104"/>
+				<!--link name="Import accounts from SAP" url="user/import/sap" id="m020104" /-->
+			</page>
+		</subgroup>
+		<subgroup>				
+			<page id="m0202" name="Training managers" url="assign/dean" />
+			<page id="m0203" name="Administrators" url="assign/admin" />			
+		</subgroup>
+		<subgroup>				
+			<page id="m0204" name="Roles customizing" url="admin/roles.php" />
+		</subgroup>		
+	</group>
+	<group id="m03" name="Portal" profiles="admin">
+		<subgroup>				
+			<page id="m0301" name="Information blocks" url="about.php"/>
+			<page id="m0302" name="Information pages" url="htmlpage/list">
+				<link id="m030201" name="Create page" url="htmlpage/list/new"/>
+			</page>
+		</subgroup>
+		<subgroup>				
+			<page id="m0303" name="Portal home page" url="interface/edit"/>
+			<page id="m0304" name="Portal interaction services" url="activity/edit"/>
+		</subgroup>
+	</group>
+	<group id="m04" name="Settings" profiles="admin">
+		<subgroup>
+			<page id="m0401" name="System settings" url="preferences.php"/>
+			<page id="m0402" name="formula" url="formula/list"/>
+			<page id="m0403" name="Password policy" url="password/setup"/>
+		</subgroup>
+		<subgroup>				
+			<page id="m0413" name="Templates orders" url="template/order"/>
+			<page id="m0414" name="System message templates" url="notice"/>			
+		</subgroup>		
+	</group>
+	
+	<group id="m06" name="E-learning" profiles="user,supervisor,student,teacher,dean">
+		<subgroup>				
+			<page id="m0601" name="Study courses" url="subject/list" profiles="~user,~supervisor,~student,~teacher">
+				<link name="Create study course" url="subject/list/new" id="m060101"/>
+                <link name="Import classification of csv" url="subject/import/classifier" id="m060102"/>
+			</page>
+			<page id="m0602" name="My courses" url="subject/list" profiles="~user,~supervisor,~dean"/>
+		</subgroup>
+		<subgroup>					
+			<page id="m0603" name="Claims" url="order/list" profiles="~user,~supervisor,~student,~teacher"/>
+			<page id="m0604" name="Students" url="assign/student" profiles="~user,~supervisor,~student,~teacher"/>
+			<page id="m0605" name="Teachers" url="assign/teacher" profiles="~user,~supervisor,~student,~teacher"/>
+			<page id="m0606" name="Graduated" url="assign/graduated" profiles="~user,~supervisor,~student,~teacher"/>
+		</subgroup>
+		<subgroup>				
+			<!-- page id="m0607" name="Total schedule" url="schedule/general" profiles="~user,~supervisor,~student,~teacher"/-->
+			<page id="m0611" name="Audiences" url="rooms.php"  profiles="~user,~supervisor,~student,~teacher"/>		
+			<page id="m0612" name="Training providers" url="supplier/list"  profiles="~user,~supervisor,~student,~teacher">
+				<link id="m061201" name="Add provider" url="supplier/list/new"/>		
+			</page>
+		</subgroup>
+		<subgroup>				
+			<page id="m0621" name="Training courses catalog" url="subject/catalog" profiles="~dean" />
+		</subgroup>
+		<!-- subgroup>				
+			<page id="m0610" name="Events" url="#" />				
+		</subgroup -->		
+	</group>
+	
+	<!-- group id="m07" name="Documents" profiles="dean">
+		<subgroup>				
+			<page id="m0701" name="Summary reports" url="documents/reports"/>
+			<page id="m0702" name="Storage reports" url="#"/>
+		</subgroup>
+		<subgroup>				
+			<page id="m0703" name="orders" url="documents/orders"/>
+			<page id="m0704" name="Certificates" url="documents/certificates"/>
+		</subgroup>
+	</group-->
+
+	<group id="m08" name="Organizational structure" profiles="dean">
+		<page id="m0801" name="Organizational structure" url="orgstructure/list">
+            <link id="m080101" name="Organization structure import" url="orgstructure/import"/>
+        </page>
+	</group>
+
+	<group id="m09" name="E-learning courses development" profiles="developer,manager">
+		<subgroup>				
+			<page id="m0901" name="Courses in development" url="course/list/developed" >
+				<link id="m090102" name="Create e-learning course" url="course/list/new"/>
+			</page>
+			<page id="m0902" name="Course archive" url="course/list/archived"  profiles="~user,~supervisor,~student,~teacher,~dean,~developer">
+				<link id="m090201" name="Create e-learning course" url="course/list/new"/>
+			</page>
+		</subgroup>
+		<subgroup>				
+			<page id="m0903" name="E-learning courses suppliers" url="provider/list" profiles="~developer">
+				<link id="m090301" name="Add supplier" url="provider/list/new"/>
+			</page>
+		</subgroup>		
+	</group>
+	
+	<group id="m10" name="Knowledge base" profiles="user,supervisor,student,teacher,dean,developer,manager">
+		<subgroup>				
+			<page id="m1008" name="Knowledge base" url="resource/list" profiles="~developer,~manager" />
+			<page id="m1002" name="Information resources" url="resource/list" profiles="~user,~supervisor,~student,~teacher,~dean">
+				<link id="m100201" url="resource/list/new" name="Create resource"/>
+			</page>
+			<page id="m1001" name="E-learning courses" url="course/list/" profiles="~user,~student,~supervisor">
+				<link id="m100101" name="Create e-learning course" url="course/list/new"/>
+			</page>
+		</subgroup>
+		<subgroup>							
+			<page id="m1003" name="Tests" url="test/abstract" profiles="~user,~student,~supervisor">
+				<link id="m100301" url="test/abstract/new" name="Create test"/>
+			</page>
+			<page id="m1004" name="Exercises" url="exercises/list" profiles="~user,~student,~supervisor">
+				<link id="m100401" url="exercises/list/new" name="Create exercise"/>
+			</page>
+			<page id="m1005" name="Polls" url="poll/list" profiles="~user,~student,~supervisor">
+				<link id="m100501" url="poll/list/new" name="Create poll"/>
+			</page>
+			<page id="m1007" name="Tasks" url="task/list" profiles="~user,~student,~supervisor">
+				<link id="m100701" url="task/list/new" name="Create task"/>
+			</page>
+		</subgroup>
+		<subgroup>						
+			<page id="m1006" name="Classifiers" url="classifier/list-types" profiles="~dean,~user,~supervisor,~student,~teacher,~developer">
+                <link id="m100601" name="Create classifier" url="classifier/list-types/new"/>
+            </page>
+		</subgroup>			
+	</group>
+	<group id="m05" name="Reports" profiles="admin,dean,manager,supervisor">
+        <subgroup>
+            <page id="m0501" name="Reports generation" url="report/list/tree" profiles="admin,dean,manager,supervisor"/>
+            <page id="m0502" name="Reports archive" url="" profiles="admin,dean,manager,supervisor"/>
+        </subgroup>
+        <subgroup>
+            <page id="m0503" name="Reports form constructor" url="report/list" profiles="~supervisor">
+                <link id="m050301" url="report/generator" name="Create report form"/>
+            </page>
+            <page id="m0504" name="Report template" url="template/report" profiles="~dean,~manager,~supervisor"/>
+        </subgroup>
+	</group>
+	<group id="m99" name="Interaction" profiles="user,supervisor,student,teacher,dean,admin,developer,manager" order="10000">
+		<custom id="m990" name="Interaction"/>
+	</group>
+	
+</actions>

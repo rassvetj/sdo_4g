@@ -1,0 +1,1 @@
+В курсе '<?php echo $this->event->getParam('course_name') ?>' назначено новое задание

@@ -1,0 +1,372 @@
+[production]
+url.base = "/"
+debug = 0
+phpSettings.display_startup_errors = 0
+phpSettings.display_errors = 0
+timezone.default = "Europe/Moscow"
+bootstrap.path = APPLICATION_PATH "/system/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+charset = "UTF-8"
+iecompatmode = "Edge"
+includePaths.library = APPLICATION_PATH "/../library"
+includePaths.sf = APPLICATION_PATH "/../library/sf"
+includePaths.system = APPLICATION_PATH "/system"
+includePaths.model = APPLICATION_PATH "/model"
+includePaths.refactored = APPLICATION_PATH "/trash"
+
+skin=4g
+
+mailer.transport = 'smtp'
+mailer.host = 'localhost'
+;mailer.smtp.params.port = 25
+mailer.smtp.params.auth = login
+mailer.smtp.params.username = "user"
+mailer.smtp.params.password = "password"
+mailer.default.email = "support@learnware.ru"
+mailer.default.name = "Support"
+
+;cache.db = true
+
+; settings which will be passed to web clients
+webuiclient.logger.logserver = 'http://projects:8273/log'
+webuiclient.logger.socketio  = 'http://projects:8273/socket.io/socket.io.js'
+webuiclient.logger.writelog  = 'false'
+webuiclient.pingUrl          = '/ping.php'
+
+; ppt2swf clients config
+ppt2swf.api_key = "qwertyuiopasdfghjkzb12345"
+ppt2swf.server = "http://ppt2swf/"
+
+form.file.uploader = "FlashFile"
+form.file.debug = "false"
+form.textarea.cols = 80
+form.textarea.rows = 12
+
+
+;wysiwyg.editor = "JqTinyMce"
+;wysiwyg.params.cssfiles[] = "js/lib/elrte-1.3/css/elrte-inner.css"
+;wysiwyg.params.cssfiles[] = "css/tinymce.css"
+;wysiwyg.params.lang = "ru"
+;wysiwyg.params.toolbar = "hmToolbarTiny"
+;wysiwyg.params.height = 420
+;wysiwyg.params.absoluteURLs = false
+;wysiwyg.params.cssClass = "el-rte"
+;wysiwyg.params.doctype = "<!DOCTYPE html>"
+;wysiwyg.params.resizable = true
+;wysiwyg.params.allowSource = true
+;wysiwyg.params.stripWhiteSpace = true
+;wysiwyg.params.styleWithCSS = false
+;wysiwyg.params.fmAllow = false
+;wysiwyg.options.hmToolbarTiny.height = 160
+;wysiwyg.options.hmToolbarTiny.width = 660
+;wysiwyg.options.hmToolbarTiny.connectorUrl = "/storage/index/elfinder"
+;wysiwyg.options.hmToolbarTiny.fmAllow = true
+;wysiwyg.options.hmToolbarMaxi.connectorUrl = "/storage/index/elfinder"
+;wysiwyg.options.hmToolbarMaxi.fmAllow = true
+
+wysiwyg.editor = "JqTinyMce"
+wysiwyg.params.script_url = "/js/tiny_mce/tiny_mce.js"
+wysiwyg.params.script_load_url[] = "/js/tiny_mce/jquery.tinymce.js"
+wysiwyg.params.content_css = "/css/tinymce.css"
+wysiwyg.params.language = "ru"
+wysiwyg.params.fmAllow = false
+wysiwyg.params.connectorUrl = "/storage/index/elfinder"
+wysiwyg.params.toolbar = "hmToolbarTiny"
+wysiwyg.params.plugins = ""
+wysiwyg.params.theme = "advanced"
+wysiwyg.params.theme_advanced_layout_manager = "RowLayout"
+wysiwyg.params.theme_advanced_containers = "buttons,mceEditor,mceElementPath"
+wysiwyg.params.theme_advanced_container_buttons = "code"
+wysiwyg.params.theme_advanced_container_buttons_align ="left"
+wysiwyg.params.theme_advanced_statusbar_location = "bottom"
+;wysiwyg.params.theme_advanced_resizing = true
+;wysiwyg.params.popup_css = "/css/common.css"
+wysiwyg.params.doctype = "<!DOCTYPE html>"
+wysiwyg.params.element_format = "html"
+wysiwyg.params.fix_list_elements = true
+wysiwyg.params.inline_styles = true
+wysiwyg.params.verify_css_classes = true
+wysiwyg.params.verify_html = true
+wysiwyg.params.relative_urls = false
+wysiwyg.params.table_inline_editing = false
+;
+wysiwyg.options.hmToolbarTiny.fmAllow = true
+wysiwyg.options.hmToolbarTiny.width = 660
+wysiwyg.options.hmToolbarTiny.height = 160
+wysiwyg.options.hmToolbarTiny.plugins = "jqueryinlinepopups,contextmenu,paste,tabfocus,visualchars"
+wysiwyg.options.hmToolbarTiny.theme_advanced_container_buttons = "pastetext,pasteword,removeformat,visualchars,|,undo,redo,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,fontsizeselect,|,bullist,numlist,|,link,unlink,|,image,blockquote,|,code"
+
+wysiwyg.options.hmToolbarMidi.fmAllow = true
+wysiwyg.options.hmToolbarMidi.width = '100%'
+wysiwyg.options.hmToolbarMidi.height = 420
+wysiwyg.options.hmToolbarMidi.plugins = "table,jqueryinlinepopups,contextmenu,paste,tabfocus,directionality,nonbreaking,media,visualchars,pagebreak"
+wysiwyg.options.hmToolbarMidi.theme_advanced_container_buttons = "pastetext,pasteword,removeformat,cleanup,visualchars,|,undo,redo,|,bold,italic,underline,strikethrough,sub,sup,|,justifyleft,justifycenter,justifyright,justifyfull,|,ltr,rtl,|,forecolor,backcolor,fontsizeselect,fontselect,|,outdent,indent,|,bullist,numlist,|,link,unlink,anchor,|,hr,blockquote,nonbreaking,pagebreak,|,image,media,|,table,|,code"
+
+wysiwyg.options.hmToolbarMaxi.fmAllow = true
+wysiwyg.options.hmToolbarMaxi.width = '100%'
+wysiwyg.options.hmToolbarMaxi.height = 420
+wysiwyg.options.hmToolbarMaxi.plugins = "table,jqueryinlinepopups,contextmenu,paste,tabfocus,directionality,pagebreak,nonbreaking,media,fullpage,fullscreen,visualchars"
+wysiwyg.options.hmToolbarMaxi.theme_advanced_container_buttons = "pastetext,pasteword,removeformat,cleanup,visualchars,|,undo,redo,|,bold,italic,underline,strikethrough,sub,sup,|,justifyleft,justifycenter,justifyright,justifyfull,|,ltr,rtl,|,forecolor,backcolor,fontsizeselect,fontselect,|,outdent,indent,|,bullist,numlist,|,link,unlink,anchor,|,hr,blockquote,nonbreaking,pagebreak,|,image,media,|,table,|,fullpage,fullscreen,|,code"
+wysiwyg.options.hmToolbarMaxi.fullpage_encodings = "Unicode (UTF-8)=utf-8"
+wysiwyg.options.hmToolbarMaxi.fullpage_doctypes = "HTML=<!DOCTYPE html>"
+wysiwyg.options.hmToolbarMaxi.fullpage_hide_in_source_view = true
+
+scorm.debug = 0
+
+autoloadernamespaces[] = "Zend"
+autoloadernamespaces[] = "HM"
+autoloadernamespaces[] = "ZFDebug"
+autoloadernamespaces[] = "Bvb"
+autoloadernamespaces[] = "ZendX"
+
+path.helpers.default = APPLICATION_PATH "/views/helpers/"
+path.helpers.complex = APPLICATION_PATH "/views/helpers/views/"
+path.infoblocks.default = APPLICATION_PATH "/views/infoblocks/"
+path.upload.temp = APPLICATION_PATH "/../public/unmanaged/temp/"
+path.upload.resource = APPLICATION_PATH "/../data/upload/resource/"
+path.upload.event = APPLICATION_PATH "/../public/upload/events/"
+path.upload.public_resource = APPLICATION_PATH "/../public/upload/resources/"
+path.upload.cetrificates = APPLICATION_PATH "/../data/upload/cetrificates/"
+path.upload.photo = APPLICATION_PATH "/../public/upload/photo/"
+path.upload.marksheets = APPLICATION_PATH "/../public/upload/marksheets/"
+path.upload.subject = APPLICATION_PATH "/../public/upload/subject-icons/"
+path.upload.files = APPLICATION_PATH "/../public/upload/files/"
+path.upload.update = APPLICATION_PATH "/../data/upload/update"
+src.upload.photo = "upload/photo/"
+src.upload.subject = "upload/subject-icons/"
+src.default.photo = "images/content-modules/nophoto.gif"
+src.upload.files = "upload/files/"
+path.upload.maxfilescount = 800
+path.log.system = APPLICATION_PATH "/../data/log/system/"
+path.log.mail = APPLICATION_PATH "/../data/log/mail/"
+path.log.security = APPLICATION_PATH "/../data/log/security/"
+
+path.index.activity = APPLICATION_PATH "/../data/index/activity/index"
+
+pluginPaths.HM_Resource = APPLICATION_PATH "/resources"
+pluginPaths.ZendX_Application_Resource = "ZendX/Application/Resource"
+
+resources.db.adapter = "pdo_mysql"
+resources.db.unadapter = "mysql"
+resources.db.params.adapterNamespace = "HM_Db_Adapter"
+resources.db.params.host = "4g-dev"
+resources.db.params.unhost = "4g-dev"
+resources.db.params.port = 3306
+resources.db.params.username = "root"
+resources.db.params.password = ""
+resources.db.params.dbname = "4g_dev"
+resources.db.params.driver_options.1002 = "SET NAMES utf8"
+resources.db.isDefaultTableAdapter = true
+
+;resources.db.adapter = "sqlsrv"
+;resources.db.unadapter = "mssql"
+;resources.db.params.adapterNamespace = "HM_Db_Adapter"
+;resources.db.params.host = "192.168.0.103"
+;resources.db.params.unhost = "192.168.0.103:7433"
+;resources.db.params.port = "7433"
+;resources.db.params.username = "sa"
+;resources.db.params.password = "1"
+;resources.db.params.dbname = "edo_dev"
+;resources.db.params.options.autoQuoteIdentifiers = false
+;resources.db.params.options.lob_as_string = true
+;resources.db.params.driver_options.ReturnDatesAsStrings = true
+;resources.db.isDefaultTableAdapter = true
+;resources.db.params.driver_options.CharacterSet = "UTF-8"
+
+;resources.db.adapter = "oracle"
+;resources.db.unadapter = "oci8"
+;resources.db.params.adapterNamespace = "HM_Db_Adapter"
+;resources.db.params.host = "192.168.0.21"
+;resources.db.params.unhost = "192.168.0.21"
+;resources.db.params.username = "gazprom"
+;resources.db.params.password = "please"
+;resources.db.params.dbname = "weborcl"
+;resources.db.params.options.autoQuoteIdentifiers = false
+;resources.db.params.options.lob_as_string = true
+;resources.db.isDefaultTableAdapter = true
+
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.baseUrl = "/"
+resources.frontController.plugins.ErrorHandler = "Zend_Controller_Plugin_ErrorHandler"
+resources.frontController.plugins.Authorizer = "HM_Controller_Plugin_Authorizer"
+resources.frontController.plugins.RoleSwitcher = "HM_Controller_Plugin_RoleSwitcher"
+;resources.frontController.plugins.Ntlm = "HM_Controller_Plugin_Ntlm"
+resources.frontController.plugins.Loader = "HM_Controller_Plugin_Loader"
+resources.frontController.plugins.Unmanaged = "HM_Controller_Plugin_Unmanaged"
+resources.frontController.plugins.Acl = "HM_Controller_Plugin_Acl"
+resources.frontController.plugins.FirstTime = "HM_Controller_Plugin_FirstTime"
+resources.frontController.plugins.Subject = "HM_Controller_Plugin_Subject"
+
+
+resources.container.configFiles[] = APPLICATION_PATH "/settings/services.xml"
+
+resources.jquery.localpath = ""
+resources.jquery.stylesheet = ""
+resources.jquery.uilocalpath = ""
+
+resources.view.params.init = true
+
+resources.locale.default = "ru_RU"
+resources.locale.force = true
+
+resources.layout.layout = "default"
+resources.layout.layoutPath = APPLICATION_PATH "/views/modules"
+
+resources.toolbar.param.init = true
+
+update.db.adapter = "oracle"
+update.db.params.adapterNamespace = "HM_Db_Adapter"
+update.db.params.host = "gaz-dev"
+update.db.params.username = "gazdev"
+update.db.params.password = "please"
+update.db.params.dbname = "weborcl"
+update.db.params.options.autoQuoteIdentifiers = false
+update.db.params.options.lob_as_string = true
+
+languages.rus.id = "rus"
+languages.rus.name = "Русский"
+languages.rus.locale = "ru_RU"
+;languages.fra.id = "fra"
+;languages.fra.name = "Français"
+;languages.fra.locale = "fr_FR"
+;languages.eng.id = "eng"
+;languages.eng.name = "English"
+;languages.eng.locale = "en_US"
+
+dimensions.table_rows_per_page = 10
+dimensions.blog_posts_per_page = 5
+dimensions.news_per_page = 5
+dimensions.faq_per_page = 5
+
+grid.cell.max_length = 300
+
+;in sec
+user.onlinetimeout = 300
+chat.url = "http://4g-dev/chat.php"
+chat.postUrl = "http://4g-dev/chat.php"
+chat.messages.show_in_channel = 20
+;in sec
+chat_server.timeout = 30
+chat_server.memcache_host = 'localhost'
+chat_server.memcache_port = 11211
+chat_server.tokens_list_url = "http://4g-dev/chat/index/channelusers/channel_id/"
+;one day
+chat_server.messages_expired = 86400
+;one hour
+chat_server.banned_expired = 3600
+
+routes.logout.route = "logout"
+routes.logout.defaults.module = "default"
+routes.logout.defaults.controller = "index"
+routes.logout.defaults.action = "logout"
+
+routes.switch.route = "switch/*"
+routes.switch.defaults.module = "default"
+routes.switch.defaults.controller = "index"
+routes.switch.defaults.action = "switch"
+
+routes.lang.route = "language/*"
+routes.lang.defaults.module = "default"
+routes.lang.defaults.controller = "index"
+routes.lang.defaults.action = "language"
+
+routes.remember.route = "remember"
+routes.remember.defaults.module = "default"
+routes.remember.defaults.controller = "index"
+routes.remember.defaults.action = "remember"
+
+webinar.media = "rtmp://4g-dev/webinar/kzt"
+webinar.server = "http://4g-dev/webinar/server/"
+webinar.charset = "UTF-8"
+
+videochat.media = "rtmp://gaz-test/webinar/kzt"
+videochat.server = "http://localhost/videochat/server"
+videochat.charset = "UTF-8"
+
+ntlm.createIfNotExists = true
+
+ldap.options.host = "192.168.0.101"
+ldap.options.port = 389
+ldap.options.useStartTls = false
+ldap.options.username = "admin@beeline.local"
+ldap.options.password = "pass"
+ldap.options.accountDomainName = "beeline.local"
+ldap.options.accountDomainNameShort = "beeline"
+ldap.options.baseDn = "DC=beeline,DC=local"
+
+ldap.user.uniqueIdField = "objectguid"
+//ldap.user.uniqueIdField = "employeenumber"
+ldap.mapping.user.sn = "LastName"
+ldap.mapping.user.givenname = "FirstName"
+ldap.mapping.user.initials = "Patronymic"
+ldap.mapping.user.samaccountname = "Login"
+ldap.fetchItemsLimit = 6000
+
+ldap.units.0 = "OU=Users,OU=Staff,OU=Uni-Lomonosov,OU=uni-lomonosov,OU=local"
+ldap.units.1 = "OU=Users,OU=Students,OU=Uni-Lomonosov,OU=uni-lomonosov,OU=local"
+ldap.units.2 = "OU=Users,OU=Teachers,OU=Uni-Lomonosov,OU=uni-lomonosov,OU=local"
+
+ldap.roles.2 = "teacher"
+
+//it's tempered
+ldap.authorization = false
+
+orgstructure.import.service = "OrgstructureOd"
+orgstructure.import.options.adapter = "db2"
+;orgstructure.import.options.params.adapterNamespace = "HM_Db_Adapter"
+orgstructure.import.options.params.host = "192.168.0.54"
+;orgstructure.import.options.params.port = 3306
+orgstructure.import.options.params.username = "sa"
+orgstructure.import.options.params.password = "1"
+orgstructure.import.options.params.dbname = "BEELINE"
+orgstructure.import.options.isDefaultTableAdapter = false
+
+cache.frontend.lifetime = 7200
+cache.frontend.automatic_serialization = true
+cache.backend.cache_dir = APPLICATION_PATH "/../data/cache/"
+
+[staging : production]
+webuiclient.logger.writelog = 'true'
+
+[testing : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+webuiclient.logger.writelog = 'true'
+
+[development : production]
+debug = 1
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+form.file.debug = "true"
+scorm.debug = 1
+webuiclient.logger.writelog = 'true'
+
+[mssql : development]
+resources.db.adapter = "pdo_mssql"
+resources.db.unadapter = "mssql"
+resources.db.params.pdoType = "dblib"
+resources.db.params.adapterNamespace = "HM_Db_Adapter"
+resources.db.params.host = "edodev"
+resources.db.params.unhost = "edodev"
+resources.db.params.port = "7433"
+resources.db.params.username = "sa"
+resources.db.params.password = "1"
+resources.db.params.dbname = "edo_dev"
+;resources.db.params.options.autoQuoteIdentifiers = false
+;resources.db.params.options.lob_as_string = true
+resources.db.params.driver_options.ReturnDatesAsStrings = true
+resources.db.isDefaultTableAdapter = true
+resources.db.params.driver_options.CharacterSet = "UTF-8"
+
+[oracle : development]
+resources.db.adapter = "oracle"
+resources.db.unadapter = "oci8"
+resources.db.params.adapterNamespace = "HM_Db_Adapter"
+resources.db.params.host = "192.168.0.19"
+resources.db.params.unhost = "192.168.0.19"
+resources.db.params.username = "edodev"
+resources.db.params.password = "please"
+resources.db.params.dbname = "weborcl"
+resources.db.params.options.autoQuoteIdentifiers = false
+resources.db.params.options.lob_as_string = true
+resources.db.isDefaultTableAdapter = true

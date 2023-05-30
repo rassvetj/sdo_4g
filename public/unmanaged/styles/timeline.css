@@ -1,0 +1,225 @@
+#container
+{
+	padding: 10px;
+	position: relative;
+}
+.timeline
+{
+	margin-top: 12px;
+	position: relative;
+}
+.track div { visibility: hidden }
+.track
+{
+	background: #EEE;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+.lastrow .track
+{
+	border-bottom: 1px solid;
+}
+.track, .lastrow .track
+{
+	border-color: #DDD; /* border color */
+}
+.rowName
+{
+	padding-right: 7px;
+}
+.rowName, .colName, .floatingRowNames div
+{
+	font-size: 10px;
+	font-family: Tahoma;
+}
+.rowName
+{
+	visibility: hidden;
+}
+
+.floatingRowNames div
+{
+	padding: 3px 7px 0 0;
+	text-align: right;
+}
+.floatingRowNames
+{
+	border-right: 1px solid #DDD;
+	
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: white;
+	z-index: 500;
+}
+
+
+.itemBlock
+{
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+}
+.itemBlock .itemCaption
+{
+	color: white;
+	font-size: 9px;
+	
+	padding: 0px;
+	height: 9px;
+	
+	text-align: center;
+	font-family: Verdana;
+}
+.itemCaption .itemId
+{
+	/*display: none;*/
+	color: black;
+	padding: 3px;
+}
+.selected
+{
+}
+.selected .itemCaption .itemId
+{
+	color: white;
+}
+
+.resizeHandler, .resizeHandler2
+{
+	position: absolute;
+	height: 100%;
+	width: 5px;
+	top: 0;
+	cursor: e-resize;
+	background: url(doesntexist.gif); /* for IE6 to enable resize on small block widths*/
+}
+.resizeHandler
+{
+	right: 0;
+}
+.resizeHandler2
+{
+	left: 0;
+}
+.itemLinksFrom
+{
+	/*
+	position: absolute;
+	top: 0;
+	left: 0;
+	*/
+}
+.itemLinkFrom
+{
+	background: gray;
+	color: white;
+	padding: 3px;
+	font-family: Verdana;
+	font-size: 9px;
+}
+.itemLinkTo
+{
+	display: none;
+	background: black;
+	color: white;
+	padding: 3px;
+	font-family: Verdana;
+	font-size: 9px;
+}
+
+.wndSettings
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	border: 1px solid gray;
+	z-index: 501;
+}
+
+.conditionButtons td
+{
+	font-size: 9px;
+	font-family: Verdana;
+}
+
+
+.condition input
+{
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #DDD;
+	background: white;
+}
+.condition
+{
+	margin-top: 20px;
+}
+.wndSettings a
+{
+	color: black;
+	text-decoration: underline;
+}
+.wndSettings .padding
+{
+	padding: 15px;
+}
+
+.wndSettings .drag
+{
+	background: gray;
+	padding: 5px;
+}
+.wndSettings .drag .wndCaption
+{
+	color: white;
+	font-size: 11px;
+	font-family: Verdana;
+	cursor: pointer;
+}
+.day
+{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	font-family: Vardana;
+}
+.dayOff
+{
+	background: #DDD;
+}
+.today
+{
+	background: black !important;
+	color: white;
+	font-weight: bold;
+}
+.mdate
+{
+	font-size: 11px;
+	font-family: Tahoma;
+	padding-left: 5px;
+	padding-top: 4px;
+	border-left: 1px solid #EEE;
+}
+.moffset
+{
+	font-size: 10px;
+	font-family: Tahoma;
+	padding-top: 4px;
+	text-align: center;
+}
+div#alt
+{
+	z-index: 200;
+	position: absolute;
+	background: #FFFFE1;
+	border: 1px solid black;
+	padding: 3px 4px;
+	display: none;
+	font-family: Verdana;
+	font-size: 12px;
+}

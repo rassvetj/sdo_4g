@@ -1,0 +1,182 @@
+.spacer { 
+    clear: both; 
+    height: 10px; 
+    overflow: hidden;
+}
+
+.news-post {
+    padding: 0;
+}
+.news-post hr {
+    border-color: #D4D4D4;
+    border-style: solid none none;
+}
+
+.news-side-bar {
+    background-color: #E7E7E7;
+    padding: 5px;
+    width: 330px;
+    font-weight: bold;
+}
+.news-side-bar a:link, .links-bar a:visited {
+    color: #50788F;
+}
+
+.news-middle {
+    width: 100%;
+    padding-top: 24px;
+}
+.news-list {
+    width: 100%;
+    float: left;
+}
+
+.news-header {
+
+}
+.news-controls {
+    float: right;
+    padding: 4px;
+}
+.news-controls .edit, .news-controls .delete {
+    height: 20px;
+    width: 20px;
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0 7px 5px 0;
+}
+.news-controls .edit {
+    background: url("/images/news/controls-edit.png") repeat-x scroll 0 0 transparent;
+    margin-right: 5px;
+}
+.news-controls .delete {
+    background: url("/images/news/controls-delete.png") repeat-x scroll 0 0 transparent;
+}
+
+.news-title {
+    background-color: #FFFFB2;
+    font-family: Verdana;
+    font-size: 2em;
+    line-height: 28px;
+    padding: 0 46px 0 2px;
+}
+.news-title a{
+    text-decoration: none;
+}
+
+.news-body{
+	
+}
+
+.news-info {
+    height: 34px;
+}
+.news-info img {
+    display: block;
+    float: left;
+    padding-left: 1px;
+    padding-right: 10px;
+}
+
+.news-author {
+    font-weight: bold;
+}
+
+
+
+.news-date{
+    float: left;
+    padding-top: 4px;
+}
+
+
+/*comments*/
+.news-comments {
+    color: #50788F;
+    font-weight: bold;
+    clear: both;
+    width: auto;
+    list-style: none outside none;
+    padding: 0px 0 20px 10px;
+    margin: -1.5em 0 0 0;
+    float: right;
+}
+.news-comment {
+    float: left;
+    width: 100%;
+}
+.news-comment-info {}
+.news-comment-author {
+    overflow: hidden;
+    margin: 0;
+}
+.news-comment-author li{
+    line-height: 18px;
+    list-style: none outside none;
+}
+.news-comment-author .avatar {
+    vertical-align: baseline;
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin-right: 10px;
+    position: relative;
+    width: 24px;
+}
+.news-comment-author .avatar img {
+    display: block;
+    /*height: 24px;*/
+    width: 24px;
+}
+
+.news-comment-author .name, .comment-author  .date, .comment-author  .bookmark {
+    color: #4B4B4B;
+    float: left;
+    font-size: 1em;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.news-comment-author .name {} 
+.news-comment-author  .date {}
+.news-comment-author  .bookmark {}
+.news-comment-author  .bookmark a {}
+.news-comment-message {
+    clear: both;
+    color: #4B4B4B;
+    font-size: 1em;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+/*paginator*/
+.news-pagination {
+    background-color: #E7E7E7;
+    float: left;
+    font-size: 1em;
+    line-height: 28px;
+    min-height: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 100%;
+}
+.news-pagination .container {
+    padding: 7px 10px;
+    float: left;
+}
+.news-pagination .container.left {
+    float: left;
+}
+.news-pagination .container.right {
+    float: right;
+}
+.news-pagination .container.center {
+    max-width: 240px;
+}
+.news-pagination a {}
+.news-pagination .arrows {
+    text-decoration: none;
+    font-size: 1em;
+}
+.news-pagination .disabled {}

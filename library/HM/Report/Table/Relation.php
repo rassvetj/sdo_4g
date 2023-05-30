@@ -1,0 +1,1 @@
+<?phpclass HM_Report_Table_Relation extends HM_Model_Abstract{}

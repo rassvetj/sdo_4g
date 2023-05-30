@@ -1,0 +1,77 @@
+@import 'nib'
+
+images-root        = '../../../images'
+remote-images-root = images-root
+
+display(d) {
+	display: d;
+	if (d == 'inline-block') {
+		*display: inline;
+		*zoom: 1;
+	}
+}
+
+image-url(iurl, as-data-url = false) {
+	if as-data-url {
+		data-url(images-root + iurl)
+	} else {
+		'url(%s%s)' % (unquote(remote-images-root) unquote(iurl))
+	}
+}
+
+.page-context-accordion .ui-accordion-content .materials-recent ul li {
+}
+
+.materials-recent {
+	padding: 1.182em;
+	> h4 {
+		font-weight: normal;
+		margin-bottom: 0.7em;
+		font-size: 1.2em;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li.material {
+			.page-context-accordion .ui-accordion-content & {
+				font-weight: normal;
+			}
+		}
+	}
+	li {
+		margin-left: 16px + 5px;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		line-height: 1.1;
+		position: relative;
+		min-height: 16px;
+	}
+	.material-icon-small {
+		vertical-align: middle;
+		position: absolute;
+		left: -16px - 5px;
+	}
+	.materials-all {
+		text-align: center;
+		font-size: 1.2em;
+		margin-top: 1em;
+		> a {
+			display: inline-block;
+			border-radius: 2px;
+			padding: 2px 4px;
+			transition-property: color, background-color;
+			&:hover, &:active {
+				background-color: transparent;
+			}
+		}
+	}
+}
+.page-context-accordion .materials-recent .materials-all > a {
+	&, &:visited, &:link {
+		color: #fff;
+	}
+	&:hover, &:active {
+		color: inherit;
+	}
+}

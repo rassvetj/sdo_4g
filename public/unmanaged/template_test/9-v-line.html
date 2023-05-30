@@ -1,0 +1,57 @@
+<input type="hidden" name="form[<?=$number?>][score_raw]" id="form[<?=$number?>][score_raw]" value="">
+<input type="hidden" name="form[<?=$number?>][score_min]" id="form[<?=$number?>][score_min]" value="">
+<input type="hidden" name="form[<?=$number?>][score_max]" id="form[<?=$number?>][score_max]" value="">
+<div id="flash_<?=$number?>_<?=md5($v_url)?>"></div>
+<script type="text/javascript" language="JavaScript">
+<!--
+function question_exercise_set_flash_loaded_<?=$number?>(id) {
+	question_exercise_set_flash_loaded_<?=$number?>.flash_loaded = true;
+}
+function eLS_create_question_blackbox_<?=$number?>() {
+	var $base = '<?=$v_path?>';
+	if ($base.charAt($base.length - 1) != '/') {
+		$base += '/';
+	}
+	swfobject.embedSWF(
+	    "<?=$v_url?>",
+	    "flash_<?=$number?>_<?=md5($v_url)?>",
+	    "<?=$v_width?>",
+	    "<?=$v_height?>",
+	    "9.0.0",
+	    "expressInstall.swf",
+	    {
+	        fonload: 'question_exercise_set_flash_loaded_<?=$number?>("<?=md5($v_url)?>")'
+	    },
+	    {
+	        base: $base,
+	        wmode: 'transparent',
+	        menu: 'false',
+	        allowScriptAccess: 'always',
+	        scale: 'noScale'
+	    },
+	    {style: 'outline: none;'}
+	);
+}
+$P(document).observe('question:submitted', function(event) {
+	if (question_exercise_set_flash_loaded_<?=$number?>.flash_loaded) {
+		var flashNode = document.getElementById('flash_<?=$number?>_<?=md5($v_url)?>');
+		var flScore = {
+			raw: parseFloat(flashNode.callMethod('getValue', 'score.raw'), 10),
+			min: parseFloat(flashNode.callMethod('getValue', 'score.min'), 10),
+			max: parseFloat(flashNode.callMethod('getValue', 'score.max'), 10),
+			errors: parseInt(flashNode.callMethod('getValue', 'errors.raw'), 10),
+			comletion_status: flashNode.callMethod('getValue', 'completion_status')
+		};
+		
+        document.getElementById('form[<?=$number?>][score_min]').value = flScore.min;
+        document.getElementById('form[<?=$number?>][score_max]').value = flScore.max;
+		if (flScore.comletion_status == 'completed') {
+			document.getElementById('form[<?=$number?>][score_raw]').value = flScore.raw;
+		} else {
+			document.getElementById('form[<?=$number?>][score_raw]').value = '0';
+		}
+	}
+});
+//-->
+</script>
+<img src="<?=$GLOBALS['sitepath']?>/images/loaded.gif" onload="eLS_create_question_blackbox_<?=$number?>.call(this);" />

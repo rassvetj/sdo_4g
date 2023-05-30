@@ -1,0 +1,54 @@
+
+.StudenTravelClub h1 {
+	font-size: 26px;
+}
+.StudenTravelClub{
+	width:100%;
+}
+.StudenTravelClub a img:hover {
+	opacity: 0.9;
+}
+.StudenTravelClub p, .StudenTravelClub ul li, .StudenTravelClub a{
+	font-size:14px; line-height:26px;
+}
+.StudenTravelClub td {
+	vertical-align: top;
+}
+.StudenTravelClubTop {
+	text-align: center;
+}
+.StudenTravelClubLogo {
+	text-align: right;
+	width: 50%;
+}
+.StudenTravelClubLogo img{
+	padding-right: 50px;
+}
+.StudenTravelClubLogoImage {
+	text-align: left;
+}
+.StudenTravelClubLogoImage {
+	display: block;
+}
+.StudenTravelClub ul{
+	padding: 0;
+    	list-style-position: inside;
+	margin:10px 0 20px 0;
+}
+.StudenTravelClub ul li {
+	line-height: 28px;
+}
+.StudenTravelClubLogoFooter {
+	background: #e2e6e4;
+	padding: 10px 0;
+}
+.StudenTravelClubLogoFooter td {
+	padding: 10px 0 20px 0;
+}
+.StudenTravelClub a img {
+	margin:10px 0 20px 0;
+}
+.StudenTravelClubLogoFooter a img {
+	margin-bottom:0;
+}
+.StudenTravelClubLogoImage {margin-bottom:20px;}

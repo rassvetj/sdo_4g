@@ -1,0 +1,848 @@
+/* table collapsorz*/
+.els-grid tbody tr td.expand_shown{
+	padding-bottom:6px;
+	vertical-align: top !important;
+}
+.els-grid tbody tr td.expand_shown p{
+	line-height: 1em;
+	margin: 5px 0;
+}
+.els-grid tbody tr td.expand_shown p.total{
+	color: #A8A6A6;
+	line-height:1.6em;
+	margin-top:0;
+	white-space: nowrap;
+}
+.els-grid tbody tr td.td_expand{
+	position:relative;
+	overflow:hidden;
+}
+.els-grid tbody .total {
+    position:relative;
+    overflow:hidden;
+}
+.td_div_expand{
+	position:relative;
+    padding-right: 15px;
+}
+.td_div_expand .td_div_expand {
+    padding-right: 0;
+}
+.td_div_expand .td_div_expand .div_expand {
+    display: none;
+}
+.els-grid tbody tr td.td_expand .div_expand.collapsed {
+    background-image: url("../../images/icons/expand-down.png");
+    background-position: 50% 10px;
+    background-repeat: no-repeat;
+    margin: -5px -6px 0 0;
+    position: absolute;
+    right: 0;
+}
+.els-grid tbody tr td.td_expand .div_expand {
+    background-color: #E3E7EC;
+    border-bottom: 1px solid #DDE1E6;
+    cursor: pointer;
+    float: right;
+    height: 600%;
+    margin: -5px -6px 0 0;
+    width: 15px;
+    z-index: 2;
+}
+.ie7 .els-grid tbody tr td.td_expand .div_expand,
+.ie7 .els-grid tbody tr td.td_expand .div_expand.expanded {
+	height:30px;
+	margin: -5px -6px 0 0;
+}
+
+.els-grid tbody tr td.td_expand .div_expand.expanded {
+	background-image: url(../../images/icons/expand-up.png);
+	background-repeat: no-repeat;
+	background-position: 50% 10px;
+	height: 600%;
+	position:absolute;
+	right: 0;
+	margin: -12px -6px 0 0;
+}
+
+.els-grid tbody tr td.td_expand .div_expand:hover {
+	background-color: #CBD2DB;
+}
+
+/* table layout, borders and bg colors */
+.els-grid {
+	position: relative;
+	clear: both;
+	zoom: 1;
+    overflow-x: auto;
+}
+.els-grid .hacky-hack {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #bdbdbd;
+	width: 1px;
+	overflow: hidden;
+}
+.els-grid table {
+	border-collapse: separate;
+	width: 100%;
+	border: 1px solid #bdbdbd;
+	border-width: 1px 0;
+	empty-cells: show;
+}
+.els-grid td,
+.els-grid th {
+	border: 1px solid #bdbdbd;
+	border-width: 1px 1px 1px 0;
+	text-align: left;
+	padding: 2px 6px;
+	vertical-align: middle;
+}
+.els-grid tbody td {
+	line-height: 1.6em;
+}
+.card-link{
+	line-height: 1.4em;
+}
+.ie7 .card-link{
+	line-height: 1.4em;
+	margin-top:2px;
+}
+.ie7 .els-grid td{
+    line-height: 1.8em;
+}
+.els-grid td{
+	vertical-align: top;
+	padding: 5px 6px;
+}
+.els-grid td p{
+	margin:0;
+}
+.els-grid td a.card-link{
+	float:left;
+	margin-right:6px;
+}
+.els-grid .filters_tr td{
+	margin-top:0;
+	line-height:1.2em;
+	padding: 0 2px;
+}
+.ie7 .els-grid .filters_tr td,
+.ie8 .els-grid .filters_tr td{
+	line-height:1.6em;
+}
+.els-grid td.first-cell,
+.els-grid th.first-cell {
+	border-left-width: 1px;
+}
+.els-grid .filters_tr td {
+	padding: 8px 1px;
+}
+.els-grid .bottom-grid {
+	background-color: #e3e3e3;
+	border-bottom-width: 0;
+}
+.els-grid td.no-result {
+	background-color: #e3e3e3;
+	border-bottom-width: 0;
+	border-top-width: 0;
+	padding: 1em;
+	text-align: center;
+}
+/* wtf??? */
+.ie6 .els-grid td.no-result,
+.ie7 .els-grid td.no-result {
+	padding: 2em;
+}
+.els-grid tr {
+	cursor: default;
+}
+.els-grid thead td,
+.els-grid thead th {
+	background-color: #f2f3f5;
+	border-top-width: 0;
+	background-image: url('../../images/content-modules/grid/header-bg.png');
+	background-repeat: repeat-x;
+	background-position: left center;
+	text-shadow: 0 1px white;
+}
+.els-grid thead th{
+	height:40px;
+}
+.els-grid thead td.sorted,
+.els-grid thead th.sorted {
+	background-position: left -195px;
+}
+.els-grid tr.filters_tr td,
+.els-grid tr.filters_tr th {
+	border-top-width: 0;
+	border-right-color: #e3e3e3;
+	background-color: #e3e3e3;
+	vertical-align: middle;
+}
+.els-grid tr.filters_tr td.last-cell,
+.els-grid tr.filters_tr th.last-cell {
+	border-right-color: #bdbdbd;
+}
+.els-grid tr.filters_tr td.first-cell,
+.els-grid tr.filters_tr th.first-cell {
+	border-left-color: #bdbdbd;
+}
+
+.els-grid tr.even td {
+	background-color: #f0f2f4;
+	border-top-color: #f0f2f4;
+	border-bottom-color: #f0f2f4;
+}
+.els-grid tr.odd td {
+	background-color: white;
+	border-top-color: white;
+	border-bottom-color: white;
+}
+.els-grid tr.selected-even td {
+	background-color: #e0f3db;
+	border-top-color: #e0f3db;
+	border-bottom-color: #e0f3db;
+}
+.els-grid tr.selected-odd td {
+	background-color: #eaf7e6;
+	border-top-color: #eaf7e6;
+	border-bottom-color: #eaf7e6;
+}
+.els-grid tr.dublicate td {
+	background-color: #FFD7CB;
+	border-top-color: #FFD7CB;
+	border-bottom-color: #FFD7CB;
+}
+.els-grid tbody tr.ui-state-hover td {
+	background-color: #fff9cb;
+	border-top-color: #fff9cb;
+	border-bottom-color: #fff9cb;
+}
+.els-grid tbody tr.selected-last td {
+	border-bottom-color: #a7d79a;
+}
+.els-grid tbody tr.ui-state-selected td {
+	border-top-color: #d6d1aa;
+	border-bottom-color: #d6d1aa;
+}
+.els-grid tbody tr.ui-state-selected td {
+	border-color: #d6d1aa #fff9cb;
+	background-color: #fff9cb;
+}
+.els-grid tbody tr.ui-state-selected td.first-cell {
+	border-left-color: #d6d1aa;
+}
+.els-grid tbody tr.ui-state-selected td.last-cell {
+	border-right-color: #d6d1aa;
+}
+
+/* some grid visual styles */
+
+.els-grid thead a,
+.els-grid thead a:visited {
+	color: #3f5c6e;
+	text-decoration: none;
+}
+.els-grid thead a:hover {
+	color: black;
+}
+.els-grid tbody a,
+.els-grid tbody a:visited,
+.els-grid tbody a:hover {
+	text-decoration: underline;
+}
+.els-grid th,
+.els-grid .bottom-grid,
+.els-grid tr.filters_tr td,
+.els-grid img {
+	vertical-align: middle;
+}
+.els-grid tbody td {
+	/* word-wrap: break-word; */
+}
+.els-grid th a span {
+	padding-left: 0.5em;
+}
+/* grid columns */
+.els-grid td.checkboxes,
+.els-grid th.checkboxes {
+	white-space: nowrap;
+	text-align: center;
+}
+.els-grid td.checkboxes {
+	padding: 1px 5px 1px 5px;
+	line-height: 2.2em;
+}
+.els-grid td.checkboxes input,
+.els-grid td.checkboxes .ui-els-icon {
+	vertical-align: middle;
+	cursor: pointer;
+}
+.els-grid td.checkboxes .mass-fixer{
+	width:20px;
+	display: inline-block;
+}
+.ie7 .els-grid td.checkboxes .mass-fixer img{
+	margin-top:5px;
+}
+.ie7 .els-grid td.checkboxes,
+.ie7 .els-grid th.checkboxes{
+	padding: 1px 0px;
+}
+.els-grid td.checkboxes .ui-els-icon {
+	display: inline-block;
+	margin-left: 0.5em;
+}
+.ie7 .els-grid td.checkboxes input{
+	margin-top:7px;
+}
+/* grid bottom */
+.els-grid .bottom-grid {
+	padding: 0.727em;
+}
+.els-grid .selected-count {
+	color: #21a121;
+}
+.els-grid .pagination,
+.els-grid .mass-actions {
+	display: block;
+	float: left;
+	zoom:1;
+}
+.ie7 .els-grid .mass-actions{
+	float:none;
+}
+.els-grid .pagination {
+	margin-bottom: 1em;
+}
+.els-grid .no-pagination .pagination {
+	display: none;
+}
+.els-grid .pagination div {
+	display: inline;
+	vertical-align: middle;
+}
+.els-grid .pagination div:empty {
+	display: none;
+}
+.els-grid .pagination .page-numbers {
+	border-right: 1px solid black;
+	padding-right: 0.5em;
+}
+.els-grid .pagination .page-numbers a{
+	display:inline;
+}
+.els-grid .pagination .page-select {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+.els-grid .pagination select.page-select {
+	width: auto;
+}
+.els-grid .mass-actions {
+	overflow: hidden;
+	margin-right: -0.727em;
+}
+.els-grid .no-mass-actions .mass-actions {
+	display: none;
+}
+.els-grid .mass-actions .massSelect {
+	display: inline-block;
+	vertical-align: middle;
+	color: black;
+}
+.els-grid .mass-actions select {
+	max-width: 24em;
+	background-color: #f2f3f5;
+	border: 1px solid #bdbdbd;
+	color: #3f5c6e;
+}
+.els-grid .mass-actions select#courseId {
+    max-width: 24em;
+}
+.ie6 .els-grid .mass-actions select,
+.ie7 .els-grid .mass-actions select,
+.ie8 .els-grid .mass-actions select {
+	width: 24em;
+}
+.els-grid .export {
+	float: right;
+	margin-right: -0.727em;
+}
+.ie6 .els-grid .export,
+.ie7 .els-grid .export {
+	display: inline;
+}
+.els-grid .mass-actions input,
+.els-grid .export input,
+.els-grid .export button {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.ie6 .els-grid .mass-actions input,
+.ie6 .els-grid .export input,
+.ie6 .els-grid .export button {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.els-grid .no-mass-actions.no-pagination.has-export .export {
+	position: static;
+}
+
+/* filters */
+.els-grid tr.filters_tr input,
+.els-grid tr.filters_tr select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	min-width:6.5em;
+}
+.ie7 .els-grid tr.filters_tr select {
+	width:expression(document.body.clientWidth < 70? "70px": "auto" );
+}
+.ie7 .els-grid tr.filters_tr input,
+.ie6 .els-grid tr.filters_tr input {
+	width: auto;
+}
+.ie9 .els-grid tr.filters_tr input,
+.ie9 .els-grid .filters_tr select {
+	width: auto;
+}
+.els-grid tr.filters_tr input,
+.els-grid tr.filters_tr select {
+	border: 1px solid #bdbdbd;
+	background-color: #f0f2f4;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.grid-filter-daterange {
+	white-space: nowrap;
+}
+.els-grid tr.filters_tr .grid-filter-daterange input {
+	width: 6.5em;
+}
+.grid-filter-daterange label {
+	width: 2.1em;
+	text-align: right;
+	padding-right: 2px;
+	display: inline-block;
+}
+
+.grid-filter-daterange .grid-filter-daterange-item {
+	line-height: 1em;
+}
+.ie6 .grid-filter-daterange .grid-filter-daterange-item * {
+	vertical-align: middle;
+}
+.els-grid .filters_tr .grid-actions button {
+	margin: 0;
+}
+.els-grid .filters_tr select {
+	width: 100%;
+	max-width: 100%;
+}
+.ie6 .els-grid .filters_tr select {
+	width: 7.727em;
+}
+/* ----- new grid filters 'button' ----- */
+.els-grid tr.filters_tr td{
+	white-space: nowrap;
+}
+.els-grid tr.filters_tr .fillFilter{
+	border:2px solid #77CA85;
+}
+.ie7 .els-grid tr.filters_tr select.fillFilter{
+	background:#77CA85;
+}
+.wrapFiltersInput{
+	padding-right:17px;
+	position:relative;
+	display:inline-block;
+	box-sizing:border-box;
+}
+.wrapFiltersInput img{
+	margin-top:-2px;
+    position: relative;
+}
+.clearFilterSpan{
+	position:absolute;
+	width:17px;
+	height:17px;
+	cursor:default;
+}
+.ie7 .clearFilterSpan,
+.ie8 .clearFilterSpan{
+	top:1px;
+}
+.x_filter{
+	cursor:pointer;
+	background:url(../../images/reset_filters.gif) no-repeat 0 0px;
+}
+/*
+#clear_filter{
+	color: #FA2403;
+}
+*/
+
+/* row actions */
+.els-grid tr.els-grid-many-actions td.grid-actions {
+	background-image: url(../../images/icons/arrow_hover.gif);
+	background-repeat: no-repeat;
+	background-position: 90% center;
+	opacity: 0.8;
+}
+.els-grid td.grid-actions {
+	white-space: nowrap;
+}
+.els-grid tr.els-grid-many-actions td {
+	cursor: pointer;
+}
+.els-grid tr.ui-state-hover td.grid-actions,
+.els-grid tr.ui-state-selected td.grid-actions {
+	opacity: 1;
+}
+.els-grid tr.els-grid-one-action .grid-row-actions {
+	display: block;
+}
+
+/* Gmail checkox & actions menu */
+.ie6 .gmail-checkbox {
+	position: relative;
+}
+
+.gmail-checkbox .wrapper {
+	position: relative;
+	display: inline-block;
+}
+.ie7 .gmail-checkbox .wrapper,
+.ie6 .gmail-checkbox .wrapper {
+	display: inline;
+	zoom: 1;
+}
+.gmail-checkbox button {
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0;
+}
+.ie6 .gmail-checkbox button,
+.ie7 .gmail-checkbox button {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	margin: 0 !important;
+}
+.gmail-checkbox button em {
+	padding-left: 0;
+}
+.gmail-checkbox button.has-checkbox em {
+	padding-left: 15px;
+}
+.gmail-checkbox input {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 3px;
+	width: 13px;
+	height: 13px;
+	display: block;
+	margin-top: -6px;
+}
+.ie7 .gmail-checkbox input {
+	margin-top: -7px;
+}
+
+.grid-row-actions,
+.gmail-checkbox-menu {
+	display: none;
+	position: absolute;
+	font-weight: normal;
+	-webkit-box-shadow: 0 3px 3px #aaa;
+	-moz-box-shadow: 0 3px 3px #aaa;
+	box-shadow: 0 3px 3px #aaa;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+    margin: 0;
+    padding: 0;
+}
+.grid-row-actions ul,
+.gmail-checkbox-menu ul {
+	background-color: #fff9cb;
+	list-style-type: none;
+	margin: 0 -2px;
+	padding: 0.182em 0;
+	border: 1px solid #d6d1aa;
+	border-bottom-color: #979371;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+.grid-row-actions ul {
+	border-top-width: 0;
+}
+.els-grid .grid-row-actions {
+	position: static;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.els-grid .grid-row-actions ul {
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.ie6 .grid-row-actions {
+	width: 0%;
+}
+.ie6 .els-grid .grid-row-actions {
+	width: auto;
+}
+.ie6 .grid-row-actions ul {
+	margin: 0;
+}
+
+.grid-row-actions li,
+.gmail-checkbox-menu li {
+	white-space: nowrap;
+}
+.gmail-checkbox-menu li {
+	padding: 0.182em 1em;
+}
+.grid-row-actions li {
+	padding: 0.182em 0.5em;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+}
+.els-grid .grid-row-actions li {
+	padding: 0;
+	overflow: visible;
+	height: auto;
+	line-height: 1.231em;
+}
+.ie6 .grid-row-actions li {
+	height: auto;
+}
+
+.grid-row-actions li a {
+	margin-left: 25px;
+	display: block;
+	line-height: 20px;
+	outline: none;
+}
+.els-grid .grid-row-actions li a {
+	margin-left: 0;
+}
+.no-ie .els-grid .grid-row-actions li a {
+	display: inline-block;
+}
+.ie7 .els-grid .grid-row-actions li a,
+.ie6 .els-grid .grid-row-actions li a {
+	margin-right: 0;
+}
+.ie7 .els-grid .grid-row-actions li a {
+	display: inline;
+}
+
+.grid-row-actions li span,
+.grid-row-actions li img,
+.gmail-checkbox-menu li span,
+.gmail-checkbox-menu li img {
+	vertical-align: middle;
+}
+.grid-row-actions li img {
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-left: -25px;
+}
+.els-grid .grid-row-actions li img {
+	margin-left: 0;
+}
+.ie7 .grid-row-actions li img,
+.ie6 .grid-row-actions li img {
+	display: inline;
+	float: none;
+}
+
+.grid-row-actions li a {
+	line-height: 20px;
+}
+.grid-row-actions li span {
+	cursor: pointer;
+	display: block;
+}
+.els-grid .grid-row-actions li span {
+	margin-right: 0;
+	margin-left: 25px;
+}
+.ie7 .grid-row-actions li span,
+.ie6 .grid-row-actions li span {
+	display: inline;
+}
+.ie6 .els-grid .grid-row-actions li span,
+.ie7 .els-grid .grid-row-actions li span {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.ui-state-hover .grid-row-actions a,
+.ui-state-hover .grid-row-actions a:visited,
+.grid-row-actions a,
+.grid-row-actions a:visited,
+.gmail-checkbox-menu a,
+.gmail-checkbox-menu a:visited {
+	color: #9d9976;
+}
+.ui-state-hover .grid-row-actions a:hover,
+.grid-row-actions a:hover,
+.gmail-checkbox-menu a:hover {
+	color: #6f6d5c;
+}
+
+/***** Gridswitcher moved to common.css *****/
+
+img.multiple_toggle{
+	display:none;
+	cursor:pointer;
+	margin: 2px 0 0 -5px;
+}
+/* for multiple toggle */
+#_fdiv input, #_fdiv select, #_fdiv button{
+	vertical-align: top;
+	margin-top:1px;
+}
+#_fdiv #courseId {
+	width: 30em !important;
+	max-width: 30em !important;
+}
+#_fdiv ul.holder {
+    display: none;
+    float: left;
+    margin-left: 5px;
+}
+.massActions{
+	float:left;
+}
+.ie7 .massActions{
+	float:none;
+	zoom:1;
+	position:relative;
+}
+.nowrap {
+	white-space: nowrap;
+}
+/* drag'n'drop for tree */
+.els-grid tr td.grid-name span.icon-folder,
+.ui-draggable-dragging  span.icon-folder  {
+    background-image: url("../../images/content-modules/icons.png");
+    background-position: -16px -16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-right: 5px;
+    position: relative;
+    width: 16px;
+}
+.els-grid tr td.grid-name span.icon-item,
+.ui-draggable-dragging span.icon-item {
+    background-image: url("../../images/content-modules/icons.png");
+    background-position: -16px -32px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-right: 5px;
+    position: relative;
+    width: 16px;
+}
+.els-grid tr td span.icon-custom {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 16px;
+    margin: 3px 5px;
+    position: relative;
+    width: 16px;
+}
+.draggable_class{
+	position:relative;
+	display:block;
+
+}
+
+span.hover a{
+	background: #B8B5B5;
+}
+
+.els-grid tr.even td.grid-process {
+    border-top-color: #FFE0CB;
+    border-bottom-color: #FFE0CB;
+    background-color: #FFE0CB;
+}
+.els-grid tr.odd td.grid-process {
+    border-top-color: #FCEADD;
+    border-bottom-color: #FCEADD;
+    background-color: #FCEADD;
+}
+
+.container-fcbk {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.container-fcbk ul.holder {
+    background-color: #fff;
+}
+.report-constructor .filters_tr,
+.report-constructed .filters_tr {
+    display: none;
+}
+.els-grid span.unconfirmed {
+	color: #FF0000;
+}
+
+/* Orgstructure icons*/
+.orgstructure-icon-small {
+  background-image: url(../../images/orgstructure-icons.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 16px;
+  height: 16px;
+}
+.orgstructure-icon-small.type-0 {
+  background-position: 0 -32px;
+}
+.orgstructure-icon-small.type-1 {
+  background-position: 0 0;
+}
+.orgstructure-icon-small.type-1-manager {
+  background-position: 0 -16px;
+}
+
+.els-grid tr.odd td.spanned,
+.els-grid tr.even td.spanned {
+	border-top-color: #bdbdbd;
+}
+.els-grid.list-mass-actions .bottom-grid {
+	background-color: #fff;
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+.els-grid.list-mass-actions .pagination .page-numbers {
+	border-right: 0;
+}
+.els-grid .bottom-grid {
+    overflow: hidden;
+}

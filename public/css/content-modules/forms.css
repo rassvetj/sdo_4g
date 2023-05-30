@@ -1,0 +1,396 @@
+fieldset {
+border: 1px solid #B2C0C9;
+padding: 15px 15px 15px 7px;
+border-radius: 5px;
+-o-border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin-bottom: 20px;
+}
+fieldset dl {
+margin: 0px 0px 0px 28px;
+}
+fieldset dd, fieldset dt {
+	margin: 0;
+}
+
+fieldset legend {
+cursor: pointer;
+padding: 0px 5px 0px 5px;
+font-weight: bold;
+text-decoration: none;
+}
+
+/* -------------------------------------------- */
+fieldset legend > span.separator {
+background: url(../../themes/4g/images/breadcrumbs-separator.png) left top no-repeat;
+display: inline-block;
+height: 15px;
+line-height: 15px;
+text-align: left;
+text-indent: -9999em;
+width: 17px;
+}
+fieldset legend.separator-active > span.separator {
+background-position: 0 -15px;
+}
+.ie6 fieldset legend .label {
+	display: block;
+}
+.ie6 fieldset legend .separator,
+.ie7 fieldset legend .separator {
+	zoom: 1;
+	float: left;
+	margin-right: 0.3em;
+}
+/*
+.ie6 fieldset legend .separator {
+	text-align: center;
+	text-indent: 0;
+	background: transparent;
+	display: inline;
+	zoom: 1;
+}
+*/
+
+form .errors {
+    color: red;
+}
+
+fieldset dd.element {
+margin-bottom: 1.25em;
+}
+
+fieldset dd.element,
+fieldset dt {
+    position: relative;
+}
+fieldset dd.element .label_position,
+fieldset dt .label_position {
+    position: static;
+    right: auto;
+    bottom: auto;
+}
+fieldset dd.element .tooltip,
+fieldset dt .tooltip {
+    display: block;
+    position: absolute;
+    right: auto;
+    left: -20px;
+    top: -1px;
+}
+
+
+fieldset dt {
+padding-bottom:3px;
+font-weight: normal;
+text-decoration: none;
+}
+
+.required-star {
+color: red;
+}
+
+/* элементы формы */
+fieldset dd select {
+background-color: #FFFFFF;
+border: 1px solid #7E9DB9;
+height: 1.636em;
+line-height: 1.636em;
+max-width: 27.273em;
+}
+
+fieldset dd select#Person_MID {
+width: 200px;
+}
+
+fieldset dd input[type="text"] {
+background-color: #FFFFFF;
+border: 1px solid #7E9DB9;
+height: 1.636em;
+line-height: 1.636em;
+width: 27.273em;
+}
+fieldset dd input.text {
+background-color: #FFFFFF;
+border: 1px solid #7E9DB9;
+height: 1.636em;
+line-height: 1.636em;
+width: 27.273em;
+}
+
+fieldset dd input[type="password"] {
+background-color: #FFFFFF;
+border: 1px solid #7E9DB9;
+height: 1.636em;
+line-height: 1.636em;
+width: 27.273em;
+}
+fieldset dd input.password {
+background-color: #FFFFFF;
+border: 1px solid #7E9DB9;
+height: 1.636em;
+line-height: 1.636em;
+width: 27.273em;
+}
+/* CSS2 selector */
+fieldset dd input[disabled] {
+background-color: #C9D2D8;
+}
+/* ------------ */
+fieldset#fieldset-resourceGroup dd input {
+margin-right: 0.7em;
+}
+fieldset#fieldset-resourceGroup dl dd.element label {
+margin-bottom: 0.7em;
+}
+fieldset input[type="radio"] {
+    margin: .5em .5em 0 .5em;
+}
+fieldset input.radio {
+    margin-right: 0.5em;
+}
+fieldset .wide {
+    width: 46.36em !important;
+}
+
+fieldset#fieldset-classifiersTypes dd label input {
+	margin: 8px 6px 0px 0px;
+}
+
+fieldset select.multiselect {
+	width: 600px;
+	max-width: 600px;
+	height: 200px;
+}
+.ie8 form#step2 dd.element,.ie7 form#step2 dd.element{margin-top:15px;}
+
+form dd #add-option {
+	display: inline;
+	font-size: 1.2em;
+	cursor: pointer;
+	background: url(../../images/icons/add_option.gif) left top no-repeat;
+}
+form dd #add-option-dialog {
+	display: none;
+}
+#add-option-dialog input[type=text] {
+	width: 100%;
+	margin: .5em 0;
+}
+#redirect-dialog {
+    display: none;
+}
+
+/* HTML5 File upload widget */
+.file-upload-list {
+    list-style-type: none;
+    margin: 0.5em 0;
+    padding: 0;
+}
+.file-upload-list li:before,
+.file-upload-list li:after {
+    content: "";
+    display: table;
+}
+.file-upload-list li:after {
+    clear: both;
+}
+.file-upload-list li {
+    *zoom: 1;
+    margin: 0.4em 0;
+}
+.file-upload-list li.ui-state-error {
+    display: none;
+}
+.file-upload-list li .ui-progressbar {
+    position: relative;
+    float: left;
+    width: 250px;
+    cursor: default;
+}
+.file-upload-list li .ui-progressbar .ui-progressbar-value {
+    background-color: #adc4d2;
+}
+.file-upload-list li .ui-progressbar.els-upload-success .ui-progressbar-value {
+    background-color: #609887;
+    background-color: rgba(42, 172, 73, 0.37);
+}
+.file-upload-list li .ui-progressbar.els-upload-failure .ui-progressbar-label {
+    color: white;
+}
+.file-upload-list li .ui-progressbar.els-upload-failure .ui-progressbar-value {
+    background-color: #ff0000;
+    display: block !important;
+    width: 100% !important;
+}
+
+.file-upload-list li .ui-progressbar-label {
+    text-indent: 4px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.5em;
+}
+form .els-masked-inputfile {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    *display: inline;
+    *zoom: 1;
+}
+.els-inputfile-infoblock {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+.els-inputfile-maxnumberoffiles,
+.els-inputfile-errormessage,
+.els-inputfile-acceptfiletypes,
+.els-inputfile-maxfilesize {
+    display: block;
+    clear: both;
+}
+.els-masked-inputfile .ui-button,
+.els-masked-inputfile button {
+    margin: 0;
+    position: relative;
+}
+.els-masked-inputfile input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: solid transparent;
+    border-width: 0 0 100px 200px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-transform: translate(-300px, 0) scale(4);
+    direction: ltr;
+    cursor: pointer;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: auto;
+    font-size: 13px;
+    line-height: 28px;
+    height: 28px;
+}
+.els-masked-inputfile.ui-state-disabled {
+    opacity: 1;
+    filter: none;
+}
+.els-masked-inputfile.ui-state-disabled input[type="file"] {
+    display: none;
+}
+.file-upload-list li .ui-icon {
+    cursor: pointer;
+    /*display: none;*/
+}
+.multiforms-container fieldset {
+	margin-bottom: 5px;
+    padding: 0 0 15px; 
+}
+.multiforms-container input[type="submit"] {
+	margin-bottom: 20px;
+}
+.multitext-row {
+	padding: 10px 0;
+}
+.assossiative-select-row select {
+    margin: 10px 10px 0 0;
+}
+.ui-slider {
+    background-color: #72A5C7;
+    width: 300px;
+}
+.element .ui-slider-handle {
+    padding: 2px;
+}
+
+
+/* Regform CAPTCHA*/
+
+.captcha dt {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.captcha dt > *,
+.captcha dd > * {
+    vertical-align: middle !important;
+}
+.captcha #captcha-label{
+    font-weight: bold;
+}
+.captcha #refresh {
+    display: inline;
+}
+.captcha #refresh  a {
+    display: none;
+}
+.captcha dd.element {
+    border: 1px solid #B2C0C9;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.captcha input#captcha-input {
+    padding: 0;
+    border: 1px solid #aaa;
+    font-size: 1.5em;
+    width: 6em;
+    text-align: center;
+}
+.captcha dd {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.captcha dd.element:before,
+.captcha dd.element:after {
+    content: "";
+    display: table;
+}
+.captcha dd.element:after {
+    clear: both;
+}
+.captcha dd.element {
+    *zoom: 1;
+}
+.captcha .required-star {
+    display: none;
+}
+.captcha img {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+.cancel-populate a,
+.cancel-upload a {
+	position: relative; 
+	float: left; 
+	left: 204px; 
+	top: -5px;
+	width: 20px;
+	height: 20px;
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 -20px transparent;
+    text-decoration: none;
+}
+.bar {
+	height: 8px;
+	background: #DBE2E7;
+}
+.progress{
+	width: 200px;
+	border: 1px solid #A7A9AD;
+}
+.file-populate a {
+	text-decoration: none;
+}

@@ -1,0 +1,24 @@
+<?php 
+
+foreach ($vopros['text'] as $k=>$v) {
+    $tmp = unserialize($v);
+    if ($tmp && count($tmp)) {
+        if ($tmp['dd']) {
+            echo "<select name='form[{$number}][otvet][{$k}]' ".($tmp['multiple'] ? "multiple" : "").">";
+            foreach ($tmp['stubs'] as $key => $stub) {
+                $stub = $stub == '' ? _('пустое значение') : $stub;
+                echo "<option value='{$key}'>{$stub}</option>";
+            }
+            echo "</select>";
+        }
+        else {    
+            echo "<input name='form[{$number}][otvet][{$k}]' size='".strlen($tmp['right']['0'])."' type='text'/>";
+        }
+    }
+    else {
+        echo "{$v}";
+    }
+}
+
+?>
+

@@ -1,0 +1,128 @@
+<script type="text/javascript" language="javascript">
+    function check_room_capacity() {
+        var room = document.getElementById('room');
+        var capacity = document.getElementById('room_capacity');
+        if (room.value && capacity.value) {
+
+            var elm = document.getElementById('list2');
+            if (elm) {
+                var people=elm.length;
+
+                if (capacity.value<people) {
+                    if (confirm('{?t?}Превышена вместимость места проведения занятия (вместимость не более{?/t?} '+capacity.value+' {?t?}чел.{?/t?})! {?t?}Продолжить?{?/t?}')) return true;
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+
+<form action="[self]" method=post name="add2" onSubmit="select_list_select_all('list1'); select_list_select_all('list2'); if (document.getElementById('webinar_list1')) select_list_select_all('webinar_list1'); if (document.getElementById('webinar_list2')) select_list_select_all('webinar_list2'); return check_room_capacity();">
+<input type="hidden" name="c" value="add_submit">
+<input type="hidden" name="period" value="[period]">
+<input type="hidden" id="room" name="room" value="[room]">
+<input type="hidden" id="room_capacity" name="room_capacity" value="[room_capacity]">
+<input type="hidden" name="tweek" value="[tweek]">
+<input type="hidden" name="name" value="[name]">
+<input type="hidden" name="type" value="[type]">
+<input type="hidden" name="isgroup" value="[isgroup]">
+<input type="hidden" name="kurs" value="[kurs]">
+<input type="hidden" name="mm1" value="[mm1]">
+<input type="hidden" name="hh1" value="[hh1]">
+<input type="hidden" name="MM1" value="[MM1]">
+<input type="hidden" name="DD1" value="[DD1]">
+<input type="hidden" name="YY1" value="[YY1]">
+<input type="hidden" name="mm2" value="[mm2]">
+<input type="hidden" name="hh2" value="[hh2]">
+<input type="hidden" name="MM2" value="[MM2]">
+<input type="hidden" name="DD2" value="[DD2]">
+<input type="hidden" name="YY2" value="[YY2]">
+<input type="hidden" name="rebild" value="[REBILD]">
+<input type="hidden" name="condition" value="[CONDITION]">
+<input type="hidden" name="mark" value="[MARK]">
+<input type="hidden" name="desc" value="[desc]">
+<input type="hidden" name="datetype" value="[datetype]">
+<input type="hidden" name="relative_day1" value="[relative_day1]">
+<input type="hidden" name="relative_day2" value="[relative_day2]">
+<input name="teacher" type="hidden" value="[teacher]">
+<table width=100% class=main cellspacing=0>
+  <tr>
+    <th colspan="2">{?t?}Свойства занятия{?/t?}</th>
+  </tr>
+   [tr-main]
+  <tr>
+    <th colspan="2" class="intermediate">{?t?}Назначение слушателям{?/t?}</th>
+  </tr>
+<tr>
+<td colspan="2">
+<script>
+
+   var show1=0
+
+   [GROUP_ARRAY]
+
+   function ckGroup(gName) {
+      if (gName==1 || gName==0) {
+        document.forms['add2'].elements['toall'].value=gName;
+        setCheckboxes('add2');
+        return;
+        } else {
+           document.forms['add2'].elements['toall'].value=0;
+           setCheckboxes('add2');
+        }
+        eval(" var isArray = (typeof("+gName+") != 'undefined') ? true : false;");
+
+//        alert(isArray);
+
+        if (isArray==true) {
+            eval("var curArray = "+gName+";");
+//            alert(curArray);
+          var elts   = (typeof(document.forms['add2'].elements['select[]']) != 'undefined')
+                     ? document.forms['add2'].elements['select[]']
+                     : document.forms['add2'].elements['select[]'];
+          var elts_cnt  = (typeof(elts.length) != 'undefined')
+                     ? elts.length
+                     : 0;
+
+          var arr_cnt = curArray.length;
+
+          do_check='true';
+
+          if (arr_cnt) {
+            for (var j = 0; j < arr_cnt; j++) {
+                if (elts_cnt) {
+                    for (var i = 0; i < elts_cnt; i++) {
+                        //elts[i].checked = do_check;
+                        if (elts[i].value==curArray[j]) elts[i].checked=do_check;
+                       } // end for
+                     // } else {
+                     //  elts.checked        = do_check;
+                   } // end if... else
+             }
+          }
+          return true;
+
+        }
+
+    return false;
+   }
+
+</script>
+   [tr-people]
+</div>
+</td>
+</tr>
+<tr>
+	<td colspan="2">
+      <input type="checkbox" name="vedomost" value="1" [ADDPARAMVED]>&nbsp;&nbsp;{?t?}Это занятие на оценку{?/t?}&nbsp;&nbsp;[TT_GRADE]
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<input type="checkbox" name="form[sAddToAllnew]" value="1" checked>&nbsp;&nbsp;{?t?}Автоматически назначать это занятие всем новым слушателям курса{?/t?}
+	</td>
+</tr>
+</table><br>
+[OKBUTTON]
+</form>

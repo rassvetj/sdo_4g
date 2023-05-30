@@ -1,0 +1,44 @@
+                                 <table cellspacing="0"  cellpadding="0" border=0 width="90%">
+<!-- "Begin login form" -->
+
+<form method=post name="datasel" action='[PATH]index.php'
+onclick="document.datasel.localtime.value=Math.round((new Date()).getTime()/1000)">
+
+[FSESSID]
+
+<input type=hidden name=localtime value='0'>
+
+                                 <input type="hidden" name="start_login" value="1">
+                                 <tr>
+                                    <td class=questt>
+                                       <table width="100%" cellspacing="0" cellpadding="0">
+                                       <tr>
+                                          <td width="10" class="th2"><img src="[PATH]images/spacer.gif" width=1 height=1></td>
+                                          <td class="th2" valign="top" >[W-fname]
+                                          </td>
+                                       </tr>
+                                       <tr height="25" class="shedaddform">
+                                          <td width="10" rowspan="4"><img src="[PATH]images/spacer.gif" width=1 height=1></td>
+                                          <td class="chilight">&nbsp;[W-login]</td>
+                                       </tr>
+                                       <tr height="25">
+                                          <td>&nbsp;<input type="text" name="login">&nbsp;</td>
+                                       </tr>
+                                       <tr height="25" class="shedaddform">
+                                          <td class=chilight>&nbsp;[W-pass]</td>
+                                       </tr>
+                                       <tr height="39" valign="top">
+                                          <td>&nbsp;<input type="password" name="password">&nbsp;</td>
+                                       </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                 <td align="right" valign="top"><img src="[PATH]images/spacer.gif" width=1 height=5></td>
+                                 </tr>
+                                 <tr>
+                                 <td align="right" valign="top"><input type="image" name="ok" onmouseover="this.src='[PATH]images/send_.gif';" onmouseout="this.src='[PATH]images/send.gif';" src="[PATH]images/send.gif" align="right" alt="ok" border="0"></td>
+                                 </tr>
+                                 </form>
+                                 <!-- "End login form" -->
+                                 </table>

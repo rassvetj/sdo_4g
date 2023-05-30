@@ -1,0 +1,44 @@
+	</div>
+</div>
+
+</div>
+</div>
+</div>
+<script>
+	// {?t?}отключить проверку пропущенных вопросов{?/t?}
+	//document.m.ischecked_<?=$number?>.value=1;
+	$("form[name='m']").last().find('#ischecked_<?=$number?>').val(1);
+	function eLS_create_question_classify_<?=$number?>() {
+		$('.eLS-sortable-<?=$number?>').sortable({
+			axis: 'y, x',
+			grid: [1, 1],
+            opacity: false,
+			delay: 5,
+			helper: 'clone',
+			tolerance: 'intersect',
+			placeholder: 'ui-state-highlight',
+			containment: $('#q<?=$number?>').closest('.questt'),
+			connectWith: ['.eLS-sortable-<?=$number?>'],
+			dropOnEmpty: true,
+			handle: '.eLS-drag-handler',
+			stop: function(event, ui) {
+				ui.item[0].style.opacity = '';
+				ui.item[0].style.filter = '';
+
+				var targetDroppable = $(ui.item[0]).closest('.eLS-sortable-<?=$number?>');
+				if (!targetDroppable.length) { return; }
+
+				if (targetDroppable.attr('id').indexOf('eLS-sortable') != 0) {
+					ui.item[0].firstChild.value = targetDroppable.attr('id');
+				} else {
+					ui.item[0].firstChild.value = "";
+				}
+			}
+		});
+		this.parentNode.removeChild(this);
+	}
+	$(window).bind('unload', function() {
+		$('.eLS-sortable-<?=$number?>').sortable('destroy');
+	});
+</script>
+<img src="<?=$GLOBALS['sitepath']?>/images/loaded.gif" onload="eLS_create_question_classify_<?=$number?>.call(this);" />

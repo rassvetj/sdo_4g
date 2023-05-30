@@ -1,0 +1,1 @@
+<?php echo $this->action('index', 'index', 'subject', array('subject_id' => $this->subjectId, 'course_id' => $this->courseId, 'withoutContextMenu' => true))?>

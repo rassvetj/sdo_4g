@@ -1,0 +1,31 @@
+<!-- {?t?}вопрос{?/t?} -->
+<table border=0 cellspacing=0 cellpadding=0 class="tests_body_main">
+<tr>
+<th colspan="2" class="test">
+<?=_("Вопрос")?> № <?=$v_number?>
+</th>
+</tr>
+<tr>
+<td colspan="2" class="body_main_question">
+<? if(strlen($vopros['qtema'])) { ?><?=_("Тема")?>: <?=$vopros['qtema']?><br /><? } ?><?=_("Диапазон баллов: от")?> <?=$vopros['balmin']?> <?=_("до")?> <?=$vopros['balmax']?><br>
+<!--<span class="h1"><?=nl2br($v_text)?></span>--><!--span class="h1"><? //echo nl2br($v_vopros)?></span-->
+<?
+    if($vopros['timetoanswer']) {
+        echo "<br/>&nbsp;&nbsp;<font size=1>"._("Время прохождения вопроса:")." <span id='timetoanswer_spent'>0</span>&nbsp;"._("мин.")."</font>";
+        echo "<br/>&nbsp;&nbsp;<font size=1 color=red>"._("Осталось для прохождения вопроса:")." <span id='timetoanswer_remain'>".$vopros['timetoanswer']."</span>&nbsp;"._("мин.")."</font>";
+        echo "<script>check_question_timetoanswer(1);</script>";
+    }
+?>
+<P>
+<?
+   if (tdebug)
+      echo " <font color=white>&nbsp; <tt>$vopros[kod], type=$vopros[qtype]</tt> </font>";
+?>
+</td>
+</tr>
+<tr style="height:24px;">
+<td></td>
+</tr>
+<tr class="tests"><td>
+
+<?=$v_text1?>

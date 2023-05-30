@@ -1,0 +1,35 @@
+<table border=0 cellpadding=0 cellspacing=2>
+<tr>
+    <td valign=top>
+<script language="JavaScript">    
+function switch_inputs(checkbox_value){
+    obj = document.getElementById('offline_course_form')
+    if (obj.elements.length){
+        for (var i = 0;i < obj.elements.length;i++) {
+            if (obj.elements[i].id.indexOf("offlineCoursePath") == 0) {
+                obj.elements[i].disabled = !checkbox_value;
+            }
+        }
+    }
+    return true
+}
+</script>    
+<form name="offline_course_form" id="offline_course_form" method="POST">
+    <input type="hidden" name="saveOfflineCoursePath" value="saveOfflineCoursePath">
+    <br>
+    <table width=100% class=main cellspacing=0>
+        <tr>
+            <th colspan=2>{?t?}Локальные копии курсов{?/t?}</th>
+        </tr>
+        [COURSES-INPUTS]
+        <tr>
+          <td valign=top colspan=2>
+          [OKBUTTON]
+        </td>
+        </tr>
+
+    </table>
+</form>
+    </td>
+</tr>
+</table>

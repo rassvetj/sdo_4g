@@ -1,0 +1,43 @@
+.workflowBulbs {
+    white-space: nowrap;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    cursor: pointer;
+    line-height: 9px;
+    padding: 2px 4px 3px;
+    -moz-border-radius: 3px;
+         border-radius: 3px;
+}
+.workflowBulbs:hover {
+    background: #fceadd;
+}
+.workflowBulbs.grid-workflow-active,
+.workflowBulbs.grid-workflow-active:hover {
+    background-color: #c1cfe5;
+}
+.workflowBulbs .bulb {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 7px;
+    height: 7px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.ie7 .workflowBulbs .bulb {
+    margin: 0 1px;
+}
+.workflowBulbs .success {
+    background-color: #5b9d5b;
+}
+.workflowBulbs .complete {
+    background-color: #69a7b3;
+    height: 9px;
+}
+.workflowBulbs .freeze {
+    background-color: #c0c1c1;
+}
+.workflowBulbs .failed {
+    background-color: #cb5151;
+}

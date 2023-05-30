@@ -1,0 +1,26 @@
+<tr class="tests">
+<td width="49%"><?=$v_text?></td>
+<td valign="middle"><span class="arr"><img src="<?=$sitepath?>/images/content-modules/tests/arr.gif" align="absmiddle"></span></td>
+<td width="49%">
+   <select id="otvets_<?=$number?>" name="form[<?=$number?>][<?=$v_ans?>]" size=1 class="lineinput">
+   <option value="">-- <?=_("не выбрано")?> --</option>
+   <?=$v_select?>
+   </select>
+   <?php
+   if (isset($vopros['otvets'][$newkey-1]) && 0) {
+   ?>
+   <script type="text/javascript">
+   <!--
+   var otvets = document.getElementById('otvets_<?=$number?>');
+   if (otvets) {
+     for(var i=0;i<otvets.options.length;i++) {
+       if (otvets.options[i].value=='<?=$vopros['variant2'][$vopros['otvets'][$newkey-1]]?>') otvets.options[i].selected = true;
+     }
+   }
+   //-->
+   </script>
+   <?php
+   }
+   ?>
+</td>
+</tr>

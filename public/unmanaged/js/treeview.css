@@ -1,0 +1,151 @@
+#container
+{
+    /*width: 50%;*/
+}
+.loading
+{
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    font-family: Verdana;
+    font-size: 11px;
+}
+.treeview
+{
+    display: none;
+    line-height: 2;
+}
+.treeview .line
+{
+    background: url(../images/treeview/n.gif) 0 0 repeat-y;
+}
+.treeview .item .item
+{
+    margin-left: 10px;
+}
+.treeview .item span
+{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+}
+/* mozilla filter : */
+body:last-child .treeview .item span
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+body:last-child .treeview .item span span
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* end mozilla filter */
+
+.treeview .item span span
+{
+    height: 24px;
+    font-family: Verdana;
+    font-size: 11px;
+    padding: 0 0 0 20px;
+    background-color: transparent;
+    background-position: 3px 8px;
+}
+.treeview .item .value
+{
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    border-bottom: 2px solid #DDD;
+}
+.treeview .item .value strong
+{
+    font-weight: normal;
+    position: relative;
+}
+.treeview .item .value strong.hasIconAndChecker { top: -3px }
+.treeview .item .value strong.hasIconOnly { top: -3px }
+.treeview .item .value strong.hasCheckerOnly { top: -3px }
+
+html>body .treeview .item .value strong.hasIconAndChecker,
+html>body .treeview .item .value strong.hasIconOnly,
+html>body .treeview .item .value strong.hasCheckerOnly
+{
+    font-weight: normal;
+    position: relative;
+    top: 0;
+}
+
+html>body .treeview .item .value strong.hasIconAndChecker a {
+	color: #F7941E;
+}
+
+
+.treeview .item .a
+{
+    visibility: hidden;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.treeview .item a {
+	color: #F7941E;
+}
+
+.treeview .item .a b
+{
+    text-align: center;
+    font-weight: normal;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+    border-right: 2px solid #DDD;
+}
+.treeview .item .a b.first
+{
+    border-left: 2px solid #DDD;
+}
+.treeview .item .a b img
+{
+    margin-top: 5px;
+}
+.treeview .item input
+{
+    margin: 2px 5px 0 0;
+    padding: 0;
+}
+.inner
+{
+    display: none;
+}
+
+.t { background-image: url(../images/treeview/t.gif) }
+.c { background-image: url(../images/treeview/c.gif) }
+.b { background-image: url(../images/treeview/b.gif) }
+
+.load { background-image: url(../images/treeview/load.gif) }
+
+.p { background-image: url(../images/treeview/p.gif) }
+.m { background-image: url(../images/treeview/m.gif) }
+.headers td div
+{
+    background: #BBB;
+    color: #FFF;
+    border-top: 1px solid #BBB;
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.headers td.first div
+{
+    border-left: 2px solid #DDD;
+}

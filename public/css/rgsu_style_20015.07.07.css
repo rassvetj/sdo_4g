@@ -1,0 +1,347 @@
+table.cardstudent td{
+	padding:5px;
+}
+
+table.cardstudent thead td, table.cardstudent td.f_course {
+	font-weight:bold;	
+	font-size: 14px;				
+}
+
+table.cardstudent td.f_cap {
+	width: 150px;
+	font-style: italic;
+}
+
+table.cardstudent td{
+	.min-width: 35%;
+	width: 180px;
+}
+ 
+table.cardstudent {
+	width: 900px;
+	margin: 0 auto;			
+	border-collapse: collapse;				
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+
+table.cardstudent tbody td {
+	border: 1px solid black;				
+}
+
+table.cardstudent tbody td.f_status {
+	color: rgb(50, 89, 189);
+	font-weight: 600;
+}
+
+table.cardstudent tbody td.f_order {
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: 600;
+	text-align: right;				
+}
+
+table.cardstudent tbody td.f_take{
+	text-align: right;
+	color: rgb(50, 89, 189);
+	font-weight: 600;
+}
+
+.report-area {
+	width: 900px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+
+.cardstudent-widget td, .student-debt-widget td{padding:5px;} 
+.cardstudent-widget thead td, .student-debt-widget thead td {font-weight:bold;}
+.cardstudent-widget, .student-debt-widget {width: 100%;}
+
+table.cardstudent-widget, table.student-debt-widget{
+	width: 100%;
+	font-size: 11px;
+}
+
+table.cardstudent-widget td.f_cap, table.cardstudent-widget td.f_order {
+	width: 110px;
+}
+
+#order, #ticket, #question, #sdoc {
+	font-size: 12px;
+}
+
+#order .element,  #ticket .element, #question .element, #sdoc .element {
+	margin-bottom: 12px;
+}
+
+#order .element input, #ticket .element input, #question .element input, #sdoc .element input {
+	width: 360px;
+	height: 20px;
+	padding: 2px;
+}
+
+#order .element select, #ticket .element select , #sdoc .element select {
+	width: 368px;
+	height: 28px;	
+}
+
+#order .element textarea, #question .element textarea, #sdoc .element textarea  {
+	width: 364px;
+	height: 50px;	
+}
+
+#cardStudent .ui-portlet-body, #recordCardBlock .ui-portlet-body  {
+	max-height: 650px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.area-order-info {
+	resize: none;
+	border: none;
+	background-color: white;
+	
+}
+
+#order, #sdoc, #question {
+	width: 380px;
+	float: left;
+	text-align: justify;
+}
+
+
+
+#area-description{
+	margin-right: 10px;
+}
+
+.area-ch-form-order {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contract-block {
+	float: left;	
+	width: 370px;
+	padding: 0 50px 0 5px;
+	font-size: 12px;	
+	margin-top: 20px;
+}
+
+.contract-block span.contract-value {
+	font-weight: bold;
+}
+
+.contract-block  table.description{
+	line-height: 18px;
+}	
+
+#area-description {
+	background-color: #EDF0F3;
+	border: 1px solid #ACC4B4;
+	color: #64946D;
+	padding: 3px;
+	text-indent: 20px;  
+	line-height: 15px;
+	text-align: justify;
+}
+
+
+.el-group-clear, .el-group-clear dl  {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.el-group-clear dl dt  span.tooltip, .el-group-clear dl dt  span.label_position {
+	margin-left: 20px;
+}
+
+#sdoc .els-inputfile-infoblock {
+	margin-left: 0px;
+}
+
+
+.area-description-right {
+	float: left;
+	width: 380px;
+}
+
+#content-area .description-area-tutor {
+	font-size: 20px;
+	margin: 5px;
+	color: black;
+}
+
+.spinner-area-tutor {
+	width: 100%;
+	min-height: 50px;
+}	
+
+
+.student-ticket-area .ticket-page {
+	//float: left;
+	//border: 1px solid black;
+	//padding: 35px 15px 35px 15px;
+}
+
+.recordbook-area {
+	//font-size: 13px;
+	font-size: 15px;
+	font-family: initial;
+}
+
+.recordbook-area .rb-page {
+	float: left;
+	border: 1px solid black;
+	padding: 15px 5px 35px 5px;
+	//height: 336px;	
+	height: 370px;	
+	//width: 505px;
+	width: 600px;
+}
+
+.recordbook-area .rb-page-2 {
+	//width: 517px;
+	width: 612px;
+}
+
+
+.recordbook-area .rb-page-3 {
+	padding: 0px 5px 35px 5px;	
+}
+
+.recordbook-area  table.rb-page-content{
+	width:100%;
+}
+
+.recordbook-area .rb-bold {
+	font-weight: bold;
+}
+
+.recordbook-area .rb-center {
+	text-align: center;
+}
+
+.recordbook-area .rb-text-right{
+	text-align: right;
+}
+
+.recordbook-area .rb-photo {
+	width:125px;	
+	//height: 145px;	
+	height: 155px;	
+}
+
+.recordbook-area .rb-footer {
+	text-align: center;	
+}
+
+.recordbook-area .rb-text-under {
+	font-size:11px;
+}
+
+.recordbook-area .rb-w400{
+	width: 400px;
+}
+
+.rb-caption {
+	font-size: 17px;
+}
+
+.rb-caption-2 {
+	font-size: 14px;
+	padding-bottom: 24px;
+	padding-top: 10px;
+}
+
+.rb-caption  td {
+	font-weight: bold;
+	padding: 20px 0 5px 0;
+}
+
+.rb-pt10 { padding-top: 10px; }
+
+.rb-pt15 { padding-top: 15px; }
+
+.rb-w290 { width: 290px; }
+
+
+.rb-tbl-border td { 
+	border: 1px solid black;	
+}
+.rb-border-b-hide { border-bottom-style: hidden!important; }
+.rb-border-r-hide { border-right-style: hidden!important; }
+
+.rb-tbl-border { border-collapse: collapse; }
+
+.rb-pad-reset { padding: 0px!important;}
+.rb-border-reset { border: none!important;}
+
+.rb-text-left { text-align: left; }
+
+.rb-pad-l-3 { padding-left: 3px; }
+.rb-pad-r-3 { padding-right: 3px; }
+
+
+.rb-tbl-caption td {
+	vertical-align: middle;
+	line-height: 10px;
+}
+
+.rb-tbl-caption-big {
+	height:51px;
+}
+
+.rb-tbl-caption-big td {
+	vertical-align: middle;
+	line-height: 10px;
+}
+
+.rb-valign-b {
+  vertical-align: bottom;
+}
+
+.rb-valign-m {
+  vertical-align: middle;
+}
+
+.rb-c1 { width: 24px; }
+.rb-c2 { width: 165px;}
+.rb-c3 { width: 50px; }
+.rb-c4 { width: 70px; }
+.rb-c5 { width: 53px; }
+.rb-c6 {}
+.rb-c7 {}
+
+.rb-c-mini { width: 75px; }
+.rb-c-small { width: 100px; }
+.rb-c-normal { width: 200px; }
+.rb-c-medium { width: 250px; }
+.rb-c-big { width: 300px; }
+
+.rb-row-def { height: 23px; }
+
+.rb-row-gos { height: 32px; }
+
+.rb-row-grad {
+	height: 32px;
+}
+
+.rb-row-grad td {
+	vertical-align: bottom;
+}
+
+.rb-row-signature-area {
+	height: 77px;
+}
+
+.rb-row-signature-area-min {
+	height: 50px;
+}
+
+.rb-pad-r-75 {
+  padding-right: 75px;
+}
+

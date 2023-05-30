@@ -1,0 +1,55 @@
+#usersSystemCounterBlock .ui-portlet-content {
+	margin: 15px auto; 
+	width: 340px; 
+	height: 110px; 
+	text-align: center;
+}
+
+#usersSystemCounterBlock .ui-portlet-content .usersSystemCounter_statsInner{
+	float:right;
+}
+
+#usersSystemCounterBlock .ui-portlet-content .usersSystemCounter_datePickers img{
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#usersSystemCounterBlock .ui-portlet-content .usersSystemCounter_datePickers{
+	line-height: 22px;
+	font-size: 1em;
+}
+
+
+#usersSystemCounterBlock .ui-portlet-content input{
+	width: 74px;
+	height: 18px;
+}
+#usersSystemCounterBlock .ui-portlet-content .usersSystemCounter_stats{
+	font-size: 1.5em; 
+	font-weight: 700;
+	margin: 10px 0;
+	text-align: left;
+}
+
+#usersSystemCounterBlock .ui-portlet-content #usersSystemCounter_users, 
+#usersSystemCounterBlock .ui-portlet-content #usersSystemCounter_guests{
+	/* color: red; */
+}
+
+
+
+#topsubjectsBlock .ui-portlet-content #topSubjects-text p,
+#topsubjectsBlock .ui-portlet-content #topSubjects-text ol {
+	padding: 0 8px;
+}
+#topsubjectsBlock .ui-portlet-content .topSubjects-number {
+	font-weight: bold;
+}
+#topsubjectsBlock .ui-portlet-content #topSubjects-export-button {
+	background: url(../../../themes/4g/images/infoblock-button-export.png?1290441536) no-repeat 0% 0px;	
+	margin-top: 8px;
+	float: right;
+	width: 28px;
+	height: 26px;
+	cursor: pointer;
+}

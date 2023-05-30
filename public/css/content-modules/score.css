@@ -1,0 +1,281 @@
+.progress_table .number_number{
+    margin-bottom: 0;
+}
+.score_checkbox,
+.score_gray,
+.score_red {
+    padding:0;
+    height:48px;
+    min-width:48px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center; 
+    position:relative;
+    border:1px solid #C6D1D8;
+    -moz-border-radius: 5px; 
+         border-radius: 5px;
+    background: #EBF0F2;
+}
+.form-score-binary,
+.form-score-ternary{
+    padding:0;
+    height:48px;
+    min-width:48px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center; 
+    position:relative;
+}
+.score_gray,
+.score_red,
+.score_gray span,
+.score_red  span,
+.score_gray input,
+.score_red  input {
+    height: 48px;
+    display: block;
+}
+.score_gray span,
+.score_red  span {
+    overflow: hidden;
+}
+.score_gray input,
+.score_red  input {
+    padding: 0 4px;
+    margin: 0 auto;
+}
+.number_number {
+    line-height: 48px;
+}
+.score_gray {
+    color: #BBC9D2;
+    font-weight: normal;
+    font-size: 15px;
+    /*line-height: 3.1em;*/
+}
+.score_red {
+    font-size: 37px;
+    font-weight: bold;
+    color: #CD3000;
+}
+.number_number span {
+    position: relative;
+}
+.number_number input {
+    color: #CD3000;
+    font-size: 37px;
+    line-height: 48px;
+    font-weight: bold;
+}
+.number_number input::-webkit-input-placeholder {
+    color: #BBC9D2;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 48px;
+    vertical-align: middle;
+}
+.number_number input:-moz-placeholder {
+    color: #BBC9D2;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 48px;
+    vertical-align: middle;
+}
+.number_number input.placeholder {
+    color: #BBC9D2;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 48px;
+    vertical-align: middle;
+}
+table td.showscore .score_desc{
+    text-align:left;
+    clear: both;
+}
+
+
+.number_number div {
+    padding: 0.636em;
+    position: relative;
+}
+.number_number span  input[type="text"] {
+    background-color: transparent;
+    border: 0 solid;
+    /*display: inline;*/
+    text-align: center;
+    width: 30px;
+    min-width: 38px;
+}
+
+.ie7 .number_number span  input[type="text"]{
+    margin-top:-2px;
+}
+.number_number  input:invalid {
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    box-shadow: 0 0 5px red;
+    padding:1px 5px;
+}
+.ie7 .number_number  input.invalid,
+.ie8 .number_number  input.invalid{
+    border:1px solid #f00;
+    padding:1px 5px;
+}
+.lesson_descript{
+    float:left;
+}
+.number_number div.article-controls{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    right:-10px;
+    top: 0;
+    padding:0;
+    cursor:pointer;
+    position:absolute;
+}
+
+.number_number .article-controls .edit {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 0 transparent;
+    margin-right: 5px;
+}
+.number_number .article-controls .delete {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 -20px transparent;
+}
+.number_number .article-controls .edit, 
+.number_number .article-controls .delete {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+#marksheet-comment-dialog textarea {
+    border: 0 solid;
+    display: block;
+    height: 10em;
+    width: 100%;
+}
+.progress_table div.lesson_descript_td {
+    float:right;
+    padding-left:30px;
+}
+.progress_table{
+    width:100%;
+}
+.progress_table .lesson_descript{
+    padding-left:90px;
+}
+.hiddenno{
+    display:none;
+}
+.tComment{
+    height: 100px;
+    width: 250px;
+    background: none;
+    border: none;
+    margin: 1px;
+    display: none;
+}
+.tCommentFocus{
+    border: 1px solid #DB9546;
+    background: #fff;
+    margin: 0;
+}
+/*
+.lesson_min:hover {
+    background-color:#FFF6B2;
+}
+.lesson_min:hover #lesson_block_active {
+    background: none;
+}
+.lesson_hover{
+}
+.lesson_hover #lesson_block_active{
+}*/
+.progress_table .tComment{
+    height:40px;
+    display:block;
+}
+
+.form-score-ternary {
+}
+.form-score-ternary .els-icon {
+	height: 15px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	top: 17px;
+	margin: 0 2px;
+}
+.form-score-ternary .els-icon img {
+	display: none;
+	position: relative;
+	display: block;
+	margin: 0;
+}
+.form-score-ternary .els-icon.cross {
+	width: 15px;
+}
+.form-score-ternary .els-icon.cross img {
+	left: -19px;
+	top: -15px;
+}
+.form-score-ternary .els-icon.cross-checked img {
+	left: -19px;
+	top: 0;
+}
+.form-score-ternary .els-icon.check {
+	width: 19px;
+}
+.form-score-ternary .els-icon.check img {
+	left: 0;
+	top: -15px;
+}
+.form-score-ternary .els-icon.check-checked img {
+	left: 0;
+	top: 0;
+}
+.form-score-binary {
+}
+.form-score-binary .els-icon {
+	height: 26px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	/*cursor: pointer;*/
+	overflow: hidden;
+	position: relative;
+	top: 12px;
+	margin: 0 2px;
+}
+.form-score-binary .els-icon img {
+	display: none;
+	position: relative;
+	display: block;
+}
+.form-score-binary .els-icon.check {
+	width: 33px;
+}
+.form-score-binary .els-icon.check img {
+	left: 0;
+	top: -26px;
+}
+.form-score-binary .els-icon.check-checked img {
+	left: 0;
+	top: 0;
+}
+
+.hm-score-binary-icon {
+    cursor: pointer;
+}
+
+.hm-score-ternary-icon-readonly .els-icon, .hm-score-binary-icon.hm-score-binary-icon-readonly {
+    cursor: default;
+}
+
+.score-cell.lesson-cell > div > .hm_score_numeric {
+    height: 48px;
+}

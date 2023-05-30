@@ -1,0 +1,73 @@
+<!-- "Begin Tasks Page" -->
+
+                  <script type="text/javascript">
+                  <!--
+                  function selectAllAnswers(checked) {
+                      if (document.answers) {
+                          for(var i=0;i<=document.answers.length;i++) {
+                              if ((document.answers.elements[i].type == 'checkbox') &&
+                                  document.answers.elements[i].name) {
+                                  document.answers.elements[i].checked = checked;
+                              }
+                          }
+                      }
+                  }
+
+                  function disableCheckboxes(disabled) {
+                      if (document.answers) {
+                          for(var i=0;i<document.answers.length;i++) {
+                              if ((document.answers.elements[i].type == 'checkbox') &&
+                                  document.answers.elements[i].name) {
+                                  document.answers.elements[i].checked = false;
+                                  document.answers.elements[i].disabled = disabled;
+                              }
+                          }
+                      }
+                      document.getElementById('checkall').checked = false;
+                      document.getElementById('checkall').disabled = disabled;
+                  }
+                  
+                  function confirmSelect(){
+                  		current = document.getElementById('sel_action').value;
+                  		if (current == 'complete') return confirm([CONFIRM_COMPLETE]);
+                  		if (current == 'clearsence') return confirm([CONFIRM_CLEAR]);
+                  		return true;
+                  }
+                  //-->
+                  </script>                  
+                  <form action="" name="answers" method="POST">  
+                  <table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+                     <tr valign="top" width="100%">
+                        <td>
+                           <table width="100%" cellspacing="0" cellpadding="0"  valign="top"> 
+                              <tr>
+                                 <td  align="right" width="60%" class="th-before-corner"><img src="[PATH]images/spacer.gif" width="1" height="1" alt=""></td>
+                                 <td  class="th3" align="right" background="[PATH-CORNER]images/corner03.gif" width="25px" border="0" height="15px"><img src="[PATH]images/spacer.gif" width="25" height="1" alt=""></td>
+                                 <td  align="right" class="th3" nowrap >[W-coursename]&nbsp;&nbsp;&nbsp;</td>
+                              </tr>
+                           </table>
+                           <table width=100% class=main cellspacing=0>
+                              <tr>
+                                 [BEFORE]
+                                 [BEFORE1]
+                                 <th align="center">[W-task]</th>
+                                 [INSIDE-TID]
+                                 <th width="100px" align="center">[W-count]</th>
+                              </tr>
+                              [TEST-LIST]
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td align=right>
+                        [ACTIONS]
+                        </td>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>&nbsp;
+                           
+                        </td>
+                     </tr>
+                  </table>
+                  </form>
+<!-- "End Tasks Page" -->

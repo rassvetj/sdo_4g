@@ -1,0 +1,73 @@
+<script>
+
+   var show1=1
+
+   [GROUP_ARRAY]
+
+   function ckGroup(gName) {
+      if (gName==1 || gName==0) {
+        document.forms['form_gen'].elements['toall'].value=gName;
+        setCheckboxes('form_gen');
+        return;
+        } else {
+           document.forms['form_gen'].elements['toall'].value=0;
+           setCheckboxes('form_gen');
+        }
+        eval(" var isArray = (typeof("+gName+") != 'undefined') ? true : false;");
+
+//        alert(isArray);
+
+        if (isArray==true) {
+            eval("var curArray = "+gName+";");
+//            alert(curArray);
+          var elts   = (typeof(document.forms['form_gen'].elements['select[]']) != 'undefined')
+                     ? document.forms['form_gen'].elements['select[]']
+                     : document.forms['form_gen'].elements['select[]'];
+          var elts_cnt  = (typeof(elts.length) != 'undefined')
+                     ? elts.length
+                     : 0;
+
+          var arr_cnt = curArray.length;
+
+          do_check='true';
+
+          if (arr_cnt) {
+            for (var j = 0; j < arr_cnt; j++) {
+                if (elts_cnt) {
+                    for (var i = 0; i < elts_cnt; i++) {
+                        //elts[i].checked = do_check;
+                        if (elts[i].value==curArray[j]) elts[i].checked=do_check;
+                       } // end for
+                     // } else {
+                     //  elts.checked        = do_check;
+                   } // end if... else
+             }
+          }
+          return true;
+
+        }
+
+    return false;
+   }
+
+</script>
+<table width=100% class=main cellspacing=0>
+   <tr>
+       <th colspan="4" class="intermediate">{?t?}Назначение слушателям{?/t?}</th>
+       </tr>
+   [tr-people]
+</table>
+<table width=100% class=main cellspacing=0>
+<td valign='middle'>
+      {?t?}Добавить:{?/t?}
+                  <input type="hidden" name="toall" value="1">
+                  <input type="hidden" name="group" value="">
+                 <select name="toallsel"  onchange="ckGroup(toallsel.value);" >
+                  [GROUP_SEL]
+                 </select>
+</td></tr>
+<tr><td valign='middle'>
+      <input type="checkbox" name="vedomost" value="1" checked>&nbsp;&nbsp;{?t?}Это занятие на оценку{?/t?}&nbsp;&nbsp;[TT_GRADE]
+</td>
+</tr>
+</table>

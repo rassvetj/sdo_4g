@@ -1,0 +1,45 @@
+.ui-portlet { position: relative; background: transparent none !important; padding: 0 !important; width: 100%; overflow: hidden; clear: both; }
+
+.ui-portlet-wrapper { padding: 0 1px !important; }
+
+.ui-portlet-scrollable-area { padding: 1px 0; margin: -1px 0; overflow: hidden; position: relative; }
+
+.ui-portlet-body { border: 0 solid #aaaab9; border-width: 0 0 1px; position: relative; }
+
+.ui-portlet-body-wrapper { margin: 0 -1px; border: 0 solid #aaaab9; border-width: 0 1px; width: 100%; }
+.ui-portlet-body-wrapper .ui-portlet-body-wrapper { margin: 0; border: 0 solid white; border-width: 1px 0 0; background-color: #e0e0e0; padding: 0; }
+
+.ui-portlet-content { position: relative; border-width: 0; background-color: transparent; *zoom: 1; }
+.ui-portlet-content:after { content: ""; display: table; clear: both; }
+
+.ui-portlet-titlebar { padding: 0 1px; margin: 0 -1px; position: relative; overflow: hidden; border-width: 0; zoom: 1; }
+.ui-portlet-titlebar .bg { display: none; }
+.ui-portlet-titlebar h3 { margin: 0 -1px; border: 0 solid black; overflow: hidden; text-overflow: ellipsis; }
+
+.ui-portlet-titlebar-wrapper { position: relative; z-index: 0; border: 0 solid black; }
+
+.ui-portlet-titlebar-remove { right: 0.818em; top: 1.5em; height: 18px; margin: -10px 0 0; padding: 1px; position: absolute; right: 0.3em; top: 50%; width: 19px; }
+.ui-portlet-titlebar-remove:hover, .ui-portlet-titlebar-remove:focus { background-color: transparent; padding: 0; border: 1px solid white; -moz-border-radius: 2px; border-radius: 2px; }
+.ui-portlet-titlebar-remove span { display: block; margin: 1px; }
+
+.ui-portlet-content { margin: 1em; word-wrap: break-word !important; }
+.ui-portlet-content p { margin: 0.5em 0; }
+.ui-portlet-content img { margin: 0.5em; }
+.ui-portlet-content ul, .ui-portlet-content ol { margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.ui-portlet-marginless .ui-portlet-content { margin: 0; }
+
+.ui-portlets-edit-mode .ui-sortable-placeholder { margin-left: 0 !important; margin-right: 0 !important; list-style-type: none !important; list-style-position: inside !important; background: #e0e0e0 !important; visibility: visible !important; padding: 0 !important; }
+.ui-portlets-edit-mode .ui-sortable-placeholder * { visibility: hidden; }
+.ui-portlets-edit-mode .ui-portlets-sortable { min-height: 8.182em; }
+.ui-portlets-edit-mode .ui-portlet-titlebar { cursor: move; }
+
+.ui-portlet-body #resource-iframe {
+	width: 100%;
+	height: 400px;
+}
+
+.ui-portlet .bottom-links {
+    clear: both;
+    text-align: right;
+}

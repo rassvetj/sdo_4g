@@ -1,0 +1,63 @@
+<form method=post name="reg" action="[ACTION]">
+    <input type=hidden name='Action' value='reg'>
+        <table width=100% class=main cellspacing=0>
+          <tr>
+            <th colspan=2>{?t?}Добавить курс{?/t?}</th>
+          </tr>
+          <tr id=qq>
+            <td height="17" nowrap>{?t?}Название курса{?/t?} </td>
+            <td height="17" width=99%>
+              <input type="text" size="25" name="Title" style="width:300px">
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Доступ{?/t?} <font color=red>*</font></td>
+            <td>
+              <!--select style="border-style:0; width: 100%;" name="TypeDes"-->
+              [TYPE_DESCR]
+              <!--/select-->
+            </td>
+          </tr>
+          <!--tr>
+            <td>{?t?}Цена (у.е.{?/t?})</td>
+            <td>
+              <input type="text" size="25" name="Fee">
+            </td>
+          </tr-->
+          <tr>
+            <td>{?t?}Дата начала{?/t?}</td>
+            <td>
+              <select  style="border-style:0;" name="day">
+        [DAY]
+              </select>
+              <select  style="border-style:0;" name="month">
+                [MONTH]
+              </select>
+              <select  style="border-style:0;" name="year">
+        [YEAR]
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Дата окончания{?/t?}</td>
+            <td>
+              <select style="border-style:0;" name="day2">
+        [DAY2]
+              </select>
+              <select style="border-style:0;" name="month2">
+        [MONTH2]
+              </select>
+              <select style="border-style:0;" name="year2">
+        [YEAR2]
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>{?t?}Длительность{?/t?} </td>
+            <td><input type=text size=3 value='[LONGTIME]' name=longtime> {?t?}дней{?/t?}</td>
+          </tr>
+        </table><br>
+        [OKBUTTON]
+<!--        <input type="image" id="add_schedule_scEnd" onMouseOver="this.src='images/send_.gif';" onMouseOut="this.src='images/send.gif';" src="images/send.gif" align="right" alt="{?t?}применить{?/t?}" border=0>
+-->
+</form>

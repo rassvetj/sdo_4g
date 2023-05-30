@@ -1,0 +1,161 @@
+@import 'nib'
+
+images-root        = '../../images'
+remote-images-root = images-root
+
+display(d) {
+	display: d;
+	if (d == 'inline-block') {
+		*display: inline;
+		*zoom: 1;
+	}
+}
+
+image-url(iurl, as-data-url = false) {
+	if as-data-url {
+		data-url(images-root + iurl)
+	} else {
+		'url(%s%s)' % (unquote(remote-images-root) unquote(iurl))
+	}
+}
+
+.material-icon-small,
+.material-icon {
+	background-image: image-url('/material-icons.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.material-icon-small {
+	width: 16px;
+	height: 16px;
+
+	&.course {
+		background-position: 0 -176px;
+	}
+	// TYPE_EXTERNAL
+	&.resource-0 {}
+	// TYPE_HTML, TYPE_FILESET ?
+	&.resource-1 {
+		background-position: 0 -208px;
+	}
+	// TYPE_URL ?
+	&.resource-2 {
+		background-position: 0 -35px;
+	}
+	// TYPE_WEBINAR ?
+	&.resource-4 {
+		background-position: 0 -16px;
+	}
+	// FILETYPE_UNKNOWN
+	&.resource-filetype-0 {
+		background-position: 0 -160px;
+	}
+	// FILETYPE_TEXT
+	&.resource-filetype-1 {
+		background-position: 0 0;
+	}
+	// FILETYPE_HTML ?
+	&.resource-filetype-2 {
+		background-position: 0 -208px;
+	}
+	// FILETYPE_IMAGE
+	&.resource-filetype-3 {
+		background-position: 0 -32px;
+	}
+	// FILETYPE_AUDIO
+	&.resource-filetype-4 {
+		background-position: 0 -48px;
+	}
+	// FILETYPE_VIDEO
+	&.resource-filetype-5 {
+		background-position: 0 -64px;
+	}
+	// FILETYPE_FLASH
+	&.resource-filetype-6 {
+		background-position: 0 -144px;
+	}
+	// FILETYPE_DOC
+	&.resource-filetype-7 {
+		background-position: 0 -80px;
+	}
+	// FILETYPE_XLS
+	&.resource-filetype-8 {
+		background-position: 0 -112px;
+	}
+	// FILETYPE_PPT
+	&.resource-filetype-9 {
+		background-position: 0 -128px;
+	}
+	// FILETYPE_PDF
+	&.resource-filetype-10 {
+		background-position: 0 -96px;
+	}
+}
+
+.material-icon {
+	width: 35px;
+	height: 35px;
+
+	&.course {
+		background-position: -17px -175px;
+	}
+	// TYPE_EXTERNAL
+	&.resource-0 {}
+	// TYPE_HTML, TYPE_FILESET ?
+	&.resource-1 {
+		background-position: -17px -210px;
+	}
+	// TYPE_URL ?
+	&.resource-2 {
+		background-position: -17px -35px;
+	}
+	// TYPE_WEBINAR ?
+	&.resource-4 {
+		background-position: -53px -210px;
+	}
+	// FILETYPE_UNKNOWN
+	&.resource-filetype-0 {
+		background-position: -53px -175px;
+	}
+	// FILETYPE_TEXT
+	&.resource-filetype-1 {
+		background-position: -17px 0px;
+	}
+	// FILETYPE_HTML ?
+	&.resource-filetype-2 {
+		background-position: -17px -210px;
+	}
+	// FILETYPE_IMAGE
+	&.resource-filetype-3 {
+		background-position: -17px -70px;
+	}
+	// FILETYPE_AUDIO
+	&.resource-filetype-4 {
+		background-position: -17px -105px;
+	}
+	// FILETYPE_VIDEO
+	&.resource-filetype-5 {
+		background-position: -17px -140px;
+	}
+	// FILETYPE_FLASH
+	&.resource-filetype-6 {
+		background-position: -53px -140px;
+	}
+	// FILETYPE_DOC
+	&.resource-filetype-7 {
+		background-position: -53px 0;
+	}
+	// FILETYPE_XLS
+	&.resource-filetype-8 {
+		background-position: -53px -70px;
+	}
+	// FILETYPE_PPT
+	&.resource-filetype-9 {
+		background-position: -53px -105px;
+	}
+	// FILETYPE_PDF
+	&.resource-filetype-10 {
+		background-position: -53px -35px;
+	}
+}

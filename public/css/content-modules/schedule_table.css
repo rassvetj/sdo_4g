@@ -1,0 +1,411 @@
+.content-here .lesson_min .lesson_block,
+.content-here  .lesson_min .lesson_wrapper_1,
+.content-here  .lesson_min .lesson_wrapper_2{
+	min-height:140px;
+	clear:both;
+	border-top: 1px solid #D6DCE0;
+}
+.content-here  .lesson_min .lesson_wrapper_1,
+.content-here  .lesson_min .lesson_wrapper_2{
+	border-top:none;
+}
+table.progress_table {
+padding-bottom: 20px;
+}
+.ie7 table.progress_table td {
+padding-bottom: 10px;
+}
+table.progress_table td {
+vertical-align: middle;
+}
+table.progress_table td.progress_td {
+padding-right: 20px;
+}
+table.progress_table .progress_legend_td {
+    padding-left: 10px;
+}
+.progress_title_mark,
+.progress_title {
+    margin-bottom:10px;
+}
+.progress_title_mark {
+    padding: 0 15px;
+    display: inline;
+}
+.progress_table .hm-progresstable-legend span {
+    display: block; float: left; width: 14px; height: 14px;
+}
+
+.lesson {
+	overflow: hidden;
+}
+
+.lesson td, td img {
+    vertical-align: middle;
+}
+.lesson_bg img{
+    smargin-top:-5px;
+}
+.lesson_bg img.subject-icon{
+    margin-top:0;
+}
+.lesson_block {
+   width: 100%;
+   border-top: 1px solid #D6DCE0;
+   /*height:170px;*/
+   padding:0px 0px 0px 0px;
+   float:left;
+}
+
+#lesson_block_active {
+   background: #F3F6F8;
+   min-height: 140px;
+   width: 100%;
+   border-top: 1px solid #D6DCE0;
+   padding:0px 0px 0px 0px;
+   float:left;
+}
+
+.lesson_wrapper_1 {
+/*   height:170px;
+   border-top: 1px solid #D6DCE0;*/
+}
+.lesson_wrapper_2 {
+   width: 100%;
+/*   height:170px;
+   border-top: 1px solid #ffffff;*/
+}
+.lesson_table {
+margin:10px 0px 10px 0px;
+}
+table td.lesson_bg {
+vertical-align: top;
+}
+.lesson_min td.lesson_bg{
+	width:105px;
+    /*padding: 0 20px 0 5px;*/
+}
+table td.lesson_bg div#lesson_bg_img {
+background: url(../../images/content-modules/lesson_bg.png) top left no-repeat;
+width: 109px;
+height:109px;
+}
+
+div.lesson_wrapper_1 div#lesson_bg_img a img.subject-icon {
+    margin-top:7px;
+}
+
+
+table td.showscore {
+vertical-align: top;
+padding-right: 5px;
+width:115px;
+}
+
+table td.showscore .student_comment {
+vertical-align: top;
+clear: both;
+}
+
+table td.lesson_options {
+vertical-align: top;
+}
+
+table td.lesson_bg_type {
+vertical-align: middle;
+}
+
+table td.lesson_descript_td {
+vertical-align: top;
+}
+
+table td.showscore .student_comment p {
+float: left;
+}
+
+#lesson_type {
+	padding: 10px 0px 0px 0px;
+    font-weight: normal;
+    color: #888888;
+    font-size:10px;
+}
+
+#lesson_descript {
+    vertical-align: top;
+    font-weight: normal;
+    color: #888888;
+    padding: 0px 10px 0px 10px;
+}
+
+.lesson_wrapper_1 #lesson_title {
+ padding: 0px 15px 0px 15px;
+ line-height: 20px;
+}
+.lesson_min .lesson_wrapper_1 #lesson_title{
+	padding: 0px 15px 0px 5px;
+}
+.lesson_wrapper_1 #lesson_title span {
+font-weight: bold;
+font-size:1.3em;
+color: #777;
+}
+.lesson_wrapper_1 #lesson_title a {
+font-weight: bold;
+font-size:1.3em;
+display: inline;
+}
+.lesson_wrapper_1 .lesson_main_desc {
+    font-style: italic;
+    color: #888;
+}
+#lesson_descript .teacher_comment {
+margin-bottom: 8px;
+width: 190px;
+}
+.lesson_wrapper_1 #lesson_title a:hover {
+font-weight: bold;
+}
+.lesson_wrapper_1 #lesson_begin, .lesson_wrapper_1 #lesson_end {
+font-weight: normal;
+}
+
+
+
+#lesson_go {
+line-height:20px;
+padding: 0px 10px 0px 15px;
+text-align: left;
+
+}
+.lesson_min #lesson_go {
+	padding: 0px 10px 0px 5px;
+    clear: both;
+}
+.lesson_cond_sheid {
+line-height:20px;
+padding: 0px 10px 0px 5px;
+font-weight: normal;
+text-align: left;
+}
+.lesson_cond_mark {
+line-height:20px;
+padding: 0px 10px 0px 15px;
+font-weight: normal;
+text-align: left;
+}
+.lesson_teacher {
+line-height:20px;
+padding: 0px 10px 0px 15px;
+color: #888888;
+font-weight: normal;
+text-align: left;
+}
+.lesson_min .lesson_teacher {
+	padding: 0px 10px 0px 5px;
+}
+.lesson_penalty {
+text-align: left;
+line-height:20px;
+padding: 0px 10px 0px 15px;
+}
+.lesson_wrapper_1 #lesson_begin_title {
+font-weight: normal;
+}
+.lesson_wrapper_1 #lesson_end_title {
+font-weight: normal;
+}
+.lesson_wrapper_1 #lesson_begin_content {
+margin-left:18px;
+}
+.lesson_wrapper_1 #lesson_end_content {
+margin-left:24px;
+}
+#lesson_edit {
+float: right;
+margin-right:10px;
+}
+/*-------------------WITH SCORE-------------------*/
+.recomended {
+color: #888888 !important;
+}
+
+.lesson_wrapper_1_score #lesson_title {
+ padding: 0px 15px 0px 5px;
+ line-height: 20px;
+}
+.lesson_wrapper_1_score #lesson_title a {
+font-weight: bold;
+font-size:1.3em;
+}
+.lesson_wrapper_1_score #lesson_title a:hover {
+font-weight: bold;
+font-size:1.3em;
+}
+.lesson_wrapper_1_score #lesson_begin, .lesson_wrapper_1_score #lesson_end {
+font-weight: normal;
+color: #888888;
+}
+
+
+.lesson_wrapper_1_score #lesson_begin_title {
+font-weight: normal;
+color: #888888;
+}
+.lesson_wrapper_1_score #lesson_end_title {
+font-weight: normal;
+color: #888888;
+}
+.lesson_wrapper_1_score #lesson_begin_content {
+margin-left:18px;
+}
+.lesson_wrapper_1_score #lesson_end_content {
+margin-left:24px;
+}
+
+/* Minified version */
+.lesson_min .lesson_table {
+margin:10px 0px 10px 0px;
+}
+.lesson_min div.lesson_bg_img {
+width: 72px;
+height: 72px;
+background: url(../../images/content-modules/lesson_bg_min.png) top left no-repeat;
+}
+.lesson_min .lesson_block {
+width: 100%;
+border-top: 0 solid #EBEEF2;
+/*wheight:92px;*/
+padding:0px 0px 0px 0px;
+float:left;
+}
+.lesson_min .lesson_wrapper_1 {
+/*wheight:92px;*/
+overflow: hidden;
+border-top: 1px solid #D6DCE0;
+}
+.lesson_min .lesson_wrapper_2 {
+width: 100%;
+/*wheight:92px;*/
+overflow: hidden;
+border-top: 1px solid #ffffff;
+}
+.lesson_min div.lesson_bg_img img {
+margin: 4px;
+max-width: 64px; /* 72px (.lesson_min div.lesson_bg_img) - 8px  */
+max-height: 64px; /* 72px (.lesson_min div.lesson_bg_img) - 8px  */
+}
+
+
+/*--------------------------------*/
+
+#lesson_share {
+margin: 0px 0px 0px 10px;
+float: left;
+vertical-align: middle;
+width: 120px;
+height:38px;
+}
+
+#lesson_share #lesson_share_1 {
+float: left;
+width: 40px;
+height:100%;
+}
+
+#lesson_share #lesson_share_2 {
+float: left;
+width: 40px;
+height:100%;
+}
+
+#lesson_share #lesson_share_3 {
+float: left;
+width: 40px;
+height:100%;
+}
+
+div.lesson_wrapper_1 div#lesson_bg_img a {
+	font-size: 0;
+}
+div.lesson_wrapper_2 div#lesson_bg_img a{
+    font-size: 0;
+}
+div.lesson_wrapper_1 div#lesson_bg_img a img{
+    margin-top:7px;
+}
+div.lesson_wrapper_2 div#lesson_bg_img a img {
+	margin-top:2px;
+}
+div.lesson_ended {
+	color: red;
+	padding: 5px 15px;
+}
+/*sortable prepod*/
+.lesson_min div.lesson_bg_img{
+	position:relative;
+}
+.drag-handler {
+    background: url("../../images/application/report/draggie.gif") repeat scroll left top transparent;
+    cursor: move;
+    height: 72px;
+    width: 15px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+	left: -15px;
+}
+/*end sortable prepod*/
+.lesson_main_desc{
+    display:block;
+    padding:5px;
+}
+
+#lesson_title .edit {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 0 transparent;
+    margin:0 0 0 10px;
+    text-decoration: none; 
+}
+#lesson_title .delete {
+    background: url("/images/wiki/article-controls.png") no-repeat scroll 0 -20px transparent;
+    text-decoration: none; 
+}
+#lesson_title .els-iconEdit {
+    background: url("/images/wiki/icon-EditIcon.png") no-repeat transparent;
+    background-position: 50% 3px;
+    text-decoration: none;
+}
+#lesson_title a.edit:link,
+#lesson_title a.edit:hover,
+#lesson_title a.edit:active,
+#lesson_title a.edit:visited,
+#lesson_title a.delete:link,
+#lesson_title a.delete:hover,
+#lesson_title a.delete:active,
+#lesson_title a.delete:visited {
+}
+#lesson_wrapper_1 #lesson_title .edit,
+#lesson_wrapper_1 #lesson_title .delete {
+    display: inline-block;
+    position:relative;
+    bottom:-5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* TaskForReviewBlock           */
+td.task_lesson
+{
+  text-align:left !important; 
+  padding-left:24px !important;
+}
+td.task_course
+{
+  text-align:left !important; 
+}
+tr.task_course td
+{
+  font-size:100% !important;
+  font-weight:bold !important;
+}
+/*********************************/

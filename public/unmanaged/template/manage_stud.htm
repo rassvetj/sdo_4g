@@ -1,0 +1,55 @@
+<!-- "Begin Abitur Page" -->
+                  <table border="0" cellspacing="0" cellpadding="0" height="100%" width="100%">
+                     <tr>
+                        <td valign="top" width="100%" align="center">
+                           [HEADER]
+                        </td>
+                     </tr>
+                     <tr valign="top">
+                        <td width="100%" align="left" class="shedtitle">
+                        <table width="100%" cellpadding="5">
+                          <tr><td>
+
+                            <table class="brdr" width="100%" cellpadding="5">
+                               <tr><th>Выбор учащихся</th></tr>
+                                                       <tr><td><!--  
+                               <select name='ChCourse' onchange="navigate('abitur.php4?CID='+ChCourse.value);" class="selcselect">
+                                 [SELECT-COURSES]
+                               </select-->
+                                   </td>
+                                 </tr>
+                               <tr>
+                                 <td>
+                                  [SELECT-GROUPS]
+                                 </td>
+                               </tr>
+                            </table>
+                            
+                            </td>
+                            <tr>
+                            <FORM  NAME='todo' action=[PHP_SELF] method="POST">
+                              <td>
+                                 <table class="brdr" width="100%" cellpadding="5">
+                                   <tr><th>{?t?}Действия{?/t?}</th></tr>
+                                   <tr><td>
+                                     [ACTION]
+                                     </td>
+                                   </tr>
+                                  </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table class="brdr" width="100%" cellpadding="5">
+                                  <tr><th>{?t?}Найдено{?/t?}</th></tr>
+                                 <tr><td>[STUDS]</td></tr>
+                                </table>
+                              </td>
+                             </form>
+                            </tr>
+                        </table>
+                     </td>
+                   </tr>
+                 <tr valign="top" height="100%"><td>&nbsp;</td></tr>
+                </table>
+<!-- "End Abitur Page" -->

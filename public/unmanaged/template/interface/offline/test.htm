@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html
+	xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" media="screen" type="text/css" href="../common/template/stylesheets/screen.css">
+		<link rel="stylesheet" media="screen" type="text/css" href="../common/skin.css.php">
+		<link rel="stylesheet" media="screen" type="text/css" href="stylesheets/screen.css">
+		<script type="text/javascript">
+			self.serverJSLibraryPath = '../common/js/lib/';
+			self.serverRoot = '../common/';
+			self.serverSkinURL = '../common/template/';
+			self.isOfflineMode = true;
+		</script>
+		<script text="text/javascript" charset="UTF-8" src="scripts/lib/sarissa.js"></script>
+		<script text="text/javascript" charset="UTF-8" src="scripts/lib/sarissa_ieemu_xpath.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="../common/js/lib/jquery/jquery-latest.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="../common/js/lib/prototype/prototype-latest.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="scripts/lib/libutils.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="scripts/lib/libcontentblocker.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="scripts/script-main.js"></script>
+		<script type="text/javascript" charset="WINDOWS-1251" src="../common/template/scripts/script-prototype.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="scripts/ui.js"></script>
+	</head>
+	<body>
+		<div id="layout-body" class="layout-body">
+			<div id="content">
+				<div id="cont"></div>
+			</div>
+		</div>
+		<div id="layout-bottom" class="layout-bottom els-content">
+			<div class="bottom-root">
+				<div class="bottom-toolbar">
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td>
+								<div style="float: right;">
+									<div id="button-previous" class='button' style="display: none; margin-left: 0.5em;"><a href='button:previos' onclick='return false;'><span class="button-text">РќР°Р·Р°Рґ</span></a></div><input type='submit' value='РќР°Р·Р°Рґ' class='submit' style='display: none;' />
+									<div id="button-answer"   class='button' style="display: none; margin-left: 0.5em;"><a href='button:finish'  onclick='return false;'><span class="button-text">Р“РѕС‚РѕРІРѕ РёР»Рё ok</span></a></div><input type='submit' value='Р“РѕС‚РѕРІРѕ РёР»Рё РѕРє' class='submit' style='display: none;' />
+									<div id="button-next"     class='button' style="display: none; margin-left: 0.5em;"><a href='button:next'    onclick='return false;'><span class="button-text">Р’РїРµСЂС‘Рґ</span></a></div><input type='submit' value='Р’РїРµСЂС‘Рґ' class='submit' style='display: none;' />
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="overlay" id="message-box-overlay" style="display: none;">&nbsp;</div>
+		<iframe class="iframe-shim" id="iframe-shim" style="display: none;" src="javascript:void(0);" frameborder="0" scrolling="no"></iframe>
+		<div class="root-message-box-wrapper" style="display: none;">
+			<table id="alert-message-box" cellpadding="0" cellspacing="0" class="root-message-box message-box" style="display: none;"><tr><td align="center">
+				<table cellpadding="0" cellspacing="0" class="message-box"><tr><td>
+					<div class="message-box-wrapper">
+						<h1 id="message-box-header">#HEADER#</h1>
+						<div id="message-box-content">#CONTENT#</div>
+						<div>
+							<div class="button close"><a href="javascript:void(0);">РѕРє</a></div>
+						</div>
+					</div>
+				</td></tr></table>
+			</td></tr></table>
+		</div>
+	</body>
+</html>

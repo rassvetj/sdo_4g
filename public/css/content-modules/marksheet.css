@@ -1,0 +1,125 @@
+table.main-grid { width: 100%; border-collapse: separate; empty-cells: show; border: 0; cursor: default; }
+table.main-grid th, table.main-grid td { text-align: left; vertical-align: middle; font-weight: normal; border-style: solid; }
+table.main-grid th { border-color: #b1c0ca #c5d0d7; background-color: #e2ecf2; }
+table.main-grid td { border-color: #c5d0d7; padding: 0.5em 0.636em; border-width: 0 1px 0 0; }
+table.main-grid th.first-cell, table.main-grid td.first-cell { border-left-width: 1px; }
+table.main-grid tr.even td { background-color: #f0f2f4; border-bottom-width: 1px; border-bottom-color: white; border-top-width: 1px; border-top-color: white; }
+table.main-grid tr.last-row td { border-bottom-color: #c5d0d7; border-bottom-width: 1px; }
+table.main-grid td.score-cell { text-align: center; vertical-align: bottom; padding-bottom: 3px; }
+table.main-grid tr.marksheet-labels td { border-width: 0; }
+table.main-grid tr.marksheet-head th.first-cell { -moz-border-radius-topleft: 2px; border-top-left-radius: 2px; }
+table.main-grid thead td, table.main-grid thead th { padding: 0.182em 0.636em; border-width: 1px 1px 1px 0; }
+table.main-grid tfoot button { margin: 0; }
+table.main-grid tfoot select { width: 15em; }
+table.main-grid tfoot td { background-color: transparent; border: 0 solid white; border-width: 0 1px; padding: 0; }
+table.main-grid tfoot table { -moz-border-radius-bottomleft: 2px; border-bottom-left-radius: 2px; -moz-border-radius-bottomright: 2px; border-bottom-right-radius: 2px; border: 0 solid #c5d0d7; border-width: 0 1px 1px; width: 100%; border-collapse: separate; white-space: nowrap; }
+table.main-grid tfoot table td { background-color: #dde4ea; border-style: solid; border-color: #eef2f5; border-width: 0; padding: 0.636em 0.636em 0 0; }
+table.main-grid tfoot table td.first-cell { padding-left: 0.636em; border-left-width: 1px; }
+table.main-grid tfoot table td.last-cell { border-right-width: 1px; text-align: right; }
+table.main-grid tfoot table tr.first-row td { border-top-width: 1px; }
+table.main-grid tfoot table td.last-cell[rowspan="2"] { padding-top: 0; }
+table.main-grid tfoot table tr.last-row td { padding-bottom: 0.636em; border-bottom-width: 1px; border-color: #eef2f5; }
+table.main-grid tfoot table tr.last-row td.first-cell { -moz-border-radius-bottomleft: 2px; border-bottom-left-radius: 2px; }
+table.main-grid tfoot table tr.last-row td.last-cell { -moz-border-radius-bottomright: 2px; border-bottom-right-radius: 2px; }
+table.main-grid td.score-cell div { position: relative; }
+table.main-grid td.score-cell div.score-comments { position: absolute; top: 0; right: 0; width: 0; height: 0; overflow: hidden; border-style: solid; border-color: #c5d0d7 #c5d0d7 transparent transparent; border-width: 0.5em; padding: 0; margin: 0; }
+table.main-grid td.marksheet-rowcheckbox { width: 1px; }
+table.main-grid tbody tr td.ui-selected { background-color: #fff6b2; }
+table.main-grid td.lesson-cell, table.main-grid td.total-cell { width: 6.5em; padding: 1px; }
+
+table.main-grid td.score-cell input[type="text"] { 
+  border: 0 solid; 
+  background-color: transparent; 
+  display: inline-block; 
+  width: 94%;
+  color: #b55b5b; 
+  font-size: 1.636em; 
+  text-align: center;
+}
+
+table.main-grid td.score-cell input[type="text"].invalid { background-color: #f0dddd; }
+table.main-grid td.score-cell div { padding: 0.636em 0 0.636em 0; zoom: 1; }
+table.main-grid td.no-score { background-color: #c5d0d7 !important; }
+table.main-grid thead img { max-width: 5em; max-height: 5em; }
+table.main-grid .total-score-label { color: white; font-weight: bold; line-height: 1em; background-color: black; padding: 1em; display: inline-block; -moz-border-radius: 1em; border-radius: 1em; }
+table.main-grid td.ui-helper-hidden { display: none; }
+
+#marksheet-comment-dialog .textarea-wrapper { background-color: white; padding: 1em; }
+#marksheet-comment-dialog textarea { border: 0 solid; display: block; width: 100%; height: 10em; }
+
+#marksheet-slider { height: 0.4em; -moz-border-radius: 0.2em; border-radius: 0.2em; background-color: #eef2f5; border: 1px solid #c5d0d7; height: 20px !important; }
+#marksheet-slider .ui-slider-handle { border: 1px solid black; background-color: black; top: -0.4em; margin-left: -0.5em; width: 1em; outline: none; height: 1em; -moz-border-radius: 0.5em; border-radius: 0.5em; }
+
+.dateFilterDesc { width: 2em; float: left; text-align: right; padding-right: 5px; }
+
+.dateFilter { margin-bottom: 5px; }
+
+.filter_wrap .filterSubmit { line-height: 4.6em; }
+
+.filter_wrap .filterContent { padding: 3px 0; }
+
+.filter_wrap .classFWrap { display: inline-block; float: left; margin: 0; padding: 5px; height: 40px; }
+
+.report-constructor { display: inline-block; }
+
+.filter_wrap .field-filters { border-radius: 12px 12px 12px 12px; cursor: pointer; display: inline-block; height: 23px; left: 667px; top: 5px; visibility: visible; width: 151px; background-position: -151px -104px; background-image: url(../../images/application/report/btt.gif); }
+
+.filter_wrap .disabled-field-filters { background-position: 0 -104px; }
+
+.filter_wrap .dateFilterGroupDesc { width: 6em; float: left; }
+
+.field-filters-dbl strong, .field-filters-dbl em { font-size: 0.8em; }
+
+.filter_wrap .field-icon { cursor: pointer; display: inline-block; float: left; height: 17px; left: 6px; position: relative; top: 2px; width: 17px; }
+
+.filter_wrap .field-filters-value { visibility: visible; display: block; height: 22px; left: 16px; overflow: hidden; position: relative; top: 0; width: 114px; line-height: 1.7em; }
+
+.filter_wrap .field-filters-value-date { line-height: 0.9em; }
+
+.calendar { position: absolute; background: white; border: 1px solid gray; }
+.calendar .cdateFrom { float: left; margin: 2px; }
+.calendar .cdateTo { float: left; margin: 2px; }
+
+#marksheet .cell430 { width: 430px; min-width: 430px; }
+
+.filter_wrap { position: absolute; }
+
+.filter_wrap_nodata:before, .filter_wrap_nodata:after { content: ""; display: table; }
+.filter_wrap_nodata:after { clear: both; }
+.filter_wrap_nodata {
+	position: static;
+	*zoom: 1;
+}
+
+
+.filterSelect select { width: 105px; }
+
+.ie7 #marketsheet{ display: block; }
+
+table.main-grid thead tr.marksheet-labels td.lesson-cell,
+table.main-grid thead tr.marksheet-labels td.score-cell,
+table.main-grid thead tr.marksheet-labels td.total-cell {
+	height: 5em;
+}
+
+
+#marksheet .score-cell .form-score-ternary,
+#marksheet .score-cell .form-score-binary {
+    float: none;
+    display: inline-block;
+    margin: 0;
+}
+
+
+
+.hm-marksheet-table-header-item-title {
+    font-size: 9px;
+    padding: 0 0 3px 0;
+    margin: -5px auto 0 auto;
+    max-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    max-width: 90px;
+}

@@ -1,0 +1,59 @@
+<!-- "Begin Abitur Page" -->
+           <table border="0" cellspacing="0" cellpadding="0" height="100%" width="100%">
+                     <tr valign="top">
+                        <td width="100%" align="center">[HABITUR]</td>
+                     </tr>
+                     <tr valign="top">
+                        <td>
+                           <form action="[PATH]abitur.php4" method="POST" name="abitur">
+                           <input type="hidden" name="CID" value="[CURCID]">
+                           <input type="hidden" name="cgid" value="[CGID]">
+                           <input type="hidden" name="c" value="abitur">
+                           [FSESSID]
+                           <table width=100% class=main cellspacing=0>
+                           <tr>
+                              <th valign="top" width="15%" align="center"><center><input type="checkbox" title="{?t?}Отметить{?/t?}/{?t?}Снять все{?/t?}" onclick="SelectAll(checked,'abitur')"></center></th>
+
+                              <th valign="top" width="25%" align="center" nowrap>
+                              <a href="[PAGE]?[SESSID]assort=1&CID=[CURCID]&cgid=[CGID]">{?t?}Название курса{?/t?}</a> [SORTIMG1]
+                              </th>
+                              <th valign="top" width="40%" align="center" nowrap>
+                              <a href="[PAGE]?[SESSID]assort=3&CID=[CURCID]&cgid=[CGID]">{?t?}ФИО{?/t?}</a> [SORTIMG3]
+                              </th>
+                              <th valign="top" width="40%" align="center" nowrap>
+                              {?t?}Логин{?/t?}
+                              </th>
+                              <!--th valign="top" width="15%" align="center">
+                                  {?t?}Зачислить{?/t?}
+                              </th>
+                              <th valign="top" width="15%" align="center">
+                                  {?t?}Удалить{?/t?}
+                              </th-->
+                              <th valign="top" width="1%" align="center" nowrap>
+                                {?t?}Статус{?/t?}
+                              </th>
+                           </tr>
+                                [ABITUR]
+                           <tr>
+                                 <td align="right" valign="top" colspan="5" bgcolor="#FFFFFF">
+                                 <input type="hidden" name="hid_target" value="abiturient">
+                                 <table  border="0" cellspacing="0" cellpadding="5" width=100%>
+                                    <tr>
+                                    <td nowrap width="100%" align="right" valign="top">
+                                    {?t?}Выполнить действие с отмеченными{?/t?}
+                                    </td>
+                                    <td nowrap valign="top"><select name="sel_action">[ABITUR-ACTIONS]</select>&nbsp;&nbsp;&nbsp;[COMMENTS]
+                                    </td>
+                                    <td valign="top">
+                                 [OKBUTTON]
+                                    </td>
+                                    </tr>
+                                 </table>
+                                 </td>
+                           </tr>
+                           </table>
+                           </form>
+                        </td>
+                     </tr>
+                  </table>
+<!-- "End Abitur Page" -->

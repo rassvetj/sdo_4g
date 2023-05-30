@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile mid="7086" color="#004540" value_min="0" value_max="900">
+  <cluster title="Колледж" background-color="#F3F2E6">
+    <competence title="Бендер 1"><![CDATA[CDATA]]><profile_required value="4"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="41"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+    <competence title="Бендер 2"><![CDATA[CDATA]]><profile_required value="3"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="36"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+  </cluster>
+  <cluster title="Школа" background-color="#E6F3EB">
+    <competence title="Деканат"><![CDATA[CDATA]]><profile_required value="831"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="0"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+    <competence title="Зам. зав. кафедрой графики"><![CDATA[CDATA]]><profile_required value="194"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="41"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+    <competence title="Кафедра графики"><![CDATA[CDATA]]><profile_required value="14"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="0"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+    <competence title="Секция литографии"><![CDATA[CDATA]]><profile_required value="24"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="0"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+  </cluster>
+  <cluster title="Университет" background-color="#F3E6F0">
+    <competence title="Зав кафедрой графики"><![CDATA[CDATA]]><profile_required value="19"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="0"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+    <competence title="куратор курсов"><![CDATA[CDATA]]><profile_required value="813"><![CDATA[CDATA SEction]]></profile_required><profile_actual value="0"><![CDATA[CDATA SEction2]]></profile_actual></competence>
+  </cluster>
+</profile>

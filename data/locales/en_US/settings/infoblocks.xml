@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>        
+<config>
+  <main>
+     <infoblock>
+		 <role>admin</role>     
+		 <role>manager</role>
+		 <role>dean</role>
+		 <role>teacher</role>
+		 <role>student</role>
+		 <role>user</role>
+		 <role>supervisor</role>
+         <title>Statistics</title>
+         <name>stats</name>
+         <block>
+             <role>admin</role>
+             <title>Visitors Counter</title>
+             <name>usersSystemCounterBlock</name>
+             <description>Information about number of user and guest visits.</description>
+         </block>
+         <block>
+             <role>dean</role>
+             <title>Requests</title>
+             <name>claimsBlock</name>
+             <description>For Training Manager to control requests in due time</description>
+         </block>
+         <block>
+			 <role>manager</role>
+			 <role>dean</role>
+			 <role>teacher</role>
+			 <role>student</role>
+			 <role>user</role>
+			 <role>supervisor</role>
+             <title>Popular Training Courses</title>
+             <name>topsubjectsBlock</name>
+             <description>Pie chart to demonstrate the most popular training courses for trainees</description>
+         </block>
+         <block>
+			 <role>dean</role>
+			 <role>teacher</role>
+			 <role>supervisor</role>
+             <title>Attendance Activity</title>
+             <name>activityBlock</name>
+             <description>DLS users traffic monitoring</description>
+         </block>
+         <block>
+			 <role>dean</role>
+			 <role>teacher</role>
+			 <role>supervisor</role>
+			 <role>admin</role>			 
+			 <title>Activity Distribution</title>
+             <name>activitydevBlock</name>
+             <description>User activity distribution analysis</description>
+         </block>
+         <block>
+			 <role>dean</role>
+			 <title>Academic Progress</title>
+             <name>progressBlock</name>
+             <description>Academic Progress</description>
+         </block>
+     </infoblock>
+     <infoblock>
+         <role>admin</role>
+         <role>manager</role>
+         <role>developer</role>
+         <role>dean</role>
+         <role>teacher</role>
+         <role>student</role>
+         <role>user</role>
+         <role>supervisor</role>
+		 <role>guest</role>			 		 
+         <title>Other</title>
+         <name>others</name>
+         <block>
+             <title>Interesting Facts</title>
+             <name>interestingFactBlock</name>
+             <description>"Do you know"information block to display interesting and fun facts in a random way.</description>
+         </block>
+         <block>
+             <title>News</title>
+             <name>lastNewsBlock</name>
+             <description>Quick access to the latest news</description>
+         </block>
+         <block>
+			 <role>dean</role>
+			 <role>teacher</role>
+			 <role>student</role>
+			 <role>user</role>
+			 <role>supervisor</role>
+			 <role>guest</role>			 
+             <title>Poll</title>
+             <name>quizzesBlock</name>
+             <description>Organization of polls and votings</description>
+         </block>
+         <block>
+             <title>Frequently Asked Questions</title>
+             <name>faqBlock</name>
+             <description>Frequently Asked Questions</description>
+         </block>
+     </infoblock>
+     <infoblock>
+         <role>guest</role>     
+         <role>teacher</role>
+         <role>student</role>
+         <role>user</role>
+         <role>supervisor</role>
+         <title>Training</title>
+         <name>courses</name>
+         <block>
+             <title>Lesson Schedule</title>
+             <name>scheduleBlock</name>
+             <description>Schedule</description>
+         </block>
+         <block>
+             <title>Today's Schedule</title>
+             <name>scheduleDailyBlock</name>
+             <description>Today's Schedule</description>
+         </block>
+         <block>
+             <title>Training Courses Catalog</title>
+             <name>subjectsClassifiers</name>
+             <description></description>
+         </block>
+         <block>
+             <title>Random Courses</title>
+             <name>randomSubjects</name>
+             <description></description>
+         </block>
+     </infoblock>
+     <infoblock>
+         <role>guest</role>
+         <role>teacher</role>
+         <role>student</role>
+         <role>user</role>
+         <role>supervisor</role>
+         <title>Feedback</title>
+         <name>feedback</name>
+         <block>
+             <title>Getting Feedback</title>
+             <name>feedbackBlock</name>
+             <description>Getting Feedback</description>
+         </block>
+      </infoblock>
+  </main>
+</config>

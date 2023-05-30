@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PHP_DIR=D:/www/php/php-5.3-ts/
+PHP_INI_DIR=D:/www/php/php-5.3-ts/ini/4g.lh
+VALIDATE_ONLY_SYNTAX=1
+
+RUN_FILE=$(dirname $0)/../../tools/CodeSniffer/run.php
+
+OUTPUT=$($PHP_DIR/php.exe -c $PHP_INI_DIR $RUN_FILE $PHP_DIR $PHP_INI_DIR $VALIDATE_ONLY_SYNTAX)
+RETVAL=$?
+
+if [ $RETVAL -ne 0 ]; then
+    echo "$OUTPUT" | less
+fi
+
+exit $RETVAL

@@ -1,0 +1,15 @@
+USER_NO_NAME;имя не задано
+PROFILE_GUEST;Гость
+PROFILE_STUDENT;Слушатель
+PROFILE_TEACHER;Преподаватель
+PROFILE_DEAN;Учебная администрация
+PROFILE_ADMIN;Администратор
+PAGE_MAIN;Главная
+ALT_COURSE;Открыть программу курса
+BUTTON_APPLY;Применить
+CHECKBOX_REMEMBER;Запомнить выбор
+OPTIONS_ALL;все
+OPTIONS_SELECT;необходимо выбрать элемент списка
+TITLE_SLOGAN;eLearning Server 3000
+HEADER_INDEX;Добро пожаловать на учебный портал
+IS_LOCKED_COURSE;Курс заблокирован. Данная операция невозможна

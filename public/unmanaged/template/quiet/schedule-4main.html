@@ -1,0 +1,314 @@
+<script type="text/javascript" language="JavaScript">
+    [AJAX_JAVASCRIPT]
+
+    function show_teacher_select(html) {
+        var elm = document.getElementById('teachers_container');
+        if (elm) elm.innerHTML = html;
+    }
+
+    function get_teacher_select() {
+        var teacher = document.getElementById('teacher');
+        var rebild  = document.getElementById('rebild');
+        //var courses = document.getElementById('courses');
+        if (teacher) {
+            //var cid = courses.value;
+
+            var begin =
+                document.getElementById('yy1').value+'-'+
+                document.getElementById('mm1').value+'-'+
+                document.getElementById('dd1').value+' '+
+                document.getElementById('hh1').value+':'+
+                document.getElementById('ii1').value+':00';
+            var end =
+                document.getElementById('yy2').value+'-'+
+                document.getElementById('mm2').value+'-'+
+                document.getElementById('dd2').value+' '+
+                document.getElementById('hh2').value+':'+
+                document.getElementById('ii2').value+':00';
+
+            var chid = rebild.value;
+
+            var elm = document.getElementById('teachers_container');
+            if (elm) elm.innerHTML = "<select><option>{?t?}Загружаю данные.{?/t?}..</option></select>";
+            x_get_teacher_select('[cid]', teacher.value, 0, begin, end, '[sheid]', chid, show_teacher_select);
+        }
+    }
+
+    function show_room_select(html) {
+        elm = document.getElementById('rooms_container');
+        if (elm) elm.innerHTML = html;
+    }
+    
+    function check_rebild() {
+        var rebild = document.getElementById('rebild');
+        var period = document.getElementById('period');
+        if (rebild && period) {
+            if ((period.value >= 0) && (rebild.value == 0)) {
+                rebild.value = 1;
+            }
+        }
+    }  
+    
+    function get_room_select() {
+
+    	check_rebild();
+        
+        var room = document.getElementById('room');
+        var rebild  = document.getElementById('rebild');
+        if (room) {
+        	var chid = rebild.value;
+            var selected = room.value;
+            var begin =
+                document.getElementById('yy1').value+'-'+
+                document.getElementById('mm1').value+'-'+
+                document.getElementById('dd1').value+' '+
+                document.getElementById('hh1').value+':'+
+                document.getElementById('ii1').value+':00';
+            var end =
+                document.getElementById('yy2').value+'-'+
+                document.getElementById('mm2').value+'-'+
+                document.getElementById('dd2').value+' '+
+                document.getElementById('hh2').value+':'+
+                document.getElementById('ii2').value+':00';
+
+            var people=0;
+            var elm = document.getElementById('list2');
+            if (elm) {
+                people = elm.length;
+            }
+
+            //var elm = document.forms['add2'].elements['select[]'];
+            //if (elm) {
+            //    var elm_count = elm.length;
+
+            //    if (elm_count) {
+            //        for(i=0;i<elm_count;i++) {
+            //            if (elm[i].checked) people++;
+            //        }
+            //    }
+            //}
+            elm = document.getElementById('rooms_container');
+            if (elm) elm.innerHTML = "<select><option>{?t?}Загружаю данные.{?/t?}..</option></select>";
+            x_get_room_select(selected, [sheid], begin, end, people, 0, chid, show_room_select);
+        }
+    }
+
+    function check_room() {
+        var elm = document.getElementById('room');
+        if (elm) {
+            if (elm.options[elm.selectedIndex].style.background.length) {
+                if (!confirm('{?t?}Указанное Вами место проведения занятия занято или превышена вместимость! Продолжить?{?/t?}')) return false;
+            }
+        }
+        var elm = document.getElementById('teacher');
+        if (elm) {
+            if (elm.options[elm.selectedIndex].style.background.length) {
+                if (confirm('{?t?}Выбранный преподаватель в указанное время уже назначен на другое занятие! Продолжить?{?/t?}')) return true;
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+<form action="[self]" method="post" name='add2' onSubmit="select_list_select_all('list1'); select_list_select_all('list2'); if (document.getElementById('webinar_list1')) select_list_select_all('webinar_list1'); if (document.getElementById('webinar_list2')) select_list_select_all('webinar_list2'); return check_room();">
+<input type="hidden" name="c" value="modify_submit">
+<input type="hidden" name="ref" value="[ref]">
+<input type="hidden" name="sheid" value="[sheid]">
+<input type="hidden" name="typeID" value="[typeID]">
+<table width="560" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+   <td>
+      <table width=100% class=main cellspacing=0>
+          <tr>
+            <th colspan="2">{?t?}Свойства занятия{?/t?}</th>
+          </tr>
+          <tr>
+            <td>{?t?}Курс{?/t?} </td>
+            <td><input name=kurs type=text disabled value="[kurs]" size="50"></td>
+          </tr>
+          <tr>
+            <td>{?t?}Тип{?/t?}  </td>
+            <td><input name=type type=text disabled value="[type]" size="20"> </td>
+          </tr>
+          <tr>
+            <td width="50%"> {?t?}Название{?/t?} </td>
+            <td width="50%"><input type=text name=title value="[title]" size="60"></td>
+          </tr>
+          <tr>
+              <td>{?t?}Преподаватель{?/t?}</td>
+              <td><div id="teachers_container">[TEACHERS]</div></td>
+          </tr>
+          <tr class="[ABSOLUTE_CLASS]">
+              <td colspan="2">
+                <span id=absolute1>
+                 {?t?}Дата начала{?/t?}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span id=relative1 class=hidden2>
+                {?t?}Начало на{?/t?}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+             <span id=absolute11>
+                <select name="DD1" id="DD1" onChange="get_room_select(); get_teacher_select();" size="1">[DD1]</select>:
+                <select name="MM1" id="MM1" onChange="get_room_select(); get_teacher_select();" size="1">[MM1]</select>:
+                <select name="YY1" id="YY1" onChange="get_room_select(); get_teacher_select();" size="1">[YY1]</select>&nbsp;&nbsp;&nbsp;
+                {?t?}время начала{?/t?}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span id=time1>
+                  <select name="hh1" id="hh1" onChange="get_room_select(); get_teacher_select();" size="1">[hh1]</select>:
+                  <select name="mm1" id="ii1" onChange="get_room_select(); get_teacher_select();" size="1">[mm1]</select>
+                </span>
+              </span>
+             </td>
+             </tr>
+             <tr class="[ABSOLUTE_CLASS]">
+             <td colspan="2">
+                <span id=absolute2>
+                {?t?}Дата окончания{?/t?}&nbsp;&nbsp;
+                </span>
+                <span id=relative2 class=hidden2>
+                {?t?}Продолжительность{?/t?}&nbsp;&nbsp;
+                </span>
+                <span id=absolute22>
+                <select name="DD2" id="DD2" onChange="get_room_select(); get_teacher_select();" size="1">[DD2]</select>:
+                <select name="MM2" id="MM2" onChange="get_room_select(); get_teacher_select();" size="1">[MM2]</select>:
+                <select name="YY2" id="YY2" onChange="get_room_select(); get_teacher_select();" size="1">[YY2]</select>&nbsp;&nbsp;&nbsp;
+                {?t?}время окончания{?/t?}&nbsp;&nbsp;
+                <span id=time2>
+                  <select name="hh2" id="hh2" onChange="get_room_select(); get_teacher_select();" size="1">[hh2]</select>:
+                  <select name="mm2" id="ii2" onChange="get_room_select(); get_teacher_select();" size="1">[mm2]</select>
+                </span>
+                </span>
+             </td>
+          </tr>
+          <tr class="[RELATIVE_CLASS]">
+            <td>{?t?}Начало на{?/t?}</td>
+            <td><input type=text size="2" value='[STARTDAY]' name='relative_day1'>
+            -{?t?}й день занятий{?/t?}</td>
+          </tr>
+          <tr class="[RELATIVE_CLASS]">
+            <td>{?t?}Продолжительность{?/t?}</td>
+            <td><input type=text size="2" value='[DURATION]' name='relative_day2'>  ({?t?}дн.{?/t?})</td>
+          </tr>
+          <tr class="[ABSOLUTE_CLASS]">
+              <td nowrap>
+                {?t?}или с использованием сетки занятий{?/t?}
+              </td>
+              <td>[PERIODS]&nbsp;&nbsp;[TT_PERIOD]
+              </td>
+          </tr>
+          <tr class="[ABSOLUTE_CLASS]">
+            <td> {?t?}Периодичность{?/t?} </td>
+            <td><select name="rebild" id="rebild" onChange="get_room_select(); get_teacher_select();">
+                <option value='0' [REBILD0]>{?t?}один раз{?/t?}</option>
+                <option value='1' [REBILD1]>{?t?}ежедневно{?/t?}</option>
+                <option value='2' [REBILD2]>{?t?}еженедельно{?/t?}</option>
+                <option value='4' [REBILD4]>{?t?}раз в две недели{?/t?}</option>
+                <option value='3' [REBILD3]>{?t?}ежемесячно{?/t?}</option>
+              </select>&nbsp;&nbsp;[TT_CYCLE]</td>
+          </tr>
+          <tr>
+            <td>{?t?}Описание{?/t?} </td>
+            <td><textarea name=desc style="width:100%">[desc]</textarea></td>
+          </tr>
+          <tr>
+           <td>{?t?}Аудитория{?/t?}</td>
+           <td><span id="rooms_container">[room_select]</span>&nbsp;&nbsp;[TT_ROOMS]</td>
+          </tr>
+          </table>
+          <br>
+          <table width=100% class=main cellspacing=0>
+          <tr>
+            <th colspan="2">{?t?}Учебный модуль{?/t?}</th>
+          </tr>
+            [toolslist]
+            [SCHEDULE_CONDITIONS]
+        </table>
+     </td>
+  </tr>
+  <tr>
+   <td>
+		<script>
+
+		   var show1=0
+
+		   [GROUP_ARRAY]
+
+		   function ckGroup(gName) {
+		      if (gName==1 || gName==0) {
+		        document.forms['add2'].elements['toall'].value=gName;
+		        setCheckboxes('add2');
+		        return;
+		        } else {
+		           document.forms['add2'].elements['toall'].value=0;
+		           setCheckboxes('add2');
+		        }
+		        eval(" var isArray = (typeof("+gName+") != 'undefined') ? true : false;");
+
+		//        alert(isArray);
+
+		        if (isArray==true) {
+		            eval("var curArray = "+gName+";");
+		//            alert(curArray);
+		          var elts   = (typeof(document.forms['add2'].elements['select[]']) != 'undefined')
+		                     ? document.forms['add2'].elements['select[]']
+		                     : document.forms['add2'].elements['select[]'];
+		          var elts_cnt  = (typeof(elts.length) != 'undefined')
+		                     ? elts.length
+		                     : 0;
+
+		          var arr_cnt = curArray.length;
+
+		          do_check='true';
+
+		          if (arr_cnt) {
+		            for (var j = 0; j < arr_cnt; j++) {
+		                if (elts_cnt) {
+		                    for (var i = 0; i < elts_cnt; i++) {
+		                        //elts[i].checked = do_check;
+		                        if (elts[i].value==curArray[j]) elts[i].checked=do_check;
+		                       } // end for
+		                     // } else {
+		                     //  elts.checked        = do_check;
+		                   } // end if... else
+		             }
+		          }
+		          return true;
+
+		        }
+
+		    return false;
+		   }
+
+		</script>
+      <br>
+      <table width=100% class=main cellspacing=0>
+          <tr>
+            <th colspan="2">{?t?}Назначение слушателям{?/t?}</th>
+          </tr>
+	      <tr>
+            <td>[studlist]</td>
+      	</tr>
+		<tr>
+			<td>
+		      	<input type="checkbox" name="vedomost" value="1" [ADDPARAMVED]>&nbsp;&nbsp;{?t?}Это занятие на оценку{?/t?}&nbsp;&nbsp;[TT_GRADE]
+			</td>
+		</tr>
+		<tr>
+			<td>
+                <input type="checkbox" name="form[sAddToAllnew]" value="1" [ADDTOALL]>&nbsp;&nbsp;{?t?}Автоматически назначать это занятие всем новым слушателям курса{?/t?}
+			</td>
+		</tr>
+
+      </table>
+   </td>
+ </tr>
+ <tr>
+   <td>
+    <table align="right">
+        <tr>
+            <td>[CANCELBUTTON]</td>
+            <td>[OKBUTTON]</td>
+        </tr>
+    </table>
+   </td>
+  </tr>
+</table>
+</form>

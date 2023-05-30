@@ -1,0 +1,49 @@
+
+        <form name="editnews" target="_self" method="POST">
+        <input type="hidden" name="nID"  value="[N-ID]">
+        <input type="hidden" name="formsubmit" value="submit" />        
+        <table width=100% class=main cellspacing=0>
+                <tr valign="top">
+                    <td>{?t?}Заголовок{?/t?} <font color=red>V</font></td>
+                    <td align="left" class="shedtitle" ><input type="text" name="Title" style="width:100%"  value="[N-title]"></td>
+                </tr>
+                <tr>
+                    <td>{?t?}Дата{?/t?}</td>
+                    <td align="left" class="cHilight">
+                        <select  class=lineinput style="border-style:0;" name="day">
+                        [N-day]
+                        </select>
+                        <select  class=lineinput style="border-style:0;" name="month">
+                        [N-month]
+                        </select>
+                        <select  class=lineinput style="border-style:0;" name="year">
+                        [N-year]
+                        </select>
+                        <input type="text" name="hours" style="width:25px" value="[N-hours]">:
+                        <input type="text" name="min" style="width:25px" value="[N-min]">
+                    </td>
+                </tr>
+                <tr>
+                    <td>{?t?}Содержание{?/t?} <font color=red>V</font></td> 
+                    <td>
+                        <textarea name="text" style="width:100%" rows="5">[N-text]</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{?t?}Автор{?/t?}</td>
+                    <td align="left" class="cHilight">  
+                        <input type="checkbox" name="ch_sign" onClick="javascript:document.getElementById('author').disabled=!this.checked" value="1" checked>{?t?}Подписать новость{?/t?}<br><input type="text" name="author" id="author" style="width:100%" value="[N-name]">
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td align="center" class="cHilight">  
+                        <input type="submit" name="submit" style="width:40%" value="[W-save]">
+                        <input type="reset" name="cancel" style="width:40%" value="[W-cancel]">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="cHilight">  
+                        <input type="reset" name="cancel" style="width:40%" onclick="window.close();" value="[W-close]">
+                    </td>
+                </tr>-->
+        </table>

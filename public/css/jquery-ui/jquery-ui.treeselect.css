@@ -1,0 +1,68 @@
+div.ui-treeselect {
+    border: 1px solid #B1C0CA;
+    padding: 3px 2px 3px 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+}
+.ui-treeselect .tree-select-title {
+    top: -0.5em;
+    line-height: 1;
+    text-align: left;
+    font-weight: bold;
+    position: absolute;
+}
+.ui-treeselect .tree-select-title span {
+    padding: 0 3px;
+    background-color:#fff;
+}
+.ui-treeselect .tree-select-control {
+    margin-top: 1em;
+    height: 20px;
+}
+.ui-treeselect .tree-select-control a {
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+.ui-treeselect .tree-select-control-home {
+    width: 20px;
+    background: url(/images/buttonHome.png) no-repeat;
+}
+.ui-treeselect .tree-select-control-up {
+    width: 50px;
+    background: url(/images/buttonBack.png) no-repeat;
+    margin-left: 5px;
+}
+.ui-treeselect .tree-select-nselect {
+    margin: 5px 0 0 20px;
+    padding: 0;
+    height: 10em;
+}
+.ui-treeselect .tree-select-nselect ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: auto;
+    max-height: 100%;
+    width: 100%;
+}
+.ui-treeselect .tree-select-nselect ul li {
+    display: block;
+    padding: 3px 5px;
+}
+.ui-treeselect .tree-select-nselect ul li,
+.ui-treeselect .tree-select-nselect ul li a {
+    cursor: default;
+}
+
+.ui-treeselect select {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.ui-treeselect .li_select {
+    background: #dedbdb;
+}

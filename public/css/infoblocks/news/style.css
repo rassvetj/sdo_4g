@@ -1,0 +1,5 @@
+.infoblock-news .ui-portlet-content{
+    overflow-y:auto;
+    max-height: 600px;
+    padding: 1px 0;
+}

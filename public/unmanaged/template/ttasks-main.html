@@ -1,0 +1,89 @@
+<!-- "Begin Tasks Page" -->
+                  <table border="0" cellspacing="0" cellpadding="0" width="100%" class="tests"> 
+                     <tr>                  
+                        <td valign="top" width="100%" align="center">
+                        [TTASKS-HEADER]
+                        </td>
+                     </tr>
+                     <tr>                  
+                        <td valign="top" width="100%" align="left" class="shedtitle">{?t?}Курс:{?/t?}
+                        <select name='cid' onchange="navigate('test_test.php?[SESSID]CID='+cid.value);" class="selcselect">
+                                 [SELECT-COURSES]
+                        </select>
+                        </td>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>
+                           &nbsp;
+                        </td>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>
+                                 <form method="post" name="m" action='[PAGE]'>
+                                 [FSESSID]
+                                 <input type="hidden" name="c" value="new_submit">
+                                 <table cellspacing="0"  cellpadding="0" border=0 width="100%">
+                                 <tr>
+                                    <td> 
+                                       <table width="100%" cellspacing="0" cellpadding="2"  class="addnew">
+                                       <tr>
+                                          <th valign="top"  height="12" colspan="2">[W-addnew]</th>
+                                       </tr>
+                                       <tr>
+                                          <td height="1px" valign="top" colspan="2"><img src="[PATH]images/spacer.gif" width="1" height="1"></td>
+                                       </tr>
+                                       <tr height="25">
+                                          <td width="2%"><img src="[PATH]images/spacer.gif" width=1 height=1></td>         
+                                          <td width="98%" align="left">[W-newname]</td>
+                                       </tr>
+                                       <tr height="25" align="left">    
+                                          <td width="2%"><img src="[PATH]images/spacer.gif" width=1 height=1></td>         
+                                          <td width="98%"><input type=text name=name value="" style='width:90%'></td>
+                                       </tr>
+                                          [HIDDEN-CID]
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                 <td align="right" valign="top"><img src="[PATH]images/spacer.gif" width=1 height=5></td>
+                                 </tr>
+                                 <tr>
+                                 <td align="right" valign="top"><input type="image" name="ok" onmouseover="this.src='[PATH]images/send_.gif';" onmouseout="this.src='[PATH]images/send.gif';" src="[PATH]images/send.gif" align="right" alt="ok" border="0" onClick="if (document.m.name.value=='') {alert('[W-nonewname]!'); return false;}"></td>
+                                 </tr>
+                                 </form>
+                                 </table>
+                        </td>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>
+                           &nbsp;
+                        </td>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>
+                           [TTASKS-MAIN]
+                        </td>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>
+                           &nbsp;
+                        </td>
+                     </tr>
+                     <tr>                  
+                        <TD>
+                        <table width=100% border=0 cellspacing=0 cellpadding=0><tr>
+                        <td>[URLLOG]</td>
+                        <td align="right">
+                           <a href="[PATH]test_list.php?[SESSID]"><b>[W-qlib]</b></a>
+                        </td>
+                        </tr></table>
+                        </TD>
+                     </tr>
+                     <tr valign="top" width="100%">
+                        <td>
+                           [TTASKS-NOTES]
+                        </td>
+                     </tr>
+                  </table>
+
+<!-- "End Tasks Page" -->

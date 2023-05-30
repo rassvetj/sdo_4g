@@ -1,0 +1,68 @@
+.programs-editor h3.title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.programs-editor .ui-accordion-content {
+    max-height: 40em;
+}
+.programs-editor .ui-accordion-content ul {
+    margin-left: 0;
+    margin-right: 0;
+}
+.programs-editor .ui-accordion-content ul li {
+    cursor: move;
+    padding-left: 1.091em;
+    padding-right: 1.091em;
+    font-weight: normal;
+    position: relative;
+	margin: 10px 0;	
+}
+.programs-editor .ui-accordion-content ul li:hover {
+    background-color: #fbf9ee;
+    border-top-color: #fbf9ee;
+}
+.programs-editor .ui-accordion-content ul li.ui-state-disabled {
+    display: none;
+}
+.programs-editor-sorted {
+    list-style-type: none;
+    border: 1px solid #c1c1c1;
+    min-height: 2em;
+    margin: 0;
+}
+.programs-editor-sorted li {
+    padding: 0 1.091em;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #d2d2d2;
+    overflow: hidden;
+    position: relative;
+    cursor: move;
+}
+.programs-editor .ui-accordion-content ul li .ui-icon,
+.programs-editor-sorted li .ui-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -9px;
+    cursor: pointer;
+    display: none;
+}
+.programs-editor-sorted li:hover .ui-icon {
+    display: block;
+}
+.programs-editor-sorted li span {
+    display: block;
+    margin: 1.182em 0;
+}
+.programs-editor-sorted > li:last-child {
+    border-bottom-width: 0;
+}
+.programs-editor-sorted > li:last-child {
+    border-top-width: 0;
+}
+.programs-editor-draggable-helper {
+    background: #ccc;
+    -moz-border-radius: 0.5em;
+         border-radius: 0.5em;
+    opacity: 0.7;
+}

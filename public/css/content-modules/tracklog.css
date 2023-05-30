@@ -1,0 +1,195 @@
+.block_course_result p{
+    padding:0;
+    margin:0;
+}
+.block_course_result{
+    vertical-align:middle;
+    width:700px;
+    margin: 0;
+}
+.bcr_title{
+    font-family:"PT Sans",verdana,sans-serif;
+    font-size:18px;
+    font-weight:400;
+    font-style:normal;
+    color:#3F5C6E;
+    line-height:1em;
+    display: block;
+    vertical-align:top !important;
+    position: relative;
+}
+.bcr_title_txt{
+    line-height: 30px;
+}
+.bcr_title_txt,
+.bcr_title_success{
+    float:left;
+    margin-bottom:10px;
+}
+.bcr_title_success{    
+    width:35px;
+    height:35px;
+    display:inline-block;
+    line-height:18px;
+    margin-left:3px;    
+    margin-bottom: 3px;
+	position: absolute;
+    right: -7px;    
+}
+.bts_ok{
+    background:url(../../images/content-modules/tracklog/t_cussess_ok.png) 0 -4px no-repeat;
+}
+.bcr_row{
+    clear:both;
+    overflow: hidden;
+    position:relative;
+    vertical-align:middle;    
+}
+.block_course_result .bcr_row_data{
+	float: right;
+}
+.ie7 .block_course_result .bcr_row_data{
+	width:220px;
+}
+.bcr_row div,
+.bcr_r_title,
+.bcr_r_num,
+.bcr_r_visual,
+.rsuccess{
+    vertical-align: middle;
+    float:left;
+    line-height:18px;
+    margin-bottom:2px;
+}
+
+.bcr_r_title{
+    width:50%;
+    font-family:"PT Sans",verdana,sans-serif;
+    font-size:11px;
+    font-weight:400;
+    font-style:normal;
+    color:#333333;    
+    margin:0 0 3px 0;
+    padding-right: 10px;
+}
+.link_default{
+    font-family:"PT Sans",verdana,sans-serif;
+    font-size:11px;
+    font-weight:400;
+    font-style:normal;
+    color:#5B94BC;
+    text-transform:none;
+    text-decoration:underline;    
+}
+.bcr_r_num{
+    width:60px;
+    font-family:"PT Sans",verdana,sans-serif;
+    font-size:18px;
+    font-weight:400;
+    font-style:normal;
+    color:#3F5C6E;    
+}
+.brn_ok{
+    color:#1D640F;
+}
+.brn_completed{
+    color:#6287ff;
+}
+
+.brn_no{
+    color:#F02727;
+}
+.brn_cur{
+    color:#D4D3D3;
+}
+.bcr_r_visual{
+    width:130px;
+    padding:0px 15px 0px 0;      
+}
+.bcr_diagram{
+    height:15px;
+    width:128px;
+    border:1px solid #DEDEDE;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	behavior: url(/border-radius.htc); 
+    padding:1px 3px 2px 1px;
+    background-color:#F4F5F6;
+}
+.bcr_diagram_cur{
+    border: 1px solid #FFFC00;
+    height: 14px;
+    width:128px;
+    background:url(../../images/content-modules/tracklog/blinking-yellow-pixel.gif);
+    
+}
+.fill{
+    height:14px;
+    font-size:0;
+}
+.bcr_diagram_ok{
+    background-color:#1D640F;
+    border: 1px solid #1D640F;
+}
+.bcr_diagram_no{
+    background-color:#F02727;
+    border: 1px solid #F02727;
+}
+
+.bcr_diagram_completed{
+    background-color:#6287ff;
+    border: 1px solid #6287ff;
+}
+
+.bcr_r_success{
+    width:5%;
+}
+.rsuccess{
+    width:17px;
+    height:17px;    
+}
+.rs_ok{
+    background:url(../../images/content-modules/tracklog/row_cussess_ok.png) no-repeat;
+}
+.rs_completed{
+    background:url(../../images/content-modules/tracklog/row_cussess_ok.png) no-repeat;
+}
+
+.rs_no{
+    background:url(../../images/content-modules/tracklog/row_cussess_no.png) no-repeat;
+}
+.block_course_result .tpad_0 .bcr_r_title{
+	font-weight:bold;
+}
+.block_course_result .tpad_1{
+	padding-left:20px;
+}
+.block_course_result .tpad_2{
+	padding-left:40px;
+}
+.block_course_result .tpad_3{
+	padding-left:60px;
+}
+.block_course_result .tpad_4{
+	padding-left:80px;
+}
+.block_course_result .tpad_5{
+	padding-left:100px;
+}
+.block_course_result .tpad_6{
+	padding-left:120px;
+}
+.block_course_result .tpad_7{
+	padding-left:140px;
+}
+.block_course_result .tpad_8{
+	padding-left:160px;
+}
+.block_course_result .tpad_9{
+	padding-left:180px;
+}
+.block_course_result .tpad_10{
+	padding-left:200px;
+}

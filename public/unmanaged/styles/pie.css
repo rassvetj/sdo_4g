@@ -1,0 +1,68 @@
+.pie
+{
+	width: 600px;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.pie .piece
+{
+	border-left: 1px solid white;
+	
+	position: absolute;
+	overflow: hidden;
+}
+.pie .resize
+{
+	height: 100%;
+	background: url(nonexists.gif) transparent; /* nonexists.gif is for ie6 */
+	width: 7px;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	cursor: e-resize;
+}
+.pie .current
+{
+	display: none;
+	overflow: hidden;
+	height: 4px;
+	width: 100%;
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	background: red;
+}
+div#alt
+{
+	z-index: 200;
+	position: absolute;
+	background: #FFFFE1;
+	border: 1px solid black;
+	padding: 3px 4px;
+	visibility: hidden;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.captions
+{
+	margin: 10px 0 0 10px;
+	font-family: Verdana;
+	font-size: 12px;
+	line-height: 1.8;
+}
+.captions input
+{
+	border: 1px solid black;
+	margin-left: 5px;
+	width: 30px;
+	text-align: center;
+}
+.send,.eq
+{
+	display: block;
+	margin-top: 15px;
+	margin-left: 7px;
+}
+

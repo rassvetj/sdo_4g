@@ -1,0 +1,34 @@
+<?php
+        define('name','name');
+        define('type','type');
+        define('coment','coment');
+        define('fontSize','fontSize');
+        define('color','color');
+        define('fontFamily','fontFamily');
+        define('fontWeight','fontWeight');
+        define('lineHeight','lineHeight');
+        define('cursor','cursor');
+        define('backgroundColor','backgroundColor');
+        define('borderStyle','borderStyle');
+        define('borderColor','borderColor');
+        define('borderWidth','borderWidth');
+        define('padding','padding');
+        define('paddingTop','paddingTop');
+        define('paddingLeft','paddingLeft');
+        define('paddingRight','paddingRight');
+        define('paddingBottom','paddingBottom');
+        define('textTransform','textTransform');
+        define('whiteSpace','whiteSpace');
+        define('textAlign','textAlign');
+        define('width','width');
+        define('height','height');
+	define('display','display');
+    	define('letterSpacing','letterSpacing');
+	define('borderBottom','borderBottom');
+	define('borderTop','borderTop');
+	define('borderLeft','borderLeft');
+	define('borderRight','borderRight');
+	define('border','border');
+	define('textDecoration','textDecoration');
+         
+?>

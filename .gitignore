@@ -1,0 +1,34 @@
+
+.project
+.buildpath
+.settings
+.idea/*
+tags
+/nbproject/private/
+/data/htmlpurifier/HTML/4.4.0,cf00cbbdac0e89f9eea1435337a2e8f7,1.ser
+nbproject/*
+/data/smarty/templates_c
+/data/log/integration
+/public/unmanaged/temp
+
+*.swp
+*.swo
+
+/unins000.exe
+/unins000.dat
+/INSTALL.md
+/application/settings/config.ini # Исключаем конфг. Т.к. на рабочем и тестовом разные пароли и логины.
+/data/log/* # логи не нужны
+/data/upload/* # загруженные файлы тоже не нужны
+
+# Искючение (course*) лежит в /public/unmanaged/COURSES/
+
+/public/upload/files/* #/Искючения для других папок директории /public/upload лежат в самих папках.
+robots.txt
+
+
+*.mp3
+*.ogg
+us.stackdump
+
+/library/dompdf/lib/fonts/log.htm

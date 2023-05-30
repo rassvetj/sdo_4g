@@ -1,0 +1,79 @@
+.Progress table { 
+//	border-collapse: collapse;
+//	border-left: 2px solid #e0e0e0;
+//	border-right: 2px solid #e0e0e0;
+}
+
+.Progress table td { 
+	border-right: 1px solid #c9c9c9;
+	border-left: 1px solid white;
+}
+
+.Progress table th{
+	border-right: 1px solid #3c3c3c;
+	border-left: 1px solid #696969;
+}
+
+
+.Progress table th{
+	height: 27px;
+	vertical-align: middle;
+	background-color: #4b4b4b;
+	color: white;
+	cursor: pointer;
+}
+
+.Progress table td{
+	padding: 5px 3px;
+	text-align: center;
+	/* font-size: 1.6em; */
+	vertical-align: middle;
+}
+
+.Progress .export-button {
+    padding: .4em !important;
+    margin: 0;
+}
+
+.Progress .export-button .button-icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}
+
+
+.Progress table th a{
+	display: block;
+	text-align: center;
+	height: 21px;
+	vertical-align: middle;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 6px 0 0 0;
+}
+
+
+.Progress table .odd{
+	background-color: #e0e0e0;
+}
+.Progress table .even{
+	background-color: #e7e7e7;
+}
+
+.Progress table th a:HOVER{
+	cursor: pointer;
+	text-decoration: underline;
+	background-image: url(../../../images/infoblocks/progress/up.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.arrowDown {
+	background-image: url(../../../images/infoblocks/progress/down.png);
+	background-position: bottom;
+	background-repeat: no-repeat;	
+}

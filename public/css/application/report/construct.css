@@ -1,0 +1,427 @@
+.report-constructor {}
+.report-constructor input[type="text"]::-webkit-input-placeholder {
+	color: rgba(100, 100, 100, 0.3);
+}
+.report-constructor input[type="text"]:-moz-placeholder {
+	color: rgba(100, 100, 100, 0.3);
+}
+.report-constructor .hgroup .buttons button,
+.report-constructor .hgroup .buttons input,
+.report-constructor .hgroup .buttons label {
+	vertical-align: middle;
+}
+.report-constructor .report-head input.report-title {
+	width: 50%;
+	font-size: 1.4em;
+}
+.report-constructor .fields-labels {
+	color: #626468;
+}
+.report-constructor .fields-section {}
+.report-constructor .fields-labels {
+	position: relative;
+	height: 1.5em;
+}
+.report-constructor .fields-labels span {
+	position: absolute;
+	display: block;
+	height: 1.5em;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+.report-constructor .fields-labels .field-name {
+	width: 174px;
+	left: 39px;
+}
+.report-constructor .fields-labels .field-alt-name {
+	width: 108px;
+	left: 227px;
+}
+.report-constructor .fields-labels .field-transformations {
+	width: 151px;
+	left: 354px;
+}
+.report-constructor .fields-labels .field-calculations {
+	width: 151px;
+	left: 514px;
+}
+.report-constructor .fields-labels .field-filter {
+	width: 151px;
+	left: 675px;
+}
+
+.report-constructor .fields-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    overflow: auto;
+}
+.report-constructor .fields-list li.report-row {
+	border-bottom: 1px solid #c9ccd3;
+	padding: 3px 3px 2px 3px;
+	background-color: #dadee5;
+	height: 26px;
+	white-space: nowrap;
+	margin: 0 0 1px;
+	display: block;
+	position: relative;
+}
+.ie7 .report-constructor .fields-list li.report-row {
+	margin-bottom: -2px;
+}
+.ie6 .report-constructor .fields-list li.report-row {
+	margin-bottom: -1px;
+}
+
+.report-constructor .fields-list .field-cell {
+	position: absolute;
+	display: block;
+	top: 3px;
+	overflow: hidden;
+	height: 26px;
+}
+.report-constructor .fields-list .field-filters,
+.report-constructor .fields-list .select-field,
+.report-constructor .fields-list .field-alt-name-input-container {
+	top: 6px;
+}
+.report-constructor .fields-list .function-field,
+.report-constructor .fields-list .aggregate-field,
+.report-constructor .fields-list .field-filters {
+	top: 5px;
+}
+.report-constructor .fields-list .drag-handler {
+	width: 13px;
+	height: 26px;
+	left: 3px;
+}
+.report-constructor .fields-list .drag-handler-right {
+	right: 3px;
+	left: auto;
+}
+.report-constructor .fields-list .idx-container {
+	width: 22px;
+	left: 16px;
+	height: 26px;
+}
+.report-constructor .fields-list .idx-container span {
+	line-height: 0;
+	vertical-align: middle;
+	line-height: 26px;
+}
+.report-constructor .fields-list .select-field {
+	width: 174px;
+	left: 38px;
+}
+.report-constructor .fields-list .field-alt-name-input-container {
+	width: 108px;
+	left: 225px;
+}
+.report-constructor .fields-list .field-alt-name-input-container input {
+	display: block;
+	padding: 0 3px;
+	width: 100px;
+	border-width: 1px;
+	height: 18px;
+}
+.report-constructor .fields-list .field-filters,
+.report-constructor .fields-list .function-field,
+.report-constructor .fields-list .aggregate-field {
+	width: 151px;
+	height: 22px;
+}
+.report-constructor .fields-list .function-field {
+	left: 346px;
+}
+.report-constructor .fields-list .aggregate-field {
+	left: 506px;
+}
+.report-constructor .fields-list .field-filters {
+	left: 667px;
+}
+.report-constructor .fields-list .field-btt {
+	width: 26px;
+	height: 26px;
+	display: block;
+}
+.report-constructor .fields-list .field-hide {
+	left: 833px;
+}
+.report-constructor .fields-list .field-use-as-source {
+	left: 869px;
+}
+.report-constructor .fields-list .field-add {
+	left: 904px;
+}
+.report-constructor .fields-list .field-remove {
+	left: 933px;
+}
+
+
+.report-constructor .fields-list .drag-handler {
+	background: transparent url("../../../images/application/report/draggie.gif") top left;
+	cursor: move;
+}
+.report-constructor .fields-list .idx-container {
+	text-align: center;
+	color: #616a79;
+	font-size: 1.091em;
+}
+
+
+
+.report-constructor .fields-list .ui-state-default .ui-selectmenu-icon {
+	background-image: url("../../../images/application/report/ui-icons_525e73_256x240.gif");
+}
+.report-constructor .fields-list .select-field .ui-selectmenu {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid #b1bcca;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #636569 !important;
+	background: #e2e6ee url("../../../images/application/report/selectmenu-bg.gif") top left;
+}
+.report-constructor .ui-selectmenu .ui-selectmenu-status {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.report-constructor .ui-selectmenu .ui-selectmenu-status,
+.report-constructor .ui-selectmenu .ui-selectmenu-icon {
+	border-width: 0;
+}
+.report-constructor .fields-list .function-fields .ui-selectmenu {
+	border-width: 0;
+	background-image: none;
+	position: relative;
+	top: 1px;
+	background-color: transparent;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #636569 !important;
+	outline: none;
+}
+.report-constructor .fields-list .function-fields select.functions {
+	width: 125px;
+}
+.report-constructor .fields-list .function-fields select.aggregators {
+	width: 120px;
+}
+.report-constructor .fields-list .function-fields .function-field .ui-selectmenu,
+.report-constructor .fields-list .function-fields .function-field select {
+	margin-top: 2px;
+	margin-left: 23px;
+}
+.ie6 .report-constructor .fields-list .function-fields .function-field .ui-selectmenu,
+.ie6 .report-constructor .fields-list .function-fields .function-field select {
+	margin-top: 1px;
+}
+.report-constructor .fields-list .function-fields .aggregate-field .ui-selectmenu,
+.report-constructor .fields-list .function-fields .aggregate-field select {
+	margin-top: 2px;
+	margin-left: 28px;
+}
+.ie6 .report-constructor .fields-list .function-fields .aggregate-field .ui-selectmenu,
+.ie6 .report-constructor .fields-list .function-fields .aggregate-field select {
+	margin-top: 1px;
+}
+.report-constructor .fields-list .field-alt-name-input-container input {
+	border-color: #b1bcca;
+	border-style: solid;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #f0f1f4;
+	color: #636569;
+}
+
+/* buttons, visual styles */
+.report-constructor .fields-list .function-field,
+.report-constructor .fields-list .aggregate-field,
+.report-constructor .fields-list .field-filters,
+.report-constructor .fields-list .field-btt {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-image: url("../../../images/application/report/btt.gif");
+}
+.report-constructor .fields-list .field-hide-btt {
+	background-position: 0 0;
+}
+.report-constructor .fields-list .is-hidden .field-hide-btt {
+	background-position: -26px 0;
+}
+.report-constructor .fields-list .field-use-as-source-btt {
+	background-position: -26px -26px;
+}
+.report-constructor .fields-list .is-input .field-use-as-source-btt {
+	background-position: 0 -26px;
+}
+.report-constructor .fields-list .field-add-btt {
+	background-position: 0 -78px;
+}
+.report-constructor .fields-list .field-remove-btt {
+	background-position: 0 -52px;
+}
+.report-constructor .fields-list .is-single .field-remove-btt {
+	background-position: -26px -52px;
+	cursor: default;
+}
+.report-constructor .fields-list .function-field,
+.report-constructor .fields-list .aggregate-field,
+.report-constructor .fields-list .field-filters {
+	cursor: default;
+}
+.report-constructor .fields-list .field-filters {
+	visibility: hidden;
+	cursor: pointer;
+}
+.report-constructor .fields-list .field-icon {
+	position: absolute;
+	display: block;
+	cursor: pointer;
+}
+.report-constructor .fields-list .field-filters .field-icon {
+	top: 2px;
+	left: 6px;
+	width: 17px;
+	height: 17px;
+}
+.report-constructor .fields-list .has-value .field-filters {
+	visibility: visible;
+}
+.report-constructor .fields-list .filter-enabled .field-filters {
+	cursor: default;
+}
+.report-constructor .fields-list .function-field {
+	background-position: 0 100px;
+}
+.report-constructor .fields-list .aggregate-field {
+	background-position: 0 100px;
+}
+
+.report-constructor .fields-list .has-functions .function-field {
+	background-position: 0 -148px;
+	cursor: pointer;
+}
+.report-constructor .fields-list .has-aggregators .aggregate-field {
+	background-position: 0 -126px;
+	cursor: pointer;
+	top: 5px;
+}
+.report-constructor .fields-list .aggregate-field .ui-selectmenu {
+	visibility: hidden;
+}
+.report-constructor .fields-list .function-field .ui-selectmenu {
+	visibility: hidden;
+}
+.report-constructor .fields-list .function-enabled .function-field .ui-selectmenu {
+	visibility: visible;
+}
+.report-constructor .fields-list .aggregator-enabled .aggregate-field .ui-selectmenu {
+	visibility: visible;
+}
+.report-constructor .fields-list .aggregate-field .field-icon {
+	top: 4px;
+	left: 11px;
+	width: 16px;
+	height: 14px;
+}
+.report-constructor .fields-list .function-field .field-icon {
+	top: 3px;
+	left: 6px;
+	width: 16px;
+	height: 17px;
+}
+.report-constructor .fields-list .function-enabled .function-field {
+	background-position: -151px -148px;
+}
+.report-constructor .fields-list .aggregator-enabled .aggregate-field {
+	background-position: -151px -126px;
+}
+
+.report-constructor .fields-list .field-filters {
+	background-position: 0 -104px;
+}
+.report-constructor .fields-list .filter-enabled .field-filters {
+	background-position: -151px -104px;
+}
+.report-constructor .fields-list .field-filters .field-filters-value {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 26px;
+	width: 114px;
+	height: 22px;
+	overflow: hidden;
+}
+.report-constructor .fields-list .filter-enabled .field-filters .field-filters-value {
+	visibility: visible;
+}
+ul.report-constructor-field-functions,
+ul.report-constructor-field-aggregators {
+	background-color: #dadee5;
+	border-color: #c5cbd6;
+}
+ul.report-constructor-all-fields {
+	border-color: #b1bcca;
+}
+ul.report-constructor-field-functions,
+ul.report-constructor-field-aggregators,
+ul.report-constructor-field-functions a,
+ul.report-constructor-field-aggregators a {
+	color: #636569;
+}
+ul.report-constructor-all-fields a,
+ul.report-constructor-all-fields a:hover,
+ul.report-constructor-field-functions a,
+ul.report-constructor-field-aggregators a,
+ul.report-constructor-field-functions a:hover,
+ul.report-constructor-field-aggregators a:hover {
+	-moz-transition-property: none;
+	-webkit-transition-property: none;
+	-o-transition-property: none;
+	transition-property: none;
+}
+
+/* filter types */
+.report-constructor .field-filters-value-date {
+	line-height: 1em;
+}
+.field-filters-value-date-calendars .calendar {
+	float: left;
+}
+.field-filters-value-date-calendars .calendar-from {
+	margin-right: 0.5em;
+}
+.field-filters-value-date-calendars {
+	overflow: hidden;
+	padding: 0.5em;
+	background-color: white;
+	border: 1px solid gray;
+}
+.field-filters-value-container input {
+	width: 101px;
+	height: 14px;
+	margin: 4px 0 0 3px;
+	padding: 0 3px;
+	border-color: #b1bcca;
+	border-style: solid;
+	border-width: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	background: #f0f1f4;
+	color: #636569;
+}
+.ie7 .field-filters-value-container input,
+.ie6 .field-filters-value-container input {
+	margin-top: 3px;
+}
+.report-preview-box {
+	margin-top: 2em;
+}
+.report-preview {
+	max-width: 100%;
+	overflow: auto;
+}

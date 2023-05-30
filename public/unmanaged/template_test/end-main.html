@@ -1,0 +1,153 @@
+<link href="/css/content-modules/test.css" rel="stylesheet" type="text/css">
+<table align="center" cellpadding="5" cellspacing="0" border="0" class="main" id="main_tests_end" width="100%">
+    <tr>
+        <th class="th_tests" colspan="2">
+            <h1><?= _('Результаты тестирования')?></h1>
+        </th>
+    </tr>
+    <tr>
+        <td class="th_tests" colspan="2">
+<?
+$grade = saveAutoMark();
+$percent = 0;
+if ($val = ($s[balmax2_true]-$s[balmin_true])) {
+    $percent = round(intval((($s[bal]-$s[balmin_true])*100)/$val), 2);
+}
+?>
+            <? if ($grade !== '-') :?>
+            <h1>
+                <?=_("Оценка:")?>
+                <? if (empty($GLOBALS['markGr'])) :?>
+                    <?=$grade?>
+                <? elseif (empty($grade)) :?>
+                    <?=$GLOBALS['markGr']?>
+                <? else :?>
+                    <?=$grade?> (&laquo;<?=$GLOBALS['markGr']?>&raquo;)
+                <? endif;?>
+                &nbsp;<? if ($s[moder]) echo $GLOBALS['tooltip']->display('test_results_moder', true);?>
+            </h1>
+            <p>
+                <?=sprintf("%3.2f",$s[bal])?> <?=_("баллов")?> <?=@sprintf(_("из %d возможных"), round($s[balmax2_true],2))?> (<?=$percent;?>%)
+            </p>
+            <? else :?>
+            <h1>
+                <?=_("Результат:")?> <?=sprintf("%3.2f",$s[bal])?>  <?=_("баллов")?> <?=@sprintf(_("из %d возможных"), round($s[balmax2_true],2))?> (<?=$percent;?>%)
+            </h1>
+            <? endif;?>
+        </td>
+    </tr>
+    <? if (is_array($themes) && (count($themes) > 1)): ?>
+    <tr>
+        <td class="th_tests" colspan="2" style="font-size: 1.1em;">
+            <h2><?= _('Результаты по темам')?>:</h2>
+            <? foreach($themes as $theme => $kods): ?>
+            <?
+                $sum = $count = 0;
+                if (is_array($kods) && count($kods)) {
+                    foreach ($kods as $kod) {
+                        $count++;
+                        $num = array_search($kod, $s[akod]);
+                        $sum += $s['abalmax'][$num] ? $s['abal'][$num]/$s['abalmax'][$num] : 0;
+                    }
+                    $percent = $count ? floor(100*$sum/$count) : 0;
+                }
+
+            ?>
+            	<div style="float: left; width: 300px; margin: 5px;"><?= $theme?>:</div><div style=" margin: 5px; font-weight: bold; float: left; width: 100px;"><?= $percent?>%</div>
+            	<div style="clear: both;"></div>
+            <? endforeach; ?>
+        </td>
+    </tr>
+    <? endif; ?>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Название занятия")?>
+        </td>
+        <td>
+            <?=$s[ttitle]?><br>
+        </td>
+    </tr>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Всего вопросов")?>
+        </td>
+        <td>
+            <?=count($s[akod])?>
+        </td>
+    </tr>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Получено ответов")?>
+        </td>
+        <td>
+            <?=count($s[adone])?>
+        </td>
+    </tr>
+<?
+if (count($s[akod])-count($s[adone])!=0) :
+?>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Пропущено вопросов")?>
+        </td>
+        <td>
+            <? echo count($s[akod])-count($s[adone]);?>
+        </td>
+    </tr>
+<? endif;?>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Начало тестирования")?>
+        </td>
+        <td>
+            <? if (date("d/m/Y")==date("d/m/Y",$s[start])) : ?>
+			<? echo _("сегодня в ") . date("H:i:s",$s[start]);?>
+			<? else :?>
+			<? date("d.m.Y H:i:s",$s[start]);?>
+			<? endif ;?>
+        </td>
+    </tr>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Окончание тестирования")?>
+        </td>
+        <td>
+            <? if (date("d/m/Y")==date("d/m/Y",$s[stop])) : ?>
+			<? echo _("сегодня в ") . date("H:i:s",$s[stop]);?>
+			<? else :?>
+			<? date("d.m.Y H:i:s",$s[stop]);?>
+			<? endif ;?>
+        </td>
+    </tr>
+    <tr class="tr_tests_end">
+        <td>
+            <?=_("Потрачено времени")?>
+        </td>
+        <td>
+<?
+  $tmp=$s[stop]-$s[start];
+  if (floor(doubleval($tmp)/3600)) echo floor(doubleval($tmp)/3600)." " . _("час.") ." ";
+  if (floor(doubleval($tmp)/60)%60) echo floor(doubleval($tmp)/60)%60 ." " . _("мин.") . " ";
+  if ($tmp%60) echo ($tmp%60)." " . _("сек.");
+?>
+        </td>
+    </tr>
+</table><br>
+<form action=<?=$GLOBALS['PHP_SELF']?> method=get>
+<input type=hidden name=c value='end_submit'>
+<table border=0 align=right class="table_tests_end">
+<tr>
+    <td nowrap>
+        <p style="margin: 7px;"><input type=checkbox name=cnf id=cnf value=1>&nbsp;<?=_("Я подтверждаю, что ознакомился с результатами")?></label>&nbsp;&nbsp;
+    </td>
+    <td>
+        <?=button(_("Закончить просмотр"))?>
+    </td>
+</tr>
+</table>
+
+<br>
+<br>
+
+</form>
+</center>

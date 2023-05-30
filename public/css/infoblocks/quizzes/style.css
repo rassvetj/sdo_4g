@@ -1,0 +1,40 @@
+#quizzesBlock #quizzes-moder {
+	float: right;
+}
+#quizzes-moder-edit img {
+	float: left;
+}
+#quizzes-moder-edit span {
+	line-height: 2.6em;
+}
+#quizzesBlock #quizzes-question {
+	padding: 0 10px 10px 0;
+    color: #596871;
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.2em;
+	clear: both;
+}
+#quizzesBlock #quizzes-answers {
+	background-color: #fff;
+	padding: 15px;
+	visibility: hidden;
+}
+#quizzesBlock .quizzes-answer {
+	min-height: 35px;
+	font-size: 1.2em;
+}
+#quizzesBlock #quizzes-results-allow {
+	float: left;
+	padding-top: 18px;
+}
+#quizzesBlock #quizzes-answers-submit {
+	margin-top: 15px;
+	float: left;
+}
+#quizzesBlock hr {
+	noshade;
+	width: 100%;
+	color: #FFF;
+	size: 1;
+}

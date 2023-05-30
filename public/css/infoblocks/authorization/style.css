@@ -1,0 +1,84 @@
+.infoblock-authorization dt {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.infoblock-authorization dt > *,
+.infoblock-authorization dd > * {
+    vertical-align: middle !important;
+}
+.infoblock-authorization .disclaimer {
+    font-size: 1em;
+}
+.infoblock-authorization #captcha-label,
+.infoblock-authorization #password-label,
+.infoblock-authorization #login-label {
+    font-weight: bold;
+}
+.infoblock-authorization #refresh {
+    display: inline;
+}
+.infoblock-authorization dd.element {
+    display: block;
+    background: white;
+    padding: 0.4em 0.6em;
+    border: 1px solid #aaa;
+}
+.infoblock-authorization input#login,
+.infoblock-authorization input#password {
+    font-size: 1.8em;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+.infoblock-authorization input#captcha-input {
+    padding: 0;
+    border: 1px solid #aaa;
+    font-size: 1.5em;
+    width: 6em;
+    text-align: center;
+}
+.infoblock-authorization dd {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.infoblock-authorization dd.element:before,
+.infoblock-authorization dd.element:after {
+    content: "";
+    display: table;
+}
+.infoblock-authorization dd.element:after {
+    clear: both;
+}
+.infoblock-authorization dd.element {
+    *zoom: 1;
+}
+.infoblock-authorization .required-star {
+    display: none;
+}
+.infoblock-authorization img {
+    margin: 0;
+    vertical-align: middle;
+}
+.infoblock-authorization .footer {
+    margin-top: -0.5em;
+}
+.infoblock-authorization .footer { 
+    letter-spacing: 10px;
+}
+.infoblock-authorization .footer a { 
+    letter-spacing: 0;
+}
+.infoblock-authorization #submit {
+    height: 30px;
+}
+.infoblock-authorization .ajax-spinner-local {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ui-state-loading.infoblock-authorization .ajax-spinner-local {
+    display: block;
+}

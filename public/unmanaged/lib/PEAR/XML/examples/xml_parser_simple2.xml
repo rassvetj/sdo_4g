@@ -1,0 +1,5 @@
+<!-- $Id: xml_parser_simple2.xml,v 1.1.2.2 2009/10/29 08:34:15 cvsup Exp $ -->
+<package>
+    <category>XML</category>
+    <name>XML_Parser</name>
+</package>

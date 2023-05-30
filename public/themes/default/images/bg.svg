@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="200" viewBox="0 0 1280 59" preserveAspectRatio="xMidYMin">
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="l1">
+      <stop style="stop-color:#eef2f9"/>
+      <stop style="stop-color:#d6e0f1" offset="1"/>
+    </linearGradient>
+  </defs>
+  <path
+     d="M 0,0 0,38 C 178.05626,47.843842 408.72266,59 657.0625,59 891.17729,59 1106.8571,46.85135 1280,38 l 0,-38 z"
+     style="fill:url(#l1);stroke:none"/>
+</svg>

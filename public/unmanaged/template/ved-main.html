@@ -1,0 +1,68 @@
+<!-- "Begin Ved Page" -->
+                  <table border="0" cellspacing="0" cellpadding="0" height="100%" width="100%">
+                     <tr>
+                        <td valign="top" width="100%" align="center" colspan="2">
+                           [HEADER]
+                        </td>
+                     </tr>
+                     <tr valign="top">
+                        <td align="left" nowrap>
+
+                              <span class="shedtitle">{?t?}Курс:{?/t?}</span>
+                        </td>
+                        <td align="left">
+                              <select name='ChCourse' onchange="navigate('ved.php4?gr=[GRID]&CID='+ChCourse.value);" class="selcselect">
+                                 [SELECT-COURSES]
+                              </select>
+
+                              <select name='ChSort' onchange="navigate('ved.php4?CID=[CURCID]&gr=[GRID]&sort='+ChSort.value);" class="selcselect2 ">
+                              [SORT]
+                              </select>
+                              <!--
+                              [LOOK]
+                              -->
+                              <!--
+                              <a href="[PATH]test_moder.php?[SESSID]">[MNUM]</a>
+                              -->
+                              <a href="[PATH]abitur.php4#in?[SESSID]CID=[CURCID]">[ANUM]</a><br>
+                                                          <br>
+                        </td>
+                     </tr>
+                     <tr>
+                       <td align="left">
+                         <span class="shedtitle">{?t?}Группа:{?/t?}</span>
+                       </td>
+                       <td align="left">
+                         <select name='ChGr' id='select' onchange="if (this.value=='-1')this.value=-1; navigate('ved.php4?CID=[CURCID]&gr='+ChGr.value);" class="selcselect">
+                           [GRSEL]
+                         </select>
+                       </td>
+                     </tr>
+                     <!--tr valign="top">
+                        <td width="100%" align="left" class="shedtitle">
+                                  -    :
+                              <a href="[PATH]addgroup.php4?[SESSID]CID=[CUR-CID]">                      </a>
+                        </td>
+                     </tr-->
+                     <tr valign="top"><td width="100%" colspan="2"><img src="/images/spacer.gif" width="1" height="30" align="absmiddle">[GRTEXT]</td></tr>
+                     <tr>
+                        <td colspan=2>
+                           <a href="[PATH]test_moder.php?[SESSID]">[MNUM]</a><br><br>
+                        </td>
+                     </tr>
+                     <tr valign="top"><td width="100%" align="center" colspan="2">
+                     [GRFILTER]
+                     </td></tr>
+                     <tr valign="top">
+                        <td width="100%" align="center" colspan="2">
+                           [MAINT]
+                        </td>
+                     </tr>
+                     <!--tr valign="top"><td width="100%" align="center">&nbsp;</td></tr>
+                     <tr valign="top">
+                        <td width="100%" align="left">
+                                                </td>
+                     </tr-->
+                     <tr valign="top" height="100%"><td>&nbsp;</td></tr>
+                  </table>
+<!-- "End Ved Page" -->

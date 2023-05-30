@@ -1,0 +1,243 @@
+.workflow {
+    width: 700px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    left: 350px;
+    padding: 15px 25px;
+    position: absolute;
+    top: 200px;
+    -webkit-box-shadow: 0 0 5px gray;
+       -moz-box-shadow: 0 0 5px gray;
+            box-shadow: 0 0 5px gray;
+    -moz-border-radius: 5px;
+         border-radius: 5px;
+}
+.ie7 .workflow,
+.ie8 .workflow {
+    border: 1px solid gray;
+}
+.workflow .workflow_corner {
+    display: none;
+}
+.workflow .workflow_header {
+    overflow: hidden;
+}
+.workflow .workflow_header h3 {
+    font-weight: normal;
+    float: left;
+    margin: 0 0 10px 0;
+    color: #3f556e;
+    font-size: 1.818em;
+}
+.workflow span.close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    height: 20px;
+    width: 20px;
+    background: url(../../images/icons/delete.gif) no-repeat;
+    cursor: pointer;
+}
+.workflow .workflow_item {
+    /*width: 530px;*/
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0 0;
+    clear: both;
+    overflow: hidden;
+}
+.workflow .workflow_list > .workflow_item:last-of-type {
+    border-bottom-width: 0;
+}
+.workflow .workflow_item_head {
+    background: transparent;
+    margin: 0 0 1em 18px;
+}
+.workflow .workflow_item_head > .ui-icon {
+    display: none;
+}
+.workflow .wih_icon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    vertical-align: middle;
+    background-image: url(../../images/icons/workflow_icons.png);
+    background-repeat: no-repeat;
+    line-height: 16px;
+    margin-left: -18px;
+}
+.workflow .success .wih_icon{
+    background-position: center top;
+}
+.workflow .failed .wih_icon{
+    background-position: center -16px;
+}
+.workflow .complete .wih_icon{
+    background-position: center -32px;
+}
+.workflow .incomplete .wih_icon {
+    background-position: center -48px;
+}
+.workflow .unchecked .wih_icon {
+    background-position: center -48px;
+}
+.workflow .freeze .wih_icon {
+    background-position: center -64px;
+}
+.workflow .wih_title {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0;
+    min-width: 100%;
+}
+.workflow .wih_time {
+    float: right;
+    font-size: 0.909em;
+    color: #a4a4a4;
+}
+.workflow .wih_time span {
+    display: block;
+    text-align: right;
+    color: #000;
+}
+.workflow .failed .wih_time{
+    color: #c55050;
+}
+.workflow .success .wih_title,
+.workflow .failed .wih_title {
+    color: #455b81;
+}
+.workflow .complete .wih_title {
+    color: #2b5eae;
+}
+.workflow .success .wih_time {
+    color: #a4a4a4;
+}
+.workflow .incomplete .wih_title,
+.workflow .unchecked .wih_title {
+    color: #516689;
+}
+.workflow .freeze .wih_title {
+    color: #9a9a9a;
+    cursor: default;
+}
+.workflow .workflow_item_description {
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+.workflow .wid_text {
+    margin: 0 1em 1em;
+}
+.workflow .wid_text hr {
+    border-top: 1px dashed #a3a3a3;
+    margin: 1em 0;
+}
+.workflow .wid_text p {
+    margin: 0.5em 0;
+}
+.workflow .wid_control_link li {
+    margin: 1em 0;
+}
+.workflow .wid_control_link li:hover label {
+    text-shadow: rgba(0, 0, 0, .5) 0 0 1px;
+}
+.workflow .wid_control_link a {
+    font-style: italic;
+}
+.workflow .wid_control_link a.ui-selectmenu {
+    font-style: normal;
+}
+.workflow .hm-action > label,
+.workflow .hm-action > form {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.workflow .hm-action > label {
+    width: 70%;
+}
+.workflow .hm-action > form {
+    width: 29%;
+    margin-left: 1%;
+}
+.ie7 .workflow .hm-action > form {
+    margin-left: 0.99%;
+}
+.workflow .hm-action input,
+.workflow .hm-action select,
+.workflow .hm-action .ui-selectmenu,
+.workflow .hm-action textarea {
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+}
+.workflow .hm-action input,
+.workflow .hm-action .ui-selectmenu,
+.workflow .hm-action textarea {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+.workflow .hm-action-read .no-data {
+    font-style: italic;
+    color: #999;
+}
+.workflow .wid_deadline {
+    float: right;
+    width: 200px;
+    margin: 0 1em 0.5em;
+}
+.workflow .wid_d_time {
+    text-align: right;
+    font-size: 0.909em;
+}
+.workflow .wid_d_full {
+    border: 1px solid #b1bcca;
+    background: #f1f6fc;
+    -moz-border-radius: 3px;
+         border-radius: 3px;
+    overflow: hidden;
+    padding: 0.2em 1em;
+    margin: 0;
+}
+.workflow .wid_d_full_se {
+    float: left;
+    width: 50%;
+    color: #8d8d8d;
+    overflow: hidden;
+}
+.workflow .wid_d_full_se span {
+    color: #000;
+}
+.workflow .wid_d_full_desc {
+    clear: both;
+    overflow: hidden;
+    margin: 0.9em 0;
+}
+
+.workflow .wid_d_full .complete div {
+    color: #6eb369;
+    font-weight: bold;
+}
+.workflow .wid_d_full .delay div {
+    color: #8f8f8f;
+    font-weight: bold;
+}
+.workflow .wid_d_full .not div {
+    color: #ba4747;
+    font-weight: bold;
+}
+.workflow .wid_d_full .wid_d_full_desc_time {
+    color: #a3a3a3;
+    font-weight: normal;
+}
+.workflow .wid_d_full_desc_time span {
+    color: #000;
+}
+.workflow .wid_d_clear {
+    clear: both;
+}
+

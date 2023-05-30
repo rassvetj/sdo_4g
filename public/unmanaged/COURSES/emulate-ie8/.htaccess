@@ -1,0 +1,3 @@
+<IfModule mod_headers.c>
+    Header set X-UA-Compatible "IE=EmulateIE8"
+</IfModule>

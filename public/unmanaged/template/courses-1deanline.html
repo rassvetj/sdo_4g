@@ -1,0 +1,37 @@
+<tr bgcolor="#FFFFFF">
+   <td>[cID]</td>
+   <td>
+      <a href='teachers/manage_course.php4?CID=[cID]' title="{?t?}Содержание курса{?/t?}">
+      [cName]
+      </a>
+   </td>
+   <td>[beDate]</td>
+   <td>[TypeDes]</td>
+   <td>
+      <a href='teachers.php4?CID=[cID]'>
+      [Teachers]
+      </a>
+   </td>
+   <td>[LastAcces]</td>
+   <td width="40">
+    <table>
+     <tr>
+      <td>
+       <a href='courses.php4?redCID=[cID]#edit' style='cursor:hand' title='{?t?}Редактировать курс{?/t?}'
+       >[EDIT_BUTTON]</a>
+      </td>
+      <td>
+       <a href='courses.php4?delete=[cID]' style='cursor:hand' title='{?t?}Удалить курс{?/t?}'
+       onClick='if (!confirm("{?t?}Удалить?{?/t?}??")) return false;'>[DELETE_BUTTON]</a>
+      </td>
+      <td>
+       <a href='courses.php4?copy=[cID]' style='cursor:hand' title='{?t?}Копировать курс{?/t?}'
+       onClick='if (!confirm("{?t?}Копировать курс{?/t?} ?")) return false;'>[COPY_BUTTON]</a></td>
+      </td>
+      <td>
+       <a href='teachers/course_import.php?CID=[cID]' style='cursor:hand' title='{?t?}Импортировать курс{?/t?}'>
+       [IMPORT_BUTTON]</a>
+      </td>
+     </tr>
+    </table>
+</tr>

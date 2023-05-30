@@ -1,0 +1,20 @@
+
+                "redirectURL",
+                "externalURLs",
+                "chatApplet",
+                "liveCam1",
+                "liveCamPro",
+                "tests",
+                "module",
+                "books",
+                "sAddToAllnew"};
+
+                "redirectURL_url",
+                "externalURLs_urls",
+                "chatApplet_width","chatApplet_height","chatApplet_in_login","chatApplet_in_pass","chatApplet_in_room","chatApplet_in_serverPort",
+                "liveCam1_width","liveCam1_height","liveCam1_delay","liveCam1_file","liveCam1_room",
+                "liveCamPro_width","liveCamPro_height","liveCamPro_delay","liveCamPro_file","liveCamPro_room",
+                "tests_testID",
+                "module_moduleID",
+                "books_is",
+                "sAddToAllnew"};

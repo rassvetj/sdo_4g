@@ -1,0 +1,33 @@
+.usersUsersCounter {
+	margin: 5px; 
+	height: 150px; 
+	text-align: center;
+}
+
+#usersSystemCounterBlock .ui-portlet-content .usersSystemCounter_statsInner{
+	float:right;
+}
+
+.usersUsersCounter_datePickers_center img{
+	cursor: pointer;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.usersUsersCounter_datePickers_center{
+	vertical-align: middle;
+}
+
+.usersUsersCounter_datePickers_right{
+
+}
+
+.usersUsersCounter input{
+	width: 70px;
+	height: 1.1em;
+}
+
+.usersUsersCounter .usersUsersCounter_stats{
+	text-align: left;
+	
+}

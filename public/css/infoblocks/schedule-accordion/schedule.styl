@@ -1,0 +1,120 @@
+@import 'nib'
+
+images-root        = '../../../images/infoblocks/schedule-accordion'
+remote-images-root = images-root
+
+display(d) {
+	display: d;
+	if (d == 'inline-block') {
+		*display: inline;
+		*zoom: 1;
+	}
+}
+
+image-url(iurl, as-data-url = false) {
+	if as-data-url {
+		data-url(images-root + iurl)
+	} else {
+		'url(%s%s)' % (unquote(remote-images-root) unquote(iurl))
+	}
+}
+
+.schedule-accordion {
+	padding: 1.182em;
+	> h4 {
+		font-weight: normal;
+		margin-bottom: 0.7em;
+		font-size: 1.2em;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	li {
+		padding: 5px 4px 4px;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid darken(#ededed, 30%);
+		clearfix();
+		&.first {
+			border-top-width: 0;
+		}
+		&.last {
+			border-bottom-width: 0;
+		}
+		> .pit {
+			margin-left: -9px;
+			margin-top: -1px;
+			float: left;
+			width: 80px;
+			text-align: center;
+			border-radius: 9px;
+			display: block;
+			position: relative;
+			.text {
+				padding: 2px;
+				display: block;
+				position: relative;
+			}
+			.bg {
+				width: 100%;
+				height: 100%;
+				absolute: top left;
+				display: block;
+				border-radius: 9px;
+			}
+		}
+		&.overdue > .pit {
+			color: #fff;
+			.bg {
+				background-color: #f94749;
+				box-shadow: #f94749 0 0 3px;
+			}
+		}
+		&.in-process > .pit {
+			color: #fff;
+			.bg {
+				background-color: #332d2d;
+			}
+		}
+		&.not-started > .pit {
+			color: black;
+			.bg {
+				opacity: 0.7;
+			}
+		}
+		&.infinite > .pit {
+			font-size: 2em;
+			line-height: 0.7;
+			.bg {
+				background-color: #fff;
+			}
+		}
+		> .title {
+			margin-left: 81px;
+			display: block;
+		}
+	}
+	.schedule-full {
+		text-align: center;
+		font-size: 1.2em;
+		margin-top: 1em;
+		> a {
+			border-radius: 2px;
+			display: inline-block;
+			padding: 2px 4px;
+			transition-property: color, background-color;
+			&:hover, &:active {
+				background-color: transparent;
+			}
+		}
+	}
+}
+.page-context-accordion .schedule-accordion .schedule-full > a {
+	&, &:visited, &:link {
+		color: #fff;
+	}
+	&:hover, &:active {
+		color: inherit;
+	}
+}

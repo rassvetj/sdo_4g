@@ -1,0 +1,1 @@
+<?php if ($this->course) echo $this->course->getStatus($this->course->Status)?>

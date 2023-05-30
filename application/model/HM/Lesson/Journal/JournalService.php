@@ -1,0 +1,388 @@
+<?php
+class HM_Lesson_Journal_JournalService extends HM_Service_Abstract #HM_Lesson_LessonService
+{
+	/**
+	 * список всех созданных занятий в журнале
+	 * @return array 
+	*/
+	public function getDayList($lesson_id){			
+		return $this->fetchAll($this->quoteInto(array('lesson_id = ?', ' AND (is_hidden != ? OR is_hidden IS NULL)'), array($lesson_id, HM_Lesson_Journal_JournalModel::STATUS_HIDDEN_YES)))->getList('journal_id', 'date_lesson');	
+	}
+	
+	/**
+	 * param_1 int
+	 * param_2 HM_Lesson_Journal_Lab_LabModel 
+	 * @return bool
+	 * Создание пустых дней только в том случае, если еще нет ни одного созданного дня
+	*/
+	public function generateDefaultDays($lesson){
+		
+		if(!$lesson){ return false; }
+		
+		$hours = $this->getHours($lesson);
+					
+		if(empty($hours)){ return false; }
+		
+		if(count($this->getDayList($lesson->SHEID))){ return false;  }
+		
+		for ($i = 1; $i <= $hours; $i++) {
+			$this->createDefaultDay($lesson->SHEID);
+		}
+		return true;		
+	}
+	
+	
+	public function  createDefaultDay($lesson_id){
+		return	$this->insert(array(
+					'lesson_id' 	=> $lesson_id,
+					'date_lesson' 	=> new Zend_Db_Expr('GETDATE()'),
+					'date_create' 	=> new Zend_Db_Expr('GETDATE()'),
+					'author_id' 	=> $this->getService('User')->getCurrentUserId(),
+				));
+	}
+	
+	
+	public function getHours($lesson){
+		if(!$lesson){ return 0; }
+		
+		$subject 	= $this->getService('Subject')->find($lesson->CID)->current();
+		if(!$subject){ return 0; }
+
+		if(empty($lesson->type_lesson)) {
+			$type_lesson = $lesson->typeID;
+			}
+		else {
+			$type_lesson = $lesson->type_lesson;
+			}
+        switch ($type_lesson) {
+            case HM_Event_EventModel::TYPE_JOURNAL_LECTURE:
+                return ceil($subject->lection / 2);                                                         
+            case HM_Event_EventModel::TYPE_JOURNAL_PRACTICE:          
+                return ceil($subject->practice / 2);    
+            case HM_Event_EventModel::TYPE_JOURNAL_LAB:
+                return ceil($subject->lab / 2);
+		}
+
+		return 0;
+	}
+	
+	/**
+	 * Максимальный балл за занятие при создании сессии.
+	 * Если заданы часы лабораторных, практик, лекций в сессии, значит есть занятие журнал для них. Если какой-то из них не задан => нет этого занятия.
+	*/
+	public function getDefaultMaxBall($subject_id){		
+		$subject = $this->getService('Subject')->getById($subject_id);
+		if(!$subject){ return false; }
+		$countJournals = 0; # коэф-циент
+		if($subject->lection > 0)	{ $countJournals++; }	
+		if($subject->lab > 0) 		{ $countJournals++; }
+		if($subject->practice > 0)	{ $countJournals++; }
+		if($countJournals == 0)		{ return false;		}
+		return round( (HM_Lesson_Journal_JournalModel::MAX_BALL_ACADEMIC_ACTIVITY / $countJournals), 2);
+	}
+	
+
+	  	public function getDefaultMaxBallPracticeOrLab($subject_id){		
+	  		$subject = $this->getService('Subject')->getById($subject_id);
+	  		if(!$subject){ return false; }
+	  		$countJournalsLabAndPractice = 0; # количество журналов ПЗ и Лаб
+	  		if($subject->lab > 0) 		{	$countJournalsLabAndPractice++;	}
+	  		if($subject->practice > 0)	{	$countJournalsLabAndPractice++;	}
+	  		if($countJournalsLabAndPractice == 0)		{ return false;		}
+	  		return round( (HM_Lesson_Journal_JournalModel::MAX_BALL_PRACTICE_AND_LAB / $countJournalsLabAndPractice), 2);
+	}
+	
+	/**
+	 * @param HM_Lesson_Journal_*_*Model 
+	 * @return float
+	 * В занятии "Журнал - семинарские/практические занятия" - максимальный балл состоит из суммы за практическую часть и академ. активность. Эти значения вычисляемые.
+	*/
+	/*
+	public function getMaxBallAcademicActivity($lesson){
+		if(!$lesson){ return 0; }
+		if($lesson->typeID != HM_Event_EventModel::TYPE_JOURNAL_PRACTICE){ return $lesson->max_ball; }
+		
+		$collection = $this->getService('Lesson')->getActiveLessonsOnSubjectIdCollection($lesson->CID);
+		if(!$collection){ return $lesson->max_ball; }
+		
+		$max_ball_academic_activity = HM_Lesson_Journal_JournalModel::MAX_BALL_ACADEMIC_ACTIVITY;
+		foreach($collection as $les){
+			if($les->typeID == HM_Event_EventModel::TYPE_JOURNAL_LECTURE || $les->typeID == HM_Event_EventModel::TYPE_JOURNAL_LAB){
+				$max_ball_academic_activity = $max_ball_academic_activity - $les->max_ball;
+			}			
+		}
+		if($max_ball_academic_activity <= 0){ return 0; }
+		if($max_ball_academic_activity >= HM_Lesson_Journal_JournalModel::MAX_BALL_ACADEMIC_ACTIVITY){ return HM_Lesson_Journal_JournalModel::MAX_BALL_ACADEMIC_ACTIVITY; }
+		return $max_ball_academic_activity;		
+	}
+	*/
+	
+	/**
+	 * @param HM_Lesson_Journal_*_*Model 
+	 * @return float
+	*/
+	/*
+	public function getMaxBallPracticalTask($lesson){
+		if(!$lesson){ return 0; }
+		if($lesson->typeID == HM_Event_EventModel::TYPE_JOURNAL_LECTURE || $lesson->typeID == HM_Event_EventModel::TYPE_JOURNAL_LAB){ return 0; }		
+		if($lesson->typeID != HM_Event_EventModel::TYPE_JOURNAL_PRACTICE){ return $lesson->max_ball; }
+		$max_ball_academic_activity = $this->getMaxBallAcademicActivity($lesson);
+		$max_ball_practical_task = $lesson->max_ball - $max_ball_academic_activity;
+		if($max_ball_practical_task <= 0) { return 0; }
+		if($max_ball_practical_task >= HM_Lesson_Journal_JournalModel::MAX_BALL_PRACTICAL_TASK){ return HM_Lesson_Journal_JournalModel::MAX_BALL_PRACTICAL_TASK; }
+		return $max_ball_practical_task;
+	}
+	*/
+	
+	
+	/**
+	 * @param HM Subject Model
+	*/
+	public function createJournals($subject)
+	{
+		$data = $this->getDafaultJournalFields($subject);
+
+		$countTypes         = 0;
+		$corrected_max_ball = 0; # скорректированный балл добавляется только для одного из журналов.
+		$current_max_ball   = $data['max_ball'];
+		if($subject->lection  > 0){ $countTypes++; } 
+		if($subject->lab      > 0){ $countTypes++; } 
+		if($subject->practice > 0){ $countTypes++; }
+		$summBall = $countTypes * $data['max_ball'];
+		$delta    = round(ceil($summBall) - $summBall, 2);
+		if($delta > 0){
+			$corrected_max_ball = round($data['max_ball'] + $delta, 2);
+		}
+		
+		if($subject->lection > 0)	{
+			if ($countTypes != 1) 
+				{ $data['max_ball'] = $current_max_ball; } 
+			else 				  
+				{ $data['max_ball'] = HM_Lesson_Journal_JournalModel::MAX_BALL_AA_WITHOUT_PZ_AND_LAB; }
+		
+			if(!empty($corrected_max_ball)){
+				$data['max_ball']   = $corrected_max_ball;
+				$corrected_max_ball = 0;
+			}
+
+			$data['title'] 	= 'Журнал - лекция';
+			$data['type_lesson'] = HM_Event_EventModel::TYPE_JOURNAL_LECTURE;  # занятие лекция
+			$data['typeID'] = HM_Event_EventModel::TYPE_JOURNAL_LECTURE;  # тип журнала АА (явка)
+			$newLesson 		= $this->getService('Lesson')->insert($data);
+		}
+		
+		if($subject->lab > 0) {
+
+			$data['max_ball'] = $current_max_ball;
+			if(!empty($corrected_max_ball)){
+				$data['max_ball']   = $corrected_max_ball;
+				$corrected_max_ball = 0;
+			}
+
+			$data['title'] 	= 'Журнал - лабораторные занятия';
+			$data['type_lesson'] = HM_Event_EventModel::TYPE_JOURNAL_LAB;  # занятие лабораторные			
+			$data['typeID'] = HM_Event_EventModel::TYPE_JOURNAL_PRACTICE;	# тип журнала АА+ПЗ	(явка + оценка за работу)
+			$newLesson 		= $this->getService('Lesson')->insert($data);
+		}
+		
+		if($subject->practice > 0){
+
+			$data['max_ball'] = $current_max_ball;
+			if(!empty($corrected_max_ball)){
+				$data['max_ball']   = $corrected_max_ball;
+				$corrected_max_ball = 0;
+			}
+			$data['title'] 	= 'Журнал - семинарские/практические занятия';
+			$data['type_lesson'] 	= HM_Event_EventModel::TYPE_JOURNAL_PRACTICE;  # занятие практические
+			$data['typeID'] = HM_Event_EventModel::TYPE_JOURNAL_PRACTICE;			# тип журнала АА+ПЗ	(явка + оценка за работу)
+			$newLesson 		= $this->getService('Lesson')->insert($data);			
+		}
+		
+	}
+	
+	protected function getDafaultJournalFields($subject){
+		return array(
+			'max_ball' 			=> $this->getDefaultMaxBall($subject->subid),
+			'begin'				=> $subject->begin,
+			'end'				=> $subject->end,
+			'createID'			=> $this->getService('User')->getCurrentUserId(),
+			'createDate'		=> new Zend_Db_Expr('GETDATE()'),
+			'vedomost'			=> 1,
+			'CID'				=> $subject->subid,
+			'startday'			=> 0,
+			'stopday'			=> 0,
+			'timetype'			=> 2,
+			'isgroup'			=> 0,
+			'cond_sheid'	 	=> 0,
+			'cond_progress'	 	=> 0,
+			'cond_avgbal' 		=> 0,
+			'cond_sumbal' 		=> 0,
+			'cond_operation'	=> 0,
+			'period'			=> '-1',			
+			'rid'				=> 0,
+			'gid'				=> 0,
+			'teacher'			=> 0,
+			'moderator'			=> 0,
+			'pub'				=> 0,
+			'sharepointId'		=> 0,
+			'recommend'			=> 0,
+			'notice'			=> 0,
+			'notice_days'		=> 0,
+			'all'				=> 1,
+			'perm'				=> 0,
+			'isfree'			=> 0,
+			'formula_penalty_id'=> 0,
+			'required'			=> 1,
+			'max_mark'			=> 100,
+			'allowTutors'		=> 1,
+			'isCanMarkAlways'	=> 0,
+			'max_ball_practice_or_lab' => $this->getDefaultMaxBallPracticeOrLab($subject->subid), # максимальный балл за практические или лабораторные	
+			'type_lesson'	=> 0, # вид занятия (лекция, практические, лабораторные) - не путать с типом журнала (посещения и оценка за работу на занятии)
+		);
+	}
+	
+	
+	/**
+	 * @return id первого дня, в котором нет ни одной оценки или посещения.
+	 * соритровка по дате и по PK
+	*/
+	public function getFirstEmptyDay($lesson_id){
+		# Все дни, в которых есть или отметка о посещении , или выставлена оценка и день не удален
+		$sub_select = $this->getSelect();
+
+		$sub_select->from(array('schedule_journal_result'), array('journal_id'));
+		$sub_select->where($this->quoteInto(array('lesson_id = ?', ' AND (isBe = ? ', ' OR mark != ?) '), array($lesson_id, HM_Lesson_Journal_Result_ResultModel::IS_BE_YES, '-1')));
+		$sub_select->group(array('journal_id'));
+		
+
+		$select = $this->getSelect();
+		$select->from(array('schedule_journal'), array(
+			'journal_id' => new Zend_Db_Expr('MIN(journal_id)'),
+		));		
+		$select->where($this->quoteInto(array('lesson_id = ? ', ' AND journal_id NOT IN (?)', ' AND is_hidden != ? '), array($lesson_id, $sub_select, HM_Lesson_Journal_JournalModel::STATUS_HIDDEN_YES)));
+		$sub_select->group(array('lesson_id'));
+		$res = $select->query()->fetchObject();
+		return (int)$res->journal_id;
+	}
+	
+	
+	/**
+	 * отфильтровываем дни на +2 -2 от текущего
+	**/
+	public function getLimitedDayList($current_day, $dayList){
+		if(empty($current_day) || empty($dayList)){ return $dayList; }
+		
+		$allDaysKey = array_keys($dayList);
+		sort($allDaysKey);
+		
+		$newDayList = array();
+		
+		
+		
+		foreach($allDaysKey as $index => $day_id){
+			if($day_id == $current_day){				
+				for($i = 0; $i <=2; $i++){ # кол-во дней вперед. На сколько дней надо прокрутить					
+					$new_day_id = $allDaysKey[$index + $i];
+					if(isset($new_day_id)){												
+						$newDayList[$new_day_id] = $dayList[$new_day_id];						
+					}
+				}
+				
+				for($i = 0; $i <=2; $i++){ # кол-во дней вперед. На сколько дней надо прокрутить					
+					$new_day_id = $allDaysKey[$index - $i];
+					if(isset($new_day_id)){												
+						$newDayList[$new_day_id] = $dayList[$new_day_id];						
+					}
+				}
+			}			
+		}
+		ksort($newDayList);
+		return $newDayList;
+	}
+	
+	
+	/**
+	 * получаем id дня, который будет следеющим текущим при проилстывании вперед
+	*/
+	public function getNextCurrentDay($dayList, $dayListAll){
+		$allDaysKey =  array_keys($dayListAll); # id всех дней без фильтрации
+		sort($allDaysKey);
+		
+		$last_id 	= max(array_keys($dayList));
+		
+		foreach($allDaysKey as $index => $day_id){
+			if($day_id == $last_id){
+				
+				for($i = 2; $i > 0; $i--){ # кол-во дней вперед. На сколько дней надо прокрутить
+					
+					if(isset($allDaysKey[$index+$i])){
+						
+						return $allDaysKey[$index+$i];
+					}
+				}
+			}			
+		}
+		return false;		
+	}
+	
+	
+	/**
+	 * получаем id дня, который будет следеющим текущим при проилстывании вперед
+	*/
+	public function getPrevCurrentDay($dayList, $dayListAll){
+		$allDaysKey =  array_keys($dayListAll); # id всех дней без фильтрации
+		sort($allDaysKey);
+		
+		$first_id 	= min(array_keys($dayList));
+		
+		foreach($allDaysKey as $index => $day_id){
+			if($day_id == $first_id){				
+				for($i = 2; $i > 0; $i--){ # кол-во дней назад				
+					if(isset($allDaysKey[$index-$i])){
+						return $allDaysKey[$index-$i];
+					}
+				}
+			}			
+		}
+		return false;	
+	}
+
+	/**	
+	 * процент заполнения журнала
+	 * @return float OR false
+	 * если false - нет дней в занятии.
+	 * иначе - float - процент заполнения журнала. Если есть хотя бы у одного студента отметка - был в этот день, то засчитывается день заполненным. 
+	 * @param2 $total_days - кол-во дней в занятии, за каждый из которых нежно поставить явку или оценку. Изначально задается из данных в сессии. Если не задано, берется кол-во из текущих дней в данных журнала занятия.
+	 * @param3 tutor_id - кто выставил оценку первый раз.
+	*/
+	public function journalPercentComplete($lesson_id, $total_days = NULL, $tutor_id = NULL, $subject_id = NULL){		
+		if(empty($total_days)){
+			$total_days = count($this->getDayList($lesson_id));		
+			if(empty($total_days)){ return false; }
+		}
+		$this->serviceJResult = ($this->serviceJResult) ? $this->serviceJResult : $this->getService('LessonJournalResult');
+		
+		$select = $this->serviceJResult->getSelect();
+		$select->from(array('j' => 'schedule_journal_result'), array(
+				'journal_id',
+		));	
+		$select->join(array('s' => 'Students'), 's.MID = j.MID AND s.CID = '.intval($subject_id), array());
+
+		$select->where('lesson_id = ?', $lesson_id);
+		$select->where('isBe = ?', HM_Lesson_Journal_Result_ResultModel::IS_BE_YES);
+		
+		if(!empty($tutor_id)){
+			$select->where('author_id = ?', (int)$tutor_id);
+		}
+		
+		$select->group(array('journal_id'));
+		
+		$res 	 = $select->query()->fetchAll();
+		
+		if(empty($res)){ return 0; }		
+		$percent = round( count($res)*100/$total_days );
+		return ($percent > 100) ? 100 : $percent;				
+	}
+	
+	
+}

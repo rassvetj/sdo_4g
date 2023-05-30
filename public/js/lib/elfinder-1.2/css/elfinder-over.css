@@ -1,0 +1,42 @@
+.el-finder {
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+.el-finder-dialog.ui-dialog .ui-widget-content .el-finder,
+.el-finder-dialog.ui-dialog .ui-widget-content .el-finder a {
+	color: #333;
+}
+
+/*.el-finder-dialog.ui-dialog {
+    background-color: #FFFFFF !important;
+}
+.el-finder-dialog.ui-dialog .ui-widget-header,
+.el-finder-dialog.ui-dialog .ui-widget-header a, 
+.el-finder-dialog.ui-dialog .ui-widget-content, 
+.el-finder-dialog.ui-dialog .ui-widget-content a {
+    color: #000000 !important;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient {
+    background-color: #AAAAAA !important;
+    background-image: none !important;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-titlebar .ui-dialog-gradient div {
+    background-image: none !important;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-content {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-content-wrapper {
+    border-top: none !important;
+}
+.el-finder-dialog.ui-dialog .ui-dialog-buttonpane {
+    border-top: 1px solid #AAAAAA !important;
+}
+.el-finder-dialog .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #D3D3D3 !important;
+    color: #555555 !important;
+}
+.el-finder-dialog .ui-state-default .ui-icon {
+    background-image: url("../../../../css/jquery-ui/images/ui-icons_888888_256x240.png") !important;
+}*/

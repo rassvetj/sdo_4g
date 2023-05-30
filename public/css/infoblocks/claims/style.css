@@ -1,0 +1,22 @@
+#claimsBlock .ui-portlet-content p {
+    margin-top: 8px;
+}
+#claimsBlock .ui-portlet-content .claims-total {
+    font-weight: bold;
+}
+#claimsBlock .ui-portlet-content .claims-undone a {
+    font-weight: bold;
+    color: red;
+}
+#claimsBlock .export-button {
+    float: right;
+    padding: .4em !important;
+    margin: 4px 0;
+}
+#claimsBlock .export-button .button-icon {
+    width: 18px;
+    height: 17px;
+    display: block;
+    padding: 0;
+    background: transparent url(../../../images/infoblocks/_common/export.png) center center no-repeat;
+}

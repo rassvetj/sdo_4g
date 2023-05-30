@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+    <module name="Learning" remover="HM_Extension_Remover_LearningRemover" enable="true"/>
+    <module name="KnowledgeBase" remover="HM_Extension_Remover_KnowledgeBaseRemover" enable="true"/>
+    <module name="Orgstructure" remover="HM_Extension_Remover_OrgstructureRemover" enable="true"/>
+    <module name="Webinar" remover="HM_Extension_Remover_WebinarRemover" enable="true"/>
+</modules>

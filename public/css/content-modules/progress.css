@@ -1,0 +1,42 @@
+.progress_title {
+    margin-top:10px;
+    font-weight: bold; 
+    color: #3C416B; 
+    font-size:11px;
+    padding-left:20px;
+}
+div.progressbar_wrapper {
+    width: 400px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+div.progressbar
+{   
+    position: relative;
+    display: block;
+    height: 34px;
+	border: 1px solid #C5D0D7;
+    background: url(../../images/content-modules/bg_inner.gif) 0px 0px repeat;
+    padding:0px 1px 0px 1px;
+	border-radius: 2px;
+	-o-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;	
+}
+div.progressbar div
+{
+	background: url(../../images/content-modules/bg.gif) 0px 0px repeat;
+	height: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+

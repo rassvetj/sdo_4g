@@ -1,0 +1,79 @@
+<!-- "Begin Abitur Page" -->
+
+      <script language="JavaScript">
+           <!--
+             function SelectAll(mark,f_name) {
+                for (i = 0; i < document.forms[f_name].elements.length; i++)
+                    {
+                      var item = document.forms[f_name].elements[i];
+                      if (item.name == "arr_ch_mid_cid[]")  {
+                      item.checked = mark;
+                    };
+                                       } 
+                                                   }         
+//-->
+       </script>
+           <table border="0" cellspacing="0" cellpadding="0" height="100%" width="100%">
+                     <tr valign="top">
+                        <td width="100%" align="center">[HSTUD]</td>
+                     </tr>
+                     <tr valign="top">
+                        <td>
+                           <form action="[PATH]abitur.php4" method="POST" name="stud">
+                           <input type="hidden" name="CID" value="[CURCID]">
+                           <input type="hidden" name="cgid" value="[CGID]">
+                           <input type="hidden" name="c" value="stud">
+                           [FSESSID]
+                           <table width=100% class=main cellspacing=0>
+                           <tr>
+                              <th valign="top" width="5%" align="center">
+                              &nbsp;
+                              </th>
+                              <!--
+                              <th valign="top" width="15%" align="center" nowrap>{?t?}Курс{?/t?}  
+                              </th>
+                              <th valign="top" width="10%" align="center" nowrap>
+                              <a href="[PAGE]?[SESSID]assort=2&CID=[CURCID]&cgid=[CGID]">{?t?}Группа{?/t?}</a> [SORTIMG2]
+                              </th>
+                              -->
+                              <th valign="top" width="40%" align="center" nowrap>
+                              <a href="[PAGE]?[SESSID]assort=3&CID=[CURCID]&cgid=[CGID]">{?t?}ФИО{?/t?}</a> [SORTIMG3]
+                              </th>
+                              <th valign="top" width="40%" align="center" nowrap>
+                              {?t?}Логин{?/t?}
+                              </th>
+                              <!--th valign="top" width="15%" align="center">{?t?}Удалить{?/t?}
+                                  
+                              </th>
+                              <th valign="top" width="15%" align="center">{?t?}Закончить{?/t?}
+                                   <br>{?t?}обучение{?/t?}   
+                              </th>
+                              <th valign="top" width="15%" align="center"><center><input type="checkbox" title="{?t?}Отметить{?/t?}/{?t?}Снять все{?/t?}" onclick="SelectAll(checked,'stud')"></center></th>
+                              -->
+                           </tr>
+                                 [STUDENTS]
+<!--                           <tr>
+                                 <td align="right" valign="top" colspan="7" bgcolor="#FFFFFF">
+                                 <input type="hidden" name="hid_target" value="student">
+                                    <table  border="0" cellspacing="0" cellpadding="5" width=100%>
+                                      <tr>
+                                        <td nowrap width="100%" align="right" valign="top">
+                                        {?t?}Выполнить действие:{?/t?}&nbsp;
+                                        <select name="sel_action" onChange="javascript: cond=(this.value=='tocourse');if(cond) {putElem('sel_course');} else {removeElem('sel_course');}document.getElementById('sel_course_action').disabled=!cond">[STUDENTS-ACTIONS]
+                                            </select>    
+                                        </td>
+                                        <td nowrap class="hidden2" id="sel_course" valign="top"><select name='sel_course_action' id="sel_course_action" disabled>
+                                            [SELECT-COURSES-ACTION]
+                                        </select>                                       
+                                        </td>
+                                      </tr>
+                                    </table>
+                                 [OKBUTTON]</td>
+                           </tr>
+-->
+                           </table>
+                           </form>
+                        </td>
+                     </tr>
+                  </table>
+<!-- "End Abitur Page" -->

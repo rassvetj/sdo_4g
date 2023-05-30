@@ -1,0 +1,53 @@
+BODY,
+TD,
+a,
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px
+}
+
+TABLE.tab
+{
+    border-color: #5E5D5D;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+TABLE.tab TH,
+TABLE.tab TD
+{
+    border-color: #888888;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    vertical-align: top;
+  
+}
+
+table.tab TH
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    text-decoration:none;
+}
+
+
+
+br.break
+{
+	page-break-before:always;
+}
+
+span
+{
+  word-spasing: 20px;
+}

@@ -1,0 +1,3756 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eLearning Server 4g\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-18 13:28+0400\n"
+"PO-Revision-Date: 2013-07-12 15:35+0400\n"
+"Last-Translator: Lex Avramenko <lex@hypermethod.ru>\n"
+"Language-Team: Hypermethod IBS <office@learnware.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: ;_n_fake:1,2\n"
+"X-Poedit-Basepath: ../../poEdit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: en\n"
+"X-Generator: Poedit 1.5.5\n"
+
+msgid "Файл '%value%' имеет недопустимое расширение"
+msgstr "Datei '%value% ' hat unzulässige Erweiterung"
+
+msgid "нельзя пропускать вопросы, нельзя возвращаться назад"
+msgstr "Es ist nicht erlaubt Fragen zu überspringen und zurück gehen"
+
+msgid "Значение обязательно для заполнения и не может быть пустым"
+msgstr "Angabe des Werts ist obligatorisch und kann nicht Leer sein"
+
+msgid "Пожалуйста, авторизуйтесь"
+msgstr "Bitte autorisieren"
+
+msgid "Новая папка"
+msgstr "Neuer Ordner"
+
+msgid "Тема"
+msgstr "Thema"
+
+msgid "всего "
+msgstr "Insgesamt "
+
+msgid "Bремя не ограничено"
+msgstr "Zeit ist unbeschränkt"
+
+msgid "Вы не ответили на вопрос"
+msgstr "Sie haben die Frage nicht beantwortet"
+
+msgid "из %d возможных"
+msgstr "Aus %d Möglichen"
+
+msgid "час."
+msgstr "Std."
+
+msgid "в"
+msgstr "um"
+
+msgid "секунд"
+msgstr "Sekunde(n)"
+
+msgid "У вас нет соответствующего уровня доступа"
+msgstr "Sie haben keine entsprechenden Zugangsrechte"
+
+msgid "оценка за задание"
+msgstr "Bewertung für die Aufgabe"
+
+msgid "автоматическое формирование групп"
+msgstr "Automatische Gruppenbildung"
+
+msgid "штраф за несвоевременное выполнение занятия"
+msgstr "Strafe für nicht rechtzeitig gelöste Aufgabe"
+
+msgid "создать формулу"
+msgstr "Formel erstellen"
+
+msgid "Формула"
+msgstr "Formel"
+
+msgid "Область"
+msgstr "Gebiet"
+
+msgid "Редактировать формулу"
+msgstr "Formel bearbeiten"
+
+msgid "Вы действительно желаете удалить формулу?"
+msgstr "Wollen Sie die Formel wirklich löschen?"
+
+msgid "Удалить формулу"
+msgstr "Formel löschen"
+
+msgid "не создано ни одной формулы"
+msgstr "Keine Formeln erstellt"
+
+msgid "не создано ни одной глобальной формулы"
+msgstr "Keine globalen Formeln erstellt"
+
+msgid "Создание формулы"
+msgstr "Formelerstellung"
+
+msgid "Нет такой формулы"
+msgstr "Diese Formel existiert nicht"
+
+msgid "Редактирование формулы"
+msgstr "Formelbearbeitung"
+
+msgid "Плохо"
+msgstr "Schlecht"
+
+msgid "ЗАЧЕТ"
+msgstr "Bestanden"
+
+msgid "плохие"
+msgstr "schlechte"
+
+msgid "хорошие"
+msgstr "gute"
+
+msgid "Удовлетворительно"
+msgstr "Befriedigend"
+
+msgid "Отлично"
+msgstr "Ausgezeichnet"
+
+msgid "Блестяще"
+msgstr "Glänzend"
+
+msgid "вставить пример"
+msgstr "Beispiel einfügen"
+
+msgid "Выбор курса для редактирования формул"
+msgstr "Kursauswahl für die Formelbearbeitung"
+
+msgid "Выберите курс:"
+msgstr "Wählen Sie den Kurs aus:"
+
+msgid "Ничего не выбрано"
+msgstr "Sie haben nichts ausgewählt"
+
+msgid "нет прав перейти на чужой курс"
+msgstr "Sie haben keine Rechte an dem fremden Kurs teilzunehmen"
+
+msgid "дней до окончания"
+msgstr "Tage bis zum Abschluss"
+
+msgid "баллов"
+msgstr "Punkte"
+
+msgid "И"
+msgstr "UND"
+
+msgid "ЕСЛИ"
+msgstr "WENN"
+
+msgid "выполненого"
+msgstr "erledigt"
+
+msgid "суммарно набрано"
+msgstr "Gesamte Punktzahl"
+
+msgid "ср. оценка"
+msgstr "Durchschnittliche Bewertung"
+
+msgid "менее"
+msgstr "Weniger"
+
+msgid "более"
+msgstr "Mehr"
+
+msgid "ТО"
+msgstr "DANN"
+
+msgid "Инициализация"
+msgstr "Initialisierung"
+
+msgid "Нет файла данных"
+msgstr "Datei existiert nicht"
+
+msgid "Распаковка архива курса"
+msgstr "Entpacken des Kursarchivs"
+
+msgid "Обработка файлов курса"
+msgstr "Bearbeitung der Kursdateien"
+
+msgid "Нет файла структуры"
+msgstr "Strukturdatei existiert nicht"
+
+msgid "Ошибка копирования"
+msgstr "Fehler beim Kopieren"
+
+msgid "Ошибки в вопросах"
+msgstr "Fehler in den Fragen"
+
+msgid "Лог-файл"
+msgstr "Log-Datei"
+
+msgid "Данные успешно загружены"
+msgstr "Daten wurden erfolgreich geladen"
+
+msgid "Ошибка копирования данных"
+msgstr "Fehler beim Kopieren der Daten"
+
+msgid "Невозможно разархивировать файлы"
+msgstr "Es ist nicht möglich die Dateien zu entpacken"
+
+msgid "Данные успешно загружены."
+msgstr "Daten wurden erfolgreich geladen."
+
+msgid "Без названия"
+msgstr "Ohne Titel"
+
+msgid "Нет заголовка"
+msgstr "Fehlt Titel"
+
+msgid "Нет текста вопроса"
+msgstr "Fehlt Text in der Frage"
+
+msgid "Настройки успешно сохранены"
+msgstr "Einstellungen wurden erfolgreich gespeichert"
+
+msgid "Текстовое поле"
+msgstr "Textfeld"
+
+msgid "Почтовый адрес"
+msgstr "Postalische Adresse"
+
+msgid "Паспортные данные"
+msgstr "Passdaten"
+
+msgid "Дата рождения"
+msgstr "Geburtsdatumatum"
+
+msgid "Не указано название новой роли"
+msgstr "Titel der neuen Rolle nicht angegeben"
+
+msgid "Не выбраны базовые действия для роли"
+msgstr "Grundlegende Handlungen für die Rolle nicht ausgewählt"
+
+msgid "Не выбраны разрешенные действия для роли"
+msgstr "Zulässige Handlungen für die Rolle nicht ausgewählt"
+
+msgid "Шаг 1. Выбор базовой роли"
+msgstr "Schritt 1. Auswahl der grundlegenden Rolle"
+
+msgid "Шаг 2. Выбор функций"
+msgstr "Schritt 2. Auswahl der Funktionen"
+
+msgid "Шаг 3. Детализация функций"
+msgstr "Schritt 3. Detaillierung der Funktionen"
+
+msgid "На главную"
+msgstr "Home"
+
+msgid "введите часть имени или логина"
+msgstr "Geben Sie ein Teil des Namens oder des Logins ein"
+
+msgid "Ресурсы"
+msgstr "Ressourcen"
+
+msgid "Редактировать аудиторию"
+msgstr "Unterrichtsraum bearbeiten"
+
+msgid "Вы действительно желаете удалить аудиторию?"
+msgstr "Wollen Sie wirklich den Unterrichtsraum löschen?"
+
+msgid "Удалить аудиторию"
+msgstr "Unterrichtsraum löschen"
+
+msgid "нет данных для отображения"
+msgstr "Es gibt keine Daten für die Abbildung"
+
+msgid "Редактирование ресурса"
+msgstr "Bearbeitung der Ressource"
+
+msgid "Редактирование аудитории"
+msgstr "Bearbeitung des Unterrichtsraums"
+
+msgid "Вы не указали название аудитории"
+msgstr "Titel des Unterrichtsraums nicht angegeben"
+
+msgid "Введена некорректная вместимость аудитории"
+msgstr "Unkorrekte Kapazität des Unterrichtsraums angegeben"
+
+msgid ""
+"Введённая вместимость аудитории слишком мала (В аудиторию назеначено "
+"обучение большего числа слушателей: "
+msgstr ""
+"Angegebene Kapazität des Unterrichtsraums ist viel zu klein (dem "
+"Unterrichtsraum ist eine grüßere Teilnehmerzahl zugewiesen): "
+
+msgid "лекционная аудитория"
+msgstr "Vorlesungsraum"
+
+msgid "семинарская аудитория"
+msgstr "Seminarraum"
+
+msgid "учебный класс"
+msgstr "Unterrichtsraum"
+
+msgid "лаборатория"
+msgstr "Das Labor"
+
+msgid "рабочее помещение"
+msgstr "Der Arbeitsraum"
+
+msgid "недоступна"
+msgstr "Ist unzugänglich"
+
+msgid "доступна"
+msgstr "Ist zugänglich"
+
+msgid "только текст"
+msgstr "nur Text"
+
+msgid "HTML-файл"
+msgstr "HTML-Datei"
+
+msgid "документ Word"
+msgstr "WORD-Datei"
+
+msgid "документ Excel"
+msgstr "EXCEL-Datei"
+
+msgid "GIF картинка"
+msgstr "GIF Bild"
+
+msgid "JPG картинка"
+msgstr "JPG Bild"
+
+msgid "PNG картинка"
+msgstr "PNG Bild"
+
+msgid "BMP картинка"
+msgstr "BMP Bild"
+
+msgid "Flash-ролик"
+msgstr "Flash-Film"
+
+msgid "другие данные"
+msgstr "Andere Daten"
+
+msgid "сейчас идет"
+msgstr "Läuft"
+
+msgid "В данный момент тестирование еще не закончено"
+msgstr "Test ist noch nicht abgeschlossen"
+
+msgid "Тестирование успешно и полностью выполнено"
+msgstr "Test wurde erfolgreich abgeschlossen "
+
+msgid "Тестирование было брошено, учащийся покинул сервер и закрыл браузер"
+msgstr ""
+"Test wurde abgebrochen, der Teilnehmer hat den Server verlassen und den "
+"Browser geschlossen"
+
+msgid "Тестирование было превано по команде пользователя"
+msgstr "Test wurde abgebrochen auf Befehl des Teilnehmers"
+
+msgid "досрочно завершен"
+msgstr "vorzeitig beendet"
+
+msgid "Тестирование было досрочно завершено, не на все вопросы отвечено"
+msgstr "Test wurde vorzeitig beendet, alle Fragen wurden beantwortet"
+
+msgid ""
+"Тестирование было прервано из-за лимита времени, учащийся не успел ответить "
+"на все вопросы"
+msgstr ""
+"Test wurde wegen des Zeitlimits abgebrochen, Teilnehmer hat es nicht "
+"geschafft alle Fragen zu beantworten"
+
+msgid "неправильный вызов"
+msgstr "falscher Aufruf"
+
+msgid "неправильный вызов, массив"
+msgstr "falscher Aufruf, Massiv"
+
+msgid "не пуст"
+msgstr "ist nicht leer"
+
+msgid "ИМЯ:"
+msgstr "NAME:"
+
+msgid "РАЗМЕР:"
+msgstr "Größe:"
+
+msgid "байт"
+msgstr "Byte"
+
+msgid "Приложение"
+msgstr "Anwendung"
+
+msgid "открыть"
+msgstr "öffnen"
+
+msgid "Картинка"
+msgstr "Bild"
+
+msgid "Открыть это приложение в новом окне"
+msgstr "Diese Anwendung im neuen Fenster öffnen"
+
+msgid "Сохранить это приложение на ваш компьютер"
+msgstr "Diese Anwendung auf Ihrem Computer speichern"
+
+msgid "Такого теста нет"
+msgstr "Dieser Test existiert nicht"
+
+msgid "Курс:"
+msgstr "Kurs:"
+
+msgid "Занятие:"
+msgstr "Training:"
+
+msgid "Задание:"
+msgstr "Aufgabe:"
+
+msgid "Выбран вариант"
+msgstr "Variante ausgewählt"
+
+msgid "ВОПРОСОВ С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ:"
+msgstr "FRAGEN MIT DER PRÜFUNG VOM LEHRER:"
+
+msgid "Статистика ответов на вопрос"
+msgstr "Statistik der Antworten auf die Frage"
+
+msgid "вопрос"
+msgstr "Frage"
+
+msgid "всего ответов"
+msgstr "insgesamt Antworten"
+
+msgid "верных"
+msgstr "richtige"
+
+msgid "неверных"
+msgstr "falsche"
+
+msgid "ответы"
+msgstr "Antworten"
+
+msgid "по данному вопросу нет статистики (еще никто не отвечал)"
+msgstr "Es gibt keine Statistik zu dieser Frage (noch niemand antwortete)"
+
+msgid "список вопросов"
+msgstr "Liste der Fragen"
+
+msgid "код"
+msgstr "Code"
+
+msgid "тип"
+msgstr "Typ"
+
+msgid "изменен"
+msgstr "geändert"
+
+msgid "Команды"
+msgstr "Mannschaften"
+
+msgid "в это задание еще не включено ни одного вопроса!"
+msgstr "Zu dieser Aufgabe wurde noch keine Frage hinzugefügt!"
+
+msgid "Вопрос не найден в базе данных"
+msgstr "Frage wurde in der Datenbank nicht gefunden"
+
+msgid "выборка вопросов по коду вопроса"
+msgstr "Auswahl der Fragen nach dem Code der Frage"
+
+msgid "Выполнить задание"
+msgstr "Aufgabe erledigen"
+
+msgid ""
+"Извините, невозможно автоматически сгенерировать ни одного нового номера, т."
+"к. все они оказываются занятыми!"
+msgstr ""
+"Verzeihung, es ist nicht möglich eine neue Nummer automatisch zu erzeugen, "
+"da alle Nummern bereits besetzt sind!"
+
+msgid "Добавить вопрос"
+msgstr "Frage hinzufügen"
+
+msgid "Прикрепить файл"
+msgstr "Datei anhängen"
+
+msgid "Тип вопроса"
+msgstr "Typ der Frage"
+
+msgid "Экспорт вопросов"
+msgstr "Export der Fragen"
+
+msgid "Вопросы для контроля"
+msgstr "Fragen für die Kontrolle"
+
+msgid "---без темы---"
+msgstr "- - ohne Thema - -"
+
+msgid "--- все ---"
+msgstr "Alle"
+
+msgid "ошибочная ссылка"
+msgstr "falscher Link"
+
+msgid ""
+"В данный момент вы не проходите тестирование и не можете использовать файлы "
+"тестов."
+msgstr ""
+"Sie führen gerade keinen Test aus und können keine Testdateien verwenden."
+
+msgid ""
+"Этот вопрос не находится в списке вопросов, которые вы должны пройти за "
+"сеанс работы"
+msgstr ""
+"Diese Frage befindet sich nicht in der Liste der Fragen, die Sie für die "
+"Arbeitssitzung durchgehen sollten"
+
+msgid "Этот файл не найден"
+msgstr "Diese Datei wurde nicht gefunden"
+
+msgid "Запуск"
+msgstr "Start"
+
+msgid "завершение"
+msgstr "Herunterfahren"
+
+msgid "Сеанс не завершен."
+msgstr "Sitzung nicht beendet."
+
+msgid ""
+"Пожалуйста, поставьте галочку в checkbox для подтверждения ознакомления с "
+"результатми и еще раз нажмите на кнопку"
+msgstr ""
+"Setzen Sie bitte ein Haken in die checkbox für die Bestätigung der "
+"Ergebnisse und drücken Sie noch mal auf die Taste"
+
+msgid "Сеанс завершен. Спасибо за уделенное время!"
+msgstr "Sitzung ist beendet. Danke für die Teilnahme!"
+
+msgid "Выполнение задания завершено!"
+msgstr "Ausführen der Aufgabe beendet!"
+
+msgid "макс.балл"
+msgstr "max. Punktzahl"
+
+msgid "мин.балл"
+msgstr "min. Punktzahl"
+
+msgid "Все вопросы курса"
+msgstr "Alle Fragen des Kurses"
+
+msgid "внешняя программа"
+msgstr "externes Programm"
+
+msgid "табличный ввод"
+msgstr "tabellarische Einführung"
+
+msgid "Все вопросы по курсу"
+msgstr "Alle Fragen zum Kurs"
+
+msgid "Текущий курс"
+msgstr "Laufender Kurs"
+
+msgid "Импорт вопросов из текстового файла"
+msgstr "Import der Fragen aus der Textdatei"
+
+msgid "Текущее задание"
+msgstr "Laufende Aufgabe"
+
+msgid "Выделить/убрать все"
+msgstr "Alles markieren / entfernen"
+
+msgid "сортировка по кодам вопросов"
+msgstr "Sortierung nach Fragencodes"
+
+msgid "сортировка по типам вопросов"
+msgstr "Sortierung nach Fragentypen"
+
+msgid "сортировка по теме"
+msgstr "Sortierung nach Thema"
+
+msgid "Мин"
+msgstr "Min"
+
+msgid "сортировка по минимальному балу за вопрос"
+msgstr "Sortierung nach minimaler Punktzahl für die Frage"
+
+msgid "Макс"
+msgstr "Max"
+
+msgid "сортировка по максимальному балу за вопрос"
+msgstr "Sortierung nach maximaler Punktzahl für die Frage"
+
+msgid "Не найдено ни одного вопроса"
+msgstr "Keine Fragen gefunden"
+
+msgid "Открыть вопрос"
+msgstr "Frage öffnen"
+
+msgid "Редактировать вопрос"
+msgstr "Frage bearbeiten"
+
+msgid ""
+"Вы действительно желаете удалить вопрос?\\nПосле удаления вопрос нельзя "
+"будет восстановить."
+msgstr ""
+"Wollen Sie wirklich Frage entfernen? \\Nach der Entfernungen kann man die "
+"Frage nicht wiederherstellen."
+
+msgid "Экспортировать"
+msgstr "Exportieren"
+
+msgid "Добавить в задание"
+msgstr "Zur Aufgabe hinzufügen"
+
+msgid "Добавить в курс"
+msgstr "Zum Kurs hinzufügen"
+
+msgid "Страницы:"
+msgstr "Seiten:"
+
+msgid "Вопросов на страницу:"
+msgstr "Fragen pro Seite:"
+
+msgid "Фильтр времени:"
+msgstr "Zeitfilter:"
+
+msgid "изменить"
+msgstr "ändern"
+
+msgid "сбросить"
+msgstr "zurücksetzen"
+
+msgid "Фильтр кода"
+msgstr "Filter des Codes"
+
+msgid "не задан."
+msgstr "nicht angegeben."
+
+msgid "ЗАДАН:"
+msgstr "ANGEGEBEN:"
+
+msgid "шт"
+msgstr "St."
+
+msgid "Режим редактирования:"
+msgstr "Modus der Bearbeitung:"
+
+msgid "базовый"
+msgstr "Basis-"
+
+msgid "расширенный"
+msgstr "Erweitert"
+
+msgid "только для опытных пользователей!"
+msgstr "Nur für die erfahrenen Benutzer!"
+
+msgid ""
+"Вы не передали вопросы, которые хотите экспортировать. Вернитесь назад и "
+"отметьте необходимые для экспорта вопросы."
+msgstr ""
+"Sie haben die Fragen für Export nicht eingegeben. Gehen Sie zurück und "
+"markieren die für den Export notwendigen Fragen."
+
+msgid "Экспортирование выбранных вопросов"
+msgstr "Exportieren der ausgewählten Fragen"
+
+msgid "Ничего не было отмечено для удаления"
+msgstr "Für die Entfernung wurde nichts markiert"
+
+msgid "Действительно удалить вопросы?"
+msgstr "Wollen Sie wirklich die Fragen löschen?"
+
+msgid "Удалить вопросы"
+msgstr "Fragen löschen"
+
+msgid "шт."
+msgstr "St."
+
+msgid "Не удалять"
+msgstr "Nicht löschen"
+
+msgid "Вы действительно желаете удалить"
+msgstr "Wollen Sie wirklich löschen"
+
+msgid "вопросов?"
+msgstr "Fragen?"
+
+msgid "Чтобы отказаться нажмите"
+msgstr "Um zu verzichten drücken Sie"
+
+msgid "здесь"
+msgstr "Hier"
+
+msgid "Не выбрано задание для добавления помеченных галочками вопросов."
+msgstr "Aufgabe für das Hinzufügen markierten Fragen wurde nicht ausgewählt."
+
+msgid ""
+"Ничего не было отмечено для добавления к заданию. Отметьте любое кол-во "
+"вопросов, еще раз нажмите кнопку ДОБАВИТЬ, и все помеченные галочками "
+"вопросы будут добавлены в выбранное задание."
+msgstr ""
+"Für das Hinzufügen ist nichts ausgewählt. Markieren Sie beliebige Fragenzahl "
+"und drucken Sie noch mal die Taste HINZUFÜGEN. "
+
+msgid "Такого теста не существует, либо вы не владеете его курсом"
+msgstr ""
+"DIESER TEST existiert nicht oder Sie besitzen keine Rechte für den Kurs"
+
+msgid "не был добавлен"
+msgstr "Nicht hinzugefügt"
+
+msgid "Вопросы добавлены успешно"
+msgstr "Fragen wurden erfolgreich hinzugefügt"
+
+msgid "Не выбран курс для добавления помеченных галочками вопросов."
+msgstr "Wählen Sie einen Kurs für das Hinzufügen von markierten Fragen."
+
+msgid "Отсутствуют права доступа к курсу"
+msgstr "Sie besitzen keine Zugriffsrechte für den Kurs"
+
+msgid "Такого курса не существует"
+msgstr "Dieser Kurs existiert nicht"
+
+msgid "Такого теста не существует"
+msgstr "Dieser Test existiert nicht"
+
+msgid "Редактирование вопроса(ов)"
+msgstr "Bearbeitung der Frage"
+
+msgid ""
+"Не отмечен ни один из вопросов для редактирования. Отметьте галочками один "
+"или несколько вопросов, нажмите кнопку РЕДАКТИРОВАТЬ, и откроется страница "
+"для редактирования всех помеченных вопросов."
+msgstr ""
+"Für die Bearbeitung wurden keine Fragen markiert. Markieren Sie mit dem "
+"Haken eine oder mehreren Fragen und drücken anschlissend die Taste "
+"'bearbeiten'. Es soll sich eine neue Seite für Bearbeitung aller markierten "
+"Fragen öffnen."
+
+msgid "пропущен, код ошибочен."
+msgstr "Nicht gefunden, falscher Code."
+
+msgid "пропущен, его не существует в базе данных."
+msgstr "Nicht gefunden, existiert nicht in der Datenbank."
+
+msgid "не найден в базе данных"
+msgstr "Nicht gefunden in der Datenbank"
+
+msgid "Не удалось скопировать файл, нет прав записи в"
+msgstr ""
+"Datei konnte nicht kopiert werden, es fehlen Rechte für das Speichern in"
+
+msgid "Вопрос добавлен успешно"
+msgstr "Frage wurde erfolgreich hinzugefügt"
+
+msgid "Вопрос сохранен в общей базе вопросов по курсу и добавлен в задание"
+msgstr ""
+"Frage wurde in der allgemeinen Fragen-Datenbank gespeichert und zur Aufgabe "
+"hinzugefügt"
+
+msgid "Хотите добавить ещё вопрос?"
+msgstr "Wollen Sie noch eine Frage hinzufügen?"
+
+msgid "Вопрос успешно сохранен"
+msgstr "Frage wurde erfolgreich gespeichert"
+
+msgid "Вопрос сохранен в общей базе вопросов по курсу"
+msgstr "Frage wurde in der allgemeinen Fragen-Datenbank gespeichert "
+
+msgid "Выбран некорректный номер курса"
+msgstr "Ausgewählte Kursnummer ist fehlerhaft"
+
+msgid "Ограничение времени при просмотре вопросов"
+msgstr "Zeitlimit für die Durchsicht der Fragen"
+
+msgid "назад"
+msgstr "Rückwärts"
+
+msgid "Быстрый выбор:"
+msgstr "Schnelle Auswahl:"
+
+msgid "Снять ограничение по дате"
+msgstr "Beschränkung nach dem Datum aufheben"
+
+msgid "За последний час"
+msgstr "In der letzten Stunde"
+
+msgid "За последний день"
+msgstr "Am letzten Tag"
+
+msgid "За последнюю неделю"
+msgstr "In der letzten Woche"
+
+msgid "За последний месяц"
+msgstr "Im letzten Monat"
+
+msgid "Произвольный выбор времени"
+msgstr "Freie Zeitauswahl"
+
+msgid "Установить"
+msgstr "Einstellen"
+
+msgid "Фильтр кодов при просмотре вопросов"
+msgstr "Codes-Filter bei der Durchsicht der Fragen"
+
+msgid ""
+"Впишите список масок кодов или конкретные коды вопросы, на которые\n"
+"   вы хотите поставить фильтр. Тогда в окне просмотра вопросов будут\n"
+"   только эти описанные вопросы. Для составления масок используйте"
+msgstr ""
+"Schreiben Sie die Liste der Codes-Masken oder die konkreten Codes für die "
+"mit dem Filter vorgesehenen Fragen ein. Dann werden im Fenster der "
+"Durchsicht der Fragen nur diese beschriebenen Fragen \n"
+" erscheinen. Für die Zusammenstellung der Masken verwenden Sie"
+
+msgid "Маски отделяйте друг от друга пробелами или новыми строчками."
+msgstr ""
+"Masken sollenden mitden Leerzeichen oder den neuen Zeilen von einander "
+"getrennen werden."
+
+msgid "Установить новый фильтр"
+msgstr "Neuen Filter einstellen"
+
+msgid "Выбор другого курса для редактирования вопросов"
+msgstr "Auswahl eines anderen Kurses für die Bearbeitung der Fragen"
+
+msgid "Выберите другой курс:"
+msgstr "Wählen Sie anderen Kurs aus:"
+
+msgid "не удален, вы не владеете этим курсом"
+msgstr "Nicht gelöscht, Sie besitzen keine Rechte für diesen Kurs "
+
+msgid "Вопрос %s не удалён. У вас не хватает привилегий"
+msgstr "Frage %s wurde nicht gelöscht. Es fehlen Rechte"
+
+msgid "Вернуться ко всем вопросам"
+msgstr "Zurück zu allen Fragen "
+
+msgid ""
+"Выбран недопустимый код вопроса. Вопрос должен начатся с номера курса и\n"
+"         символа тире (минус). После номера и тире допишите необходимые "
+"символы в код\n"
+"         вороса. Например, можно придумать такой код:"
+msgstr ""
+"Es sind die unzulässigen Code der Frage ausgewählt. Die Frage soll ist mit "
+"der Nummer des Kurses и\n"
+" das Symbol des Bindestriches (das Minus) angefangen. Nach der Nummer und "
+"den Bindestrich schreiben Sie die notwendigen Symbole in den Kode \n"
+" вороса fertig. Zum Beispiel, man kann solche Code erdenken:"
+
+msgid ""
+"Код вопроса должен состоять только из анлийских букв (большие\n"
+"         и маленькие буквы различаются), цифр, символов 'тире' (минус) и "
+"'подчеркивание'."
+msgstr ""
+"Für den Fragecode sind folgende Zeichen zulässig: kleine und große "
+"Buchstaben, Zahlen, Symbole(Bindestrich und Unterstrich)."
+
+msgid "К сожалению, вопрос с кодом"
+msgstr "Diese Frage hat einen Code "
+
+msgid ""
+"уже существует в база данных.\n"
+"         Если вы хотите изменить этот вопрос - воспользуйтесь "
+"редактированием вопросов.\n"
+"         Чтобы создать вопрос, придумайте любой другой код."
+msgstr ""
+"existiert bereits in der Datenbank. Wenn Sie diese Frage ändern wollen - "
+"verwenden Sie die Bearbeitung der Fragen. Um eine neue Frage zu erstellen, "
+"erzeugen Sie anderen Code."
+
+msgid ""
+"Вы ввели слишком длинную тему. Максимальная длина 255 символов. Тема "
+"укорочена до этой границы."
+msgstr ""
+"Das Thema ist viel zu lang. Die maximale zulässige Länge darf 255 Symbole "
+"nicht überschreiten. Das Thema ist bis zu dieser Grenze verkürzt."
+
+msgid "Выбор модуля"
+msgstr "Auswahl des Modules"
+
+msgid "Найдите нужный файл и ссылка на него будет вставлена автоматически"
+msgstr ""
+"Finden Sie die nötige Datei und der entsprechende Link wird automatisch "
+"eingefügt"
+
+msgid "Ошибка в программе: нет данных о струкруре типа вопроса"
+msgstr ""
+"Fehler im Programm: es gibt keine Daten über die Struktur dieses Fragetyps"
+
+msgid "Показать форму редактирования для вопроса"
+msgstr "Form für die Bearbeitung der Frage zeigen"
+
+msgid "невозможно."
+msgstr "nicht möglich."
+
+msgid "Редактирование вопроса"
+msgstr "Bearbeitung der Frage"
+
+msgid "Редактирование варианта задания"
+msgstr "Bearbeitung der Aufgabenvariante"
+
+msgid "Формулировка вопроса:"
+msgstr "Formulierung der Frage:"
+
+msgid "Формулировка варианта задания:"
+msgstr "Formulierung der Variante der Aufgabe:"
+
+msgid "Время на ответ (в мин.):"
+msgstr "Zeit für die Antwort (in Min.):"
+
+msgid "Время на решение (в мин.):"
+msgstr "Zeit für die Lösung (in Min.):"
+
+msgid "без ограничения"
+msgstr "Ohne Beschränkung"
+
+msgid "Ссылка"
+msgstr "Link"
+
+msgid "Обзор"
+msgstr "Übersicht"
+
+msgid "с весами ответа"
+msgstr "Mit der Waage der Antwort"
+
+msgid "с правильным ответом"
+msgstr "Mit der richtigen Antwort"
+
+msgid "Диапазон баллов:"
+msgstr "Punktebereich:"
+
+msgid "автоподсчет"
+msgstr "Autozählung"
+
+msgid "Перемешивать ответы на вопрос"
+msgstr "Antworten auf die Frage vermischen"
+
+msgid "предварительный просмотр"
+msgstr "vorläufige Durchsicht"
+
+msgid "Варианты ответов на вопрос"
+msgstr "Varianten der Antworten auf die Frage"
+
+msgid "Строка параметров вызова программы-тренажера"
+msgstr "Zeile der Parameter für den Aufruf des Simulators"
+
+msgid "Используйте синтаксис"
+msgstr "Verwenden Sie die Syntax"
+
+msgid "для задания идентификатора пользователя"
+msgstr "Für die Aufgabe des Benutzeridentifizierers"
+
+msgid "Номер"
+msgstr "Nummer"
+
+msgid "варианта"
+msgstr "der Variante"
+
+msgid "Вес ответа"
+msgstr "Gewicht der Antwort"
+
+msgid "Вкл./выкл."
+msgstr "An/Aus"
+
+msgid "вариант"
+msgstr "Variante"
+
+msgid "Присоединенные файлы"
+msgstr "Angehängte Dateien"
+
+msgid "Имя файла"
+msgstr "Dateiname"
+
+msgid "Размер"
+msgstr "Größe"
+
+msgid "Изменен"
+msgstr "geändert"
+
+msgid "карту"
+msgstr "Karte"
+
+msgid "области"
+msgstr "Gebiete"
+
+msgid "Действительно удалить файл из вопроса?"
+msgstr "Wollen Sie wirklich die Datei aus der Frage löschen?"
+
+msgid "Программа-тренажер"
+msgstr "Simulator"
+
+msgid "Выбрано:"
+msgstr "Ausgewählt:"
+
+msgid "Внимание!"
+msgstr "Achtung!"
+
+msgid ""
+"Программа-тренажер должна быть установлена в эту директорию на каждом "
+"клиентском компьютере."
+msgstr ""
+"Simulator soll in diesem Verzeichnis auf jedem Kundencomputer eingestellt "
+"werden."
+
+msgid "Статистика и отчеты"
+msgstr "Statistik und Berichte"
+
+msgid "Информация по логину учащегося:"
+msgstr "Information über das Login des Teilnehmers:"
+
+msgid "Результаты всех тестов"
+msgstr "Ergebnisse aller Tests"
+
+msgid "Детальный отчет о сеансах тестирования:"
+msgstr "Ausführlicher Bericht über die Testing- Sitzungen:"
+
+msgid "сеанса"
+msgstr "der Sitzung"
+
+msgid "Отчет доступен только преподавателю."
+msgstr "Bericht ist nur dem Lehrer zugänglich."
+
+msgid "Найти номер сеанса проще в первых 2-х отчетах выше."
+msgstr ""
+"Es ist einfacher die Nummer der Sitzung in den ersten 2 Berichten höher zu "
+"finden."
+
+msgid "Статистика тестирования и ответов на вопросы очищена"
+msgstr ""
+"Statistik des Testings und der Antworten auf die Fragen wurde bereinigt"
+
+msgid ""
+"Извините, такого пользователя не зарегистрировано. Введите логин "
+"существующего пользователя."
+msgstr ""
+"Verzeichung, die angegebenen Benutzerdaten exestieren nicht. Geben Sie die "
+"Login-Daten des existierenden Benutzers ein."
+
+msgid "Информация о пользователе:"
+msgstr "Benutzer-Informationen:"
+
+msgid "к началу статистики"
+msgstr "zum Anfang der Statistik"
+
+msgid "Номер сеанса"
+msgstr "Sitzungnummer"
+
+msgid "Баллов"
+msgstr "Punktebereich:"
+
+msgid "Мин/Макс балл"
+msgstr "Min/Max Punktzahl"
+
+msgid "Мин/Макс балл с учетом проверяемых вопросов"
+msgstr "Min/Max unter Berücksichtigung geprüften Fragen"
+
+msgid "Продолж."
+msgstr "Fortsetzen"
+
+msgid "Проверка"
+msgstr "Prüfung"
+
+msgid "Смотреть отчет:"
+msgstr "Bericht ansehen:"
+
+msgid "Проверен:"
+msgstr "Geprüft:"
+
+msgid "идет тестирование"
+msgstr "Test läuft"
+
+msgid "прерван по команде"
+msgstr "unterbrochen auf Befehl"
+
+msgid "прерван лимитом времени"
+msgstr "unterbrochen, da Zeitlimit abgelaufen ist "
+
+msgid "Ошибочный номер курса"
+msgstr "Falsche Kursnummer"
+
+msgid "Выставление оценок за задания"
+msgstr "Punktevergabe für die Aufgaben"
+
+msgid "Выставление оценок за задание"
+msgstr "Punktevergabe für die Aufgaben"
+
+msgid "К началу статистики и отчетов"
+msgstr "Zum Anfang der Statistik und der Berichte"
+
+msgid "ФИО, отчет"
+msgstr "Name, Vorname, Bericht"
+
+msgid "Вопросов Ответил"
+msgstr "Fragen / Beantwortet"
+
+msgid "затрачено"
+msgstr "aufgewendet"
+
+msgid "Проверка препода"
+msgstr "Prüfung vom Lehrer"
+
+msgid "вателем"
+msgstr "вателем"
+
+msgid "Очистить статистику тестирования %s %s %s %s?"
+msgstr "Teststatistik bereinigen %s %s %s %s? "
+
+msgid "по курсу "
+msgstr "für den Kurs "
+
+msgid "по всем курсам"
+msgstr "für alle Kursen"
+
+msgid "по заданию "
+msgstr "für die Aufgabe "
+
+msgid "по всем заданиям"
+msgstr "für alle Aufgaben"
+
+msgid "по пользователю "
+msgstr "für den Benutzer "
+
+msgid "по всем пользователям"
+msgstr "für alle Benutzer"
+
+msgid "по дате прохождения заданий в период"
+msgstr "für den Zeitraum der Tests "
+
+msgid "с "
+msgstr "von"
+
+msgid "по "
+msgstr "bis"
+
+msgid "по всем датам прохождения заданий"
+msgstr "für den gesamten Zeitraum der Tests"
+
+msgid "Статистика о пройденных заданиях"
+msgstr "Statistik über die ausgeführten Aufgaben"
+
+msgid "Статистика тестирований"
+msgstr "Statistik der Tests"
+
+msgid "Любой курс"
+msgstr "Beliebiger Kurs"
+
+msgid "Обучаемый:"
+msgstr "Teilnehmer:"
+
+msgid "Фильтр пользователей"
+msgstr "Filter der Benutzer"
+
+msgid "Дата прохождения с"
+msgstr "Ausführungsdatum von"
+
+msgid "Дата прохождения по"
+msgstr "Ausführungsdatum bis"
+
+msgid "Проверка препода-<br>вателем"
+msgstr "Prüfung vom Lehrer"
+
+msgid "Открыть краткий отчет"
+msgstr "Kurzbericht öffnen"
+
+msgid "Открыть подробный отчет"
+msgstr "Detailbericht öffnen"
+
+msgid ""
+"Минимальный и максимальный возможный балл, без учета модерируемых вопросов. "
+"На второй стоке: минимальный и максимальный возможный балл, c учетом "
+"модерируемых преподавателями вопросов. Из-за того, что модерируемые вопросы "
+"проверяются не сразу, максимальный бал после проверки может быть больше."
+msgstr ""
+"Minimale und maximale Punktzahl ohne Berücksichtigung der moderierten "
+"Fragen. In der zweiten Zeile: minimale und maximale Punktzahl mit "
+"Berücksichtigung der von Lehrern moderierten Fragen. Da die Fragen nicht "
+"gleich geprüft werden, kann die maximale Punktzahl nach der Prüfung höher "
+"sein."
+
+msgid "Отчет о сеансе тестирования"
+msgstr "Bericht über den Test"
+
+msgid "Доступ к этой странице имеют только:"
+msgstr "Zugang zu dieser Seite haben nur:"
+
+msgid "Преподаватели (в пределах своего курса)"
+msgstr "Lehrer (innerhalb des Kurses)"
+
+msgid "Деканы"
+msgstr "Deans"
+
+msgid ""
+"Здесь размещается закрытая информация - правильные ответы и\n"
+"      отчеты по каждому вопросу."
+msgstr ""
+"Hier befindet sich geschlossene Information - richtige Antworten und\n"
+" Berichte über jede Frage."
+
+msgid "Такого сеанса не существует:"
+msgstr "Diese Sitzung existiert nicht:"
+
+msgid "курс:"
+msgstr "Kurs:"
+
+msgid "ФИО:"
+msgstr "NAME, VORNAME:"
+
+msgid "адрес:"
+msgstr "Adresse:"
+
+msgid "начало сеанса:"
+msgstr "Sitzungsstart:"
+
+msgid "набрано баллов:"
+msgstr "erreichte Punktzahl:"
+
+msgid "минимально возможное:"
+msgstr "Minimal möglich:"
+
+msgid "максимально возможное:"
+msgstr "Maximal möglich:"
+
+msgid "ответил на вопросы:"
+msgstr "beantworteten Fragen:"
+
+msgid "всего вопросов:"
+msgstr "insgesamt Fragen:"
+
+msgid "завершение сеанса:"
+msgstr "Sitzungende:"
+
+msgid "длительность:"
+msgstr "Dauer:"
+
+msgid "Это задание, требующее проверки преподавателем."
+msgstr "Diese Aufgabe erfordet Prüfung vom Lehrer."
+
+msgid "Сеанс еще не проверен преподавателем."
+msgstr "Sitzung wurde noch nicht vom Lehrer geprüft."
+
+msgid "Проверен преподавателем:"
+msgstr "Geprüft vom Lehrer:"
+
+msgid ""
+"Неизвестный статус завершенности тестирования! Необходимо добавить описание."
+msgstr "Unbekannter Status des Tests! Beschreibung muss ergänzt werden."
+
+msgid "Правильность ответа:"
+msgstr "Richtigkeit der Antwort:"
+
+msgid "Набрано баллов:"
+msgstr "Erreichte Punktzahl:"
+
+msgid "диапазон: от"
+msgstr "Punktebereich: von"
+
+msgid "Ответ был получен:"
+msgstr "Antwort wurde angegeben:"
+
+msgid "ВОПРОС С ПРОВЕРКОЙ ПРЕПОДАВАТЕЛЕМ"
+msgstr "FRAGE MIT DER PRÜFUNG VOM LEHRER"
+
+msgid "Ошибка в ответе:"
+msgstr "Fehler in der Antwort:"
+
+msgid "Анализ ответов"
+msgstr "Analyse der Antworten"
+
+msgid "Что выбрал тестируемый при ответе"
+msgstr "Was hat der Teilnehmer bei der Antwort ausgewählt"
+
+msgid "Правильно ли это"
+msgstr "Ist das richtig "
+
+msgid "Протокол выполнения:"
+msgstr "Protokoll des Ausführens:"
+
+msgid "Начал:"
+msgstr "Start:"
+
+msgid "Закончил:"
+msgstr "Ende:"
+
+msgid "Длительность:"
+msgstr "Dauer:"
+
+msgid "Задано"
+msgstr "Fragen gestellt, Fragen beantwortet"
+
+msgid "вопросов, отвечено на"
+msgstr "вопросов, отвечено на"
+
+msgid "Вопрос:"
+msgstr "Frage:"
+
+msgid "не оценивается"
+msgstr "Wird nicht bewertet"
+
+msgid "балл."
+msgstr "Punkt(e)."
+
+msgid "Ответ:"
+msgstr "Antwort:"
+
+msgid "Ошибка:"
+msgstr "Fehler:"
+
+msgid "Верно"
+msgstr "Richtig"
+
+msgid "Неверно"
+msgstr "Falsch"
+
+msgid "Текст ответа:"
+msgstr "Text der Antwort:"
+
+msgid "скачать файл"
+msgstr "Datei herunterzuladen"
+
+msgid "Комментарий преподавателя:"
+msgstr "Kommentar des Lehrers:"
+
+msgid "Скачать рецензию преподавателя:"
+msgstr "Rezension des Lehrers herunterzuladen:"
+
+msgid ""
+"К этой странице могут обратится только: преподаватель,  представитель "
+"учебной администрации, администратор"
+msgstr ""
+"Diese Seite können nur folgende Personen ansehen: Lehrer, Vertreter der "
+"Lehrverwaltung, Administrator"
+
+msgid "Хоть вы и преподаватель, но в данное время не владеете ни одним курсом."
+msgstr "Sie sind zwar ein Lehrer aber im Moment haben Sie keine Kurse."
+
+msgid "нет прав редактировать данный вопрос"
+msgstr "Sie besitzen keine Rechte, für Bearbeitung dieser Fragen"
+
+msgid "загрузка..."
+msgstr "Ladevorgang läuft"
+
+msgid "Редактирование карты на картинке"
+msgstr "Bearbeitung der Karte auf dem Bild"
+
+msgid "такого вопроса нет"
+msgstr "Diese Frage existiert nicht"
+
+msgid ""
+"к этому вопросу должна прилагаться картинка.\n"
+"      Сейчас ее нет - редактировать карту картинки невозможно"
+msgstr ""
+"Diese Frage soll ein Bild beinhalten. Das Bild fehlt - es ist nicht möglich "
+"die Karte des Bildes zu bearbeiten"
+
+msgid "Укажите области для вариантов:"
+msgstr "Geben Sie die Gebiete für die Varianten ein:"
+
+msgid "Вставить прямоугольник (требует 4 координаты: x1:y1 и x2:y2)"
+msgstr "Rechteck einfügen (erfordert 4 Koordinaten: x1:y1 und x2:y2)"
+
+msgid ""
+"Вставить полигон (требует набор пар координат: x1:y1, x2:y2, x3:y3, ...)"
+msgstr ""
+"Ort einfügen (erfordert die ZUsammenstellung von Koordinaten: x1:y1, x2:y2, "
+"x3:y3...)"
+
+msgid "Вставить круг (требует координаты ценрта и радиус: x:y и radius)"
+msgstr ""
+"Kreis einfügen (erfordert die Koordinate des Zentrums und des Radius: x:y "
+"und radius)"
+
+msgid "Щелчок (click) на изображении - выбор области, соотвествующей варианту"
+msgstr "Klick auf dem Bild - Auswahl des Gebietes entspricht der Variante"
+
+msgid ""
+"Двойной щелчок (double click) на изображении - вставка координат в строку "
+"ввода"
+msgstr ""
+"Doppelklick auf dem Bild - Einfügen der Koordinaten in die Eigabe-Zeile "
+
+msgid "Проверка Заданий"
+msgstr "Prüfung der Aufgaben"
+
+msgid "нет ни одного вопроса на проверку"
+msgstr "Es gibt keine Fragen für die Prüfung"
+
+msgid "Выполнить действие:"
+msgstr "Aktion ausführen:"
+
+msgid "---"
+msgstr "---"
+
+msgid "сохранить результаты"
+msgstr "Ergebnisse speichern"
+
+msgid "удалить обработанные вопросы"
+msgstr "bearbeiteten Fragen löschen"
+
+msgid "удалить выделенные вопросы"
+msgstr "markierten Fragen löschen"
+
+msgid ""
+"Вы действительно желаете сохранить результаты? При этом произойдет "
+"перерасчет общего балла за задание и оценки за занятие (в случае, если "
+"занятие оценивается по формуле). Если занятие предусматривает штраф за "
+"несвоевремменную сдачу, величина штрафа будет также расчитана заново. Будут "
+"обработаны только полностью проверенные сеансы выполнения данного задания. "
+"Продолжить?"
+msgstr ""
+"Wollen Sie wirklich Ergebnisse speichern? Dabei wird die Neuberechnung des "
+"Gesamtergebnisses des Training ausgeführt (falls Berechnung nach der Formel "
+"passiert). Wenn das Training die Strafe für verspätete Abgabe vorsieht, wird "
+"die Größe der Strafe auch angerechnet. Fortzusetzen?"
+
+msgid ""
+"Вы действительно удалить обработанные вопросы? После этой операции тексты "
+"ответов и прикрепленные к ним файлы будут удалены. Продолжить?"
+msgstr ""
+"Wollen Sie wirklich die bearbeiteten Fragen löschen? Nach dieser Operation "
+"werden Texte der Antworten und die angehängten Dateien gelöscht. Fortsetzen?"
+
+msgid "сеанс"
+msgstr "Sitzung"
+
+msgid "Проверка вопросов со свободным ответом"
+msgstr "Prüfung der Fragen mit der freien Antwort"
+
+msgid "Больше вопросов для проверки нет."
+msgstr "Es gibt keine Fragen für die Prüfung."
+
+msgid "Вы не можете обращаться к временным вопросам чужих курсов"
+msgstr "Sie können die Fragen aus den fremden Kurse nicht benutzen"
+
+msgid "Оценка отложенных на проверку ответов"
+msgstr "Bewertung der zu prüfenden Fragen "
+
+msgid "к началу проверки"
+msgstr "um Anfang der Prüfung"
+
+msgid "Код вопроса:"
+msgstr "Code der Frage:"
+
+msgid "Дан ответ:"
+msgstr "Gegebene Antwort:"
+
+msgid "Студент:"
+msgstr "Teilnehmer:"
+
+msgid "сеанса:"
+msgstr "der Sitzung:"
+
+msgid "Полученный ответ"
+msgstr "Bekommene Antwort"
+
+msgid "Текстовый ответ:"
+msgstr "Die Textantwort:"
+
+msgid "Скачать ответ целиком"
+msgstr "Antwort vollständig herunterladen"
+
+msgid "Открыть ответ в новом окне"
+msgstr "Die Antwort im neuen Fenster zu öffnen"
+
+msgid "Присоединенный файл"
+msgstr "Angehängte Datei"
+
+msgid "байт), показано первые 8Кбайт:"
+msgstr "Byte), die ersten 8 КByte werden angezeigt:"
+
+msgid "Скачать прикрепленный файл целиком"
+msgstr "Angehängte Datei vollständig herunterzuladen"
+
+msgid "Открыть прикрепленный файл в новом окне"
+msgstr "Angehängte Datei im neuen Fenster öffnen"
+
+msgid "Ваша оценка ответа учащегося"
+msgstr "Bewertung der Antwort des Teilnehmers"
+
+msgid "Возможный диапазон баллов:от"
+msgstr "Möglicher Punktebereich: ab"
+
+msgid "Произвольный балл (в пределах диапазона):"
+msgstr "Freie Punkte (innerhalb des Punktebereichs):"
+
+msgid "Вопрос уже имеет оценку в баллах:"
+msgstr "Frage wurde bereits mit Punkten bewertet:"
+
+msgid "Далее перейти:"
+msgstr "Weiter:"
+
+msgid "к проверке очередного вопроса"
+msgstr "Zur Prüfung der nächsten Frage"
+
+msgid "к списку вопросов для проверки"
+msgstr "Zur Liste der Fragen für die Prüfung"
+
+msgid "Записать вашу оценку в базу данных"
+msgstr "Ihre Bewertung in der Datenbank speichern"
+
+msgid ""
+"Снять эту галочку можно только при выборе &lt;Далее перейти к списку вопросов"
+msgstr "Diesen Haken kann nur bei der Auswahl &lt; Weiter zur Liste der Fragen"
+
+msgid "ДАЛЕЕ"
+msgstr "WEITER"
+
+msgid ""
+"Данный вопрос был стерт из базы данных. Получить данные о нем невозможно. "
+"Зачисляю 0 баллов."
+msgstr ""
+"Diese Frage wurde aus der Datenbank gelöscht. Es gibt keine weiteren "
+"Informationen dazu. Sie bekommen 0 Punkte."
+
+msgid "Вы не можете начислить за этот вопрос более, чем"
+msgstr "Sie können für diese Frage maximal anrechnen"
+
+msgid "баллов. Зачисляю баллов:"
+msgstr "Punkte. Angerechnete Punkte:"
+
+msgid "Вы не можете начислить за этот вопрос менее, чем"
+msgstr "Sie können für diese Frage minimal anrechnen"
+
+msgid "Данный вопрос, нуждающийся в проверке, более не найден."
+msgstr "Die zu prüfende Frage wurde nicht gefunden."
+
+msgid "Студент"
+msgstr "Teilnehmer"
+
+msgid "Дата ответа"
+msgstr "Datum der Antwort"
+
+msgid "Полученный ответ:"
+msgstr "Bekommene Antwort:"
+
+msgid "открыть прикрепленный файл"
+msgstr "angehängte Datei öffnen"
+
+msgid "Комментарий:"
+msgstr "Kommentar:"
+
+msgid "Рецензия:"
+msgstr "Rezension:"
+
+msgid "открыть файл с рецензией"
+msgstr "Datei mit der Rezension öffnen"
+
+msgid "Обновление базы данных"
+msgstr "Aktulisierung der Datenbank"
+
+msgid "приложен"
+msgstr "angehängt"
+
+msgid "длиной"
+msgstr "Länge"
+
+msgid "приложен текст"
+msgstr "Text wurde angehängt"
+
+msgid "См. общую оценку"
+msgstr "Siehe allgemeine Bewertung"
+
+msgid "Удалены вопросы по следующим сеансам:"
+msgstr "Fragen aus folgenden Sitzungen wurden gelöscht:"
+
+msgid "Нет целиком обработанных сеансов."
+msgstr "Es gibt keine vollständig bearbeiteten Sitzungen."
+
+msgid ""
+"Сеанс тестирования закончен. Не нажимайте кнопку BACK (Назад) в вашем "
+"браузере!"
+msgstr ""
+"Test abgeschlossen. Drücken Sie auf keinen Fall die Taste ZURÜCK in Ihrem "
+"Browser!"
+
+msgid "Сеанс тестирования закончен или не начинался."
+msgstr "Test abgeschlossen oder nicht begonnen."
+
+msgid "Неправильный вызов страницы."
+msgstr "Falscher Seitenaufruf"
+
+msgid ""
+"Не нажимайте кнопки REFRESH (Обновить) или BACK (Назад), иначе вы можете "
+"случайно отключиться от сеанса тестирования. Если вы намеренно хотите "
+"прервать тест, воспользуйтесь кнопкой 'ПРЕРВАТЬ ТЕСТИРОВАНИЕ' внизу страницы."
+msgstr ""
+"Drücken Sie auf keinen Fall Taste AKTUALISIEREN oder ZURÜCK, Sie können den "
+"Test abbrechen. Wenn Sie absichtlich den Test abbrechen wollen, drucken Sie "
+"die Taste ABBRECHEN unten auf der Seite"
+
+msgid "Не найдена функция для ответа типа"
+msgstr "Funktion des Antworttyps wurde nicht gefunden"
+
+msgid ""
+"К сожалению, закончилось время, отпущеное на решение данного вопроса. Ответ "
+"не засчитан."
+msgstr ""
+"Zulassige Bearbeitungszeit ist leider abgelaufen. Die Antwort wurde nicht "
+"angerechnet."
+
+msgid "Закончилось время"
+msgstr "Zeit ist abgelaufen"
+
+msgid "Закончилось время, отпущеное на решение данного вопроса."
+msgstr "Zulässige Bearbeitungszeit ist abgelaufen."
+
+msgid ""
+"К сожалению, закончилось время, отпущенное на решение задания. Сейчас вы "
+"перейдете на страницу результатов. В ведомость записывается результат "
+"тестирования 'прервано по лимиту времени' и оценка только тех вопросов, "
+"которые вы уже успели решить."
+msgstr ""
+"Zulässige Bearbeitungszeit ist leider abgelaufen. Sie werden auf die "
+"Ergebnissseite weitergeleitet."
+
+msgid "Переменная"
+msgstr "Variable"
+
+msgid "не массив! Срочно открыть"
+msgstr "kein Massiv! Sofort öffnen"
+
+msgid "и исправить баг!"
+msgstr "und korrigieren den Bag!"
+
+msgid "не ограничено"
+msgstr "unbeschränkt"
+
+msgid "не найден"
+msgstr "nicht gefunden"
+
+msgid "не прикреплен к занятию"
+msgstr "zum Training nicht beigefügt"
+
+msgid "Извините, задание"
+msgstr "Verzeihung, Aufgabe"
+
+msgid "не существует."
+msgstr "existiert nicht."
+
+msgid "Извините, это задание не опубликовано (заблокировано)"
+msgstr "Verzeihung, diese Aufgabe wurde nicht veröffentlicht (gesperrt)"
+
+msgid "Вы не являтесь преподавателем на этом курсе."
+msgstr "Sie sind kein Lehrer in diesem Kurs."
+
+msgid "Обнуление счетчика SCHEDULECOUNT:qty у юзера"
+msgstr "Zurücksetzen des Zählers:"
+
+msgid "по давности."
+msgstr "nach dem Entstehungsdatum."
+
+msgid ""
+"Вы израсходовали все попытки прохожения этого занятия.<br>Для занятия было "
+"отпущено попыток:"
+msgstr ""
+"Zulässige Versuchszahl wurde aufgebraucht. <br>Mögliche Versuchszahl lag bei:"
+
+msgid "Обнуление счетчика TESTCOUNT:qty у юзера"
+msgstr "Zurücksetzen des Zählers:"
+
+msgid ""
+"Вы израсходовали все попытки прохожения этого занятия.<br>Было отпущено "
+"попыток:"
+msgstr ""
+"Zulässige Versuchszahl wurde aufgebraucht. <br>Mögliche Versuchszahl lag bei:"
+
+msgid "Извините, %s не содержит ни одного вопроса."
+msgstr "Verzeihung, %s enthält keine Fragen."
+
+msgid ""
+"Произошла ошибка базы данных. Обратитесь в службу технической поддержки."
+msgstr ""
+"Es ist ein Fehler in der Datenbank aufgetreten. Kontaktieren Sie den "
+"technischen Dienst."
+
+msgid "начать тест:"
+msgstr "Test starten:"
+
+msgid "Невозможно прервать сеанс."
+msgstr "Die Sitzung kann nicht abgebrochen werden."
+
+msgid "Нажмите кнопку, чтобы закончить сеанс."
+msgstr "Drücken Sie die Taste, um Sitzung zu beenden."
+
+msgid "Нажмите кнопку, чтобы прервать сеанс."
+msgstr "Drücken Sie die Taste, um Sitzung abzubrechen."
+
+msgid ""
+"Задание, которое вы проходите, не найдено в базе данных (только что стерто "
+"кем-то?)."
+msgstr ""
+"Die von Ihnen ausgeführte Aufgabe wurde nicht in der Datenbank gefunden "
+"(jemand hat sie gerade gelöscht)."
+
+msgid "Этот сеанс нельзя досрочно завершить!"
+msgstr "Diese Sitzung kann nicht vorzeitig beendet werden!"
+
+msgid ""
+"Вы зарегистрированы в статусе преподавателя, но на данный момент вы не "
+"преподаете ни на одном из курсов."
+msgstr ""
+"Sie besitzen zwar den Lehrer-Status, unterrichten aber im Moment in keinem "
+"der Kurse."
+
+msgid "Вы не преподаватель данного курса."
+msgstr "Sie sind kein Lehrer dieses Kurses."
+
+msgid "Статистика заданий"
+msgstr "Aufgaben-Statistik"
+
+msgid "Копия: "
+msgstr "Kopie:"
+
+msgid "Тест успешно скопирован"
+msgstr "Test wurde erfolgreich kopiert"
+
+msgid "Редактировать вопросы"
+msgstr "Fragen bearbeiten"
+
+msgid "Открыть задание"
+msgstr "Aufgabe öffnen"
+
+msgid "Удалить задание"
+msgstr "Aufgabe löschen"
+
+msgid "Копировать задание"
+msgstr "Aufgabe kopieren"
+
+msgid "Скопировать тест?"
+msgstr "Kopieren den Test?"
+
+msgid "Редактировать задание"
+msgstr "Aufgabe bearbeiten"
+
+msgid "Скопировать задание?"
+msgstr "Aufgabe kopieren?"
+
+msgid "Все курсы"
+msgstr "Alle Kurse"
+
+msgid "Отчеты о тестированиях"
+msgstr "Berichte über die Tests"
+
+msgid "Попытки тестирований"
+msgstr "Versuche der Testings"
+
+msgid "Статистика вопросов"
+msgstr "Statistik der Fragen"
+
+msgid "СТАТИСТИКА по"
+msgstr "Statistik über"
+
+msgid "У вас не хватает привилегий"
+msgstr "Sie besitzen keine Rechte"
+
+msgid "Перейти к другому заданию"
+msgstr "Zu anderer Aufgabe wechseln"
+
+msgid "Редактировать параметры задания"
+msgstr "Aufgabenparameter bearbeiten"
+
+msgid "опубликовано"
+msgstr "Veröffentlicht"
+
+msgid "не опубликовано"
+msgstr "nicht veröffentlicht"
+
+msgid "Обязат. вопрос"
+msgstr "Obligatorische Frage"
+
+msgid "в это задание еще не включено ни одного вопроса"
+msgstr "Diese Aufgabe beinhaltet noch keine Fragen "
+
+msgid "маски не отображаются"
+msgstr "Masken nicht dargestellt"
+
+msgid "Просмотреть вопрос"
+msgstr "Frage durchzusehen"
+
+msgid "Править"
+msgstr "Bearbeiten"
+
+msgid "Вы действительно желаете удалить вопрос из задания?"
+msgstr "Wollen Sie wirklich die Frage aus der Aufgabe löschen?"
+
+msgid "маска:"
+msgstr "Maske:"
+
+msgid "Выполнить это задание"
+msgstr "Diese Aufgabe ausführen"
+
+msgid "Добавить из всех вопросов"
+msgstr "Aus allen Fragen hinzufügen"
+
+msgid ""
+"Из этого списка были\n"
+"      автоматически удалены следующие ошибочные маски:"
+msgstr ""
+"Aus dieser Liste wurden folgende fehlerhaften Masken automatisch gelöscht:"
+
+msgid ""
+"Данные маски начинаются не на номер вашего курса и символ тире.\n"
+"      Если вы опять введете какую-либо маску, не начинающуюся на"
+msgstr ""
+"Diese Masken beginnen nicht mit der Nummer Ihres Kurses, mit dem Symbol oder "
+"Bindestrich.\n"
+" Wenn Sie wieder irgendeine Maske mit eingeben,"
+
+msgid "то она будет повторно удаляться."
+msgstr "sie wird wiederholt entfernt."
+
+msgid "Расширенное редактирование задания запрещено."
+msgstr "Erweiterte Bearbeitung der Aufgabe ist nicht zulässig."
+
+msgid ""
+"Вы не можете редактировать вопросы, т.к. этот тест создан\n"
+"         на другом курсе"
+msgstr ""
+"Sie können keine Fragen bearbeiten, da dieser Test in anderem Kurs erstellt "
+"wurde\n"
+" "
+
+msgid ""
+"Вы можете лишь удалить целиком тест, изменить другие его параметры\n"
+"         или перенести еще раз на другой курс. Если вернуть тест на прежний "
+"курс\n"
+"         то редактирование будет доступно. Вы можете лишь удалять с этой "
+"страницы\n"
+"         любые вопросы."
+msgstr ""
+"Zulässige Aktionen mit dem Test: Löschung, Anderung der Parameter, "
+"Verschiebung auf anderen Kurs. Für die Bearbeitung muss der Test in den "
+"unsprünglichen Kurs wieder verschoben werden. Sie können Fragen von dieser "
+"Seite löschen."
+
+msgid "Справка"
+msgstr "Hilfe"
+
+msgid "Управление кол-вом попыток тестирований"
+msgstr "Verwaltung der Testversuche"
+
+msgid "Отчеты о тестированиях на этом задании"
+msgstr "Berichte über die Tests in dieser Aufgabe "
+
+msgid "расширенный]"
+msgstr "Erweitert]"
+
+msgid ""
+"Вы не можете начать это задание, т.к. еще не закончили\n"
+"   выполнять предыдущее. Вы можете либо пройти до конца предыдущий\n"
+"   сеанс тестирования, либо прервать его."
+msgstr ""
+"Sie können diese Aufgabe nicht beginnen, da die vorherige Aufgabe noch nicht "
+"geschlossen ist. "
+
+msgid "Вернуться к предыдущему сеансу тестирования"
+msgstr "Zurück zur vorherigen Test-Sitzung"
+
+msgid "Редактирование задания"
+msgstr "Aufgabenbearbeitung"
+
+msgid "Добавление задания"
+msgstr "Hinzufügen der Aufgabe"
+
+msgid "Название задания"
+msgstr "Aufgabentitel"
+
+msgid "Задание опубликовано"
+msgstr "Aufgabe wurde veröffentlicht"
+
+msgid "доступно слушателю для выполнения"
+msgstr "zugänglich für den Teilnehmer "
+
+msgid "Вопросы задания"
+msgstr "Fragen der Aufgabe"
+
+msgid "Способ выбора вопросов"
+msgstr "Fragen Auswahlmethode "
+
+msgid "Одинаковое из каждой темы"
+msgstr "Gleiche aus jedem Thema"
+
+msgid "Задать из каждой темы"
+msgstr "Aus jedem Thema nehmen"
+
+msgid "Ограничить количество вопросов в задании до"
+msgstr "Fragenzahl in der Aufgabe einschränken bis"
+
+msgid "показывать все"
+msgstr "Alles anzeigen"
+
+msgid "Ограничить количество вопросов из темы"
+msgstr "Fragenzahl aus dem Thema beschränken"
+
+msgid "Нет тем вопросов в задании"
+msgstr "Es gibt keine Themen der Fragen in der Aufgabe"
+
+msgid "Количество вопросов на страницу"
+msgstr "Fragenzahl pro Seite"
+
+msgid "Перемешивать вопросы при прохождении задания"
+msgstr "Fragen bei Ausführung der Aufgabe mischen"
+
+msgid "Выполнение задания"
+msgstr "Ausführen der Aufgabe"
+
+msgid "Сколько раз учащийся может выполнять это задание"
+msgstr "Wie viele Versuche sind für diese Aufgabe zulässig"
+
+msgid "кол-во не ограничено"
+msgstr "Anzahl ist unbeschränkt"
+
+msgid "Через сколько дней сбрасывать данный счетчик прохождений"
+msgstr "Nach wie vielen Tagen muss der Ausführungszähler zurückgesetzt werden"
+
+msgid "никогда не сбрасывать"
+msgstr "Niemals zurücksetzten"
+
+msgid "Ограничение времени в минутах для прохождения задания"
+msgstr "Beschränkung der Zeit in den Minuten für die Ausführung der Aufgabe"
+
+msgid "мин"
+msgstr "Min"
+
+msgid "без ограничений"
+msgstr "Ohne Beschränkungen"
+
+msgid "Дополнительно"
+msgstr "Zusätzlich"
+
+msgid ""
+"Показывать страницу промежуточных результатов учащегося, по итогам последних "
+"вопросов"
+msgstr ""
+"Seite der Zwischenergebnisse des Teilnehmers anzeigen (unter "
+"Berücksichtigung der letzten Fragen)"
+
+msgid "Там же показывать ссылку"
+msgstr "Link an der gleichen Stelle anzeigen"
+
+msgid "Показывать результаты тестирования в конце задания (общие результаты)"
+msgstr "Testergebnisse am Ende der aufgabe zeigen (allgemeine Ergebnisse)"
+
+msgid "Комментарий к заданию"
+msgstr "Kommentar zur Aufgabe"
+
+msgid "нет прав редактировать данный тест"
+msgstr "Sie besitzen keine Rechte für Bearbeitung dieses Tests"
+
+msgid "Курс заблокирован. Данная операция невозможна"
+msgstr "Kurs wurde gesperrt. Diese Operation ist nicht möglich"
+
+msgid ""
+"Ограничение времени выполнения задания меньше чем суммарное ограничение "
+"времени ответа на вопросы."
+msgstr ""
+"Zeitlimit der Ausführungszeit der Aufgabe ist kürzer als die gesamte "
+"Zeitlimit für alle einzelnen Antworten auf die Fragen."
+
+msgid "Неправильная формула"
+msgstr "Falsche Formel"
+
+msgid "Задание удалено"
+msgstr "Aufgabe wurde gelöscht"
+
+msgid "Укажите учебный курс"
+msgstr "Geben Sie den Kurs an"
+
+msgid "Перенос теста"
+msgstr "Verschiebung des Tests"
+
+msgid "На какой из ваших курсов перенести этот тест:"
+msgstr "In welchen Kurs soll dieser Test verschoben werden:"
+
+msgid "Перенести!"
+msgstr "Verschieben!"
+
+msgid ""
+"После переноса теста на другой курс нельзя будет\n"
+"   редактировать список вопросов теста. Однако, тест сохранит свои\n"
+"   свойства и можно будет изменять все свойства теста, кроме\n"
+"   добавления/удаления вопросов. Тест можно будет так же удалить\n"
+"   или перенести назад на этот курс. Если в дальнейшем вы вернете тест\n"
+"   на этот курс, в нем опять все будет доступно для редактирования.\n"
+"   После переноса на другой курс, любой преподаватель того курса сможет\n"
+"   удалить тест или изменить его свойства (но не сможет редактировать "
+"список\n"
+"   вопросов)."
+msgstr "Wenn Sie den Test "
+
+msgid ""
+"verschieben, wird Bearbeitung der Fragenliste nicht mehr möglich sein. Wenn "
+"Sie die Fragenliste wieder bearbeiten wollen, muss der Test in den "
+"Ursprungskurs wieder verschoben werden. "
+msgstr ""
+"verschieben, wird Bearbeitung der Fragenliste nicht mehr möglich sein. Wenn "
+"Sie die Fragenliste wieder bearbeiten wollen, muss der Test in den "
+"Ursprungskurs wieder verschoben werden. "
+
+msgid "нет прав перенести этот тест на чужой курс"
+msgstr ""
+"Sie besitzen keine Rechte, um diesen Test in den fremden Kurs zu verschieben "
+"diese Prüfung im fremden Kurs zu verlegen"
+
+msgid "нет прав просматривать данный тест"
+msgstr "Sie besitzen keine Rechte für Durchsicht dieses Tests "
+
+msgid "копия от"
+msgstr "Kopie von"
+
+msgid "Новый тест с"
+msgstr "Neuer Test mit"
+
+msgid ""
+"скопирован! В имя нового теста автоматически дописано слово 'Копия', но вы "
+"можете изменить это имя."
+msgstr ""
+"Kopie wurde erstellt! In den Namen des neuen Tests ist das Wort ' Kopie ' "
+"automatisch eingefügt, aber Sie können diesen Namen ändern."
+
+msgid "Список вопросов, выбранные маской теста"
+msgstr "Liste der Fragen, ausgewählt von der Maske des Tests"
+
+msgid "Такого задания нет"
+msgstr "Diese Aufgabe existiert nicht"
+
+msgid "Не переданы коды для удаления"
+msgstr "Es fehlen die Codes für die Entfernung"
+
+msgid "Попытки выполнения задания"
+msgstr "Zulässige Versuchszahl"
+
+msgid "Вы не зарегистрированы ни на одном из курсов"
+msgstr "Sie sind für keinen Kurs registriert"
+
+msgid "Вы не зарегистрированы ни на одном из курсов."
+msgstr "Sie sind für keinen Kurs registriert"
+
+msgid "Нет заданий"
+msgstr "Es gibt keine Aufgaben"
+
+msgid "Дата попытки"
+msgstr "Datum des Versuchs"
+
+msgid "Набранный балл"
+msgstr "Erreichte Punkte:"
+
+msgid "Отчет о прохождении"
+msgstr "Bericht über die Ausführung"
+
+msgid "Действительно хотите пройти это задание?"
+msgstr "Wollen Sie wirklich diese Aufgabe löschen?"
+
+msgid ""
+"К сожалению, у вас уже не осталось попыток на прохождение этого задания. Все "
+"равно открыть?"
+msgstr ""
+"Zulässige Versuchszahl für Ausführung dieser Aufgabe wurde aufgebraucht? "
+"Wollen Sie trotzdem öffnen?"
+
+msgid "Внимание! У вас осталось попыток для прохождения:"
+msgstr "Achtung! Die verbliebene Versuchszahl:"
+
+msgid "Оценка:"
+msgstr "Bewertung:"
+
+msgid "Попытки прохождения исчерпаны."
+msgstr "Zulässige Versuchszahl ist aufgebraucht.  "
+
+msgid "Осталось попыток:"
+msgstr "Verblibene Versuchszahl:"
+
+msgid "Попытки не лимитированы"
+msgstr "Versuchszahl ist nicht limitiert"
+
+msgid "еще не сдан"
+msgstr "wurde noch nicht erledigt"
+
+msgid "Показать отчёт"
+msgstr "Bericht anzeigen"
+
+msgid "отключен преподавателем"
+msgstr "vom Lehrer abgeschaltet"
+
+msgid ""
+"К этой странице могут обратится только:\n"
+"      преподаватель,  представитель учебной администрации, администратор"
+msgstr ""
+"Diese Seite können nur folgende Personen ansehen: Lehrer, Vertreter der "
+"Kursverwaltung, Administrator"
+
+msgid "Очистка/управление кол-вом попыток тестирований"
+msgstr "Verwaltung von Testversuchen"
+
+msgid "Кол-во"
+msgstr "Anzahl"
+
+msgid "попыток"
+msgstr "der Versuche"
+
+msgid "Осталось"
+msgstr "Noch übrig"
+
+msgid "Последнее"
+msgstr "Letzte"
+
+msgid "тестирование"
+msgstr "Testing"
+
+msgid "это задание было удалено"
+msgstr "Diese Aufgabe wurde gelöscht"
+
+msgid "снять"
+msgstr "entfernen"
+
+msgid "добавить"
+msgstr "hinzufügen"
+
+msgid "Просмотр вопроса"
+msgstr "Ansichtsicht der Frage"
+
+msgid ""
+"К сожалениею, закончилось время, отпущенное на решение задания. Сейчас вы "
+"перейдете на страницу результатов. В ведомость записывается результат "
+"тестирования 'прервано по лимиту времени' и оценка только тех вопросов, "
+"которые вы уже успели решить."
+msgstr ""
+"Zulässige Bearbeitungszeit ist leider abgelaufen. Sie werden auf die "
+"Ergebnissseite weitergeleitet."
+
+msgid ""
+"Доступ к данному виду показа вопросов имеют только преподаватели\n"
+"                            курса, на который записан вопрос. Либо вы не "
+"преподаватель, либо\n"
+"                            вы пытаетесь смотерть вопросы другого курса."
+msgstr ""
+"Zugang zu dieser Darstellungsart der Fragen haben nur die Lehrer des "
+"entsprechenden Kurses.  Entweder sind Sie kein Lehrer dieses Kurses oder Sie "
+"versuchen Fragen des fremden Kurses abzurufen. "
+
+msgid "Промежуточные результаты"
+msgstr "Zwischenergebnisse"
+
+msgid "ваш тест не позволяет смотреть промежуточные результаты"
+msgstr "Zwischenergebnisse werden in diesem Test nicht angezeigt"
+
+msgid ""
+"Данные по вопросу(ам), которые были вам заданы только на предыдущей странице:"
+msgstr "Informationen über die Fragen nur von der letzten Seite:"
+
+msgid "Минимальный балл:"
+msgstr "Minimale Punktzahl:"
+
+msgid "Максимальный балл:"
+msgstr "Maximale Punktzahl:"
+
+msgid "Кол-во вопросов:"
+msgstr "Fragenzahl:"
+
+msgid "Данные по всем вопросам, на которые вы отвечали в этом задании:"
+msgstr "Informationen über alle Fragen, auf die Sie in diesem Job antworteten:"
+
+msgid "Набранно баллов всего:"
+msgstr "Erreichte Punkte insgesamt:"
+
+msgid "Кол-во пройденных вопросов:"
+msgstr "Anzahl der beantworteten Fragen"
+
+msgid "Ссылки к заданным вопросам:"
+msgstr "Links zu den Fragen:"
+
+msgid "Перейти к следующим вопросам"
+msgstr "Weiter zu nächsten Fragen"
+
+msgid "Не показывать промежуточные результаты (только для текущего задания)"
+msgstr "Zwischenergebnisse nicht anzeigen (nur für die laufende Aufgabe)"
+
+msgid "ошибочный метод вызова данного файла"
+msgstr "Fehlerhafte Methode desr Dateianfrage"
+
+msgid "Не найдена функция для вопроса типа"
+msgstr "Funktion für den Fragetyp wurde nicht gefunden"
+
+msgid "Комментарии:"
+msgstr "Kommentare:"
+
+msgid "см. в учебных материалах"
+msgstr "Siehe in den Lernmaterialien"
+
+msgid "Комментарии к ответу:"
+msgstr "Kommentare zur Antwort:"
+
+msgid "Вес:"
+msgstr "Gewicht:"
+
+msgid "Правильный ответ(ы):"
+msgstr "Richtige Antwort(en):"
+
+msgid "Отсутствуют варианты ответа на вопрос."
+msgstr "Antwortvarianten auf die Frage fehlen."
+
+msgid "Введите один или более вариантов ответа."
+msgstr "Geben Sie eine oder mehrere Antwortvarianten ein."
+
+msgid "Ни один вариант ответа не является правильным."
+msgstr "Keine Variante der Antwort ist richtig."
+
+msgid "Отметьте один/несколько вариантов как правильные."
+msgstr "Markieren Sie eine/mehrere Varianten als richtig."
+
+msgid ""
+"Обнаружена ошибка в этом вопросе, возникшая в следствии неправильного ввода "
+"вопроса преподавателем:"
+msgstr ""
+"Es gibt einen Fehler in dieser Frage. Der fehler ist durch fehlerhafte "
+"Eingabe des Lehrers entstanden: "
+
+msgid ""
+"Устранить ошибку этого вопроса можно на странице его редактирования так:"
+msgstr ""
+"Den Fehler in dieser Frage kann man auf der Bearbeitungsseite folgend "
+"beheben:"
+
+msgid "НЕОБХОДИМО"
+msgstr "NOTWENDIG"
+
+msgid ""
+"устранить ошибку в этом вопросе,\n"
+"                                т.к. если вы включите этот вопрос в какое-"
+"либо задание, то\n"
+"                                ответить на вопрос будет нельзя, в следствии "
+"чего\n"
+"                                прохождение ВСЕГО ЗАДАНИЯ, включающего этот "
+"вопрос, для учащихся будет невозможно!"
+msgstr ""
+"Sie sollen den Fehler in dieser Frage beheben, \n"
+". Ansonsten werden alle Aufgaben, die diese Frage beinhalten fehlerhaft!  "
+
+msgid "Электронный курс заблокирован. Данная операция невозможна"
+msgstr "Kurs wurde gesperrt. Diese Operation ist nicht möglich"
+
+msgid "Импортирование курса"
+msgstr "Kursimport"
+
+msgid "Импорт курса"
+msgstr "Kursimport"
+
+msgid "Загрузка и обработка файлов курса"
+msgstr "Laden und Bearbeiten die Kursdateien"
+
+msgid ""
+"После загрузки файлов требуется время на распаковку и обработку файлов курса"
+msgstr ""
+"Nach dem Laden der Dateien wird die Zeit für das Entpacken und Bearbeiten "
+"benötigt"
+
+msgid "Выберите тип загружаемого курса"
+msgstr "Wählen Sie den Typ des geladenen Kurses aus"
+
+msgid "НЕ ОПРЕДЕЛЕН ИДЕНТИФИКАТОР КУРСА !!!"
+msgstr "KURSIDENTIFIKATOR NICHT BESTIMMT!!!"
+
+msgid "Описание сохранено"
+msgstr "Beschreibung wurde gespeichert"
+
+msgid "Редактировать описание курса:"
+msgstr "Beschreibung des Kurses bearbeiten:"
+
+msgid "пустой элемент"
+msgstr "leeres Element"
+
+msgid "<пустой элемент>"
+msgstr "<leeres Element>"
+
+msgid "Локальные копии курсов"
+msgstr "Lokale Kurskopien"
+
+msgid "Пути к локальным версиям курсов сохранены"
+msgstr "Pfade zu den lokalen Kursversionen wurden gespeichert"
+
+msgid ""
+"Пути к локальным версиям курсов не сохранились. Проверьте правильность "
+"указания папки курса и наличия в пути папки media."
+msgstr ""
+"Pfade zu den lokalen Kursversionen wurden nicht gespeichert. Prüfen Sie die "
+"Richtigkeit des Ordnernamens (der Pfad soll den Ordner 'media' beinhalten)."
+
+msgid "использовать локальные копии курсов"
+msgstr "lokalen Kurskopien verwenden"
+
+msgid "(укажите на любой файл из локально установленной копии курса)"
+msgstr "(Wählen Sie eine beliebige Datei aus der lokalen Kurskopie aus)"
+
+msgid "Выбран каталог:"
+msgstr "Katalog wurde ausgewählt:"
+
+msgid "Править свойства модуля"
+msgstr "Eigenschaften des Modules bearbeiten"
+
+msgid "Название модуля"
+msgstr "Modultitel"
+
+msgid "Статус модуля"
+msgstr "Status des Moduls"
+
+msgid "Описание модуля"
+msgstr "Beschreibung des Moduls"
+
+msgid "Ошибка при изменении данных!"
+msgstr "Fehler bei der Datenänderung!"
+
+msgid "Тип занятия"
+msgstr "Typ des Trainings"
+
+msgid "Длительность (академ. час)"
+msgstr "Dauer (akad. Stunde)"
+
+msgid "применить"
+msgstr "anrwenden"
+
+msgid "свернуть"
+msgstr "minimieren"
+
+msgid "Перемещать сразу на несколько позиций"
+msgstr "Nach mehreren Positionen verschieben"
+
+msgid "позиций"
+msgstr "Positionen"
+
+msgid "Перемещать все подэлементы"
+msgstr "Alle Unterelemente verschieben"
+
+msgid "Очистить программу курса"
+msgstr "Programm des Kurses bereinigen"
+
+msgid "Редактирование содержания курса:"
+msgstr "Bearbeitung des Kursinhaltes:"
+
+msgid "содержание"
+msgstr "Inhalt"
+
+msgid "править"
+msgstr "bearbeiten"
+
+msgid "на уровнь выше"
+msgstr "eine Stufe höher höher"
+
+msgid "на уровень ниже"
+msgstr "eine Stufe niedriger"
+
+msgid "переместить вверх"
+msgstr "nach oben verschieben"
+
+msgid "переместить вниз"
+msgstr "nach unten verschieben"
+
+msgid "удалить пункт"
+msgstr "den Punkt löschen"
+
+msgid "создать блок материалов"
+msgstr "Block der Materialien erstellen"
+
+msgid "&lt;пустой элемент&gt;"
+msgstr "&lt;leeres Element&gt;"
+
+msgid "ак.час."
+msgstr "akad. Stunde"
+
+msgid "заменить"
+msgstr "ersetzen"
+
+msgid ""
+"Несколько элементов структуры курса были повреждены и не пожлежат "
+"восстановлению"
+msgstr ""
+"Einige Elemente der Kursstruktur wurden beschädigt und können nicht "
+"wiederhergestellt werden"
+
+msgid ""
+"Отсутствует корневой элемент структуры курсов! Восстановление невозможно, "
+"очистить структуру курса?"
+msgstr ""
+"Grundelement der Kursstruktur fehlt! Wiederherstellung ist nicht möglich. "
+"Wollen Sie die Kursstruktur bereinigen?"
+
+msgid "Вы уверены, что хотите удалить?"
+msgstr "Wollen Sie wirklich löschen?"
+
+msgid "развернуть"
+msgstr "maximieren"
+
+msgid "Изучить"
+msgstr "Lernen"
+
+msgid "Запустить программу"
+msgstr "Programm starten"
+
+msgid "Задать вопросы"
+msgstr "Fragen stellen"
+
+msgid "синхронизировать с преподавателем"
+msgstr "Mit dem Lehrer synchronisieren"
+
+msgid "Глоссарий"
+msgstr "Glossar"
+
+msgid "удалить задание из модуля"
+msgstr "Aufgabe aus dem Modul löschen"
+
+msgid ""
+"Данный форум был удалён либо дана ошибочная сслыка, измените ссылку на форум"
+msgstr ""
+"Dies Forum wurde oder der angegebene Link ist fehlerhaft. Ändern Sie den "
+"Link zum Forum"
+
+msgid "тема:"
+msgstr "Thema:"
+
+msgid "статус:"
+msgstr "Status:"
+
+msgid "описание:"
+msgstr "Beschreibung:"
+
+msgid "Выберите один из модулей в программе курса"
+msgstr "Wählen Sie ein Kursmodule aus dem Programm"
+
+msgid "ОБУЧЕНИЕ"
+msgstr "AUSBILDUNG"
+
+msgid "О СЕРВЕРЕ"
+msgstr "ÜBER DEN SERVER"
+
+msgid "сохранен в файлах:"
+msgstr "gespeichert in den Dateien:"
+
+msgid "структура"
+msgstr "Struktur"
+
+msgid "загрузить"
+msgstr "hochladen"
+
+msgid "Только проверка формата входных данных!"
+msgstr "Prüfung des Formats der Eingangsdaten!"
+
+msgid "Нет файла тестов"
+msgstr "Datei mit den Tests fehlt "
+
+msgid "Ошибка записи вопросов"
+msgstr "Fehler bei der Speicherung der Fragen"
+
+msgid "Вопросы импортированы успешно"
+msgstr "Fragen wurden erfolgreich importiert"
+
+msgid "Введите файлы для загрузки на курс"
+msgstr "Geben Sie die Dateien für das Hinzufügen zum Kurs ein"
+
+msgid "Файл тестов"
+msgstr "Datei der Tests"
+
+msgid "Только проверить"
+msgstr "Nur prüfen"
+
+msgid "Подготовить дистрибутив курсов специальности"
+msgstr "Verteilung der Kurse nach dem Fachbereich vorbereiten"
+
+msgid "Найдено вопросов"
+msgstr "Fragen gefunden"
+
+msgid "Ответов в вопросах"
+msgstr "Antworten in den Fragen"
+
+msgid "Ошибка импорта тестов"
+msgstr "Fehler beim Import der Tests"
+
+msgid "НАЙДЕНО %s ВОПРОСОВ В ФАЙЛЕ %s<br><br>"
+msgstr "GEFUNDEN %s FRAGEN IN DER DATEI %s<br><br>"
+
+msgid "НАЙДЕНО"
+msgstr "GEFUNDEN"
+
+msgid "ВОПРОСОВ В ФАЙЛЕ"
+msgstr "FRAGEN IN DER DATEI"
+
+msgid "Тема:"
+msgstr "Thema:"
+
+msgid "ВОПРОС:"
+msgstr "FRAGE:"
+
+msgid "Ошибка в вопросе или ответе под номером"
+msgstr "Fehler in der Frage- oder in der Antwort-  Nummer"
+
+msgid ""
+"Вопрос может содержать несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой."
+msgstr ""
+"Diese Frage kann mehrere Varianten der Antwort enthalten, unter denen man "
+"nur eine auswählen kann. Bei der Bearbeitung der Frage markieren Sie die "
+"richtige Variante mit dem Haken."
+
+msgid "Формулировка вопроса"
+msgstr "Formulierung der Frage"
+
+msgid "Верный вариант"
+msgstr "Richtige Variante"
+
+msgid "Правильный вариант"
+msgstr "Richtige Variante"
+
+msgid "Ответ на вопрос не получен"
+msgstr "Antwort auf die Frage wurde nicht bekommen"
+
+msgid "Ответ на вопрос N %s не получен. За этот вопрос зачисляю баллов: %s."
+msgstr ""
+"Antwort auf die Frage N %s fehlt. Für diese Frage wird angerechnet Punkte: "
+"%s."
+
+msgid "попытка передать неверный код ответа"
+msgstr "Es wurde versucht eine falsche Antwortcode einzugeben"
+
+msgid "За этот вопрос зачисляю баллов"
+msgstr "Für diese Frage angerechnete Punkte "
+
+msgid "Правильно"
+msgstr "Richtig"
+
+msgid "Неправильно"
+msgstr "Falsch"
+
+msgid ""
+"Этот тип вопроса предназначен для создания СПЕЦИАЛИЗИРОВАННЫХ тестов, "
+"связанных с запуском внешней программы-тренажера."
+msgstr ""
+"Dieser Fragetyp ist für die Erstellung von speziellen Test bestimmt, die mit "
+"dem Start des externen Simulators verbunden sind."
+
+msgid "Параметры вызова"
+msgstr "Parameter des Aufrufs"
+
+msgid "Ошибка структуры данных в вопросе:"
+msgstr "Fehler der Datenstruktur in der Frage:"
+
+msgid "параметр"
+msgstr "Parameter"
+
+msgid "Задание выполнено"
+msgstr "Aufgabe wurde ausgeführt"
+
+msgid ""
+"Вопрос на поиск соответствий столбцов таблицы ее строкам. Каждой строке "
+"может соответствовать только один столбец, при этом один столбец может быть "
+"поставлен в соответствие произвольному числу строк."
+msgstr ""
+"Frage für die Suche der Übereinstimmungen zwischen Tabellenspalten und ihren "
+"Zeilen. Jeder Zeile kann nur eine Spalte entsprechen, dabei kann eine Spalte "
+"einer beliebigen Zeilenzahl zugeordnet sein."
+
+msgid "Строки"
+msgstr "Zeilen"
+
+msgid "Столбцы"
+msgstr "Spalten"
+
+msgid "Не передан ответ на вариант"
+msgstr "Antwort auf die Variante wurde nicht eingegeben"
+
+msgid "Недопустимый ответ на вариант"
+msgstr "Unzulässige Antwort auf die Variante"
+
+msgid "К варианту N%s [%s] выбрано [%s]"
+msgstr "Zur Variante N%s [%s] ausgewählt [%s] "
+
+msgid "Вопрос для упорядочивания списка выражений в определённом порядке."
+msgstr "Frage zur Zuordnung der Ausdrücke in eine bestimmte Reihenfolge."
+
+msgid "Выражение"
+msgstr "Ausdruck"
+
+msgid "Упорядочивание списка выражений"
+msgstr "Zuordnung der Ausdrucksliste"
+
+msgid "Не передан один из вариантов ответа на вопрос"
+msgstr "Eine der Antwortvarianten nicht eingegeben"
+
+msgid "Зачисляю за весь вопрос %s баллов."
+msgstr "Für diese Frage angerechnete Punkte  %s "
+
+msgid "Ничего не выбрано на вариант"
+msgstr "Für die Variante nichts ausgewählt"
+
+msgid "Вариант пропущен"
+msgstr "Variante übersprungen"
+
+msgid "Варианту N%s [%s] выбран порядок [%s]"
+msgstr "Für die Variante N%s [%s] ausgewählt Ordnung [%s] "
+
+msgid "Вопрос для классификации списка выражений."
+msgstr "Frage für die Klassifikation der Ausdruckslisteiste."
+
+msgid "Класс"
+msgstr "Unterrichtsraum"
+
+msgid "Классификация списка выражений"
+msgstr "Klassifikation der Ausdrucksliste"
+
+msgid "Ошибочный вариант"
+msgstr "Fehlerhafte Variante"
+
+msgid "Ошибочный вариант ответа на вопрос"
+msgstr "Falsche Antwortvariante auf die Frage"
+
+msgid "Зачисляю %s баллов"
+msgstr "Angerechnete Punkte %s"
+
+msgid "Введено:"
+msgstr "Eingegeben:"
+
+msgid ""
+"Вопрос может содержать несколько верных вариантов ответа.\n"
+"Ответ считается правильным только в том случае, если учащийся отметил "
+"галочками все\n"
+"верные варианты. Если учащийся не отметит хотя бы один из указанных "
+"преподавателем\n"
+"вариантов  или отметит не все  верные варианты, то вопрос в целом не "
+"заcчитывается, т.е.\n"
+"зачисляется минимальное количество баллов. Если учащийся отмечает галочками "
+"только\n"
+"варианты с правильными ответами, то он получает максимальное  количество "
+"баллов."
+msgstr ""
+"Dise Frage kann mehrere richtige Antwortvarianten enthalten. Die Antwort "
+"wird nur dann als richtig bewertet, wenn der"
+
+msgid ""
+"Teilnehmer alle richtigen Varianten mit dem Haken markiert hat. Wenn der "
+"Teilnehmer selbst wenn eine der vom Lehrer angegebenen Varianten nicht "
+"bemerken wird oder wird nicht alle richtigen Varianten bemerken, so wird die "
+"Frage insgesamt nicht заcчитывается, d.h. die minimale Zahl der Grade "
+"aufgenommen. Wenn der Schüler von den Haken nur die Varianten mit den "
+"richtigen Antworten bemerkt, so bekommt er das Maximum der Grade."
+msgstr ""
+"Teilnehmer alle richtigen Varianten mit dem Haken markiert hat. Wenn der "
+"Teilnehmer selbst wenn eine der vom Lehrer angegebenen Varianten nicht "
+"bemerken wird oder wird nicht alle richtigen Varianten bemerken, so wird die "
+"Frage insgesamt nicht заcчитывается, d.h. die minimale Zahl der Grade "
+"aufgenommen. Wenn der Schüler von den Haken nur die Varianten mit den "
+"richtigen Antworten bemerkt, so bekommt er das Maximum der Grade."
+
+msgid ""
+"Ни один ответ не помечен как правильный (это нормальная ситуация). Чтобы "
+"ответить на этот вопрос правильно (и заработать максимальный балл), учащийся "
+"во время тестировании должен снять все галочки (вернее, ни одну не ставить)."
+msgstr ""
+"Keine Antwortvariante wurde als richtig markiert (das ist die normale "
+"Situation). Um auf diese Frage richtig zu antworten (und die maximale "
+"Punktzahl zu erreichen), soll der Teilnehmer keine Haken bei den "
+"Antwortvarianten setzen. "
+
+msgid "отмечен"
+msgstr "markierten Fragen löschen"
+
+msgid "не отмечен"
+msgstr "nicht markiert"
+
+msgid "Верно %s из %s"
+msgstr "Richtig %s aus %s"
+
+msgid "Неверно %s из %s"
+msgstr "Falsch %s aus %s"
+
+msgid "несколько верных вариантов"
+msgstr "mehrere richrigen Varianten"
+
+msgid "БАЛЛ"
+msgstr "PUNKTE"
+
+msgid ""
+"Вопрос для поиска соответствий между 2-мя списками выражений.\n"
+"Например, можно осуществить поиск соответствий между названиями 5-ти стран \n"
+"и 5-ти столиц. Каждому варианту из одного списка должен соответствовать \n"
+"один и только один вариант из другого списка. Если хоть одно соответствие \n"
+"найдено неправильно или сопоставлены не все выражения, начисляется \n"
+"минимальное количество баллов. Если все соответствия найдены верно, "
+"учащийся \n"
+"получает максимальное количество баллов."
+msgstr ""
+"Frage für die Zuordnung von Begriffen zwischen zwei Listen der Ausdrücke. "
+"Zum Beispiel, man kann die Namen von 5 Ländern und"
+
+msgid ""
+"5 Hauptstädten zuordnen. Jede Variante aus einer Liste soll nur einer "
+"Variante aus anderer Liste entsprechen. Wenn nur eine Zuordnung der "
+"Varianten falsch eingegeben wurde, bekommt der Teilnehmer die minimale "
+"Punktzahl. Wenn alle Zuordnungen der Varianten richtig eingegeben wurden, "
+"bekommt der Teilnehmer die maximale Punktzahl. "
+msgstr ""
+"5 Hauptstädten zuordnen. Jede Variante aus einer Liste soll nur einer "
+"Variante aus anderer Liste entsprechen. Wenn nur eine Zuordnung der "
+"Varianten falsch eingegeben wurde, bekommt der Teilnehmer die minimale "
+"Punktzahl. Wenn alle Zuordnungen der Varianten richtig eingegeben wurden, "
+"bekommt der Teilnehmer die maximale Punktzahl. "
+
+msgid "Фраза"
+msgstr "Phrase"
+
+msgid "Соответствие"
+msgstr "Übereinstimmung"
+
+msgid "Заполнение пропусков в фразе"
+msgstr "Lückenausfüllung in der Phrase"
+
+msgid ""
+"Вопрос служит только для возможности скачать учащимся присоединенного\n"
+"файла или ознакомиться с текстом вопроса. Данный вопрос никак не \n"
+"оценивается, зачисляется 0 баллов и 100% правильности. Вопрос полезен,\n"
+"если нужно создать ознакомительный вопрос, на который не требуется\n"
+"отвечать учащемуся."
+msgstr ""
+"Diese Frage dient nur für die Durchsicht des Textes oder für das "
+"Herunterladen der angehängten Datei. Diese Frage wird nicht bewertet, es "
+"werden 0 Punkte und 100 % der Richtigkeit angerechnet. Die Frage ist "
+"sinnvoll, wenn man eine informative Frage erstellen muss, auf die keine "
+"Antwort erforderlich ist."
+
+msgid ""
+"Правильных ответов в таком типе вопросов не бывает, т.к. вопрос не содержит "
+"возможность ввода ответа, а служит только для показа текста вопроса или "
+"прикрепленного файла(ов)."
+msgstr ""
+"Dieser Fragetyp kann keine richtigen Antworten enthalten und dient nur für "
+"die Durchsicht des Fragetextes oder der angehängten Datei."
+
+msgid "Начало&nbsp;фразы"
+msgstr "Anfang&nbsp; der Phrase"
+
+msgid "Вариант заполнения пропуска (через)"
+msgstr "Variante der Lückenausfüllung (durch)"
+
+msgid "Последующий текст"
+msgstr "Nachfolgender Text"
+
+msgid "слово"
+msgstr "Wort"
+
+msgid ""
+"Данный тип вопроса требует проверки ответов непосредственно преподавателем.\n"
+"В поле 'вопрос' введите формулировку вопроса. Учащийся сможет разместить "
+"свой ответ  в \n"
+"большом текстовом поле, либо в прикрепленном файле, либо использовать оба "
+"этих варианта.\n"
+"Далее  ответ в виде текста и файла попадает в список вопросов, отложеннных "
+"для проверки.\n"
+"Рассматривая ответы, преподаватель сам оценивает правильность каждого из них."
+msgstr ""
+"Dieser Fragetyp erfordert Prüfung der Antworten vom Lehrer. Im Feld ' die "
+"Frage ' geben Sie die Formulierung der Frage ein. Der Teilnehmer kann die "
+"Antwort in das große Textfeld eingeben oder in der angehängten Datei einre"
+
+msgid ""
+"ichen. Zur Bewertung findet der Lehrer diese Antworten unter Fragen, die im "
+"Ordner „Zum Prüfen“ abgelegt sind."
+msgstr ""
+"ichen. Zur Bewertung findet der Lehrer diese Antworten unter Fragen, die im "
+"Ordner „Zum Prüfen“ abgelegt sind."
+
+msgid ""
+"Правильных ответов в таком вопросе не бывает, т.к. этот вопрос с ручной "
+"обработкой ответов. Правильность ответов и прикрепленных файлов проверяют "
+"преподаватели курса."
+msgstr ""
+"Еs gibt keine richtigen Antworten in diesem Fragetyp. Die Antwort muss vom "
+"Teilnehmer per Hand eingegeben werden. Die Richtigkeit der Antworten und der "
+"befestigten Dateien wird vomLehrer geprüft."
+
+msgid "Нельзя загружать файлы более 2Мб."
+msgstr "Man darf nicht die Dateien mehr 2Мб laden."
+
+msgid "не могу удалить"
+msgstr "Ich kann nicht löschen"
+
+msgid "Приложен файл %s байт, имя: %s; "
+msgstr "Anhang %s Byte, Dateiname: %s "
+
+msgid "приложен текст %s байт"
+msgstr "angehängter Text %s Byte"
+
+msgid "Ни текста, ни аттач-файла не было передано, начисляю %s баллов."
+msgstr ""
+"Es wurde keinen Text und keine angehängte Datei eingegeben; angerechnete "
+"Punkte %s."
+
+msgid ""
+"Вопрос содержит несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. К вопросу обязательно должна прилагаться "
+"картинка\n"
+"для выбора нужного варианта ответа на ней. При редактировании вопроса "
+"отметьте\n"
+"правильный вариант галочкой, загрузите картинку для вопросу и задайте\n"
+"карту - координатные области на картинке, относящиеся к каждому из вариантов "
+"ответа."
+msgstr ""
+"Diese Frage enthält mehrere Varianten der Antwort, unter denen man nur eine "
+"auswählen kann. Zur Frage soll unbedingt ein Bild hinzugefügt werden. Bei "
+"der Bearbeitung der Frage markieren Sie die richtige Variante mit dem Haken, "
+"laden Sie das Bild für der Frage und erstellen Sie die Karte - die "
+"Koordinatengebie"
+
+msgid "te auf dem Bild, die sich auf jede einzelne Antwortvariante bezieht."
+msgstr "te auf dem Bild, die sich auf jede einzelne Antwortvariante bezieht."
+
+msgid "Карта: список координат для областей ответа"
+msgstr "Karte: Liste der Koordinaten für die Gebiete der Antwort"
+
+msgid "редактировать"
+msgstr "bearbeiten"
+
+msgid "Показывать варианты ответа (иначе только картинку)"
+msgstr "Varianten der Antwort anzeigen (ansonsten nur das Bild)"
+
+msgid "попытка передать неверный код ответа."
+msgstr "Es wurde versucht eine falsche Code einzugeben."
+
+msgid "попытка передать неверный код ответа:"
+msgstr "Es wurde versucht eine falsche Code einzugeben:"
+
+msgid "За этот вопрос зачисляю баллов:"
+msgstr "Für diese Frage angerechnete Punkte:"
+
+msgid ""
+"Вопрос может содержать несколько вариантов ответа, среди которых\n"
+"выбрать можно только один. При редактировании вопроса отметьте\n"
+"правильный вариант галочкой. Обязательно "
+msgstr ""
+"Diese Frage kann mehrere Varianten der Antwort enthalten, unter denen man "
+"nur eine auswählen kann. Bei der Bearbeitung der Frage markieren Sie die "
+"richtige Variante mit dem Haken. Obligatorisch"
+
+msgid ""
+"Этот тип вопроса предназначен для создания СПЕЦИАЛИЗИРОВАННЫХ тестов. Для "
+"этого сам тест\n"
+"   можно оформить, к примеру, как FLASH объект, который работает как черный "
+"ящик для eLearning Server.\n"
+"   В этом случае FLASH объект передает набор параметров - результатов "
+"тестирования, а eLearning Server\n"
+"   их принимает, обрабатывает и записывает в БД. Для корректной работы имена "
+"параметров, передаваемых\n"
+"   из ОБЪЕКТА должны соответсвовать полям в правой колонке ввода (при "
+"формировании вопроса).\n"
+"   Значения переданных параметров будут проверяться по шаблонам в левой "
+"колонке"
+msgstr ""
+"Dieser Fragetyp ist für die Erstellung von SPEZIALISIERTEN Tests vorgesehen. "
+"Dazu kann man den Test zum Beispiel als FLASH-Objekt öffnen, das als Black "
+"Box für eLearning Server arbeitet. In diesem Fall gibt FLASH dem Objekt die "
+"Parameter (Testergebnisse), und eLearning Server übernimmt sie, bearbeitet "
+"und speichert in die Datenbank. Für die korrekte Arbeit sollen die "
+"Parameternamen den Feldern in der rechten Spalte der Eingabe (bei der "
+"Erstellung der Frage) entsprechen. Die Werte der übergebenen Parameter "
+"werden nach den Vorlagen in der linken Spalte der Eingabe geprüft."
+
+msgid "Подпись"
+msgstr "Unterschrift"
+
+msgid "Имя параметра"
+msgstr "Name des Parameters"
+
+msgid "По слушателю %s выбран вариант %s"
+msgstr "Variante %s nach dem Zuhörer %s ausgewählt"
+
+msgid "Выйти из системы"
+msgstr "Ausloggen"
+
+msgid "Поиск по Базе знаний"
+msgstr "Suche in der Wissensdatenbank"
+
+msgid "поиск"
+msgstr "Suche"
+
+msgid "Просмотр Базы знаний"
+msgstr "Durchsicht der Wissensdatenbank"
+
+msgid "Общие настройки"
+msgstr "Allgemeine Einstellungen"
+
+msgid "Название Системы"
+msgstr "Systemname"
+
+msgid "E-mail администрации Портала"
+msgstr "E-mail des Systemadministrators"
+
+msgid "Количество строк в таблице"
+msgstr "Anzahl der Tabellenzeilen"
+
+msgid "Количество сообщений, отображаемых в рабочей области канала чата"
+msgstr ""
+"Mitteilungenzahl, die auf dem Arbeitsgebiet des Chatkanals angezeigt werden"
+
+msgid "Интеграция с iWebinar"
+msgstr "Integration mit iWebinar"
+
+msgid "Адрес точки публикации вебинаров"
+msgstr "Adresse der Publikation der Webinare"
+
+msgid "Безопасность"
+msgstr "Sicherheit"
+
+msgid "Запретить слушателю выделять и копировать содержимое страниц"
+msgstr "Markieren und Kopieren der Seiten untersagen"
+
+msgid ""
+"Запретить одновременное нахождение на сервере нескольких пользователей с "
+"одним логином"
+msgstr "Aufenthalt auf dem Server für die Benutzern untersagen "
+
+msgid "eLearning Server"
+msgstr "eLearning Server"
+
+msgid "Количество вопросов:"
+msgstr "Fragenzahl:"
+
+msgid "Количество попыток:"
+msgstr "Versuchszahl:"
+
+msgid "Ограничение по времени, мин:"
+msgstr "Zeitlimit, Min:"
+
+msgid "Приступить к выполнению?"
+msgstr "Ausführung starten?"
+
+msgid "создать тему"
+msgstr "Thema erstellen"
+
+msgid "Темы"
+msgstr "Themen"
+
+msgid "Автор "
+msgstr "Autor "
+
+msgid "Сообщений"
+msgstr "Mitteilungen"
+
+msgid "Обновление"
+msgstr "Aktulisierung"
+
+msgid "Все темы"
+msgstr "Alle Themen"
+
+msgid "Ответить на сообщение"
+msgstr "Antworten auf die Mitteilung"
+
+msgid "учетные записи"
+msgstr "Benutzerkonten"
+
+msgid "создать роль"
+msgstr "eine Rolle erstellen"
+
+msgid "Базовая роль"
+msgstr "Grundlegende Rolle"
+
+msgid "Доступные функции"
+msgstr "Zugängliche Funktionen"
+
+msgid "нет существующих ролей"
+msgstr "Es gibt keine existierende Rollen"
+
+msgid "Создание новой роли"
+msgstr "Erstellen einer neuen Rolle"
+
+msgid "Название роли"
+msgstr "Rollenbezeichnung"
+
+msgid "всем новым"
+msgstr "für alle neuen"
+
+msgid "Функции, доступные базовой роли"
+msgstr "Funktionen, die für die grundlegende Rolle zugänglich sind"
+
+msgid "Функции, доступные производной роли"
+msgstr "Funktionen, die für die abgeleitete Rolle zugänglich sind"
+
+msgid "Вперед"
+msgstr "Vorwärts"
+
+msgid "Редактировать роль"
+msgstr "Rolle bearbeiten"
+
+msgid "Назначить роль пользователям"
+msgstr "Rolle den Benutzern zuordnen"
+
+msgid "Создать руководство пользователя"
+msgstr "Bedienungsanleitung für Benutzer erstellen"
+
+msgid "Вы действительно желаете удалить роль? Восстановить будет невозможно!"
+msgstr ""
+"Wollen Sie wirklich die Rolle löschen? Sie wiederherzustellen wird nicht "
+"möglich sein!"
+
+msgid "Назначение роли пользователям"
+msgstr "Zuordnung der Rolle den Benutzern"
+
+msgid "Все пользователи"
+msgstr "Alle Benutzer"
+
+msgid "Пользователи, которым назначена данная роль"
+msgstr "Benutzer mit dieser Rolle"
+
+msgid ""
+"Внимание! Сеанс запущен в режиме просмотра. Используются настройки по "
+"умолчанию, оценка не выставляется. "
+msgstr ""
+"Achtung! Diese Sitzung ist im Ansicht-Modus ausgeführt. Es werden die "
+"Standarteinstellungen verwendet, wird nicht bewertet. "
+
+msgid "Прошло:"
+msgstr "Verstrichene Zeit:"
+
+msgid "мин."
+msgstr "Min:"
+
+msgid "Всего:"
+msgstr "Insgesamt:"
+
+msgid ""
+"Внимание! Осталось 5 минут до завершения тестирования.\n"
+"По истечении этого времени сеанс тестирования принудительно завершится."
+msgstr "Auchtung! Nach 5 Minuten wird dieser Test automatisch beendet. ."
+
+msgid ""
+"Внимание! Осталась 1 минута до перехода к следующему вопросу.\n"
+"По истечении этого времени переход будет осуществлен принудительно."
+msgstr ""
+"Achtung! Nach einer Minute 1 Minute werden Sie automatisch zur nächsten "
+"Frage weitergeleitet."
+
+msgid "Время ответа на вопрос вышло."
+msgstr "Zeit für die Beantwortung der Frage ist abgelaufen."
+
+msgid "Диапазон баллов: от"
+msgstr "Der Punktebereich: von"
+
+msgid "Сохранить и закончить"
+msgstr "Speichern und beenden"
+
+msgid "Вопросов:"
+msgstr "Fragen:"
+
+msgid "всего"
+msgstr "insgesamt"
+
+msgid "осталось"
+msgstr "verblieben"
+
+msgid "Результат:"
+msgstr "Ergebnis:"
+
+msgid "Название занятия"
+msgstr "Titel der Lerneinheit"
+
+msgid "Всего вопросов"
+msgstr "Fragen insgesamt"
+
+msgid "Получено ответов"
+msgstr "Antworten bekommen"
+
+msgid "Начало тестирования"
+msgstr "Start des Testings"
+
+msgid "сегодня в "
+msgstr "Heute in"
+
+msgid "Окончание тестирования"
+msgstr "Ende des Testings"
+
+msgid "Потрачено времени"
+msgstr "Verstrichene Zeit "
+
+msgid "сек."
+msgstr "Sek."
+
+msgid "Я подтверждаю, что ознакомился с результатами"
+msgstr "Ich bestätige Ergebnisse gesehen zu haben"
+
+msgid "Закончить просмотр"
+msgstr "Durchsicht beenden"
+
+msgid "Тест не найден"
+msgstr "Test nicht gefunden"
+
+msgid "Удалить сообщение"
+msgstr "Mitteilung löschen"
+
+msgid "Создание темы"
+msgstr "Erstellung des Themas"
+
+msgid "Иконка"
+msgstr "Symbol"
+
+msgid "Редактирование темы"
+msgstr "Bearbeitung des Themas"
+
+msgid "человек"
+msgstr "Teilnehmer"
+
+msgid "человека"
+msgstr "des Teilnehmers"
+
+msgid "час"
+msgstr "Stunde"
+
+msgid "часа"
+msgstr "der Stunde"
+
+msgid "часов"
+msgstr "der Stunden"
+
+msgid "посетил"
+msgstr "besuchte"
+
+msgid "посетило"
+msgstr "besuchte"
+
+msgid "посетили"
+msgstr "besuchten"
+
+msgid "Редактирование роли"
+msgstr "Bearbeitung der Rolle"
+
+msgid "Закрыть список функций"
+msgstr "Liste der Funktionen zu schließen"
+
+msgid "Открыть список функций"
+msgstr "Liste der Funktionen öffnen"
+
+msgid "все новости"
+msgstr "Alle Nachrichten"
+
+msgid "Просмотр новости запрещён"
+msgstr "Durchsicht der Neuheit ist nicht zulässig"
+
+msgid ""
+"Название администрации Портала (поле 'От' в письмах, рассылаемых Системой)"
+msgstr ""
+"Name der Portalverwaltung (das Feld 'Von' in den vom System verschickten "
+"Briefen)"
+
+msgid "Домен Active Directory для автоматической авторизации пользователей"
+msgstr "Domäne Active Directory für automatische Benutzerautorisierung"
+
+msgid "Домен"
+msgstr "Domäne"
+
+msgid "Хост"
+msgstr "Host"
+
+msgid "Адрес контроллера домена"
+msgstr "Adresse des Domänenkontrollers"
+
+msgid "для импорта и синхронизации списка учетных записей"
+msgstr "Für Import und Synchronisation der Accountliste"
+
+msgid "Имя пользователя"
+msgstr "Benutzername"
+
+msgid "Интеграция с Connect Pro"
+msgstr "Integration mit Connect Pro"
+
+msgid "Логин администратора"
+msgstr "Login des Administrators"
+
+msgid "Пароль администратора"
+msgstr "Passwort des Administrators"
+
+msgid "Пароль по умолчанию для новых пользователей"
+msgstr "Standardpasswort für neue Benutzer"
+
+msgid "высылать сообщения по email"
+msgstr "Nachrichten per E-Mail senden"
+
+msgid "Произвольный"
+msgstr "Frei wählbar"
+
+msgid "Статистика"
+msgstr "Statistik"
+
+msgid "Счетчик посетителей системы"
+msgstr "Zähler der Systembesucher"
+
+msgid "Заявки"
+msgstr "Wahlkurse"
+
+msgid "Популярные курсы"
+msgstr "Beliebte Kurse"
+
+msgid "Активность"
+msgstr "Aktivität"
+
+msgid "Распределение активности"
+msgstr "Aktivitätsverteilung"
+
+msgid "Успеваемость"
+msgstr "Lernfortschritt"
+
+msgid "Разное"
+msgstr "Verschiedenes"
+
+msgid "Интересные факты"
+msgstr "Interessante Fakten"
+
+msgid "Часто задаваемые вопросы"
+msgstr "Häufig gestellte Fragen (FAQ)"
+
+msgid "Видеоролики по работе с eLearning Server 4G"
+msgstr "Video für die Arbeit mit eLearning Server 4G"
+
+msgid "Обучение"
+msgstr "Ausbildung"
+
+msgid "Расписание на сегодня"
+msgstr "Stundenplan für heute"
+
+msgid "Каталог учебных курсов"
+msgstr "Kurskatalog"
+
+msgid "Рекомендуемые курсы"
+msgstr "Empfohlene Kurse"
+
+msgid "Сбор обратной связи"
+msgstr "Feedback bekommen"
+
+msgid "болонская система"
+msgstr "Bologna-System"
+
+msgid "вебинар"
+msgstr "Webinar"
+
+msgid "connect pro"
+msgstr "Connect Pro"
+
+msgid "интеграция с at"
+msgstr "Integration mit at"
+
+msgid "интеграция с cms"
+msgstr "Integration mit cms"
+
+msgid "интеграция с sis"
+msgstr "Integration mit sis"
+
+msgid "Синхронизация структуры организации"
+msgstr "Synchronisierung der Organisationsstruktur"
+
+msgid "Уведомление по Email об отсутствиях на занятиях"
+msgstr "Mitteilung per Email über die Abwesenheit"
+
+msgid "Администрирование"
+msgstr "Administration"
+
+msgid "Все учетные записи"
+msgstr "Alle Benutezrkonten"
+
+msgid "Создать учетную запись"
+msgstr "Benutzerkonten erstellen"
+
+msgid "Сгенерировать учетные записи "
+msgstr "Benutzerkonten generieren"
+
+msgid "Импортировать учетные записи из CSV"
+msgstr "Benutzerkonten aus CSV importieren"
+
+msgid "Ausbildungsleiter"
+msgstr "Administratoren der Ausbildung"
+
+msgid "Настройка ролей"
+msgstr "Einstellung der Rollen"
+
+msgid "Портал"
+msgstr "Portal"
+
+msgid "Сервисы информационного взаимодействия Портала"
+msgstr "Kommunikation Services"
+
+msgid "Создать учебный курс"
+msgstr "Kurs erstellen"
+
+msgid "Импортировать классификацию из csv"
+msgstr "Klassifikation aus CSV importieren"
+
+msgid "Мои курсы"
+msgstr "Meine Kurse"
+
+msgid "Заявки на обучение"
+msgstr "Wahlkurse"
+
+msgid "Прошедшие обучения"
+msgstr "Kursabsoventen"
+
+msgid "Провайдеры обучения"
+msgstr "Kursanbieter"
+
+msgid "Добавить провайдера"
+msgstr "Anbieter hinzufügen"
+
+msgid "Создать подразделение"
+msgstr "Abteilung erstellen"
+
+msgid "Создать штатную единицу"
+msgstr "Planstelle erstellen"
+
+msgid "Разработка учебных модулей"
+msgstr "Entwicklung der Lehrmodule"
+
+msgid "Учебные модули в разработке"
+msgstr "Lehrmodule in Entwicklung"
+
+msgid "Архив учебных модулей"
+msgstr "Archiv der Lehrmodule"
+
+msgid "Поставщики"
+msgstr "Anbieter"
+
+msgid "Добавить поставщика"
+msgstr "Anbieter hinzufügen"
+
+msgid "Отчёты"
+msgstr "Berichte"
+
+msgid "Генерация отчета"
+msgstr "Berichtserzeugung"
+
+msgid "Архив отчетов"
+msgstr "Berichtsarchiv"
+
+msgid "Конструктор отчетных форм"
+msgstr "Konstruktor der Berichtsformulare"
+
+msgid "Создать отчетную форму"
+msgstr "Berichtsformular erstellen"
+
+msgid "Бланк отчетов"
+msgstr "Berichtsvorlage"
+
+msgid "Настройки"
+msgstr "Einstellungen"
+
+msgid "Параметры системы"
+msgstr "Systemparameter"
+
+msgid "Парольная политика"
+msgstr "Passwortrichtlinien"
+
+msgid "Шаблоны cистемных сообщений"
+msgstr "Vorlagen der Systemnachrichten"
+
+msgid "Шаблоны приказов"
+msgstr "Befehl-Vorlagen"
+
+msgid "Шаблон сертификатов"
+msgstr "Zertifikatvorlagen"
+
+msgid "Создать классификатор"
+msgstr "Klassifikator erstellen"
+
+msgid "Просмотр"
+msgstr "Durchsicht"
+
+msgid "Импорт"
+msgstr "Import"
+
+msgid "Конструктор уч. модуля"
+msgstr "Konstruktor eines Lernmoduls"
+
+msgid "Создание учебного модуля"
+msgstr "Erstellung eines Lernmoduls"
+
+msgid "Редактирование учебного модуля"
+msgstr "Bearbeitung des Lernmoduls"
+
+msgid "Редактирование содержания учебного модуля"
+msgstr "Bearbeitung des Lernmodulinhaltes"
+
+msgid "Редактировать раздел"
+msgstr "Bearbeitung des Abschnitts"
+
+msgid "Просмотр ресурса"
+msgstr "Durchsicht der Ressource"
+
+msgid "Редактирование свойств"
+msgstr "Bearbeitung der Eigenschaften"
+
+msgid "Учебные материалы"
+msgstr "Lernmaterialien"
+
+msgid "Разработчики"
+msgstr "Entwickler"
+
+msgid "Внешний поставщик"
+msgstr "Externer Anbieter"
+
+msgid "Ведомость успеваемости"
+msgstr "Lernfortschritt"
+
+msgid "Редактирование"
+msgstr "Bearbeitung"
+
+msgid "Вебинары"
+msgstr "Webinare"
+
+msgid "Подгруппы"
+msgstr "Untergruppen"
+
+msgid "Редактирование содержимого"
+msgstr "Bearbeitung des Inhaltes"
+
+msgid "Редактирование учетной записи"
+msgstr "Bearbeitung der Benutzerkonten"
+
+msgid "История обучения"
+msgstr "Historie der Ausbildung"
+
+msgid "История опросов"
+msgstr "Historie der Umfragen"
+
+msgid "Область ответственности организатора обучения"
+msgstr "Verantwortungsgebiet des Ausbildungsleiters"
+
+msgid "Курсы преподавателю"
+msgstr "Kurse für Lehrer"
+
+msgid "Курсы слушателю"
+msgstr "Kurse für Teilnehmer"
+
+msgid "Результаты опросов"
+msgstr "Ergebnisse der Umfragen"
+
+msgid "Выйти из режима"
+msgstr "Zu eigenem persönlichen Bereich wechseln"
+
+msgid ""
+"Составьте какой-либо текст с одним или несколькими  пропущенными словами,\n"
+"значениями или диапазонами значений.\n"
+"Эти пропущенные слова и должны будут ввести учащиеся. Сначала введите\n"
+"параметры 'основной вопрос' и 'начальный текст', затем -  любое количество\n"
+"параметров 'пропущенное слово' и 'последующий текст'. Чтобы закодировать\n"
+"фразу 'Каждый _____ желает знать, где ______ фазан', нужно вписать слова\n"
+"до первого пропуска ('Каждый') в поле 'начальный текст', далее слово "
+"'охотник'\n"
+"в первую строку колонки 'пропущенное сл"
+msgstr ""
+
+msgid ""
+"ово' и затем последующий текст\n"
+"('желает знать, где') в поле 'последующий текст' первой строки вариантов. "
+"Слова\n"
+"('сидит' и 'фазан.')нужно ввести аналогичным образом во вторую строку. Если\n"
+"учащийся введет все пропущенные слова верно, то начисляется максимальное\n"
+"количество баллов, иначе минимальное баллов. Если ответ частично верен, то\n"
+"начисляется часть от максимального балла.\n"
+"Слова можно вводить в любом регистре, пробелы по краям слов не "
+"обрабатываются.\n"
+"Для савнения значений как чисел, заключите значения в кв?"
+msgstr ""
+
+msgid ""
+"?дратные скобки - [5.0].\n"
+"Для указания диапазона укажите границы через двоеточие [1.1:7.77]"
+msgstr ""
+"Bilden Sie irgendwelchen Text mit ein oder mehreren versäumten Wörtern. \n"
+" Diese versäumten Wörter sollen die Schüler eben einführen. Erstens führen "
+"Sie \n"
+" die Parameter ' die Hauptfrage ' und ' den Anfangstext ', dann - eine "
+"beliebige Zahl \n"
+" der Parameter ' das versäumte Wort ' und ' den nachfolgenden Text ' ein. "
+"Die Wörter kann man in einem beliebigen Register einführen, die Lücken nach "
+"den Rändern der Wörter werden nicht bearbeitet. \n"
+" Für савнения der Bedeutungen wie der Zahlen, schließen Sie die Bedeutungen "
+"in die quadratischen Klammern - [5.0]. \n"
+" Für den Hinweis des Umfangs bezeichnen Sie die Grenzen durch den "
+"Doppelpunkt [1.1:7.77]"
+
+msgid " по "
+msgstr "bis"
+
+msgid "Остаться"
+msgstr "bleiben"
+
+msgid "Ваш браузер не поддерживается"
+msgstr "Browser wird nicht unterstützt"
+
+msgid "CSV-файл"
+msgstr "CSV-Datai"
+
+msgid "Протокол интеграции"
+msgstr "Das Protokoll der Integration"
+
+msgid "Витрина учебных курсов"
+msgstr "Das Schaufenster der Lehrgänge"
+
+msgid ""
+"Ваша система не содержит всех необходимых компонент для корректного "
+"отображения содержимого."
+msgstr ""
+"Das System enthält alle notwendigen Komponenten für die korrekte Abbildung "
+"des Inhalts nicht."
+
+msgid ""
+"Инфоблок типа «А знаете ли Вы, что…», который в случайном порядке отображает "
+"интересные и занимательные факты"
+msgstr ""
+"Den informativen Block als \"Und ob Sie, dass … wissen\", der in der "
+"zufälligen Ordnung die interessanten und interessanten Tatsachen darstellt"
+
+msgid "Общий канал"
+msgstr "Der allgemeine Kanal"
+
+msgid "заявок"
+msgstr "Der Anforderungen"
+
+msgid "Блок пользовательской авторизации"
+msgstr "Der Anwenderautorisation Block"
+
+msgid "План занятий на сегодня"
+msgstr "Heutiger Plan"
+
+msgid "Импорт учётных записей из CSV-файла"
+msgstr "Der Import der Berechnungsaufzeichnungen aus der CSV-Datei"
+
+msgid "Индикатор прохождения учебных модулей"
+msgstr "Der Indikator des Durchganges der Lehrmodule"
+
+msgid "Индикатор отображает процент прохождения учебных модулей"
+msgstr "Der Indikator stellt das Prozent des Durchganges der Lehrmodule dar"
+
+msgid ""
+"Инфоблок позволяет просмотреть, кто из однокурсников сейчас online, и "
+"пригласить их пообщаться в чате"
+msgstr ""
+"Der informative Block lässt zu, durchzusehen, wer aus den Kommilitonen jetzt "
+"online, und sie einzuladen, im Chat umzugehen"
+
+msgid "Инфоблок отображает план занятий на текущую дату"
+msgstr ""
+"Der informative Block stellt den Plan der Beschäftigungen auf das laufende "
+"Datum dar"
+
+msgid ""
+"Инфоблок отображает статистику слушателей, зачисленных на курсы, обучающихся "
+"и закончивших обучение"
+msgstr ""
+"Der informative Block stellt die Statistik der Zuhörer, die auf die Kurse "
+"aufgenommen sind, ausgebildet und beendend die Ausbildung dar"
+
+msgid "Быстрый доступ к последним новостям"
+msgstr "Der schnelle Zugang auf die letzten Neuheiten"
+
+msgid "голосов:"
+msgstr "Der Stimmen:"
+
+msgid ""
+"График, который наглядно отображает курсы, наиболее популярные у слушателей"
+msgstr ""
+"Der Zeitplan, der die Kurse, populärst bei den Zuhörer anschaulich darstellt"
+
+msgid "Слушателя"
+msgstr "Des Zuhörers"
+
+msgid "Перечень учебных курсов с возможностью подать заявку"
+msgstr "Die Abgabe der Anforderungen auf die Kurse"
+
+msgid "Анализ распределения активности пользователей"
+msgstr "Die Analyse der Verteilung der Aktivität der Benutzer"
+
+msgid "Примечание 1"
+msgstr "Die Anmerkung 1"
+
+msgid "Примечание 2"
+msgstr "Die Anmerkung 2"
+
+msgid " Дан ответ:"
+msgstr "Die Antwort ist gegeben:"
+
+msgid " автоматическое формирование групп"
+msgstr "Die automatische Bildung der Gruppen"
+
+msgid "Учётные записи успешно импортированы."
+msgstr "Die Berechnungsaufzeichnungen sind erfolgreich eingeführt."
+
+msgid "Установленная версия"
+msgstr "Die bestimmte Version"
+
+msgid "Формирование учебной сессии"
+msgstr "Die Bildung der Lehrtagung"
+
+msgid "Редактирование места проведения"
+msgstr "Die Editierung der Stelle der Durchführung"
+
+msgid " оценка за задание"
+msgstr "Die Einschätzung für die Aufgabe"
+
+msgid "Экспресс-опрос"
+msgstr "Die Express-Umfrage"
+
+msgid "Информация о числе посещений системы пользователями и гостями"
+msgstr ""
+"Die Informationen über die Zahl der Besuche des Systems von den Benutzern "
+"und den Gästen"
+
+msgid ""
+"Контроль заявок на обучение для своевременного реагирования организатора "
+"обучения"
+msgstr ""
+"Die Kontrolle der Anforderungen auf die Ausbildung für das termingemäße "
+"Reagieren des Organisators der Ausbildung"
+
+msgid "Контроль посещаемости СДО пользователями"
+msgstr "Die Kontrolle der Teilnehmerzahl СДО von den Benutzern"
+
+msgid ""
+"Курсы, сделанные в eAuthor 3.1, работают только в Microsoft Internet "
+"Explorer версии 5.5 или старше."
+msgstr ""
+"Die Kurse, die in eAuthor 3.1, gemacht sind arbeiten nur in Microsoft "
+"Internet Explorer die Versionen 5.5 oder ist älterer."
+
+msgid "Короткие видеоролики, демонстрирующие основные функции системы"
+msgstr ""
+"Die kurzen Videowerbefilme, die die Hauptfunktionen des Systems demonstrieren"
+
+msgid "Учебные программы"
+msgstr "Die Lehrprogramme"
+
+msgid ""
+"Список курсов со свободной регистрацией и близкой тематикой для данного "
+"слушателя"
+msgstr ""
+"Die Liste der Kurse mit der freien Registrierung und der nahen Thematik für "
+"den gegebenen Zuhörer"
+
+msgid "Сообщения"
+msgstr "Die Mitteilungen"
+
+msgid "Необходимая версия"
+msgstr "Die notwendige Version"
+
+msgid "Организация опросов и голосований (ответ на один вопрос)"
+msgstr ""
+"Die Organisation der Umfragen und der Abstimmungen (die Antwort auf eine "
+"Frage)"
+
+msgid "Организация опросов и голосований (ответы на нескольких вопросов)"
+msgstr ""
+"Die Organisation der Umfragen und der Abstimmungen (die Antworten auf "
+"einiger Fragen)"
+
+msgid "Организаторы обучения"
+msgstr "Die Organisatoren der Ausbildung"
+
+msgid "Статистика обучаемых на курсах"
+msgstr "Die Statistik ausgebildet in den Kursen"
+
+msgid "Места проведения обучения"
+msgstr "Die Stellen der Durchführung der Ausbildung"
+
+msgid " штраф за несвоевременное выполнение занятия"
+msgstr "Die Strafe für die unzeitige Ausführung der Beschäftigung"
+
+msgid "Обзор.."
+msgstr "Die Übersicht.."
+
+msgid "Видеоролики по работе с системой"
+msgstr "Die Videowerbefilme nach der Arbeit mit dem System"
+
+msgid "Количество ресурсов"
+msgstr "Die Zahl der Ressourcen"
+
+msgid "Время не ограничено"
+msgstr "Die Zeit ist nicht beschränkt"
+
+msgid "Нет данных для отображения"
+msgstr "Es gibt keine Daten für die Abbildung"
+
+msgid "Пропущено вопросов"
+msgstr "Es ist der Fragen versäumt"
+
+msgid "Вопрос"
+msgstr "Frage"
+
+msgid "Выйти"
+msgstr "Hinauszugehen"
+
+msgid "В браузере отключена поддержка выполнения сценариев JavaScript."
+msgstr ""
+"Im Browser ist die Unterstützung der Ausführung der Drehbucher JavaScript "
+"abgeschaltet."
+
+msgid "от имени пользователя"
+msgstr "Im Namen des Benutzers"
+
+msgid "Войти от имени пользователя"
+msgstr "Im Namen des Benutzers einzugehen"
+
+msgid " не прикреплен к занятию"
+msgstr "Ist an der Beschäftigung nicht befestigt"
+
+msgid " не найден"
+msgstr "Ist nicht gefunden"
+
+msgid "Правильный"
+msgstr "korrekt"
+
+msgid "Выход"
+msgstr "Logout"
+
+msgid "Мои однокурсники"
+msgstr "Meine Kollegen"
+
+msgid " с "
+msgstr "mit"
+
+msgid "Шаг 1. Выбор файла"
+msgstr "Schritt 1. Die Auswahl der Datei"
+
+msgid "Вы действительно хотите выйти из системы?"
+msgstr "Wollen Sie sich wirklich abmelden?"
+
+msgid ""
+"Вы действительно хотите прервать тестирование? При этом будет создана запись "
+"в журнале тестирований и попыка тестирования будет засчитана, но оценка за "
+"занятие выставлена не будет."
+msgstr ""
+"Sie wollen die Prüfung wirklich unterbrechen? Es wird die Aufzeichnung in "
+"der Zeitschrift der Prüfungen dabei geschaffen sein und попыка die Prüfungen "
+"wird angerechnet sein, aber die Einschätzung für die Beschäftigung wird "
+"nicht ausgestellt sein."
+
+msgid ""
+"Вы действительно хотите досрочно завершить тестирование? При этом будет "
+"выставлена оценка только за те вопросы, на которые Вы успели ответить. "
+"Данный вид завершения задания является нормальным и допустимым."
+msgstr ""
+"Sie wollen wirklich vorfristig die Prüfung beenden? Dabei wird die "
+"Einschätzung nur für jene Fragen ausgestellt sein, auf die Sie dazugekommen "
+"sind zu antworten. Die vorliegende Art der Vollendung der Aufgabe ist normal "
+"und zulässig."
+
+msgid " Тема"
+msgstr "Thema"
+
+msgid "Вариант заполнения пропуска (через \";\")"
+msgstr "Variante der Lückenausfüllung (durch \";\")"
+
+msgid "Операционная система"
+msgstr "Betriebssystem"
+
+msgid "Разрешение экрана"
+msgstr "Bildschirmauflösung"
+
+msgid "Наличие cookie"
+msgstr "Cookies"
+
+msgid "По данному курсу нет активности"
+msgstr "Noch keine vorhanden"

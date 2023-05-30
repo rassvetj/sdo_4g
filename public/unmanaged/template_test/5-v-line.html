@@ -1,0 +1,22 @@
+
+<input type=text name="form[<?=$number?>][otvet][<?=$v_i?>]" size=15
+<?php
+if (!empty($vopros['otvets_info'][$k])) echo "value=\"{$vopros['otvets_info'][$k]}\"";
+?>
+onKeypress="if (event.keyCode == 13) return false;"
+onKeyUp="if (this.value=='')
+            document.m.ischecked_<?=$number?>.value=0;
+         else document.m.ischecked_<?=$number?>.value=1; return false;"
+onPropertyChange="if (this.value=='') document.m.ischecked_<?=$number?>.value=0;
+                  else document.m.ischecked_<?=$number?>.value=1;"
+>
+<script type="text/javascript">
+<!--
+document.getElementById('ischecked_<?=$number?>').value=<?php echo (!empty($vopros['otvets_info'][$k]) ? "1" : "0"); ?>;
+//document.m.ischecked_<?=$number?>.value=<?php echo (!empty($vopros['otvets_info'][$k]) ? "1" : "0"); ?>;
+$("form[name='m']").last().find('#ischecked_<?=$number?>').val(<?php echo (!empty($vopros['otvets_info'][$k]) ? "1" : "0"); ?>);
+//-->
+</script>
+<?=
+$v_text3;
+?>

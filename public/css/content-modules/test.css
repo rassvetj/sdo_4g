@@ -1,0 +1,722 @@
+/*----------------------------- PROGRESS_BAR ------------------------------------------*/
+.els-content.els-box table.tests_main td.header_three_td {
+
+}
+
+.els-content.els-box table.tests_main td.header_three_td div.progress {
+float: left;
+overflow: hidden;
+position: relative;
+/*top: 118px;
+left: 1px;*/
+width: 100px;
+height: 14px;
+border-top: 1px solid #98999A;
+border-bottom: 1px solid #ffffff;
+border-left: none;
+border-right: none;
+background: #DCDEDF;
+margin:0;
+padding: 0;
+}
+
+.els-content.els-box table.tests_main td.header_three_td div.progress_load {
+height: 14px;
+border-right: 1px solid #f2f2f2;
+border-left: 1px solid #ffffff;
+background: #57666F;
+margin:0;
+padding: 0;
+z-index: 999;
+}
+
+.els-content.els-box table.tests_main td.header_three_td div.progress_pause {
+float: right;
+}
+
+.els-content.els-box table.tests_main td.header_three_td div.progress_stop {
+float: right;
+position: relative;
+right: 10px;
+}
+
+/* ---------------------------- tests_main ---------------------------------------*/
+
+.els-content.els-box div.tests_header {
+padding: 0px 15px 0px 40px;
+height:55px;
+vertical-align: middle;
+background: #AEB2B5 url(../../images/content-modules/tests/tests_header.gif) top left repeat-x;
+}
+
+.els-content.els-box table.tests_main {
+border-collapse: separate;
+width: 100%;
+position: relative;
+top: 6px;
+height:43px;
+}
+
+.els-content.els-box table.tests_bottom {
+border-collapse: separate;
+width: 100%;
+padding: 24px 15px 0px 40px;
+}
+
+.els-content.els-box table.tests_bottom td.bottom_second_td {
+border-top: 1px solid #C2CBD1;
+vertical-align: middle;
+font-weight: normal; 
+color: #596871; 
+font-size:12px;
+}
+
+.els-content.els-box table.tests_bottom div.bottom_second {
+float: right;
+}
+
+.els-content.els-box table.tests_bottom td.tests_bottom_td {
+border-top: 1px solid #C2CBD1;
+line-height:60px;
+}
+
+.els-content.els-box table.tests_main td.header_first_td {
+vertical-align: middle;
+/*width: 86%;*/
+border-right: 1px solid #82898E;
+padding: 0px 10px 0px 0px;
+font-weight: bold; 
+color: #FFFFFF; 
+font-size:16px;
+text-shadow:#697983 1px 1px 0px; zoom:0;
+}
+
+/*.els-content.els-box table.tests_main td.header_second_td {
+vertical-align: middle;
+width: 20%;
+padding: 0px 10px 0px 10px;
+border-left: 1px solid #D2D5D6;
+border-right: 1px solid #82898E;
+}*/
+
+.els-content.els-box table.tests_main td.header_three_td span.time_remain {
+position: relative;
+top: 3px;
+}
+
+.els-content.els-box table.tests_main td.header_three_td {
+text-align: left;
+vertical-align: middle;
+width: 152px;
+border-left: 1px solid #D2D5D6;
+padding: 0px 0px 0px 10px;
+}
+
+.els-content.els-box table.tests_main td.header_three_td span.time_remain {
+font-weight: normal; 
+color: #FFFFFF; 
+font-size:11px;
+}
+
+/* ---------------------------- tests_body ---------------------------------------*/
+
+.els-content.els-box table.tests_body {
+border-collapse: separate;
+width: 100%;
+}
+
+.els-content.els-box table.tests_body tr.tests {
+border-bottom: 1px solid #000000;
+}
+
+.els-content.els-box table.tests_body td.questt {
+padding: 25px 15px 0px 40px !important;
+}
+
+.els-content.els-box table.tests_body td.questt {
+/*border-bottom: 1px dashed #666;*/
+}
+/*----------------------------- tests_body_main ---------------------------------*/
+
+.els-content.els-box table.tests_body table.tests_body_main {
+width: 100%;
+/*table-layout: fixed;*/
+}
+
+.els-content.els-box table.tests_body table.tests_body_main tr.tests:nth-of-type(2n) {
+background: #f0f2f4;
+}
+.els-content.els-box table.tests_body table.tests_body_main tr.tests.no_background:nth-of-type(2n) {
+background: #ffffff;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main ul li {
+font-weight: normal; 
+color: #596871; 
+font-size:11px;
+list-style-type: none;
+position: relative;
+right: 22px;
+}
+.els-content.els-box table.tests_body table.tests_body_main th {
+text-align: left;
+line-height:30px;
+font-weight: bold; 
+color: #000000; 
+font-size:12px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main td {
+text-align: left;
+font-weight: normal; 
+color: #596871; 
+font-size:12px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main td.body_main_question {
+text-align: left;
+border-bottom: 1px solid #D3DEE3;
+}
+
+table.tests_body table.tests_body_main td.body_main_question span.h1 ul p {
+text-align: left;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main td span.h1 {
+/*position: relative;
+right: 17px;*/
+line-height:30px;
+font-weight: normal; 
+color: #596871; 
+font-size:18px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main td span.tests_tooltip {
+background: url(../../images/content-modules/tooltipic.gif) no-repeat;
+display: inline-block;
+height: 16px;
+width: 16px;
+position: relative;
+top: 3px;
+right: 30px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main tr.tests td.tests_check {
+vertical-align: middle;
+padding-right: 10px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main tr.tests {
+line-height:35px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main tr.tests td {
+font-weight: normal; 
+color: #596871; 
+font-size:13px;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main tr.tests td.tests_radio {
+vertical-align: middle;
+}
+
+.els-content.els-box table.tests_body table.tests_body_main tr.tests td span.arr img {
+vertical-align: middle;
+}
+
+
+/* ---------------------------- JQuery-Checkbox-Plugin --------------------------------- */
+
+.jquery-radio-checkbox       {display: inline; line-height: 24px; cursor: pointer; cursor: hand; padding: 12px;}
+.jquery-radio-checkbox .mark {display: inline;}
+
+.jquery-radio-checkbox img {vertical-align: middle; width: 24px; height: 24px;}
+.jquery-radio-checkbox img {background: transparent url(../../images/content-modules/tests/radio.gif) no-repeat;}
+.jquery-radio-checkbox img { background-position: 0px 0px;}
+
+.jquery-radio-checkbox-checked img {background: transparent url(../../images/content-modules/tests/radio_checked.gif) no-repeat;}
+/*.jquery-radio-checkbox-checked .jquery-radio-checkbox-hover img {background: transparent url(../../images/content-modules/tests/radio_checked.gif) no-repeat;}
+.jquery-radio-checkbox .jquery-radio-checkbox-hover img {background: transparent url(../../images/content-modules/tests/radio_checked.gif) no-repeat; opacity:0.5;}*/
+
+.jquery-checkbox       {display: inline; line-height: 24px; cursor: pointer; cursor: hand;}
+.jquery-checkbox .mark {display: inline;}
+
+.jquery-checkbox img {vertical-align: middle; width: 24px; height: 24px;}
+.jquery-checkbox img {background: transparent url(../../images/content-modules/tests/checkbox.gif) no-repeat;}
+.jquery-checkbox img {background-position: 0px 0px;}
+
+.jquery-checkbox-checked img {background: transparent url(../../images/content-modules/tests/checkbox_checked.gif) no-repeat;}
+
+/*.jquery-checkbox-hover img {background-position: 0px -20px;}
+.jquery-checkbox-checked .jquery-checkbox-hover img {background-position: 0px -60px;}
+
+.jquery-checkbox-disabled img {background-position: 0px -80px;}
+.jquery-checkbox-checked .jquery-checkbox-disabled img {background-position: 0px -100px;}*/
+
+/* ---------------------------- JQuery-Checkbox-Plugin <END> --------------------------------- */
+
+/* ---------------------------- Тип: на упорядочивание! --------------------------------- */
+
+.els-content.els-box table.tests_body table.eLS-drag-handler {
+border-collapse: separate;
+width: 100%;
+height: 37px;
+border: 1px solid #7F8D96;
+border-radius: 2px;
+-o-border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+margin: 4px 0px 4px 0px;
+cursor: move;
+background: #A3ADB3;
+}
+
+.els-content.els-box table.tests_body table.eLS-drag-handler tr.eLS-drag-handler_wrapper {
+background: transparent url(../../images/content-modules/tests/handler_bg.gif) top left repeat-x;
+}
+
+.els-content.els-box table.tests_body table.eLS-drag-handler td.drag-handler_left {
+background: transparent url(../../images/content-modules/tests/cheese.png) top left repeat-y;
+width: 15px;
+border-left: 1px solid #DEE7EC;
+border-right: 1px solid #A0B1BB;
+border-top: 1px solid #EAF0F3;
+border-bottom: 1px solid #C5CACE;
+}
+
+.els-content.els-box table.tests_body table.eLS-drag-handler td.eLS-answer-variant {
+padding: 0px 10px 0px 10px;
+text-align: left;
+vertical-align: middle;
+font-weight: normal; 
+color: #465B67; 
+font-size:12px;
+text-shadow:#D1DfE8 0px 1px 0px; zoom:0;
+border-left: 1px solid #E2EAEF;
+border-right: 1px solid #E2EAEF;
+border-top: 1px solid #EAF0F3;
+border-bottom: 1px solid #C5CACE;
+}
+
+.els-content.els-box table.tests_body table.eLS-drag-handler td.drag-handler_right {
+background: transparent url(../../images/content-modules/tests/cheese.png) top left repeat-y;
+width: 15px;
+border-left: 1px solid #A0B1BB;
+border-right: 1px solid #DEE7EC;
+border-top: 1px solid #EAF0F3;
+border-bottom: 1px solid #C5CACE;
+}
+
+.ui-state-highlight {
+width: 100%;
+height: 2px;
+background: red;
+}
+
+/* В инфоблоке "карусель" криво отображается сообщение, фиксим */
+#carouselBlock .ui-state-highlight {
+    width: auto;
+    height: auto;
+}
+
+/*----------------------------------- На классификацию ------------------------------*/
+
+.main_question_div {
+width:100%;
+}
+
+.left_question_div {
+width:50%;
+min-height: 350px;
+float:left;
+/*overflow:auto;*/
+border-right: 1px dotted #9C9C9C;
+margin-right: -1px;
+}
+
+.right_question_div {
+width:50%;
+min-height: 350px;
+float:right;
+/*overflow:auto;*/
+}
+
+.left_question_div .eLS-sortable {
+min-height: 37px;
+border: none;
+}
+
+.right_question_div .eLS-sortable {
+background: #E8EEF1;
+min-height: 37px;
+border: 1px dashed #C2CBD1;
+margin: 5px 0px 5px 0px;
+padding: 0px 2px 0px 2px;
+border-left: 1px solid #BCC1C4;
+border-right: 1px solid #BCC1C4;
+border-top: 1px solid #66696A;
+border-bottom: 1px solid #FFFFFF;
+}
+
+.questt h2.eLS {
+/*line-height: 20px;*/
+text-align: left;
+vertical-align: middle;
+font-weight: bold; 
+color: #465B67; 
+font-size:12px;
+margin:  0px 0px 5px 2px;
+}
+
+.right_question_div h2.eLS {
+/*line-height: 20px;*/
+text-align: left;
+vertical-align: middle;
+font-weight: bold; 
+color: #465B67; 
+font-size:12px;
+margin:  0px 0px 0px 2px;
+}
+
+.left_question_div .ui-state-highlight {
+width: 100%;
+height: 2px;
+background: red;
+/*width: 100%;
+height: 37px;
+background: #E8EEF1;
+border-radius: 2px;
+-o-border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;*/
+}
+
+.left_question_div-wrapper {
+min-height: 350px;
+/*overflow:auto;*/
+margin: 0px 10px 0px 0px;
+}
+
+.right_question_div-wrapper {
+min-height: 350px;
+/*overflow:auto;*/
+margin: 0px 0px 0px 10px;
+}
+
+.right_question_div .eLS-sortable-container_wrapper {
+border-top: 1px solid #BCC1C4;
+margin: 0px -2px 0px -2px;
+}
+
+/*----------------------------------- Свободный ответ ------------------------------*/
+
+.attach_file {
+line-height: 20px;
+text-align: left;
+vertical-align: middle;
+font-weight: normal; 
+color: #465B67; 
+font-size:12px;
+padding:  20px 0px 0px 0px;
+}
+
+.attach_file_select {
+line-height: 20px;
+text-align: left;
+vertical-align: middle;
+font-weight: normal; 
+color: #465B67; 
+font-size:12px;
+padding:  20px 0px 0px 0px;
+}
+
+.file_select_attach {
+line-height: 20px;
+text-align: left;
+vertical-align: middle;
+font-weight: normal; 
+color: #465B67; 
+font-size:12px;
+padding:  20px 0px 0px 0px;
+}
+
+.brdr textarea {
+font-weight: normal; 
+color: #465B67; 
+font-size:12px;
+}
+
+/*------------------------------------- END_PAGE -------------------------------------*/
+
+table.main th.th_tests {
+border: none;
+background: #AEB2B5 url(../../images/content-modules/tests/tests_header.gif) top left repeat-x;
+}
+
+table.main th.th_tests h1 {
+color: #FFFFFF; 
+font-size:16px;
+text-shadow:#697983 1px 1px 0px; zoom:0;
+}
+
+table.main tr.tr_tests_end {
+font-weight: normal; 
+color: #596871; 
+font-size:12px;
+}
+
+table.table_tests_end {
+font-weight: normal; 
+color: #596871; 
+font-size:11px;
+}
+/*#6435*/
+body .extended-page .hgll-colmask,
+body .extended-page .hgll-col1{
+	overflow:visible;
+}
+.all_ques_title{
+    color: #717171;
+    font-size: 1.091em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: -20px;
+    position: absolute;
+    z-index: auto;
+}
+hr.test_info{
+	clear:both;
+	margin:0;
+    border-bottom: 1px solid #8ea0bc;
+    border-top: 1px solid #5d779f;	
+}
+.test_name_wrap{
+    background:#7a8faf;
+    color: #FFFFFF;
+	padding:12px 17px;
+	border-radius:5px 5px 0 0;
+}
+.test_name_wrap2{
+	padding:12px 17px;
+	border-radius:0 0 5px 5px;
+    border: 1px solid #7a8faf;
+	margin-bottom: 12px;
+}
+.test_name{
+	font-size:1.636em;
+	color:#fff;
+	float:left;
+	margin-bottom: 10px;
+}
+.test_deadline{
+	font-size:1em;
+    padding-bottom: 5px;
+	float:right;
+}
+.test_usr_name{
+	font-style:italic;
+	margin: 5px 0 0 0;
+}
+.test_descr{
+	
+}
+.test_attach{
+	display:inline-block;
+	margin:15px 0 0 0;
+}
+.test_attach li{
+	list-style:none;
+	padding:0 0 0 23px;
+	margin-bottom: 5px;
+	line-height: 1.4em;
+}
+/*
+теперь они выводятся на белом фоне
+.test_attach a,
+.test_attach a:visited,
+.test_attach a:link{
+	color:#b4d4ff;
+}
+.test_attach a:hover {
+    color: #1171B4;
+}*/
+.test_item_wrap .test_attach a,
+.test_item_wrap .test_attach a:visited,
+.test_item_wrap .test_attach a:link{
+	color:#1171B4;
+}
+.test_item_wrap .test_attach a:hover {
+    color: #b4d4ff;
+}
+.test_mime_0{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -107px;/*unknown*/
+}
+.test_mime_1{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -19px;/*web*/
+}
+.test_mime_2{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -36px;/*image*/
+}
+.test_mime_3{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -54px;/*audio*/
+}
+.test_mime_4{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -73px;/*video*/
+}
+.test_mime_5{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -89px;/*flash*/
+}
+.test_mime_6{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left top;/*text*/
+}
+.test_mime_7{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -125px;
+}
+.test_mime_8{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -143px;
+}
+.test_mime_9{
+	background: url(../../images/content-modules/tests/attache_spr.png) no-repeat left -161px;
+}
+.test_item_wrap{
+	padding:10px 17px;
+	color:#5b697d;
+	margin-top:1px;
+	border:1px solid #c9d7ec;
+	background:#eff3f9;		
+}
+.test_unlight{
+	border:1px solid #b2c2dc;
+	background:#dfe7f3;	
+}
+.test_item_wrap ul a{
+	color:#5b697d;
+}
+.test_item_name{
+	color:#63738b;
+	font-style:italic;
+	padding-left: 30px;
+	margin-bottom:20px;
+	line-height: 1.3em;
+}
+/*
+.test_item_checked  - зеленая галочка
+.test_item_quest      -  вопрос
+.test_item_comment - синее облако
+.test_item_redo  - красная возвращающая 
+*/
+.test_item_5{
+	background: url(../../images/content-modules/tests/check_spr.png) no-repeat left 1px;
+}
+.test_item_1{
+	background: url(../../images/content-modules/tests/check_spr.png) no-repeat left -15px;
+}
+.test_item_2{
+    background: url(../../images/content-modules/tests/check_spr.png) no-repeat left -63px;
+}
+.test_item_3{
+	background: url(../../images/content-modules/tests/check_spr.png) no-repeat left -47px;
+}
+.test_item_4{
+	background: url(../../images/content-modules/tests/check_spr.png) no-repeat left -31px;
+}
+.test_item_desc{
+	
+}
+
+#m .test_tooltip_wrapper {
+    margin: 0;
+    position: relative;
+    display:inline-block;
+}
+#m .tooltip{
+    right:-3px;
+    top:2px;
+    background: url("../../images/content-modules/tooltip.gif") no-repeat scroll 0 0 transparent;
+}
+#m .tooltip_wrapper{
+    display:none;
+}
+#m .answ_feed{
+    background:#FFF9CB;
+    border: 1px solid #4A4A4A;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 5px;
+    margin:5px;
+}
+#m .bt-wrapper .answ_feed{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#m label{
+	display: inline-block;
+    line-height: 1.5em;
+    padding: 12px 0;	
+}
+#m .eLS-sortable-item-container{
+    position:relative;
+}
+#m .eLS-sortable-item-container .test_tooltip_wrapper{
+    position: absolute;
+    right: 25px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.els-extended-users {
+    float: left;
+    width: 250px;
+    max-height: 540px;
+    margin-right: -260px;
+}
+
+#els-extended-content {
+    margin-left: 260px;
+    max-height: 540px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#els-extended-group-filter {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#els-extended-group {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#els-extended-group table tr.active {
+    background-color: #f0f2f4;
+}
+
+#els-extended-group table {
+    border-collapse: collapse
+}
+
+#els-extended-group table td {
+    padding: 5px;
+}
+
+#els-extended-group .number_number {
+    margin-bottom: 0 !important;
+    float: right;
+}
+
+.els-extended-user-variant {
+    display: block;
+    padding-top: 5px;
+}
+
+.els-extended-default {
+    text-align: center;
+    background-color: #eff3f9;
+    border: 1px solid #c9d7ec;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 150px 0;
+}

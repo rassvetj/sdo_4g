@@ -1,0 +1,60 @@
+16.05.2023 10:07:45| SQLERROR in C:\Users\dmitry\PhpstormProjects\sdo_4g\public\unmanaged\lib\classes\Option.class.php on line 181
+ SELECT name, value
+                FROM OPTIONS 
+  
+ SQLState: 42S02
+Error Code: 208
+Message: [Microsoft][SQL Server Native Client 11.0][SQL Server]Недопустимое имя объекта "OPTIONS".
+
+----------------
+
+23.05.2023 16:24:13| SQLERROR in C:\Users\dmitry\PhpstormProjects\sdo_4g\public\unmanaged\fun_lib.inc.php4 on line 3533
+ SELECT subid AS CID
+                FROM subjects
+                ORDER BY name ASC 
+  
+ SQLState: 42S02
+Error Code: 208
+Message: [Microsoft][SQL Server Native Client 11.0][SQL Server]Недопустимое имя объекта "subjects".
+
+----------------
+
+23.05.2023 16:24:14| SQLERROR in C:\Users\dmitry\PhpstormProjects\sdo_4g\public\unmanaged\fun_lib.inc.php4 on line 3533
+ SELECT subid AS CID
+                FROM subjects
+                ORDER BY name ASC 
+  
+ SQLState: 42S02
+Error Code: 208
+Message: [Microsoft][SQL Server Native Client 11.0][SQL Server]Недопустимое имя объекта "subjects".
+
+----------------
+
+23.05.2023 16:24:15| SQLERROR in C:\Users\dmitry\PhpstormProjects\sdo_4g\public\unmanaged\fun_lib.inc.php4 on line 3533
+ SELECT subid AS CID
+                FROM subjects
+                ORDER BY name ASC 
+  
+ SQLState: 42S02
+Error Code: 208
+Message: [Microsoft][SQL Server Native Client 11.0][SQL Server]Недопустимое имя объекта "subjects".
+
+----------------
+
+24.05.2023 12:03:48| SQLERROR in C:\Users\dmitry\PhpstormProjects\sdo_4g\public\unmanaged\test_log.php on line 1055
+ SELECT logseance.stid as stid, logseance.cid as cid, logseance.kod as kod, number, time, bal,
+                logseance.balmax as balmax, logseance.comments as comments,
+                logseance.balmin as balmin, good, vopros, [list].weight,
+                       otvet, DATALENGTH(attach) as size, filename, text,
+                       [list].qdata as qdata, [list].adata as adata, [list].qtype1 as qtype, logseance.review_filename, logseance.review
+                FROM logseance, [list]
+                WHERE stid=6
+                AND logseance.kod = [list].kod
+                ORDER BY number    
+ errTL337 
+ SQLState: 42S22
+Error Code: 207
+Message: [Microsoft][SQL Server Native Client 11.0][SQL Server]Недопустимое имя столбца "qtype1".
+
+----------------
+

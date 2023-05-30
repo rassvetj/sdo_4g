@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item>
+		<requisite_id>1</requisite_id>
+		<name>Москва</name>	
+		<recipient>УФК по г.Москве (Российский государственный социальный университет, л/c 20736X39870)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>771701001</kpp>	
+		<oktmo>45360000</oktmo>	
+		<bik>044525000</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810845252000079</bank_account>	
+		<bank_recipient>ГУ Банка России по ЦФО</bank_recipient>	
+		<note>п. 1р. Разрешение № 0731836541 от 08.09.2005</note>	
+		<personalaccount>20736X39870</personalaccount>
+	</item>
+	
+	<item>
+		<requisite_id>3</requisite_id>
+		<name>Анапа</name>	
+		<recipient>УФК по г.Москве (Российский государственный социальный университет, л/c 20736X39870)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>771701001</kpp>	
+		<oktmo>45360000</oktmo>	
+		<bik>044525000</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810845252000079</bank_account>	
+		<bank_recipient>ГУ Банка России по ЦФО</bank_recipient>	
+		<note>п. 1р. Разрешение № 0731836541 от 08.09.2005</note>	
+		<personalaccount>20736X39870</personalaccount>	
+	</item>
+	
+	<item>
+		<requisite_id>10</requisite_id>
+		<name>Клин</name>	
+		<recipient>УФК по Московской области (Филиал РГСУ в г. Клину л/с 20486Х86910)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>502002001</kpp>	
+		<oktmo>46621101</oktmo>	
+		<bik>044525000</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810545252000104</bank_account>	
+		<bank_recipient>ГУ Банка России по ЦФО</bank_recipient>	
+		<note>-</note>	
+		<personalaccount>20486Х86910</personalaccount>	
+	</item>
+	
+	<item>
+		<requisite_id>13</requisite_id>
+		<name>Дедовск</name>	
+		<recipient>УФК по Московской области (филиал РГСУ в г.Дедовске л/с 20486Х49480)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>501702001</kpp>	
+		<oktmo>46618103</oktmo>	
+		<bik>044525000</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810545252000104</bank_account>	
+		<bank_recipient>ГУ Банка России по ЦФО</bank_recipient>	
+		<note>-</note>	
+		<personalaccount>20486Х49480</personalaccount>	
+	</item>
+	
+	<item>
+		<requisite_id>21</requisite_id>
+		<name>Павловский Посад</name>	
+		<recipient>УФК по Московской области (филиал РГСУ в г. Павловском Посаде, л/счет 20486У39390)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>503502001</kpp>	
+		<oktmo>46759000</oktmo>	
+		<bik>044525000</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810545252000104</bank_account>	
+		<bank_recipient>ГУ Банка России по ЦФО</bank_recipient>	
+		<note>-</note>	
+		<personalaccount>20486У39390</personalaccount>	
+	</item>
+	
+	<item>
+		<requisite_id>23</requisite_id>
+		<name>Пятигорск</name>	
+		<recipient>Отдел № 32 УФК по Ставропольскому краю (филиал РГСУ в г.Пятигорске л/с 20216У07520)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>263202001</kpp>	
+		<oktmo>07727000</oktmo>	
+		<bik>040702001</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810700022000002</bank_account>	
+		<bank_recipient>ОТДЕЛЕНИЕ СТАВРОПОЛЬ г. Ставрополь</bank_recipient>	
+		<note>-</note>	
+		<personalaccount>20216У07520</personalaccount>	
+	</item>
+	
+	<item>
+		<requisite_id>29</requisite_id>
+		<name>Сочи</name>	
+		<recipient>УФК по Краснодарскому краю (филиал РГСУ в г.Сочи л\с 20186Х54670)</recipient>	
+		<inn>7718084994</inn>	
+		<kpp>232043001</kpp>	
+		<oktmo>03726000</oktmo>	
+		<bik>040349001</bik>	
+		<cbc>00000000000000000130</cbc>	
+		<bank_account>40501810000002000002</bank_account>	
+		<bank_recipient>ЮЖНОЕ ГУ БАНКА РОССИИ</bank_recipient>	
+		<note>-</note>	
+		<personalaccount>20186Х54670</personalaccount>	
+	</item>	
+</items>

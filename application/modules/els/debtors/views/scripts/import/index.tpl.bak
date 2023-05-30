@@ -1,0 +1,326 @@
+<?php if ($this->form):?>
+<?php echo $this->form?>
+<?else:?>    
+    <p><?php echo sprintf(_('Будет продлено %d сессий, конфликтов %d, не обновятся %d, уже продлено %d, переведены из прошедших и продлены: %d, обновлена итоговая оценка в прошедших: %d'), $this->importManager->getUpdatesCount(), $this->importManager->getConflictCount(), $this->importManager->getNotFoundCount(), $this->importManager->getAlredyExtendedCount(), $this->importManager->getGraduatedDebtorsCount(), $this->importManager->getGraduatedDebtorsEndedCount())?></p>
+    <br/>
+    <?php echo $this->formButton('cancel', _('Отмена'), array('onClick' => 'window.location.href = "'.$this->serverUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'index', 'source' => $this->source))).'"'))?>
+    <?php echo $this->formButton('process', _('Далее'), array('onClick' => 'window.location.href = "'.$this->serverUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'process', 'source' => $this->source))).'"'))?>
+        
+    <br/>
+	
+	
+	<?php if ($this->importManager->getConflictCount()):?>
+		<?php
+			$count = 1;
+			$reasonList = HM_Debtors_DebtorsModel::getReasonList();		
+		?>				
+		<h3><?php echo _('Кофликтные ситуации')?>:</h3><a href="#" onClick="hideTbl($('#tbl_conflict')); return false;">Скрыть/показать</a>
+		<a href="<?=$this->baseUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'tocsv', 'source' => 'csv', 'type' => 'conflict')));?>" target="_blank"><button class="ui-button-text">Выгрузить в csv</button></a>
+		<br/>		
+		<table class="main" width="100%" id="tbl_conflict" style="display: none;">
+		<tr>
+			<th><?php echo _('ID сессии')?></th>
+			<th><?php echo _('Сессия')?></th>
+			<th><?php echo _('ID студента')?></th>
+			<th><?php echo _('ФИО')?></th>                        
+			<th><?php echo _('Группа')?></th>                        
+			<th><?php echo _('ID преподавателя:')?></th>
+			<th><?php echo _('ФИО преподавателя:')?></th>
+			<th><?php echo _('Текущий балл в СДО:')?></th>
+			<th><?php echo _('Дата продления:')?></th>
+			<th><?php echo _('Дата продления 2:')?></th>
+			<th><?php echo _('Семестр:')?></th>
+			<th><?php echo _('Причина:')?></th>
+		</tr>
+		<?php foreach($this->importManager->getConflicts() as $conflict):?>			                        
+			<tr>
+				<td><?php echo $conflict['destination']->session_external_id;?></td>
+				<td><?php echo $conflict['source']['session_name']?></td>
+				<td><?php echo $conflict['destination']->mid_external;?></td>
+				<td><?php echo $conflict['source']['fio']?></td>                                
+				<td><?php echo $conflict['source']['groups']?></td>                                
+				<td><?php echo $conflict['source']['teacher_mid_external'];?></td>
+				<td><?php echo $conflict['source']['teacher_fio'];?></td>       
+				<td><?php echo $conflict['source']['mark'];?></td>				
+				<td><?=	($conflict['destination']->time_ended_debtor) ? (date('d.m.Y', strtotime($conflict['destination']->time_ended_debtor)) ) : ('');?></td>
+				<td><?=	($conflict['destination']->time_ended_debtor_2) ? (date('d.m.Y', strtotime($conflict['destination']->time_ended_debtor_2)) ) : ('');?></td>
+				<td><?php echo $conflict['destination']->semester;?></td>	
+				<td><?=$reasonList[$conflict['destination']->reason_code];?></td>	
+			</tr>
+			<?php $count++;?>
+		<?php endforeach;?>
+		</table>		
+	<?php endif;?>
+	<br />
+	<?php if ($this->importManager->getAlredyExtendedCount()):?>
+		<?php $count = 1;?>        
+        <?php foreach($this->importManager->getAlredyExtended() as $extended):?>			            
+			<?php if($extended['source']['mark'] >= 65) : ?>				
+				<?php if($count == 1) : ?>
+					<h3><?php echo _('Уже продлены и баллов больше 65')?>:</h3><a href="#" onClick="hideTbl($('#tbl_ball')); return false;">Скрыть/показать</a>
+					<a href="<?=$this->baseUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'tocsv', 'source' => 'csv', 'type' => 'manyball')));?>" target="_blank"><button class="ui-button-text">Выгрузить в csv</button></a>
+					<br/>
+					<table class="main" width="100%" id="tbl_ball" style="display: none;">
+						<tr>
+							<th><?php echo _('ID сессии')?></th>
+							<th><?php echo _('Сессия')?></th>
+							<th><?php echo _('ID студента')?></th>
+							<th><?php echo _('ФИО')?></th>                        
+							<th><?php echo _('ID преподавателя:')?></th>
+							<th><?php echo _('ФИО преподавателя:')?></th>
+							<th><?php echo _('Текущий балл в СДО:')?></th>
+							<th><?php echo _('Продлена до:')?></th>
+							<th><?php echo _('Семестр:')?></th>
+							<th><?php echo _('Группа:')?></th>
+							<th><?php echo _('Классификатор:')?></th>
+						</tr>
+					<?php endif; ?>
+					<tr>				
+						<td>					
+						<?php echo $extended['destination']->session_external_id;?></td>
+						<td><?php echo $extended['source']['session_name']?></td>
+						<td><?php echo $extended['destination']->mid_external;?></td>
+						<td><?php echo $extended['source']['fio']?></td>                                
+						<td><?php echo $extended['source']['teacher_mid_external'];?></td>
+						<td><?php echo $extended['source']['teacher_fio'];?></td>       
+						<td><?php echo $extended['source']['mark'];?></td>				
+						<td><?=	($extended['source']['time_ended_debtor']) ? (date('d.m.Y', strtotime($extended['source']['time_ended_debtor'])) ) : ('');?></td>
+						<td><?php echo $extended['destination']->semester;?></td>					
+						<td><?php echo $extended['source']['groups']?></td> 				
+						<td><?php echo $extended['source']['classifiers']?></td> 				
+					</tr>
+					<?php $count++;?>
+				<?php endif; ?>
+			<?php endforeach;?>
+			</table>
+	<?php endif;?>	
+	<br>
+	<?php if ($this->importManager->getNotFoundCount()):?>
+		<?php $count = 1;?>
+        <h3><?php echo _('Данные записи НЕ будут обновлены')?>:</h3><a href="#" onClick="hideTbl($('#tbl_not_found')); return false;">Скрыть/показать</a>
+		<a href="<?=$this->baseUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'tocsv', 'source' => 'csv', 'type' => 'notfound')));?>" target="_blank"><button class="ui-button-text">Выгрузить в csv</button></a>
+        <br/>
+        <table class="main" width="100%" id="tbl_not_found" style="display: none;">
+        <tr>
+            <th><?php echo _('Причина')?></th>            
+            <th><?php echo _('ID студента')?></th>
+			<th><?php echo _('ФИО')?></th>            
+			<th><?php echo _('Группы студента')?></th>            
+			<th><?php echo _('ID сессии')?></th>            
+			<th><?php echo _('Дисциплина')?></th>            
+			<th><?php echo _('Специальность')?></th>            
+            <th><?php echo _('Дата начала')?></th>
+            <th><?php echo _('Дата окончания')?></th>
+            <th><?php echo _('Продлить до')?></th>
+            <th><?php echo _('Продлить до 2')?></th>
+            <th><?php echo _('Возможные сессии')?></th>
+            <th><?php echo _('Группа')?></th>
+            <th><?php echo _('Семестр')?></th>
+        </tr>
+        <?php foreach($this->importManager->getNotFound() as $nf):?>			
+			<?php 			
+			if($nf->sessionFounded){				
+				$count = 1;
+				foreach($nf->sessionFounded as $i){
+					echo '<tr>';
+						if($count == 1){
+							?>
+							<td>
+								<?=($nf->notFoundUser) ? ('нет пользователя<br>') : ('') ;?>
+								<?=($nf->notFoundSubject) ? ('нет сессии<br>') : ('') ;?>
+								<?=($nf->isGraduated) ? ('сдано<br>') : ('') ;?>
+								<?=($nf->isNotAssigned) ? ('не назначен<br>') : ('') ;?>
+							</td>
+							<td><?=$nf->mid_external;?></td>
+							<td><?=$nf->fio;?></td>
+							<td><?php if(isset($nf->groups) && !empty($nf->groups)){ echo implode(', ',$nf->groups); } ?></td>
+							<td><?=$nf->session_external_id;?></td>				
+							<td><?=$nf->name;?></td>
+							<td><?=$nf->specialty;?></td>											
+							<td><?=	($nf->dateBegin) ? (date('d.m.Y', strtotime($nf->dateBegin)) ) : ('');?></td>
+							<td><?=	($nf->dateEnd) ? (date('d.m.Y', strtotime($nf->dateEnd)) ) : ('');?></td>
+							<td><?=	($nf->time_ended_debtor) ? (date('d.m.Y', strtotime($nf->time_ended_debtor)) ) : ('');?></td>																		
+							<td><?=	($nf->time_ended_debtor_2) ? (date('d.m.Y', strtotime($nf->time_ended_debtor_2)) ) : ('');?></td>																		
+							<?php 
+						} else {
+							?>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td><?=$nf->session_external_id;?></td>				
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>											
+							<td>&nbsp;</td>																												
+							<td>&nbsp;</td>																												
+							<?php 
+						}
+						echo '<td>';
+						if(empty($i['session_id_external'])){
+							echo 'нет';
+						} else {
+							echo $i['session_id_external'];
+						}
+						echo ' - <a href="'.$this->url(array('module' => 'subject', 'controller' => 'index', 'action' => 'card' , 'subject_id' =>$i['CID']), null, true).'" target="_blank">'.$i['session_name'].'</a>';
+						if(!empty($i['session_ended'])){
+							echo ' (до '.date('d.m.Y', strtotime($i['session_ended'])).')';							
+						}
+						echo '</td>';
+						echo '<td>';
+						echo $i['groups'];
+						echo '</td>';
+						?><td><?=$nf->semester;?></td><?php 
+					echo '</tr>';
+					
+					$count++;
+				}
+			} else {
+			
+			?>
+			<tr>
+				<td>
+					<?=($nf->notFoundUser) ? ('нет пользователя<br>') : ('') ;?>
+					<?=($nf->notFoundSubject) ? ('нет сессии<br>') : ('') ;?>
+					<?=($nf->isGraduated) ? ('сдано<br>') : ('') ;?>
+					<?=($nf->isNotAssigned) ? ('не назначен<br>') : ('') ;?>
+				</td>
+				<td><?=$nf->mid_external;?></td>
+				<td><?=$nf->fio;?></td>
+				<td><?php if(isset($nf->groups) && !empty($nf->groups)){ echo implode(', ',$nf->groups); } ?></td>
+				<td><?=$nf->session_external_id;?></td>				
+				<td><?=$nf->name;?></td>
+				<td><?=$nf->specialty;?></td>				
+				<td><?=	($nf->dateBegin) ? (date('d.m.Y', strtotime($nf->dateBegin)) ) : ('');?></td>
+				<td><?=	($nf->dateEnd) ? (date('d.m.Y', strtotime($nf->dateEnd)) ) : ('');?></td>
+				<td><?=	($nf->time_ended_debtor) ? (date('d.m.Y', strtotime($nf->time_ended_debtor)) ) : ('');?></td>				
+				<td><?=	($nf->time_ended_debtor_2) ? (date('d.m.Y', strtotime($nf->time_ended_debtor_2)) ) : ('');?></td>				
+				<td>&nbsp;</td>	
+				<td>&nbsp;</td>
+				<td><?=$nf->semester;?></td>				
+			</tr>
+			<?php } ?>			
+            <?php if ($count >= 500) { echo "<tr><td colspan=\"2\">...</td></tr>"; break;}?>
+            
+            <?php $count++;?>
+        <?php endforeach;?>
+        </table>
+	<?php endif;?>
+	<br>
+	<?php if ($this->importManager->getGraduatedDebtorsCount()):?>
+        <?php $count = 1;?>
+        <h3><?php echo _('Следующие записи будут переведены из "прошедших обучение" в активное и продлены')?>:</h3><a href="#" onClick="hideTbl($('#tbl_grad')); return false;">Скрыть/показать</a>
+		<a href="<?=$this->baseUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'tocsv', 'source' => 'csv', 'type' => 'grad')));?>" target="_blank"><button class="ui-button-text">Выгрузить в csv</button></a>
+        <br/>
+        <table class="main" width="100%" id="tbl_grad" style="display: none;">
+        <tr>
+            <th><?php echo _('ID сессии')?></th>
+            <th><?php echo _('Сессия')?></th>
+			<th><?php echo _('ФИО')?></th>            			
+            <th><?php echo _('Продлить до')?></th>
+            <th><?php echo _('Семестр')?></th>
+        </tr>
+        <?php foreach($this->importManager->getGraduatedDebtors() as $graduate):?>			
+            <?php if ($count >= 500) { echo "<tr><td colspan=\"2\">...</td></tr>"; break;}?>
+            <tr>
+                <td><?=$graduate['subject']->external_id;?></td>				
+                <td><?=$graduate['subject']->name;?></td>				
+                <td><?=$graduate['destination']->fio;?></td>				
+                <td><?=($graduate['destination']->time_ended_debtor) ? (date('d.m.Y', strtotime($graduate['destination']->time_ended_debtor)) ) : ('');?></td>				
+                <td><?=$graduate['destination']->semester;?></td>				
+            </tr>
+            <?php $count++;?>
+        <?php endforeach;?>
+        </table>
+    <?php endif;?>
+	<br>
+		<?php if ($this->importManager->getGraduatedDebtorsEndedCount()):?>
+        <?php $count = 1;?>
+        <h3><?php echo _('В следующих записях будет обновлена итоговая оценка на оценку по урокам в СДО. Студент будет повторно назначен на курс из "прошедших обучение". Продлены эти записи не будут, т.к. итоговый балл больше или равен 65')?>:</h3><a href="#" onClick="hideTbl($('#tbl_gradend')); return false;">Скрыть/показать</a>
+		<a href="<?=$this->baseUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'tocsv', 'source' => 'csv', 'type' => 'gradend')));?>" target="_blank"><button class="ui-button-text">Выгрузить в csv</button></a>
+        <br/>
+        <table class="main" width="100%" id="tbl_gradend" style="display: none;">
+        <tr>
+            <th><?php echo _('ID сессии')?></th>
+            <th><?php echo _('Сессия')?></th>
+			<th><?php echo _('ФИО')?></th>            			
+            <th><?php echo _('Старый итоговый балл')?></th>
+            <th><?php echo _('Новый итоговый балл')?></th>
+            <th><?php echo _('Семестр')?></th>
+        </tr>
+        <?php foreach($this->importManager->getGraduatedDebtorsEnded() as $graduate):?>			
+            <?php if ($count >= 500) { echo "<tr><td colspan=\"2\">...</td></tr>"; break;}?>
+            <tr>
+                <td><?=$graduate['subject']->external_id;?></td>				
+                <td><?=$graduate['subject']->name;?></td>				
+                <td><?=$graduate['destination']->fio;?></td>				
+                <td><?=$graduate['marks']['old'];?></td>				
+                <td><?=$graduate['marks']['new'];?></td>				
+                <td><?=$graduate['destination']->semester;?></td>				
+            </tr>
+            <?php $count++;?>
+        <?php endforeach;?>
+        </table>
+    <?php endif;?>
+	<br>
+    <?php if ($this->importManager->getUpdatesCount()):?>
+	
+        <?php $count = 1;?>
+        <h3><?php echo _('Будут обновлены следующие записи')?>:</h3><a href="#" onClick="hideTbl($('#tbl_update')); return false;">Скрыть/показать</a>
+		<a href="<?=$this->baseUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'tocsv', 'source' => 'csv', 'type' => 'updated')));?>" target="_blank"><button class="ui-button-text">Выгрузить в csv</button></a>
+        <br/>
+        <table class="main" width="100%" id="tbl_update">
+        <tr>
+            <th rowspan="2"><?php echo _('ID сессии')?></th>
+            <th rowspan="2"><?php echo _('Сессия')?></th>
+			<th rowspan="2"><?php echo _('ФИО')?></th>            
+			<th colspan="3"><?php echo _('Первое продление')?></th>            
+			<th colspan="3"><?php echo _('Второе продление')?></th>                        
+            <th rowspan="2"><?php echo _('Семестр')?></th>
+        </tr>
+		<tr>
+			<th><?php echo _('Уже продлена до')?></th>
+			<th><?php echo _('Продлить до')?></th>
+			<th><?php echo _('Назначатся тьюторы')?></th>
+			<th><?php echo _('Уже продлена до')?></th>
+			<th><?php echo _('Продлить до')?></th>
+			<th><?php echo _('Назначатся тьюторы')?></th>
+		</tr>
+        <?php foreach($this->importManager->getUpdates() as $update):?>					
+            <?php if ($count >= 500) { echo "<tr><td colspan=\"2\">...</td></tr>"; break;}?>
+            <tr>
+                <td><?php echo $update['source']['session_external_id']?></td>
+                <td><?php echo $update['source']['session_name']?></td>
+				<td><?php echo $update['source']['fio']?></td>				
+				<td><?=	($update['source']['time_ended_debtor']) ? (date('d.m.Y', strtotime($update['source']['time_ended_debtor'])) ) : ('Не продлена');?></td>
+				<td><?=	($update['destination']->time_ended_debtor) ? (date('d.m.Y', strtotime($update['destination']->time_ended_debtor)) ) : ('Нет');?></td>
+				<td><?=	(!empty($update['destination']->tutor)) ? implode(', ', $update['destination']->tutor) : 'Нет';?></td>
+				
+				
+				<td><?=	($update['source']['time_ended_debtor_2']) ? (date('d.m.Y', strtotime($update['source']['time_ended_debtor_2'])) ) : ('Не продлена');?></td>
+				<td><?=	($update['destination']->time_ended_debtor_2) ? (date('d.m.Y', strtotime($update['destination']->time_ended_debtor_2)) ) : ('Нет');?></td>
+				<td><?=	(!empty($update['destination']->tutor_2)) ? implode(', ', $update['destination']->tutor_2) : 'Нет';?></td>
+				
+				<td><?php echo $update['destination']->semester;?></td>
+            </tr>
+            <?php $count++;?>
+        <?php endforeach;?>
+        </table>
+    <?php endif;?>	
+	<br />
+    <?php if ($this->importManager->getCount()): ?>        
+        <?php echo $this->formButton('cancel', _('Отмена'), array('onClick' => 'window.location.href = "'.$this->serverUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'index', 'source' => $this->source))).'"'))?>
+		<?php echo $this->formButton('process', _('Далее'), array('onClick' => 'window.location.href = "'.$this->serverUrl($this->url(array('module' => 'debtors', 'controller' => 'import', 'action' => 'process', 'source' => $this->source))).'"'))?>
+    <?php endif;?>
+<?php endif;?>
+<?php $this->inlineScript()->captureStart()?>
+	function hideTbl(el){
+		console.log(el);
+		if(el.is(":visible")){
+			el.hide();
+		} else {
+			el.show();
+		}
+	}
+<?php $this->inlineScript()->captureEnd()?>
